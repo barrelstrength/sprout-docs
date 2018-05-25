@@ -82,7 +82,7 @@ Rules of thumb:
 - Use shorthand syntax where possible in Craft fields
 - Use object syntax when you need conditional logic
 
-Using shorthand syntax in your Custom Fields and the Control Panel reduces the chance for errors. Some fields, such as the Rich Text field may add spaces between your tags using object syntax (i.e. `{{&nbsp;object.email&nbsp;}}`) and cause errors during processing. Also, adding more complex object syntax of Twig code can create trickier situations to debug when sending email.
+Using shorthand syntax in your Custom Fields and the Control Panel reduces the chance for errors. Some fields, such as the Rich Text field may add spaces between your tags using object syntax (i.e. `{{ object.email }}`) and cause errors during processing. Also, adding more complex object syntax of Twig code can create trickier situations to debug when sending email.
 
 The order that your fields are processed is as follows:
 

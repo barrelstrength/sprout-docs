@@ -1,3 +1,5 @@
+# Sprout Active
+
 Sprout Active makes it simple to control the active classname in your navigation or conditional content based on your URL segments or your full URL.
 
 ## Managing Navigation and Selected States

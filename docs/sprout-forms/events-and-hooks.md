@@ -24,7 +24,7 @@ Raised just after an entry is saved
 
 #### sproutForms.modifyForm
 
-Gives plugins a chance to dynamically add content to a form template. The hook will output content between the <form> tags when using the displayForm, displayTab, or displayField tags.
+Gives plugins a chance to dynamically add content to a form template. The hook will output content between the `<form>` tags when using the displayForm, displayTab, or displayField tags.
 
 ``` php
 public function init()

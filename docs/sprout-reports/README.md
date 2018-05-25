@@ -1,3 +1,5 @@
+# Sprout Reports
+
 _Note: Sprout Reports is now available in beta for Craft 3._
 
 Sprout Reports allows you to create and group custom reports. Reports can be created from our default Data Sources or you can create your own. Sprout Reports comes with two flexible Data Sources out of the box and additional Data Sources are available via custom plugins.

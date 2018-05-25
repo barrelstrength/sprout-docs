@@ -23,7 +23,7 @@ Here's an example of how to set this up with a sitemapindex and two specific sit
 
 ## Create your sitemapindex file
 
-First, you can create an `<sitemapindex>` file that references all of the other sitemaps that you want included.  In this example, our <sitemapindex>` references 2 other sitemaps: one for our general pages and one for the section where we have a large number of articles. 
+First, you can create an `<sitemapindex>` file that references all of the other sitemaps that you want included.  In this example, our `<sitemapindex>` references 2 other sitemaps: one for our general pages and one for the section where we have a large number of articles. 
 
 In some cases, you may even need to break up your larger section into multiple sitemap files.
 
