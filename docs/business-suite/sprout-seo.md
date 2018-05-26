@@ -1,3 +1,0 @@
-# Sprout SEO
-
-## Sub title

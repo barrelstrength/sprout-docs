@@ -1,3 +1,5 @@
+# Sprout Lists
+
 Sprout Lists allows your users to:
 
 <i class="fa fa-check-square fa-fw update-improved"></i> Subscribe and unsubscribe to things<br>

@@ -1,4 +1,4 @@
-# Sprout Forms
+# Introduction
 
 Sprout Forms makes it easy for you to manage custom forms on your website. 
 

@@ -1,3 +1,5 @@
+# Sprout Encode Email
+
 ## Overview
 
 Encode Email makes multiple email obfuscation filters available in your templates. Currently supported are:

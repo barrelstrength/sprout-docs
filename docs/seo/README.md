@@ -1,4 +1,4 @@
-# Sprout SEO 
+# Introduction
 
 ## Content strategy and SEO strategy side by side
 

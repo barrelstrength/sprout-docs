@@ -67,3 +67,10 @@ Link to Sprout Base Documentation. Normalize plugin behavior where we can.
 - Update any translations in the default en translation file using Craft::t and the PhpStorm inspection
 
 _Note: where we can, we want to automate these tasks and incorporate them into our workflow_
+
+
+------------------------------------------------------------
+
+Exclude vendor folder from repos (ADD to GUIDLINES DOC)
+Devs should run this locally and Craft will install this for us at the application level.
+Get this into our basic gitignore.

@@ -1,1 +1,1 @@
-# Sprout Documentation
+# Introduction

@@ -1,3 +1,0 @@
-# Sprout Email
-
-## Sub title

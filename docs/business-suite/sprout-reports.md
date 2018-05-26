@@ -1,3 +1,0 @@
-# Sprout Reports
-
-## Sub title

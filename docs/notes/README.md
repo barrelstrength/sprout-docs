@@ -1,3 +1,5 @@
+# Sprout Notes
+
 Sometimes you just need to write a note!
 
 ## Widget
