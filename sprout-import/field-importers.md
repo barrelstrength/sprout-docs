@@ -8,7 +8,7 @@ _While the Field Importer name implies they may have a role in importing data, a
 
 To add support for your custom fields you will need to:
 
-1. Create a Field Importer class that extends `barrelstrength\sproutbase\contracts\sproutimport\BaseFieldImporter`
+1. Create a Field Importer class that extends `barrelstrength\sproutbase\contracts\sproutimport\FieldImporter`
 2. Register your Field Importer
 
 To register your Element Importer, you can register your custom Element Importer class using the `EVENT_REGISTER_IMPORTER_TYPES` event:
@@ -21,7 +21,7 @@ Event::on(Importers::class, Importers::EVENT_REGISTER_IMPORTER_TYPES, function(R
 });
 ```
 
-Please refer to example Settings Importers in `sproutimport/src/integrations/sproutimport/fields` and `sproutbase/src/contracts/sproutimport/BaseImporter` and `sproutbase/src/contracts/sproutimport/BaseFieldImporter` for more details.
+Please refer to example Settings Importers in `sproutimport/src/integrations/sproutimport/fields` and `sproutbase/src/contracts/sproutimport/Importer` and `sproutbase/src/contracts/sproutimport/FieldImporter` for more details.
 
 ### Craft 2
 

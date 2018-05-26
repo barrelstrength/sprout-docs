@@ -8,7 +8,7 @@ Add support for importing any Craft or custom plugin settings by creating a Sett
 
 To add support for your custom Settings you will need to:
 
-1. Create an Settings Importer class that extends `barrelstrength\sproutbase\contracts\sproutimport\BaseSettingsImporter`
+1. Create an Settings Importer class that extends `barrelstrength\sproutbase\contracts\sproutimport\SettingsImporter`
 2. Register your Settings Importer
 
 To register your Element Importer, you can register your custom Element Importer class using the `EVENT_REGISTER_IMPORTER_TYPES` event:
@@ -21,7 +21,7 @@ Event::on(Importers::class, Importers::EVENT_REGISTER_IMPORTER_TYPES, function(R
 });
 ```
 
-Please refer to example Settings Importers in `sproutimport/src/integrations/sproutimport/settings` and `sproutbase/src/contracts/sproutimport/BaseImporter` and `sproutbase/src/contracts/sproutimport/BaseSettingsImporter` for more details.
+Please refer to example Settings Importers in `sproutimport/src/integrations/sproutimport/settings` and `sproutbase/src/contracts/sproutimport/Importer` and `sproutbase/src/contracts/sproutimport/SettingsImporter` for more details.
 
 ### Craft 2
 

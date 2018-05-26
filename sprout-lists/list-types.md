@@ -14,7 +14,7 @@ A Custom List Type allows you to integrate with a third party API to:
 
 You can create a Custom List Type by:
 
-1. Extending SproutListsBaseListType with your Custom List Type
+1. Extending `ListType` with your Custom List Type
 2. Register your Custom List Type using the `registerSproutListsListTypes()` hook
 
 Sprout Lists uses its own Custom List Type API. See the Subscriber List Type as an example in Sprout Lists (sproutlists/integrations/sproutlists/SproutLists_SubscriberListType.php).

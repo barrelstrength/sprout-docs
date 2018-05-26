@@ -12,7 +12,7 @@
 ### Installation via Composer 
 
 1. Open your terminal and go to your Craft project:<br>`cd /path/to/project`
-2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-notes`
+2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-fields`
 3. In the Control Panel, go to _Settings → Plugins_ and select “Install”
 
 ## Craft 2

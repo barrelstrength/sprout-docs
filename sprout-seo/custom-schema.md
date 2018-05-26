@@ -9,7 +9,7 @@ Sprout SEO allows you to map your content in Craft CMS to the be output as Struc
 
 You can create your own Custom Schema by:
 
-1. Extending SproutSeoBaseSchema with your Custom Schema
+1. Extending `Schema` with your Custom Schema
 2. Register your Custom Schema using the registerSproutSeoSchemas() hook
 
 Sprout SEO uses its own Schema API. See over 15 Schema integration examples in Sprout SEO (sproutseo/integrations/sproutseo/schema).

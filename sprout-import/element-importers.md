@@ -20,7 +20,7 @@ Event::on(Importers::class, Importers::EVENT_REGISTER_IMPORTER_TYPES, function(R
 });
 ```
 
-Please refer to example Element Importers in `sproutimport/src/integrations/sproutimport/elements` and `sproutbase/src/contracts/sproutimport/BaseImporter` and `sproutbase/src/contracts/sproutimport/BaseElementImporter` for more details.
+Please refer to example Element Importers in `sproutimport/src/integrations/sproutimport/elements` and `sproutbase/src/contracts/sproutimport/Importer` and `sproutbase/src/contracts/sproutimport/BaseElementImporter` for more details.
 
 ### Craft 2
 

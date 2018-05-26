@@ -16,10 +16,10 @@ The key things you will need to do are:
 
 1) Create a class for your Data Source
 
-Data Sources extend SproutReportsBaseDataSource and follow the naming convention [PluginName][DataSourceName][DataSource]:
+Data Sources extend the `DataSource` class:
 
 ``` php
-class SproutReportsUsersDataSource extends SproutReportsBaseDataSource
+class SproutReportsUsersDataSource extends DataSource
 {
 	...
 }
