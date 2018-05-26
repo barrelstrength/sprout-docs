@@ -1,3 +1,5 @@
+# Installing and Updating
+
 ## Craft 3
 
 ### Requirements

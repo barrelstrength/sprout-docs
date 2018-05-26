@@ -1,3 +1,5 @@
+# Updating to 2.x
+
 Sprout Forms 2.0 introduces a number of new, powerful features and comes with a few breaking changes to be aware of.
 
 We recommend backing up your database before upgrading and upgrading to 2.0 in a development environment where you can test your forms to ensure they work and are styled as expected.
