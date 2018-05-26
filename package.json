@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "vuepress": "^0.8.4",
+    "vuepress-theme-craftdocs": "^1.0.0"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
