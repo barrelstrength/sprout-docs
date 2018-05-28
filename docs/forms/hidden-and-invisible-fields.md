@@ -1,3 +1,5 @@
+# Hidden and Invisible Fields
+
 A [Hidden Field]({entry:1039:url}) and [Invisible Field]({entry:1145:url}) can both be found in [Sprout Fields]({entry:1035:url}).
 
 These two fields can help you manage a handful of front-end form use cases where you may need to capture a value that doesn't display or is not seen by your users. 

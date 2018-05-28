@@ -1,3 +1,5 @@
+# Supported Data Types
+
 Sprout Import currently supports importing:
 
 ## Craft data types

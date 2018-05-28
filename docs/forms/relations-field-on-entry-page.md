@@ -1,3 +1,5 @@
+# Relations Field on Entry Page
+
 You can use the Sprout Forms field to create a relation between your Form and another element in Craft. On the Entry page where you wish to display your form, the Sprout Forms field will give you access to the complete Form Model.
 
 ## Dynamically display a related form using a single line

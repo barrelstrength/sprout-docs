@@ -2,7 +2,7 @@
 
 Add support for importing any custom Element by creating a custom Element Importer integration. Element Importers allow you to take advantage of Craft's Element API and common behaviors consistent across Elements.
 
-### Craft 3
+## Craft 3
 
 To add support for your custom Element you will need to:
 
@@ -22,7 +22,7 @@ Event::on(Importers::class, Importers::EVENT_REGISTER_IMPORTER_TYPES, function(R
 
 Please refer to example Element Importers in `sproutimport/src/integrations/sproutimport/elements` and `sproutbase/src/contracts/sproutimport/Importer` and `sproutbase/src/contracts/sproutimport/BaseElementImporter` for more details.
 
-### Craft 2
+## Craft 2
 
 To add support for your custom Element you will need to:
 
@@ -43,7 +43,7 @@ public function registerSproutImportImporters()
 }
 ```
 
-### Element Integrations
+## Element Integrations
 
 The following Elements have Element Importer integrations:
 

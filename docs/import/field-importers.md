@@ -4,7 +4,7 @@ Field Importers can be created to add support for additional types of mock data.
 
 _While the Field Importer name implies they may have a role in importing data, any real content you import into fields is handled primarily by the Element Importers and the Custom Fields related to the Elements being imported and the Settings Importer for Fields._
 
-### Craft 3
+## Craft 3
 
 To add support for your custom fields you will need to:
 
@@ -23,7 +23,7 @@ Event::on(Importers::class, Importers::EVENT_REGISTER_IMPORTER_TYPES, function(R
 
 Please refer to example Settings Importers in `sproutimport/src/integrations/sproutimport/fields` and `sproutbase/src/contracts/sproutimport/Importer` and `sproutbase/src/contracts/sproutimport/FieldImporter` for more details.
 
-### Craft 2
+## Craft 2
 
 To add support for your custom fields you will need to:
 
@@ -46,7 +46,7 @@ public function registerSproutImportImporters()
 }
 ```
 
-### Field Integrations
+## Field Integrations
 
 The following fields have Field Importer integrations:
 

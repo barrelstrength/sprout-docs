@@ -1,3 +1,5 @@
+# Contact Form
+
 Support is available for Sprout Forms license holders.
 
 **Documentation**<br>

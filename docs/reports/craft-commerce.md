@@ -1,3 +1,5 @@
+## Craft Commerce
+
 _Note: Currently, the Sprout Reports for Craft Commerce is only available for Craft 2. We'll upgrade the integration once Craft Commerce 2 is released_
 
 Sprout Reports for Craft Commerce includes a collection of reports to query and export your Product Revenue and Order History.

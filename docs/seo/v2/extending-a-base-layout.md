@@ -1,3 +1,5 @@
+# Extending a Base Layout
+
 Start by creating a base layout template `_layouts/base.html`.  In your layout, you will call the `craft.sproutSeo.optimize()` tag which will hand processing all of your meta output.
 
 ``` twig

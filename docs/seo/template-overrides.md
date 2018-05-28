@@ -1,3 +1,5 @@
+# Template Overrides
+
 When you need to customize your metadata at the template level, you can use the `do craft.sproutSeo.meta` tag.
 
 Anywhere before the `{% sproutseo 'optimize' %}` tag in your templates, you can use the `do craft.sproutSeo.meta` to override any of the prioritized values that are being processed for the page.

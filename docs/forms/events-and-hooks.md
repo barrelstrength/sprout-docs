@@ -1,3 +1,5 @@
+# Events & Hooks
+
 Sprout Forms can be extended using the following Events and Hooks.
 
 ## Events

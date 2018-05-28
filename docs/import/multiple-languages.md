@@ -1,4 +1,4 @@
-# Importing content in multiple languages
+# Multiple languages
 
 Importing content in multiple languages can be tricky depending on what content you have in each language. When importing content for a single language, you can just set the attribute `locale` with your Locale ID and you are good to go (i.e. `"locale": "es"`). Once you add multiple languages to the mix, you'll have to keep in mind several aspects about your setup:
 

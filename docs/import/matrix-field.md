@@ -1,8 +1,8 @@
-# Import data into the Matrix Field
+# Matrix Field
 
 Sprout Import supports importing Matrix fields on any supported Element using the Matrix; any number of block types; all supported fields used on those block types; and matching relational content and resolving relationships on block types. Hooray!
 
-### Example of Matrix field definition
+## Example of Matrix field definition
 
 Here is an example of an Entry Model with a Matrix field and two blocks. When importing matrix blocks you will need to name each item in the matrix block array with the `new` prefix and increment each block by one: `new1`, `new2`, `new3`:
 
@@ -40,7 +40,7 @@ Here is an example of an Entry Model with a Matrix field and two blocks. When im
 
 _Use "@model": "EntryModel" in Craft 2_
 
-### Example of Matrix field with related key
+## Example of Matrix field with related key
 
 If you have Relations on your Matrix Blocks, you can also use the `related` key:
 

@@ -1,3 +1,5 @@
+# getSocialProfilesTag
+
 You can display a list of the Social Profiles in your Global Sprout SEO settings on your website using the `getSocialProfiles` tag:
 
 ``` twig

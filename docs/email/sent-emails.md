@@ -1,3 +1,5 @@
+# Sent Emails
+
 A Sent Email is created when:
 
 1. Craft sends a system email

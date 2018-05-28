@@ -1,3 +1,5 @@
+# Large Reports
+
 Sometimes you need to run reports that query a lot of data, or complex data structures. If you have a report that is too large and runs out of memory before it is completed, below are a few options you may want to consider.
 
 _These solutions will require some level of technical understanding and could depend on several variables unrelated to the Sprout Reports plugin in your hosting environment or code, including your web server, PHP installation, and Craft configuration. If you would like help evaluating your resource requirements, we are available to help out in a consulting relationship to help you meet your projects reporting needs._

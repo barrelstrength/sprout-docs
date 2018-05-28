@@ -1,3 +1,5 @@
+# FAQ
+
 ## Does Sprout SEO 3 work with Craft 3?
 
 It is just a coincidence that Sprout SEO 3 is being released at the time that Craft 3 is in beta. We are currently in the process of upgrading all Sprout plugins to work with Craft 3. The current version of Sprout SEO 3 works with Craft 2.6.2949+ and Sprout SEO 4 will be the release that adds support for Craft 3.

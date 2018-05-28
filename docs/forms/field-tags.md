@@ -1,3 +1,5 @@
+# Field Tags
+
 If you need more control over your forms, you can start outputting your fields one by one.  The `displayField()` tag handles inline error messages for you and retains any submitted values if a form doesn't validate.
 
 The field tag is handy when we might be able to use the default output for most of our fields, but may need to specifically customize one field in HTML.

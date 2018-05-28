@@ -1,3 +1,5 @@
+# Redirects
+
 Redirects allow you to forward users and search engines to the appropriate content on your site. Sprout SEO Redirects can be managed directly in the Craft Control Panel via the familiar Craft user interface.
 
 Sprout SEO supports 3 types of Redirects:

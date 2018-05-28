@@ -1,4 +1,6 @@
-# How to optimize your website with Sprout SEO
+# Introduction
+
+How to optimize your website with Sprout SEO
 
 Sprout SEO makes it simple to optimize your website for search engines.  It's designed to allow you to set sensible defaults for each section of your website, dynamically override those defaults in the code with page specific content, and, if that's not enough, have custom control over your meta-data on entry by entry basis.
 

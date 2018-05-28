@@ -1,3 +1,5 @@
+# Overriding Images
+
 You can override an Open Graph or Twitter Card image in your templates.  
 
 ## Overriding Open Graph Images

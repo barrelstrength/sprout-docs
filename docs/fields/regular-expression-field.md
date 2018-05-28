@@ -1,3 +1,5 @@
+# Regular Expression Field
+
 The Regular Expression field allows you to validate input for a text field with a Regular Expression pattern. You will need knowledge of Regular Expressions to create the validation pattern. The Regular Expression validation pattern can be added in your field settings.
 
 ## Before using the Regular Expression field

@@ -1,3 +1,5 @@
+# getContacts
+
 You can display a list of the Contacts from your Global Sprout SEO settings on your website using the `getContacts` tag:
 
 ``` twig

@@ -1,3 +1,5 @@
+# Assets
+
 Import your assets using Craft's `Settings->Update Asset Indexes` tool.
 
 For lots of assets, consider breaking them into more folders and raising the amount of memory available in the environment which you are importing them in.

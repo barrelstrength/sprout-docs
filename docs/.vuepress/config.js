@@ -1,14 +1,15 @@
 module.exports = {
     title: 'Sprout Docs',
     description: 'Sprout Documentation',
+    // theme: 'craftdocs',
     themeConfig: {
         docsRepo: 'barrelstrength/sprout-docs',
         docsDir: 'docs',
-        docsBranch: 'feature/docs',
+        docsBranch: 'develop',
         editLinks: true,
         codeLanguages: {
             twig: 'Twig',
-            php: 'PHP',
+            php: 'PHP'
         },
         sidebar: {
             '/forms/': [
@@ -17,9 +18,7 @@ module.exports = {
                     title: 'Sprout Forms',
                     collapsable: false,
                     children: [
-                        '',
-                        'installing-and-updating',
-                        'updating-to-2x'
+                        ''
                     ]
                 },
                 {
@@ -32,7 +31,7 @@ module.exports = {
                         'entries-tag',
                         'last-entry-tag',
                         'get-entry-tag',
-                        'form-tag',
+                        'form-tag'
                     ]
                 },
                 {
@@ -74,6 +73,14 @@ module.exports = {
                         'hidden-and-invisible-fields',
                         'pre-populating-a-field'
                     ]
+                },
+                {
+                    title: 'Installing & Updating',
+                    collapsable: false,
+                    children: [
+                        'installing-and-updating-craft-3',
+                        'installing-and-updating-craft-2'
+                    ]
                 }
             ],
 
@@ -87,8 +94,6 @@ module.exports = {
                         'sitemap',
                         'redirects',
                         'contact-support',
-                        'installing-and-updating',
-                        'updating-to-sprout-seo-3',
                         'faq'
                     ]
                 },
@@ -117,11 +122,12 @@ module.exports = {
                         'custom-sections',
                         'meta-details-fields',
                         'template-overrides',
-                        'custom-metadata-variable'
+                        'custom-metadata-variable',
+                        'meta-description-length'
                     ]
                 },
                 {
-                    title: 'Developers',
+                    title: 'Plugin Development',
                     collapsable: false,
                     children: [
                         'custom-schema',
@@ -133,7 +139,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'large-sitemaps',
-                        'meta-description-length'
+                        'block-robots-on-dev-site',
+                        'canonical-override'
                     ]
                 },
                 {
@@ -147,6 +154,14 @@ module.exports = {
                         'v2/introduction',
                         'v2/overriding-images'
                     ]
+                },
+                {
+                    title: 'Installing & Updating',
+                    collapsable: false,
+                    children: [
+                        'installing-and-updating-craft-3',
+                        'installing-and-updating-craft-2'
+                    ]
                 }
             ],
 
@@ -157,9 +172,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '',
-                        'installing-and-updating',
                         'config-settings',
-                        'upgrading-from-2x-to-3x',
                         'contact-support'
                     ]
                 },
@@ -202,6 +215,14 @@ module.exports = {
                         'template-variables',
                         'using-globals-in-emails'
                     ]
+                },
+                {
+                    title: 'Installing & Updating',
+                    collapsable: false,
+                    children: [
+                        'installing-and-updating-craft-3',
+                        'installing-and-updating-craft-2'
+                    ]
                 }
             ],
 
@@ -211,13 +232,11 @@ module.exports = {
                     title: 'Sprout Reports',
                     collapsable: false,
                     children: [
-                        '',
-                        'installing-and-updating',
-                        'upgrading-craft2-to-craft3',
+                        ''
                     ]
                 },
                 {
-                    title: 'Custom Reports',
+                    title: 'Core Concepts',
                     collapsable: false,
                     children: [
                         'data-sources',
@@ -227,7 +246,7 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Integrations',
+                    title: 'Reports',
                     collapsable: false,
                     children: [
                         'sprout-forms',
@@ -247,6 +266,21 @@ module.exports = {
                     children: [
                         'large-reports'
                     ]
+                },
+                {
+                    title: 'Plugin Development',
+                    collapsable: false,
+                    children: [
+                        'custom-data-sources'
+                    ]
+                },
+                {
+                    title: 'Installing & Updating',
+                    collapsable: false,
+                    children: [
+                        'installing-and-updating-craft-3',
+                        'installing-and-updating-craft-2'
+                    ]
                 }
             ],
 
@@ -258,7 +292,6 @@ module.exports = {
                     children: [
                         '',
                         'supported-data-types',
-                        'craft3-vs-craft2'
                     ]
                 },
                 {
@@ -293,7 +326,14 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Integrations',
+                    title: 'Examples',
+                    collapsable: false,
+                    children: [
+                        'expressionengine-export'
+                    ]
+                },
+                {
+                    title: 'Plugin Development',
                     collapsable: false,
                     children: [
                         'element-importers',
@@ -302,10 +342,11 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Examples',
+                    title: 'Installing & Updating',
                     collapsable: false,
                     children: [
-                        'expressionengine-export'
+                        'installing-and-updating-craft-3',
+                        'installing-and-updating-craft-2'
                     ]
                 }
             ],
@@ -316,8 +357,15 @@ module.exports = {
                     title: 'Sprout Active',
                     collapsable: false,
                     children: [
-                        '',
-                        'installing-and-updating'
+                        ''
+                    ]
+                },
+                {
+                    title: 'Installing & Updating',
+                    collapsable: false,
+                    children: [
+                        'installing-and-updating-craft-3',
+                        'installing-and-updating-craft-2'
                     ]
                 }
             ],
@@ -328,8 +376,15 @@ module.exports = {
                     title: 'Sprout Encode Email',
                     collapsable: false,
                     children: [
-                        '',
-                        'installing-and-updating'
+                        ''
+                    ]
+                },
+                {
+                    title: 'Installing & Updating',
+                    collapsable: false,
+                    children: [
+                        'installing-and-updating-craft-3',
+                        'installing-and-updating-craft-2'
                     ]
                 }
             ],
@@ -340,9 +395,7 @@ module.exports = {
                     title: 'Sprout Fields',
                     collapsable: false,
                     children: [
-                        '',
-                        'installing-and-updating',
-                        'upgrading-craft2-to-craft3'
+                        ''
                     ]
                 },
                 {
@@ -351,7 +404,7 @@ module.exports = {
                     children: [
                         'address-field',
                         'email-address-field',
-                        'email-select-field',
+                        'email-dropdown-field',
                         'gender-field',
                         'hidden-field',
                         'invisible-field',
@@ -362,6 +415,14 @@ module.exports = {
                         'regular-expression-field',
                         'url-field'
                     ]
+                },
+                {
+                    title: 'Installing & Updating',
+                    collapsable: false,
+                    children: [
+                        'installing-and-updating-craft-3',
+                        'installing-and-updating-craft-2'
+                    ]
                 }
             ],
 
@@ -371,15 +432,22 @@ module.exports = {
                     title: 'Sprout Lists',
                     collapsable: false,
                     children: [
-                        '',
-                        'installing-and-updating'
+                        ''
                     ]
                 },
                 {
-                    title: 'Developers',
+                    title: 'Plugin Development',
                     collapsable: false,
                     children: [
                         'list-types'
+                    ]
+                },
+                {
+                    title: 'Installing & Updating',
+                    collapsable: false,
+                    children: [
+                        'installing-and-updating-craft-3',
+                        'installing-and-updating-craft-2'
                     ]
                 }
             ],
@@ -405,17 +473,17 @@ module.exports = {
                         ['seo/', 'Sprout SEO'],
                         ['email/', 'Sprout Email'],
                         ['reports/', 'Sprout Reports'],
-                        ['import/', 'Sprout Import'] 
+                        ['import/', 'Sprout Import']
                     ]
                 },
                 {
-                    title: 'Utilities',
+                    title: 'Open Source',
                     collapsable: false,
                     children: [
-                        'active/',
-                        'encode-email/',
-                        'fields/',
-                        'lists/'
+                        ['active/', 'Sprout Active'],
+                        ['encode-email/', 'Sprout Encode Email'],
+                        ['fields/', 'Sprout Fields'],
+                        ['lists/', 'Sprout Lists']
                     ]
                 },
                 {
@@ -431,14 +499,21 @@ module.exports = {
                 {
                     title: 'Development',
                     collapsable: false,
-                    children: [ 
+                    children: [
                         'coding-guidelines',
                         'tools/php-storm',
                         'tools/sublime-text',
                         'tools/craftnet'
                     ]
-                },
+                }
             ]
         }
+    },
+    markdown: {
+        anchor: { level: [2, 3] },
+        config(md) {
+            let markup = require('vuepress-theme-craftdocs/markup');
+            md.use(markup);
+        }
     }
-}
+};

@@ -1,3 +1,5 @@
+## Hidden Field
+
 **_Note: The Sprout Forms Hidden Field will continue to be available in Craft 3. The Craft Hidden Field is deprecated and will be removed in Craft 3._**
 
 ----

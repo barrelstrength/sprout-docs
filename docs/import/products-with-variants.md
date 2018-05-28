@@ -1,12 +1,12 @@
-# Importing Craft Commerce Products and Variants
+# Commerce Products and Variants
 
 Sprout Import supports importing data to Craft Commerce Products Types with Product Fields and Variant Fields. Craft Commerce Products follow the same syntax as any other Element with the addition of a `variants` key. All of the same enhanced functionality like the `related` and `updateElement` keys are available when importing Craft Commerce Products.
 
-### Example of Product with a single variant
+## Example of Product with a single variant
 
 Similar to the Matrix Field, when importing Variants using the `variants` key, you can add an arbitrary number of variants using the convention `new1`, `new2`, `new3`, etc.
 
-### Craft 2
+## Craft 2
 
 ``` json
 [
@@ -52,11 +52,11 @@ Similar to the Matrix Field, when importing Variants using the `variants` key, y
 
 ```
 
-### Example of a product with related Product and Variants content
+## Example of a product with related Product and Variants content
 
 In this example we use the `related` key to find a match for an Asset and Category Relation field to the Product, and an Asset Relation field for the Variant.
 
-### Craft 2
+## Craft 2
 
 ``` json
 [

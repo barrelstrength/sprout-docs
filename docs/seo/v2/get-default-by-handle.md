@@ -1,3 +1,5 @@
+# getDefaultByHandle
+
 If you need to access one of your Meta Defaults direction in your template you can use the `getDefaultByHandle` tag.
 
 ``` twig

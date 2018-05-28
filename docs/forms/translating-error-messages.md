@@ -1,3 +1,5 @@
+# Translating Error Messages
+
 If you need to translate your Form error messages, currently, you will need to setup your Forms using custom HTML and prepare translations using translation files.  Craft has a helpful How To article: [How can I translate static text in my templates?](http://buildwithcraft.com/help/static-translations).
 
 Let's look at a breif overview of this method in the context of the Form plugin.

@@ -1,6 +1,6 @@
-# Matching relations based on attributes and criteria
+# Resolving relationships
 
-Sprout Import can help you resolve relationships based on several criteria. In the most direct way, you can import known relational data using the same data structure as Craft – an array of Element IDs `[4, 5, 6]`:
+Sprout Import can help you resolve relationships based on attributes and criteria. In the most direct way, you can import known relational data using the same data structure as Craft – an array of Element IDs `[4, 5, 6]`:
 
 ``` json
 [

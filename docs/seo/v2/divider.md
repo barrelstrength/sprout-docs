@@ -1,3 +1,5 @@
+# Divider
+
 Output your selected divider in your templates using the `divider` tag.
 
 ``` twig

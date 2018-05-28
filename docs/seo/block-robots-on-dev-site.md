@@ -1,3 +1,5 @@
+# Block Search Robots
+
 There are various methods to block robots from indexing your website. The Moz article [Robots.txt and Meta Robots](https://moz.com/learn/seo/robotstxt) discusses some of the methods in greater detail.
 
 If you would like to block robots using the meta `noindex` robots tag, you can do so with the following technique:

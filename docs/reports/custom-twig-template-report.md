@@ -1,3 +1,5 @@
+# Twig Template
+
 The **Twig Template** Data Source allows you to create reports in the Craft Control Panel using Twig Templates in your `craft/templates` folder.
 
 <iframe src="https://player.vimeo.com/video/248062317" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

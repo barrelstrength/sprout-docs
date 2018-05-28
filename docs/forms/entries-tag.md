@@ -1,3 +1,5 @@
+# Entries Tag
+
 You can fetch form Entries using the [same options you have for all Elements](http://buildwithcraft.com/docs/templating/elementcriteriamodel) as described in the Craft documentation.
 
 Here are a few examples.  

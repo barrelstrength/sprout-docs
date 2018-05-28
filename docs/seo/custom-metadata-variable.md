@@ -1,3 +1,5 @@
+# Custom Metadata Variable
+
 Sprout SEO generates the metadata that is output to your pages with the `sproutseo` tag:
 
 ``` twig

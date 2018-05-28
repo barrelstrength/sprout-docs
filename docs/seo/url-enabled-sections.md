@@ -1,4 +1,6 @@
-# Metadata and XML Sitemap support for all Elements Types
+# URL-Enabled Sections 
+
+Metadata and XML Sitemap support for all Elements Types
 
 Sprout SEO does not just help you manage extensive metadata for Entries. It can help you manage metadata for all URL-Enabled Element Types. This includes:
 

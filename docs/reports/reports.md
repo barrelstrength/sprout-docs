@@ -1,3 +1,5 @@
+# Reports
+
 _Note: Report integrations have been deprecated and removed in Craft 3. Similar saved reports will be possible using Sprout Import. Examples will be posted once we get those featured released with Sprout Import for Craft 3._
 
 You can create as many Reports as you'd like from a Data Source. Reports are saved instances of your Data Sources and their selected options. While Users can easily create Reports from existing Data Sources within Craft, developers can also create Reports that can be installed programmatically and reused.

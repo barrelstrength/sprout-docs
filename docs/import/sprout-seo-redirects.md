@@ -1,3 +1,5 @@
+# Sprout SEO Redirects
+
 Sprout Import provides a Sprout SEO Redirect import utility that can help you convert a spreadsheet of Redirects into a JSON format that can be imported with Sprout Import.
 
 To use this feature:

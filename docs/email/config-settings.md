@@ -1,3 +1,5 @@
+# Config Settings
+
 You can add the following settings to your `general.php` file.
 
 ### Mailer API settings

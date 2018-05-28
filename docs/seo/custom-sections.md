@@ -1,3 +1,5 @@
+# Custom Sections
+
 Custom Sections allow you to add arbitrary page URLs to your XML Sitemap and manage metadata for pages that may not be otherwise supported using the URL-Enabled Sections or Element Metadata field.
 
 ![Custom Sections]({asset:3370:url})

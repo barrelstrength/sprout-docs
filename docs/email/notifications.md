@@ -1,4 +1,4 @@
-## Email Notifications
+# Notification Emails
 
 Sprout Email allows you to create Email Notifications for Craft CMS.
 

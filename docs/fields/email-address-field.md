@@ -1,3 +1,5 @@
+## Email Address Field
+
 The Email Address field allows you to require a valid email address using Craft and Sprout Forms front-end Fields.
 
 ## Email Address Field Type

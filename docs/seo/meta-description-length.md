@@ -1,3 +1,5 @@
+# Meta Description Length
+
 For many years the recommended length of Meta Description content was around 160 characters. More recently, observations have been made that longer descriptions are also displayed by Google.
 
 Moz writes (in 2018):

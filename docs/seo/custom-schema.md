@@ -1,4 +1,4 @@
-# Customized Structured Data
+# Schema
 
 Sprout SEO allows you to map your content in Craft CMS to the be output as Structured Data. The mapping between your content and the Structured Data that gets output is called a schema. Sprout SEO supports two types of mappings
 

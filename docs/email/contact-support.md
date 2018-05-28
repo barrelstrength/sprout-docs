@@ -1,3 +1,5 @@
+# Contact Support
+
 Support is available for Sprout Email license holders.
 
 **Documentation**<br>

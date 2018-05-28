@@ -1,3 +1,5 @@
+# Thank You Page
+
 For most of your forms, you will want some sort of confirmation page letting the user know that the form was completed successfully.
 
 ## Using a query string to display a custom thank you message

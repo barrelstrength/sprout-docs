@@ -1,3 +1,5 @@
+# Payload Forwarding
+
 Sprout Forms allows you to send all of the fields submitted in a form submission (the Payload) to a custom endpoint (Custom Submit URL).  We call this feature Payload Forwarding.  
 
 The process works almost seamlessly with Sprout Forms. Your forms will still benefit from using custom field layouts, relations fields, field type validation, template overrides, and a familiar workflow around error and thank you messages.

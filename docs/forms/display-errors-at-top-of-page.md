@@ -1,3 +1,5 @@
+# Display Errors at top of page
+
 If you would like to display errors at the top of your page, you can access those errors in the `form.getErrors()` method.
 
 If your form submission does not validate, your page will reload with a variable that uses the same name as your form handle.  If you form handle is `contact` your errors will be available to you via `contact.getErrors()`.

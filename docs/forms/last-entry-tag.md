@@ -1,3 +1,5 @@
+# lastEntry Tag
+
 When a form has been submitted successfully, the user will be redirected to wherever the redirect setting points to.
 
 To display content from the submitted form after the form has been submitted, you can use the `lastEntry()` tag.

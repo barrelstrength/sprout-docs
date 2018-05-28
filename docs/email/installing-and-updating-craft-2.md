@@ -1,3 +1,5 @@
+# Craft 2
+
 ## Requirements
 
 * Craft 2.5 or a more recent version of Craft

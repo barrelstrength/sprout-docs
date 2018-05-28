@@ -1,3 +1,5 @@
+# Template Variables
+
 Sprout Email supports two types of syntax when referencing dynamic variables: shorthand syntax and object syntax. The From Name, From Email, Reply To Email, Recipients, all custom fields in your email entries, and your templates will accept dynamic variables and process Twig. For more information, see the section below on [considerations about syntax and processing order](/craft-plugins/email/docs/examples/template-variables#considerations-about-syntax-and-processing-order).
 
 ## Craft Events

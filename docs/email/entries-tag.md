@@ -1,3 +1,5 @@
+# Entries Tag
+
 To output your Campaign emails in your templates you can use the `craft.sproutEmail.entries` tag.  Here is a basic overview of what is available:
 
 ```twig

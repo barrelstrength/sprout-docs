@@ -1,3 +1,5 @@
+# Email Campaigns
+
 Sprout Email allows you to create Email Campaigns in Craft CMS. You can choose to send your Campaigns via several different Email Service Providers.
 
 - **MailChimp** - Send your email campaigns via MailChimp

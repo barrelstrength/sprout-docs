@@ -1,3 +1,5 @@
+# getOptimizedMeta
+
 The `getOptimizedMeta` tag will provide you a multi-dimensional array with all of your prioritized meta data to output and customize however you'd like.
 
 The content of the array will be grouped into the same groups you will find in the tabs of your Meta Defaults and the Meta Field Types.

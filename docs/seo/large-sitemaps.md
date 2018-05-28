@@ -1,3 +1,5 @@
+# Large Sitemaps
+
 Sprout SEO now supports large sitemaps. See the [Sitemap documentation]({entry:248:url}) for more information on how to enable Dynamic Sitemaps and customize the _Total Elements Per Sitemap_ setting for your needs.
 
 ![XML Sitemap Settings]({asset:4406:url})

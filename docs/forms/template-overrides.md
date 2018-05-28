@@ -1,3 +1,5 @@
+# Template Overrides
+
 Sprout Forms allows you to have 100% control over your dynamic form output using the Template Overrides feature.
 
 To enable this feature, go to `Sprout Forms->Settings->Advanced` and enable the override method you wish to use:

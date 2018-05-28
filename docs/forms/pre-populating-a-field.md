@@ -1,3 +1,5 @@
+# Pre-populating a Field
+
 When you want to pre-populate a field with a known value you have a few options. 
 
 The Sprout Fields [Hidden Field](https://sprout.barrelstrengthdesign.com/craft-plugins/fields/docs/overview/hidden-field) and [Invisible Field](https://sprout.barrelstrengthdesign.com/craft-plugins/fields/docs/overview/invisible-field) help do this for scenarios where you do not need the user to see the value in the field being populated.

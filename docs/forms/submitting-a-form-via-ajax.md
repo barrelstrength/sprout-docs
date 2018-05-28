@@ -1,3 +1,5 @@
+# Submitting a Form via AJAX
+
 To submit a Sprout Form via AJAX, you can do so just as you would any other form.
 
 Display your form on the page: 

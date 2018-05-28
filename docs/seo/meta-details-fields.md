@@ -1,3 +1,5 @@
+# Meta Details Fields
+
 Meta Details fields can be enabled for Sections and Element Metadata fields to give you or your SEO team granular control over your metadata.
 
 Meta Details fields display as matrix-style blocks. Users can optionally select one or more Meta Details blocks to override any specific fields for a metadata type.

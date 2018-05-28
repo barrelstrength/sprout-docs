@@ -1,3 +1,5 @@
+# Set Default Attributes
+
 Default attributes can be set in your Elements `settings` array using the `defaults` key. Default values will be used if no other value is defined in the `attributes` array. This can be helpful in scenarios such as when the data you are migrating exists for some Elements and not for other Elements. 
 
 Sprout Import will check for default attributes in the `defaults` key of the `settings` array. You can set a default for any attribute that exists on the Element Model that is being imported.

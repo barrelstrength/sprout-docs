@@ -4,7 +4,7 @@ For lack of a better word, _Settings Importers_ refer to any importers that don'
 
 Add support for importing any Craft or custom plugin settings by creating a Settings Importer integration.
 
-### Craft 3
+## Craft 3
 
 To add support for your custom Settings you will need to:
 
@@ -23,7 +23,7 @@ Event::on(Importers::class, Importers::EVENT_REGISTER_IMPORTER_TYPES, function(R
 
 Please refer to example Settings Importers in `sproutimport/src/integrations/sproutimport/settings` and `sproutbase/src/contracts/sproutimport/Importer` and `sproutbase/src/contracts/sproutimport/SettingsImporter` for more details.
 
-### Craft 2
+## Craft 2
 
 To add support for your custom settings you will need to:
 
@@ -50,7 +50,7 @@ public function registerSproutImportImporters()
 }
 ```
 
-### Settings Integrations
+## Settings Integrations
 
 The following plugins have Settings Importer integrations:
 

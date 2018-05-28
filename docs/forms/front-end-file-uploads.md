@@ -1,3 +1,5 @@
+# Front-end File Uploads
+
 ## Allow user to upload files via a form
 
 To allow a user to upload a file from the front-end, all you need to do is add an Assets field to your form. If you output your form using the `displayForm`, `displayTab`, or `displayField` tags, validation and error handling will be setup for you.

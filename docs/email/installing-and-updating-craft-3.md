@@ -1,3 +1,5 @@
+# Craft 3
+
 _Please read all of the details below before upgrading from Sprout Email 2.x to Sprout Email 3.x. If you are installing the plugin for the first time, you can ignore these instructions and install the plugin as usual._
 
 Sprout Email 3.0 adds many new features improving List and Mailer integrations. Due to the number of changes we had to make to make these features possible, we were unable to avoid a few extra steps during the upgrade process. If you are using Mailers for Campaign Emails or Recipient Lists you may be required to take these extra steps.

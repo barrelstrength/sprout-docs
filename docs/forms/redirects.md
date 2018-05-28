@@ -1,3 +1,5 @@
+# Redirects
+
 Sprout Forms allows you to set a redirect for your Form in the Form Settings or in the template.
 
 ``` twig

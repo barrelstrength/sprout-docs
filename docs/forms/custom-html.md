@@ -1,3 +1,5 @@
+# Custom HTML
+
 ## Working with a Custom HTML Form
 
 Sprout Forms gives you 100% control over your form templates. If you need to customize your form, [Template Overrides]({entry:1139:url}) and the [Front-end Field API]({entry:1129:url}) are good places to start. They address the majority of what you need to have control over the markup and styles in your templates, specialized fields, and custom validation.

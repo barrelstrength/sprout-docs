@@ -1,3 +1,5 @@
+# Notification Events
+
 You can trigger Sprout Email Notifications via custom events in your own plugins.
 
 Adding custom events involves:

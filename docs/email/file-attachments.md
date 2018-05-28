@@ -1,3 +1,5 @@
+# File Attachments
+
 You can enable Notification emails to attach files. 
 
 ![Enable File Attachments in Email]({asset:1267:url})

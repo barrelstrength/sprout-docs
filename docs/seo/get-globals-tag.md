@@ -1,3 +1,5 @@
+# getGlobals
+
 You can display all Global Metadata in your template using the `getGlobals` tag.
 
 ``` twig
