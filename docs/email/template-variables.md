@@ -11,8 +11,8 @@ Sprout Email supports two types of syntax when referencing dynamic variables: sh
 
 **Example variable syntax**
 
-- {title}
-- {{ object.title }}
+- `{title}`
+- `{{ object.title }}`
 
 ### User Events
 
@@ -24,8 +24,8 @@ Sprout Email supports two types of syntax when referencing dynamic variables: sh
 
 **Example variable syntax**
 
-- {email}
-- {{ object.email }}
+- `{email}`
+- `{{ object.email }}`
 
 ## Craft Commerce Events
 
@@ -35,8 +35,8 @@ Sprout Email supports two types of syntax when referencing dynamic variables: sh
 
 **Example variable syntax**
 
-- {number}
-- {{ object.number }}
+- `{number}`
+- `{{ object.number }}`
 
 ### Transactions
 
@@ -44,8 +44,8 @@ Sprout Email supports two types of syntax when referencing dynamic variables: sh
 
 **Example variable syntax**
 
-- {amount}
-- {{ object.amount }}
+- `{amount}`
+- `{{ object.amount }}`
 
 ### Statuses
 
@@ -55,15 +55,15 @@ _Note: This event provides two objects, so the syntax is slightly different_
 
 **Example variable syntax for the Commerce_OrderModel**
 
-- {order.number}
-- {{ object.order.number }}
+- `{order.number}`
+- `{{ object.order.number }}`
 
 **Example variable syntax for the Commerce_OrderHistoryModel**
 
-- {orderHistory.newStatus.name}
-- {orderHistory.prevStatus.name}
-- {{ object.orderHistory.newStatus.name }}
-- {{ object.orderHistory.prevStatus.name }}
+- `{orderHistory.newStatus.name}`
+- `{orderHistory.prevStatus.name}`
+- `{{ object.orderHistory.newStatus.name }}`
+- `{{ object.orderHistory.prevStatus.name }}`
 
 ## Sprout Plugins
 
@@ -73,8 +73,8 @@ _Note: This event provides two objects, so the syntax is slightly different_
 
 **Example variable syntax (assumes a custom field named email exists)**
 
-- {email}
-- {{ object.email }}
+- `{email}`
+- `{{ object.email }}`
 
 
 ## Considerations about syntax and processing order
