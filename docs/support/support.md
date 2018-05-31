@@ -35,10 +35,10 @@ We monitor Craft Stack Exchange for posts tagged:
 
 ### Email
 
-For bugs or general support that doesn't fall in another category, please contact us at: `sprout@barrelstrengthdesign.com`
+For bugs or general support that doesn't fall in another category, please contact us at: [sprout@barrelstrengthdesign.com](mailto:sprout@barrelstrengthdesign.com)
 
 ### Unofficial Support Channels
 
-While you may find Sprout team members on Craft Slack, Twitter or over private email, we do not monitor these channels for support and messages can be overlooked or lost to history.
+While you may find Sprout team members on Craft Slack, Twitter, or over private email, we do not monitor these channels for support and messages can be overlooked or lost to history.
 
 If you are in need of support, please use one of the official support channels listed above.

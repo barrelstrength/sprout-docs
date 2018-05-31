@@ -4,6 +4,8 @@ View and upvote existing Feature Requests or add your own on the public Github r
 
 ::: tip
 If you need a planned feature that we have not yet added, consider hiring us. We are available for custom development and consulting services and are happy to improve or extend our plugins based on your project needs. 
+
+Contact us: [sprout@barrelstrengthdesign.com](mailto:sprout@barrelstrengthdesign.com)
 :::
 
 ## Business Suite Plugins

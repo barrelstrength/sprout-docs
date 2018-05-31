@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Sprout Docs',
     description: 'Sprout Documentation',
-    // theme: 'craftdocs',
+    theme: 'craftdocs',
     themeConfig: {
         docsRepo: 'barrelstrength/sprout-docs',
         docsDir: 'docs',
@@ -9,8 +9,23 @@ module.exports = {
         editLinks: true,
         codeLanguages: {
             twig: 'Twig',
-            php: 'PHP'
+            php: 'PHP',
+            craft2: 'Craft 2',
+            craft3: 'Craft 3'
         },
+        nav: [
+            {
+                text: 'Plugin Docs',
+                items: [
+                    { text: 'Sprout Forms', link: '/forms/' },
+                    { text: 'Sprout SEO', link: '/seo/' },
+                    { text: 'Sprout Email', link: '/email/' },
+                    { text: 'Sprout Reports', link: '/reports/' },
+                    { text: 'Sprout Import', link: '/import/' }
+                ]
+            },
+            { text: 'Website', link: 'https://sprout.barrelstrengthdesign.com/' },
+        ],
         sidebar: {
             '/forms/': [
                 ['../', '← All Plugins'],
@@ -459,10 +474,11 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '/',
-                        'features',
+                        'why-sprout',
+                        'core-concepts',
                         'integrations',
                         'multi-site',
-                        'agencies'
+                        'businesses'
                     ]
                 },
                 {
@@ -501,9 +517,9 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'coding-guidelines',
-                        'tools/php-storm',
-                        'tools/sublime-text',
-                        'tools/craftnet'
+                        ['tools/php-storm', 'PhpStorm'],
+                        ['tools/sublime-text', 'Sublime Text'],
+                        ['tools/craftnet', 'Craftnet']
                     ]
                 }
             ]

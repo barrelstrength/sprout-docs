@@ -1,11 +1,8 @@
 # Coding Guidelines
 
-Wherever possible, we try to match Craft's conventions outlined in the [Coding Guidelines](https://github.com/craftcms/docs/blob/master/en/coding-guidelines.md). Some tools to help achieve that include:
+A central principle of the Sprout Plugin Suite is to create a user experience that looks an feels like a users native experience with Craft CMS. Toward that end, wherever possible, Sprout adopts conventions set forth by Craft CMS.
 
-- [PhpStorm Settings for Craft CMS](https://github.com/PhpStorm-Live-Templates-Craft-CMSs/phpstorm-settings)
-- [PhpStorm Live Templates for Craft CMS](https://github.com/barrelstrength/PhpStorm-Live-Templates-Craft-CMS)
-- [PhpStorm Live Templates for Twig](https://github.com/barrelstrength/PhpStorm-Live-Templates-Twig-Extended)
-- [Craft Twig for Sublime Text](https://github.com/barrelstrength/Craft-Twig.tmbundle)
+Wherever possible, we try to match Craft's conventions outlined in the [Coding Guidelines](https://github.com/craftcms/docs/blob/master/en/coding-guidelines.md).
 
 ## Sprout Guidelines
 
@@ -167,6 +164,31 @@ public function init()
     self::$app = $this->get('app');
 }
 ```
+
+## Console Requests
+
+Any actions that are run via console, the queue, or might be used in a third-party plugin via a queue are considered console requests and we should support them by avoiding to use any Web-only methods.
+
+Web-only Application methods can be seen in `craftcms/cms/src/config/app.web.php` and should only be used in Web Controllers. Logic in Models and the Service Layer should depend only on classes that are supported by both Web and Console requests.
+
+Web-only Application classes include classes loaded as components in the `app.web.php` file:
+
+- craft\web\AssetManager
+- craft\web\Request
+- craft\web\Response
+- craft\web\Session
+- craft\web\UrlManager
+- craft\web\User
+- craft\web\ErrorHandler
+
+And any other classes found in the `craftcms/cms/src/web` folder:
+
+- craft\web\AssetBundle
+- craft\web\Controller
+- craft\web\ServiceUnavailableHttpException
+- craft\web\UploadedFile
+- craft\web\UrlRule
+- craft\web\View
 
 ------------------------------------------------------------
 

@@ -1,3 +1,3 @@
-# Sublime Text
+# Sublime Text Resources
 
-- Craft Twig
+- [Craft Twig for Sublime Text](https://github.com/barrelstrength/Craft-Twig.tmbundle)

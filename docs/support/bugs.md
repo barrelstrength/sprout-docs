@@ -4,18 +4,18 @@ View known issues or submit a bug report on the Github repo for each plugin. See
 
 ## Business Suite Plugins
 
-- [Sprout Forms](https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
-- [Sprout SEO](https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
-- [Sprout Email](https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
-- [Sprout Reports](https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
-- [Sprout Import](https://github.com/barrelstrength/craft-sprout-import/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
+- Sprout Forms ([Craft 3](https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+3%22), [Craft 2](https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+2%22))
+- Sprout SEO ([Craft 3](https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+3%22), [Craft 2](https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+2%22))
+- Sprout Email ([Craft 3](https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+3%22), [Craft 2](https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+2%22))
+- Sprout Reports ([Craft 3](https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+3%22), [Craft 2](https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+2%22))
+- Sprout Import ([Craft 3](https://github.com/barrelstrength/craft-sprout-import/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+3%22), [Craft 2](https://github.com/barrelstrength/craft-sprout-import/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+2%22))
 
 ## Open Source Plugins
 
-- [Sprout Active](https://github.com/barrelstrength/craft-sprout-active/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
-- [Sprout Encode Email](https://github.com/barrelstrength/craft-sprout-encode-email/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
-- [Sprout Fields](https://github.com/barrelstrength/craft-sprout-fields/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
-- [Sprout Lists](https://github.com/barrelstrength/craft-sprout-lists/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
+- Sprout Active ([Craft 3](https://github.com/barrelstrength/craft-sprout-active/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+3%22), [Craft 2](https://github.com/barrelstrength/craft-sprout-active/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+2%22))
+- Sprout Encode Email ([Craft 3](https://github.com/barrelstrength/craft-sprout-encode-email/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+3%22), [Craft 2](https://github.com/barrelstrength/craft-sprout-encode-email/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+2%22))
+- Sprout Fields ([Craft 3](https://github.com/barrelstrength/craft-sprout-fields/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+3%22), [Craft 2](https://github.com/barrelstrength/craft-sprout-fields/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+2%22))
+- Sprout Lists ([Craft 3](https://github.com/barrelstrength/craft-sprout-lists/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+3%22), [Craft 2](https://github.com/barrelstrength/craft-sprout-lists/issues?q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Craft+2%22))
 
 ## Open Source Tools
 - [PhpStorm Live Templates for Craft CMS](https://github.com/barrelstrength/PhpStorm-Live-Templates-Craft-CMS/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
