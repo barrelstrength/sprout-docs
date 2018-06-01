@@ -2,6 +2,7 @@ module.exports = {
     title: 'Sprout Docs',
     description: 'Sprout Documentation',
     theme: 'craftdocs',
+    base: 'docs',
     themeConfig: {
         docsRepo: 'barrelstrength/sprout-docs',
         docsDir: 'docs',
@@ -10,6 +11,7 @@ module.exports = {
         codeLanguages: {
             twig: 'Twig',
             php: 'PHP',
+            js: 'Javascript',
             craft2: 'Craft 2',
             craft3: 'Craft 3'
         },
@@ -21,7 +23,13 @@ module.exports = {
                     { text: 'Sprout SEO', link: '/seo/' },
                     { text: 'Sprout Email', link: '/email/' },
                     { text: 'Sprout Reports', link: '/reports/' },
-                    { text: 'Sprout Import', link: '/import/' }
+                    { text: 'Sprout Import', link: '/import/' },
+                    { text: '–', link: '' },
+                    { text: 'Sprout Active', link: '/active/' },
+                    { text: 'Sprout Encode Email', link: '/encode-email/' },
+                    { text: 'Sprout Fields', link: '/fields/' },
+                    { text: 'Sprout Lists', link: '/lists/' },
+                    { text: 'Sprout Notes', link: '/notes/' }
                 ]
             },
             { text: 'Website', link: 'https://sprout.barrelstrengthdesign.com/' },
@@ -414,21 +422,29 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Fields',
+                    title: 'Field Types',
                     collapsable: false,
                     children: [
                         'address-field',
-                        'email-address-field',
-                        'email-dropdown-field',
+                        'email-field',
                         'gender-field',
-                        'hidden-field',
-                        'invisible-field',
                         'name-field',
                         'notes-field',
-                        'phone-number-field',
+                        'phone-field',
                         'predefined-field',
                         'regular-expression-field',
                         'url-field'
+                    ]
+                },
+                {
+                    title: 'Field Types - Craft 2',
+                    collapsable: false,
+                    children: [
+                        'email-dropdown-field',
+                        'hidden-field',
+                        'invisible-field',
+                        'notes-field-c2',
+                        'phone-field-c2'
                     ]
                 },
                 {
@@ -455,6 +471,25 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'list-types'
+                    ]
+                },
+                {
+                    title: 'Installing & Updating',
+                    collapsable: false,
+                    children: [
+                        'installing-and-updating-craft-3',
+                        'installing-and-updating-craft-2'
+                    ]
+                }
+            ],
+
+            '/notes/': [
+                ['../', '← All Plugins'],
+                {
+                    title: 'Sprout Notes',
+                    collapsable: false,
+                    children: [
+                        ''
                     ]
                 },
                 {
@@ -499,7 +534,8 @@ module.exports = {
                         ['active/', 'Sprout Active'],
                         ['encode-email/', 'Sprout Encode Email'],
                         ['fields/', 'Sprout Fields'],
-                        ['lists/', 'Sprout Lists']
+                        ['lists/', 'Sprout Lists'],
+                        ['notes/', 'Sprout Notes']
                     ]
                 },
                 {

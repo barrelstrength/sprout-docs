@@ -1,14 +1,16 @@
-# Sprout Lists
+# Introduction
 
 Sprout Lists allows your users to:
 
-<i class="fa fa-check-square fa-fw update-improved"></i> Subscribe and unsubscribe to things<br>
-<i class="fa fa-heart fa-fw update-improved"></i> Follow or unfollow things<br>
-<i class="fa fa-thumbs-up fa-fw update-improved"></i> Like or unlike things<br>
+- Subscribe and unsubscribe to things
+- Follow or unfollow things
+- Like or unlike things
 
-Subscribers can be added and removed to Lists within Craft, using the default Subscriber List Type, or third-party lists using a [Custom List Type](/craft-plugins/lists/docs/developers/list-types) integration.
+Subscribers can be added and removed to Lists within Craft, using the default Subscriber List Type, or third-party lists using a [Custom List Type](./list-types.html) integration.
 
-_Note: We will use the term **Subscribe** throughout the docs, but you can substitute in the terms **Like** or **Follow** as you prefer._
+::: tip
+We will use the term **Subscribe** throughout the docs, but you can substitute in the terms **Like** or **Follow** as you prefer.
+:::
 
 ## Subscribers
 
@@ -33,18 +35,20 @@ User Sync will behave as follows when enabled:
 - When a new user is created and saved in Craft, if there are any matching Subscribers in Sprout Lists, their Sprout Lists Subscriber Records will be linked to the Craft User account.
 - When any updates are made to the Email, First Name, and Last Name fields of a Sprout Lists Subscriber or Craft User, those updates will be reflected in both places
 
-_Note: With User Sync enabled, if you submit a blank value for the First Name or Last Name fields (in Sprout List or Craft), the field will also be updated with a blank value in the other location. You will need to enforce First Name and Last Name fields as required if necessary._
-
-
-
+::: warning
+With User Sync enabled, if you submit a blank value for the First Name or Last Name fields (in Sprout List or Craft), the field will also be updated with a blank value in the other location. You will need to enforce First Name and Last Name fields as required if necessary.
+:::
 
 ## Subscribe and Unsubscribe Forms
 
-Example subscribe and unsubscribe form for known Craft Users using an hidden `userId` field:
 
-### Craft 3
+### Craft Users
 
-``` twig
+Example subscribe and unsubscribe form for known Craft Users using a hidden `userId` field:
+
+::: code
+
+``` craft3
 {% set params = {
   listHandle: 'listHandle',
   userId: currentUser.id,
@@ -76,9 +80,7 @@ Example subscribe and unsubscribe form for known Craft Users using an hidden `us
 {% endif %}
 ```
 
-### Craft 2
-
-``` twig
+``` craft2
 {% set params = {
   listHandle: 'listHandle',
   userId: currentUser.id,
@@ -90,10 +92,10 @@ Example subscribe and unsubscribe form for known Craft Users using an hidden `us
 
   {# Unsubscribe a user from a specific List #}
   <form method="post" accept-charset="utf-8">
-  	<input type="hidden" name="action" value="sproutLists/lists/unsubscribe">
-  	<input type="hidden" name="listHandle" value="listHandle">
-  	<input type="hidden" name="elementId" value="{{ entry.id }}">
-  	<input type="hidden" name="userId" value="{{ currentUser.id }}">
+    <input type="hidden" name="action" value="sproutLists/lists/unsubscribe">
+    <input type="hidden" name="listHandle" value="listHandle">
+    <input type="hidden" name="elementId" value="{{ entry.id }}">
+    <input type="hidden" name="userId" value="{{ currentUser.id }}">
     <input type="submit" value="Remove from List">
   </form>
 
@@ -101,21 +103,26 @@ Example subscribe and unsubscribe form for known Craft Users using an hidden `us
 
   {# Subscribe a user to a specific List #}
   <form method="post" accept-charset="utf-8">
-  	<input type="hidden" name="action" value="sproutLists/lists/subscribe">
-  	<input type="hidden" name="listHandle" value="listHandle">
-  	<input type="hidden" name="elementId" value="{{ entry.id }}">
-  	<input type="hidden" name="userId" value="{{ currentUser.id }}">
+    <input type="hidden" name="action" value="sproutLists/lists/subscribe">
+    <input type="hidden" name="listHandle" value="listHandle">
+    <input type="hidden" name="elementId" value="{{ entry.id }}">
+    <input type="hidden" name="userId" value="{{ currentUser.id }}">
     <input type="submit" value="Add to List">
   </form>
 
 {% endif %}
 ```
 
+:::
+
+
+### Anonymous Users
+
 Example subscribe and unsubscribe form for an anonymous user with an email address using an `email` field. Note the `email` field in place of the `userId` field in the last example.
 
-### Craft 3
+::: code
 
-``` twig
+``` craft3
 {# Allow a user to submit their email to unsubscribe from a specific List #}
 <form method="post" accept-charset="utf-8">
   {{ csrfInput() }}
@@ -138,9 +145,7 @@ Example subscribe and unsubscribe form for an anonymous user with an email addre
 </form>
 ```
 
-### Craft 2
-
-``` twig
+``` craft2
 {# Allow a user to submit their email to unsubscribe from a specific List #}
 <form method="post" accept-charset="utf-8">
   <input type="hidden" name="action" value="sproutLists/lists/unsubscribe">
@@ -160,6 +165,8 @@ Example subscribe and unsubscribe form for an anonymous user with an email addre
   <input type="submit" value="Add to List">
 </form>
 ```
+
+:::
 
 ### craft.sproutLists.isSubscribed()
 
@@ -183,7 +190,7 @@ The _userId_ can only be used if you `Enable User Sync` in the Sprout Lists sett
 ``` twig
 {# Total Subscribers on a given List #}
 {% set totalSubscribers = craft.sproutLists.subscriberCount({ 
-	listHandle: 'listHandle' 
+  listHandle: 'listHandle' 
 }) %}
 
 {{ totalSubscribers }}
@@ -209,7 +216,9 @@ The _userId_ can only be used if you `Enable User Sync` in the Sprout Lists sett
 {{ totalLists }}
 ```
 
-## Getting and displaying all Subscribers (or Users) on a List
+## Listing all Subscribers
+
+To retrieve and display all Subscribers (or Users) on a List:
 
 ``` twig
 {# All Subscribers on a List #}
@@ -219,9 +228,9 @@ The _userId_ can only be used if you `Enable User Sync` in the Sprout Lists sett
 
 {# Looping through the Sprout Lists Subscribers results #}
 {% for subscriber in subscribers %}
-	{{ subscriber.email }}
-	{{ subscriber.firstName }}
-	{{ subscriber.lastName }}
+  {{ subscriber.email }}
+  {{ subscriber.firstName }}
+  {{ subscriber.lastName }}
 {% endfor %}
 
 {# Looping through the Subscriber results as Users using the `subscriberUserIds` filter #}

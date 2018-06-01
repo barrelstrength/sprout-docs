@@ -1,4 +1,4 @@
-## Email Dropdown Field
+# Email Dropdown Field
 
 **_Note: The Sprout Forms Email Select field will continue to be available in Craft 3 with the new name: Email Dropdown. The Craft Email Select field is deprecated and will be removed in Craft 3._**
 

@@ -1,18 +1,22 @@
-## Gender Field
+# Gender Field
 
-**_Note: The Gender Field is only available for Craft 3._**
+The Gender Field is a gender neutral field type for Craft CMS. Allow your users to choose a gender, decline the question, or provide a custom value.
 
-The Sprout Gender Field is a Gender Neutral field type for Craft CMS. Allow your users to choose a Gender, decline the question, or provide a custom value.
+![Gender Neutral Field](./../images/fields/sprout-gender-field.png)
 
-![Gender Neutral Field]({asset:5218:url})
-
-![Gender Neutral Field]({asset:5217:url})
+![Gender Neutral Field](./../images/fields/sprout-gender-field-dropdown.png)
 
 ## Templates
 
-Display your gender field value in your templates:
+You can access your Gender Field in your templates via it's field handle. 
 
 ``` twig
-{# Gender #}
 {{ entry.genderField }}
 ```
+
+## Availability
+
+| Craft Version | Available |
+|:------------- |:---------:|
+| Craft 3       | **✓** |
+| Craft 2       | **✗** |

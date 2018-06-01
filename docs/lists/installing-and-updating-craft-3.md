@@ -2,7 +2,7 @@
 
 ## Requirements
 
-* Craft CMS 3.0.0-RC1 or a more recent version of Craft
+* Craft CMS 3.0.0 or a more recent version of Craft
 
 ## Installation via Plugin Store
 
@@ -11,6 +11,6 @@
 
 ## Installation via Composer 
 
-1. Open your terminal and go to your Craft project:<br>`cd /path/to/project`
-2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-encode-email`
+1. Open your terminal and go to your Craft project:<br> `cd /path/to/project`
+2. Then tell Composer to load the plugin:<br> `composer require barrelstrength/sprout-lists`
 3. In the Control Panel, go to _Settings → Plugins_ and select “Install”

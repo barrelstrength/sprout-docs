@@ -1,7 +1,5 @@
 # Predefined Field
 
-**_Note: The Predefined Field is only available for Craft 3._**
-
 The Predefined Field allows you parse Twig and define the value of your field ahead of time. This can be useful to help optimize queries or prepare data for a specific use case before it is needed.
 
 The Predefined Field is not editable.
@@ -26,13 +24,13 @@ And shorthand syntax:
 {customField.first().id}
 ```
 
-## Matrix Field Usage
+### Matrix Field Usage
 
 Matrix Blocks are Elements too. If you use a Predefined Field within a matrix block, the `object` available to the Predefined Field is a `MatrixBlockModel` and any custom fields available in the Matrix Block:
 
 ``` twig
-{type}
 {{ object.type }}
+{type}
 ```
 
 To reference the parent Element of the Matrix Block, you can use the `owner` property:
@@ -50,3 +48,10 @@ Or shorthand:
 {owner.customField}
 {owner.customField.first().id}
 ```
+
+## Availability
+
+| Craft Version | Available |
+|:------------- |:---------:|
+| Craft 3       | **✓** |
+| Craft 2       | **✗** |

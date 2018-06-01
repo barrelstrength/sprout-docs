@@ -1,26 +1,22 @@
-## Name Field
-
-**_Note: The Name Field is only available for Craft 3._**
+# Name Field
 
 The Name Field gives you a way to capture your users name with a single input field or manage names in multiple name fields: Prefix, First, Middle, Last, and Suffix.
 
-## Default Name Field
-
-![Name Field - Short Version]({asset:5220:url})
+## Single Field
 
 The Name Field defaults to display a single, international-friendly, field. While only a single field displays, the Name field captures the data from this single field into two fields behind the scenes.
 
+![Name Field - Short Version](./../images/fields/sprout-name-single.png) 
+
 Everything before the first space is considered the _First Name_ and everything that comes after the first space is considered the _Last Name_. 
 
-## Complex Name Field
-
-![Name Field - Long Version]({asset:5219:url})
+## Multiple Fields
 
 If you have stricter data requirements and are willing to take on the challenge of capturing an international range of name requirements in more structured fields, you can enable the Name Field to display 2 or more fields.
 
-![Name Field - Settings]({asset:5221:url})
+![Name Field - Long Version](./../images/fields/sprout-name-multiple.png)
 
-## Template Variable
+## Templates
 
 The Name field returns a Name Model to your Twig template.
 
@@ -43,3 +39,16 @@ For consistency, the `getFriendlyName()` and `getFullName()` methods return the 
 {{ entry.nameField.lastName }}
 {{ entry.nameField.suffix }}
 ```
+
+## Settings
+
+Select which combination of fields you wish to display in your settings:
+
+![Name Field - Settings](./../images/fields/sprout-name-field-settings.png) 
+
+## Availability
+
+| Craft Version | Available |
+|:------------- |:---------:|
+| Craft 3       | **✓** |
+| Craft 2       | **✗** |

@@ -1,8 +1,4 @@
-## Hidden Field
-
-**_Note: The Sprout Forms Hidden Field will continue to be available in Craft 3. The Craft Hidden Field is deprecated and will be removed in Craft 3._**
-
-----
+# Hidden Field
 
 The Hidden field allows you to create a hidden input and set it's value. The Hidden field is designed to be used as a Sprout Forms front-end Field.
 
@@ -68,3 +64,14 @@ Now, we can set our hidden field value using this variable:
 ## Validation
 
 Currently, hidden field provides no validation.
+
+## Availability
+
+| Craft Version | Available |
+|:------------- |:---------:|
+| Craft 3       | **✗** |
+| Craft 2       | **✓** |
+
+::: tip
+The Hidden Field works with Sprout Forms for Craft 2. This field is included by default in Sprout Fields for Craft 3.
+:::

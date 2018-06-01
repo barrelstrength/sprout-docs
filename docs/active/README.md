@@ -2,7 +2,7 @@
 
 Sprout Active makes it simple to control the active classname in your navigation or conditional content based on your URL segments or your full URL.
 
-## Managing Navigation and Selected States
+## Segments
 
 Sprout Active provides two Twig Filters, `active()` and  `activeClass()`, to test for matching URL segments and output a class to make an element active.
 
@@ -26,7 +26,7 @@ To target your home page, you can just reference a blank value.  This example wi
 {{ activeClass('') }}
 ```
 
-## Targeting a different URL segment
+### Targeting a different URL segment
 
 To target other parts of your URL, pass the number of the URL segment you want to match as the second argument in the active or activeClass functions.
 
@@ -38,7 +38,7 @@ This example will look for a match in the second segment of the URL `http://exam
 {{ activeClass('meet-the-team', 2) }}
 ```
 
-## Using a different class name
+### Using a custom class name
 
 If you prefer to use a different class name, you can provide the class you want to use as the third argument in the active and activeClass functions.
 
@@ -50,7 +50,7 @@ This example, will look for a match in the first segment of your URL, and return
 {{ activeClass('about-us', 1, 'highlight') }}
 ```
 
-## Testing for multiple values
+### Testing for multiple matches
 
 In a situation where you need to test for multiple values, you can use the pipe delimiter.
 
@@ -62,7 +62,7 @@ This example will find a match if the first segment is either 'about-us' or 'mee
 {{ activeClass('about-us|meet-the-team') }}
 ```
 
-## Targeting the Full URL
+## Absolute URLs
 
 Sometimes, such as when using Structure sections, you may need to target the full URL.  In these cases, instead of passing a segment number you can pass the keyword `url`. In the following code, if the page.url variable matches the current page url, the 
 	
@@ -92,7 +92,7 @@ This will get us the same result as using the craft.request tag:
 {{ craft.request.getSegment(2) }}
 ```
 
-## Using the active filter to conditionally display content
+## Conditionals
 
 Sprout Active also provides us a short syntax to use for conditional statements.  The following code will return content when the third segment doesn't exist.
 
