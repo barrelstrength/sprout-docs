@@ -41,14 +41,15 @@ Class Optimize
         // Let's remove current title
         $currentTitle = $dom->find('title', 0);
         if ($currentTitle){
-            $currentTitle->innertext = '';
+            $currentTitle->outertext  = '';
         }
-
         // Let's remove the current description
         $currentDescription = $dom->find( "meta[name=description]", 0);
         if ($currentDescription){
-            $currentDescription->innertext = '';
+            $currentDescription->outertext  = '';
         }
+
+        $dom->save($htmlPath);
 
         $title = isset($h1[0]) ? $h1[0]->text() : $defaultTitle;
         $head->innertext = "<title> content='{$title}'</title>".$head->innertext;
