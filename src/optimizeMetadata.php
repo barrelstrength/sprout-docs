@@ -38,9 +38,6 @@ Class Optimize
         $h1 = $dom->find('div[id="app"] div.content h1');
         $p = $dom->find('div[id="app"] div.content p');
 
-        echo  $htmlPath ;
-        die();
-
         // Let's remove current title
         $currentTitle = $dom->find('title', 0);
         if ($currentTitle){
