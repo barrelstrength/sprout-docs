@@ -52,7 +52,7 @@ Class Optimize
         $dom->save($htmlPath);
 
         $title = isset($h1[0]) ? $h1[0]->text() : $defaultTitle;
-        $head->innertext = "<title> content='{$title}'</title>".$head->innertext;
+        $head->innertext = "<title>'{$title}'</title>".$head->innertext;
 
         $paragrah = isset($p[0]) ? $p[0]->text() : $title;
 
