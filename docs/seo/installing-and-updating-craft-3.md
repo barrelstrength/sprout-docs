@@ -1,4 +1,6 @@
-# Updating to Sprout SEO 3
+# Craft 3
+
+## Updating to Sprout SEO 3
 
 Sprout SEO 3 brings adds extensive support for **Structured Data**, allowing you to generate Rich Cards using JSON-LD; introduces **URL-Enabled Sections** and the **Element Metadata field**, which both greatly simplify the complexity of managing SEO for content editors; and introduces **content-focused SEO and usability improvements**, so your content editors always know when they are modifying metadata and what types of metadata they will affect.
 

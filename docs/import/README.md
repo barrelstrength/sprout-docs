@@ -1,4 +1,4 @@
-# Sprout Import
+# Introduction
 
 Import data to Craft, Craft Commerce, the Sprout Plugin Suite, and add your own custom integrations. Sprout Import is an extremely flexible and extensible import plugin that makes it easy to:
 
@@ -6,7 +6,7 @@ Import data to Craft, Craft Commerce, the Sprout Plugin Suite, and add your own 
 - Import settings and common patterns to get your projects started quickly
 - Seed your database with fake data (which can later be removed without affecting your real data) 
 
-View the list of [over 40 importable data-types]({entry:2215:url}).
+View the list of [over 40 importable data-types](./supported-data-types.md).
 
 ## Seeding and Weeding
 
@@ -20,7 +20,7 @@ Currently, Sprout Import supports importing data in JSON format that maps to Cra
 
 Examples of several different data models for Elements, Fields, and Settings can be found within the plugin in the `sproutimport/examples` folder.
 
-## Importing your data
+## Import Methods
 
 Once your data is prepared as valid Craft Import Format JSON, you can import it into Craft using Sprout Import via:
 
@@ -28,10 +28,10 @@ Once your data is prepared as valid Craft Import Format JSON, you can import it 
 - File Upload (via one or more json files)
 - Programmatically
 
-## Integrations
+## Plugin Development
 
-If you wish to add support for additional data types, see our documentation on Integrations. Sprout Import supports three types of integrations:
+If you wish to add support for additional data types, see our documentation on Plugin Development. Sprout Import supports three types of integrations:
 
-- **Element Importers** - for importing Element Types and their related attributes
-- **Settings Importers** - for non-Elemental things
-- **Field Importers** - for generating fake data
+- [Element Importers](./element-importers.md) - for importing Element Types and their related attributes
+- [Settings Importers](./settings-importer.md) - for non-Elemental things
+- [Field Importers](./field-importers.md) - for generating fake data

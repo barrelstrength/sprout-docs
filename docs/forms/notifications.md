@@ -1,4 +1,4 @@
-# Dynamic Notifications
+# Notifications
 
 When a Sprout Form is submitted you can trigger a Notification Email to yourself or the user submitting the form. To do so, enable the Notification from your Forms `Notification` tab and fill in the settings.
 

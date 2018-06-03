@@ -2,14 +2,16 @@
 
 Sprout Import supports importing Matrix fields on any supported Element using the Matrix; any number of block types; all supported fields used on those block types; and matching relational content and resolving relationships on block types. Hooray!
 
-## Example of Matrix field definition
+## Matrix Syntax
 
 Here is an example of an Entry Model with a Matrix field and two blocks. When importing matrix blocks you will need to name each item in the matrix block array with the `new` prefix and increment each block by one: `new1`, `new2`, `new3`:
 
-``` javascript
+::: code
+
+``` craft3
 [  
 	{
-    "@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry",
+    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
       "title": "Aliquid vero ut libero nostrum soluta.",
@@ -38,16 +40,50 @@ Here is an example of an Entry Model with a Matrix field and two blocks. When im
 ]
 ```
 
-_Use "@model": "EntryModel" in Craft 2_
+``` craft2
+[  
+	{
+    "@model": "EntryModel",
+    "attributes": { ... },
+    "content": {
+      "title": "Aliquid vero ut libero nostrum soluta.",
+      "fields": {
+        "subheading": "Unde ut enim sed maxime.",
+        "articleBody": {
+          "new1": {
+            "type": "heading",
+            "enabled": 1,
+            "fields": {
+              "heading": "Hic suscipit esse temporibus quia."
+            }
+          },
+          "new2": {
+            "type": "image",
+            "enabled": 1,
+            "fields": {
+              "image": [223],
+              "caption": "Deserunt quam cupiditate fugit et dolorem saepe."
+            }
+          }
+        }
+      }
+    }
+  }
+]
+```
 
-## Example of Matrix field with related key
+:::
+
+## Matrix with Relationships
 
 If you have Relations on your Matrix Blocks, you can also use the `related` key:
 
-``` javascript
+::: code
+
+``` craft3
 [  
 	{
-    "@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry",
+    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
       "title": "Aliquid vero ut libero nostrum soluta.",
@@ -69,7 +105,7 @@ If you have Relations on your Matrix Blocks, you can also use the `related` key:
             },
 						"related": {
 							"assetsFieldHandle": {
-                "@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Asset",
+                "@model": "barrelstrength\\sproutimport\\importers\\elements\\Asset",
                 "matchBy": "filename",
                 "matchValue": ["ImageName03.jpg"],
                 "matchCriteria": {
@@ -86,7 +122,49 @@ If you have Relations on your Matrix Blocks, you can also use the `related` key:
 ]
 ```
 
-_Use "@model": "EntryModel" and "@model": "AssetModel" in Craft 2_
+``` craft2
+[  
+	{
+    "@model": "EntryModel",
+    "attributes": { ... },
+    "content": {
+      "title": "Aliquid vero ut libero nostrum soluta.",
+      "fields": {
+        "subheading": "Unde ut enim sed maxime.",
+        "articleBody": {
+          "new1": {
+            "type": "heading",
+            "enabled": 1,
+            "fields": {
+              "heading": "Hic suscipit esse temporibus quia."
+            }
+          },
+          "new2": {
+            "type": "image",
+            "enabled": 1,
+            "fields": {
+              "caption": "Deserunt quam cupiditate fugit et dolorem saepe."
+            },
+						"related": {
+							"assetsFieldHandle": {
+                "@model": "AssetModel",
+                "matchBy": "filename",
+                "matchValue": ["ImageName03.jpg"],
+                "matchCriteria": {
+                  "source": "images",
+                  "folderId": 8
+                }
+              }
+						}			
+          }
+        }
+      }
+    }
+  }
+]
+```
 
-See [Resolving Relationships]({entry:1567:url}) for more examples of how to use the `related` key.
+:::
+
+See [Resolving Relationships](./resolve-relationships.md) for more examples of how to use the `related` key.
 

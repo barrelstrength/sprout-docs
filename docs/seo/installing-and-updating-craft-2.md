@@ -1,6 +1,12 @@
+# Craft 2
+
 ## Requirements
 
 * Craft 2.6.2771 or a more recent version of Craft
+
+::: warning
+Sprout SEO 2 for Craft 2 is no longer supported. If you are still running a Craft install that uses Sprout SEO 2 you can reference the [legacy documentation](./v2/) in our archive or reach out for support via our consulting services.
+:::
 
 ## Installation
 

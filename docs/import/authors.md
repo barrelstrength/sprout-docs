@@ -10,12 +10,14 @@ When importing Entries, the Authors of those Entries will already need to exist 
 
 When the `authorId` attribute is processed it will confirm that a User Element that matches that `authorId` value exists, and then use the User ID for the import:
 
-## Matching an author by ID
+## Match by ID
 
-``` json
+::: code
+
+``` craft3
 [
     {
-        "@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry",
+        "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
         "attributes": {
             "authorId": 1
         },
@@ -24,14 +26,28 @@ When the `authorId` attribute is processed it will confirm that a User Element t
 ]
 ```
 
-_Use "@model": "EntryModel" in Craft 2_
-
-## Matching an author by email
-
-``` json
+``` craft2
 [
     {
-        "@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry",
+        "@model": "EntryModel",
+        "attributes": {
+            "authorId": 1
+        },
+        "content": { ... }
+    }
+]
+```
+
+:::
+
+## Match by Email
+
+::: code
+
+``` craft3
+[
+    {
+        "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
         "attributes": {
             "authorId": "hello@website.com"
         },
@@ -40,14 +56,28 @@ _Use "@model": "EntryModel" in Craft 2_
 ]
 ```
 
-_Use "@model": "EntryModel" in Craft 2_
-
-## Matching an author by username
-
-``` json
+``` craft2
 [
     {
-        "@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry",
+        "@model": "EntryModel",
+        "attributes": {
+            "authorId": "hello@website.com"
+        },
+        "content": { ... }
+    }
+]
+```
+
+:::
+
+## Match by Username
+
+::: code
+
+``` craft3
+[
+    {
+        "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
         "attributes": {
             "authorId": "anotheruser"
         },
@@ -56,4 +86,16 @@ _Use "@model": "EntryModel" in Craft 2_
 ]
 ```
 
-_Use "@model": "EntryModel" in Craft 2_
+``` craft2
+[
+    {
+        "@model": "EntryModel",
+        "attributes": {
+            "authorId": "anotheruser"
+        },
+        "content": { ... }
+    }
+]
+```
+
+:::

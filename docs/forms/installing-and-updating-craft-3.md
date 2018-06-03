@@ -1,21 +1,16 @@
-# Updating to 2.x
+# Craft 3
 
-Sprout Forms 2.0 introduces a number of new, powerful features and comes with a few breaking changes to be aware of.
+## Requirements
 
-We recommend backing up your database before upgrading and upgrading to 2.0 in a development environment where you can test your forms to ensure they work and are styled as expected.
+* Craft CMS 3.0.0-RC1 or a more recent version of Craft
 
-Some changes to consider:
+## Installation via Plugin Store
 
-**The underlying, dynamic form templates have been updated**
+1. Find the plugin in the Plugin Store in your Craft Control Panel 
+2. Go to _Settings → Plugins_ and select “Install”
 
-- The `required` class has moved
-- The `errors` classes have been updated
-- Make sure the class names and HTML still work for your situation
-- Some opinionated classes were removed
-- Some additional classes have been added
+## Installation via Composer 
 
-**Sprout Email Field and Sprout Link Field**
-
-Sprout Email Field and Sprout Link Field have been retired and are now part of **Sprout Fields**.  When you upgrade to Sprout Forms 2.x you will also need to upgrade to use Sprout Fields to have compatibility with the Email Field and Link Field.  
-
-Installing Sprout Fields will run a script that updates all of your Email and Link fields to use Sprout Fields. Backup your database and test to ensure everything is working as expected after you upgrade.  You can uninstall and delete Sprout Email Field and Sprout Link Field after you confirm the new Sprout Fields equivalents are working as expected.
+1. Open your terminal and go to your Craft project:<br>`cd /path/to/project`
+2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-forms`
+3. In the Control Panel, go to _Settings → Plugins_ and select “Install”

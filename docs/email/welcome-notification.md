@@ -1,4 +1,4 @@
-## Sending a Welcome Email Notification to New Users
+# Welcome Emails
 
 Create a Notification with two custom fields:
 

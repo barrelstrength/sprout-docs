@@ -37,5 +37,5 @@ The `{{ name }}` value will get swapped out with your field's name to create the
 | Craft 3       | **✓** |
 | Craft 2       | **✗** |
 
-See here for documentation on the [Notes Field for Craft 3](./notes-field.html).
+See here for documentation on the [Notes Field for Craft 3](./notes-field.md).
 

@@ -6,9 +6,9 @@ In this example we are exporting a Product Channel from ExpressionEngine and imp
 
 Before importing the Products into Craft, Categories were migrated manually, as there were just a few of them. Assets were also migrated manually and synced with Craft, so we could later match them by filename as we import our products. To avoid having to figure out which images were in use and not in use on the previous site, you can use an image scraping tool like [SiteSucker](http://ricks-apps.com/osx/sitesucker/index.html) (for OSX) to just grab the images that are linked on the website pages you are migrating.
 
-## Craft 2
+::: code
 
-``` html
+``` craft2
 [
 	{exp:channel:entries
 		channel="products"
@@ -78,3 +78,5 @@ Before importing the Products into Craft, Categories were migrated manually, as 
 	{/exp:channel:entries}
 ]
 ```
+
+:::

@@ -1,6 +1,8 @@
-# Using Sprout Forms with Sprout Email
+# Sprout Email
 
 Sprout Forms integrates with Sprout Email to handle all of your form notification needs.
+
+## Notification Emails
 
 - Multiple notification emails
 - Branded notification emails

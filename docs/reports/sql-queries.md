@@ -1,6 +1,14 @@
 # Custom SQL Queries
 
-_Note: One reason Craft is powerful is because it allows users to build complex relational content from a very user-friendly UI. While that is nice for users, it can make certain queries very complex when retrieving your data.  Sprout Reports is designed to help make it easy for clients to run queries and get back the data they need.  It is not designed to write those queries for you.  The examples below are not meant to be comprehensive or accurate for every situation. They are meant to be used as a starting point and the responsibility is on you to update the queries to meet your needs or find someone who can.  If you need help building a specific query, feel free to reach out.  We're happy to consider adding another example for common use cases or help out in a consulting relationship to help you meet your projects reporting needs._
+One reason Craft is powerful is because it allows users to build complex relational content from a very user-friendly UI. While that is nice for users, it can make certain queries very complex when retrieving your data.  Sprout Reports is designed to help make it easy for clients to run queries and get back the data they need. It is not designed to write those queries for you.
+
+The examples below are not meant to be comprehensive or accurate for every situation. They are meant to be used as a starting point and the responsibility is on you to update the queries to meet your needs or find someone who can.  
+
+::: tip
+If you need help building a specific query, feel free to reach out.  We're happy to consider adding another example for common use cases or help out in a consulting relationship to help you meet your projects reporting needs.
+
+Contact us: [sprout@barrelstrengthdesign.com](mailto:sprout@barrelstrengthdesign.com)
+:::
 
 ## Relations Fields
 

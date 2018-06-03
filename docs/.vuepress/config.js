@@ -2,7 +2,8 @@ module.exports = {
     title: 'Sprout Docs',
     description: 'Sprout Documentation',
     theme: 'craftdocs',
-    base: 'docs',
+    base: '/docs/',
+    ga: '',
     themeConfig: {
         docsRepo: 'barrelstrength/sprout-docs',
         docsDir: 'docs',
@@ -32,7 +33,7 @@ module.exports = {
                     { text: 'Sprout Notes', link: '/notes/' }
                 ]
             },
-            { text: 'Website', link: 'https://sprout.barrelstrengthdesign.com/' },
+            { text: 'Barrel Strength', link: 'https://www.barrelstrengthdesign.com/' },
         ],
         sidebar: {
             '/forms/': [
@@ -41,43 +42,29 @@ module.exports = {
                     title: 'Sprout Forms',
                     collapsable: false,
                     children: [
-                        ''
+                        '',
+                        'forms',
+                        'form-fields',
+                        'entries',
+                        'notifications',
+                        'reports',
+                        'settings'
                     ]
                 },
                 {
-                    title: 'Templating',
+                    title: 'Form Templates',
                     collapsable: false,
                     children: [
-                        'display-form-tag',
-                        'display-tab-tag',
-                        'display-field-tag',
-                        'entries-tag',
-                        'last-entry-tag',
-                        'get-entry-tag',
-                        'form-tag'
-                    ]
-                },
-                {
-                    title: 'Customization',
-                    collapsable: false,
-                    children: [
+                        'default-templates',
                         'template-overrides',
-                        'rendering-options',
-                        'validation',
-                        'redirects',
-                        'custom-fields',
-                        'payload-forwarding',
-                        'events-and-hooks',
-                        'dynamic-notifications'
+                        'rendering-options'
                     ]
                 },
                 {
-                    title: 'Integrations',
+                    title: 'Advanced Topics',
                     collapsable: false,
                     children: [
-                        'sprout-email',
-                        'sprout-reports',
-                        'sprout-fields'
+                        'payload-forwarding'
                     ]
                 },
                 {
@@ -86,15 +73,34 @@ module.exports = {
                     children: [
                         'complete-form-in-one-line',
                         'field-tags',
-                        'custom-fields',
                         'front-end-file-uploads',
                         'thank-you-page',
                         'translating-error-messages',
                         'relations-field-on-entry-page',
                         'display-errors-at-top-of-page',
                         'submitting-a-form-via-ajax',
-                        'hidden-and-invisible-fields',
+                        'hidden-fields',
                         'pre-populating-a-field'
+                    ]
+                },
+                {
+                    title: 'Integrations',
+                    collapsable: false,
+                    children: [
+                        'sprout-email',
+                        'sprout-reports',
+                        'sprout-fields',
+                        'sprout-import'
+                    ]
+                },
+                {
+                    title: 'Plugin Development',
+                    collapsable: false,
+                    children: [
+                        'custom-form-templates',
+                        'custom-form-fields',
+                        'custom-captchas',
+                        'events-and-hooks'
                     ]
                 },
                 {
@@ -107,6 +113,22 @@ module.exports = {
                 }
             ],
 
+            '/seo/v2/': [
+                ['../', '← Sprout SEO'],
+                {
+                    title: 'Sprout SEO 2',
+                    collapsable: false,
+                    children: [
+                        '',
+                        'divider',
+                        'extending-a-base-layout',
+                        'get-default-by-handle',
+                        'get-optimized-meta',
+                        'overriding-images'
+                    ]
+                }
+            ],
+
             '/seo/': [
                 ['../', '← All Plugins'],
                 {
@@ -114,47 +136,20 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '',
-                        'sitemap',
-                        'redirects',
-                        'contact-support',
-                        'faq'
+                        'global-metadata',
+                        'element-metadata-field',
+                        'sitemaps',
+                        'redirects'
                     ]
                 },
                 {
-                    title: 'Core Concepts',
+                    title: 'Advanced Topics',
                     collapsable: false,
                     children: [
-                        'globals',
-                        'sections',
-                        'element-metadata-field'
-                    ]
-                },
-                {
-                    title: 'Templates',
-                    collapsable: false,
-                    children: [
-                        'get-contacts-tag',
-                        'get-globals-tag',
-                        'get-social-profiles-tag'
-                    ]
-                },
-                {
-                    title: 'Advanced Customization',
-                    collapsable: false,
-                    children: [
-                        'custom-sections',
-                        'meta-details-fields',
                         'template-overrides',
                         'custom-metadata-variable',
-                        'meta-description-length'
-                    ]
-                },
-                {
-                    title: 'Plugin Development',
-                    collapsable: false,
-                    children: [
-                        'custom-schema',
-                        'url-enabled-sections'
+                        'meta-description-length',
+                        'custom-sections'
                     ]
                 },
                 {
@@ -167,15 +162,18 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Sprout SEO 2',
+                    title: 'Integrations',
                     collapsable: false,
                     children: [
-                        'v2/divider',
-                        'v2/extending-a-base-layout',
-                        'v2/get-default-by-handle',
-                        'v2/get-optimized-meta',
-                        'v2/introduction',
-                        'v2/overriding-images'
+                        'sprout-import'
+                    ]
+                },
+                {
+                    title: 'Plugin Development',
+                    collapsable: false,
+                    children: [
+                        'custom-schema',
+                        'url-enabled-sections'
                     ]
                 },
                 {
@@ -183,7 +181,9 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'installing-and-updating-craft-3',
-                        'installing-and-updating-craft-2'
+                        'installing-and-updating-craft-2',
+                        'contact-support',
+                        'faq'
                     ]
                 }
             ],
@@ -195,48 +195,36 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '',
-                        'config-settings',
-                        'contact-support'
+                        'email-templates',
+                        'personalization',
+                        'config-settings'
                     ]
                 },
                 {
-                    title: 'Notifications',
+                    title: 'Emails',
                     collapsable: false,
                     children: [
-                        'notifications',
-                        'dynamic-values',
-                        'custom-events',
-                        'file-attachments'
-                    ]
-                },
-                {
-                    title: 'Campaigns',
-                    collapsable: false,
-                    children: [
-                        'email-campaigns'
-                    ]
-                },
-                {
-                    title: 'Sent Email',
-                    collapsable: false,
-                    children: [
+                        'notification-emails',
+                        'campaign-emails',
                         'sent-emails'
-                    ]
-                },
-                {
-                    title: 'Templating',
-                    collapsable: false,
-                    children: [
-                        'entries-tag'
                     ]
                 },
                 {
                     title: 'Examples',
                     collapsable: false,
                     children: [
+                        'craft-globals',
                         'welcome-notification',
-                        'template-variables',
-                        'using-globals-in-emails'
+                        'template-variables'
+                    ]
+                },
+                {
+                    title: 'Plugin Development',
+                    collapsable: false,
+                    children: [
+                        'custom-email-templates',
+                        'custom-mailers',
+                        'custom-notification-events'
                     ]
                 },
                 {
@@ -255,39 +243,25 @@ module.exports = {
                     title: 'Sprout Reports',
                     collapsable: false,
                     children: [
-                        ''
-                    ]
-                },
-                {
-                    title: 'Core Concepts',
-                    collapsable: false,
-                    children: [
+                        '',
                         'data-sources',
-                        'reports',
-                        'custom-twig-template-report',
-                        'name-format'
+                        'reports'
                     ]
                 },
                 {
-                    title: 'Reports',
+                    title: 'Data Sources',
                     collapsable: false,
                     children: [
-                        'sprout-forms',
-                        'craft-commerce'
+                        'custom-query-report',
+                        'custom-twig-template-report'
                     ]
                 },
                 {
                     title: 'Examples',
                     collapsable: false,
                     children: [
+                        'large-reports',
                         'sql-queries'
-                    ]
-                },
-                {
-                    title: 'Troubleshooting',
-                    collapsable: false,
-                    children: [
-                        'large-reports'
                     ]
                 },
                 {
@@ -325,8 +299,7 @@ module.exports = {
                         'create-elements-on-the-fly',
                         'update-existing-elements',
                         'set-default-attributes',
-                        'large-amounts-of-data',
-                        'sprout-seo-redirects'
+                        'large-amounts-of-data'
                     ]
                 },
                 {
@@ -336,7 +309,7 @@ module.exports = {
                         'authors',
                         'assets',
                         'matrix-field',
-                        'multiple-languages',
+                        'multiple-sites',
                         'products-with-variants'
                     ]
                 },

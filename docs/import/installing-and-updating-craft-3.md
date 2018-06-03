@@ -4,21 +4,21 @@ The syntax for importing data using Sprout Import is slightly different between 
 
 In Craft 3, the `@model` attribute should reference the full class name of the Importer. In Craft 2, as Craft did not yet support namespaces in plugins, `@import` just uses the short class name of the Importer.
 
-### Craft 3 @model syntax
+## @model syntax
 
-``` json
+::: code
+
+``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry",
+    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": { ... }
   }
 ]
 ```
 
-### Craft 2 @model syntax
-
-``` json
+``` craft2
 [
   {
     "@model": "EntryModel",
@@ -28,28 +28,30 @@ In Craft 3, the `@model` attribute should reference the full class name of the I
 ]
 ```
 
+:::
+
 ### Additional Examples
 
-#### Craft 3
+::: code
 
-```
-"@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry"
-"@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Category"
-"@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\User"
-"@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\settings\\Field"
-"@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\settings\\Section"
-"@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\settings\\Widget"
+``` craft3
+"@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry"
+"@model": "barrelstrength\\sproutimport\\importers\\elements\\Category"
+"@model": "barrelstrength\\sproutimport\\importers\\elements\\User"
+"@model": "barrelstrength\\sproutimport\\importers\\elements\\Field"
+"@model": "barrelstrength\\sproutimport\\importers\\elements\\Section"
+"@model": "barrelstrength\\sproutimport\\importers\\elements\\Widget"
 ```
 
-#### Craft 2
-
-```
+``` craft2
 "@model": "EntryModel"
 "@model": "CategoryModel"
 "@model": "UserModel"
 "@model": "FieldModel"
 "@model": "SectionModel"
 ```
+
+:::
 
 See the `/examples` folder within each respective plugin for more examples.
 

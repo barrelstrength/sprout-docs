@@ -7,11 +7,13 @@ To enable this feature, go to `Sprout Forms->Settings->Advanced` and enable the 
 - Enable custom form templates globally
 - Enable custom form templates on a per-form basis
 
-## Enable custom form templates globally
+## Settings
+
+### Global settings
 
 When you enable overrides globally, you will be able to set your global overrides path in the advanced settings.
 
-## Enable custom form templates on a per-form basis
+### Per-form settings
 
 When you enable overrides on a per-form basis, you'll have to add the override folder in your form settings.  
 
@@ -19,7 +21,10 @@ When creating a new form, on the Advanced tab, select _Enable Custom Template Ov
 
 Setting this value to `_forms` would allow you to place your override templates in the `craft/templates/_forms` folder.
 
-## Managing override templates
+
+
+
+## Custom Form Templates
 
 Once you have enabled template overrides, you can override one or all of the following template files:
 
@@ -34,3 +39,5 @@ Your edits could be as small as adding a custom id to the `<form>` tag or rework
 _**NOTE: Enabling template overrides gives you full control over the underlying template code. With great power...**_
 
 If you'd like to copy the default Sprout Forms templates to get started, you can find them in `sproutforms/templates/_special/templates`.
+
+## Custom Field Templates 

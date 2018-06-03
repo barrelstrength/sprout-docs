@@ -1,4 +1,8 @@
-# Validation
+# Form Fields
+
+...
+
+## Validation
 
 Forms fields can require many different types of validation. Sprout Forms along with Sprout Fields support the most common types of validation out of the box. Additional types of validation can be added via a custom field-type plugin and [Sprout Forms Field support]({entry:1129:url}).
 

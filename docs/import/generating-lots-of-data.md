@@ -2,7 +2,7 @@
 
 Sprout Import's Seed Generator is a quick way to generate fake data to work with in Craft. For very specific and larger fake data scenarios, consider generating fake data using [Faker and an import generator file]({entry:2485:url}).
 
-## Fake data and resource limits
+## Resource Limits
 
 When using the Seed Generator in Sprout Import, it's a good idea to consider how complicated your Field Layout is. Some Field Layouts have tens or hundreds of fields and use advanced fields like Element Relations and Matrix Fields with Element Relations fields, etc.
 

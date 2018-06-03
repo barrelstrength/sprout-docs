@@ -1,0 +1,3 @@
+# Email Templates
+
+## Basic Templates

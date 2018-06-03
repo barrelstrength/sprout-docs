@@ -1,4 +1,4 @@
-# Sitemap
+# Sitemaps
 
 Sprout SEO makes it easy to generate a Sitemap for all of your URL-enabled content for one or more languages. Your sitemap can be managed directly from the Craft admin area (no template updates required).
 

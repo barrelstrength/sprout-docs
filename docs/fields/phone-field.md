@@ -21,4 +21,4 @@ By default, the Phone Field is setup for international addresses from all countr
 | Craft 3 (Url Field)      | **✓** |
 | Craft 2 (Link Field)     | **✓** |
 
-See here for documentation on the [Phone Field for Craft 2](./phone-field-c2.html).
+See here for documentation on the [Phone Field for Craft 2](./phone-field-c2.md).

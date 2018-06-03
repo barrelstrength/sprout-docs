@@ -1,4 +1,4 @@
-# Hidden and Invisible Fields
+# Hidden Fields
 
 A [Hidden Field]({entry:1039:url}) and [Invisible Field]({entry:1145:url}) can both be found in [Sprout Fields]({entry:1035:url}).
 

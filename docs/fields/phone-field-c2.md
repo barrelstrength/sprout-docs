@@ -23,7 +23,7 @@ If you have more specific Phone Number validation needs, you can select the _Pho
 | Craft 3 (Url Field)      | **✓** |
 | Craft 2 (Link Field)     | **✓** |
 
-See here for documentation on the [Phone Field for Craft 3](./phone-field.html).
+See here for documentation on the [Phone Field for Craft 3](./phone-field.md).
 
 ::: tip
 The Phone Field works with Sprout Forms for Craft 2. This field is included by default in Sprout Fields for Craft 3.

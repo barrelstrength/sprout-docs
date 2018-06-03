@@ -1,11 +1,13 @@
-# Resolving relationships
+# Resolving Relationships
 
 Sprout Import can help you resolve relationships based on attributes and criteria. In the most direct way, you can import known relational data using the same data structure as Craft – an array of Element IDs `[4, 5, 6]`:
 
-``` json
+::: code
+
+``` craft3
 [
 	{
-		"@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry"
+		"@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
 		"attributes": { ... },
 		"content": {
 			"title": "In quaerat maiores sit est rerum iusto.",
@@ -17,25 +19,42 @@ Sprout Import can help you resolve relationships based on attributes and criteri
 ]
 ```
 
-_Use "@model": "EntryModel" in Craft 2_
+``` craft2
+[
+	{
+		"@model": "EntryModel",
+		"attributes": { ... },
+		"content": {
+			"title": "In quaerat maiores sit est rerum iusto.",
+			"fields": {
+				"categoryRelationsHandle": [4, 5, 6]
+			}
+		}
+	}
+]
+```
+
+:::
 
 Sometimes you know you want to populate a relations field but you don't know the Element ID in Craft. In these cases, the `related` key can come in handy. Consider the following scenarios:
 
-### Match Relations by slug
+## Match Relations by slug
 
 The code below says _if you find any Categories that are using the values “category-slug-one” or “category-slug-two” as their slug in the Category Group with ID number 1, then create a relationship with that category to the “categoryRelationsHandle” field on this Entry Element._
 
-``` json
+::: code
+
+``` craft3
 [
 	{
-		"@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry"
+		"@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
 		"attributes": { ... },
 		"content": {
 			"title": "In quaerat maiores sit est rerum iusto.",
 			"fields": { ... },
 			"related": {
 				"categoryRelationsHandle": {
-					"@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Category"
+					"@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
 					"matchBy": "slug",
 					"matchValue": ["category-slug-one","category-slug-two"],
 					"matchCriteria": {
@@ -48,23 +67,48 @@ The code below says _if you find any Categories that are using the values “cat
 ]
 ```
 
-_Use "@model": "EntryModel" and "@model": "CategoryModel" in Craft 2_
+``` craft2
+[
+	{
+		"@model": "EntryModel",
+		"attributes": { ... },
+		"content": {
+			"title": "In quaerat maiores sit est rerum iusto.",
+			"fields": { ... },
+			"related": {
+				"categoryRelationsHandle": {
+					"@model": "@model": "CategoryModel",
+					"matchBy": "slug",
+					"matchValue": ["category-slug-one","category-slug-two"],
+					"matchCriteria": {
+						"groupId": 1
+					}
+				}
+			}
+		}
+	}
+]
+```
 
-### Match Assets by filename
+:::
+
+## Match Assets by filename
 
 The code below says _if you find any Assets that are using the value “ImageName03.jpg” as their filename in the Asset Source "images" in the folder with "folderId" equal to 8, then create a relationship with that Asset to the “thumbnailImage” field on this Entry Element._
 
-``` json
+::: code
+
+``` craft3
 [
 	{
-		"@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry"
+		"@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
 		"attributes": { ... },
 		"content": {
 			"title": "In quaerat maiores sit est rerum iusto.",
 			"fields": { ... },
 			"related": {
 				"thumbnailImage": {
-          "@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Asset"
+          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Asset",
 					"matchBy": "filename",
 					"matchValue": ["ImageName03.jpg"],
 					"matchCriteria": {
@@ -78,9 +122,35 @@ The code below says _if you find any Assets that are using the value “ImageNam
 ]
 ```
 
-_Use "@model": "EntryModel" and "@model": "AssetModel" in Craft 2_
+``` craft2
+[
+	{
+		"@model": "EntryModel"
+		"attributes": { ... },
+		"content": {
+			"title": "In quaerat maiores sit est rerum iusto.",
+			"fields": { ... },
+			"related": {
+				"thumbnailImage": {
+          "@model": "AssetModel",
+					"matchBy": "filename",
+					"matchValue": ["ImageName03.jpg"],
+					"matchCriteria": {
+						"source": "images",
+						"folderId": 8
+					}
+				}
+			}
+		}
+	}
+]
+```
 
-### Match User Relations to a custom field with an old ID for the User you wish to relate to.
+:::
+
+## Match a Legacy ID
+
+In this example we'll match User Relations to a custom field with an old ID for the User you wish to relate to.
 
 Let's say you are migrating content from an another database. You migrate over the users but when you import them into Craft, the IDs for that user are different. To help with the migration process it's sometimes helpful to create a custom field called "Old ID" and import the ID that identified the item you are importing in the old system. 
 
@@ -88,17 +158,19 @@ Once that is in place, you can prepare your import to match content related to t
 
 The code below says _if you find any Users that have the values 89, 139 or 95 in the custom field with the handle "oldId" in the User Group with ID number 3, then create a relationship with that User to the “relatedAuthors” field on this Entry Element._
 
-``` json
+::: code
+
+``` craft3
 [
 	{
-		"@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry"
+		"@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
 		"attributes": { ... },
 		"content": {
 			"title": "In quaerat maiores sit est rerum iusto.",
 			"fields": { ... },
 			"related": {
 				"relatedAuthors": {
-					"@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\User",
+					"@model": "barrelstrength\\sproutimport\\importers\\elements\\User",
 					"matchBy": "oldId",
 					"matchValue": [
 						89,
@@ -115,16 +187,43 @@ The code below says _if you find any Users that have the values 89, 139 or 95 in
 ]
 ```
 
-_Use "@model": "EntryModel" and "@model": "UserModel" in Craft 2_
+``` craft2
+[
+	{
+		"@model": "EntryModel",
+		"attributes": { ... },
+		"content": {
+			"title": "In quaerat maiores sit est rerum iusto.",
+			"fields": { ... },
+			"related": {
+				"relatedAuthors": {
+					"@model": "UserModel",
+					"matchBy": "oldId",
+					"matchValue": [
+						89,
+						139,
+						95
+					],
+					"matchCriteria": {
+						"groupId": 3
+					}
+				}
+			}
+		}
+	}
+]
+```
+
+:::
 
 ----
 
-### Relations within Matrix Blocks
+## Matrix Relations 
 
-The `related` key is also supported within the Matrix Block `fields` array. See [Importing Matrix Data]({entry:2361:url}) for more info.
+The `related` key is also supported within the Matrix Block `fields` array. See the docs on [Importing a Matrix Field](./matrix-field.md) for more info.
 
 ----
 
-### Creating Elements on the Fly
+## Non-Existent Relations
 
-If you need relate and item but you can't be certain the related item is already in the database, see [Creating Elements on The Fly]({entry:2474:url})
+If you need relate and item but you can't be certain the related item is already in the database, see [Creating Elements on The Fly](./create-elements-on-the-fly.md)

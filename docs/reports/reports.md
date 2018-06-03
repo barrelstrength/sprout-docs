@@ -1,50 +1,13 @@
 # Reports
 
-_Note: Report integrations have been deprecated and removed in Craft 3. Similar saved reports will be possible using Sprout Import. Examples will be posted once we get those featured released with Sprout Import for Craft 3._
+You can create as many Reports as you'd like from a Data Source. Reports are saved instances of your Data Sources and their selected settings.
 
-You can create as many Reports as you'd like from a Data Source. Reports are saved instances of your Data Sources and their selected options. While Users can easily create Reports from existing Data Sources within Craft, developers can also create Reports that can be installed programmatically and reused.
+## Name Format
 
-## Custom Reports
+To indicate details about the selected Report settings in the Report Name, select the "Add a Name Format" option. You can then dynamically output any value from your Report settings in the name of your Report using Craft Object Syntax.
 
-Custom Reports integrations allow you to define a Report and install it when your plugin is installed. Any number of custom Report integrations can be created by a plugin.
+In the following example, the Start Date and End Date values are included in the Title of the Report. When published, the Report Name would appear with the selected dates:
 
-Once we reach Sprout Reports 1.0, we will write up more complete documentation on Custom Report integrations.  For now, please see `sproutreports/integrations/sproutreports/reports/SproutReportsUsersReport.php` for an example on how to create your own Report integration.
+### Active Users: November 18, 2017 - December 19, 2017
 
-The key things you will need to do are:
-
-1. Create a class for your Report integration
-
-Reports follow the naming convention `[PluginName][ReportName][Report]`
-
-``` php
-class SproutReportsUsersReport extends SproutReportsBaseReport
-{
-}
-```
-
-2. Load your report integrations in your primary plugin class init method
-
-``` php
-public function init()
-{
-	Craft::import('plugins.sproutreports.integrations.sproutreports.reports.*');
-}
-```
-
-3. Install your Reports:
-
-``` php
-public function onAfterInstall()
-{
-	$this->init();
-
-	Craft::import('plugins.sproutreports.integrations.sproutreports.reports.SproutReportsUsersReport');
-
-	if (craft()->plugins->getPlugin('sproutreports'))
-	{
-		sproutReports()->reports->register(new SproutReportsUsersReport());
-	}
-}
-```
-
-Once Reports are installed, they can be updated and manipulated independently of the source files used to create them.
+![Edit a Report](./../images/reports/edit-report-settings.png)

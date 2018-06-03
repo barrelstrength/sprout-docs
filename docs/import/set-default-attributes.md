@@ -4,14 +4,14 @@ Default attributes can be set in your Elements `settings` array using the `defau
 
 Sprout Import will check for default attributes in the `defaults` key of the `settings` array. You can set a default for any attribute that exists on the Element Model that is being imported.
 
-### Setting default attributes on an EntryModel
-
 In this example, in the first Entry, the values provided in the `attributes` array will be used. In the second Entry, since the attributes `authorId` and `postDate` are not defined in the primary `attributes` array, Sprout Import will use the values provided by the `defaults` settings. 
 
-``` json
+::: code
+
+``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry",
+    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
     "attributes": {
       "authorId": 4,
       "postDate": "2016-10-18 00:00:00"
@@ -25,7 +25,7 @@ In this example, in the first Entry, the values provided in the `attributes` arr
     }
   },
   {
-    "@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry",
+    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
     "attributes": {
       "authorId": null,
       "postDate": null
@@ -41,4 +41,36 @@ In this example, in the first Entry, the values provided in the `attributes` arr
 ]
 ```
 
-_Use "@model": "EntryModel" in Craft 2_
+``` craft2
+[
+  {
+    "@model": "EntryModel",
+    "attributes": {
+      "authorId": 4,
+      "postDate": "2016-10-18 00:00:00"
+    },
+    "content": { ... },
+    "settings": {
+      "defaults": {
+        "authorId": 1,
+        "postDate": "2016-01-01 00:00:00"
+      }
+    }
+  },
+  {
+    "@model": "EntryModel",
+    "attributes": {
+      "authorId": null,
+      "postDate": null
+    },
+    "content": { ... },
+    "settings": {
+      "defaults": {
+        "authorId": 1,
+        "postDate": "2016-01-01 00:00:00"
+      }
+    }
+  }
+]
+```
+:::

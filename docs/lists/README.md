@@ -6,7 +6,7 @@ Sprout Lists allows your users to:
 - Follow or unfollow things
 - Like or unlike things
 
-Subscribers can be added and removed to Lists within Craft, using the default Subscriber List Type, or third-party lists using a [Custom List Type](./list-types.html) integration.
+Subscribers can be added and removed to Lists within Craft, using the default Subscriber List Type, or third-party lists using a [Custom List Type](./list-types.md) integration.
 
 ::: tip
 We will use the term **Subscribe** throughout the docs, but you can substitute in the terms **Like** or **Follow** as you prefer.

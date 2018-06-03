@@ -52,4 +52,4 @@ See our Default CSS styles for an example and use your browsers Inspect Code fea
 | Craft 2       | **✓** |
 
 
-See here for documentation on the [Notes Field for Craft 2](./notes-field-c2.html).
+See here for documentation on the [Notes Field for Craft 2](./notes-field-c2.md).

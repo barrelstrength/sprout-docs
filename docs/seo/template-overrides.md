@@ -1,4 +1,4 @@
-# Template Overrides
+# Template-Level Overrides
 
 When you need to customize your metadata at the template level, you can use the `do craft.sproutSeo.meta` tag.
 

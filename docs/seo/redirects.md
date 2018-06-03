@@ -18,7 +18,7 @@ Each Redirect has 4 settings, tracks the count of how many times it was used, an
 - **Method** - Indicate to search engines whether the redirect behavior is permanent or temporary
 - **Match Patterns (optional)** - Enables additional checks to process more advanced patter matching in the redirects using regular expressions
 
-# Bulk Actions
+## Bulk Actions
 
 Redirects can be updated via bulk actions by selecting the checkboxes next to each Redirect on the Redirect listing page. Currently supported bulk actions include: 
 
@@ -29,18 +29,18 @@ Redirects can be updated via bulk actions by selecting the checkboxes next to ea
 - Edit (if only one item is selected)
 - Delete
 
-## Pattern-based Redirects (Regular Expressions)
+## Regular Expressions
 
 Redirect multiple URLs with a similar pattern by selecting the **Match Patterns** option. When the Match Patterns option is selected, you can then use _Regular Expressions_ in the Old URL field and reference _Capture Groups_ in the New Url field.
 
-**Old URL - Regular Expressions**
+### Old URL - Regular Expressions
 
 ```
 /old-location/(.*)
 /old-location/(\d{4})/(\d{2})
 ```
 
-**New URL - Capture Groups**
+### New URL - Capture Groups
 
 ```
 new-location/$1

@@ -1,8 +1,6 @@
 # Rendering Options
 
-Rendering options allow you to customize form and field output without having to override the templates. If your needs go beyond the supported rendering options, see [Template Overrides]({entry:1139:url}).
-
-## Overview
+Rendering options allow you to customize form and field output without having to override the templates. If your needs go beyond the supported rendering options, see [Template Overrides](./template-overrides.md).
 
 Rendering options can be passed as a twig object to the `displayForm()` or `displayField()` tags.
 
@@ -15,11 +13,11 @@ Rendering options can be passed as a twig object to the `displayForm()` or `disp
 
 ```
 
-### Supported Options
+## Options
 
 Sprout Forms and Sprout Fields support the following rendering options. Any custom fields that extend the Sprout Fields API should make an effort to support these settings as well.
 
-#### Form tag options
+### Form tag options
 
 The following options will modify the `<form>` tag.
 
@@ -29,7 +27,7 @@ The following options will modify the `<form>` tag.
 | `class` | `string` | `formHandle-form` | A space-separated list of classes to apply to the form tag    |
 | `errorClass` | `string` | `errors` | A space separated list of classes to apply to the form tag when errors are found |
 
-#### Field wrapper and input tag options
+### Field wrapper and input tag options
 
 The following options will modify the `<input>` field and the wrapper `<div>` and related tags that surround each `<input>` field. (See the `displayField()` example below.)
 
@@ -40,10 +38,9 @@ The following options will modify the `<input>` field and the wrapper `<div>` an
 | `errorClass` | `string` | `errors` | A space separated list of classes to apply to theinput tag when errors are found |
 | `data` | `{}` | | An object (associative array) of data attributes to set on the form or input tag
 
+## Examples
 
-## Rendering Options Examples
-
-#### displayField()
+### displayField()
 
 The `displayField()` method accepts rendering options for the field only and all options are passed as top level key/value pairs.
 
@@ -73,7 +70,7 @@ The `displayField()` method accepts rendering options for the field only and all
 </div>
 ```
 
-#### displayForm()
+### displayForm()
 
 The `displayForm()` accepts rendering options for the form tag and input fields. To provide rendering options for your fields, you must create a `fields` object and use the field handle to identify the fields that the containing rendering options should be applied to.
 

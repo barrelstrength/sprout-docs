@@ -1,4 +1,4 @@
-# Email Campaigns
+# Campaign Emails
 
 Sprout Email allows you to create Email Campaigns in Craft CMS. You can choose to send your Campaigns via several different Email Service Providers.
 
@@ -99,4 +99,15 @@ _emails/email-body
 	{% endif %}
 
 {% endfor %}
+```
+
+## Campaign Emails
+
+To output your Campaign emails in your templates you can use the `craft.sproutEmail.entries` tag.  Here is a basic overview of what is available:
+
+```twig
+{% set id = craft.sproutEmail.entries.id(1).first() %}
+{% set slug = craft.sproutEmail.entries.slug('my-email-slug').first() %}
+{% set campaignId = craft.sproutEmail.entries.campaignId(1).find() %}
+{% set campaignHandle = craft.sproutEmail.entries.campaignHandle('myCampaign').find() %}
 ```

@@ -1,14 +1,9 @@
-# getGlobals
+# Global Metadata
 
-You can display all Global Metadata in your template using the `getGlobals` tag.
+### Website Identity
 
 ``` twig
 {% set globals = craft.sproutSeo.getGlobals() %}
-```
-
-## Website Identity
-
-``` twig
 {% set identity = globals.identity %}
 
 {{ identity.name }}
@@ -44,6 +39,7 @@ You can display all Global Metadata in your template using the `getGlobals` tag.
 ## Contacts
 
 ``` twig
+{% set globals = craft.sproutSeo.getGlobals() %}
 {% set contacts = globals.contacts %}
 
 {% for contact in contacts %}
@@ -52,9 +48,24 @@ You can display all Global Metadata in your template using the `getGlobals` tag.
 {% endfor %}
 ```
 
+### getContacts
+
+You can display a list of the Contacts from your Global Sprout SEO settings on your website using the `getContacts` tag:
+
+``` twig
+{% set contacts = craft.sproutSeo.getContacts() %}
+
+<ul>
+  {% for contact in contacts %}
+    <li><a href="tel:{{ contact.telephone }}">{{ contact.type }}</a></li>
+  {% endfor %}
+</ul>
+```
+
 ## Social Profiles
 
 ``` twig
+{% set globals = craft.sproutSeo.getGlobals() %}
 {% set social = globals.social %}
 
 {% for social in socials %}
@@ -63,9 +74,24 @@ You can display all Global Metadata in your template using the `getGlobals` tag.
 {% endfor %}
 ```
 
-## Verify Ownership Tags
+### getSocialProfilesTag
+
+You can display a list of the Social Profiles in your Global Sprout SEO settings on your website using the `getSocialProfiles` tag:
 
 ``` twig
+{% set socialProfiles = craft.sproutSeo.getSocialProfiles() %}
+
+<ul>
+  {% for socialProfile in socialProfiles %}
+    <li><a href="{{ socialProfile.url }}">{{ socialProfile.name }}</a></li>
+  {% endfor %}
+</ul>
+```
+
+## Verify Ownership
+
+``` twig
+{% set globals = craft.sproutSeo.getGlobals() %}
 {% set ownership = globals.ownership %}
 
 {% for item in ownership %}
@@ -75,9 +101,10 @@ You can display all Global Metadata in your template using the `getGlobals` tag.
 {% endfor %}
 ```
 
-## Customization Settings
+## Customization
 
 ``` twig
+{% set globals = craft.sproutSeo.getGlobals() %}
 {% set settings = globals.settings %}
 
 {{ settings.seoDivider }}
@@ -89,9 +116,10 @@ You can display all Global Metadata in your template using the `getGlobals` tag.
 {{ settings.appendTitleValue }}
 ```
 
-## Robots Settings
+## Robots
 
 ```
+{% set globals = craft.sproutSeo.getGlobals() %}
 {% set robots = globals.robots %}
 
 {% for key,enabled in robots %}

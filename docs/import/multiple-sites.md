@@ -1,4 +1,4 @@
-# Multiple languages
+# Multiple Sites
 
 Importing content in multiple languages can be tricky depending on what content you have in each language. When importing content for a single language, you can just set the attribute `locale` with your Locale ID and you are good to go (i.e. `"locale": "es"`). Once you add multiple languages to the mix, you'll have to keep in mind several aspects about your setup:
 
@@ -10,16 +10,16 @@ Getting these settings right is important as it affects how your content will be
 
 For the examples below, let's assume your site has two languages: English and Spanish. English is your primary locale and will always have content, and now and then, you translate an article into Spanish, so you want the Spanish locale for your Articles channel to default to off, and only get enable when you have content in that language.
 
-## Import your primary locale
+## Primary Site
 
 You can import your primary locale like any other Element you import.
 
-### Craft 3
+::: code
 
-``` json
+``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry",
+    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
     "attributes": {
       "siteId" 2,
       "sectionId": 2,
@@ -42,9 +42,7 @@ You can import your primary locale like any other Element you import.
 ]
 ```
 
-### Craft 2
-
-``` json
+``` craft2
 [
   {
     "@model": "EntryModel",
@@ -71,20 +69,22 @@ You can import your primary locale like any other Element you import.
 ]
 ```
 
+:::
+
 When the element is created, another record will be created in the database for all other enabled locales. Each locale that is created dynamically will be enabled or disabled depending on your Section settings and the Default Entry Status for that locale.
 
 Above, we set `"localeEnabled": true` in our attributes to be explicit, but that shouldn't not matter as the default Section Locale settings should set this for us.
 
-## Import your secondary locale
+## Secondary Sites
 
 We import our secondary locale in a second step, and the import format has a few new parts to help us get match the entry for the secondary locale back to the first locale, and ensure the locale gets enabled.
 
-### Craft 3
+::: code
 
-``` json
+``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\elements\\Entry",
+    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
     "attributes": {
       "siteId" 2,
       "sectionId": 2,
@@ -118,19 +118,7 @@ We import our secondary locale in a second step, and the import format has a few
 ]
 ```
 
-A few important things to note about the syntax above:
-
-In our `attributes` we:
-
-- Set the Site ID of our secondary site: `"siteId": 2`
-
-In our `content` we us the `updateElement` key to find the Site-specific record that we want to be updating. We do this by matching our original entry by something we know about it (in this example we use the slug but can use any value as described in the `updateElement` documentation for [Updating Existing Elements]({entry:2218:url})). As noted above, when we create our primary locale entry, Craft creates records in the database for all of our enabled secondary Sites. We need to make sure that we update the record that is specific to our Site by using the `matchCriteria` key. In `matchCriteria` we:
-
-- Make sure to match for the the Site that we want to update: `"siteId": 2`
-
-### Craft 2
-
-``` json
+``` craft2
 [
   {
     "@model": "EntryModel",
@@ -169,7 +157,27 @@ In our `content` we us the `updateElement` key to find the Site-specific record 
 ]
 ```
 
-A few important things to note about the syntax above:
+:::
+
+## Sites vs Locales
+
+Craft 3 and Craft 2 handle multi-site in different ways.
+
+### Craft 3 Multi-Site
+
+A few important things to note about the syntax above for Craft 3:
+
+In our `attributes` we:
+
+- Set the Site ID of our secondary site: `"siteId": 2`
+
+In our `content` we us the `updateElement` key to find the Site-specific record that we want to be updating. We do this by matching our original entry by something we know about it (in this example we use the slug but can use any value as described in the `updateElement` documentation for [Updating Existing Elements]({entry:2218:url})). As noted above, when we create our primary locale entry, Craft creates records in the database for all of our enabled secondary Sites. We need to make sure that we update the record that is specific to our Site by using the `matchCriteria` key. In `matchCriteria` we:
+
+- Make sure to match for the the Site that we want to update: `"siteId": 2`
+
+### Craft 2 Locales
+
+A few important things to note about the syntax above for Craft 2:
 
 In our `attributes` we:
 
