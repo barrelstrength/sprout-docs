@@ -1,8 +1,8 @@
 # Translating Error Messages
 
-If you need to translate your Form error messages, currently, you will need to setup your Forms using custom HTML and prepare translations using translation files.  Craft has a helpful How To article: [How can I translate static text in my templates?](http://buildwithcraft.com/help/static-translations).
+If you need to translate your Form error messages, currently, you will need to setup your Forms using custom HTML and prepare translations using translation files.  Craft has a helpful How To article: [How can I translate static text in my templates?](https://craftcms.com/support/static-translations).
 
-Let's look at a breif overview of this method in the context of the Form plugin.
+Let's look at a brief overview of this method in the context of the Form plugin.
 
 1) Wrap your error messages in the translate filter
 
@@ -25,16 +25,14 @@ Let's look at a breif overview of this method in the context of the Form plugin.
 {% endmacro %}
 ```
 
-You can view a full template of a Form built with custom HTML and error messages on the [Custom HTML Form Example](http://sprout.barrelstrengthdesign.com/craft-plugins/forms/docs/examples/custom-html) page.
-
 2) Add a `translations` folder to your project
 
-``` text
+```
 craft/app
 craft/config
 craft/plugins
 craft/storage
-*craft/translations*
+craft/translations **
 public
 ```
 

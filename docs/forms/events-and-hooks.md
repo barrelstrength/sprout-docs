@@ -4,37 +4,68 @@ Sprout Forms can be extended using the following Events and Hooks.
 
 ## Events
 
-#### sproutForms.onBeforeSaveEntry
+### Before a Form Entry is saved
 
-Raised before an entry is saved
+Raised before an entry is saved.
 
-**Params:**
+::: code
+
+``` craft3
+Example needed.
+```
+
+``` craft2
+sproutForms.onBeforeSaveEntry
+```
+
+:::
+
+#### Params
 
 - _entry_ – The submitted SproutForms_EntryModel
 - _isNewEntry_ -  A boolean indicating whether this is a brand new form entry
 
-#### sproutForms.onSaveEntry
+### After a Form Entry is Saved 
 
 Raised just after an entry is saved
 
-**Params:**
+::: code
+
+``` craft3
+Example needed.
+```
+
+``` craft2
+sproutForms.onSaveEntry
+```
+
+:::
+
+#### Params
 
 - _entry_ – The submitted SproutForms_EntryModel
 - _isNewEntry_ -  A boolean indicating whether this is a brand new form entry
 
 ## Hooks
 
-#### sproutForms.modifyForm
+### Template Hook 
 
-Gives plugins a chance to dynamically add content to a form template. The hook will output content between the `<form>` tags when using the displayForm, displayTab, or displayField tags.
+The `sproutForms.modifyForm` Template Hook gives plugins a chance to dynamically add content to a form template. The hook will output content between the `<form>` tags when using the `displayForm` tag.
 
-``` php
+::: code
+
+``` craft3
+Example needed.
+```
+
+``` craft2
 public function init()
 {
-	craft()->templates->hook('sproutForms.modifyForm', function(&$context)
-	{
-		$content = '<div><input type="hidden" name="spammityspam" value="spam"></div>';
-		return TemplateHelper::getRaw($content);
-	});	
+  craft()->templates->hook('sproutForms.modifyForm', function(&$context)
+  {
+    $content = '<div><input type="hidden" name="spammityspam" value="spam"></div>';
+    return TemplateHelper::getRaw($content);
+  });
 }
-```
+
+:::

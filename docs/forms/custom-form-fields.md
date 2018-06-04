@@ -2,7 +2,37 @@
 
 ## Craft 3
 
-TBDocumented
+Form Fields enable you to add new Field to the Form Builder and manage it's field settings and front-end output.
+
+See the following plugins for examples:
+
+- [Range Slider Field for Sprout Forms](https://github.com/barrelstrength/craft-sprout-forms-range-slider)
+- [US States Field for Sprout Forms](https://github.com/barrelstrength/craft-sprout-forms-us-states)
+
+### Register Event
+
+Once you have created your Custom Form Field, register you Form Field class with Sprout Forms to display your Form Field in the Form Builder.
+
+``` php
+namespace barrelstrength\sproutformsrangeslider;
+
+use barrelstrength\sproutforms\services\Fields;
+use barrelstrength\sproutforms\events\RegisterFieldsEvent;
+use barrelstrength\sproutformsrangeslider\integrations\sproutforms\fields\RangeSlider;
+use Craft;
+use craft\base\Plugin;
+use yii\base\Event;
+
+class SproutFormsRangeSlider extends Plugin
+{
+    public function init()
+    {
+        Event::on(Fields::class, Fields::EVENT_REGISTER_FIELDS, function(RegisterFieldsEvent $event) {
+            $event->fields[] = new RangeSlider();
+        });
+    }
+}
+```
 
 ## Craft 2
 
@@ -10,15 +40,9 @@ TBDocumented
 Sprout Fields adds several additional Field Types to Sprout Forms in Craft 2. In Craft 3, all Sprout Fields have been included directly in Sprout Forms.
 :::
 
-## Custom Front-end Fields
-
 Creating a custom front-end field for Sprout Forms is as easy as creating a custom field type in Craft.
 
-Out of the box, Sprout Forms supports several Standard Fields. Additional support can be added for native or custom field types via the Front-end Field API.
-
-### Standard Fields and Advanced Fields
-
-Sprout Forms supports all fields in Craft but only supports a subset of those fields for dynamic front-end output. Fields with dynamic front-end support are referred to as _Standard Fields_. Fields that require custom HTML or development are referred to as _Advanced Fields_.
+Sprout Forms for Craft 2 supports all fields in Craft but only supports a subset of those fields for dynamic front-end output. Fields with dynamic front-end support are referred to as _Standard Fields_. Fields that require custom HTML or development are referred to as _Advanced Fields_.
 
 While Craft can require users to use certain browsers to get the full benefits of the platform (and ignore browsers like IE8 and IE9), many client-facing websites must address broader compatibility issues to meet their goals.
 
@@ -26,7 +50,7 @@ Due to the variety and complexities of front-end user interface design and cross
 
 Sprout Forms provides a comprehensive API to add dynamic front-end field support for additional Craft and third-party field types.
 
-## Create a custom front-end field
+### Custom Front-End Fields
 
 To create a field that extends the Sprout Forms Front-end Field API, you'll need to do the following:
 
@@ -42,7 +66,7 @@ The _field_ class naming convesion we recommend is: `{PluginHandle}{FieldType}{F
 
 Like a back-end _field type_, your front end _field_ gets to decide what **html** to render to capture user input.
 
-### Signature
+#### Signature
 ```php
 public function getInputHtml($field, $value, $settings, array $renderingOptions = null)
 ```
@@ -106,11 +130,11 @@ public function getTemplatesPath()
 }
 ```
 
-## Accessing variables in templates
+### Accessing variables in templates
 
 If your field to be able to access variables within the template where your field is being rendered, a user can use the `craft.sproutForms.addFieldVariables()` method to make those variables available to your field.
 
-## Examples
+### Examples
 
 If you'd like to take a peek at how we're using this API, you can look in the `craft/plugins/sproutforms/integrations` folder.
 
