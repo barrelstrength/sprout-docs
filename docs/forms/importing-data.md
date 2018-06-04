@@ -1,10 +1,20 @@
-# Sprout Import
+# Importing Data
+
+Sprout Forms adds support for importing and seeding data to the following Sprout Forms data types:
+
+- Entry Elements
+- Form Relations Fields
+- Form Entry Relations Fields
 
 ## Seeding
 
-## Fake Data
+Select **Sprout Forms Entries** as the _Type of Content_ from the Sprout Import Seed tab to generate fake Form Entries for testing.
 
-In this example, we'll create 100 fake Form Entries using faker. 
+## Importing
+
+Import real or test Form Entry Elements to Sprout Forms.
+
+In the following example, we'll create a JSON import file with 100 fake Form Entries using faker.
 
 ::: code
 

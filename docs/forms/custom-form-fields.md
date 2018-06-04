@@ -6,6 +6,10 @@ TBDocumented
 
 ## Craft 2
 
+::: tip
+Sprout Fields adds several additional Field Types to Sprout Forms in Craft 2. In Craft 3, all Sprout Fields have been included directly in Sprout Forms.
+:::
+
 ## Custom Front-end Fields
 
 Creating a custom front-end field for Sprout Forms is as easy as creating a custom field type in Craft.

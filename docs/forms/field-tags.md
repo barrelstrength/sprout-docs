@@ -4,7 +4,9 @@ If you need more control over your forms, you can start outputting your fields o
 
 The field tag is handy when we might be able to use the default output for most of our fields, but may need to specifically customize one field in HTML.
 
-``` twig 
+::: code
+
+``` craft2 
 <form method="post" action="" accept-charset="UTF-8">
   
   {{ getCsrfInput() }}
@@ -32,3 +34,6 @@ The field tag is handy when we might be able to use the default output for most 
   <p><input type="submit" value="Submit"></p>
 
 </form>
+```
+
+:::

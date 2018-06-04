@@ -1,46 +1,47 @@
 # Entries
 
+An Entry Element is created when a form is submitted. If validation fails, the Entry Element will be returned to the template with errors. If validation succeeds, the Entry Element will be saved to the database and the Form submission will redirect to the Redirect URL.
+
+## Entry Title
+
+The Entry Title can be defined in a Form's **Title Format** setting.
+
+All information contained in the Title will also be searchable. You may use the same syntax here as you would with the Title Format setting in your Sections. For example:
+
+``` twig
+{dateCreated|date('Ymd')} {fullName}
+```
+
+## Templating
+ 
 You can fetch form Entries using the [same options you have for all Elements](http://buildwithcraft.com/docs/templating/elementcriteriamodel) as described in the Craft documentation.
 
-## entries 
+### entries 
 
-### Get all Form Entries from the Contact Form
+The `entries` tag will let you get all entries for a specific form.
 
-``` twig
+::: code
+
+``` craft2
+{# Get all entries for a specific form #}
 {% for formEntry in craft.sproutForms.entries.formHandle('contact') %}
-
 	{{ formEntry.title }}
-
 {% endfor %}
-```
 
-### Get the first 3 Form Entries from the Contact Form 
-
-``` twig
+{# Limit the results to the first 3 entries #}
 {% for formEntry in craft.sproutForms.entries.formHandle('contact').limit(3).order('dateCreated asc') %}
-
 	{{ formEntry.title }}
-
 {% endfor %}
-```
 
-### Get the latest Form Entry from the Contact Form
-
-``` twig
+{# Get the latest Form Entry from the Contact Form #}
 {% set formEntry = craft.sproutForms.entries.formHandle('contact').last() %}
 
 {{ formEntry.title }}
-```
 
-### Output the total number of Form Entries from the Contact Form
-
-``` twig
+{# Output the total number of Form Entries from the Contact Form #}
 {{ craft.sproutForms.entries.formHandle('contact').total() }}
-```
 
-### Output Entries with a specific status by Status ID or by Status Handle
-
-``` twig
+{# Output Entries with a specific status by Status ID or by Status Handle #}
 {% for formEntry in craft.sproutForms.entries.formHandle('contact').statusId(2) %}
   {{ formEntry.title }}
 {% endfor %}
@@ -48,13 +49,13 @@ You can fetch form Entries using the [same options you have for all Elements](ht
 {% for formEntry in craft.sproutForms.entries.formHandle('contact').statusHandle('pending') %}
   {{ formEntry.title }}
 {% endfor %}
-````
+```
 
-## lastEntry
+:::
 
-When a form has been submitted successfully, the user will be redirected to wherever the redirect setting points to.
+### lastEntry
 
-To display content from the submitted form after the form has been submitted, you can use the `lastEntry()` tag.
+When a form has been submitted successfully, the user will be redirected to wherever the Redirect URL setting points to. To display content from the submitted form after the form has been submitted, you can use the `lastEntry()` tag.
 
 ``` twig
 {# Check for the last entry submitted #}
@@ -75,9 +76,9 @@ To display content from the submitted form after the form has been submitted, yo
 {% endif %}
 ```
 
-## getEntry
+### getEntry
 
-The `getEntry` tag retrieves the `SproutForms_EntryModel` of the active submission. If an active Form Entry doesn't exist, it returns an empty `SproutForms_EntryModel`.
+The `getEntry` tag retrieves the Entry Element of the active submission. If an active Form Entry doesn't exist, it returns an empty Entry Element.
 
 The `getEntry` method is useful if you need to setup your template to manage your Form submission values and errors but you don't know the handle of your Form.  This scenario can arise when you are using the Sprout Forms Relations field to dynamically output a form in your template.
 
@@ -93,3 +94,9 @@ The `getEntry` method is useful if you need to setup your template to manage you
 
 {% endif %}
 ```
+
+## Entry Relations Field
+
+Sprout Forms adds an Entry Relations Field to Craft CMS:
+ 
+- **Entry (Sprout Forms)**

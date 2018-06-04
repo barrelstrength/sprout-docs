@@ -1,4 +1,4 @@
-# Introduction
+# About Sprout Lists
 
 Sprout Lists allows your users to:
 

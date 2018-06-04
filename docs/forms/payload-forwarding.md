@@ -8,7 +8,7 @@ The difference? All your form data gets sent somewhere else (a Custom Submit URL
 
 _Note: Payload Forwarding is an advanced feature and may require technical knowledge and services beyond Craft CMS._
 
-## Setting up Payload Forwarding
+## Setup
 
 Setting up payload forwarding requires a few things:
 

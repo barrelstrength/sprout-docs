@@ -1,4 +1,4 @@
-# Introduction
+# About Sprout Email
 
 Sprout Email enables integrated email marketing, targeted transactional email, tracking and re-sending Sent Emails, and flexible subscriber and list management.
 

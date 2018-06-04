@@ -1,10 +1,30 @@
 # Notifications
 
-When a Sprout Form is submitted you can trigger a Notification Email to yourself or the user submitting the form. To do so, enable the Notification from your Forms `Notification` tab and fill in the settings.
+Sprout Forms supports personalized Notification Emails. Notifications in Sprout Forms are powered by Sprout Email [Notification Emails](./../email/notification-emails.md). You can setup and manage any number of Notifications on the Sprout Forms **Notifications** tab.
 
-## Dynamic Notifications
+## Email Templates
 
-If you would like to send a notification with information from your submitted form, you can use Craft's object syntax to do so. A `SproutForms_EntryModel` is available to the fields in your Notification settings:
+Sprout Forms provides a **Basic Notification** Email Template that loops through and displays all default Form Fields.
+
+Learn more about [Email Templates](./../email/email-templates.md) and how to customize them.  
+
+## Notification Events 
+
+Notifications in Sprout Forms are limited to Sprout Forms [Notification Events](./../email/custom-notification-events.md) which currently include:
+
+- When a Sprout Forms Entry is saved
+
+::: tip
+Manage all of your Notification Emails in one place using Sprout Email. Sprout Forms Notifications will appear alongside Notification Emails for Craft, Craft Commerce, and any other Notification Emails you manage in Sprout Email.
+:::
+
+## Craft 2
+
+Notifications in Sprout Forms can be setup and managed on each Forms Notifications Tab.
+
+### Personalization
+
+Personalize your Notifications with information from your submitted form using Craft's object syntax. A `SproutForms_EntryModel` is available to the fields in your Notification settings:
 
 - Email Recipients
 - Subject
@@ -24,13 +44,16 @@ Or full object syntax:
 Recipients: {{ object.email }}
 ```
 
-## Custom Notification Templates
+### Custom Notification Templates
 
 To override the default HTML used for the Notification email, see the [Template Overrides]({entry:1139:url}) documentation.
 
-## Advanced Notifications
+### Advanced Notifications
 
-If you need to send multiple notifications or want additional control over what triggers your Notifications, consider using [Sprout Email]({entry:3245:url}) and Sprout Forms together.
+If you need to send multiple notifications or want additional control over what triggers your Notifications, consider using [Sprout Email](./../email) and Sprout Forms together.
 
-_Note: Currently, Sprout Forms can only trigger one Notification email. We know this is limiting and will be relaxing this requirement in Craft 3. If this is a blocker for you on a Craft 2 site, please reach out and let us know and we'll see if we can help you out._
+::: warning
+Sprout Forms for Craft 2 can only trigger one Notification email. We know this is limitation and it is possible to manage several Notification Emails in Craft 3.
 
+If this is a blocker for you on a Craft 2 site, please reach out and let us know and we'll see if we can help you out.
+:::

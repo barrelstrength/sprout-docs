@@ -1,4 +1,4 @@
-# Introduction
+# About Sprout Notes
 
 Sometimes you just need to write a note!
 

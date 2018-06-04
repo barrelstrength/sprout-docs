@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Sprout Docs',
-    description: 'Sprout Documentation',
+    title: 'Sprout Documentation',
+    description: 'The Sprout Business Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.',
     theme: 'craftdocs',
     base: '/docs/',
     ga: '',
@@ -39,23 +39,30 @@ module.exports = {
             '/forms/': [
                 ['../', '← All Plugins'],
                 {
-                    title: 'Sprout Forms',
+                    title: 'Introduction',
                     collapsable: false,
                     children: [
-                        '',
+                        ''
+                    ]
+                },
+                {
+                    title: 'Core Concepts',
+                    collapsable: false,
+                    children: [
                         'forms',
                         'form-fields',
                         'entries',
                         'notifications',
                         'reports',
-                        'settings'
+                        'importing-data',
+                        'plugin-settings'
                     ]
                 },
                 {
                     title: 'Form Templates',
                     collapsable: false,
                     children: [
-                        'default-templates',
+                        'default-form-templates',
                         'template-overrides',
                         'rendering-options'
                     ]
@@ -72,25 +79,14 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'complete-form-in-one-line',
-                        'field-tags',
                         'front-end-file-uploads',
-                        'thank-you-page',
-                        'translating-error-messages',
-                        'relations-field-on-entry-page',
-                        'display-errors-at-top-of-page',
-                        'submitting-a-form-via-ajax',
                         'hidden-fields',
-                        'pre-populating-a-field'
-                    ]
-                },
-                {
-                    title: 'Integrations',
-                    collapsable: false,
-                    children: [
-                        'sprout-email',
-                        'sprout-reports',
-                        'sprout-fields',
-                        'sprout-import'
+                        'pre-populating-a-field',
+                        'field-tags',
+                        'display-errors-at-top-of-page',
+                        'thank-you-page',
+                        'submitting-a-form-via-ajax',
+                        'translating-error-messages'
                     ]
                 },
                 {
@@ -132,10 +128,16 @@ module.exports = {
             '/seo/': [
                 ['../', '← All Plugins'],
                 {
-                    title: 'Sprout SEO',
+                    title: 'Introduction',
                     collapsable: false,
                     children: [
-                        '',
+                        ''
+                    ]
+                },
+                {
+                    title: 'Core Concepts',
+                    collapsable: false,
+                    children: [
                         'global-metadata',
                         'element-metadata-field',
                         'sitemaps',
@@ -191,10 +193,16 @@ module.exports = {
             '/email/': [
                 ['../', '← All Plugins'],
                 {
-                    title: 'Sprout Email',
+                    title: 'Introduction',
                     collapsable: false,
                     children: [
-                        '',
+                        ''
+                    ]
+                },
+                {
+                    title: 'Core Concepts',
+                    collapsable: false,
+                    children: [
                         'email-templates',
                         'personalization',
                         'config-settings'
@@ -240,10 +248,16 @@ module.exports = {
             '/reports/': [
                 ['../', '← All Plugins'],
                 {
-                    title: 'Sprout Reports',
+                    title: 'Introduction',
                     collapsable: false,
                     children: [
-                        '',
+                        ''
+                    ]
+                },
+                {
+                    title: 'Core Concepts',
+                    collapsable: false,
+                    children: [
                         'data-sources',
                         'reports'
                     ]
@@ -284,7 +298,7 @@ module.exports = {
             '/import/': [
                 ['../', '← All Plugins'],
                 {
-                    title: 'Sprout Import',
+                    title: 'Introduction',
                     collapsable: false,
                     children: [
                         '',
@@ -350,7 +364,7 @@ module.exports = {
             '/active/': [
                 ['../', '← All Plugins'],
                 {
-                    title: 'Sprout Active',
+                    title: 'Introduction',
                     collapsable: false,
                     children: [
                         ''
@@ -369,7 +383,7 @@ module.exports = {
             '/encode-email/': [
                 ['../', '← All Plugins'],
                 {
-                    title: 'Sprout Encode Email',
+                    title: 'Introduction',
                     collapsable: false,
                     children: [
                         ''
@@ -388,7 +402,7 @@ module.exports = {
             '/fields/': [
                 ['../', '← All Plugins'],
                 {
-                    title: 'Sprout Fields',
+                    title: 'Introduction',
                     collapsable: false,
                     children: [
                         ''
@@ -433,7 +447,7 @@ module.exports = {
             '/lists/': [
                 ['../', '← All Plugins'],
                 {
-                    title: 'Sprout Lists',
+                    title: 'Introduction',
                     collapsable: false,
                     children: [
                         ''
@@ -459,7 +473,7 @@ module.exports = {
             '/notes/': [
                 ['../', '← All Plugins'],
                 {
-                    title: 'Sprout Notes',
+                    title: 'Introduction',
                     collapsable: false,
                     children: [
                         ''

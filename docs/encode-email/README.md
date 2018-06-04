@@ -1,4 +1,4 @@
-# Introduction
+# About Sprout Encode Email
 
 ## Overview
 

@@ -1,4 +1,4 @@
-# Introduction
+# About Sprout Import
 
 Import data to Craft, Craft Commerce, the Sprout Plugin Suite, and add your own custom integrations. Sprout Import is an extremely flexible and extensible import plugin that makes it easy to:
 

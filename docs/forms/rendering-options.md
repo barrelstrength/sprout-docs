@@ -1,8 +1,6 @@
 # Rendering Options
 
-Rendering options allow you to customize form and field output without having to override the templates. If your needs go beyond the supported rendering options, see [Template Overrides](./template-overrides.md).
-
-Rendering options can be passed as a twig object to the `displayForm()` or `displayField()` tags.
+Rendering options allow you to customize form and field output without having to override the templates. Rendering options can be passed as a twig object to the `displayForm()` or `displayField()` tags.
 
 ``` twig
 {% set options = {
@@ -13,9 +11,15 @@ Rendering options can be passed as a twig object to the `displayForm()` or `disp
 
 ```
 
+Rendering Options may be handy to solve a specific situation, however, can become harder to maintain or reuse across multiple forms. 
+
+::: tip
+For 100% control over your Form Templates, see [Template Overrides](./template-overrides.md).
+:::
+
 ## Options
 
-Sprout Forms and Sprout Fields support the following rendering options. Any custom fields that extend the Sprout Fields API should make an effort to support these settings as well.
+Sprout Forms supports the following rendering options.
 
 ### Form tag options
 
@@ -38,37 +42,11 @@ The following options will modify the `<input>` field and the wrapper `<div>` an
 | `errorClass` | `string` | `errors` | A space separated list of classes to apply to theinput tag when errors are found |
 | `data` | `{}` | | An object (associative array) of data attributes to set on the form or input tag
 
+::: warning 
+Custom Form Fields will need to add support for these options on their own. If you are using Rendering Options with a custom Form Field and they are not behaving as expected, you may need to reach out to the respective plugin developer.
+:::
+
 ## Examples
-
-### displayField()
-
-The `displayField()` method accepts rendering options for the field only and all options are passed as top level key/value pairs.
-
-```twig
-{# Prepare our options #}
-{% set options = {
-    "id": "my-field",	
-    "class": "my-fancy-class",
-    "errorClass": "field-has-error",
-    "data": {
-        "hidden": "false",
-    }
-} %}
-
-{{ craft.sproutForms.displayField("formHandle.fieldHandle", options) }}
-```
-
-```twig
-{# The above settings output: #}
-<div id="fields-my-field" class="field plaintext field my-fancy-class required field-has-error">
-	<div class="heading">
-		<label for="fields-fieldHandle">Field Name</label>
-	</div>
-	<div class="input">
-		<input type="text" id="fields-my-field" class="field my-fancy-class" name="fields[fieldHandle]" required data-hidden="false" />
-	</div>
-</div>
-```
 
 ### displayForm()
 
@@ -102,4 +80,34 @@ The `displayForm()` accepts rendering options for the form tag and input fields.
       {# The output of the displayField() tag above would display here. #}
 
 </form>
+```
+
+### displayField()
+
+The `displayField()` method accepts rendering options for the field only and all options are passed as top level key/value pairs.
+
+```twig
+{# Prepare our options #}
+{% set options = {
+    "id": "my-field",	
+    "class": "my-fancy-class",
+    "errorClass": "field-has-error",
+    "data": {
+        "hidden": "false",
+    }
+} %}
+
+{{ craft.sproutForms.displayField("formHandle.fieldHandle", options) }}
+```
+
+```twig
+{# The above settings output: #}
+<div id="fields-my-field" class="field plaintext field my-fancy-class required field-has-error">
+	<div class="heading">
+		<label for="fields-fieldHandle">Field Name</label>
+	</div>
+	<div class="input">
+		<input type="text" id="fields-my-field" class="field my-fancy-class" name="fields[fieldHandle]" required data-hidden="false" />
+	</div>
+</div>
 ```
