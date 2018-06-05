@@ -82,6 +82,7 @@ module.exports = {
                         'front-end-file-uploads',
                         'hidden-fields',
                         'pre-populating-a-field',
+                        'custom-html',
                         'field-tags',
                         'display-errors-at-top-of-page',
                         'thank-you-page',
@@ -104,7 +105,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'installing-and-updating-craft-3',
-                        'installing-and-updating-craft-2'
+                        'installing-and-updating-craft-2',
+                        'faq'
                     ]
                 }
             ],
