@@ -205,18 +205,26 @@ module.exports = {
                     title: 'Core Concepts',
                     collapsable: false,
                     children: [
-                        'email-templates',
-                        'personalization',
-                        'config-settings'
+                        'notification-emails',
+                        'campaign-emails',
+                        'sent-emails',
+                        'plugin-settings'
                     ]
                 },
                 {
-                    title: 'Emails',
+                    title: 'Notification Emails',
                     collapsable: false,
                     children: [
-                        'notification-emails',
-                        'campaign-emails',
-                        'sent-emails'
+                        'personalization',
+                        'object-syntax'
+                    ]
+                },
+                {
+                    title: 'Email Templates',
+                    collapsable: false,
+                    children: [
+                        'default-email-templates',
+                        'template-overrides'
                     ]
                 },
                 {
@@ -224,8 +232,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'craft-globals',
-                        'welcome-notification',
-                        'template-variables'
+                        'welcome-notification'
                     ]
                 },
                 {

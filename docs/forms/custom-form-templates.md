@@ -18,7 +18,7 @@ class MyFormTemplates extends FormTemplates
 {
     public function getName()
     {
-        return Craft::t('sprout-forms', 'My Custom Form Templates');
+        return Craft::t('my-plugin', 'My Custom Form Templates');
     }
 
     public function getPath()

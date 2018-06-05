@@ -1,10 +1,8 @@
 # Personalization
 
-In most cases, when you trigger an event there may be some custom data you want to use in your notification.  For example, when an Entry is saved you might want to know who the author was and where you can view the entry, when a form is submitted you may want to include the data from the Form submission in your notification, and when a product is purchased you might want to know which product and by whom.
+In many cases, when you trigger an event there may be some custom data you want to use in your notification.  For example, when an Entry is saved you might want to know who the author was and where you can view the entry, when a form is submitted you may want to include the data from the Form submission in your notification, and when a product is purchased you might want to know which product and by whom.
 
-## Where can dynamic values be used in my notifications?
-
-Sprout Email allows you to use dynamic values just about everywhere. Right now, you can use dynamic values in your Notification:
+Sprout Email allows you to personalize your email in several places including: 
 
 - Subject line
 - From Name
@@ -14,29 +12,67 @@ Sprout Email allows you to use dynamic values just about everywhere. Right now, 
 - Custom Fields
 - Templates (HTML and Text)
 
-## Using Dynamic Values in your Notification Entry Fields
+You can personalize your Notification Email with data from an event's `object` variable which is uniquely defined by each Notification Event.
 
-The available dynamic values will depend on the notification event, however the way you access those values will be the same in each case.  
+## The Object Variable
 
-Let's look at two examples.
+To understand what values are available to use for personalization you will need to understand which Object variable is available when a Notification Email is triggered. The available Object variable will depend on the Notification Event, however, it will always be accessed in a similar way.
 
-**When an Entry is Saved**
-If you have a notification setup to send each time an Entry is Saved, when an Entry is saved all the values in that Entry will become available to your Notification Fields.  If you want to let somebody know when a new Entry is posted to your Jobs Section, you can use the following syntax in your Subject Line field:
+We use the variable name `object` because we want a single variable name for all Notification Events, even though it may refer to many different types of data. When an Entry Notification Event is triggered, the `object` variable may refer to the Entry Element. When a Commerce Product Notification Event is triggered, the `object` variable may refer to the Product Element.
 
-_New Job: {title}_
+As we use the `object` variable in our settings, we can think of each of our settings like a mini Twig template that only has our `object` variable available to it.
 
-In this example, the Entry object gets passed to the template `object.title` and Sprout Email makes all of it's attributes available to you directly using the single curly brace syntax.
+| Template |  Variables | Output  |
+|:-------- |:---------- |:------- |
+| Subject Line (Notification Email) | object | Subject Line (Message) |
+| From Name (Notification Email) | object | From Name (Message) |
+| From Email (Notification Email) | object | From Email (Message) |
+| Reply To (Notification Email) | object | Reply To Email (Message) |
+| Recipients (Notification Email) | object | Recipients (Message) |
+| Custom Fields (Notification Email) | object | Custom Fields (Message Body) |
+| Email Templates (Email Templates) |email, object | Email HTML & Text (Message Body) |
 
-**When a Form is Submitted**
-In this example let's assume you have an application Form using Sprout Forms and you want to let the applicant know that you received their application.  Your notification is triggered when a Form is submitted, and the On Save Form event makes the submitted Form Entry available to you for your notification.
+::: tip
+If the idea of an `object` variable doesn't make sense yet, read more about [Object Syntax](./object-syntax.md).
+:::
 
-If you have a field called _applicantEmail_, you could set your Recipients value to `{applicantEmail}` and when the Form is submitted, your notification will be sent to that person with the rest of your message.
+## Object Variables
 
-If you have a custom Rich Text field in your notification called _emailBody_, and your form had a custom field called _firstName_, you could address your notification recipient by first name using the `{firstName}` value in your Rich Text field.
+The table below outlines the default Notification Events and the value you can expect when interacting with the Notification Event's `object` variable.
 
-## Using Dynamic Values in your Notification Templates
+| Event |  Craft 3 | Craft 2 |
+|:-------- |:---------- |:------- |
+| When a new entry is created | Entry | EntryModel |
+| When an existing entry is updated | Entry | EntryModel |
+| When a new user is created | User | UserModel |
+| When a existing user is updated | User | UserModel |
+| When a user is activated | User | UserModel |
+| When a user is deleted | User | UserModel |
+| When a user logs in | User | UserModel |
+| When a Craft Commerce order is completed | – | Commerce_OrderModel | 
+| When a Craft Commerce transaction is saved | – | Commerce_TransactionModel | 
+| When a Craft Commerce order status is changed | – | Commerce_OrderModel, Commerce_OrderHistoryModel |  
+| When a Sprout Form Entry is submitted | Form | SproutForms_FormModel |
 
-In your notification templates you can use any Twig code that you would use elsewhere in your templates. Additionally, Sprout Email Notifications give you access to the Notification Email Object (`entry`) and any Dynamic Object provided by the event (`object`):
+### Craft Commerce Order Status Event
+
+The _When a Craft Commerce order status is changed_ event provides two objects, so the syntax is slightly different.
+
+#### Example variable syntax for the Commerce_OrderModel
+
+- `{order.number}`
+- `{{ object.order.number }}`
+
+#### Example variable syntax for the Commerce_OrderHistoryModel
+
+- `{orderHistory.newStatus.name}`
+- `{orderHistory.prevStatus.name}`
+- `{{ object.orderHistory.newStatus.name }}`
+- `{{ object.orderHistory.prevStatus.name }}`
+
+## Templating
+
+In your notification templates you can use any Twig code that you would use elsewhere in your templates. Additionally, Sprout Email Notifications give you access to the Notification Email Element (`email`) and any Notification Event Object variable (`object`):
 
 ``` twig
 {# Notification Default Fields #}
@@ -63,8 +99,16 @@ In your notification templates you can use any Twig code that you would use else
 {{ object.applicantEmail }}
 ```
 
-Dynamic Objects are defined by the Event.  Here is a short list of what you can expect the `object` variable to be when using dynamic events:
+## Processing Order
 
-- When a new entry is created (`EntryModel`)
-- When a new user is created (`UserModel`)
-- When a Sprout Forms Entry is saved (`SproutForms_EntryModel`)
+Using shorthand syntax in your Custom Fields and the Control Panel reduces the chance for errors. Some fields, such as the Rich Text field may add spaces between your tags using object syntax (i.e. `{{ object.email }}`) and cause errors during processing. Also, adding more complex Object Syntax in Twig code can create trickier situations to debug when sending email.
+
+The order that your fields are processed is as follows:
+
+1. Subject, From Name, From Email, and Reply To fields are processed for Object variables.
+2. Templates are rendered. All Twig markup and Object variables in your templates are processed. Any Object variables in custom fields get treated as placeholders.
+3. Templates are processed once more to render Object variables within custom fields.
+
+::: warning
+While most of the time the order will not matter, if you need to use Twig syntax anywhere in your custom fields you can run into situations where it causes conflicts as you output it to the templates. For example, if you have a custom field with Twig code and output that field using a Twig filter in your templates, you will trigger an error. Keep it simple. Stick to the rules of thumb above. Test your emails. And check your logs for more details if you run into any issues.
+:::
