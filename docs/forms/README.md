@@ -20,7 +20,7 @@ As you need more fine-grained control over your forms and form workflows, you ha
 
 - Form Templates ([Template Overrides](./template-overrides.md), [Custom Form Templates](./custom-form-templates.md))
 - Form Fields ([Form Fields](./custom-form-fields.md))
-- Email Templates
+- Email Templates ([Template Overrides](../email/template-overrides.md))
 - Form Entry Titles
 - Form Entry Workflow Statuses
 - How you save your form data

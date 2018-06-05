@@ -4,26 +4,28 @@ Sprout Email enables integrated email marketing, targeted transactional email, t
 
 The table below gives a top level overview of the current Mailers and List integrations in Sprout Email. 
 
-|  Mailer         | Available As     | Campaigns | Notifications | Lists|
+|  Mailer         | Available Via     | Campaigns | Notifications | Lists|
 |:----------------|:-----------------|:---------:|:-------------:|:----:|
-| Default Mailer   | included        | –         | **✓**         | **✓** |
-| Copy/Paste       | included        | **✓**     | –             | – |
-| MailChimp        | [download plugin]({asset:4575:url}) | **✓** | – | – |
-| Campaign Monitor | [download plugin]({asset:4576:url}) | **✓** | – | – |
-| Custom Mailers   | send us a note! | **✓**     | –             | – |
+| Default Mailer   | Sprout Email        | –         | **✓**         | **✓** |
+| Copy/Paste       | Sprout Email        | **✓**     | –             | – |
+| MailChimp        | [Plugin](https://github.com/barrelstrength/craft-sprout-mailchimp) | **✓** | – | – |
+| Campaign Monitor | [Plugin](https://github.com/barrelstrength/craft-sprout-campaign-monitor) | **✓** | – | – |
+| Custom Mailers   | [Contact Us](mailto:sprout@barrelstrengthdesign.com)! | **✓**     | –             | – |
 
 ## Notification Emails
 
-Create multiple, dynamic notification emails to be sent when events are triggered in Craft.  Stay in the loop about new content on your site, changes to your content, a publish workflow, or when forms are submitted (Sprout Forms) or purchases are made (Sprout Commerce). 
+Send personalized notification emails to your users when events are triggered in Craft. Stay in the loop about new content on your site, changes to your content, a publish workflow, or when forms are submitted (Sprout Forms) or purchases are made (Craft Commerce). 
 
-[Read More](/craft-plugins/email/docs/notifications/notification-overview)
+[Read More](./notification-emails.md)
 
 ## Campaigns Emails
 
-Sprout Email Campaigns integrate directly with Craft Sections to help you create powerful email campaigns using Live Preview, Entry Types, Matrix and all of Craft's fields. Manage your email templates using HTML and Twig right within Craft's template structure and export your email campaigns to popular email service providers like Campaign Monitor and MailChimp. 
+Campaign Emails allow you to create powerful email campaigns using Live Preview, Matrix, and all of Craft's fields. Manage your Email Templates using HTML and Twig right within Craft's template structure and export your Campaign Emails to popular email service providers like Campaign Monitor and MailChimp. 
 
-[Read More](/craft-plugins/email/docs/email-campaigns/campaign-overview)
+[Read More](./campaign-emails.md)
 
 ## Sent Email
 
-...
+Sent Email tracking captures a copy of all emails sent from your website. Review Sent Emails, confirm sent statuses, and re-send email to your users.
+
+[Read More](./sent-emails.md) 

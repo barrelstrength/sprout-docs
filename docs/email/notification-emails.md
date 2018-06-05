@@ -1,8 +1,20 @@
 # Notification Emails
 
-Sprout Email allows you to create Email Notifications for Craft CMS.
+Notifications Email Elements give you the power to manage your email notifications in a central location alongside your content in Craft CMS.
 
-## Create a New Notification
+## Default Setup
+
+### Craft 3
+
+Notification Emails are created with a simple Body field and can immediately used to send triggered emails using the [Default Email Template](./default-email-templates.md).
+
+To add a custom Field Layout, select 'Edit Field Layout' from the Save button dropdown.
+
+::: tip
+Adding custom fields to your Email will require that you also create [Email Templates](./default-email-templates.md) that work with those fields. 
+:::
+
+### Craft 2
 
 Creating a new Notification Email requires two steps:
 
@@ -10,7 +22,7 @@ Creating a new Notification Email requires two steps:
 
 2. Create the Notification Email: Once you have a notification email defined, you can add your content, set your sender and recipients, and set your rule that triggers the email in the Notification Entry.
 
-### Define the Notification Email
+#### Define the Notification Email
 
 **Notification Name**<br>
 What you want to call the Notification internally.
@@ -31,64 +43,67 @@ templates/_emails/notification.html
 templates/_emails/notification.txt
 ```
 
-### Create the Notification Email
+## Email Settings
 
-Once you have created your Notification Email, you can edit the Notification just like any other Entry in Craft.
+Notification Emails have several required settings:
 
-Notifications have some unique settings you will need to fill out:
+### Sender
 
-**Sender**<br>
 Set the From Name, From Email, and Reply To Email.
 
-**Recipients**<br>
+### Recipients
+
 Add a comma-separated lists of recipients who you'd like to receive the email.  See the Dynamic Notifications doc page for more information on sending notifications to dynamic recipients like the person who submitted an Entry or completed a Form.
 
 Additionally, you can create a Recipient List and send to a list of people.  See the Recipient Lists doc page for more information on Recipient Lists.
 
-**Rules**<br>
-Rules allow you to choose what event will trigger your notification.
+### Events
 
-The _Trigger On_ setting allows you to select the event that will trigger your email.  Each time this event happens, your notification will be sent out to the people listed in the recipient list.
+Events allow you to choose what Notification Event will trigger a Notification Email and customize the Notification Event settings.
 
-When you select some events, they will present you more options to refine your notification preferences.
+Each time your selected Event happens and your Notification Event settings pass validation, a Notification Email will be sent out to the defined Recipients.
 
-For example, if you select the event _Save Entry_, you will be presented with the option to choose which Section your notification applies to. This will allow you to only send notification emails when a new entry is posted to a particular Section.
-
-## Supported Events
-
-**Craft Events**
-
-- When a new entry is created
-- When an existing entry is updated
-- When a new user is created
-- When a existing user is updated
-- When a user is activated
-- When a user is deleted
-- When a user logs in
-
-**Craft Commerce Events**
-
-- When a Craft Commerce order is completed (Commerce_OrderModel)
-- When a Craft Commerce order status is changed (Commerce_OrderModel, Commerce_OrderHistoryModel)
-- When a Craft Commerce transaction is saved (Commerce_TransactionModel)
-
-**Sprout Plugins**
-
-- When a Sprout Form Entry is submitted
-- When a Sprout Commerce Order is completed
-
-_Note: Let us know if you need an event that we don't support yet. We want to support all events that are useful._
-
-## Adding Custom Notification Events
-
-Developers can add notification events to their plugins as well. For now, drop us a note if you are interested in doing so and we will share how to do so.
-
-## File Attachments
+### File Attachments
    
-You can enable Notification emails to attach files. 
+File Attachments can be enabled in the Notification Email's Event settings. When File Attachments are enabled, Sprout Email will attach any files that are submitted to the Notification using the Craft Assets field or Sprout Forms File Upload field.
 
-![Enable File Attachments in Email]({asset:1267:url})
+::: warning
+Large file attachments may cause Email Notifications to end up in spam filters or not be sent at all. Alternatively, consider sending Notification Emails with a link to the assets you wish to share.
+:::
 
-For example, if you submit a Form and the Form Entry has an Assets field for a resume, the resume file will get attached to the notification email. If you trigger a notification for when an Entry is saved and the Entry Form has an Assets field for a contest submission, the image file for the contest will be attached to the notification email.
+## Notification Events
 
-Right now, notification attachments may not be a great fit for every website.  We will be adding better control over attachments in future releases and remove the need to enable this feature via a hidden config once we have made it more accessible via the Control Panel.
+Sprout Email supports several common Notification Events. For more specific scenarios, developers can add support for [Custom Notification Events](./custom-notification-events.md).
+
+### Craft
+
+| Event                              | Event Object  |
+|:---------------------------------- |:---------------- |
+| When a new entry is created        | Entry |
+| When an existing entry is updated  | Entry |
+| When a new user is created         | User |
+| When a existing user is updated    | User |
+| When a user is activated           | User |
+| When a user is deleted             | User |
+| When a user logs in                | User |
+
+### Craft Commerce
+
+| Event                              |  Event Object |
+|:---------------------------------- |:---------------- |
+| When a Craft Commerce order is completed      | Commerce Order |
+| When a Craft Commerce order status is changed | Commerce Order, Commerce OrderHistory |
+| When a Craft Commerce transaction is saved    | Commerce Transaction |
+
+### Sprout Plugins
+
+| Event                              |  Event Object |
+|:---------------------------------- |:---------------- |
+| When a Sprout Form Entry is submitted      | Form Entry |
+
+
+::: tip
+If you need a Custom Notification Event, we are available for hire.
+
+Contact us: [sprout@barrelstrengthdesign.com](mailto:sprout@barrelstrengthdesign.com)
+::: 

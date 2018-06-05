@@ -2,7 +2,7 @@
 
 ## Requirements
 
-* Craft CMS 3.0.0-RC1 or a more recent version of Craft
+* Craft CMS 3.0.0 or a more recent version of Craft
 
 ## Installation via Plugin Store
 

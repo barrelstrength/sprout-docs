@@ -26,7 +26,7 @@ To download the latest version of Sprout Forms:
 
 _Trial users can grab the latest copy of Sprout Forms by requesting a trial._
 
-## Updating to 2.x
+## Updating to Sprout Forms 2.x
 
 Sprout Forms 2.0 introduces a number of new, powerful features and comes with a few breaking changes to be aware of.
 

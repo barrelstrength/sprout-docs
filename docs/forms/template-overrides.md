@@ -12,7 +12,7 @@ Once you have enabled Template Overrides, you can override one or all of the fol
 | tab.html    | **✓**   | **✓**   |  |
 | field.html  | **✓**   | **✓**   | Also requires tab.html and errors.html |
 | errors.html | **✓**   | **✓**   |  |
-| email.html  | **✗**   | **✓**   | Override using [Email Templates](./../email/email-templates.md) in Craft 3 |
+| email.html  | **✗**   | **✓**   | Override using [Email Templates](../email/template-overrides.md) in Craft 3 |
 | fields/*  | **✓**   | **✗**   | See _Customizing Fields_ below. |
 
 Your edits could be as small as adding a custom id to the `<form>` tag or reworking the entire HTML structure to work nicely with Foundation, Bootstrap, or your favorite front-end framework.
@@ -63,7 +63,7 @@ sproutforms/templates/_special/templates
 
 ### Global settings
 
-Setup a Global Form Template override in the Sprout Forms settings add add the path to the template folder where you wish to place your overrides:
+Setup a Global Form Template override in the Sprout Forms settings and add the path to the template folder where you wish to place your overrides:
 
 ::: code
 
@@ -91,4 +91,4 @@ Setting the Custom Template Folder value to `_forms` would allow you to place yo
 
 When you _Enable custom form templates on a per-form basis_, you'll have to add the override folder in your form settings.  
 
-When creating a new form, in the Form Settings sidebar, select the Form Template or add Form Template folder you wish to use for your overrides.
+When creating a new form, in the Form Settings sidebar, select the Form Template or add the Form Template folder you wish to use for your overrides.
