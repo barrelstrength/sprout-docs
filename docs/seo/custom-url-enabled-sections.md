@@ -1,16 +1,12 @@
 # URL-Enabled Sections 
 
-Metadata and XML Sitemap support for all Elements Types
-
 Sprout SEO does not just help you manage extensive metadata for Entries. It can help you manage metadata for all URL-Enabled Element Types. This includes:
 
 - Entries
 - Categories
 - Craft Commerce Products
 
-Support can be added for additional Element Types using the URL-Enabled Section Type API. 
-
-## Add Metadata and XML Sitemap support for your Custom URL-Enabled Section Type
+Support can be added for additional Element Types using the URL-Enabled Section Type API.
 
 URL-Enabled Section Types are an advanced and powerful integration that helps us standardize differences across Element Types, so Sprout SEO can treat all of your Elements like you do – as content. This enables users to easily manage metadata in the same way across all element types and easily add any URL-Enabled content to an XML sitemap.
 

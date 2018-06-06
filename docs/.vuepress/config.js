@@ -133,7 +133,8 @@ module.exports = {
                     title: 'Introduction',
                     collapsable: false,
                     children: [
-                        ''
+                        '',
+                        'faq'
                     ]
                 },
                 {
@@ -143,7 +144,8 @@ module.exports = {
                         'global-metadata',
                         'element-metadata-field',
                         'sitemaps',
-                        'redirects'
+                        'redirects',
+                        'plugin-settings'
                     ]
                 },
                 {
@@ -152,7 +154,6 @@ module.exports = {
                     children: [
                         'template-overrides',
                         'custom-metadata-variable',
-                        'meta-description-length',
                         'custom-sections'
                     ]
                 },
@@ -160,16 +161,9 @@ module.exports = {
                     title: 'Examples',
                     collapsable: false,
                     children: [
-                        'large-sitemaps',
+                        'canonical-override',
                         'block-robots-on-dev-site',
-                        'canonical-override'
-                    ]
-                },
-                {
-                    title: 'Integrations',
-                    collapsable: false,
-                    children: [
-                        'sprout-import'
+                        'large-sitemaps'
                     ]
                 },
                 {
@@ -177,7 +171,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'custom-schema',
-                        'url-enabled-sections'
+                        'custom-url-enabled-sections'
                     ]
                 },
                 {
@@ -185,9 +179,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'installing-and-updating-craft-3',
-                        'installing-and-updating-craft-2',
-                        'contact-support',
-                        'faq'
+                        'installing-and-updating-craft-2'
                     ]
                 }
             ],

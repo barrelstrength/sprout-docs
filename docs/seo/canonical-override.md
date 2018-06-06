@@ -10,4 +10,4 @@ If your Canonical override field handle has the value of `canonicalOverrideField
 }) %}
 ```
 
-If you'd like to validate and ensure your Canonical override field is a URL, check out the [Sprout Link Field]({entry:1142:url}).
+If you'd like to validate and ensure your Canonical override field is a URL, check out the Sprout Fields [URL Field](../fields/url-field.md).

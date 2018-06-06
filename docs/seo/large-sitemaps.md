@@ -1,16 +1,16 @@
 # Large Sitemaps
 
-Sprout SEO now supports large sitemaps. See the [Sitemap documentation]({entry:248:url}) for more information on how to enable Dynamic Sitemaps and customize the _Total Elements Per Sitemap_ setting for your needs.
+::: tip
+Upgrade to the latest version of Sprout SEO to easily manage large sitemaps. Read more about [Sitemaps](./sitemaps.md) and the _Total Elements Per Sitemap_ setting.
+:::
 
-![XML Sitemap Settings]({asset:4406:url})
-
-_Note: The method below is here for reference only. The `craft.sproutSeo.sitemap()` tag is deprecated and will be removed in Craft 3._
+::: warning
+The method below is here for reference only. The `craft.sproutSeo.sitemap()` tag is deprecated and has been removed in Craft 3.
+:::
 
 ----
 
 If you have a large number of entries, you may need to break your sitemap into multiple sitemaps using a sitemap index.
-
-_Note: We're evaluating ways to make this more user friendly.  For now, the larger sections of your site may have to be output in a manual way in conjunction with the `craft.sproutSeo.sitemap` tag._
 
 Managing your larger number of entries with a sitemap index involves 3 steps:
 1. Create a sitemapindex and the related sitemap files
@@ -23,7 +23,7 @@ Here's an example of how to set this up with a sitemapindex and two specific sit
 - **General Sitemap**: templates/sitemaps/sitemap-general.xml
 - **Large Section Sitemap**: templates/sitemaps/sitemap-articles.xml
 
-## Create your sitemapindex file
+## Sitemap Index
 
 First, you can create an `<sitemapindex>` file that references all of the other sitemaps that you want included.  In this example, our `<sitemapindex>` references 2 other sitemaps: one for our general pages and one for the section where we have a large number of articles. 
 
@@ -45,7 +45,7 @@ In some cases, you may even need to break up your larger section into multiple s
 </sitemapindex>
 ```
 
-## Output your general pages using the sitemap tag
+## The Sitemap Variable
 
 While one of your sections may be large, you can still simplify the output of all your singles and smaller sections in your general sitemap file.
 
@@ -55,7 +55,7 @@ While one of your sections may be large, you can still simplify the output of al
 {{ craft.sproutSeo.sitemap() }}
 ```
 
-## Manually output the entries of your largest section
+## Manual Output
 
 For your large section, make sure you deselect it in the Sitemap settings.  This will ensure it doesn't get included in the general sitemap file.  You can then manage the output of your largest section using Twig.  If you need to break it into multiple files you can reference additional sitemaps in your `<sitemapindex>` and use the `craft.entries` parameters `limit` and `offset` to control how many entries you are outputting in any particular sitemap.
 

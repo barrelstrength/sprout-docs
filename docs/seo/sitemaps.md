@@ -1,33 +1,42 @@
 # Sitemaps
 
-Sprout SEO makes it easy to generate a Sitemap for all of your URL-enabled content for one or more languages. Your sitemap can be managed directly from the Craft admin area (no template updates required).
+Generate sitemaps for all of your URL-enabled content for one or more languages. Sitemaps are managed directly within Craft (no template updates required).
 
-Sitemaps currently supports the following types of content:
+Sitemaps currently support the following types of content:
 
-1. Sections
+1. Entries
 2. Categories
 3. Craft Commerce Products
-4. Custom URLs
-5. Custom URL-Enabled Element Integrations
+4. Custom Page URLs
 
-![Sitemap Management]({asset:4405:url})
+![Sitemap Management](../images/seo/xml-sitemap.png)
 
-All of your URL-enabled content types will appear on the Sitemap Settings page. For each type of content, you can:
+::: tip
+Plugins can add Sitemap support for custom [URL-Enabled Sections](./custom-url-enabled-sections.md). For example, Sprout Email adds Sitemap support for [Campaign Emails](../email/campaign-emails.md).
+:::
 
-- *Enabled* - Enable it or disable it in your sitemap
-- *Priority* - Update the Priority of the items in the Section relative to the other items in your Sitemap
-- *Change Frequency* - Update the Change Frequency of the items in the Section relative to other items in your Sitemap
+## Section Settings
 
-## Generate your Sitemap
+All of your URL-enabled content types will appear on the Sitemap Settings page with the following settings:
+
+| Setting             | Description |
+|:------------------- |:---------------- |
+| Enabled             | Enable it or disable it in your sitemap |
+| Priority            | Update the Priority of the items in the Section relative to the other items in your Sitemap |
+| Change&nbsp;Frequency    | Update the Change Frequency of the items in the Section relative to other items in your Sitemap |
+
+## Sitemap Settings
 
 Your Sitemap output is managed by two settings on the `Sprout Seo->Settings->General` tab.
 
-![XML Sitemap Settings]({asset:4406:url})
+![XML Sitemap Settings](../images/seo/xml-sitemap-settings.png)
 
-- *Enable Dynamic Sitemaps* - Enabling this setting will display a sitemap for all your URL-Enabled sections when you visit the URL: `/sitemap.xml` on your website.
-- *Total Elements Per Sitemap* - The number of items that display on each page of your sitemap. A lower number may be necessary for sitemaps with a large number of elements or limited server resources.
+| Setting             | Description |
+|:------------------- |:---------------- |
+| Enable&nbsp;Dynamic&nbsp;Sitemaps | Enabling this setting will display a sitemap for all your URL-Enabled sections when you visit the URL: `/sitemap.xml` on your website. |
+| Total&nbsp;Elements&nbsp;Per&nbsp;Sitemap | The number of items that display on each page of your sitemap. A lower number may be necessary for sitemaps with a large number of elements or limited server resources. |
 
-## Example Sitemap output
+## Sitemap XML
 
 Your sitemap will consist of two or more XML Sitemap files. This will include a Sitemap Index file that lists all relevant sitemaps for your website and individual XML Sitemap files for each respective section. Individual Sitemap files will be broken into multiple files when the number of entries is more than the _Total Elements Per Sitemap_ setting value.
 
@@ -68,7 +77,7 @@ Your Sitemap Index will be output when you visit the URL: `/sitemap.xml`
  </sitemap>
 </sitemapindex>
 ```
-### Individual Sitemaps
+### Section-specific Sitemaps (Single Language)
 
 Each individual sitemap will list the URLs for the content in your URL-Enabled Sections.
 
@@ -90,7 +99,7 @@ Each individual sitemap will list the URLs for the content in your URL-Enabled S
 </urlset>
 ```
 
-### Individual Sitemaps for Multi-Langauge Website
+### Section-specific Sitemaps (Multi-language)
 
 If you have a multi-language site, your sitemap will adjust to reference URLs for all related content across languages.
 
@@ -124,13 +133,11 @@ If you have more advanced Sitemap needs, Sprout SEO's Sitemap tool allows you to
 
 Enable Custom URL management features in the Advanced Settings (`Sprout SEO->Settings->Advanced->Enable Custom Sections`)
 
-## Custom URL-Enabled Element Integrations
+## Craft 2
 
-Plugins can [add sitemap support for custom URL-enabled content]({entry:3263:url}). For example, Sprout Email adds Sitemap support for Email Campaigns.
-
-## [Deprecated] Generate your Sitemap Manually
-
-_Note: This method of outputting your sitemap has been deprecated and will be removed for Craft 3._
+::: warning
+This method of generating your sitemap has been deprecated and has been removed in Craft 3.
+:::
 
 To output the complete XML for your Sitemap, add the following tag to your sitemap template:
 

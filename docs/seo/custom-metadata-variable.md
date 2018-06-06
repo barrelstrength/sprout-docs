@@ -8,15 +8,16 @@ Sprout SEO generates the metadata that is output to your pages with the `sprouts
 
 If you prefer to have full control over the metadata and how it is output on your pages, you can stop Sprout SEO from outputting metadata for you and just let it generate the metadata and make it available to your Twig template as a variable. 
 
-This will give you control to change the output format, stop certain items from being output, and even output additional in new ways to meet your needs. To give yourself control over your metadata variable, you'll need to update two Advanced settings:
+This will give you control to change the output format, stop certain items from being output, and even output additional metadata in new ways to meet your needs. To give yourself control over your metadata variable, you'll need to update two Advanced settings:
 
-**Automatically render metadata** - Disable this setting to stop Sprout SEO from outputting your metadata.
+| Setting          | Description |
+|:---------------- |:----------- |
+| **Automatically&nbsp;render&nbsp;metadata** | Disable this setting to stop Sprout SEO from outputting your metadata. |
+| **Enable&nbsp;custom&nbsp;metadata&nbsp;variable** | Enable this setting and give your custom metadata variable a name. Sprout SEO will process your metadata and make it available to your template as this variable. |
 
-**Enable custom metadata variable** - Enable this setting and give your custom metadata variable a name. Sprout SEO will process your metadata and make it available to your template as this variable.
+![Custom Metadata Variable](../images/seo/sprout-seo-metadata-variable.png)
 
-![Custom Metadata Variable]({asset:3389:url})
-
-To manage the metadata that Sprout SEO generates as a custom variable in your templates, you can do something like the following. Reference Sprout SEO's own template in `sproutseo/templates/_special/metadata.html` and be sure to continue to use the `{% sproutseo 'optimize' %}` tag in your templates (it's necessary to process your metadata and make the variable available):
+To manage the metadata that Sprout SEO generates as a custom variable in your templates, you can do something like the following. Reference Sprout SEO's own template in `sproutseo/templates/_special/metadata.html` and be sure to continue to use the `{% sproutseo 'optimize' %}` tag _before_ you access your `metadata` variable in your templates (it's necessary to process your metadata and make the variable available):
 
 ``` twig
 {% sproutseo 'optimize' %}
@@ -28,42 +29,42 @@ To manage the metadata that Sprout SEO generates as a custom variable in your te
 {% for name, value in meta.search %}
 {% switch name %}
 {% case "title" %}
-	<title>{{ value }}</title>
+  <title>{{ value }}</title>
 {% case "author" %}
-	<link href="{{ value }}" rel="author">
+  <link href="{{ value }}" rel="author">
 {% case "publisher" %}
-	<link href="{{ value }}" rel="publisher">
+  <link href="{{ value }}" rel="publisher">
 {% default %}
-	<meta name="{{ name }}" content="{{ value }}">
+  <meta name="{{ name }}" content="{{ value }}">
 {% endswitch %}
 {% endfor %}
 {% if meta.googlePlus is defined and meta.googlePlus %}
-	<link rel="publisher" href="{{ meta.googlePlus }}">
+  <link rel="publisher" href="{{ meta.googlePlus }}">
 {% endif %}
 {% for name, value in meta.robots %}
 {% switch name %}
 {% case "canonical" %}
-	<link rel="canonical" href="{{ value }}">
+  <link rel="canonical" href="{{ value }}">
 {% default %}
-	<meta name="{{ name }}" content="{{ value }}">
+  <meta name="{{ name }}" content="{{ value }}">
 {% endswitch %}
 {% endfor %}
 {% for name, value in meta.geo %}
-	<meta name="{{ name }}" content="{{ value }}">
+  <meta name="{{ name }}" content="{{ value }}">
 {% endfor %}
 {% for name, value in meta.openGraph %}
-	<meta property="{{ name }}" content="{{ value }}">
+  <meta property="{{ name }}" content="{{ value }}">
 {% endfor %}
 {% for name, value in meta.twitterCard %}
-	<meta name="{{ name }}" content="{{ value }}">
+  <meta name="{{ name }}" content="{{ value }}">
 {% endfor %}
 {% for property in globals.ownership %}
-	<meta name="{{ property.metaTag }}" property="{{ property.metaTag }}" content="{{ property.verificationCode }}">
+  <meta name="{{ property.metaTag }}" property="{{ property.metaTag }}" content="{{ property.verificationCode }}">
 {% endfor %}
 
 {%- for item in schema -%}
-	{% if item %}
-		{{ item.getSchema() }}
-	{% endif %}
+  {% if item %}
+    {{ item.getSchema() }}
+  {% endif %}
 {%- endfor %}
 ```

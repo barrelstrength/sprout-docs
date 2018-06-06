@@ -1,6 +1,8 @@
 # Global Metadata
 
-### Website Identity
+Global Metadata is managed from the Globals tab and filled out once when you setup Sprout SEO. Globals ensure you have metadata in place for your website identity and prepare Structured Data for your brand. Globals will help you communicate to the search engines information about your brand identity, how to get in touch, and general details so you always have something relevant about your business in search results and social sharing.
+
+## Website Identity
 
 ``` twig
 {% set globals = craft.sproutSeo.getGlobals() %}
@@ -118,7 +120,7 @@ You can display a list of the Social Profiles in your Global Sprout SEO settings
 
 ## Robots
 
-```
+``` twig
 {% set globals = craft.sproutSeo.getGlobals() %}
 {% set robots = globals.robots %}
 
