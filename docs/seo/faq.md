@@ -15,11 +15,3 @@ For example, a line that defines a `category` variable:
 May override the expected `category` variable that Craft makes available to a Category page with URLs and also may override the `entry` or `product` variables on an Entry or Product Page with URLs.
 
 Avoid using the generic variable names that Craft depends on when possible and use more specific variable names such as `productCategory` to avoid unexpected behavior.
-
-## My sitemap is returning blank!?  What do I do?
-
-Usually, this is because you have lots of entries and the sitemap tag is trying to output them all and running out of memory.
-
-To troubleshoot, first de-select all of the sections in your sitemap and then add them back one by one, starting with your Singles or smaller sections.
-
-Once you have identified the larger section that may be causing the issue, de-select it from your sitemap settings.  You'll need to manage the sitemap for this section manually.  Review our help doc on [Large Sitemaps](http://sprout.barrelstrengthdesign.com/craft-plugins/seo/docs/examples/large-sitemaps) for an example of how to manage a `sitemapindex` and multiple sitemaps.
