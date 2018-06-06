@@ -4,7 +4,9 @@
   "type": "project",
   "minimun-stability": "dev",
   "autoload": {
-    "psr-4": {"sproutDocs": "src/"}
+    "psr-4": {
+      "barrelstrength\\sproutdocs\\": "src/"
+    }
   },
   "require": {
     "sunra/php-simple-html-dom-parser": "1.5.2"
