@@ -41,53 +41,50 @@ Class Optimize
     {
         $dom = HtmlDomParser::file_get_html($htmlPath);
 
-        $defaultTitle = "Sprout Docs";
-        $head = $dom->find('head', 0);
-        $h1 = $dom->find('div[id="app"] div.content h1');
-        $p = $dom->find('div[id="app"] div.content p');
+        // Grab our metadata
+        $siteName = 'Sprout Documentation';
+        $defaultDescription = 'The Sprout Business Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.';
+        $defaultImage = 'https://s3.amazonaws.com/sprout.barrelstrengthdesign.com-assets/content/plugins/sprout-plugins-logo.png';
 
-        // Let's remove current title
         $currentTitle = $dom->find('title', 0);
-        if ($currentTitle){
-            $currentTitle->outertext  = '';
-        }
-        // Let's remove the current description
+        $firstH1 = $dom->find('div[id="app"] div.content h1');
+        $firstParagraph = $dom->find('div[id="app"] div.content p');
+
+        // Remove the default description
         $currentDescription = $dom->find( "meta[name=description]", 0);
+
         if ($currentDescription){
             $currentDescription->outertext  = '';
         }
 
         $dom->save($htmlPath);
 
-        $title = isset($h1[0]) ? $h1[0]->text() : $defaultTitle;
-        $head->innertext = "<title>'{$title}'</title>".$head->innertext;
+        $metaTitle = isset($firstH1[0]) ? $firstH1[0]->text() . ' - ' . $siteName : $currentTitle ?? $appendTitle;
+        $metaDescription = isset($firstParagraph[0]) ? $firstParagraph[0]->text() : $defaultDescription;
 
-        $paragraph = isset($p[0]) ? $p[0]->text() : $title;
-
-        $head->innertext .= "<meta name='description' content='{$paragraph}'>";
-
-        $sproutLogoUrl = 'https://s3.amazonaws.com/sprout.barrelstrengthdesign.com-assets/content/plugins/sprout-plugins-logo.png';
+        $metadataTags = "<title>{$metaTitle}</title>";
+        $metadataTags .= "<meta name='description' content='{$metaDescription}'>";
 
         // Facebook
-        $head->innertext .= "<meta property='og:type' content='website'>";
-        $head->innertext .= "<meta property='og:site_name' content='Sprout Docs'>";
-//        $head->innertext .= "<meta property='og:url' content=''>";
-        $head->innertext .= "<meta property='og:title' content='{$title}'>";
-        $head->innertext .= "<meta property='og:description' content='{$paragraph}'>";
-        $head->innertext .= "<meta property='og:image' content='{$sproutLogoUrl}'>";
-        $head->innertext .= "<meta property='og:image:secure_url' content='{$sproutLogoUrl}'>";
-        $head->innertext .= "<meta property='og:image:height' content='200'>";
-        $head->innertext .= "<meta property='og:image:width' content='200'>";
-        $head->innertext .= "<meta property='og:image:type' content='image/png'>";
-        $head->innertext .= "<meta property='og:locale' content='en'>";
+        $metadataTags .= "<meta property='og:type' content='website'>";
+        $metadataTags .= "<meta property='og:site_name' content='{$siteName}'>";
+        $metadataTags .= "<meta property='og:title' content='{$metaTitle}'>";
+        $metadataTags .= "<meta property='og:description' content='{$metaDescription}'>";
+        $metadataTags .= "<meta property='og:image' content='{$defaultImage}'>";
+        $metadataTags .= "<meta property='og:image:secure_url' content='{$defaultImage}'>";
+        $metadataTags .= "<meta property='og:image:height' content='200'>";
+        $metadataTags .= "<meta property='og:image:width' content='200'>";
+        $metadataTags .= "<meta property='og:image:type' content='image/png'>";
+        $metadataTags .= "<meta property='og:locale' content='en'>";
 
         // Twitter
-        $head->innertext .= "<meta name='twitter:card' content='summary_large_image'>";
-        $head->innertext .= "<meta name='twitter:site' content='@Barrel_Strength'>";
-//        $head->innertext .= "<meta name='twitter:url' content=''>";
-        $head->innertext .= "<meta name='twitter:title' content='{$title}'>";
-        $head->innertext .= "<meta name='twitter:description' content='{$paragraph}'>";
-        $head->innertext .= "<meta name='twitter:image' content='{$sproutLogoUrl}'>";
+        $metadataTags .= "<meta name='twitter:card' content='summary'>";
+        $metadataTags .= "<meta name='twitter:site' content='@Barrel_Strength'>";
+        $metadataTags .= "<meta name='twitter:title' content='{$metaTitle}'>";
+        $metadataTags .= "<meta name='twitter:description' content='{$metaDescription}'>";
+        $metadataTags .= "<meta name='twitter:image' content='{$defaultImage}'>";
+
+        $currentTitle->outertext = $metadataTags;
 
         $dom->save($htmlPath);
     }
