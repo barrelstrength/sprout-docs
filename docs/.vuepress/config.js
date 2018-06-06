@@ -3,7 +3,7 @@ module.exports = {
     description: 'The Sprout Business Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.',
     theme: 'craftdocs',
     base: '/docs/',
-    ga: '',
+    ga: 'UA-26032077-1',
     themeConfig: {
         docsRepo: 'barrelstrength/sprout-docs',
         docsDir: 'docs',
