@@ -39,7 +39,9 @@ Class Optimize
 
     private function processFile($htmlPath)
     {
-        $dom = HtmlDomParser::file_get_html($htmlPath);
+        // Need to pass fourth parameter as '0' because PHP 7.1 throws an error otherwise
+        // https://github.com/sunra/php-simple-html-dom-parser/issues/59
+        $dom = HtmlDomParser::file_get_html($htmlPath, false, null, 0);
 
         // Grab our metadata
         $siteName = 'Sprout Documentation';
