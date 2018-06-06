@@ -33,7 +33,7 @@ module.exports = {
                     { text: 'Sprout Notes', link: '/notes/' }
                 ]
             },
-            { text: 'Barrel Strength', link: 'https://www.barrelstrengthdesign.com/' },
+            { text: 'Back to Sprout →', link: 'https://sprout.barrelstrengthdesign.com/' },
         ],
         sidebar: {
             '/forms/': [
@@ -78,7 +78,6 @@ module.exports = {
                     title: 'Examples',
                     collapsable: false,
                     children: [
-                        'complete-form-in-one-line',
                         'front-end-file-uploads',
                         'hidden-fields',
                         'pre-populating-a-field',

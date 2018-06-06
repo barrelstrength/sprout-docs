@@ -2,7 +2,7 @@
 
 There are two methods to make sure that related items exist during your imports. The appropriate method for you will depend on your preference and your specific data set.
 
-1. Import the related items first, then use the `related` key to match them based on a known attribute. See [Resolving Relationships]({entry:1567:url}) for more info on this method.
+1. Import the related items first, then use the `related` key to match them based on a known attribute. See [Resolving Relationships](./resolve-relationships.md) for more info on this method.
 2. Try to match related items using the `related` key, and dynamically create the related items if no match is found using the `createIfNotFound` and `newElements` keys.
 
 In this example, we first try to match related categories by slug, and if we don't find them, we also define the elements so they can be created on the fly using the `createIfNotFound` and `newElements` keys.

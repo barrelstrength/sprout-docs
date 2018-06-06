@@ -171,7 +171,7 @@ In our `attributes` we:
 
 - Set the Site ID of our secondary site: `"siteId": 2`
 
-In our `content` we us the `updateElement` key to find the Site-specific record that we want to be updating. We do this by matching our original entry by something we know about it (in this example we use the slug but can use any value as described in the `updateElement` documentation for [Updating Existing Elements]({entry:2218:url})). As noted above, when we create our primary locale entry, Craft creates records in the database for all of our enabled secondary Sites. We need to make sure that we update the record that is specific to our Site by using the `matchCriteria` key. In `matchCriteria` we:
+In our `content` we us the `updateElement` key to find the Site-specific record that we want to be updating. We do this by matching our original entry by something we know about it (in this example we use the slug but can use any value as described in the `updateElement` documentation for [Updating Existing Elements](./update-existing-elements.md)). As noted above, when we create our primary locale entry, Craft creates records in the database for all of our enabled secondary Sites. We need to make sure that we update the record that is specific to our Site by using the `matchCriteria` key. In `matchCriteria` we:
 
 - Make sure to match for the the Site that we want to update: `"siteId": 2`
 
@@ -184,7 +184,7 @@ In our `attributes` we:
 - Set the Locale ID of our secondary language: `"locale": "es"`
 - Ensure that our locale is enabled: `"localeEnabled" : true`
 
-In our `content` we us the `updateElement` key to find the locale-specific record that we want to be updating. We do this by matching our original entry by something we know about it (in this example we use the slug but can use any value as described in the `updateElement` documentation for [Updating Existing Elements]({entry:2218:url})). As noted above, when we create our primary locale entry, Craft creates records in the database for all of our enabled secondary locales. We need to make sure that we update the record that is specific to our locale by using the `matchCriteria` key. In `matchCriteria` we:
+In our `content` we us the `updateElement` key to find the locale-specific record that we want to be updating. We do this by matching our original entry by something we know about it (in this example we use the slug but can use any value as described in the `updateElement` documentation for [Updating Existing Elements](./update-existing-elements.md)). As noted above, when we create our primary locale entry, Craft creates records in the database for all of our enabled secondary locales. We need to make sure that we update the record that is specific to our locale by using the `matchCriteria` key. In `matchCriteria` we:
 
 - Make sure to match for the the locale that we want to update: `"locale": "es"`
 - Make sure our query looks for disabled locales (if we have our secondary locales set to disabled by default): `"localeEnabled": false`

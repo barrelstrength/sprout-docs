@@ -4,8 +4,8 @@ The Changelog reflects the most recent updates to a plugin and can be found at t
 
 ## Business Suite Plugins
 
-- [Sprout Forms](https://github.com/barrelstrength/craft-sprout-reports/blob/v3/CHANGELOG.md)
-- [Sprout SEO](https://github.com/barrelstrength/craft-sprout-seo/blob/v4/CHANGELOG.md)
+- [Sprout Forms](https://github.com/barrelstrength/craft-sprout-forms/blob/v3/CHANGELOG.md)
+- [Sprout SEO](https://github.com/barrelstrength/craft-sprout-seo/blob/v3/CHANGELOG.md)
 - [Sprout Email](https://github.com/barrelstrength/craft-sprout-email/blob/v4/CHANGELOG.md)
 - [Sprout Reports](https://github.com/barrelstrength/craft-sprout-reports/blob/v1/CHANGELOG.md)
 - [Sprout Import](https://github.com/barrelstrength/craft-sprout-import/blob/v1/CHANGELOG.md)

@@ -1,8 +1,8 @@
 # Invisible Field
 
-**_Note: The Sprout Forms Invisible Field will continue to be available in Craft 3. The Craft Invisible Field is deprecated and will be removed in Craft 3._**
-
-----
+::: warning
+The Sprout Forms Invisible Field will continue to be available in Craft 3. The Craft Invisible Field is deprecated and will be removed in Craft 3.
+:::
 
 The Invisible field behaves just like the Hidden field except for one important difference: the value you set for your Invisible Field never gets output in your front-end templates. This allows you to set and capture a value that your users never see.
 
@@ -12,13 +12,13 @@ Invisible field lets you set Hidden field values that can't be modified by your 
 
 The Invisible field is designed to be used as a Sprout Forms front-end Field.
 
-## Sprout Forms Field
+## Sprout Forms
 
 ### Settings
 
 **Invisible Field Value**
 
-See the [Hidden field documentation]({entry:1039:url}) for examples on how to set fixed and dynamic values in your Invisible field settings.
+See the [Hidden Field](./hidden-field.md) documentation for examples on how to set fixed and dynamic values in your Invisible field settings.
 
 **Allow updates**
 
@@ -28,6 +28,6 @@ When viewing a submitted Invisible field value in the Control Panel, by default,
 
 If you want to hide the value of your Invisible field to users in the Control Panel, you can enable the _Hide submitted value_ setting to obscure the submitted value using a password field.
 
-# Validation
+### Validation
 
 Currently, Invisible Field provides no validation.

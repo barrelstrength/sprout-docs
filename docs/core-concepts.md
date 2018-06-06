@@ -1,6 +1,4 @@
 # Core Concepts
-
-Below is a top-level overview of all of the components that you get when working with Sprout.
  
 ## Extending Craft
 

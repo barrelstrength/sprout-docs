@@ -8,9 +8,7 @@ Sprout Forms for Craft 3 comes with Email, Phone, and URL fields.
 
 ### Craft 2
 
-Install [Sprout Fields]({entry:1035:url})!  Sprout Fields provides you several additional field types to help ensure you're collecting clean and accurate data.
-
-For a longer discussion on data integrity, see our doc page on [how Sprout Forms approaches validation]({entry:1154:url}).
+Install [Sprout Fields](../fields/)!  Sprout Fields provides you several additional field types to help ensure you're collecting clean and accurate data.
 
 ## How do I export my form Entries to CSV?
 
@@ -20,7 +18,7 @@ Sprout Forms for Craft 3 includes a native Sprout Reports integration to create 
 
 ### Craft 2
 
-You can use [Sprout Reports](http://sprout.barrelstrengthdesign.com/craft-plugins/reports) to export your Form Entries to CSV.
+You can use [Sprout Reports](../reports/) to export your Form Entries to CSV.
 
 To export all entries from a particular form, you can create a custom SQL query to target that form. Each form uses a different table in the database.
 

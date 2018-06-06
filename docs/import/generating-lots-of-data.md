@@ -1,6 +1,6 @@
 # Generating Lots of Data
 
-Sprout Import's Seed Generator is a quick way to generate fake data to work with in Craft. For very specific and larger fake data scenarios, consider generating fake data using [Faker and an import generator file]({entry:2485:url}).
+Sprout Import's Seed Generator is a quick way to generate fake data to work with in Craft. For very specific and larger fake data scenarios, consider generating fake data using [Faker and an import generator file](./faker-and-fake-data.md).
 
 ## Resource Limits
 

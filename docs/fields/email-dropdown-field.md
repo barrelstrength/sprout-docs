@@ -1,20 +1,20 @@
 # Email Dropdown Field
 
-**_Note: The Sprout Forms Email Select field will continue to be available in Craft 3 with the new name: Email Dropdown. The Craft Email Select field is deprecated and will be removed in Craft 3._**
-
-----
+::: warning
+The Sprout Forms Email Select field will continue to be available in Craft 3 with the new name: Email Dropdown. The Craft Email Select field is deprecated and will be removed in Craft 3.
+:::
 
 The Email Select field allows a user to select a spam-protected Email Address from a dropdown list and trigger a notification to that email address using Sprout Forms or Sprout Email.
 
 ## Email Select Field
 
-![Sprout Email Select Field]({asset:1321:url})
+![Sprout Email Select Field](../images/fields/email-select-settings.png)
 
 Setup your Email Select Field just like you would setup up a Dropdown field. The only difference is in how the Email Select field behaves.
 
 When you output your Email Select field on the front-end of your website using Sprout Forms, the Email Select field will mask the email addresses from your settings so they cannot be harvested for spam or seen by the public. 
 
-![Email Select doesn't display email addresses in your template code]({asset:1323:url})
+![Email Select doesn't display email addresses in your template code](../images/fields/email-select-code.png)
 
 Additionally, after your Email Select field is submitted, the selected email will be unmasked and can be used to trigger dynamic emails notifications using Sprout Forms or Sprout Email.
 
@@ -30,7 +30,7 @@ email1@website.com, email2.website.com
 
 Once you have setup your Email Select Field and assigned it to a Sprout Form, you can setup a notification to be sent to the selected email address when your form is submitted. Add your Email Select field handle `{emailSelectFieldHandle}` to your Sprout Email Notification Recipients setting and select the Event _When a Sprout Forms Entry is saved_ along with the appropriate settings to target your specific form.
 
-![Send dynamic emails with Email Select and Sprout Email]({asset:1322:url})
+![Send dynamic emails with Email Select and Sprout Email](../images/fields/email-select-sprout-email.png)
 
 ## Using the Email Select Field with Sprout Forms
 

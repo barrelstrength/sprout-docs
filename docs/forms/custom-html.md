@@ -2,7 +2,7 @@
 
 ## Working with a Custom HTML Form
 
-Sprout Forms gives you 100% control over your form templates. If you need to customize your form, [Template Overrides]({entry:1139:url}) and the [Front-end Field API]({entry:1129:url}) are good places to start. They address the majority of what you need to have control over the markup and styles in your templates, specialized fields, and custom validation.
+Sprout Forms gives you 100% control over your form templates. If you need to customize your form, [Template Overrides](./template-overrides.md) and the [Front-end Field API](./custom-form-fields.md) are good places to start. They address the majority of what you need to have control over the markup and styles in your templates, specialized fields, and custom validation.
 
 If you prefer to stick to plain HTML, Sprout Forms won't give you any trouble.
 
@@ -11,7 +11,7 @@ When building a custom HTML form, you will need to manage several states in your
 1. The form (your form and field settings)
 2. The form entry (your form submission with any retained values or errors)
 
-The [form tag]({entry:882:url}) and the [getEntry tag]({entry:1137:url}) must be used together to manage all of the different states of a form. Below are some examples of how to dynamically access the different values you will need in your templates.
+The [form tag](./forms.md) and the [getEntry tag](./entries.md) must be used together to manage all of the different states of a form. Below are some examples of how to dynamically access the different values you will need in your templates.
 
 ## Loop through all fields dynamically
 
