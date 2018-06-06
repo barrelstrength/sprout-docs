@@ -540,7 +540,6 @@ module.exports = {
                     title: 'Development',
                     collapsable: false,
                     children: [
-                        'coding-guidelines',
                         ['tools/php-storm', 'PhpStorm'],
                         ['tools/sublime-text', 'Sublime Text'],
                         ['tools/craftnet', 'Craftnet']
