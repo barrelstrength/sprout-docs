@@ -48,7 +48,7 @@ Custom Form Fields will need to add support for these options on their own. If y
 
 ## Examples
 
-### displayForm()
+### Overriding values via the displayForm tag
 
 The `displayForm()` accepts rendering options for the form tag and input fields. To provide rendering options for your fields, you must create a `fields` object and use the field handle to identify the fields that the containing rendering options should be applied to.
 
@@ -70,44 +70,22 @@ The `displayForm()` accepts rendering options for the form tag and input fields.
 } %}
 
 {{ craft.sproutForms.displayForm("formHandle", options) }}
-
 ```
 
+#### Rendered HTML
+
 ```twig
-{# The above settings output: #}
 <form method="post" id="myform" class="form-class form-class-customized form-has-error">
 
-      {# The output of the displayField() tag above would display here. #}
+    {# The example assumes our field is a Single Line field #}
+    <div id="fields-myfield-field" class="field singleline field my-fancy-class required field-has-error">
+        <div class="heading">
+            <label for="fields-fieldHandle">Field Name</label>
+        </div>
+        <div class="input">
+            <input type="text" name="fields[fieldHandle]" id="fields-myfield" class="my-fancy-class" required data-hidden="false" />
+        </div>
+    </div>
 
 </form>
-```
-
-### displayField()
-
-The `displayField()` method accepts rendering options for the field only and all options are passed as top level key/value pairs.
-
-```twig
-{# Prepare our options #}
-{% set options = {
-    "id": "my-field",	
-    "class": "my-fancy-class",
-    "errorClass": "field-has-error",
-    "data": {
-        "hidden": "false",
-    }
-} %}
-
-{{ craft.sproutForms.displayField("formHandle.fieldHandle", options) }}
-```
-
-```twig
-{# The above settings output: #}
-<div id="fields-my-field" class="field plaintext field my-fancy-class required field-has-error">
-	<div class="heading">
-		<label for="fields-fieldHandle">Field Name</label>
-	</div>
-	<div class="input">
-		<input type="text" id="fields-my-field" class="field my-fancy-class" name="fields[fieldHandle]" required data-hidden="false" />
-	</div>
-</div>
 ```
