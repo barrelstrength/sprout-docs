@@ -75,7 +75,7 @@ public function getInputHtml($field, $value, $settings, array $renderingOptions 
 $field            > The FieldModel we're providing front end rending for
 $value            > The value associated with that field type
 $settings         > The settings associated with that field type
-$renderingOptions > Options passed via displayForm() or displayField
+$renderingOptions > Options available to displayForm(), displayTab(), displayField() tags
 ```
 
 In addition to the arguments, you should make sure to return a `\Twig_Markup` object from this method so that your html is not escaped.

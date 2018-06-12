@@ -1,6 +1,6 @@
 # Rendering Options
 
-Rendering options allow you to customize form and field output without having to override the templates. Rendering options can be passed as a twig object to the `displayForm()` or `displayField()` tags.
+Rendering options allow you to customize form and field output without having to override the templates. Rendering options can be passed as a twig object to the `displayForm`, `displayTab` or `displayField` tags.
 
 ``` twig
 {% set options = {
@@ -8,12 +8,11 @@ Rendering options allow you to customize form and field output without having to
 } %}
 
 {{ craft.sproutForms.displayForm("formHandle", options) }}
-
 ```
 
 Rendering Options may be handy to solve a specific situation, however, can become harder to maintain or reuse across multiple forms. 
 
-::: tip
+::: tip Note
 For 100% control over your Form Templates, see [Template Overrides](./template-overrides.md).
 :::
 

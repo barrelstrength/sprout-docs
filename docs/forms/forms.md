@@ -48,7 +48,25 @@ Add a Form Relations Field to a Field Layout to allow a content author to select
 
 ### Template Tags
 
-While the primary tag you will use in your templates is the `displayForm` tag, there are several tags to be aware of if you wish to get into more advanced use cases.
+While the primary tag you will use in your templates is the `displayForm` tag, there are several tags to be aware of if you begin using [Template Overrides](./template-overrides.md) or get into more advanced use cases.
+
+#### form
+
+You can access your Form Element directly using the `form` tag.
+
+::: code
+
+``` craft3
+{# Returns a barrelstrength\sproutforms\elements\Form #}
+{% set form = craft.sproutForms.form('contact') %}
+```
+
+``` craft2
+{# Returns a SproutForms_FormModel #}
+{% set form = craft.sproutForms.form('contact') %}
+```
+
+:::
 
 #### displayForm
 
@@ -101,24 +119,6 @@ The `displayField` tag is called within the `displayTab` tag and renders each in
 
 ``` craft2
 {{ craft.sproutForms.displayField('contact.email') }}
-```
-
-:::
-
-#### form
-
-You can access your Form Element directly using the `form` tag.
-
-::: code
-
-``` craft3
-{# Returns a barrelstrength\sproutforms\elements\Form #}
-{% set form = craft.sproutForms.form('contact') %}
-```
-
-``` craft2
-{# Returns a SproutForms_FormModel #}
-{% set form = craft.sproutForms.form('contact') %}
 ```
 
 :::

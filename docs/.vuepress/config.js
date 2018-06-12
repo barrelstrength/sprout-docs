@@ -82,7 +82,6 @@ module.exports = {
                         'hidden-fields',
                         'pre-populating-a-field',
                         'custom-html',
-                        'field-tags',
                         'display-errors-at-top-of-page',
                         'thank-you-page',
                         'submitting-a-form-via-ajax',
