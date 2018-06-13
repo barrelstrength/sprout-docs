@@ -16,6 +16,10 @@ module.exports = {
             craft2: 'Craft 2',
             craft3: 'Craft 3'
         },
+        algolia: {
+            apiKey: '9245da67ddab2b9ddda749bbb31362cf',
+            indexName: 'sprout_barrelstrengthdesign'
+        },
         nav: [
             {
                 text: 'Plugin Docs',
