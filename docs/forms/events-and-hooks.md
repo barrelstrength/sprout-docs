@@ -11,7 +11,26 @@ Raised before an entry is saved.
 ::: code
 
 ``` craft3
-Example needed.
+use barrelstrength\sproutforms\elements\Entry;
+use yii\base\Event;
+use Craft;
+
+public function init()
+{
+    parent::init();
+    
+    Event::on(Entry::class, Entry::EVENT_AFTER_SAVE, function(Event $event) {
+        if (Craft::$app->request->isSiteRequest)
+        {
+            // A Form Entry Element has been saved from a Front-end Form Submission
+        }
+        
+        if (Craft::$app->request->isCpRequest)
+        {
+            // A Form Entry Element has been updated from the Control Panel
+        }
+    });
+}
 ```
 
 ``` craft2
@@ -32,7 +51,19 @@ Raised just after an entry is saved
 ::: code
 
 ``` craft3
-Example needed.
+use barrelstrength\sproutforms\elements\Form;
+use yii\base\Event;
+
+public function init()
+{
+    parent::init();
+    
+    Event::on(Form::class, Form::EVENT_AFTER_SAVE, function(Event $event) {
+        
+        // A Form Element has been saved
+        
+    });
+}
 ```
 
 ``` craft2
@@ -55,7 +86,17 @@ The `sproutForms.modifyForm` Template Hook gives plugins a chance to dynamically
 ::: code
 
 ``` craft3
-Example needed.
+public function init()
+{
+    parent::init();
+    
+    Craft::$app->view->hook('sproutForms.modifyForm', function(&$context) {
+        
+         // Prepare HTML for your template
+    
+        return $html;
+    });
+}
 ```
 
 ``` craft2
@@ -67,5 +108,4 @@ public function init()
     return TemplateHelper::getRaw($content);
   });
 }
-
 :::
