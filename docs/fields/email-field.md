@@ -16,11 +16,9 @@ You can access your Email Field in your templates via it's field handle.
 
 ## Settings
 
-The Email Address field is valid when your input has no spaces, an at sign `@`, and a period `.` followed by any number of characters.  
+The Email Address field uses PHPs [FILTER_VALIDATE_EMAIL](http://php.net/manual/en/filter.filters.validate.php) which states:
 
-::: warning
-The default email validation is not designed to catch every email that is invalid. It's aim is only to reduce the chances that invalid emails are caused by small typos.
-:::
+> In general, this validates e-mail addresses against the syntax in RFC 822, with the exceptions that comments and whitespace folding and dotless domain names are not supported.
 
 ### Custom Validation and Error Messages
 

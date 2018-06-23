@@ -11,7 +11,7 @@ Setting up a Custom Twig Template report requires a couple of steps.
 3. Customize your Report's `Results Template` and `Options Template` settings
 
 ::: tip
-See the Sprout Reports `examples/templates` folders for commented example files of Twig Template Reports and Options Templates. Copy those files to your `craft/template` folder and setup a Twig Template report to use them as described below.
+See the Sprout Reports `examples/templates` folders for commented example files of Twig Template Reports and Settings Templates. Copy those files to your `craft/template` folder and setup a Twig Template report to use them as described below.
 :::
 
 ## Template Settings
@@ -19,7 +19,7 @@ See the Sprout Reports `examples/templates` folders for commented example files 
 To setup a Twig Template report you need to build a Results Template. Identifying your Results Template is the one required component of your Custom Twig Template report. The report template settings behave just like the Craft Sections 'Entry Template' setting.
 
 - **Results Template** (required) - `_reports/reportname/results`
-- **Options Template** - `_reports/reportname/options`
+- **Settings Template** - `_reports/reportname/settings`
 
 ::: tip
 Sprout Reports will look for your templates in your front-end `craft/templates` folder so it's a good idea to use a hidden folder that can't be accessed directly from the web.
@@ -65,12 +65,39 @@ Here is a simple, hard-coded example of each tag in use for a two-column report:
 If you want to give your user control over some Settings when they generate a Report, you can do so by defining an Settings Template. 
 
 ::: tip
-Use the Form Macros supported by the Craft CP to keep consistent with the Craft UI. Sprout Reports will import the Craft CP Form Macros. Your Options Template can look like this where the imported `forms` variable includes all Craft form macros defined in `craft/app/templates/_includes/forms.html`. :
+Use the Form Macros supported by the Craft CP to keep consistent with the Craft UI. Sprout Reports will import the Craft CP Form Macros. Your Settings Template can look like this where the imported `forms` variable includes all Craft form macros defined in `craft/app/templates/_includes/forms.html`. :
 :::
 
-### craft/templates/_reports/reportname/options.html
+### craft/templates/_reports/reportname/settings.html
 
-``` twig
+::: code
+
+``` craft3
+{{ forms.textField({
+	label: "Limit"|t,
+	name: "limit",
+	size: 10,
+	value: settings.quantity is defined ? settings.quantity : null,
+	first: true
+}) }}
+
+{{ forms.selectField({
+	label: "Region"|t,
+	name: "region",
+	options: {
+		"africa" : "Africa",
+		"antartica" : "Antartica",
+		"asia" : "Asia",
+		"australia" : "Australia",
+		"europe" : "Europe",
+		"northAmerica" : "North America",
+		"southAmerica" : "South America"
+	},
+	value: settings.region is defined ? settings.region : "Antartica"
+}) }}
+```
+
+``` craft2
 {{ forms.textField({
 	label: "Limit"|t,
 	name: "limit",
@@ -95,7 +122,9 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 }) }}
 ```
 
-All Settings are available to you via the `options` variable. Be sure to test if they exist. See an example Option Template with several common fields in the Sprout Reports `examples/templates` folder.
+:::
+
+All Settings are available to you via the `settings` variable in Craft 3 (or `options` variable in Craft 2). Be sure to test if they exist. See an example Settings Template with several common fields in the Sprout Reports `examples/templates` folder.
 
 - Text
 - Textarea
@@ -109,12 +138,31 @@ Examples also include how to toggle the display of conditional fields and how to
 
 ## Using Settings in Results
 
-When a user runs a report, all Options will be passed to the Results Template and can be used in your Options Template Twig code to help query and display data how you wish:
+When a user runs a report, all Settings will be passed to the Results Template and can be used in your Settings Template Twig code to help query and display data how you wish:
 
 ### reports/reportname/results.html
 
-``` twig
-{# In this example we use our options to retrieve a CategoryModel and then use that CategoryModel to retrieve all Trips that relate to that Category. We limit the results by the number provided by the user in the Limit option. #}
+In this example we use our settings to retrieve a CategoryModel and then use that CategoryModel to retrieve all Trips that relate to that Category. We limit the results by the number provided by the user in the Limit setting. 
+
+::: code
+
+``` craft3
+{% set region = craft.categories.group(settings.region) %}
+{% set trips = craft.entries.section('trips').relatedTo(region).limit(settings.limit) %}
+
+{# Create a Header Row #}
+{% do craft.sproutReports.addHeaderRow(['Region', 'Trip Name']) %}
+
+{# Loop through our trips and output the Region and Trip Name for each result #}
+{% for trip in trips %}
+	{% do craft.sproutReports.addRow([
+  	trip.relatedCategory.first().title, 
+		trip.title
+	]) %}
+{% endfor %}
+```
+
+``` craft2
 {% set region = craft.categories.group(options.region) %}
 {% set trips = craft.entries.section('trips').relatedTo(region).limit(options.limit) %}
 
@@ -129,3 +177,5 @@ When a user runs a report, all Options will be passed to the Results Template an
 	]) %}
 {% endfor %}
 ```
+
+:::

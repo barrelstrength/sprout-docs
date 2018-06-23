@@ -23,11 +23,13 @@ public function init()
         if (Craft::$app->request->isSiteRequest)
         {
             // A Form Entry Element has been saved from a Front-end Form Submission
+            // Access the Form Entry Element via: $event->sender
         }
         
         if (Craft::$app->request->isCpRequest)
         {
             // A Form Entry Element has been updated from the Control Panel
+            // Access the Form Entry Element via: $event->sender
         }
     });
 }
@@ -61,6 +63,7 @@ public function init()
     Event::on(Form::class, Form::EVENT_AFTER_SAVE, function(Event $event) {
         
         // A Form Element has been saved
+        // Access the Form Element via: $event->sender
         
     });
 }
