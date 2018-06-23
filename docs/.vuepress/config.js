@@ -344,6 +344,9 @@ module.exports = {
                     children: [
                         'content-import-examples',
                         'settings-import-examples',
+                        'longform-content-matrix-example',
+                        'navigation-using-structures-example',
+                        'simple-blog-example',
                         'expressionengine-export'
                     ]
                 },
