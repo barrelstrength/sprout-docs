@@ -540,6 +540,8 @@ module.exports = {
                         'support/feature-requests',
                         'support/bugs',
                         'support/changelog',
+                        'support/pricing',
+                        'support/training',
                         'support/support'
                     ]
                 },
