@@ -342,6 +342,8 @@ module.exports = {
                     title: 'Examples',
                     collapsable: false,
                     children: [
+                        'content-import-examples',
+                        'settings-import-examples',
                         'expressionengine-export'
                     ]
                 },
