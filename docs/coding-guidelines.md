@@ -190,8 +190,10 @@ And any other classes found in the `craftcms/cms/src/web` folder:
 - craft\web\UrlRule
 - craft\web\View
 
-------------------------------------------------------------
+Don't use Web-only methods outside of Web Controllers. Ways to test for this? Search for ann Craft::$app->getRequest methods outside of Web controllers. Run ./craft help and see if you get any errors.
 
-Exclude vendor folder from repos (ADD to GUIDLINES DOC)
-Devs should run this locally and Craft will install this for us at the application level.
-Get this into our basic gitignore.
+----
+
+Exclude vendor folder from repos. Add vendor to standard gitignore.
+
+Devs should run composer update locally and Craft will install this for us at the application level.
