@@ -10,7 +10,7 @@ Here is an example of an Entry Model with a Matrix field and two blocks. When im
 
 ``` craft3
 [  
-	{
+  {
     "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
@@ -42,7 +42,7 @@ Here is an example of an Entry Model with a Matrix field and two blocks. When im
 
 ``` craft2
 [  
-	{
+  {
     "@model": "EntryModel",
     "attributes": { ... },
     "content": {
@@ -82,7 +82,7 @@ If you have Relations on your Matrix Blocks, you can also use the `related` key:
 
 ``` craft3
 [  
-	{
+  {
     "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
@@ -103,17 +103,16 @@ If you have Relations on your Matrix Blocks, you can also use the `related` key:
             "fields": {
               "caption": "Deserunt quam cupiditate fugit et dolorem saepe."
             },
-						"related": {
-							"assetsFieldHandle": {
+            "related": {
+              "assetsFieldHandle": {
                 "@model": "barrelstrength\\sproutimport\\importers\\elements\\Asset",
-                "matchBy": "filename",
-                "matchValue": ["ImageName03.jpg"],
-                "matchCriteria": {
+                "params": {
+                  "filename": ["ImageName03.jpg"],
                   "source": "images",
                   "folderId": 8
                 }
               }
-						}			
+            }
           }
         }
       }
@@ -124,7 +123,7 @@ If you have Relations on your Matrix Blocks, you can also use the `related` key:
 
 ``` craft2
 [  
-	{
+  {
     "@model": "EntryModel",
     "attributes": { ... },
     "content": {
@@ -145,8 +144,8 @@ If you have Relations on your Matrix Blocks, you can also use the `related` key:
             "fields": {
               "caption": "Deserunt quam cupiditate fugit et dolorem saepe."
             },
-						"related": {
-							"assetsFieldHandle": {
+            "related": {
+              "assetsFieldHandle": {
                 "@model": "AssetModel",
                 "matchBy": "filename",
                 "matchValue": ["ImageName03.jpg"],
@@ -155,7 +154,7 @@ If you have Relations on your Matrix Blocks, you can also use the `related` key:
                   "folderId": 8
                 }
               }
-						}			
+            }
           }
         }
       }

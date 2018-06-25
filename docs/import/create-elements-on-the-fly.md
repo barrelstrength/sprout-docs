@@ -20,8 +20,9 @@ In this example, we first try to match related categories by slug, and if we don
       "related": {
         "categoryHandle": {
           "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
-          "matchBy": "slug",
-          "matchValue": ["san-francisco", "london"],
+          "params": {
+            "slug": ["san-francisco", "london"]
+          },
           "createIfNotFound": true,
           "newElements": [
             {

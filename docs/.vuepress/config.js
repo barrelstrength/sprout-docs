@@ -309,25 +309,49 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Importing Data',
+                    title: 'Core Concepts',
                     collapsable: false,
                     children: [
                         'resolve-relationships',
+                        'related-attributes',
                         'create-elements-on-the-fly',
                         'update-existing-elements',
                         'set-default-attributes',
+                        'multiple-sites',
+                        'multiple-import-types',
                         'large-amounts-of-data'
                     ]
                 },
                 {
-                    title: 'Special Data Types',
+                    title: 'Element Importers',
                     collapsable: false,
                     children: [
-                        'authors',
                         'assets',
+                        'categories',
+                        'entries',
                         'matrix-field',
-                        'multiple-sites',
-                        'products-with-variants'
+                        'orders',
+                        'products-with-variants',
+                        'tags',
+                        'users'
+                    ]
+                },
+                {
+                    title: 'Settings Importers',
+                    collapsable: false,
+                    children: [
+                        'fields',
+                        'sections',
+                        'widgets'
+                    ]
+                },
+                {
+                    title: 'Bundles',
+                    collapsable: false,
+                    children: [
+                        'longform-content-matrix',
+                        'navigation-using-structures',
+                        'simple-blog',
                     ]
                 },
                 {
@@ -342,11 +366,6 @@ module.exports = {
                     title: 'Examples',
                     collapsable: false,
                     children: [
-                        'content-import-examples',
-                        'settings-import-examples',
-                        'longform-content-matrix-example',
-                        'navigation-using-structures-example',
-                        'simple-blog-example',
                         'expressionengine-export'
                     ]
                 },

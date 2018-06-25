@@ -25,7 +25,7 @@ You can import your primary locale like any other Element you import.
       "sectionId": 2,
       "typeId": 2,
       "authorId": 1,
-      "slug": "test",
+      "slug": "english-slug",
       "postDate": "2015-02-27 16:43:52",
       "expiryDate": null,
       "dateCreated": "2015-02-27 16:43:52",
@@ -52,7 +52,7 @@ You can import your primary locale like any other Element you import.
       "locale": "en_us",
       "localeEnabled" : true,
       "authorId": 1,
-      "slug": "test",
+      "slug": "english-slug",
       "postDate": "2015-02-27 16:43:52",
       "expiryDate": null,
       "dateCreated": "2015-02-27 16:43:52",
@@ -90,7 +90,7 @@ We import our secondary locale in a second step, and the import format has a few
       "sectionId": 2,
       "typeId": 2,
       "authorId": 1,
-      "slug": "test",
+      "slug": "spanish-slug",
       "postDate": "2015-02-27 16:43:52",
       "expiryDate": null,
       "dateCreated": "2015-02-27 16:43:52",
@@ -98,17 +98,15 @@ We import our secondary locale in a second step, and the import format has a few
       "enabled": true
     },
     "content": {
-      "title": "Spanish Title3",
+      "title": "Spanish Title",
       "fields": {
-        "sproutExamplePlainText": "",
-        "body": "Spanish BODY3"
+        "body": "Spanish Content"
       }
     },
     "settings": {
       "updateElement": {
-        "matchBy": "slug",
-        "matchValue": "test",
-        "matchCriteria": {
+        "params": {
+          "slug": "english-slug",
           "section": "news",
           "siteId": 2
         }
@@ -128,7 +126,7 @@ We import our secondary locale in a second step, and the import format has a few
       "locale": "es",
       "localeEnabled" : true,
       "authorId": 1,
-      "slug": "test",
+      "slug": "spanish-slug",
       "postDate": "2015-02-27 16:43:52",
       "expiryDate": null,
       "dateCreated": "2015-02-27 16:43:52",
@@ -138,14 +136,13 @@ We import our secondary locale in a second step, and the import format has a few
     "content": {
       "title": "Spanish Title3",
       "fields": {
-        "sproutExamplePlainText": "",
-        "body": "Spanish BODY3"
+        "body": "Spanish Content"
       }
     },
     "settings": {
 			"updateElement": {
         "matchBy": "slug",
-        "matchValue": "test",
+        "matchValue": "english-slug",
         "matchCriteria": {
           "section": "news",
           "locale": "es",

@@ -2,29 +2,37 @@
 
 Sprout Import currently supports importing:
 
-## Craft data types
+## Craft CMS data types
 
 - **Elements** - Assets, Categories, Entries, Tags, Users
 - **Settings** - Sections, Entry Types, Fields
-- **Fields** - Assets, Categories, Checkboxes, Color, Date/Time, Dropdown, Entries, Lightswitch, Matrix, Multi-select, Number, Plain Text, Position Select, Radio Buttons, Rich Text, Table, Tags, Users
+- **Fields** - Assets, Categories, Checkboxes, Color, Date/Time, Dropdown, Entries, Lightswitch, Matrix, Multi-select, Number, Plain Text, Radio Buttons, Table, Tags, Users
 
 ## Craft Commerce data types
 
-- **Elements** - Commerce_Order, Commerce_Product (with Variants)
+- **Elements** - Products (with Variants), Orders
 
 ## Sprout Plugins data types
 
 _Sprout Forms_
-- **Elements** - SproutForms_Entry, SproutForms_Form
-- **Fields** - Form Entry Relations, Form Relations
+- **Elements** - Forms, Form Entries
+- **Fields** - Form Relations, Form Entry Relations, 
 
 _Sprout Email_
-- **Elements** - SproutEmail_CampaignEmail, SproutEmail_NotificationEmail
+- **Elements** - Notification Emails, Campaign Emails
 - **Settings** - Campaign Types
 
 _Sprout SEO_
-- **Elements** - SproutSeo_Redirects
+- **Elements** - Redirects
 - **Fields** - Element Metadata
 
 _Sprout Fields_
-- **Fields** - Email Address, Email Select, Hidden, Invisible, Link, Phone Number
+- **Fields** - Address, Email, Gender, Name, Notes, Phone Field, Predefined, Regular Expression, URL
+
+## Custom Field data types
+
+_Sprout Import should be able to import any custom field you have in your field layout. You'll just need to format the JSON for that field to match how the field would be submitted in the saveElement request._
+
+Some common third-party fields that Sprout Import supports:
+
+- **Fields** - Neo, SuperTable, SmartMap, Position Select, Rich Text, etc.

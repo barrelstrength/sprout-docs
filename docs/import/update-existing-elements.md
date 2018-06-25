@@ -25,9 +25,8 @@ The `updateElement` key must be defined within the `settings` section of your im
     },
     "settings": {
       "updateElement": {
-        "matchBy": "oldId",
-        "matchValue": 14,
-        "matchCriteria": {
+        "params": {
+          "oldId": 14,
           "section": "projects"
         }
       }
@@ -78,9 +77,8 @@ The `updateElement` key must be defined within the `settings` section of your im
       "related": {
         "heroImage": {
           "@model": "barrelstrength\\sproutimport\\importers\\elements\\Asset",
-          "matchBy": "filename",
-          "matchValue": "ImageName03.jpg",
-          "matchCriteria": {
+          "params": {
+            "filename": "ImageName03.jpg",
             "source": "images",
             "folderId": 8
           }
@@ -89,9 +87,8 @@ The `updateElement` key must be defined within the `settings` section of your im
     },
     "settings": {
       "updateElement": {
-        "matchBy": "oldId",
-        "matchValue": 14,
-        "matchCriteria": {
+        "params": {
+          "oldId": 14,
           "section": "projects"
         }
       }

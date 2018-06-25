@@ -14,15 +14,13 @@ When you import data using Sprout Import, you can choose to mark that data as Se
 
 All mock data generated from the Seed tab will be automatically marked as seed data. 
 
-## Craft Import Format
+## Import Format
 
-Currently, Sprout Import supports importing data in JSON format that maps to Craft's data models. We refer to this the _Craft Import Format_.
-
-Examples of several different data models for Elements, Fields, and Settings can be found within the plugin in the `sproutimport/examples` folder.
+Sprout Import supports importing data in JSON format. Examples of several different data models for Elements, Fields, and Settings can be found throughout the documentation.
 
 ## Import Methods
 
-Once your data is prepared as valid Craft Import Format JSON, you can import it into Craft using Sprout Import via:
+Once your data is prepared as valid JSON, you can import it into Craft using Sprout Import via:
 
 - Copy/Paste
 - File Upload (via one or more json files)
