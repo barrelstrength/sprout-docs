@@ -18,8 +18,8 @@ Use the Category Element Importer to import categories.
     "content": {
       "title": "Category Title"
     }
-  },
-
+  }
+]
 ```
 
 :::
