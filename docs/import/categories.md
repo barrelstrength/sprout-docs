@@ -85,3 +85,103 @@ As you may not always know the `parentId`, you can let Sprout Import find the `p
 ```
 
 :::
+
+In the following example, we import Categories with three levels of hierarchy. Be sure to import the parent categories before you target them via the children categories.
+
+::: code
+
+``` craft3
+[
+  {
+    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "attributes": {
+      "groupId": 1,
+      "slug": "parent-one",
+      "dateCreated": "2016-01-13 01:25:57",
+      "dateUpdated": "2016-01-13 01:25:57",
+      "enabled": true
+    },
+    "content": {
+      "title": "Parent 1"
+    }
+  },
+  {
+    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "attributes": {
+      "groupId": 1,
+      "slug": "parent-two",
+      "dateCreated": "2016-01-13 01:25:57",
+      "dateUpdated": "2016-01-13 01:25:57",
+      "enabled": true
+    },
+    "content": {
+      "title": "Parent 2"
+    }
+  },
+  {
+    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "attributes": {
+      "groupId": 1,
+      "slug": "child-one-level-one",
+      "dateCreated": "2016-01-13 01:25:57",
+      "dateUpdated": "2016-01-13 01:25:57",
+      "enabled": true,
+      "related": {
+        "newParentId": {
+          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+          "params": {
+            "slug": "parent-one"
+          }
+        }
+      }
+    },
+    "content": {
+      "title": "Child 1 - Level 1"
+    }
+  },
+  {
+    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "attributes": {
+      "groupId": 1,
+      "slug": "child-two-level-one",
+      "dateCreated": "2016-01-13 01:25:57",
+      "dateUpdated": "2016-01-13 01:25:57",
+      "enabled": true,
+      "related": {
+        "newParentId": {
+          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+          "params": {
+            "slug": "parent-two"
+          }
+        }
+      }
+    },
+    "content": {
+      "title": "Child 2 - Level 1"
+    }
+  },
+  {
+    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "attributes": {
+      "groupId": 1,
+      "slug": "child-one-level-two",
+      "dateCreated": "2016-01-13 01:25:57",
+      "dateUpdated": "2016-01-13 01:25:57",
+      "enabled": true,
+      "related": {
+        "newParentId": {
+          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+          "params": {
+            "slug": "child-one-level-one"
+          }
+        }
+      }
+    },
+    "content": {
+      "title": "Child 1 - Level 2"
+    }
+  }
+]
+```
+
+:::
