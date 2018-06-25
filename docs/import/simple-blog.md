@@ -97,15 +97,14 @@ Define reusable content structures to kick start your projects.
                       "handle": "textBlock",
                       "fields": {
                         "new1": {
-                          "type": "craft\\fields\\RichText",
+                          "type": "craft\\fields\\PlainText",
                           "name": "Text",
                           "handle": "text",
                           "instructions": "",
                           "typesettings": {
-                            "configFile": "Simple.json",
-                            "cleanupHtml": true,
-                            "purifyHtml": true,
-                            "columnType": "text"
+                            "placeholder": "",
+                            "multiline": true,
+                            "initialRows": 8
                           }
                         }
                       }
