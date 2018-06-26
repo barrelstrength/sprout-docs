@@ -60,7 +60,7 @@ To create a field that extends the Sprout Forms Front-end Field API, you'll need
 
 ### Field Class
 
-The _field_ class naming convesion we recommend is: `{PluginHandle}{FieldType}{Field}`.
+The _field_ class naming convention we recommend is: `{PluginHandle}{FieldType}{Field}`.
 
 #### getInputHtml()
 
