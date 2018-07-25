@@ -19,7 +19,7 @@ The `updateElement` key must be defined within the `settings` section of your im
     "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
-      "oldId": 14,
+      "id": 14,
       "title": "Title of post",
       "fields": { ... }
     },
@@ -71,7 +71,7 @@ The `updateElement` key must be defined within the `settings` section of your im
     "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
-      "oldId": 14,
+      "id": 14,
       "title": "Title of post",
       "fields": { ... },
       "related": {
@@ -88,7 +88,7 @@ The `updateElement` key must be defined within the `settings` section of your im
     "settings": {
       "updateElement": {
         "params": {
-          "oldId": 14,
+          "id": 14,
           "section": "projects"
         }
       }
