@@ -89,6 +89,7 @@ module.exports = {
                         'display-errors-at-top-of-page',
                         'thank-you-page',
                         'submitting-a-form-via-ajax',
+                        'submission-limit',
                         'translating-error-messages'
                     ]
                 },
