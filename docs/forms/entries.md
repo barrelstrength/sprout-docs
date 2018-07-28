@@ -22,6 +22,49 @@ The `entries` tag will let you get all entries for a specific form.
 
 ::: code
 
+``` craft3
+{# Get all entries for a specific form #}
+{% for formEntry in craft.sproutForms.entries
+	.formHandle('contact')
+	.all() %}
+	{{ formEntry.title }}
+{% endfor %}
+
+{# Limit the results to the first 3 entries #}
+{% for formEntry in craft.sproutForms.entries.formHandle('contact')
+  .limit(3)
+  .order('elements.dateCreated asc')
+  .all() %}
+	{{ formEntry.title }}
+{% endfor %}
+
+{# Get the oldest Form Entry from the Contact Form #}
+{% set formEntry = craft.sproutForms.entries
+  .formHandle('contact')
+  .inReverse()
+  .one() %}
+
+{{ formEntry.title }}
+
+{# Output the total number of Form Entries from the Contact Form #}
+{{ craft.sproutForms.entries.formHandle('contact').count() }}
+
+{# Output Entries with a specific status by Status ID or by Status Handle #}
+{% for formEntry in craft.sproutForms.entries
+  .formHandle('contact')
+  .statusId(2)
+  .all() %}
+  {{ formEntry.title }}
+{% endfor %}
+
+{% for formEntry in craft.sproutForms.entries
+  .formHandle('contact')
+  .statusHandle('pending')
+  .all() %}
+  {{ formEntry.title }}
+{% endfor %}
+```
+
 ``` craft2
 {# Get all entries for a specific form #}
 {% for formEntry in craft.sproutForms.entries.formHandle('contact') %}
