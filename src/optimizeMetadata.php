@@ -133,6 +133,7 @@ class Optimize
         // Facebook
         $metadataTags .= '<meta property="og:type" content="article">';
         $metadataTags .= '<meta property="og:site_name" content="'.$siteName.'">';
+        $metadataTags .= '<meta property="og:url" content="'.$this->pageUrl.'">';
         $metadataTags .= '<meta property="og:title" content="'.$metaTitle.'">';
         $metadataTags .= '<meta property="og:description" content="'.$metaDescription.'">';
         $metadataTags .= '<meta property="og:image" content="'.$defaultImage.'">';
@@ -144,6 +145,7 @@ class Optimize
 
         // Twitter
         $metadataTags .= '<meta name="twitter:card" content="summary">';
+        $metadataTags .= '<meta name="twitter:url" content="'.$this->pageUrl.'">';
         $metadataTags .= '<meta name="twitter:site" content="'.$this->config['metadata']['twitterSite'].'">';
         $metadataTags .= '<meta name="twitter:title" content="'.$metaTitle.'">';
         $metadataTags .= '<meta name="twitter:description" content="'.$metaDescription.'">';
