@@ -41,9 +41,9 @@ All Custom Fields support Craft's native Field options.
 
 | Icon | Description |
 |:---- |:----------- |
-| ✔    | Available   |
+| ✔    | Supported   |
 | ○    | Planned     |
-| –    | Unavailable |
+| –    | Not Planned |
 
 _<sup>1</sup> Multi-lingual XML Sitemaps are supported by adding related sites that use different languages to the same Site Group._
 
