@@ -5,7 +5,9 @@ If you are importing content that may already exist in your database, the Sprout
 - Update an existing element with additional data
 - Update or overwrite an existing element with new data
 
-Like the `related` key, the `updateElement` key allows you to match existing Elements with flexible criteria. If an item is matched, the data provided will be used to update attributes on the matched item. You can choose to overwrite all values completely, or just update a specific value. If a field in your JSON file has a blank value, it will overwrite the existing value. If you don't include a specific field in your JSON, the existing value will not be touched.
+Like the `related` key, the `updateElement` key allows you to match existing Elements with flexible criteria. If an item is matched, the data provided will be used to update attributes on the matched item. 
+
+You can choose to overwrite all values completely, or just update a specific value. If a field in your JSON file has a blank value, it will overwrite the existing value. If you don't include a specific field in your JSON, the existing value will not be touched.
 
 ## Updating an Element
 
@@ -59,6 +61,12 @@ The `updateElement` key must be defined within the `settings` section of your im
 ```
 
 :::
+
+::: tip Note
+In these examples `oldId` is a custom field that represents an ID that you imported from another system. Often, when importing data from another system a storing a temporary legacy ID in a custom field can help match and relate other data that you are importing in separate steps.
+
+You can use `id`, `slug`, or any other property or custom field to match an existing element that are updating.
+::: 
 
 
 ## Updating a Relationship
