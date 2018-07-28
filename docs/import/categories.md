@@ -11,8 +11,6 @@ Use the Category Element Importer to import categories.
     "attributes": {
       "groupId": 1,
       "slug": "category-slug",
-      "dateCreated": "2016-01-13 01:25:57",
-      "dateUpdated": "2016-01-13 01:25:57",
       "enabled": true
     },
     "content": {
@@ -42,8 +40,6 @@ To import categories with a hierarchy where you know the parentId, you can set t
     "attributes": {
       "groupId": 1,
       "slug": "category-slug",
-      "dateCreated": "2016-01-13 01:25:57",
-      "dateUpdated": "2016-01-13 01:25:57",
       "enabled": true,
       "newParentId": 123
     },
@@ -67,8 +63,6 @@ As you may not always know the `parentId`, you can let Sprout Import find the `p
     "attributes": {
       "groupId": 1,
       "slug": "category-slug-child",
-      "dateCreated": "2016-01-13 01:25:57",
-      "dateUpdated": "2016-01-13 01:25:57",
       "enabled": true,
       "related": {
         "newParentId": {
@@ -97,8 +91,6 @@ In the following example, we import Categories with three levels of hierarchy. B
     "attributes": {
       "groupId": 1,
       "slug": "parent-one",
-      "dateCreated": "2016-01-13 01:25:57",
-      "dateUpdated": "2016-01-13 01:25:57",
       "enabled": true
     },
     "content": {
@@ -110,8 +102,6 @@ In the following example, we import Categories with three levels of hierarchy. B
     "attributes": {
       "groupId": 1,
       "slug": "parent-two",
-      "dateCreated": "2016-01-13 01:25:57",
-      "dateUpdated": "2016-01-13 01:25:57",
       "enabled": true
     },
     "content": {
@@ -123,8 +113,6 @@ In the following example, we import Categories with three levels of hierarchy. B
     "attributes": {
       "groupId": 1,
       "slug": "child-one-level-one",
-      "dateCreated": "2016-01-13 01:25:57",
-      "dateUpdated": "2016-01-13 01:25:57",
       "enabled": true,
       "related": {
         "newParentId": {
@@ -144,8 +132,6 @@ In the following example, we import Categories with three levels of hierarchy. B
     "attributes": {
       "groupId": 1,
       "slug": "child-two-level-one",
-      "dateCreated": "2016-01-13 01:25:57",
-      "dateUpdated": "2016-01-13 01:25:57",
       "enabled": true,
       "related": {
         "newParentId": {
@@ -165,8 +151,6 @@ In the following example, we import Categories with three levels of hierarchy. B
     "attributes": {
       "groupId": 1,
       "slug": "child-one-level-two",
-      "dateCreated": "2016-01-13 01:25:57",
-      "dateUpdated": "2016-01-13 01:25:57",
       "enabled": true,
       "related": {
         "newParentId": {

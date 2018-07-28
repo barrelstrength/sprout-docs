@@ -32,8 +32,6 @@ In this example, we'll create 100 fake entries using faker. The entries will be 
       "slug": "{{ faker.slug }}",
       "postDate": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}",
       "expiryDate": null,
-      "dateCreated": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}",
-      "dateUpdated": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}",
       "enabled": true
     },
     "content": {
@@ -62,8 +60,6 @@ In this example, we'll create 100 fake entries using faker. The entries will be 
       "slug": "{{ faker.slug }}",
       "postDate": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}",
       "expiryDate": null,
-      "dateCreated": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}",
-      "dateUpdated": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}",
       "enabled": true
     },
     "content": {
@@ -99,9 +95,7 @@ In this example, we'll create 100 fake users using faker.
       "email": "{{ faker.email }}",
       "preferredLocale": "en_us",
       "pending": {{ random([0,0,0,0,1]) }},
-      "lastLoginDate": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}",
-      "dateCreated": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}",
-      "dateUpdated": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}"
+      "lastLoginDate": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}"
     }
   }{% if not loop.last %},{% endif %}
 {%- endfor -%}
@@ -120,9 +114,7 @@ In this example, we'll create 100 fake users using faker.
       "email": "{{ faker.email }}",
       "preferredLocale": "en_us",
       "pending": {{ random([0,0,0,0,1]) }},
-      "lastLoginDate": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}",
-      "dateCreated": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}",
-      "dateUpdated": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}"
+      "lastLoginDate": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}"
     }
   }{% if not loop.last %},{% endif %}
 {%- endfor -%}

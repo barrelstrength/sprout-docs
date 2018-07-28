@@ -26,8 +26,6 @@ Below are a few examples of some attributes that can be looked up when importing
       "slug": "entry-slug",
       "postDate": "2017-04-27 16:00:00",
       "expiryDate": null,
-      "dateCreated": "2017-06-27 16:00:00",
-      "dateUpdated": "2017-05-27 16:51:42",
       "enabled": true,
       "related": {
         "authorId": {
@@ -75,8 +73,6 @@ Below is an example of importing categories where you may not know the ID of the
     "attributes": {
       "groupId": 1,
       "slug": "category-slug-child",
-      "dateCreated": "2016-01-13 01:25:57",
-      "dateUpdated": "2016-01-13 01:25:57",
       "enabled": true,
       "related": {
         "newParentId": {
@@ -115,8 +111,6 @@ Below, we match the Users Photo ID attribute by looking up the photo we want to 
       "email": "muller.giuseppe@howell.com",
       "pending": 1,
       "lastLoginDate": "2014-12-11 04:12:06",
-      "dateCreated": "2014-04-09 12:04:04",
-      "dateUpdated": "2015-04-04 06:04:08",
       "related": {
         "photoId": {
           "@model": "barrelstrength\\sproutimport\\importers\\elements\\Asset",

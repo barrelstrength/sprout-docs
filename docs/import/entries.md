@@ -13,8 +13,6 @@
       "slug": "entry-slug",
       "postDate": "2015-02-27 16:43:52",
       "expiryDate": null,
-      "dateCreated": "2015-02-27 16:43:52",
-      "dateUpdated": "2015-02-27 16:51:42",
       "enabled": true
     },
     "content": {
@@ -207,8 +205,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
         }
       },
       "defaults": {
-        "authorId": 76 ,
-        "dateCreated": "2015-01-01 12:00:00"
+        "authorId": 76
       }
     }
   }
@@ -233,8 +230,6 @@ See [Related Attributes](./related-attributes.md) for more information on how to
       "slug": "entry-slug",
       "postDate": "2016-02-26 08:02:39",
       "expiryDate": null,
-      "dateCreated": "2016-01-21 09:01:34",
-      "dateUpdated": "2016-02-21 06:02:45",
       "enabled": true
     },
     "content": {
@@ -283,8 +278,6 @@ See [Related Attributes](./related-attributes.md) for more information on how to
       "slug": "entry-slug",
       "postDate": "2015-02-27 16:43:52",
       "expiryDate": null,
-      "dateCreated": "2015-02-27 16:43:52",
-      "dateUpdated": "2015-02-27 16:51:42",
       "enabled": true
     },
     "content": {
@@ -304,8 +297,6 @@ See [Related Attributes](./related-attributes.md) for more information on how to
       "slug": "entry-slug",
       "postDate": "2015-02-27 16:43:52",
       "expiryDate": null,
-      "dateCreated": "2015-02-27 16:43:52",
-      "dateUpdated": "2015-02-27 16:51:42",
       "enabled": true
     },
     "content": {
@@ -335,8 +326,6 @@ See [Related Attributes](./related-attributes.md) for more information on how to
       "slug": "entry-slug",
       "postDate": "2015-02-27 16:43:52",
       "expiryDate": null,
-      "dateCreated": "2015-02-27 16:43:52",
-      "dateUpdated": "2015-02-27 16:51:42",
       "enabled": true
     },
     "content": {

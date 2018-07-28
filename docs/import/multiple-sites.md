@@ -28,8 +28,6 @@ You can import your primary locale like any other Element you import.
       "slug": "english-slug",
       "postDate": "2015-02-27 16:43:52",
       "expiryDate": null,
-      "dateCreated": "2015-02-27 16:43:52",
-      "dateUpdated": "2015-02-27 16:51:42",
       "enabled": true
     },
     "content": {
@@ -55,8 +53,6 @@ You can import your primary locale like any other Element you import.
       "slug": "english-slug",
       "postDate": "2015-02-27 16:43:52",
       "expiryDate": null,
-      "dateCreated": "2015-02-27 16:43:52",
-      "dateUpdated": "2015-02-27 16:51:42",
       "enabled": true
     },
     "content": {
@@ -93,8 +89,6 @@ We import our secondary locale in a second step, and the import format has a few
       "slug": "spanish-slug",
       "postDate": "2015-02-27 16:43:52",
       "expiryDate": null,
-      "dateCreated": "2015-02-27 16:43:52",
-      "dateUpdated": "2015-02-27 16:51:42",
       "enabled": true
     },
     "content": {
@@ -129,8 +123,6 @@ We import our secondary locale in a second step, and the import format has a few
       "slug": "spanish-slug",
       "postDate": "2015-02-27 16:43:52",
       "expiryDate": null,
-      "dateCreated": "2015-02-27 16:43:52",
-      "dateUpdated": "2015-02-27 16:51:42",
       "enabled": true
     },
     "content": {
