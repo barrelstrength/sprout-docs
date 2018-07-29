@@ -10,23 +10,46 @@ Contact us: [sprout@barrelstrengthdesign.com](mailto:sprout@barrelstrengthdesign
 
 ## Business Suite Plugins
 
-- [Sprout Forms](https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-- [Sprout SEO](https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-- [Sprout Email](https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-- [Sprout Reports](https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-- [Sprout Import](https://github.com/barrelstrength/craft-sprout-import/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
+| Plugin            | Github Link         | 
+|:----------------- |:------------------- |
+| Sprout Forms      | [Feature Requests][#FormsFR]   | 
+| Sprout SEO        | [Feature Requests][#SeoFR]     | 
+| Sprout Email      | [Feature Requests][#EmailFR]   | 
+| Sprout Reports    | [Feature Requests][#ReportsFR] | 
+| Sprout Import     | [Feature Requests][#ImportFR]  | 
+
+[#FormsFR]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#SeoFR]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#EmailFR]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#ReportsFR]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#ImportFR]: https://github.com/barrelstrength/craft-sprout-import/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
 
 ## Open Source Plugins
 
-- [Sprout Active](https://github.com/barrelstrength/craft-sprout-active/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-- [Sprout Encode Email](https://github.com/barrelstrength/craft-sprout-encode-email/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-- [Sprout Fields](https://github.com/barrelstrength/craft-sprout-fields/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-- [Sprout Lists](https://github.com/barrelstrength/craft-sprout-lists/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
+| Plugin              | Github Link         | 
+|:------------------- |:------------------- |
+| Sprout Active       | [Feature Requests][#ActiveFR] | 
+| Sprout Encode Email | [Feature Requests][#EncodeFR] | 
+| Sprout Fields       | [Feature Requests][#FieldsFR] | 
+| Sprout Lists        | [Feature Requests][#ListsFR]  |  
+
+[#ActiveFR]: https://github.com/barrelstrength/craft-sprout-active/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#EncodeFR]: https://github.com/barrelstrength/craft-sprout-encode-email/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#FieldsFR]: https://github.com/barrelstrength/craft-sprout-fields/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#ListsFR]: https://github.com/barrelstrength/craft-sprout-lists/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
 
 ## Open Source Tools
-- [PhpStorm Live Templates for Craft CMS](https://github.com/barrelstrength/PhpStorm-Live-Templates-Craft-CMS/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-- [PhpStorm Live Templates for Twig](https://github.com/barrelstrength/PhpStorm-Live-Templates-Twig-Extended/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-- [Craft Twig](https://github.com/barrelstrength/Craft-Twig.tmbundle/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-- [Craftnet API PHP Wrapper](https://github.com/barrelstrength/craftnet-php/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
+
+| Package                               | Github Link                   |
+|:------------------------------------- |:----------------------------- |
+| PhpStorm Live Templates for Craft CMS | [Feature Requests][#LiveTemplatesCraft] |
+| PhpStorm Live Templates for Twig      | [Feature Requests][#LiveTemplatesTwig]  |
+| Craft Twig                            | [Feature Requests][#CraftTwig]          |
+| Craftnet API PHP Wrapper              | [Feature Requests][#Craftnet]           |
+
+[#LiveTemplatesCraft]: https://github.com/barrelstrength/PhpStorm-Live-Templates-Craft-CMS/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#LiveTemplatesTwig]: https://github.com/barrelstrength/PhpStorm-Live-Templates-Twig-Extended/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#CraftTwig]: https://github.com/barrelstrength/Craft-Twig.tmbundle/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#Craftnet]: https://github.com/barrelstrength/craftnet-php/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
 
 
