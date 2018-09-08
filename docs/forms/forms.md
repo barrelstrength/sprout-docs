@@ -135,7 +135,23 @@ Sprout Forms adds a Form Relations Field to Craft CMS:
 
 Sprout Forms allows you to set a redirect for your Form in the Form Settings or in the template.
 
-``` twig
+::: code
+
+``` craft3
+<form method="post" action="" accept-charset="UTF-8">
+
+    <input type="hidden" name="action" value="sprout-forms/entries/save-entry">
+    <input type="hidden" name="handle" value="contact">
+    <input type="hidden" name="redirect" value="contact?message=thankyou">
+
+    {# All of your fields here #}
+
+    <input type="submit" value="Submit">
+
+</form>
+```
+
+``` craft2
 <form method="post" action="" accept-charset="UTF-8">
 
     <input type="hidden" name="action" value="sproutForms/entries/saveEntry">
@@ -148,6 +164,8 @@ Sprout Forms allows you to set a redirect for your Form in the Form Settings or 
 
 </form>
 ```
+
+:::
 
 Your redirect value can be an absolute URL, relative URL, or use an environmentVariable. 
 
