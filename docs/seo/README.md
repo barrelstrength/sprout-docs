@@ -22,8 +22,6 @@ Often, the first time one of your visitors sees your content it is in search res
 
 Edit your content confidently. Throughout your content management experience, Sprout SEO will indicate which fields power the metadata on your site and provide some additional information about the scope and priority of how that field will affect your metadata.
 
-![Element Metadata Hints](../images/seo/sprout-seo-metadata-hints.png)
-
 ## Global Metadata
 
 [Global Metadata](./global-metadata.md) is managed from the Globals tab and filled out once when you setup Sprout SEO. Globals ensure you have metadata in place for your website identity and prepare Structured Data for your brand. Globals will help you communicate to the search engines information about your brand identity, how to get in touch, and general details so you always have something relevant about your business in search results and social sharing.
@@ -32,7 +30,7 @@ Edit your content confidently. Throughout your content management experience, Sp
 
 ## Element Metadata
 
-**Element Metadata** is managed with the powerful [Element Metadata Field](./element-metadata-field.md). The Element Metadata field allows you to configure how your metadata is handled for every entry. If you want to have a tight integration with your existing content fields, you can reuse existing fields and the Element Metadata field will blend right into your existing content. If you want detailed control, you can enable overrides for each type of metadata and manage it all manually.
+**Element Metadata** is managed with the powerful [Metadata Field](./element-metadata-field.md). The Metadata field allows you to configure how your metadata is handled for every entry. If you want to have a tight integration with your existing content fields, you can reuse existing fields and the Metadata field will blend right into your existing content. If you want detailed control, you can enable overrides for each type of metadata and manage it all manually.
 
 ![Element Metadata Field](../images/seo/sprout-seo-fieldtype.png)
 
