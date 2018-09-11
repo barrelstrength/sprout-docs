@@ -65,14 +65,13 @@ public function init()
         
         if (Craft::$app->request->isSiteRequest)
         {
-            // A Form Entry Element has been saved from a Front-end Form Submission
-            // Access the Form Entry Element via: $event->sender
+            // The Form Entry Element is available via the $event->sender attribute     
+            $formEntryElement = $event->sender;
         }
         
         if (Craft::$app->request->isCpRequest)
         {
-            // A Form Entry Element has been updated from the Control Panel
-            // Access the Form Entry Element via: $event->sender
+            $formEntryElement = $event->sender;
         }
         
     });
