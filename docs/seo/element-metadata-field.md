@@ -1,17 +1,29 @@
-# Element Metadata Field
+# Metadata Field
 
-The Element Metadata field gives you fine-grained control over how Entry-specific metadata is recognized and managed for your content. By default, we recommend setting up your Element Metadata field to reuse existing fields in your content and simplify the management over your metadata. Using a common Title, Summary, and Image field can go a very long way to get things setup quickly and provide comprehensive SEO.
+The Metadata field gives you fine-grained control over how Entry-specific metadata is recognized and managed for your content. By default, we recommend setting up your Metadata field to reuse existing fields in your content and simplify the management over your metadata. Using a common Title, Summary, and Image field can go a very long way to get things setup quickly and provide comprehensive SEO.
 
 ## Field Settings
 
-The Element Metadata Field gives you several ways to setup your metadata. Keep it simple, and map all of your metadata to existing fields or choose to have fine grained control over every setting.
+The Metadata Field gives you several ways to setup your metadata. Keep it simple, and map all of your metadata to existing fields or choose to have fine grained control over every setting.
 
 The default Metadata fields include: 
 
-- Meta Title
-- Meta Description
-- Meta Image
-- Meta Keywords
+| Metadata Field   | Craft 3  |Craft 2   |
+|:---------------- |:--------:|:--------:|
+| Meta Title       | ✔        | ✔        |
+| Meta Description | ✔        | ✔        |
+| Meta Keywords    | ✔        | ✔        |
+| Meta Image       | ✔        | ✔        |
+| Main Entity      | ✔        | –        |
+| Canonical URL    | ✔        | ✔        |
+| Meta Details: Search     | ✔        | ○        |
+| Meta Details: Open Graph | ✔        | ○        |
+| Meta Details: Twitter    | ✔        | ○        |
+| Meta Details: Geo        | ✔        | ○        |
+| Meta Details: Robots     | ✔        | ○        |
+
+
+○ = _Must be enabled in settings_
 
 ### Existing Fields
 
@@ -41,13 +53,13 @@ When using the 'Add Custom Format' setting for an image, your value should be th
 
 ### Meta Details
 
-Meta Details fields can be enabled for Element Metadata fields to give you or your SEO team granular control over your metadata. Meta Details fields display as matrix-style blocks. Users can optionally select one or more Meta Details blocks to override any specific fields for a metadata type.
+Meta Details fields can be enabled for Metadata fields to give you or your SEO team granular control over your metadata. Meta Details fields display as matrix-style blocks. Users can optionally select one or more Meta Details blocks to override any specific fields for a metadata type.
 
 Enable Meta Details fields in `Settings->Advanced->Enable Meta Details fields`.
 
-When Meta Details fields are enabled, you will see new options in your Element Metadata Field settings that allow you to give users more control over managing metadata in entries using the Element Metadata field.
+When Meta Details fields are enabled, you will see new options in your Metadata Field settings that allow you to give users more control over managing metadata in entries using the Metadata field.
 
-In addition to the fields defined (or mapped) in the default Element Metadata settings you will be able to enable Meta Details overrides for Main Entity (Structured Data), Search, Open Graph, Twitter, Geo, and Robots metadata.
+In addition to the fields defined (or mapped) in the default Metadata settings you will be able to enable Meta Details overrides for Main Entity (Structured Data), Search, Open Graph, Twitter, Geo, and Robots metadata.
 
 #### Enable the Meta Details fields you wish to allow users to override in your Entries
 
@@ -59,11 +71,11 @@ In addition to the fields defined (or mapped) in the default Element Metadata se
 
 ## Updating Metadata
 
-#### What happens to my existing content if I add a new Element Metadata Field to a Field Layout?
+#### What happens to my existing content if I add a new Metadata Field to a Field Layout?
 
-When you add an Element Metadata field to an existing URL-Enabled Section's Field Layout, Sprout SEO will trigger a task to resave all Elements in the affected URL-Enabled Section. When each Element is saved, an updated version of your metadata will also be saved.
+When you add a Metadata field to an existing URL-Enabled Section's Field Layout, Sprout SEO will trigger a task to resave all Elements in the affected URL-Enabled Section. When each Element is saved, an updated version of your metadata will also be saved.
 
-#### What happens to my existing metadata if I change my metadata mapping in my Element Metadata Field settings?
+#### What happens to my existing metadata if I change my metadata mapping in my Metadata Field settings?
 
-When you update an existing Element Metadata field's settings, Sprout SEO will trigger a task to resave all Elements in any URL-Enabled Section that use your Element Metadata in its Field Layout. When each Element is saved, an updated version of your metadata will also be saved.
+When you update an existing Metadata field's settings, Sprout SEO will trigger a task to resave all Elements in any URL-Enabled Section that use your Metadata in its Field Layout. When each Element is saved, an updated version of your metadata will also be saved.
 
