@@ -44,39 +44,74 @@ Your sitemap will consist of two or more XML Sitemap files. This will include a 
 
 Your Sitemap Index will be output when you visit the URL: `/sitemap.xml`
 
-```
+::: code 
+
+``` craft3
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- <sitemap>
-    <loc>{{ siteUrl }}singles-sitemap.xml</loc>
+  <sitemap>
+    <loc>{{ siteUrl }}sitemap-singles.xml</loc>
     <lastmod>{{ now|date('Y-m-d') }}</lastmod>
- </sitemap>
- <sitemap>
-    <loc>{{ siteUrl }}channelnamehandle-entries-sitemap1.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>{{ siteUrl }}sitemap-G76D5Oizt4fH-1.xml</loc>
     <lastmod>{{ now|date('Y-m-d') }}</lastmod>
- </sitemap>
- <sitemap>
-    <loc>{{ siteUrl }}channelnamehandle-entries-sitemap2.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>{{ siteUrl }}sitemap-9O2U0q1gdvPM-1.xml</loc>
     <lastmod>{{ now|date('Y-m-d') }}</lastmod>
- </sitemap>
- <sitemap>
-    <loc>{{ siteUrl }}channelnamehandle-entries-sitemap3.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>{{ siteUrl }}sitemap-1TGQYAvdWwEU-1.xml</loc>
     <lastmod>{{ now|date('Y-m-d') }}</lastmod>
- </sitemap>
- <sitemap>
-    <loc>{{ siteUrl }}categorygrouphandle-categories-sitemap1.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>{{ siteUrl }}sitemap-custom-pages.xml</loc>
     <lastmod>{{ now|date('Y-m-d') }}</lastmod>
- </sitemap>
- <sitemap>
-    <loc>{{ siteUrl }}productypehandle-products-sitemap1.xml</loc>
-    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
- </sitemap>
- <sitemap>
-    <loc>{{ siteUrl }}custom-sections-sitemap.xml</loc>
-    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
- </sitemap>
+  </sitemap>
 </sitemapindex>
 ```
+
+``` craft2
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>{{ siteUrl }}singles-sitemap.xml</loc>
+    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>{{ siteUrl }}channelnamehandle-entries-sitemap1.xml</loc>
+    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>{{ siteUrl }}channelnamehandle-entries-sitemap2.xml</loc>
+    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>{{ siteUrl }}channelnamehandle-entries-sitemap3.xml</loc>
+    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>{{ siteUrl }}categorygrouphandle-categories-sitemap1.xml</loc>
+    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>{{ siteUrl }}productypehandle-products-sitemap1.xml</loc>
+    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>{{ siteUrl }}custom-sections-sitemap.xml</loc>
+    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
+  </sitemap>
+</sitemapindex>
+```
+
+:::
+
+::: tip Note
+In Craft 3, the individual XML Sitemap URLs will use a unique string of characters. In Craft 2, the individual Sitemap URLs will reference the Sitemap Section by name. 
+:::
+
 ### Section-specific Sitemaps (Single Language)
 
 Each individual sitemap will list the URLs for the content in your URL-Enabled Sections.
@@ -132,6 +167,8 @@ If you have a multi-language site, your sitemap will adjust to reference URLs fo
 If you have more advanced Sitemap needs, Sprout SEO's Sitemap tool allows you to add any number of Custom URLs that will also be output in your Sitemap.
 
 Enable Custom URL management features in the Advanced Settings (`Sprout SEO->Settings->Advanced->Enable Custom Sections`)
+
+Custom URLs can be managed in Multi-Site sitemaps on a per-site basis.
 
 ## Craft 2
 
