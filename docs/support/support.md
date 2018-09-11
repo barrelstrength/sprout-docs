@@ -32,6 +32,8 @@ If you have a general question, consider posting your question on Craft Stack Ex
  - `plugin-sproutemail`
  - `plugin-sproutreports`
  - `plugin-sproutimport`
+ - `plugin-sproutfields`
+ - `plugin-sproutlists`
 
 ### Email
 
