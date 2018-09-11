@@ -12,6 +12,7 @@ You can access your Address Field in your templates via it's field handle.
 
 ``` twig
 {{ entry.addressField.countryCode }}
+{{ entry.addressField.country }}
 {{ entry.addressField.administrativeArea }}
 {{ entry.addressField.locality }}
 {{ entry.addressField.postalCode }}
