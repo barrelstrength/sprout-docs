@@ -50,7 +50,7 @@ As Craft has now added a simple URL Field, we have chosen to update the Link fie
 
 ### Removed Fields
 
-Sprout Forms no longer relies on existing Craft Field Types so some fields and we can now deprecate several fields that don't really have many Control Panel use cases but we here to work with Sprout Forms. Any data that you have stored in these fields will be migrated to a default Craft field type during the upgrade. The following fields will be removed in Craft 3:
+Sprout Forms no longer relies on existing Craft Field Types so we can now deprecate several fields that don't really have many Control Panel use cases but were there to work with Sprout Forms. Any data that you have stored in these fields will be migrated to a default Craft field type during the upgrade. The following fields will be removed in Craft 3:
 
 - **Email Select Field** (will be migrated to use a Table Field)
 - **Hidden Field** (will be migrated to use a Plain Text Field)

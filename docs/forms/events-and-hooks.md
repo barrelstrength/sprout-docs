@@ -53,17 +53,26 @@ Raised just after an entry is saved
 ::: code
 
 ``` craft3
-use barrelstrength\sproutforms\elements\Form;
+use barrelstrength\sproutforms\elements\Entry;
 use yii\base\Event;
+use Craft;
 
 public function init()
 {
     parent::init();
     
-    Event::on(Form::class, Form::EVENT_AFTER_SAVE, function(Event $event) {
+    Event::on(Entry::class, Entry::EVENT_AFTER_SAVE, function(Event $event) {
         
-        // A Form Element has been saved
-        // Access the Form Element via: $event->sender
+        if (Craft::$app->request->isSiteRequest)
+        {
+            // The Form Entry Element is available via the $event->sender attribute     
+            $formEntryElement = $event->sender;
+        }
+        
+        if (Craft::$app->request->isCpRequest)
+        {
+            $formEntryElement = $event->sender;
+        }
         
     });
 }
