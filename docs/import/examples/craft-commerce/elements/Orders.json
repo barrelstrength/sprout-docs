@@ -9,6 +9,7 @@
       "gatewayId": 1,
       "customerId": "customer@website.com",
       "orderStatusId": 1,
+      "orderLanguage": "en-US",
       "isCompleted": 1,
       "dateOrdered": "2016-05-21 01:08:38",
       "datePaid": "2016-05-21 01:09:38",
