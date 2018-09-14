@@ -166,6 +166,7 @@ module.exports = {
                     children: [
                         'canonical-override',
                         'block-robots-on-dev-site',
+                        'elements-without-urls',
                         'large-sitemaps'
                     ]
                 },
