@@ -1,5 +1,7 @@
 # Craft 2
 
+Sprout Fields installation and update instructions for Craft 2.
+
 ## Requirements
 
 * Craft 2.0 or a more recent version of Craft

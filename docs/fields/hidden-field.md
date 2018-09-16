@@ -53,13 +53,13 @@ If you need access to specific variables that are not in the global scope, you w
 
 ``` twig
 {# Here, we are making our EntryModel variable available to our settings. #}
-{% do craft.sproutForms.addFieldVariables({ entry: entry }) %}
+{% do craft.sproutForms.addFieldVariables({ entryElement: entry }) %}
 {{ craft.sproutForms.displayForm('contact') }}
 ```
 
 Now, we can set our hidden field value using this variable:
 
-- _Hidden Field Value_: {entry.id}
+- _Hidden Field Value_: {entryElement.id}
 
 ## Validation
 

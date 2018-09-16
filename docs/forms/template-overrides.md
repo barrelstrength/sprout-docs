@@ -33,7 +33,7 @@ paragraph/input.html
 phone/input.html
 ```
 
-A field's folder name is the lowercase version of it's field name without spaces and can be retrieved dynamically by calling `field.getFieldInputFolder()`.
+A field's folder name is the lowercase version of its field name without spaces and can be retrieved dynamically by calling `field.getFieldInputFolder()`.
 
 #### Craft 2
 
@@ -50,11 +50,11 @@ To get started, copy all of the default Sprout Forms templates to your Custom Te
 ::: code
 
 ``` craft3
-sproutforms/templates/_components/formtemplates/accessible
+vendor/barrelstrength/sprout-forms/templates/_components/formtemplates/accessible
 ```
 
 ``` craft2
-sproutforms/templates/_special/templates
+craft/plugins/sproutforms/templates/_special/templates
 ```
 
 :::

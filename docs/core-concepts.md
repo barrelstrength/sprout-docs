@@ -1,8 +1,8 @@
 # Core Concepts
- 
+
 ## Extending Craft
 
-Sprout Plugins extend Craft with several additional components for designing a website's content architecture and digital strategy. 
+Sprout Plugins extend Craft with several new components for designing a website's content architecture and digital strategy. 
 
 | Sprout Component         | Craft Component Type | Plugin           |
 |:------------------------ |:-------------------- |:---------------- |

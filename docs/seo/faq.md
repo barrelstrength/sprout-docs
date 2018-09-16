@@ -1,5 +1,7 @@
 # FAQ
 
+Frequently asked questions about Sprout SEO.
+
 ## My page is outputting the wrong metadata?
 
 This is usually due to an incorrect setting or configuration somewhere. Check your settings and make sure you've assigned the right Element Metadata field to your Field Layout. Make sure your Custom Sections are enabled. 

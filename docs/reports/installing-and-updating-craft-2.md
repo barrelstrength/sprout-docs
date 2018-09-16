@@ -1,5 +1,7 @@
 # Craft 2 
 
+Sprout Reports installation and update instructions for Craft 2.
+
 ## Requirements
 
 * Craft 2.5 or a more recent version of Craft

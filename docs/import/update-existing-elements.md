@@ -87,7 +87,7 @@ You can use `id`, `slug`, or any other property or custom field to match an exis
           "@model": "barrelstrength\\sproutimport\\importers\\elements\\Asset",
           "params": {
             "filename": "ImageName03.jpg",
-            "source": "images",
+            "volumeId": "1",
             "folderId": 8
           }
         }

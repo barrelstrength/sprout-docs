@@ -2,7 +2,7 @@
 
 Template Overrides allow you to modify your metadata in your Craft templates. While this can help with some scenarios, it is not always ideal as it makes it harder to give content authors control over all metadata in the Control Panel and increases the complexity of the codebase that needs to be managed over time. 
  
- ::: tip
+ ::: warning PROCEED WITH CAUTION
  Template Overrides should be considered a last resort. If you feel you have no other options and need to use them, reach out and [let us know](mailto:sprout@barrelstrengthdesign.com). We'd love to understand your use case so we can improve Sprout SEO and make it less likely you need to use Template Overrides in the future.
  :::
  
@@ -11,6 +11,20 @@ Template Overrides allow you to modify your metadata in your Craft templates. Wh
 Metadata defined in templates gets the highest priority when metadata is processed.
 
 The `meta` variable allows you to override metadata within templates. The `meta` variable must use the `do` tag syntax and must be run _before_ the  `{% sproutseo 'optimize' %}` tag in your templates.
+
+## Canonical Overrides
+
+::: warning 
+Overriding Canonical URLs in your templates breaks the relationship with XML Sitemaps and the awareness Sprout SEO has about Canonical URL overrides. To add Custom URLs in a supported way to your XML Sitemaps see the documentation on [Custom Page URLs](http://localhost:8082/docs/seo/sitemaps.html#custom-urls). 
+:::
+
+``` twig
+{% do craft.sproutSeo.meta({
+    canonical: customUrl,
+}) %}
+
+{% sproutseo 'optimize' %}
+```
 
 ### A Simple Page
 

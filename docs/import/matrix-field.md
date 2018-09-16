@@ -108,7 +108,7 @@ If you have Relations on your Matrix Blocks, you can also use the `related` key:
                 "@model": "barrelstrength\\sproutimport\\importers\\elements\\Asset",
                 "params": {
                   "filename": ["ImageName03.jpg"],
-                  "source": "images",
+                  "volumeId": "1",
                   "folderId": 8
                 }
               }

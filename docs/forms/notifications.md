@@ -46,7 +46,7 @@ Recipients: {{ object.email }}
 
 ### Custom Notification Templates
 
-To override the default HTML used for the Notification email, see the [Template Overrides]({entry:1139:url}) documentation.
+To override the default HTML used for the Notification email, see the [Email Template Overrides](../email/template-overrides.md) documentation.
 
 ### Advanced Notifications
 

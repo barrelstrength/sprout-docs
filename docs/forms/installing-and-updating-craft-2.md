@@ -1,5 +1,7 @@
 # Craft 2 
 
+Sprout Forms installation and update instructions for Craft 2.
+
 ## Requirements
 
 * Craft 2.6 or a more recent version of Craft
@@ -18,13 +20,10 @@ _Note: It's always a good idea to backup your database and test updates in a saf
 
 ## Downloading Updates
 
-To download the latest version of Sprout Forms:
+Updates are available via the Github repository.
 
-- Log in to your [straightupcraft.com](https://straightupcraft.com/members/login) account
-- Select `My Content->Purchases` from the dropdown in the top right
-- Download the plugin you want to update
-
-_Trial users can grab the latest copy of Sprout Forms by requesting a trial._
+- Visit the [Sprout Forms releases](https://github.com/barrelstrength/craft-sprout-forms/releases) tab
+- Download the latest version of Sprout Forms v2.x
 
 ## Updating to Sprout Forms 2.x
 

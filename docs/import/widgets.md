@@ -1,5 +1,7 @@
 # Widgets
 
+Import customized dashboard widgets using Sprout Import.
+
 ::: code
 
 ``` craft3

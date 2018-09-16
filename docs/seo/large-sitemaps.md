@@ -1,8 +1,6 @@
 # Large Sitemaps
 
-::: tip
 Upgrade to the latest version of Sprout SEO to easily manage large sitemaps. Read more about [Sitemaps](./sitemaps.md) and the _Total Elements Per Sitemap_ setting.
-:::
 
 ::: warning
 The method below is here for reference only. The `craft.sproutSeo.sitemap()` tag is deprecated and has been removed in Craft 3.

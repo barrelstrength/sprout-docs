@@ -1,5 +1,7 @@
 # FAQ
 
+Frequently asked questions about Sprout Forms.
+
 ## How do I validate an Email Address, Phone Number, or URL?
 
 ### Craft 3

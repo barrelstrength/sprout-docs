@@ -170,7 +170,7 @@ The code below says _if you find any Assets that are using the value “ImageNam
           "@model": "barrelstrength\\sproutimport\\importers\\elements\\Asset",
           "params": {
             "filename": ["ImageName03.jpg"],
-            "source": "images",
+            "volumeId": "1",
             "folderId": 8
           }
         }

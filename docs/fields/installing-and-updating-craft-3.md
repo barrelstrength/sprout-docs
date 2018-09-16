@@ -1,5 +1,7 @@
 # Craft 3
 
+Sprout Fields installation and update instructions for Craft 3.
+
 ## Requirements
 
 * Craft CMS 3.0.0-RC1 or a more recent version of Craft
@@ -15,7 +17,11 @@
 2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-fields`
 3. In the Control Panel, go to _Settings → Plugins_ and select “Install”
 
-## Upgrading from Craft 2 to Craft 3
+## Upgrading to Craft 3
+
+::: warning BEFORE YOU UPDATE
+Make sure you have updated to the latest version of Sprout Fields 2.x before updating to Sprout Fields 3.x for Craft 3
+:::
 
 Several things have changed between Sprout Fields 2 for Craft 2 and Sprout Fields 3 for Craft 3. In Craft 2 Sprout Fields provided fields for both the Craft CP and for Sprout Forms. Sprout Forms for Craft 3 now has it's own Field API so your Sprout Fields will be migrated different depending on whether you are using them as fields in Craft or in Sprout Forms.
 

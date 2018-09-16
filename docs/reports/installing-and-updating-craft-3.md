@@ -1,5 +1,7 @@
 # Craft 3
 
+Sprout Reports installation and update instructions for Craft 3.
+
 ## Requirements
 
 * Craft CMS 3.0.0-RC1 or a more recent version of Craft
@@ -15,7 +17,11 @@
 2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-reports`
 3. In the Control Panel, go to _Settings → Plugins_ and select “Install”
 
-## Upgrading from Craft 2 to Craft 3
+## Upgrading to Craft 3
+
+::: warning BEFORE YOU UPDATE
+Make sure you have updated to the latest version of Sprout Reports 0.x before updating to Sprout Reports 1.x for Craft 3
+:::
 
 There are a few changes to be aware of when upgrading to Sprout Reports for Craft 3. We have simplified the Sprout Reports plugin to only include two Data Sources out of the box. Additional Data Sources can be added as desired.
 

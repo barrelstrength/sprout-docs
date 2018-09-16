@@ -1,10 +1,10 @@
 # Email Dropdown Field
 
+The Email Select field allows a user to select a spam-protected Email Address from a dropdown list and trigger a notification to that email address using Sprout Forms or Sprout Email.
+
 ::: warning
 The Sprout Forms Email Select field will continue to be available in Craft 3 with the new name: Email Dropdown. The Craft Email Select field is deprecated and will be removed in Craft 3.
 :::
-
-The Email Select field allows a user to select a spam-protected Email Address from a dropdown list and trigger a notification to that email address using Sprout Forms or Sprout Email.
 
 ## Email Select Field
 

@@ -1,5 +1,7 @@
 # Craft 2
 
+Sprout Lists installation and update instructions for Craft 2.
+
 ## Requirements
 
 * Craft 2.6 or a more recent version of Craft

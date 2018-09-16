@@ -1,5 +1,7 @@
 # Craft 3
 
+Sprout Active installation and update instructions for Craft 3.
+
 # Requirements
 
 * Craft CMS 3.0.0 or a more recent version of Craft

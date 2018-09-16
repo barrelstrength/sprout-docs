@@ -1,5 +1,7 @@
 # Settings
 
+Customize the details of your email configuration and workflows with the following settings.
+
 ## General
 
 ### Plugin Name
@@ -8,7 +10,7 @@ Update this setting to rename **Sprout Email** in your Control Panel.
 
 ### Choose which features to enable
 
-Sprout Email includes features for Notification Emails, Campaign Emails, and Sent Email tracking. By default, Sent Email tracking is disabled by default.
+Sprout Email includes features for Notification Emails, Campaign Emails, and Sent Email tracking. Sent Email tracking is disabled by default.
 
 Customize which features display in the Sprout Forms sidebar and only include the features you need.
 

@@ -1,5 +1,7 @@
 # Craft 3
 
+Sprout Forms installation and update instructions for Craft 3.
+
 ## Requirements
 
 * Craft CMS 3.0.0 or a more recent version of Craft
@@ -14,3 +16,9 @@
 1. Open your terminal and go to your Craft project:<br>`cd /path/to/project`
 2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-forms`
 3. In the Control Panel, go to _Settings → Plugins_ and select “Install”
+
+## Upgrading to Craft 3
+
+::: warning BEFORE YOU UPDATE
+Make sure you have updated to the latest version of Sprout Forms 2.x before updating to Sprout Forms 3.x for Craft 3
+:::

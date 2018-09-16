@@ -1,5 +1,7 @@
 # Settings
 
+Customize the details of your Form fields, templates, and workflows with the following settings.
+
 ## General
 
 ### Plugin Name

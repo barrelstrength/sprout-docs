@@ -1,6 +1,6 @@
 # Navigation
 
-Build Navigation using Structures and reuse it from project it project.
+Build Navigation using Structures and reuse it from project to project.
 
 ``` json
 [

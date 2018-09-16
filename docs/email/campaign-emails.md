@@ -5,8 +5,8 @@ Campaign Email Elements allow you to build and manage marketing and bulk email r
 | Mailer   | Description  |
 |:----------------- |:------ |
 | [Copy/Paste](./copy-paste-mailer.md) | Copy and paste your email campaigns to better (or worse) places |
-| MailChimp         | Send your email campaigns via MailChimp |
-| Campaign Monitor  | Send your email campaigns via Campaign Monitor |
+| [MailChimp](https://github.com/barrelstrength/craft-sprout-mailchimp)        | Send your email campaigns via MailChimp |
+| [Campaign Monitor](https://github.com/barrelstrength/craft-sprout-mailchimp) | Send your email campaigns via Campaign Monitor |
 | Custom            | Via a [Custom Mailer](./custom-mailers.md) or [Get in touch](mailto:sprout@barrelstrengthdesign.com)! |
 
 ## Campaign Types

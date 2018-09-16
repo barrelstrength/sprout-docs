@@ -1,5 +1,6 @@
 # Orders
 
+Import Craft Commerce Orders using Sprout Import, including custom fields, payments, transactions, and addresses.
 
 ::: code
 

@@ -1,9 +1,5 @@
 # List Types
 
-_Note: This feature is currently in beta and will be supported when we release Sprout Email 3 (for Craft 2). The Sprout MailChimp and Sprout Campaign Monitor plugins will provide list type integrations for each respective service._
-
-----
-
 Sprout Lists provides a default Subscriber List Type. Developers can add additional List Types to enable users and admins to subscribe and unsubscribe from third-party lists. 
 
 A Custom List Type allows you to integrate with a third party API to:

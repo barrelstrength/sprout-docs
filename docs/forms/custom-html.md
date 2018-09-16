@@ -2,9 +2,15 @@
 
 ## Working with a Custom HTML Form
 
-Sprout Forms gives you 100% control over your form templates. If you need to customize your form, [Template Overrides](./template-overrides.md) and the [Front-end Field API](./custom-form-fields.md) are good places to start. They address the majority of what you need to have control over the markup and styles in your templates, specialized fields, and custom validation.
+Sprout Forms gives you 100% control over your form templates. 
 
-If you prefer to stick to plain HTML, Sprout Forms won't give you any trouble.
+::: warning PROCEED WITH CAUTION
+Custom HTML should be considered a last resort. If you feel you have no other options and need to use Custom HTML, reach out and [let us know](mailto:sprout@barrelstrengthdesign.com). We'd love to understand your use case so we can improve Sprout Forms and make it less likely you need to use the Custom HTML in the future.
+ 
+If you need to customize your form, [Template Overrides](./template-overrides.md) and the [Form Field API](./custom-form-fields.md) are good places to start. They address the majority of what you need to have control over the markup and styles in your templates, specialized fields, and custom validation.
+
+Building your forms in Custom HTML makes forms harder to maintain, introduces the possibility for several potential details that must be maintained manually, and may also require more testing when updating.
+:::
 
 When building a custom HTML form, you will need to manage several states in your templates.
 

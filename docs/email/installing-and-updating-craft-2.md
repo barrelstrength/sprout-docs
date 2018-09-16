@@ -1,5 +1,7 @@
 # Craft 2
 
+Sprout Email installation and update instructions for Craft 2.
+
 ## Requirements
 
 * Craft 2.5 or a more recent version of Craft
@@ -16,13 +18,10 @@
 
 ## Downloading Updates
 
-To download the latest version of Sprout Email:
+Updates are available via the Github repository.
 
-- Log in to your [straightupcraft.com](https://straightupcraft.com/members/login) account
-- Select `My Content->Purchases` from the dropdown in the top right
-- Download the plugin you want to update
-
-_Trial users can grab the latest copy of Sprout Email by requesting a trial._
+- Visit the [Sprout Email releases](https://github.com/barrelstrength/craft-sprout-email/releases) tab
+- Download the latest version of Sprout Email v3.x
 
 ## Updating to Sprout Email 3.x
 

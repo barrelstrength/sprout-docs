@@ -1,6 +1,6 @@
 # Supported Data Types
 
-Sprout Import currently supports importing:
+Sprout Import supports importing over 40 different data types.
 
 ## Craft CMS data types
 

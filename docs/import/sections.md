@@ -1,5 +1,7 @@
 # Sections
 
+Use the Section Settings Importer to import data for Sections, Entry Types, and Fields.
+
 ::: code
 
 ``` craft3

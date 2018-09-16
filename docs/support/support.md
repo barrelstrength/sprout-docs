@@ -1,5 +1,7 @@
 # Support
 
+Sprout provides dedicated support for license holders and [free training](./training.md).
+
 ::: tip Hands-on Support
 For support with advanced implementations, custom functionality, or open-source projects, consider hiring us. We are available for custom development and consulting services and are happy to improve or extend our plugins based on your project needs.
 :::

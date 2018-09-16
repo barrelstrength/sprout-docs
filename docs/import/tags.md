@@ -1,5 +1,7 @@
 # Tags
 
+Import Tag Elements using Sprout Import.
+
 ::: code
 
 ``` craft3
