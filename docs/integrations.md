@@ -30,6 +30,7 @@ Below is a list of the default features provided by Sprout plugins and some thir
 | Email Dropdown                | Sprout Forms |
 | Phone                         | Sprout Forms |
 | URL                           | Sprout Forms |
+| Opt-in                        | Sprout Forms |
 | Custom HTML                   | Sprout Forms |
 | Private Notes                 | Sprout Forms |
 | Multi Select                  | Sprout Forms |

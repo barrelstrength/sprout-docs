@@ -69,8 +69,10 @@ Link to Sprout Base Documentation. Normalize plugin behavior where we can.
 - Ensure all methods have proper comment blocks
 - Run any tests we can programatically
 - After database updates, ensure db schema for a fresh install and after an update are the same
+- Make sure all text has translation categories in PHP and Twig and JS: t('sprout-forms-countries')
 - Update any translations in the default en translation file using Craft::t and the PhpStorm inspection. Run various checks to make sure we are passing text through the necessary translate filters for PHP, HTML, and JS. 
-
+- Make sure all database queries are compatible with MySQL and PostgreSQL
+ 	
 _Note: where we can, we want to automate these tasks and incorporate them into our workflow_
 
 ## Folder Structure
@@ -110,6 +112,10 @@ _Note: where we can, we want to automate these tasks and incorporate them into o
 - plugin-handle/src/integrations/pluginname/componenttype/componentsubtype/ComponentClassName.php - for some components, we need an additional folder for a subtype
 - plugin-handle/src/templates/_components/pluginname/componenttype/ComponentClassName/template.html - Integrations are structured like components but exist in a subfolder that namespaces them by the plugin they relate to `_components/pluginname/...`
 
+## Database Queries
+
+- Make sure columns are wrapped with double brackets: [[columnname]]
+https://www.yiiframework.com/doc/guide/2.0/en/db-dao#quoting-table-and-column-names
 
 ## The Plugin Class
 
