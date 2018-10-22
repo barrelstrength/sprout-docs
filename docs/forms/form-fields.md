@@ -24,6 +24,7 @@ Below is a list of each default Form Field.
 - Email Dropdown
 - Phone
 - URL
+- Opt-in
 - Custom HTML
 - Private Notes
 - Multi-Select

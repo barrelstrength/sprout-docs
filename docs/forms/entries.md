@@ -12,6 +12,28 @@ All information contained in the Title will also be searchable. You may use the 
 {dateCreated|date('Ymd')} {fullName}
 ```
 
+## Editing Entries
+
+Users can edit Form Entries in front-end templates. To allow users to edit Form Entries you will need to:
+
+1. Enable Settings → General → Allow Forms to be edited in front-end templates
+2. Track the ID (or some other representative information) of the User who you want to allow to edit the form and confirm the person editing the form is the person you think it is.
+3. Populate the Entry Form using the setEntry tag
+
+``` twig
+{# Get an instance of the your Form #}
+{% set form = craft.sproutForms.getForm('application') %}
+
+{# Get an instance of the Entry you'll be allowing a user to edit #}
+{% set entry = craft.sproutForms.getEntryById(123) %}
+
+{# Set the `entry` variable so your Form Templates know how to populate the fields with existing values #}
+{% do craft.sproutForms.setEntry(form, entry) %}
+
+{# Output your form as usual #}
+{{ craft.sproutForms.displayForm('application') }}
+```
+
 ## Templating
  
 You can fetch form Entries using the [same options you have for all Elements](http://buildwithcraft.com/docs/templating/elementcriteriamodel) as described in the Craft documentation.
@@ -136,6 +158,16 @@ The `getEntry` method is useful if you need to setup your template to manage you
   {% endfor %}
 
 {% endif %}
+```
+
+### setEntry
+
+The `setEntry` method populates the Entry Model that is used by the `displayForm` tag.
+
+``` twig
+{% do craft.sproutForms.setEntry(form, entry) %}
+
+{{ craft.sproutForms.displayForm('application') }}
 ```
 
 ## Entry Relations Field

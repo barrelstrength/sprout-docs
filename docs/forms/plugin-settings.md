@@ -16,6 +16,15 @@ By default, Sprout Forms uses our simple, base Form Template: Accessible Templat
 
 If you need multiple base Form Templates for your Forms, you can enable this setting and select the specific Form Template you wish to use on each Form you set up.
 
+### Allow Forms to be edited in front-end templates
+
+Allow users to edit Form Entries on the front-end. See [Editing Entries] for more details.
+
+::: warning Caution
+Forms are submitted anonymously by users, so unlike Entries which have Authors, you will need to manage and authenticate any users who are editing your front-end Forms.
+:::
+
+
 ## Spam Protection
 
 Sprout Forms ships with three Captchas:
@@ -23,6 +32,10 @@ Sprout Forms ships with three Captchas:
 - Duplicate Submission Captcha
 - Javascript Captcha
 - Honeypot Captcha
+
+And allows for additional third-party Captchas:
+
+- [Google Recaptcha for Sprout Forms](https://github.com/barrelstrength/craft-sprout-forms-google-recaptcha)
 
 You can enable or disable each captcha in the global settings or add support for a [Custom Captcha](./custom-captchas.md).
 

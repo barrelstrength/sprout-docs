@@ -9,6 +9,7 @@ See examples of how to build your Captcha Class from the default Captchas in Spr
 - [Duplicate Submission Captcha](https://github.com/barrelstrength/craft-sprout-forms/blob/v3/src/captchas/DuplicateCaptcha.php)
 - [Javascript Captcha](https://github.com/barrelstrength/craft-sprout-forms/blob/v3/src/captchas/JavascriptCaptcha.php)
 - [Honeypot Captcha](https://github.com/barrelstrength/craft-sprout-forms/blob/v3/src/captchas/HoneypotCaptcha.php)
+- [Google Recaptcha for Sprout Forms](https://github.com/barrelstrength/craft-sprout-forms-google-recaptcha)
 
 ## Register Event
 
