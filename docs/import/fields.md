@@ -5,7 +5,7 @@
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Assets",
     "groupId": 1,
     "name": "Example Assets",
@@ -26,7 +26,7 @@
     "localizeRelations": ""
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Categories",
     "groupId": 1,
     "name": "Example Categories",
@@ -39,7 +39,7 @@
     "localizeRelations": 0
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Checkboxes",
     "groupId": 1,
     "name": "Example Checkboxes",
@@ -64,7 +64,7 @@
     ]
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Color",
     "groupId": 1,
     "name": "Example Color",
@@ -73,7 +73,7 @@
     "defaultColor": "#da513d"
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Date",
     "groupId": 1,
     "name": "Example Date",
@@ -84,7 +84,7 @@
     "minuteIncrement": 30
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Dropdown",
     "groupId": 1,
     "name": "Example Dropdown",
@@ -109,7 +109,7 @@
     ]
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Email",
     "groupId": 1,
     "name": "Example Email",
@@ -117,7 +117,7 @@
     "instructions": ""
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Entries",
     "groupId": 1,
     "name": "Example Entries",
@@ -130,7 +130,7 @@
     "localizeRelations": 0
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Lightswitch",
     "groupId": 1,
     "name": "Example Lightswitch",
@@ -139,7 +139,7 @@
     "default": true
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Matrix",
     "groupId": 1,
     "name": "Example Matrix",
@@ -187,7 +187,7 @@
 
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\MultiSelect",
     "groupId": 1,
     "name": "Example Multi-select",
@@ -212,7 +212,7 @@
     ]
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Number",
     "groupId": 1,
     "name": "Example Number",
@@ -224,7 +224,7 @@
     "size": 10
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\PlainText",
     "groupId": 1,
     "name": "Example Plain Text",
@@ -237,7 +237,7 @@
     "columnType": "text"
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\RadioButtons",
     "groupId": 1,
     "name": "Example Radio Buttons",
@@ -262,7 +262,7 @@
     ]
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Table",
     "groupId": 1,
     "name": "Example Table",
@@ -310,7 +310,7 @@
     }
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Tags",
     "groupId": 1,
     "name": "Example Tags",
@@ -322,7 +322,7 @@
     "localizeRelations": 0
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Url",
     "groupId": 1,
     "name": "Example URL",
@@ -330,7 +330,7 @@
     "instructions": ""
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\fields\\Users",
     "groupId": 1,
     "name": "Example Users",
@@ -353,7 +353,7 @@
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "barrelstrength\\sproutfields\\fields\\Address",
     "groupId": 1,
     "name": "Address Field",
@@ -363,7 +363,7 @@
     "hideCountryDropdown": 0
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "barrelstrength\\sproutfields\\fields\\Email",
     "groupId": 1,
     "name": "Email Field Basic",
@@ -375,7 +375,7 @@
     "uniqueEmail": false
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "barrelstrength\\sproutfields\\fields\\Email",
     "groupId": 1,
     "name": "Email Field - Unique",
@@ -387,7 +387,7 @@
     "uniqueEmail": true
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "barrelstrength\\sproutfields\\fields\\Email",
     "groupId": 1,
     "name": "Email Field - Custom Pattern",
@@ -399,7 +399,7 @@
     "uniqueEmail": false
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "barrelstrength\\sproutfields\\fields\\EmailDropdown",
     "groupId": 1,
     "name": "Email Dropdown Field",
@@ -417,7 +417,7 @@
     ]
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "barrelstrength\\sproutfields\\fields\\Notes",
     "groupId": 1,
     "name": "Notes",
@@ -427,7 +427,7 @@
     "style": "default"
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "barrelstrength\\sproutfields\\fields\\Gender",
     "groupId": 1,
     "name": "Gender",
@@ -435,7 +435,7 @@
     "instructions": ""
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "barrelstrength\\sproutfields\\fields\\Phone",
     "groupId": 1,
     "name": "Phone Field - All",
@@ -445,7 +445,7 @@
     "country": "VE"
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "barrelstrength\\sproutfields\\fields\\Phone",
     "groupId": 1,
     "name": "Phone Field - US",
@@ -455,7 +455,7 @@
     "country": "US"
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "barrelstrength\\sproutfields\\fields\\Predefined",
     "groupId": 1,
     "name": "Predefined Field",
@@ -464,7 +464,7 @@
     "fieldFormat": "{title} OR {{ object.title }}"
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "barrelstrength\\sproutfields\\fields\\RegularExpression",
     "groupId": 1,
     "name": "RegularExpression Field",
@@ -475,7 +475,7 @@
     "placeholder": "you@barrelstrengthdesign.com"
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "barrelstrength\\sproutfields\\fields\\Url",
     "groupId": 1,
     "name": "URL Field",
@@ -486,7 +486,7 @@
     "customPatternErrorMessage": ""
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "barrelstrength\\sproutfields\\fields\\Url",
     "groupId": 1,
     "name": "URL Field - Custom Pattern",
@@ -508,7 +508,7 @@
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "type": "craft\\redactor\\RichText",
     "groupId": 1,
     "name": "Example Rich Text",

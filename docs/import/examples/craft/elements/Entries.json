@@ -1,6 +1,6 @@
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": {
       "sectionId": 1,
       "typeId": 1,
@@ -18,7 +18,7 @@
     }
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": {
       "sectionId": 1,
       "typeId": 1,

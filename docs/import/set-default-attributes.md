@@ -11,7 +11,7 @@ In this example, in the first Entry, the values provided in the `attributes` arr
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": {
       "authorId": 4,
       "postDate": "2016-10-18 00:00:00"
@@ -25,7 +25,7 @@ In this example, in the first Entry, the values provided in the `attributes` arr
     }
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": {
       "authorId": null,
       "postDate": null

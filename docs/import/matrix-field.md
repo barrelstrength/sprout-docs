@@ -11,7 +11,7 @@ Here is an example of an Entry Model with a Matrix field and two blocks. When im
 ``` craft3
 [  
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
       "title": "Aliquid vero ut libero nostrum soluta.",
@@ -83,7 +83,7 @@ If you have Relations on your Matrix Blocks, you can also use the `related` key:
 ``` craft3
 [  
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
       "title": "Aliquid vero ut libero nostrum soluta.",
@@ -105,7 +105,7 @@ If you have Relations on your Matrix Blocks, you can also use the `related` key:
             },
             "related": {
               "assetsFieldHandle": {
-                "@model": "barrelstrength\\sproutimport\\importers\\elements\\Asset",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Asset",
                 "params": {
                   "filename": ["ImageName03.jpg"],
                   "source": "images",

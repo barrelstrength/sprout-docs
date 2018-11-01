@@ -6,7 +6,7 @@
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Order",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Order",
     "attributes": {
       "currency": "USD",
       "billingAddressId": null,

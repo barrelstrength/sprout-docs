@@ -5,7 +5,7 @@ Build a Longform Content Matrix and reuse it from project to project.
 ``` json
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
     "groupId": 1,
     "name": "Longform Content Body",
     "handle": "longformContentBody",

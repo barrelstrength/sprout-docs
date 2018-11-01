@@ -5,7 +5,7 @@
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Section",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Section",
     "name": "Example Section",
     "handle": "exampleSection",
     "type": "channel",
@@ -40,7 +40,7 @@
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Section",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Section",
     "name": "Test section",
     "handle": "testSection",
     "type": "channel",
@@ -64,7 +64,7 @@
     },
     "entryTypes": [
       {
-        "@model": "barrelstrength\\sproutimport\\importers\\settings\\EntryType",
+        "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\EntryType",
         "name": "All Fields",
         "handle": "allFields",
         "showTitles": true,
@@ -74,7 +74,7 @@
             "name": "Content",
             "fields": [
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\Assets",
                 "groupId": 1,
                 "name": "Example Assets",
@@ -97,7 +97,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\Categories",
                 "groupId": 1,
                 "name": "Example Categories",
@@ -110,7 +110,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\Checkboxes",
                 "groupId": 1,
                 "name": "Example Checkboxes",
@@ -137,7 +137,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\Color",
                 "groupId": 1,
                 "name": "Example Color",
@@ -145,7 +145,7 @@
                 "instructions": ""
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\Date",
                 "groupId": 1,
                 "name": "Example Date",
@@ -157,7 +157,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\Dropdown",
                 "groupId": 1,
                 "name": "Example Dropdown",
@@ -184,7 +184,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\Entries",
                 "groupId": 1,
                 "name": "Example Entries",
@@ -197,7 +197,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\Lightswitch",
                 "groupId": 1,
                 "name": "Example Lightswitch",
@@ -208,7 +208,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "groupId": 1,
                 "name": "Example Matrix",
                 "handle": "sproutExampleMatrix",
@@ -253,7 +253,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\MultiSelect",
                 "groupId": 1,
                 "name": "Example Multi-select",
@@ -280,7 +280,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\Number",
                 "groupId": 1,
                 "name": "Example Number",
@@ -293,7 +293,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\PlainText",
                 "groupId": 1,
                 "name": "Example Plain Text",
@@ -305,7 +305,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\RadioButtons",
                 "groupId": 1,
                 "name": "Example Radio Buttons",
@@ -332,7 +332,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\Table",
                 "groupId": 1,
                 "name": "Example Table",
@@ -382,7 +382,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\Tags",
                 "groupId": 1,
                 "name": "Example Tags",
@@ -394,7 +394,7 @@
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\Users",
                 "groupId": 1,
                 "name": "Example Users",
