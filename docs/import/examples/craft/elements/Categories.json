@@ -1,13 +1,13 @@
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
     "attributes": {
       "groupId": 1,
       "slug": "category-slug",
       "enabled": true,
       "related": {
         "newParentId": {
-          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
           "params": {
             "slug": "category-parent"
           }
@@ -19,7 +19,7 @@
     }
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
     "attributes": {
       "groupId": 1,
       "slug": "category-slug-child",

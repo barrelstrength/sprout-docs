@@ -12,21 +12,21 @@ In this example, we first try to match related categories by slug, and if we don
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
       "title": "In quaerat maiores sit est rerum iusto.",
       "fields": { ... },
       "related": {
         "categoryHandle": {
-          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
           "params": {
             "slug": ["san-francisco", "london"]
           },
           "createIfNotFound": true,
           "newElements": [
             {
-              "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+              "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
               "attributes": {
                 "groupId": 1,
                 "enabled": true
@@ -36,7 +36,7 @@ In this example, we first try to match related categories by slug, and if we don
               }
             },
             {
-              "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+              "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
               "attributes": {
                 "groupId": 1,
                 "enabled": true

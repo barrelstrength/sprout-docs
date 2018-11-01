@@ -12,16 +12,16 @@ Below are a few examples of some attributes that can be looked up when importing
 
 | Attribute  | @model   |
 |:---------- |:-------- |
-| authorId   | barrelstrength\\sproutimport\\importers\\elements\\User |
-| sectionId  | barrelstrength\\sproutimport\\importers\\settings\\Section |
-| typeId     | barrelstrength\\sproutimport\\importers\\settings\\EntryType |
+| authorId   | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User |
+| sectionId  | barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Section |
+| typeId     | barrelstrength\\sproutbase\\app\\import\\importers\\settings\\EntryType |
 
 ::: code
 
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": {
       "slug": "entry-slug",
       "postDate": "2017-04-27 16:00:00",
@@ -29,19 +29,19 @@ Below are a few examples of some attributes that can be looked up when importing
       "enabled": true,
       "related": {
         "authorId": {
-          "@model": "barrelstrength\\sproutimport\\importers\\elements\\User",
+          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User",
           "params" {
             "email": "muller.giuseppe@howell.com"
           }
         },
         "sectionId": {
-          "@model": "barrelstrength\\sproutimport\\importers\\settings\\Section",
+          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Section",
           "params": {
             "handle": "news"
           }
         },
         "typeId": {
-          "@model": "barrelstrength\\sproutimport\\importers\\settings\\EntryType",
+          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\EntryType",
           "params": {
             "handle": "post"
           }
@@ -62,21 +62,21 @@ Below is an example of importing categories where you may not know the ID of the
 
 | Attribute   | @model   |
 |:----------- |:-------- |
-| newParentId | barrelstrength\\sproutimport\\importers\\elements\\Category |
+| newParentId | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category |
 
 ::: code
 
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
     "attributes": {
       "groupId": 1,
       "slug": "category-slug-child",
       "enabled": true,
       "related": {
         "newParentId": {
-          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
           "params": {
             "slug": "category-slug"
           }
@@ -96,14 +96,14 @@ Below, we match the Users Photo ID attribute by looking up the photo we want to 
 
 | Attribute   | @model   |
 |:----------- |:-------- |
-| photoId | barrelstrength\\sproutimport\\importers\\elements\\Asset |
+| photoId | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Asset |
 
 ::: code
 
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\User",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User",
     "attributes": {
       "username": "beryl01",
       "firstName": "Luigi",
@@ -113,7 +113,7 @@ Below, we match the Users Photo ID attribute by looking up the photo we want to 
       "lastLoginDate": "2014-12-11 04:12:06",
       "related": {
         "photoId": {
-          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Asset",
+          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Asset",
           "params": {
             "filename": "headshot.jpg",
             "volumeId": 1

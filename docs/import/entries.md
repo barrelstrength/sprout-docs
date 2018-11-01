@@ -5,7 +5,7 @@
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": {
       "sectionId": 1,
       "typeId": 1,
@@ -45,7 +45,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ``` craft3
 [
     {
-        "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+        "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
         "attributes": {
             "authorId": 1
         },
@@ -75,11 +75,11 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ``` craft3
 [
     {
-        "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+        "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
         "attributes": {
           "related": {
             "authorId": {
-              "@model": "barrelstrength\\sproutimport\\importers\\elements\\User",
+              "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User",
               "params" {
                 "email": "hello@website.com"
               }
@@ -112,11 +112,11 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ``` craft3
 [
     {
-        "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+        "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
         "attributes": {
           "related": {
             "authorId": {
-              "@model": "barrelstrength\\sproutimport\\importers\\elements\\User",
+              "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User",
               "params" {
                 "username": "targetUsername"
               }
@@ -150,7 +150,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ``` json
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
       "title": "In quaerat maiores sit est rerum iusto.",
@@ -171,19 +171,19 @@ See [Related Attributes](./related-attributes.md) for more information on how to
       },
       "related": {
         "categoryHandle": {
-          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
           "params": {
             "slug": "slug-1"
           }
           "featureImage": {
-            "@model": "barrelstrength\\sproutimport\\importers\\elements\\Asset",
+            "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Asset",
             "params": {
               "filename": "filename.png"
             }
           },
           "newElements": [
             {
-              "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+              "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
               "attributes": {
                 "groupId": 1,
                 "enabled": true
@@ -222,7 +222,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ``` craft3 
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": {
       "sectionId": 2,
       "typeId": 2,
@@ -270,7 +270,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": {
       "sectionId": 1,
       "typeId": 1,
@@ -289,7 +289,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
     "enableVersioning": true
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": {
       "sectionId": 1,
       "typeId": 1,
@@ -318,7 +318,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
     "enableVersioning": true
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": {
       "sectionId": 1,
       "typeId": 1,

@@ -11,7 +11,7 @@ Similar to the Matrix Field, when importing Variants using the `variants` key, y
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Product",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Product",
     "attributes": {
       "typeId": 1,
       "slug": "useful-product",
@@ -114,7 +114,7 @@ In this example we use the `related` key to find a match for an Asset and Catego
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Product",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Product",
     "attributes": {
       "typeId": 1,
       "slug": "useful-product",

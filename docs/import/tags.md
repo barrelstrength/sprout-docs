@@ -7,7 +7,7 @@ Import Tag Elements using Sprout Import.
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Tag",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Tag",
     "attributes": {
       "groupId": 1,
       "slug": "tag-slug",

@@ -7,7 +7,7 @@ Use the Category Element Importer to import categories.
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
     "attributes": {
       "groupId": 1,
       "slug": "category-slug",
@@ -36,7 +36,7 @@ To import categories with a hierarchy where you know the parentId, you can set t
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
     "attributes": {
       "groupId": 1,
       "slug": "category-slug",
@@ -59,14 +59,14 @@ As you may not always know the `parentId`, you can let Sprout Import find the `p
 ``` craft3
 [  
  {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
     "attributes": {
       "groupId": 1,
       "slug": "category-slug-child",
       "enabled": true,
       "related": {
         "newParentId": {
-          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
           "params": {
             "slug": "category-slug"
           }
@@ -87,7 +87,7 @@ In the following example, we import Categories with three levels of hierarchy. B
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
     "attributes": {
       "groupId": 1,
       "slug": "parent-one",
@@ -98,7 +98,7 @@ In the following example, we import Categories with three levels of hierarchy. B
     }
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
     "attributes": {
       "groupId": 1,
       "slug": "parent-two",
@@ -109,14 +109,14 @@ In the following example, we import Categories with three levels of hierarchy. B
     }
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
     "attributes": {
       "groupId": 1,
       "slug": "child-one-level-one",
       "enabled": true,
       "related": {
         "newParentId": {
-          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
           "params": {
             "slug": "parent-one"
           }
@@ -128,14 +128,14 @@ In the following example, we import Categories with three levels of hierarchy. B
     }
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
     "attributes": {
       "groupId": 1,
       "slug": "child-two-level-one",
       "enabled": true,
       "related": {
         "newParentId": {
-          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
           "params": {
             "slug": "parent-two"
           }
@@ -147,14 +147,14 @@ In the following example, we import Categories with three levels of hierarchy. B
     }
   },
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
     "attributes": {
       "groupId": 1,
       "slug": "child-one-level-two",
       "enabled": true,
       "related": {
         "newParentId": {
-          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Category",
+          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
           "params": {
             "slug": "child-one-level-one"
           }

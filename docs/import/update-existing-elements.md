@@ -18,7 +18,7 @@ The `updateElement` key must be defined within the `settings` section of your im
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
       "oldId": 14,
@@ -76,7 +76,7 @@ You can use `id`, `slug`, or any other property or custom field to match an exis
 ``` craft3
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
       "oldId": 14,
@@ -84,7 +84,7 @@ You can use `id`, `slug`, or any other property or custom field to match an exis
       "fields": { ... },
       "related": {
         "heroImage": {
-          "@model": "barrelstrength\\sproutimport\\importers\\elements\\Asset",
+          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Asset",
           "params": {
             "filename": "ImageName03.jpg",
             "volumeId": "1",

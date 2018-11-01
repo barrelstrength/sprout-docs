@@ -5,7 +5,7 @@ Define reusable content structures to kick start your projects.
 ``` json
 [
   {
-    "@model": "barrelstrength\\sproutimport\\importers\\settings\\Section",
+    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Section",
     "name": "Blog",
     "handle": "blog",
     "type": "channel",
@@ -29,7 +29,7 @@ Define reusable content structures to kick start your projects.
     },
     "entryTypes": [
       {
-        "@model": "barrelstrength\\sproutimport\\importers\\settings\\EntryType",
+        "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\EntryType",
         "name": "Posts",
         "handle": "posts",
         "showTitles": true,
@@ -39,7 +39,7 @@ Define reusable content structures to kick start your projects.
             "name": "Content",
             "fields": [
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "groupId": 1,
                 "name": "Summary",
                 "handle": "summary",
@@ -52,7 +52,7 @@ Define reusable content structures to kick start your projects.
                 }
               },
               {
-                "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
                 "type": "craft\\fields\\Matrix",
                 "groupId": 1,
                 "name": "Longform Content Body",
