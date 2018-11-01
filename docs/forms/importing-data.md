@@ -28,7 +28,7 @@ Define your forms as JSON and import them into any project you'd like. A basic e
       "fieldLayout": {
         "Section 1": [
           {
-            "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+            "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
             "type": "barrelstrength\\sproutforms\\fields\\formfields\\SectionHeading",
             "name": "Section Heading",
             "handle": "sectionHeading",
@@ -37,7 +37,7 @@ Define your forms as JSON and import them into any project you'd like. A basic e
             "output": "richText"
           },
           {
-            "@model": "barrelstrength\\sproutimport\\importers\\settings\\Field",
+            "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
             "type": "barrelstrength\\sproutforms\\fields\\formfields\\SingleLine",
             "name": "Single Line",
             "handle": "singleLine",

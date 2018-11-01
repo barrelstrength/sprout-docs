@@ -61,9 +61,9 @@ In Craft 3, the `@model` attribute should reference the full class name of the I
 "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry"
 "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category"
 "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User"
-"@model": "barrelstrength\\sproutimport\\importers\\elements\\Field"
-"@model": "barrelstrength\\sproutimport\\importers\\elements\\Section"
-"@model": "barrelstrength\\sproutimport\\importers\\elements\\Widget"
+"@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field"
+"@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Section"
+"@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Widget"
 ```
 
 ``` craft2
