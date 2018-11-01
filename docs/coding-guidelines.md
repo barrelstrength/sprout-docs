@@ -1,8 +1,8 @@
 # Coding Guidelines
 
-A central principle of the Sprout Plugin Suite is to create a user experience that looks an feels like a users native experience with Craft CMS. Toward that end, wherever possible, Sprout adopts conventions set forth by Craft CMS.
+A central principle of the Sprout Plugin Suite is to create an experience – for both users and developers – that looks and feels like the native experience with Craft CMS. Toward that end, wherever possible, Sprout adopts conventions set forth by Craft CMS.
 
-Wherever possible, we try to match Craft's conventions outlined in the [Coding Guidelines](https://github.com/craftcms/docs/blob/master/en/coding-guidelines.md).
+Wherever possible, we try to match Craft's conventions outlined in the [Coding Guidelines](https://github.com/craftcms/docs/blob/master/en/coding-guidelines.md) and adopt patterns and conventions found in the [Craft CMS codebase](https://github.com/craftcms/cms).
 
 ## Sprout Guidelines
 
@@ -55,9 +55,9 @@ Link to Sprout Base Documentation. Normalize plugin behavior where we can.
     EVENT_BEFORE_CREATE_BACKUP
     EVENT_REGISTER_WIDGET_TYPES
     EVENT_REGISTER_CP_TEMPLATE_ROOTS
-      EVENT_REGISTER_IMPORTER
-      EVENT_REGISTER_IMPORTER_TYPES
-      EVENT_REGISTER_THEME_TYPES
+    EVENT_REGISTER_IMPORTER
+    EVENT_REGISTER_IMPORTER_TYPES
+    EVENT_REGISTER_THEME_TYPES
 
 ## Pre-Release Checklist
 
@@ -72,7 +72,7 @@ Link to Sprout Base Documentation. Normalize plugin behavior where we can.
 - Make sure all text has translation categories in PHP and Twig and JS: t('sprout-forms-countries')
 - Update any translations in the default en translation file using Craft::t and the PhpStorm inspection. Run various checks to make sure we are passing text through the necessary translate filters for PHP, HTML, and JS. 
 - Make sure all database queries are compatible with MySQL and PostgreSQL
- 	
+
 _Note: where we can, we want to automate these tasks and incorporate them into our workflow_
 
 ## Folder Structure
@@ -127,26 +127,26 @@ To include Sprout Base, in your plugins init() method:
 public function init()
 {
     parent::init();
-    
+
     SproutBaseHelper::registerModule();
 }
 ```
 
 ### Including Base Sprout Trait
 
-Include Base Sprout Trait to simplify loggin Errors, Warnings, and Info. Requires setting the $pluginHandle variable.
+Include Base Sprout Trait to simplify logging Errors, Warnings, and Info. Requires setting the $pluginHandle variable.
 
 ``` php
 class SproutForms extends Plugin
 {
-  use BaseSproutTrait;
-  
-  public static $pluginHandle = 'sprout-forms';
+    use BaseSproutTrait;
 
-  public function init()
-  {
-    ...
-  }
+    public static $pluginHandle = 'sprout-forms';
+
+    public function init()
+    {
+        ...
+    }
 }
 ```
 
@@ -162,7 +162,7 @@ public static $app;
 public function init()
 {
     parent::init();
-    
+
     $this->setComponents([
         'app' => App::class
     ]);
