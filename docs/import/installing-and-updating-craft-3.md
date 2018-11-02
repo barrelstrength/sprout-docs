@@ -27,7 +27,7 @@ The syntax for importing data using Sprout Import is slightly different between 
 
 In Craft 3, the `@model` attribute should reference the full class name of the Importer. In Craft 2, as Craft did not yet support namespaces in plugins, `@import` just uses the short class name of the Importer.
 
-## @model syntax
+### @model syntax
 
 ::: code
 
@@ -78,6 +78,44 @@ In Craft 3, the `@model` attribute should reference the full class name of the I
 
 See the `/examples` folder within each respective plugin for more examples.
 
-## Other Considerations
+### Other Considerations
 
 Craft 3 now uses Sites in place of Locales. All `localeId` and other Locale references will need to be updated to use `siteId` and respective Site references.
+
+## Upgrading to v1.0.0-beta.17 
+
+Sprout Import v1.0.0-beta.17 includes a breaking change that will require you to update any `@model` namespaces. This update to the application structure was made to add more flexible import, seeding, and more to all plugins within the Sprout Plugin Suite.
+
+| Previous Namespace | New Namespace |
+|:------------------ |:------------- |
+| barrelstrength\\sproutimport\\importers\\elements\\Asset | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Asset |
+| barrelstrength\\sproutimport\\importers\\elements\\Category | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category |
+| barrelstrength\\sproutimport\\importers\\elements\\Entry | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry |
+| barrelstrength\\sproutimport\\importers\\elements\\Order | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Order |
+| barrelstrength\\sproutimport\\importers\\elements\\Product | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Product |
+| barrelstrength\\sproutimport\\importers\\elements\\Tag | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Tag |
+| barrelstrength\\sproutimport\\importers\\elements\\User | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User |
+| barrelstrength\\sproutimport\\importers\\fields\\Assets | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Assets |
+| barrelstrength\\sproutimport\\importers\\fields\\Categories | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Categories |
+| barrelstrength\\sproutimport\\importers\\fields\\Checkboxes | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Checkboxes |
+| barrelstrength\\sproutimport\\importers\\fields\\Color | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Color |
+| barrelstrength\\sproutimport\\importers\\fields\\Date | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Date |
+| barrelstrength\\sproutimport\\importers\\fields\\Dropdown | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Dropdown |
+| barrelstrength\\sproutimport\\importers\\fields\\Email | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Email |
+| barrelstrength\\sproutimport\\importers\\fields\\Entries | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Entries |
+| barrelstrength\\sproutimport\\importers\\fields\\Lightswitch | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Lightswitch |
+| barrelstrength\\sproutimport\\importers\\fields\\Matrix | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Matrix |
+| barrelstrength\\sproutimport\\importers\\fields\\MultiSelect | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\MultiSelect |
+| barrelstrength\\sproutimport\\importers\\fields\\Number | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Number |
+| barrelstrength\\sproutimport\\importers\\fields\\PlainText | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\PlainText |
+| barrelstrength\\sproutimport\\importers\\fields\\RadioButtons | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\RadioButtons |
+| barrelstrength\\sproutimport\\importers\\fields\\Redactor | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Redactor |
+| barrelstrength\\sproutimport\\importers\\fields\\Table | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Table |
+| barrelstrength\\sproutimport\\importers\\fields\\Tags | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Tags |
+| barrelstrength\\sproutimport\\importers\\fields\\Url | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Url |
+| barrelstrength\\sproutimport\\importers\\fields\\Users | barrelstrength\\sproutbase\\app\\import\\importers\\fields\\Users |
+| barrelstrength\\sproutimport\\importers\\settings\\EntryType | barrelstrength\\sproutbase\\app\\import\\importers\\settings\\EntryType |
+| barrelstrength\\sproutimport\\importers\\settings\\Field | barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field |
+| barrelstrength\\sproutimport\\importers\\settings\\Section | barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Section |
+| barrelstrength\\sproutimport\\importers\\settings\\UserGroup | barrelstrength\\sproutbase\\app\\import\\importers\\settings\\UserGroup |
+| barrelstrength\\sproutimport\\importers\\settings\\Widget | barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Widget |

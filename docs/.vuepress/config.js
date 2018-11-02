@@ -321,7 +321,8 @@ module.exports = {
                         'set-default-attributes',
                         'multiple-sites',
                         'multiple-import-types',
-                        'large-amounts-of-data'
+                        'large-amounts-of-data',
+                        'console-commands'
                     ]
                 },
                 {
