@@ -13,7 +13,7 @@ See examples of how to build your Captcha Class from the default Captchas in Spr
 
 ## Register Event
 
-Once you have created your Custom Captcha, register you Captcha class with Sprout Forms to display your Captcha in the Spam Protection settings and enable it for your forms.
+Once you have created your Custom Captcha, register your Captcha class with Sprout Forms to display your Captcha in the Spam Protection settings and enable it for your forms.
 
 ``` php
 namespace mycompany\mycaptchaplugin;
