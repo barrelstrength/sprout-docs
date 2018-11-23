@@ -24,7 +24,6 @@ Similar to the Matrix Field, when importing Variants using the `variants` key, y
       "shippingCategoryId": 1,
       "freeShipping": "",
       "promotable": 1,
-      "orderLanguage": "en-US"
     },
     "variants": {
       "new1": {
@@ -127,8 +126,7 @@ In this example we use the `related` key to find a match for an Asset and Catego
       "taxCategoryId": 1,
       "shippingCategoryId": 1,
       "freeShipping": "",
-      "promotable": 1,
-      "orderLanguage": "en-US"
+      "promotable": 1
     },
     "variants": {
       "new1": {
