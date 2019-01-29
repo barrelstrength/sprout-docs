@@ -73,6 +73,7 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 ::: code
 
 ``` craft3
+{# Number Setting #}
 {{ forms.textField({
 	label: "Limit"|t,
 	name: "limit",
@@ -81,6 +82,7 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 	first: true
 }) }}
 
+{# Pre-defined Dropdown #}
 {{ forms.selectField({
 	label: "Region"|t,
 	name: "region",
@@ -95,9 +97,24 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 	},
 	value: settings.region is defined ? settings.region : "Antartica"
 }) }}
+
+{# Dynamic Dropdown #}
+{% set categoryGroup = craft.categories.group('exampleCategoryGroup') %}
+{% set categories = [] %}
+{% for category in categoryGroup %}
+    {% set categories = categories|merge({(category.id) : (category.title)}) %}
+{% endfor %}
+
+{{ forms.selectField({
+    label: "Example Category Element Dropdown Field"|t,
+    name: "exampleCategoryDropdownField",
+    options: categories,
+    value: 1
+}) }}
 ```
 
 ``` craft2
+{# Number Setting #}
 {{ forms.textField({
 	label: "Limit"|t,
 	name: "limit",
@@ -106,6 +123,7 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 	first: true
 }) }}
 
+{# Pre-defined Dropdown #}
 {{ forms.selectField({
 	label: "Region"|t,
 	name: "region",
@@ -119,6 +137,20 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 		"southAmerica" : "South America"
 	},
 	value: options.region is defined ? options.region : "Antartica"
+}) }}
+
+{# Dynamic Dropdown #}
+{% set categoryGroup = craft.categories.group('exampleCategoryGroup') %}
+{% set categories = [] %}
+{% for category in categoryGroup %}
+    {% set categories = categories|merge({(category.id) : (category.title)}) %}
+{% endfor %}
+
+{{ forms.selectField({
+    label: "Example Category Element Dropdown Field"|t,
+    name: "exampleCategoryDropdownField",
+    options: categories,
+    value: 1
 }) }}
 ```
 
