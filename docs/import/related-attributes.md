@@ -97,6 +97,7 @@ Below, we match the Users Photo ID attribute by looking up the photo we want to 
 | Attribute   | @model   |
 |:----------- |:-------- |
 | photoId | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Asset |
+| groups | barrelstrength\\sproutimport\\importers\\settings\\UserGroup |
 
 ::: code
 
@@ -117,6 +118,12 @@ Below, we match the Users Photo ID attribute by looking up the photo we want to 
           "params": {
             "filename": "headshot.jpg",
             "volumeId": 1
+          }
+        },
+        "groups": {
+          "@model": "barrelstrength\\sproutimport\\importers\\settings\\UserGroup",
+          "params": {
+            "handle": ["groupOne", "groupTwo"]
           }
         }
       }
