@@ -142,7 +142,7 @@ Sprout Forms allows you to set a redirect for your Form in the Form Settings or 
 
     <input type="hidden" name="action" value="sprout-forms/entries/save-entry">
     <input type="hidden" name="handle" value="contact">
-    <input type="hidden" name="redirect" value="contact?message=thankyou">
+    {{ redirectInput("contact?message=thankyou") }}
 
     {# All of your fields here #}
 

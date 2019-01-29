@@ -29,7 +29,7 @@ If you need to build a custom form with file-uploads, make sure your Form tag is
   {{ getCsrfInput() }}
   <input type="hidden" name="action" value="sprout-formsorms/entries/save-entry">
   <input type="hidden" name="handle" value="contact">
-  <input type="hidden" name="redirect" value="contact?message=thankyou">
+  {{ redirectInput("contact?message=thankyou") }}
   
   <input type="file" name="fields[assetFieldHandle]">
 
