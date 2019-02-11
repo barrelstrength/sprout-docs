@@ -8,7 +8,7 @@ When forms are submitted, an [Entry](./entries.md) will be created in your Craft
 
 ## Form Templates
 
-Forms are displayed on your website using Form Templates. Sprout Forms comes with two [Default Form Templates](./default-form-templates.md) and your web team can customize and style those templates using [Template Overrides](./template-overrides.md) or by building a [Custom Form Template] plugin.
+Forms are displayed on your website using Form Templates. Sprout Forms comes with two [Default Form Templates](./default-form-templates.md) and your web team can customize and style those templates using [Template Overrides](./template-overrides.md) or by building a [Custom Form Template](./custom-form-templates.md) plugin.
 
 Front-end validation, error states, accessibility, and submitting your form data will be managed from your Form Templates. 
 
