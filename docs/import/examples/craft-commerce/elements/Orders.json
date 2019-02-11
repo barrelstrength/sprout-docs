@@ -1,6 +1,6 @@
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Order",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Order",
     "attributes": {
       "currency": "USD",
       "billingAddressId": null,

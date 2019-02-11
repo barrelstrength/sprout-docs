@@ -1,6 +1,6 @@
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
     "attributes": {
       "sectionId": 1,
       "typeId": 1,
@@ -29,13 +29,13 @@
       },
       "related": {
         "categoryHandle": {
-          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
+          "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Category",
           "matchBy": "slug",
           "matchValue": [
             "slug-1"
           ],
           "featureImage": {
-            "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Asset",
+            "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Asset",
             "matchBy": "filename",
             "matchValue": [
               "filename.png"
@@ -43,7 +43,7 @@
           },
           "newElements": [
             {
-              "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
+              "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Category",
               "attributes": {
                 "groupId": 1,
                 "enabled": true

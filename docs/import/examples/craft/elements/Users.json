@@ -1,6 +1,6 @@
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\User",
     "attributes": {
       "username": "beryl01",
       "firstName": "Luigi",

@@ -1,6 +1,6 @@
 [
     {
-        "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Product",
+        "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Product",
         "attributes": {
             "typeId": 1,
             "slug": "shoes-one",
@@ -54,7 +54,7 @@
         }
     },
     {
-        "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Product",
+        "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Product",
         "attributes": {
             "typeId": 1,
             "slug": "clothes-one",

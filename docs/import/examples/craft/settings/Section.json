@@ -1,6 +1,6 @@
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Section",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\settings\\Section",
     "name": "Example Section",
     "handle": "exampleSection",
     "type": "channel",
