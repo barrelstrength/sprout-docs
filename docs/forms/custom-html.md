@@ -26,33 +26,88 @@ The [form tag](./forms.md) and the [getEntry tag](./entries.md) must be used tog
 ``` craft3
 {% set form = craft.sproutForms.form('contact').one() %}
 
-{% for tab in form.getFieldLayout().getTabs() %}
-
-  {% set fields = tab.getFields() %}
-
-  {% for field in fields %}
+{%- for tab in form.getFieldLayout().getTabs() %}
+    {%- for tab in tabs -%}
     
-    {% set required = field.required %}
-    {% set tabId = field.tabId %}
-
-    {% set field = field.getField() %}
-
-      {{ field.name }}
-      {{ field.handle }}
-      {{ field.instructions }}
-
-      {{ field.id }}
-      {{ field.type }}
-
-      {# Note: Settings may be different for each field type
-	       You will need to add conditionals appropriately. #}
-      {% for setting in field.settings %}
-        ...
-      {% endfor %}
-
-  {% endfor %}
-
-{% endfor %}
+        {%- set layoutFields = tab.getFields() %}
+    
+        <section class="tab">
+    
+            {% if form.displaySectionTitles -%}
+                <h3>{{ tab.name|t }}</h3>
+            {%- endif %}
+    
+            {% for field in layoutFields -%}
+            
+                {%- do craft.sproutForms.addFieldVariables(_context) -%}
+                
+                {%- set label            = field.name ?? null %}
+                {%- set instructions     = field.instructions ?? null %}
+                {%- set name             = field.handle ?? null %}
+                {%- set required         = field.required is defined and field.required ? true : false %}
+                {%- set renderingOptions = attribute(renderingOptions.fields, name) is defined ? renderingOptions.fields[name] : {} %}
+                
+                {%- set id               = renderingOptions.id ?? name %}
+                {%- set class            = renderingOptions.class ?? name ~ '-field' %}
+                {%- set value            = entry is not empty ? entry.getFieldValue(name) : null %}
+                {%- set errors           = entry is not empty ? entry.getErrors(name) : null %}
+                {%- set errorClass       = renderingOptions.errorClass ?? 'errors' %}
+                {%- set fieldCssClasses  = field['cssClasses'] is defined and not null ? field.cssClasses : '' %}
+                
+                {%- namespace field.getNamespace() -%}
+                    {%- if field.isPlainInput() -%}
+                
+                        {{ input|raw }}
+                
+                    {%- else %}
+                
+                        {% set fieldHtmlTag = field.hasMultipleLabels() ? 'fieldset' : 'div' -%}
+                
+                        <{{ fieldHtmlTag }}
+                        {%- if id %} id="{{ id }}-field"{% endif %} class="field {{ field.getFieldInputFolder() }}
+                        {%- if class %} {{ class }}{% endif -%}
+                        {%- if fieldCssClasses %} {{ fieldCssClasses }}{% endif -%}
+                        {%- if errors %} {{ errorClass }}{% endif -%}
+                        {%- if required %} required{% endif -%}
+                        ">
+                        {% if (label or instructions) and field.displayLabel() -%}
+                            <div class="heading">
+                                {% if label -%}
+                                    {%- if field.hasMultipleLabels() -%}
+                                        <legend>{{- label|raw|t('site') -}}</legend>
+                                    {%- else -%}
+                                        <label{% if name %} for="{{ name }}"{% endif %}>
+                                            {{- label|raw|t('site') -}}
+                                        </label>
+                                    {%- endif -%}
+                                {%- endif -%}
+                                {% if instructions %}
+                
+                                    <p id="{{ id }}-instructions"
+                                       class="instructions">{{ instructions|t('site')|raw }}</p>
+                                {%- endif %}
+                
+                            </div>
+                        {% endif -%}
+                
+                        <div class="input">
+                            {{ input|raw }}
+                        </div>
+                        {% include "errors" with {
+                            errors: errors,
+                            name: name
+                        } %}
+                
+                        </{{ fieldHtmlTag }}>
+                    {%- endif -%}
+                {%- endnamespace -%}
+                
+            {%- endfor %}
+    
+        </section>
+    
+    {%- endfor -%}
+{% endfor -%}
 ```
 
 ``` craft2
