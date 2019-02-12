@@ -2,7 +2,7 @@
 
 ## Craft 3
 
-Form Fields enable you to add new Field to the Form Builder and manage it's field settings and front-end output.
+Form Fields enable you to add new Fields to the Form Builder and manage its field settings and front-end output.
 
 See the following plugins for examples:
 
@@ -11,7 +11,7 @@ See the following plugins for examples:
 
 ### Register Event
 
-Once you have created your Custom Form Field, register you Form Field class with Sprout Forms to display your Form Field in the Form Builder.
+Once you have created your Custom Form Field, register your Form Field class with Sprout Forms to display your Form Field in the Form Builder.
 
 ``` php
 namespace barrelstrength\sproutformsrangeslider;
@@ -55,7 +55,7 @@ Sprout Forms provides a comprehensive API to add dynamic front-end field support
 To create a field that extends the Sprout Forms Front-end Field API, you'll need to do the following:
 
 1. Create a **field class** that extends `SproutFormsBaseField`
-2. Add the `getInputHtml()` method to your your **field class**
+2. Add the `getInputHtml()` method to your **field class**
 3. Add the `registerSproutFormsFields()` in your **plugin class**
 
 ### Field Class
@@ -78,7 +78,7 @@ $settings         > The settings associated with that field type
 $renderingOptions > Options available to displayForm(), displayTab(), displayField() tags
 ```
 
-In addition to the arguments, you should make sure to return a `\Twig_Markup` object from this method so that your html is not escaped.
+In addition to the arguments, you should make sure to return a `\Twig_Markup` object from this method so that your HTML is not escaped.
 
 #### beginRendering()
 This method should be called just before your render your front end field template inside of `getInputHtml()`
@@ -90,7 +90,7 @@ Not calling `beginRendering()` could cause your template to not be found.
 #### endRendering()
 This method should be called just after you finish rendering your front end field template.
 
-Not calling `endRendering()` could cause your template or Sprout Forms own templates to not be found.
+Not calling `endRendering()` could cause your template or Sprout Forms' own templates to not be found.
 
 #### getTemplatesPath()
 Because Sprout Forms allows the user to customize/override the default templates (`form.html`, `tab.html`, `field.html`, `errors.html`), we need to switch the template path a few times during rendering of all fields.
@@ -101,7 +101,7 @@ From this method, you should return the absolute path to your templates folder s
 
 ---
 
-If we follow the instructions above, our `getInputHtml()` and `getTemplatesPath()` might looks something like this:
+If we follow the instructions above, our `getInputHtml()` and `getTemplatesPath()` might look something like this:
 
 ```php
 public function getInputHtml($field, $value, $settings, array $renderingOptions = null)
