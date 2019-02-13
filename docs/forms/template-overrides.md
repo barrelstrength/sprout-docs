@@ -50,7 +50,7 @@ To get started, copy all of the default Sprout Forms templates to your Custom Te
 ::: code
 
 ``` craft3
-vendor/barrelstrength/sprout-forms/templates/_components/formtemplates/accessible
+vendor/barrelstrength/sprout-forms/src/templates/_components/formtemplates/accessible
 ```
 
 ``` craft2
