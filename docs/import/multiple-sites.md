@@ -132,7 +132,7 @@ We import our secondary locale in a second step, and the import format has a few
       }
     },
     "settings": {
-			"updateElement": {
+        "updateElement": {
         "matchBy": "slug",
         "matchValue": "english-slug",
         "matchCriteria": {
