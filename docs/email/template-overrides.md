@@ -26,11 +26,11 @@ To get started, copy the default Sprout Email templates to your Custom Template 
  
 ::: code
 
-``` craft3
+``` html Craft 3
 vendor/barrelstrength/sprout-base/src/app/email/templates/_components/emailtemplates/basic
 ```
 
-``` craft2
+``` html Craft 2
 No defaults Email Templates available.
 ```
 
@@ -44,11 +44,11 @@ Setup a Global Email Template override in the Sprout Email settings and add the 
 
 ::: code
 
-``` craft3
+``` html Craft 3
 Sprout Email → Settings → Default Email Templates → Add Custom
 ```
 
-``` craft2
+``` html Craft 2
 No Global Email Template setting available.
 ```
 

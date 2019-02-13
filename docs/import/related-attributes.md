@@ -18,7 +18,7 @@ Below are a few examples of some attributes that can be looked up when importing
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -66,7 +66,7 @@ Below is an example of importing categories where you may not know the ID of the
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
@@ -101,7 +101,7 @@ Below, we match the Users Photo ID attribute by looking up the photo we want to 
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User",

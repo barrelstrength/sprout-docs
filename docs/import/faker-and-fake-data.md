@@ -18,7 +18,7 @@ In this example, we'll create 100 fake entries using faker. The entries will be 
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {%- set faker = craft.sproutImport.faker -%}
 {%- set paragraphs = "<p>" ~ faker.paragraphs(5)|join('</p><p>')|raw ~ "</p>" -%}
 [
@@ -46,7 +46,7 @@ In this example, we'll create 100 fake entries using faker. The entries will be 
 ]
 ```
 
-``` craft2
+``` twig Craft 2
 {%- set faker = craft.sproutImport.faker -%}
 {%- set paragraphs = "<p>" ~ faker.paragraphs(5)|join('</p><p>')|raw ~ "</p>" -%}
 [
@@ -82,7 +82,7 @@ In this example, we'll create 100 fake users using faker.
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {%- set faker = craft.sproutImport.faker -%}
 [
 {%- for i in 0..99 %}
@@ -101,7 +101,7 @@ In this example, we'll create 100 fake users using faker.
 {%- endfor -%}
 ```
 
-``` craft2
+``` twig Craft 2
 {%- set faker = craft.sproutImport.faker -%}
 [
 {%- for i in 0..99 %}

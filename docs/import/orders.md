@@ -4,7 +4,7 @@ Import Craft Commerce Orders using Sprout Import, including custom fields, payme
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Order",

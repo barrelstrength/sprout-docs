@@ -40,7 +40,7 @@ public
 
 Add a file to the `craft/translations` folder for the locale you wish to provide translations.
 
-``` text
+``` html
 craft/translations/en_gb.php
 ```
 

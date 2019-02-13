@@ -49,11 +49,11 @@ To get started, copy all of the default Sprout Forms templates to your Custom Te
  
 ::: code
 
-``` craft3
+``` html Craft 3
 vendor/barrelstrength/sprout-forms/src/templates/_components/formtemplates/accessible
 ```
 
-``` craft2
+``` html Craft 2
 craft/plugins/sproutforms/templates/_special/templates
 ```
 
@@ -67,11 +67,11 @@ Setup a Global Form Template override in the Sprout Forms settings and add the p
 
 ::: code
 
-``` craft3
+``` html Craft 3
 Sprout Forms → Settings → Default Form Templates → Add Custom
 ```
 
-``` craft2
+``` html Craft 2
 Sprout Forms → Settings → Advanced → Enable custom form templates globally
 ```
 

@@ -4,7 +4,7 @@ Import customized dashboard widgets using Sprout Import.
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Widget",
@@ -34,7 +34,7 @@ Import customized dashboard widgets using Sprout Import.
 
 ## Sprout Notes
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutimport\\integrations\\sproutimport\\settings\\Widget",

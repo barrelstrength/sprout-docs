@@ -12,7 +12,7 @@ We'll use JQuery in our example.
 
 ::: code 
 
-``` craft3
+``` html Craft 3
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript">
 	
@@ -64,7 +64,7 @@ We'll use JQuery in our example.
 </script>
 ```
 
-``` craft2
+``` html Craft 2
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript">
 	

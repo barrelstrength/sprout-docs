@@ -72,7 +72,7 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {# Number Setting #}
 {{ forms.textField({
 	label: "Limit"|t,
@@ -113,7 +113,7 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 }) }}
 ```
 
-``` craft2
+``` twig Craft 2
 {# Number Setting #}
 {{ forms.textField({
 	label: "Limit"|t,
@@ -178,7 +178,7 @@ In this example we use our settings to retrieve a CategoryModel and then use tha
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {% set region = craft.categories.group(settings.region) %}
 {% set trips = craft.entries.section('trips').relatedTo(region).limit(settings.limit) %}
 
@@ -194,7 +194,7 @@ In this example we use our settings to retrieve a CategoryModel and then use tha
 {% endfor %}
 ```
 
-``` craft2
+``` twig Craft 2
 {% set region = craft.categories.group(options.region) %}
 {% set trips = craft.entries.section('trips').relatedTo(region).limit(options.limit) %}
 

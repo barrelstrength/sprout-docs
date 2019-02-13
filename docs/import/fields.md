@@ -4,7 +4,7 @@ Use the Field Settings Importer to import data for all native Craft Field Types 
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
@@ -352,7 +352,7 @@ Use the Field Settings Importer to import data for all native Craft Field Types 
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
@@ -507,7 +507,7 @@ Use the Field Settings Importer to import data for all native Craft Field Types 
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",

@@ -8,7 +8,7 @@ Before importing the Products into Craft, Categories were migrated manually, as 
 
 ::: code
 
-``` craft2
+``` html Craft 2
 [
 	{exp:channel:entries
 		channel="products"

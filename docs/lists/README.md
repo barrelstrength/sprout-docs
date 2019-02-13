@@ -48,7 +48,7 @@ Example subscribe and unsubscribe form for known Craft Users using a hidden `use
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {% set params = {
   listHandle: 'listHandle',
   userId: currentUser.id,
@@ -80,7 +80,7 @@ Example subscribe and unsubscribe form for known Craft Users using a hidden `use
 {% endif %}
 ```
 
-``` craft2
+``` twig Craft 2
 {% set params = {
   listHandle: 'listHandle',
   userId: currentUser.id,
@@ -122,7 +122,7 @@ Example subscribe and unsubscribe form for an anonymous user with an email addre
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {# Allow a user to submit their email to unsubscribe from a specific List #}
 <form method="post" accept-charset="utf-8">
   {{ csrfInput() }}
@@ -145,7 +145,7 @@ Example subscribe and unsubscribe form for an anonymous user with an email addre
 </form>
 ```
 
-``` craft2
+``` twig Craft 2
 {# Allow a user to submit their email to unsubscribe from a specific List #}
 <form method="post" accept-charset="utf-8">
   <input type="hidden" name="action" value="sproutLists/lists/unsubscribe">

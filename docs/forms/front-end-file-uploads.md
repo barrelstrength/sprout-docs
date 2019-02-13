@@ -24,7 +24,7 @@ If you need to build a custom form with file-uploads, make sure your Form tag is
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 <form method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
   {{ getCsrfInput() }}
   <input type="hidden" name="action" value="sprout-formsorms/entries/save-entry">
@@ -38,7 +38,7 @@ If you need to build a custom form with file-uploads, make sure your Form tag is
 </form>
 ```
 
-``` craft2
+``` twig Craft 2
 <form method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
   {{ getCsrfInput() }}
   <input type="hidden" name="action" value="sproutForms/entries/saveEntry">

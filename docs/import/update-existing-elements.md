@@ -15,7 +15,7 @@ The `updateElement` key must be defined within the `settings` section of your im
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -37,7 +37,7 @@ The `updateElement` key must be defined within the `settings` section of your im
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "EntryModel",
@@ -73,7 +73,7 @@ You can use `id`, `slug`, or any other property or custom field to match an exis
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -105,7 +105,7 @@ You can use `id`, `slug`, or any other property or custom field to match an exis
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "EntryModel",

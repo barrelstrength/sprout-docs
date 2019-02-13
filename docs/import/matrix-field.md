@@ -8,7 +8,7 @@ Here is an example of an Entry Model with a Matrix field and two blocks. When im
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [  
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -40,7 +40,7 @@ Here is an example of an Entry Model with a Matrix field and two blocks. When im
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [  
   {
     "@model": "EntryModel",
@@ -80,7 +80,7 @@ If you have Relations on your Matrix Blocks, you can also use the `related` key:
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [  
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -121,7 +121,7 @@ If you have Relations on your Matrix Blocks, you can also use the `related` key:
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [  
   {
     "@model": "EntryModel",

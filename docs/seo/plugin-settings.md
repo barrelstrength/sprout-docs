@@ -16,11 +16,11 @@ Sprout SEO defaults to Meta Descriptions of 160 characters, however, you can upd
  
  ::: code
  
- ``` craft3
+ ``` html Craft 3
 Sprout SEO → Settings → General → Meta Description Length
  ```
  
- ``` craft2
+ ``` php Craft 2
  <?php 
  
  // In your craft/config/sproutseo.php config file

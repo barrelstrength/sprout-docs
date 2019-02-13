@@ -16,7 +16,7 @@ You can import your primary locale like any other Element you import.
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -40,7 +40,7 @@ You can import your primary locale like any other Element you import.
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "EntryModel",
@@ -77,7 +77,7 @@ We import our secondary locale in a second step, and the import format has a few
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -110,7 +110,7 @@ We import our secondary locale in a second step, and the import format has a few
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "EntryModel",

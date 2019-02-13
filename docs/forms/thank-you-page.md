@@ -7,12 +7,15 @@ For most of your forms, you will want some sort of confirmation page letting the
 Within your form, add a hidden field with the name `redirect`. This line of code will redirect your form on a successful submission to any template you wish:
 
 ::: code
-``` craft3
+
+``` twig Craft 3
 {{ redirectInput("contact?message=thankyou") }}
 ```
-``` craft2
+
+``` twig Craft 2
 <input type="hidden" name="redirect" value="contact?message=thankyou">
 ```
+
 :::
 
 You can redirect a user to the same template as that you form or a completely different template. You can also pass that template a query string which you can use to conditionally display content in your thank you page template.  In the example above, we are passing the query string `?message=thankyou` and we can use that query string in a conditional statement like so:

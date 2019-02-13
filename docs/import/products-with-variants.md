@@ -8,7 +8,7 @@ Similar to the Matrix Field, when importing Variants using the `variants` key, y
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Product",
@@ -59,7 +59,7 @@ Similar to the Matrix Field, when importing Variants using the `variants` key, y
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "Commerce_ProductModel",
@@ -111,7 +111,7 @@ In this example we use the `related` key to find a match for an Asset and Catego
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Product",
@@ -163,7 +163,7 @@ In this example we use the `related` key to find a match for an Asset and Catego
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "Commerce_ProductModel",

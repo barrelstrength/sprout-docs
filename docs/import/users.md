@@ -4,7 +4,7 @@ Use the User Element Importer to import users.
  
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User",
@@ -30,7 +30,7 @@ To assign a user to the Admin group, use the `admin` attribute.
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User",

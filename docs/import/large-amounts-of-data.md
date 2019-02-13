@@ -10,12 +10,12 @@ Some logs to check:
 
 ::: code
 
-``` craft3
+``` html Craft 3
 storage/logs/queue.log
 storage/logs/web.log
 ```
 
-``` craft2
+``` html Craft 2
 craft/storage/runtime/logs/sproutimport.log
 craft/storage/runtime/logs/craft.log
 craft/storage/runtime/logs/phperrors.log

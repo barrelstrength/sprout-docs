@@ -11,7 +11,7 @@ Adding a custom Mailer involves:
 
 ::: code
 
-``` craft3
+``` php Craft 3
 namespace mycompany\myplugin\integrations\sproutemail\mailers;
 
 use barrelstrength\sproutbase\contracts\sproutemail\BaseMailer;
@@ -23,7 +23,7 @@ class MyMailer extends BaseMailer implements CampaignEmailSenderInterface
 }
 ```
 
-``` craft2
+``` html Craft 2
 See codebase for examples.
 ```
 
@@ -33,7 +33,7 @@ See codebase for examples.
 
 ::: code
 
-``` craft3
+``` php Craft 3
 namespace mycompany\myplugin;
 
 use mycompany\myplugin\integrations\sproutemail\mailers\MyMailer;
@@ -56,7 +56,7 @@ class MyPlugin extends Plugin
 }
 ```
 
-``` craft2
+``` html Craft 2
 See codebase for examples.
 ```
 

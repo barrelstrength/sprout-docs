@@ -4,7 +4,7 @@ Import Tag Elements using Sprout Import.
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Tag",

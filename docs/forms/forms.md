@@ -32,13 +32,13 @@ Add a Form Relations Field to a Field Layout to allow a content author to select
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {% set formHandle = entry.formFieldHandle.one().handle %}
 
 {{ craft.sproutForms.displayForm( formHandle ) }}
 ```
 
-``` craft2
+``` twig Craft 2
 {% set formHandle = entry.formFieldHandle.first().handle %}
 
 {{ craft.sproutForms.displayForm( formHandle ) }}
@@ -56,12 +56,12 @@ You can access your Form Element directly using the `form` tag.
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {# Returns a barrelstrength\sproutforms\elements\Form #}
 {% set form = craft.sproutForms.form('contact') %}
 ```
 
-``` craft2
+``` twig Craft 2
 {# Returns a SproutForms_FormModel #}
 {% set form = craft.sproutForms.form('contact') %}
 ```
@@ -82,13 +82,13 @@ The `displayTab` tag is called within the `displayForm` tag and renders each ind
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {% for tab in form.getFieldLayout().getTabs() %}
     {{ craft.sproutForms.displayTab(form, tab.id, renderingOptions) }}
 {% endfor %}
 ```
 
-``` craft2
+``` twig Craft 2
 {{ craft.sproutForms.displayTab('contact.tab1') }}
 
 {# Examples of how Tab Handles get processed:
@@ -109,7 +109,7 @@ The `displayField` tag is called within the `displayTab` tag and renders each in
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {% set layoutFields = tab.getFields() %}
 
 {% for field in layoutFields -%}
@@ -117,7 +117,7 @@ The `displayField` tag is called within the `displayTab` tag and renders each in
 {% endfor %}
 ```
 
-``` craft2
+``` twig Craft 2
 {{ craft.sproutForms.displayField('contact.email') }}
 ```
 
@@ -137,7 +137,7 @@ Sprout Forms allows you to set a redirect for your Form in the Form Settings or 
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 <form method="post" action="" accept-charset="UTF-8">
 
     <input type="hidden" name="action" value="sprout-forms/entries/save-entry">
@@ -151,7 +151,7 @@ Sprout Forms allows you to set a redirect for your Form in the Form Settings or 
 </form>
 ```
 
-``` craft2
+``` twig Craft 2
 <form method="post" action="" accept-charset="UTF-8">
 
     <input type="hidden" name="action" value="sproutForms/entries/saveEntry">

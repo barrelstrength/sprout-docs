@@ -10,7 +10,7 @@ Raised before an entry is saved.
 
 ::: code
 
-``` craft3
+``` php Craft 3
 use barrelstrength\sproutforms\elements\Entry;
 use yii\base\Event;
 use Craft;
@@ -35,7 +35,7 @@ public function init()
 }
 ```
 
-``` craft2
+``` html Craft 2
 sproutForms.onBeforeSaveEntry
 ```
 
@@ -52,7 +52,7 @@ Raised just after an entry is saved
 
 ::: code
 
-``` craft3
+``` php Craft 3
 use barrelstrength\sproutforms\elements\Entry;
 use yii\base\Event;
 use Craft;
@@ -78,7 +78,7 @@ public function init()
 }
 ```
 
-``` craft2
+``` html Craft 2
 sproutForms.onSaveEntry
 ```
 
@@ -97,7 +97,7 @@ The `sproutForms.modifyForm` Template Hook gives plugins a chance to dynamically
 
 ::: code
 
-``` craft3
+``` php Craft 3
 public function init()
 {
     parent::init();
@@ -111,7 +111,7 @@ public function init()
 }
 ```
 
-``` craft2
+``` php Craft 2
 public function init()
 {
   craft()->templates->hook('sproutForms.modifyForm', function(&$context)

@@ -8,7 +8,7 @@ In this example, in the first Entry, the values provided in the `attributes` arr
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -41,7 +41,7 @@ In this example, in the first Entry, the values provided in the `attributes` arr
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "EntryModel",

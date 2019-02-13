@@ -4,7 +4,7 @@ Use the Category Element Importer to import categories.
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
@@ -33,7 +33,7 @@ To import categories with a hierarchy where you know the parentId, you can set t
 ::: code
 
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
@@ -56,7 +56,7 @@ As you may not always know the `parentId`, you can let Sprout Import find the `p
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [  
  {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
@@ -84,7 +84,7 @@ In the following example, we import Categories with three levels of hierarchy. B
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",

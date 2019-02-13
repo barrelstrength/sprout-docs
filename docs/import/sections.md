@@ -4,7 +4,7 @@ Use the Section Settings Importer to import data for Sections, Entry Types, and 
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Section",
@@ -39,7 +39,7 @@ Use the Section Settings Importer to import data for Sections, Entry Types, and 
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Section",

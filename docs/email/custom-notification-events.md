@@ -11,7 +11,7 @@ Adding custom events involves:
 
 ::: code
 
-``` craft3
+``` php Craft 3
 namespace company\plugin\folder;
 
 use barrelstrength\sproutbase\app\email\base\NotificationEvent;
@@ -22,7 +22,7 @@ class EntriesSave extends NotificationEvent
 }
 ```
 
-``` craft2
+``` php Craft 2
 <?php
 namespace Craft;
 
@@ -115,7 +115,7 @@ To tell Sprout Email that your event exists you need to register it in your plug
 
 ::: code
 
-``` craft3
+``` php Craft 3
 namespace mycompany\myplugin;
 
 use mycompany\myplugin\integrations\sproutemail\events\notificationevents\MyNotificationEvent;
@@ -138,7 +138,7 @@ class MyPlugin extends Plugin
 }
 ```
 
-``` craft2
+``` php Craft 2
 /**
  * Defines events/rules for notification entries in Sprout Email
  *

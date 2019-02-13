@@ -31,7 +31,7 @@ Read over the [Changes in Craft 3](https://docs.craftcms.com/v3/changes-in-craft
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 <form method="post" accept-charset="utf-8" enctype="multipart/form-data">
 	{{ getCsrfInput() }}
 	<input type="hidden" name="action" value="sprout-forms/entries/save-entry">
@@ -44,7 +44,7 @@ Read over the [Changes in Craft 3](https://docs.craftcms.com/v3/changes-in-craft
 </form>
 ```
 
-``` craft2
+``` twig Craft 2
 <form method="post" accept-charset="utf-8" enctype="multipart/form-data">
 	{{ getCsrfInput() }}
 	<input type="hidden" name="action" value="sproutForms/entries/saveEntry">
@@ -63,11 +63,11 @@ Read over the [Changes in Craft 3](https://docs.craftcms.com/v3/changes-in-craft
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {% set form = craft.sproutForms.form('contact').one() %}
 ```
 
-``` craft2
+``` twig Craft 2
 {% set form = craft.sproutForms.form('contact') %}
 ```
 
@@ -79,13 +79,13 @@ Where `field` is a Form Field model:
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {% if field.getFieldInputFolder() == 'dropdown' %}
     ...
 {% endif %}
 ```
 
-``` craft2
+``` twig Craft 2
 {% if field.type|lower == 'dropdown' %}
     ...
 {% endif %}
@@ -97,7 +97,7 @@ Where `field` is a Form Field model:
  
 ::: code
 
-``` craft3
+``` twig Craft 3
 {# form.html #}
 {%- for tab in form.getFieldLayout().getTabs() %}
     {{ craft.sproutForms.displayTab(form, tab.id, renderingOptions) }}
@@ -109,7 +109,7 @@ Where `field` is a Form Field model:
 {%- endfor %}
 ```
 
-``` craft2
+``` twig Craft 2
 {# form.html #}
 {{ body | raw }}
 

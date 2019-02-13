@@ -9,7 +9,7 @@ In this example, we first try to match related categories by slug, and if we don
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -53,7 +53,7 @@ In this example, we first try to match related categories by slug, and if we don
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "EntryModel",

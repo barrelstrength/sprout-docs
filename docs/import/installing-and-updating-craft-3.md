@@ -31,7 +31,7 @@ In Craft 3, the `@model` attribute should reference the full class name of the I
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -41,7 +41,7 @@ In Craft 3, the `@model` attribute should reference the full class name of the I
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "EntryModel",
@@ -57,7 +57,7 @@ In Craft 3, the `@model` attribute should reference the full class name of the I
 
 ::: code
 
-``` craft3
+``` json Craft 3
 "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry"
 "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category"
 "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User"
@@ -66,7 +66,7 @@ In Craft 3, the `@model` attribute should reference the full class name of the I
 "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Widget"
 ```
 
-``` craft2
+``` json Craft 2
 "@model": "EntryModel"
 "@model": "CategoryModel"
 "@model": "UserModel"

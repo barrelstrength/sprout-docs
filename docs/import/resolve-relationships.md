@@ -4,7 +4,7 @@ Sprout Import can help you resolve relationships based on attributes and query p
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -19,7 +19,7 @@ Sprout Import can help you resolve relationships based on attributes and query p
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "EntryModel",
@@ -44,7 +44,7 @@ Here's a general example of how to structure an import using the `related` key:
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -71,7 +71,7 @@ Here's a general example of how to structure an import using the `related` key:
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "EntryModel",
@@ -104,7 +104,7 @@ The code below says _if you find any Categories that are using the values “cat
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -126,7 +126,7 @@ The code below says _if you find any Categories that are using the values “cat
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "EntryModel",
@@ -157,7 +157,7 @@ The code below says _if you find any Assets that are using the value “ImageNam
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -180,7 +180,7 @@ The code below says _if you find any Assets that are using the value “ImageNam
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "EntryModel"
@@ -218,7 +218,7 @@ The code below says _if you find any Users that have the values 89, 139 or 95 in
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -244,7 +244,7 @@ The code below says _if you find any Users that have the values 89, 139 or 95 in
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "EntryModel",
@@ -279,7 +279,7 @@ In this example we'll match any related entries that use a particular keyword in
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",

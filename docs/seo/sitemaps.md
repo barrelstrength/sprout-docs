@@ -46,7 +46,7 @@ Your Sitemap Index will be output when you visit the URL: `/sitemap.xml`
 
 ::: code 
 
-``` craft3
+``` xml Craft 3
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
@@ -72,7 +72,7 @@ Your Sitemap Index will be output when you visit the URL: `/sitemap.xml`
 </sitemapindex>
 ```
 
-``` craft2
+``` xml Craft 2
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>

@@ -2,7 +2,7 @@
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -42,7 +42,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
     {
         "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -54,7 +54,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
     {
         "@model": "EntryModel",
@@ -72,7 +72,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
     {
         "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -91,7 +91,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
     {
         "@model": "EntryModel",
@@ -109,7 +109,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
     {
         "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -128,7 +128,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
     {
         "@model": "EntryModel",
@@ -219,7 +219,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 
 ::: code
 
-``` craft3 
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
@@ -267,7 +267,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",

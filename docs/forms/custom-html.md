@@ -23,7 +23,7 @@ The [form tag](./forms.md) and the [getEntry tag](./entries.md) must be used tog
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {% set form = craft.sproutForms.form('contact').one() %}
 {% set entry = craft.sproutForms.getEntry(form) %}
 
@@ -121,7 +121,7 @@ The [form tag](./forms.md) and the [getEntry tag](./entries.md) must be used tog
 {% endfor -%}
 ```
 
-``` craft2
+``` twig Craft 2
 {% set form = craft.sproutForms.form('contact') %}
 
 {% for tab in form.getFieldLayout().getTabs() %}
@@ -159,7 +159,7 @@ The [form tag](./forms.md) and the [getEntry tag](./entries.md) must be used tog
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {# Prepare our error macro #}
 {% macro errorList(errors) %}
     {# To display errors, you want to make sure errors exist, 
@@ -416,7 +416,7 @@ The [form tag](./forms.md) and the [getEntry tag](./entries.md) must be used tog
 </form>
 ```
 
-``` craft2
+``` twig Craft 2
 {# Prepare our error macro #}
 {% macro errorList(errors) %}
     {# To display errors, you want to make sure errors exist, 

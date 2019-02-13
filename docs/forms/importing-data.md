@@ -13,7 +13,7 @@ Define your forms as JSON and import them into any project you'd like. A basic e
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutforms\\integrations\\sproutimport\\elements\\Form",
@@ -66,7 +66,7 @@ Import real or test Form Entry Elements to Sprout Forms using Sprout Import.
 
 ::: code
 
-``` craft3
+``` json Craft 3
 [
   {
     "@model": "barrelstrength\\sproutforms\\integrations\\sproutimport\\elements\\Entry",
@@ -85,7 +85,7 @@ Import real or test Form Entry Elements to Sprout Forms using Sprout Import.
 ]
 ```
 
-``` craft2
+``` json Craft 2
 [
   {
     "@model": "SproutForms_Entry",
@@ -121,7 +121,7 @@ In the example below, we generate 100 fake Form Entries with the help of faker, 
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {%- set faker = craft.sproutImport.faker -%}
 [
 {%- for i in 0..99 %}
@@ -147,7 +147,7 @@ In the example below, we generate 100 fake Form Entries with the help of faker, 
 ]
 ```
 
-``` craft2
+``` twig Craft 2
 {%- set faker = craft.sproutImport.faker -%}
 [
 {%- for i in 0..99 %}

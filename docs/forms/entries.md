@@ -44,7 +44,7 @@ The `entries` tag will let you get all entries for a specific form.
 
 ::: code
 
-``` craft3
+``` twig Craft 3
 {# Get all entries for a specific form #}
 {% for formEntry in craft.sproutForms.entries
 	.formHandle('contact')
@@ -87,7 +87,7 @@ The `entries` tag will let you get all entries for a specific form.
 {% endfor %}
 ```
 
-``` craft2
+``` twig Craft 2
 {# Get all entries for a specific form #}
 {% for formEntry in craft.sproutForms.entries.formHandle('contact') %}
 	{{ formEntry.title }}

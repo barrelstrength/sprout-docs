@@ -4,7 +4,7 @@ If you want to disable your form after a certain number of submissions, conditio
   
 ::: code
 
-``` craft3
+``` twig Craft 3
 {% set totalEntries = craft.sproutForms.entries.formHandle('contact').count() %}
 
 {# Use a specific number or a dynamic value like globalSet.submissionLimit #}
@@ -15,7 +15,7 @@ If you want to disable your form after a certain number of submissions, conditio
 {% endif %}
 ```
 
-``` craft2
+``` twig Craft 2
 {% set totalEntries = craft.sproutForms.entries.formHandle('contact').total() %}
 
 {# Use a specific number or a dynamic value like globalSet.submissionLimit #}
