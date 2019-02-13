@@ -1,19 +1,21 @@
 # Coding Guidelines
 
-A central principle of the Sprout Plugin Suite is to create an experience – for both users and developers – that looks and feels like the native experience with Craft CMS. Toward that end, wherever possible, Sprout adopts conventions set forth by Craft CMS.
+A central principle of the Sprout Plugin Suite is to create an experience – for both users and developers – that looks and feels like the native experience with Craft CMS. Toward that end, wherever possible, Sprout adopts conventions set forth by Craft CMS. These conventions include
 
-Wherever possible, we try to match Craft's conventions outlined in the [Coding Guidelines](https://github.com/craftcms/docs/blob/master/en/coding-guidelines.md) and adopt patterns and conventions found in the [Craft CMS codebase](https://github.com/craftcms/cms).
+| Convention | Notes |
+|:---------- |:----- |
+| [Craft CMS codebase](https://github.com/craftcms/cms) | Use the Craft APIs in the same way that Craft uses them |
+| [Coding Guidelines](https://docs.craftcms.com/v3/extend/coding-guidelines.html) | | 
+| [Craft Code Style](https://github.com/craftcms/phpstorm-settings) | PhpStorm Craft Code Style settings |
+| [Craft Inspections](https://github.com/craftcms/phpstorm-settings) | PhpStorm Craft Code Style settings |
+| [Php Inspections (EA Extended)](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-) | Help monitor and adhere to conventions in PhpStorm. |
+| [Yii Inspections](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-) | Adds some Yii 2 and Craft-specific inspections in PhpStorm. |
+| [Sass Mixins for Craft CMS](https://github.com/craftcms/sass) | Extend Control Panel templates with Craft conventions |
+| [Craft UI](https://www.npmjs.com/package/@pixelandtonic/craftui) | A collection of Vue.js components and styles for Craft CMS apps. | 
 
 ## Sprout Guidelines
 
 We also have several conventions that are specific to our Sprout plugins. Where we can, we try to align these with conventions in the Craft community.
-
-## Naming
-
-github repo: craft-sprout-forms
-composer require: barrelstrength/craft-sprout-forms
-plugin folder: sprout-forms
-namespace: barrelstrength/sproutforms
 
 ## Git Workflow and Branching
 
@@ -21,59 +23,21 @@ We largely follow the [Git branching model](http://nvie.com/posts/a-successful-g
 
 As we have to maintain multiple master copies of our plugins, instead of a `master` branch, we maintain multiple master version branches. These branches are named using the format `v[Version Number]` where `v2` would represent all releases for the `v2.x.x` branch of the software. These version numbers correlate with the plugin version numbers, not the Craft version number, as we may have multiple major releases of a plugin for a single release of Craft.
 
+- develop
+- feature/feature-name
+- bugfix/bugfix-name
 - v1
 - v2
 - v3
 
-## Tickets
+## Naming
 
-When a customer contacts us with an issue or feature request that can't be resolved immediately, add a todo to the Issue in github that links to the support ticket. To respect the customer's privacy, we'll just link to the ID of the conversation and the private ticket URL that only we can access.
-
-```
-### Notify
-
-- [ ] [11812629123](https://app.intercom.io/a/apps/dfa064eb83c11784117312bve407fb3d35e00fa7/respond/inbox/27020/conversations/11812629123)
-```
-
-## Common Functionality
-
-Link to Sprout Base Documentation. Normalize plugin behavior where we can.
-
-- Use BaseSproutTrait for ::error, ::warning, ::info
-- Use default Craft::t for translations
-- Macros (manage in Sprout Base)
-- Helpers
-- Use Sprout Core for settings managment
-- Use Sprout Core for all plugin icons
-- Fields, and Fields in the UI
-- Email, Import, Reports
-- Add Plugin Name Override setting if CP section exists
-- All custom fields should be managed in Sprout Fields
-- Add CHANGELOG file to all plugins (only update this when preparing release)
-- Event naming conventions should follow Craft conventions
-    EVENT_AFTER_ELEMENT_SAVE
-    EVENT_BEFORE_CREATE_BACKUP
-    EVENT_REGISTER_WIDGET_TYPES
-    EVENT_REGISTER_CP_TEMPLATE_ROOTS
-    EVENT_REGISTER_IMPORTER
-    EVENT_REGISTER_IMPORTER_TYPES
-    EVENT_REGISTER_THEME_TYPES
-
-## Pre-Release Checklist
-
-- Run "yarn outdated" to test before releases and on projects to determine what needs updated.
-- Run PHPStorm Inspections (Craft Inspections, general PHP inspections) and make sure there are no errors we need to fix
-- Run PHPStorm Reformat Code (Command+Option L) on all files (PHP, Twig, Javascript, CSS). Ensure all code has proper formatting.
-- Confirm all @todo flags in the codebase are still relevant or removed
-- Confirm all @deprecated flags in the codebase are still relevant or removed
-- Ensure all methods have proper comment blocks
-- Run any tests we can programatically
-- After database updates, ensure db schema for a fresh install and after an update are the same
-- Make sure all text has translation categories in PHP and Twig and JS: t('sprout-forms-countries')
-- Update any translations in the default en translation file using Craft::t and the PhpStorm inspection. Run various checks to make sure we are passing text through the necessary translate filters for PHP, HTML, and JS. 
-- Make sure all database queries are compatible with MySQL and PostgreSQL
-
-_Note: where we can, we want to automate these tasks and incorporate them into our workflow_
+| Use Case | Naming Convention |
+|:----- |:----------------- |
+| GitHub repo | craft-sprout-forms |
+| Composer require | barrelstrength/craft-sprout-forms |
+| Plugin folder | sprout-forms |
+| Namespace | barrelstrength/sproutforms |
 
 ## Folder Structure
 
@@ -85,7 +49,7 @@ _Note: where we can, we want to automate these tasks and incorporate them into o
 - plugin-handle/CHANGELOG.md - Follow Craft CHANGELOG docs
 - plugin-handle/README.md - Very basic overview that points to main documentation. See format for both commercial and free plugins.
 - plugin-handle/LICENSE.md - Craft License or MIT License
-- plugin-handle/composer.json - See Craft composer.json docs. We keep this file light. Two things to note. Don't add schemaVersion, hasCpSection, hasCpSettings to this file. They should go in the primary class. Also, this file should set the 'extra->class' setting to define the Plugin.php as a file with the name of the plugin itself.
+- plugin-handle/composer.json - See Craft composer.json docs. We keep this file light. Two things to note. Don't add schemaVersion, hasCpSection, hasCpSettings to this file. They should go in the primary plugin module class. Also, this file should set the 'extra->class' setting to define the Plugin.php as a file with the name of the plugin itself.
 
 ### The src folder - Craft Conventions
 
@@ -112,10 +76,81 @@ _Note: where we can, we want to automate these tasks and incorporate them into o
 - plugin-handle/src/integrations/pluginname/componenttype/componentsubtype/ComponentClassName.php - for some components, we need an additional folder for a subtype
 - plugin-handle/src/templates/_components/pluginname/componenttype/ComponentClassName/template.html - Integrations are structured like components but exist in a subfolder that namespaces them by the plugin they relate to `_components/pluginname/...`
 
+## Common Functionality
+
+Many Sprout plugins share functionality and this code is managed in shared Yii Modules.
+
+| Module | Description | 
+|:----- |:----------------- |
+| barrelstrength/sprout-base | Common settings and UI components |
+| barrelstrength/sprout-base-email | Common email functionality | 
+| barrelstrength/sprout-base-reports | Common reporting functionality |
+| barrelstrength/sprout-base-import | Common import functionality |
+| barrelstrength/sprout-base-fields | Common field functionality |
+| barrelstrength/sprout-base-lists | Common list functionality |
+
+Link to Sprout Base Documentation. Normalize plugin behavior where we can.
+
+
+- Macros (manage in Sprout Base)
+- Helpers
+- Use Sprout Core for settings management
+- Use Sprout Core for all plugin icons
+- Fields, and Fields in the UI
+- Email, Import, Reports
+- Add Plugin Name Override setting if CP section exists
+- All custom fields should be managed in Sprout Fields
+- Add CHANGELOG file to all plugins (only update this when preparing release)
+- Event naming conventions should follow Craft conventions
+    EVENT_AFTER_ELEMENT_SAVE
+    EVENT_BEFORE_CREATE_BACKUP
+    EVENT_REGISTER_WIDGET_TYPES
+    EVENT_REGISTER_CP_TEMPLATE_ROOTS
+    EVENT_REGISTER_IMPORTER
+    EVENT_REGISTER_IMPORTER_TYPES
+    EVENT_REGISTER_THEME_TYPES
+
+## Translations
+
+Use the default Craft conventions for translations. This allows us to benefit from the Yii Inspections that allow us to bulk add and remove translations.
+
+PHP Craft::t('sprout-forms', 'Message');
+Twig Templates {{ "Message"|t('sprout-forms) }} 
+CP Javascript | Craft:t('sprout-forms')
+
+Each plugin or module maintains it's own translation file. As some plugins depend on multiple modules for their functionality, this may mean that someone translating a plugin will also have to translate translation files in other modules. For example, to completely translate Sprout Forms one would need to translate the files in Sprout Forms, Sprout Base Fields, and Sprout Base.
+
 ## Database Queries
 
 - Make sure columns are wrapped with double brackets: [[columnname]]
 https://www.yiiframework.com/doc/guide/2.0/en/db-dao#quoting-table-and-column-names
+
+## Migrations
+
+Due to our application structure using shared modules, in some cases migrations may need to be run by multiple plugins and it may not be predictable which order they get run in. To address this, we use the following conventions:
+
+- Make sure every migration can be run twice, without throwing errors if it has already been run once.
+- All migrations that affect a plugin with a shared module should be placed in the base module and instances of those migrations should be created in each respective plugin where they are needed.
+
+### Naming migrations
+
+#### Order
+
+Migration naming will use the date in the first segment and the second segment will just represent the order that they should be run in for a particular release. The following migrations are all be part of a release on the same day, and are ordered 1, 2, 3 in the order they should run: 
+
+- m190101_000001_migration_description
+- m190101_000002_migration_description
+- m190101_000003_migration_description
+
+#### Migrations used by multiple plugins
+
+Any migration instance that is just running a migration in base module should use the same name as the base migration and append the plugin name that it is being run from.
+
+| Migration Name  | Plugin/Module Name |
+|:--------------- |:------------------ |
+| m190101_000001_migration_description | Sprout Base Email |
+| m190101_000001_migration_description_sproutemail | Sprout Email |
+| m190101_000001_migration_description_sproutforms | Sprout Forms |
 
 ## The Plugin Class
 
@@ -203,3 +238,19 @@ Don't use Web-only methods outside of Web Controllers. Ways to test for this? Se
 Exclude vendor folder from repos. Add vendor to standard gitignore.
 
 Devs should run composer update locally and Craft will install this for us at the application level.
+
+## Pre-Release Checklist
+
+- Run "yarn outdated" to test before releases and on projects to determine what needs updated.
+- Run PHPStorm Inspections (Craft Inspections, general PHP inspections) and make sure there are no errors we need to fix
+- Run PHPStorm Reformat Code (Command+Option L) on all files (PHP, Twig, Javascript, CSS). Ensure all code has proper formatting.
+- Confirm all @todo flags in the codebase are still relevant or removed
+- Confirm all @deprecated flags in the codebase are still relevant or removed
+- Ensure all methods have proper comment blocks
+- Run any tests we can programatically
+- After database updates, ensure db schema for a fresh install and after an update are the same
+- Make sure all text has translation categories in PHP and Twig and JS: t('sprout-forms-countries')
+- Update any translations in the default en translation file using Craft::t and the PhpStorm inspection. Run various checks to make sure we are passing text through the necessary translate filters for PHP, HTML, and JS. 
+- Make sure all database queries are compatible with MySQL and PostgreSQL
+
+_Note: where we can, we want to automate these tasks and incorporate them into our workflow_
