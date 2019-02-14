@@ -114,9 +114,11 @@ Link to Sprout Base Documentation. Normalize plugin behavior where we can.
 
 Use the default Craft conventions for translations. This allows us to benefit from the Yii Inspections that allow us to bulk add and remove translations.
 
-PHP Craft::t('sprout-forms', 'Message');
-Twig Templates {{ "Message"|t('sprout-forms) }} 
-CP Javascript | Craft:t('sprout-forms')
+| Context | Translation Convention |
+|:-------- |:---------------------- |
+| PHP      | `Craft::t('sprout-forms', 'Message');` |
+| Twig     | `{{ "Message"|t('sprout-forms') }}` | 
+| CP Javascript | `Craft:t('sprout-forms');` |
 
 Each plugin or module maintains it's own translation file. As some plugins depend on multiple modules for their functionality, this may mean that someone translating a plugin will also have to translate translation files in other modules. For example, to completely translate Sprout Forms one would need to translate the files in Sprout Forms, Sprout Base Fields, and Sprout Base.
 
@@ -247,7 +249,7 @@ Devs should run composer update locally and Craft will install this for us at th
 - Confirm all @todo flags in the codebase are still relevant or removed
 - Confirm all @deprecated flags in the codebase are still relevant or removed
 - Ensure all methods have proper comment blocks
-- Run any tests we can programatically
+- Run any tests we can programmatically
 - After database updates, ensure db schema for a fresh install and after an update are the same
 - Make sure all text has translation categories in PHP and Twig and JS: t('sprout-forms-countries')
 - Update any translations in the default en translation file using Craft::t and the PhpStorm inspection. Run various checks to make sure we are passing text through the necessary translate filters for PHP, HTML, and JS. 
