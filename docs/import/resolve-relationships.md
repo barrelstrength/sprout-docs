@@ -7,7 +7,7 @@ Sprout Import can help you resolve relationships based on attributes and query p
 ``` json Craft 3
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
       "title": "In quaerat maiores sit est rerum iusto.",
@@ -47,7 +47,7 @@ Here's a general example of how to structure an import using the `related` key:
 ``` json Craft 3
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
     "attributes": { 
       ...
       "related": {
@@ -107,14 +107,14 @@ The code below says _if you find any Categories that are using the values “cat
 ``` json Craft 3
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
       "title": "In quaerat maiores sit est rerum iusto.",
       "fields": { ... },
       "related": {
         "categoryRelationsHandle": {
-          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
+          "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Category",
           "params": {
             "slug": ["category-slug-one","category-slug-two"],
             "groupId": 1
@@ -160,14 +160,14 @@ The code below says _if you find any Assets that are using the value “ImageNam
 ``` json Craft 3
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
       "title": "In quaerat maiores sit est rerum iusto.",
       "fields": { ... },
       "related": {
         "thumbnailImage": {
-          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Asset",
+          "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Asset",
           "params": {
             "filename": ["ImageName03.jpg"],
             "volumeId": "1",
@@ -221,14 +221,14 @@ The code below says _if you find any Users that have the values 89, 139 or 95 in
 ``` json Craft 3
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
       "title": "In quaerat maiores sit est rerum iusto.",
       "fields": { ... },
       "related": {
         "relatedAuthors": {
-          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User",
+          "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\User",
           "params": {
             "oldId": [
               89,
@@ -282,14 +282,14 @@ In this example we'll match any related entries that use a particular keyword in
 ``` json Craft 3
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
     "attributes": { ... },
     "content": {
       "title": "In quaerat maiores sit est rerum iusto.",
       "fields": { ... },
       "related": {
         "relatedPosts": {
-          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
+          "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
           "params": {
             "search": "title:*keyword*" 
           }

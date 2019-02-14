@@ -19,7 +19,7 @@ You can import your primary locale like any other Element you import.
 ``` json Craft 3
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
     "attributes": {
       "siteId" 2,
       "sectionId": 2,
@@ -80,7 +80,7 @@ We import our secondary locale in a second step, and the import format has a few
 ``` json Craft 3
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
     "attributes": {
       "siteId" 2,
       "sectionId": 2,

@@ -12,16 +12,16 @@ Below are a few examples of some attributes that can be looked up when importing
 
 | Attribute  | @model   |
 |:---------- |:-------- |
-| authorId   | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User |
-| sectionId  | barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Section |
-| typeId     | barrelstrength\\sproutbase\\app\\import\\importers\\settings\\EntryType |
+| authorId   | barrelstrength\\sproutbaseimport\\importers\\elements\\User |
+| sectionId  | barrelstrength\\sproutbaseimport\\importers\\settings\\Section |
+| typeId     | barrelstrength\\sproutbaseimport\\importers\\settings\\EntryType |
 
 ::: code
 
 ``` json Craft 3
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
     "attributes": {
       "slug": "entry-slug",
       "postDate": "2017-04-27 16:00:00",
@@ -29,19 +29,19 @@ Below are a few examples of some attributes that can be looked up when importing
       "enabled": true,
       "related": {
         "authorId": {
-          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User",
+          "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\User",
           "params" {
             "email": "muller.giuseppe@howell.com"
           }
         },
         "sectionId": {
-          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Section",
+          "@model": "barrelstrength\\sproutbaseimport\\importers\\settings\\Section",
           "params": {
             "handle": "news"
           }
         },
         "typeId": {
-          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\EntryType",
+          "@model": "barrelstrength\\sproutbaseimport\\importers\\settings\\EntryType",
           "params": {
             "handle": "post"
           }
@@ -62,21 +62,21 @@ Below is an example of importing categories where you may not know the ID of the
 
 | Attribute   | @model   |
 |:----------- |:-------- |
-| newParentId | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category |
+| newParentId | barrelstrength\\sproutbaseimport\\importers\\elements\\Category |
 
 ::: code
 
 ``` json Craft 3
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Category",
     "attributes": {
       "groupId": 1,
       "slug": "category-slug-child",
       "enabled": true,
       "related": {
         "newParentId": {
-          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Category",
+          "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Category",
           "params": {
             "slug": "category-slug"
           }
@@ -96,15 +96,15 @@ Below, we match the Users Photo ID attribute by looking up the photo we want to 
 
 | Attribute   | @model   |
 |:----------- |:-------- |
-| photoId | barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Asset |
-| groups | barrelstrength\\sproutimport\\importers\\settings\\UserGroup |
+| photoId | barrelstrength\\sproutbaseimport\\importers\\elements\\Asset |
+| groups | barrelstrength\\sproutbaseimport\\importers\\settings\\UserGroup |
 
 ::: code
 
 ``` json Craft 3
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\User",
     "attributes": {
       "username": "beryl01",
       "firstName": "Luigi",
@@ -114,14 +114,14 @@ Below, we match the Users Photo ID attribute by looking up the photo we want to 
       "lastLoginDate": "2014-12-11 04:12:06",
       "related": {
         "photoId": {
-          "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Asset",
+          "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Asset",
           "params": {
             "filename": "headshot.jpg",
             "volumeId": 1
           }
         },
         "groups": {
-          "@model": "barrelstrength\\sproutimport\\importers\\settings\\UserGroup",
+          "@model": "barrelstrength\\sproutbaseimport\\importers\\settings\\UserGroup",
           "params": {
             "handle": ["groupOne", "groupTwo"]
           }

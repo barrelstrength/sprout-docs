@@ -7,20 +7,20 @@ Import customized dashboard widgets using Sprout Import.
 ``` json Craft 3
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Widget",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\settings\\Widget",
     "type": "craft\\widgets\\Feed",
     "title": "Craft News",
     "url": "https://craftcms.com/news.rss",
     "limit": 5
   },
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Widget",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\settings\\Widget",
     "type": "craft\\widgets\\NewUsers",
     "userGroupId":null,
     "dateRange":"d7"
   },
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Widget",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\settings\\Widget",
     "type": "craft\\widgets\\RecentEntries",
     "section":"*",
     "siteId":"1",

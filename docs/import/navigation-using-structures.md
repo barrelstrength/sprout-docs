@@ -5,7 +5,7 @@ Build Navigation using Structures and reuse it from project to project.
 ``` json
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Section",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\settings\\Section",
     "name": "Primary Navigation",
     "handle": "primaryNavigation",
     "type": "structure",
@@ -30,7 +30,7 @@ Build Navigation using Structures and reuse it from project to project.
     },
     "entryTypes": [
       {
-        "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\EntryType",
+        "@model": "barrelstrength\\sproutbaseimport\\importers\\settings\\EntryType",
         "name": "Page",
         "handle": "page",
         "showTitles": true,
@@ -40,7 +40,7 @@ Build Navigation using Structures and reuse it from project to project.
             "name": "Nav Item",
             "fields": [
               {
-                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbaseimport\\importers\\settings\\Field",
                 "type": "craft\\fields\\Entries",
                 "groupId": 1,
                 "name": "Page",
@@ -57,7 +57,7 @@ Build Navigation using Structures and reuse it from project to project.
         }
       },
       {
-        "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\EntryType",
+        "@model": "barrelstrength\\sproutbaseimport\\importers\\settings\\EntryType",
         "name": "Custom URL",
         "handle": "customUrl",
         "showTitles": true,
@@ -67,7 +67,7 @@ Build Navigation using Structures and reuse it from project to project.
             "name": "Nav Item",
             "fields": [
               {
-                "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\settings\\Field",
+                "@model": "barrelstrength\\sproutbaseimport\\importers\\settings\\Field",
                 "type": "craft\\fields\\PlainText",
                 "groupId": 1,
                 "name": "Custom URL",

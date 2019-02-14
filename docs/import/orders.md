@@ -7,7 +7,7 @@ Import Craft Commerce Orders using Sprout Import, including custom fields, payme
 ``` json Craft 3
 [
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Order",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Order",
     "attributes": {
       "currency": "USD",
       "billingAddressId": null,

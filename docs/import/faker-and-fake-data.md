@@ -24,7 +24,7 @@ In this example, we'll create 100 fake entries using faker. The entries will be 
 [
 {%- for i in 0..99 %}
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\Entry",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
     "attributes": {
       "sectionId": 2,
       "typeId": 2,
@@ -87,7 +87,7 @@ In this example, we'll create 100 fake users using faker.
 [
 {%- for i in 0..99 %}
   {
-    "@model": "barrelstrength\\sproutbase\\app\\import\\importers\\elements\\User",
+    "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\User",
     "attributes": {
       "username": "{{ faker.username }}",
       "firstName": "{{ faker.firstName }}",
