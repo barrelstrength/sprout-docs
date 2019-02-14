@@ -8,12 +8,12 @@ The following example query assumes you setup Craft with the default database ta
 
 ::: code
 
-``` mysql Craft 3
+``` sql Craft 3
 SELECT *
 FROM users;
 ```
 
-``` mysql Craft 2
+``` sql Craft 2
 SELECT *
 FROM craft_users;
 ```
