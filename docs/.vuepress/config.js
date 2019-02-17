@@ -63,6 +63,16 @@ module.exports = {
                     ]
                 },
                 {
+                    title: 'Form Fields',
+                    collapsable: false,
+                    children: [
+                        'email-dropdown-field',
+                        'hidden-field',
+                        'invisible-field',
+                        'opt-in-field'
+                    ]
+                },
+                {
                     title: 'Form Templates',
                     collapsable: false,
                     children: [

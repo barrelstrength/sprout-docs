@@ -1,14 +1,12 @@
 # Forms
 
-Form Elements allow users to create and manage single and multi-page online forms within Craft CMS.
+Form Elements allow users to create and manage single and multi-page online forms within Craft CMS. Content authors can add [Form Fields](./form-fields.md), tabs, and customize a form's settings such as a custom Title Format, Redirect, or Submit Button text.
 
-Content authors can add [Form Fields](./form-fields.md), tabs, and customize a form's [settings](plugin-settings.md) such as a custom Title Format, Redirect, or Submit Button text.
-
-When forms are submitted, an [Entry](./entries.md) will be created in your Craft database. Send [Notification Emails](notifications.md) to confirm receipt with the user or notify admins that a new Entry is ready for review. Run and export [Reports](./reports.md) to learn more.   
+When forms are submitted, a form [Entry](./entries.md) will be created in your Craft database. Send [Notification Emails](notifications.md) to confirm receipt with the user or notify admins that a new Entry is ready for review. Run and export [Reports](./reports.md) to learn more.   
 
 ## Form Templates
 
-Forms are displayed on your website using Form Templates. Sprout Forms comes with two [Default Form Templates](./default-form-templates.md) and your web team can customize and style those templates using [Template Overrides](./template-overrides.md) or by building a [Custom Form Template](./custom-form-templates.md) plugin.
+Forms are displayed on your website using Form Templates. Sprout Forms comes with two [Default Form Templates](./default-form-templates.md) and your web team can customize and style those templates using [Template Overrides](./template-overrides.md) or by building a [Custom Form Template](./custom-form-templates.md) integration.
 
 Front-end validation, error states, accessibility, and submitting your form data will be managed from your Form Templates. 
 
@@ -167,7 +165,7 @@ Sprout Forms allows you to set a redirect for your Form in the Form Settings or 
 
 :::
 
-Your redirect value can be an absolute URL, relative URL, or use an environmentVariable. 
+Your redirect value can be an absolute URL, relative URL, or use the dynamic `{siteUrl}` variable: 
 
 #### Example redirect values:
 
@@ -176,5 +174,5 @@ Your redirect value can be an absolute URL, relative URL, or use an environmentV
 - ?message=success
 - thank-you?message=success
 - {siteUrl}
-- http://website.com/thank-you
+- https://website.com/thank-you
  

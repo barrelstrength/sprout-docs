@@ -2,41 +2,49 @@
 
 Sprout Forms includes over 20 Form Fields and can be extended to add additional [Custom Form Fields](./custom-form-fields.md). Available Form Fields appear in the sidebar while editing a Form and one or more instances of a Form Field can be dragged to the Field Layout.
 
-Below is a list of each default Form Field.
+Below is a list of each default Form Field. Some fields are exclusive to Sprout Forms as Front-end Form Fields and other Fields are both Front-end Form Fields and can also be used via Sprout Fields as custom Fields within Craft field layouts as well. For this reason, usage of some of these fields is documented here in the Sprout Forms documentation and other fields may be documented in the Sprout Fields documentation.
 
 ## Default Fields
  
 ### Standard Fields
 
-- Single Line
-- Paragraph
-- Multiple Choice
-- Dropdown
-- Checkboxes
-- Number
-- File Upload
-- Section Heading
+| Sprout Forms | Sprout Fields | Craft CMS |
+|:------------ |:------------- |:--------- |
+| Single Line | – | Plain Text |
+| Paragraph | – | Plain Text |
+| Multiple Choice | – | Radio Buttons |
+| Dropdown | – | Dropdown |
+| Checkboxes | – | Checkboxes |
+| Number | – | Number |
+| File Upload | – | Assets |
+| Section Heading | – | – |
 
 ### Special Fields
 
-- Name
-- Email
-- Email Dropdown
-- Phone
-- URL
-- Opt-in
-- Custom HTML
-- Private Notes
-- Multi-Select
-- Hidden
-- Invisible
-- Regex
+|Sprout Forms | Sprout Fields | Craft CMS |
+|:----------- |:------------- |:--------- |
+| Address | [Address](/fields/address-field.md) | – |
+| Name | [Name](/fields/name-field.md) | – |
+| – | [Gender](/fields/gender-field.md) | – |
+| Email | [Email](/fields/email-field.md) | Email |
+| [Email Dropdown](./email-dropdown-field.md) | – | – |
+| Phone | [Phone](/fields/phone-field.md) | Phone |
+| URL | [URL](/fields/url-field.md) | URL |
+| [Opt-in](./opt-in-field.md) | – | – |
+| Custom HTML | [Notes](/fields/notes-field.md) | – |
+| Private Notes | – | – |
+| Multi-Select | – | Multi-select |
+| [Hidden](./hidden-field.md) | [Predefined](/fields/predefined-field.md) | – |
+| [Invisible](./invisible-field.md) | [Predefined](/fields/predefined-field.md) | – |
+| Regex | [Regular Expression](/fields/regular-expression-field.md) | – |
 
 ### Relations Fields
 
-- Categories
-- Entries
-- Tags
+| Sprout Forms | Sprout Fields | Craft CMS |
+|:------------ |:------------- |:--------- |
+| Categories | – | Categories |
+| Entries | – | Entries |
+| Tags | – | Tags |
 
 ## Field Settings
 

@@ -16,7 +16,7 @@ When you output your Email Select field on the front-end of your website using S
 
 ![Email Select doesn't display email addresses in your template code](../images/fields/email-select-code.png)
 
-Additionally, after your Email Select field is submitted, the selected email will be unmasked and can be used to trigger dynamic emails notifications using Sprout Forms or Sprout Email.
+Additionally, after your Email Select field is submitted, the selected email will be unmasked and can be used to trigger dynamic email notifications using Sprout Forms or Sprout Email.
 
 ### Multiple email addresses
 

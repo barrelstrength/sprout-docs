@@ -33,8 +33,19 @@ If you want to populate your Hidden Field with a dynamic value, you can set your
 
 **Example Hidden Field Settings**
 
+::: code
+
+``` twig Craft 3 
+- _Handle_: landingPage
+- _Hidden Field Value_: {craft.app.getRequest().getAbsolutePath()}
+```
+
+``` twig Craft 2
 - _Handle_: landingPage
 - _Hidden Field Value_: {craft.request.path}
+```
+
+:::
 
 ``` html
 <input type="hidden" name="landingPage" value="landing-pages/lead-generation-form">
@@ -53,7 +64,7 @@ If you need access to specific variables that are not in the global scope, you w
 
 ``` twig
 {# Here, we are making our EntryModel variable available to our settings. #}
-{% do craft.sproutForms.addFieldVariables({ entryElement: entry }) %}
+{% do craft.sproutForms.addFieldVariables({ entry: entry }) %}
 {{ craft.sproutForms.displayForm('contact') }}
 ```
 
