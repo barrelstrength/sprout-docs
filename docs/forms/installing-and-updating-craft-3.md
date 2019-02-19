@@ -61,17 +61,9 @@ Read over the [Changes in Craft 3](https://docs.craftcms.com/v3/changes-in-craft
 
 #### Retrieving a form
 
-::: code
-
-``` twig Craft 3
-{% set form = craft.sproutForms.form('contact').one() %}
-```
-
-``` twig Craft 2
+``` twig
 {% set form = craft.sproutForms.form('contact') %}
 ```
-
-:::
 
 #### Identifying a field by type
 

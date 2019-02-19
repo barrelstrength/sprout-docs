@@ -24,7 +24,7 @@ The [form tag](./forms.md) and the [getEntry tag](./entries.md) must be used tog
 ::: code
 
 ``` twig Craft 3
-{% set form = craft.sproutForms.form('contact').one() %}
+{% set form = craft.sproutForms.form('contact') %}
 {% set entry = craft.sproutForms.getEntry(form) %}
 
 {%- for tab in form.getFieldLayout().getTabs() %}
@@ -176,7 +176,7 @@ The [form tag](./forms.md) and the [getEntry tag](./entries.md) must be used tog
 {% from _self import errorList %}
 
 {# Get our Form data #}
-{% set form = craft.sproutForms.form('contact').one() %}
+{% set form = craft.sproutForms.form('contact') %}
 
 {# Get our Form Entry data to manage error states and re-populating field values #}
 {% set submittedEntry = craft.sproutForms.getEntry(form) %}
