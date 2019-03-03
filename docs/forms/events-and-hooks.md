@@ -11,15 +11,15 @@ Raised before an entry is saved.
 ::: code
 
 ``` php Craft 3
+use barrelstrength\sproutforms\services\Entries;
 use barrelstrength\sproutforms\elements\Entry;
-use yii\base\Event;
-use Craft;
+use barrelstrength\sproutforms\events\OnBeforeSaveEntryEvent;
 
 public function init()
 {
     parent::init();
     
-    Event::on(Entry::class, Entry::EVENT_AFTER_SAVE, function(Event $event) {
+    Event::on(Entries::class, Entry::EVENT_BEFORE_SAVE, function(OnBeforeSaveEntryEvent $event) {
         if (Craft::$app->request->isSiteRequest)
         {
             // A Form Entry Element has been saved from a Front-end Form Submission

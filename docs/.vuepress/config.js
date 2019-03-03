@@ -104,7 +104,7 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Plugin Development',
+                    title: 'Development',
                     collapsable: false,
                     children: [
                         'custom-form-templates',
@@ -181,7 +181,7 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Plugin Development',
+                    title: 'Development',
                     collapsable: false,
                     children: [
                         'custom-schema',
@@ -242,7 +242,7 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Plugin Development',
+                    title: 'Development',
                     collapsable: false,
                     children: [
                         'custom-email-templates',
@@ -294,7 +294,7 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Plugin Development',
+                    title: 'Development',
                     collapsable: false,
                     children: [
                         'custom-data-sources'
@@ -383,7 +383,7 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Plugin Development',
+                    title: 'Development',
                     collapsable: false,
                     children: [
                         'element-importers',
