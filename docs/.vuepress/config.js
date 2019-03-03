@@ -494,7 +494,17 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Plugin Development',
+                    title: 'Core Concepts',
+                    collapsable: false,
+                    children: [
+                        'subscriber-lists',
+                        'subscribers',
+                        'subscriptions',
+                        'settings'
+                    ]
+                },
+                {
+                    title: 'Development',
                     collapsable: false,
                     children: [
                         'list-types'
