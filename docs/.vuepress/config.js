@@ -379,7 +379,8 @@ module.exports = {
                     title: 'Examples',
                     collapsable: false,
                     children: [
-                        'expressionengine-export'
+                        'expressionengine-export',
+                        'importing-dates'
                     ]
                 },
                 {
