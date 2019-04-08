@@ -498,17 +498,9 @@ module.exports = {
                     title: 'Core Concepts',
                     collapsable: false,
                     children: [
-                        'subscriber-lists',
+                        'lists',
                         'subscribers',
-                        'subscriptions',
                         'settings'
-                    ]
-                },
-                {
-                    title: 'Development',
-                    collapsable: false,
-                    children: [
-                        'list-types'
                     ]
                 },
                 {
