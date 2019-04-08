@@ -40,7 +40,7 @@ Below is a full example of how give a user can Subscriber or Unsubscribe from a 
     <form method="post" accept-charset="utf-8">
         {{ csrfInput() }}
         <input type="hidden" name="action" value="sprout-base-lists/lists/remove">
-        <input type="hidden" name="listType" value="barrelstrength\sproutbaselists\listtypes\MailingList">
+        <input type="hidden" name="list[type]" value="barrelstrength\sproutbaselists\listtypes\MailingList">
         <input type="hidden" name="list[listId]" value="123">
         <input type="text" name="subscription[email]" value="{{ currentUser.email }}">
         <input type="submit" value="Remove from List">
@@ -52,7 +52,7 @@ Below is a full example of how give a user can Subscriber or Unsubscribe from a 
     <form method="post" accept-charset="utf-8">
         {{ csrfInput() }}
         <input type="hidden" name="action" value="sprout-base-lists/lists/add">
-        <input type="hidden" name="listType" value="barrelstrength\sproutbaselists\listtypes\MailingList">
+        <input type="hidden" name="list[type]" value="barrelstrength\sproutbaselists\listtypes\MailingList">
         <input type="hidden" name="list[listId]" value="123">
         <input type="text" name="subscription[email]" value="{{ currentUser.email }}">
         <input type="submit" value="Add to List">
