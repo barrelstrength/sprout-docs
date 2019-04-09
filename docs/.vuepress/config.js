@@ -26,7 +26,10 @@ module.exports = {
                 items: [
                     { text: 'Sprout Forms', link: '/forms/' },
                     { text: 'Sprout SEO', link: '/seo/' },
+                    { text: 'Sprout Redirects', link: '/redirects/' },
+                    { text: 'Sprout Sitemaps', link: '/sitemaps/' },
                     { text: 'Sprout Email', link: '/email/' },
+                    { text: 'Sprout Campaigns', link: '/campaigns/' },
                     { text: 'Sprout Reports', link: '/reports/' },
                     { text: 'Sprout Import', link: '/import/' },
                     { text: '–', link: '' },
@@ -156,8 +159,6 @@ module.exports = {
                     children: [
                         'global-metadata',
                         'element-metadata-field',
-                        'sitemaps',
-                        'redirects',
                         'plugin-settings'
                     ]
                 },
@@ -166,8 +167,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'template-overrides',
-                        'custom-metadata-variable',
-                        'custom-sections'
+                        'custom-metadata-variable'
                     ]
                 },
                 {
@@ -176,7 +176,81 @@ module.exports = {
                     children: [
                         'canonical-override',
                         'block-robots-on-dev-site',
-                        'elements-without-urls',
+                        'elements-without-urls'
+                    ]
+                },
+                {
+                    title: 'Development',
+                    collapsable: false,
+                    children: [
+                        'custom-schema'
+                    ]
+                },
+                {
+                    title: 'Installing & Updating',
+                    collapsable: false,
+                    children: [
+                        'installing-and-updating-craft-3',
+                        'installing-and-updating-craft-2'
+                    ]
+                }
+            ],
+
+            '/redirects/': [
+                ['../', '← All Plugins'],
+                {
+                    title: 'Introduction',
+                    collapsable: false,
+                    children: [
+                        '',
+                    ]
+                },
+                {
+                    title: 'Core Concepts',
+                    collapsable: false,
+                    children: [
+                        'redirects',
+                        'plugin-settings'
+                    ]
+                },
+                {
+                    title: 'Installing & Updating',
+                    collapsable: false,
+                    children: [
+                        'installing-and-updating-craft-3',
+                        'installing-and-updating-craft-2'
+                    ]
+                }
+            ],
+
+            '/sitemaps/': [
+                ['../', '← All Plugins'],
+                {
+                    title: 'Introduction',
+                    collapsable: false,
+                    children: [
+                        '',
+                    ]
+                },
+                {
+                    title: 'Core Concepts',
+                    collapsable: false,
+                    children: [
+                        'sitemaps',
+                        'plugin-settings'
+                    ]
+                },
+                {
+                    title: 'Advanced Topics',
+                    collapsable: false,
+                    children: [
+                        'custom-sections'
+                    ]
+                },
+                {
+                    title: 'Examples',
+                    collapsable: false,
+                    children: [
                         'large-sitemaps'
                     ]
                 },
@@ -184,7 +258,6 @@ module.exports = {
                     title: 'Development',
                     collapsable: false,
                     children: [
-                        'custom-schema',
                         'custom-url-enabled-sections'
                     ]
                 },
@@ -212,7 +285,6 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'notification-emails',
-                        'campaign-emails',
                         'sent-emails',
                         'plugin-settings'
                     ]
@@ -248,6 +320,34 @@ module.exports = {
                         'custom-email-templates',
                         'custom-mailers',
                         'custom-notification-events'
+                    ]
+                },
+                {
+                    title: 'Installing & Updating',
+                    collapsable: false,
+                    children: [
+                        'installing-and-updating-craft-3',
+                        'installing-and-updating-craft-2'
+                    ]
+                }
+            ],
+
+            '/campaigns/': [
+                ['../', '← All Plugins'],
+                {
+                    title: 'Introduction',
+                    collapsable: false,
+                    children: [
+                        ''
+                    ]
+                },
+                {
+                    title: 'Core Concepts',
+                    collapsable: false,
+                    children: [
+                        'campaign-emails',
+                        'copy-paste-mailer',
+                        'plugin-settings'
                     ]
                 },
                 {
@@ -547,24 +647,45 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Business Suite',
+                    title: 'Form Building',
                     collapsable: false,
                     children: [
                         ['forms/', 'Sprout Forms'],
-                        ['seo/', 'Sprout SEO'],
-                        ['email/', 'Sprout Email'],
-                        ['reports/', 'Sprout Reports'],
-                        ['import/', 'Sprout Import']
+                        ['fields/', 'Sprout Fields']
                     ]
                 },
                 {
-                    title: 'Open Source',
+                    title: 'SEO Metadata',
+                    collapsable: false,
+                    children: [
+                        ['seo/', 'Sprout SEO'],
+                        ['redirects/', 'Sprout Redirects'],
+                        ['sitemaps/', 'Sprout Sitemaps']
+                    ]
+                },
+                {
+                    title: 'Email Marketing',
+                    collapsable: false,
+                    children: [
+                        ['email/', 'Sprout Email'],
+                        ['campaigns/', 'Sprout Campaigns'],
+                        ['lists/', 'Sprout Lists'],
+                    ]
+                },
+                {
+                    title: 'Data Ops',
+                    collapsable: false,
+                    children: [
+                        ['reports/', 'Sprout Reports'],
+                        ['import/', 'Sprout Import'],
+                    ]
+                },
+                {
+                    title: 'Misc',
                     collapsable: false,
                     children: [
                         ['active/', 'Sprout Active'],
                         ['encode-email/', 'Sprout Encode Email'],
-                        ['fields/', 'Sprout Fields'],
-                        ['lists/', 'Sprout Lists'],
                         ['notes/', 'Sprout Notes']
                     ]
                 },

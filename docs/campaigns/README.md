@@ -1,4 +1,4 @@
-# About Sprout Email
+# About Sprout Campaigns
 
 Sprout Email enables integrated email marketing, targeted transactional email, tracking and re-sending Sent Emails, and flexible subscriber and list management.
 
@@ -16,7 +16,7 @@ The table below gives a top level overview of the current Mailers and List integ
 
 Send personalized notification emails to your users when events are triggered in Craft. Stay in the loop about new content on your site, changes to your content, a publish workflow, or when forms are submitted (Sprout Forms) or purchases are made (Craft Commerce). 
 
-[Read More](./notification-emails.md)
+[Read More](../email/notification-emails.md)
 
 ## Campaigns Emails
 
@@ -28,4 +28,4 @@ Campaign Emails allow you to create powerful email campaigns using Live Preview,
 
 Sent Email tracking captures a copy of all emails sent from your website. Review Sent Emails, confirm sent statuses, and re-send email to your users.
 
-[Read More](./sent-emails.md) 
+[Read More](../email/sent-emails.md) 

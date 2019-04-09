@@ -12,7 +12,7 @@ Sitemaps currently support the following types of content:
 ![Sitemap Management](../images/seo/xml-sitemap.png)
 
 ::: tip
-Plugins can add Sitemap support for custom [URL-Enabled Sections](./custom-url-enabled-sections.md). For example, Sprout Email adds Sitemap support for [Campaign Emails](../email/campaign-emails.md).
+Plugins can add Sitemap support for custom [URL-Enabled Sections](./custom-url-enabled-sections.md). For example, Sprout Email adds Sitemap support for [Campaign Emails](../campaigns/campaign-emails.md).
 :::
 
 ## Section Settings

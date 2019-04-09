@@ -5,7 +5,7 @@ Custom Sections allow you to add arbitrary page URLs to your XML Sitemap and man
 ::: danger
 Custom Sections have been deprecated in Sprout SEO 4.
 
-We strongly recommend using the [Element Metadata Field](./element-metadata-field.md) instead. The same functionality can be achieved with the right configuration and upgrading to the latest version of Sprout SEO will be easier if you do. Custom Pages are now handled entirely in the Sitemaps section.
+We strongly recommend using the [Element Metadata Field](../seo/element-metadata-field.md) instead. The same functionality can be achieved with the right configuration and upgrading to the latest version of Sprout SEO will be easier if you do. Custom Pages are now handled entirely in the Sitemaps section.
 :::
 
 Consider a User Profile section where all User data is managed in the Users section, however no specific page exists for the listing page of all the User Profiles on the front-end. In this case, you may want to create a Custom Section for your User Profile listing page.

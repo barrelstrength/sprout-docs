@@ -46,7 +46,7 @@ Sprout SEO is powered by a single tag to your templates. Place the optimize tag 
 
 While the simple setup above should handle most use cases, Sprout SEO is also extremely customizable and gives you fine-grained control over all of your metadata. Sprout SEO also supports:
 
-- An API to add support for additional types of [URL-enabled Elements](custom-url-enabled-sections.md)
+- An API to add support for additional types of [URL-enabled Elements](../sitemaps/custom-url-enabled-sections.md)
 - An API to add support for additional types of [Structured Data schemas](./custom-schema.md)
 - Overriding metadata in your templates via [Template Overrides](./template-overrides.md)
 - Overriding the default metadata templates using a [Custom Metadata Variable](./custom-metadata-variable.md)

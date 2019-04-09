@@ -7,7 +7,7 @@ Campaign Email Elements allow you to build and manage marketing and bulk email r
 | [Copy/Paste](./copy-paste-mailer.md) | Copy and paste your email campaigns to better (or worse) places |
 | [MailChimp](https://github.com/barrelstrength/craft-sprout-mailchimp)        | Send your email campaigns via MailChimp |
 | [Campaign Monitor](https://github.com/barrelstrength/craft-sprout-mailchimp) | Send your email campaigns via Campaign Monitor |
-| Custom            | Via a [Custom Mailer](./custom-mailers.md) or [Get in touch](mailto:sprout@barrelstrengthdesign.com)! |
+| Custom            | Via a [Custom Mailer](../email/custom-mailers.md) or [Get in touch](mailto:sprout@barrelstrengthdesign.com)! |
 
 ## Campaign Types
 
@@ -23,11 +23,11 @@ If a Mailer supports Lists, a dropdown with all available email lists will appea
 
 ## Email Templates
 
-Email Templates for your Campaign Emails can be managed via [Template Overrides](./template-overrides.md) or via a [Custom Email Template](./custom-email-templates.md).
+Email Templates for your Campaign Emails can be managed via [Template Overrides](../email/template-overrides.md) or via a [Custom Email Template](../email/custom-email-templates.md).
 
 ## Test Emails
 
-Each email service provider handles tests differently. The _Send Test_ bahavior may vary depending on the Campaign Type you are using.
+Each email service provider handles tests differently. The _Send Test_ behavior may vary depending on the Campaign Type you are using.
 
 ## Templating
 
