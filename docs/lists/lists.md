@@ -135,9 +135,3 @@ The number of Subscribers or Items on a list can be retrieved like so:
 
 {{ list.count }}
 ```
-
-
-
-
-
-
