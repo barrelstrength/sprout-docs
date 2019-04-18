@@ -1,6 +1,6 @@
 # Settings
 
-Customize the details of your XML sitemaps, redirects, and metadata workflows with the following settings.
+Customize the details of your metadata workflows with the following settings.
 
 ## Config Settings
 

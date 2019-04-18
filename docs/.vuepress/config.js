@@ -140,6 +140,15 @@ module.exports = {
                         'get-optimized-meta',
                         'overriding-images'
                     ]
+                },
+                {
+                    title: 'Sitemaps',
+                    collapsable: false,
+                    children: [
+                        'sitemaps',
+                        'custom-sections',
+                        'large-sitemaps'
+                    ]
                 }
             ],
 
@@ -174,7 +183,7 @@ module.exports = {
                     title: 'Examples',
                     collapsable: false,
                     children: [
-                        'canonical-override',
+                        'canonical-urls',
                         'block-robots-on-dev-site',
                         'elements-without-urls'
                     ]
@@ -238,20 +247,6 @@ module.exports = {
                     children: [
                         'sitemaps',
                         'plugin-settings'
-                    ]
-                },
-                {
-                    title: 'Advanced Topics',
-                    collapsable: false,
-                    children: [
-                        'custom-sections'
-                    ]
-                },
-                {
-                    title: 'Examples',
-                    collapsable: false,
-                    children: [
-                        'large-sitemaps'
                     ]
                 },
                 {
@@ -668,7 +663,6 @@ module.exports = {
                     collapsable: false,
                     children: [
                         ['email/', 'Sprout Email'],
-                        ['campaigns/', 'Sprout Campaigns'],
                         ['lists/', 'Sprout Lists'],
                     ]
                 },

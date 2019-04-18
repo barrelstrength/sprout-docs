@@ -1,6 +1,6 @@
 # Sitemaps
 
-Generate sitemaps for all of your URL-enabled content for one or more languages. Sitemaps are managed directly within Craft (no template updates required).
+Generate sitemaps for all of your URL-enabled content for one or more languages.
 
 Sitemaps currently support the following types of content:
 
@@ -9,10 +9,8 @@ Sitemaps currently support the following types of content:
 3. Craft Commerce Products
 4. Custom Page URLs
 
-![Sitemap Management](../images/seo/xml-sitemap.png)
-
 ::: tip
-Plugins can add Sitemap support for custom [URL-Enabled Sections](./custom-url-enabled-sections.md). For example, Sprout Email adds Sitemap support for [Campaign Emails](../campaigns/campaign-emails.md).
+Plugins can add XML Sitemap support for Custom Elements. See the developer documentation for [URL-Enabled Sections](./custom-url-enabled-sections.md).
 :::
 
 ## Section Settings
@@ -24,17 +22,6 @@ All of your URL-enabled content types will appear on the Sitemap Settings page w
 | Enabled             | Enable it or disable it in your sitemap |
 | Priority            | Update the Priority of the items in the Section relative to the other items in your Sitemap |
 | Change&nbsp;Frequency    | Update the Change Frequency of the items in the Section relative to other items in your Sitemap |
-
-## Sitemap Settings
-
-Your Sitemap output is managed by two settings on the `Sprout Seo->Settings->General` tab.
-
-![XML Sitemap Settings](../images/seo/xml-sitemap-settings.png)
-
-| Setting             | Description |
-|:------------------- |:---------------- |
-| Enable&nbsp;Dynamic&nbsp;Sitemaps | Enabling this setting will display a sitemap for all your URL-Enabled sections when you visit the URL: `/sitemap.xml` on your website. |
-| Total&nbsp;Elements&nbsp;Per&nbsp;Sitemap | The number of items that display on each page of your sitemap. A lower number may be necessary for sitemaps with a large number of elements or limited server resources. |
 
 ## Sitemap XML
 
@@ -162,24 +149,8 @@ If you have a multi-language site, your sitemap will adjust to reference URLs fo
 </urlset>
 ```
 
-## Custom URLs
+## Custom Pages
 
-If you have more advanced Sitemap needs, Sprout SEO's Sitemap tool allows you to add any number of Custom URLs that will also be output in your Sitemap.
+If you have more advanced Sitemap needs, Sprout SEO's Sitemap tool allows you to add any number of Custom Pages that will also be output in your Sitemap. Custom Pages can be managed in Multi-Site sitemaps on a per-site basis.
 
-Enable Custom URL management features in the Advanced Settings (`Sprout SEO->Settings->Advanced->Enable Custom Sections`)
-
-Custom URLs can be managed in Multi-Site sitemaps on a per-site basis.
-
-## Craft 2
-
-::: warning
-This method of generating your sitemap has been deprecated and has been removed in Craft 3.
-:::
-
-To output the complete XML for your Sitemap, add the following tag to your sitemap template:
-
-```
-{{ craft.sproutSeo.sitemap() }}
-```
-
-The `sitemap()` tag generates XML data so you'll want to be sure your Craft template file uses the `.xml` filetype: `sitemap.xml`
+Enable Custom Pages management features in the Plugin Settings.

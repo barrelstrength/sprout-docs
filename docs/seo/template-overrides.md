@@ -12,20 +12,6 @@ Metadata defined in templates gets the highest priority when metadata is process
 
 The `meta` variable allows you to override metadata within templates. The `meta` variable must use the `do` tag syntax and must be run _before_ the  `{% sproutseo 'optimize' %}` tag in your templates.
 
-## Canonical Overrides
-
-::: warning 
-Overriding Canonical URLs in your templates breaks the relationship with XML Sitemaps and the awareness Sprout SEO has about Canonical URL overrides. To add Custom URLs in a supported way to your XML Sitemaps see the documentation on [Custom Page URLs](http://localhost:8082/docs/seo/sitemaps.html#custom-urls). 
-:::
-
-``` twig
-{% do craft.sproutSeo.meta({
-    canonical: customUrl,
-}) %}
-
-{% sproutseo 'optimize' %}
-```
-
 ### A Simple Page
 
 #### page.twig

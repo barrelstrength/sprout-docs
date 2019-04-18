@@ -9,8 +9,8 @@ Sprout SEO helps manage several types of metadata:
 - Search
 - Social Sharing
 - Structured Data
-- Sitemaps
-- Redirects
+- Sitemaps (See the [Sprout Sitemaps](./../sitemaps/README.md) docs for more info)
+- Redirects (See the [Sprout Redirects](./../redirects/README.md) docs for more info)
 
 Refine your Metadata across three different levels of priority:
 

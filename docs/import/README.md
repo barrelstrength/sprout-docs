@@ -1,5 +1,11 @@
 # About Sprout Import
 
+::: danger DISCONTINUED
+Sprout Import has been retired. We recommend using the free, first-party [Feed Me](https://plugins.craftcms.com/feed-me) plugin instead. These docs remain online for reference only.
+
+We will continue to offer support and bugfixes for existing license holders for the duration of the license terms but will not be planning any new features unless contracted to do so.
+:::
+
 Import data to Craft, Craft Commerce, the Sprout Plugin Suite, and add your own custom integrations. Sprout Import is an extremely flexible and extensible import plugin that makes it easy to:
 
 - Import simple or complex data into Craft

@@ -1,32 +1,11 @@
 # Settings
 
-Customize the details of your XML sitemaps, redirects, and metadata workflows with the following settings.
+Customize the details of your XML sitemaps with the following settings.
 
-## Config Settings
-
-### Meta Description Length
-
-For many years the recommended length of Meta Description content was around 160 characters. More recently, observations have been made that longer descriptions are also displayed by Google.
-
-Moz writes in 2018, [How Long Should Your Meta Description Be?](https://moz.com/blog/how-long-should-your-meta-description-be-2018):
-
-> You can write meta descriptions for any length, however Google generally truncates snippets ~300 characters (this limit increased in December 2017). You want meta descriptions long enough that they're descriptive. We generally recommend writing meta descriptions between 50–300 characters.
-
-Sprout SEO defaults to Meta Descriptions of 160 characters, however, you can update this to your preference. To override the default value:
- 
- ::: code
- 
- ``` html Craft 3
-Sprout SEO → Settings → General → Meta Description Length
- ```
- 
- ``` php Craft 2
- <?php 
- 
- // In your craft/config/sproutseo.php config file
- return array(
-   'maxMetaDescriptionLength' => 300
- );
-  ```
-  
- :::
+| Setting             | Description |
+|:------------------- |:---------------- |
+| Enable&nbsp;Dynamic&nbsp;Sitemaps | Enabling this setting will display a sitemap for all your URL-Enabled sections when you visit the URL: `/sitemap.xml` on your website. |
+| Total&nbsp;Elements&nbsp;Per&nbsp;Sitemap | The number of items that display on each page of your sitemap. A lower number may be necessary for sitemaps with a large number of elements or limited server resources. |
+| Enable&nbsp;multi-lingual&nbsp;sitemaps | Generate a single, multilingual sitemap.xml file for each Site Group. By default, a sitemap.xml is generated for every Site on your Craft website. If you are managing content in multiple languages, enable this setting to generate a single, multi-lingual sitemap.xml for all Sites in each Site Group. The sitemap.xml be created for the primary domain or the first domain that appears in the list of a specific Site Group. |
+| Enable Sitemaps | Determine which Sites or Site Groups are enabled when generating XML Sitemaps. |
+| Enable Custom Pages | Add a section on the Sitemaps tab to manage Custom Pages that exist outside of any URL-Enabled Sections. |
