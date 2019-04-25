@@ -15,7 +15,15 @@ Some useful commands while working with the docs:
 | yarn install | Get everything working |
 | yarn docs:dev | Spins up a VuePress dev server so you can update Markdown and see those updates in real time in your browser (without generating a static site) |
 - yarn docs:build | Generates static site (no need to run this if submitting pull requests, this is handled during deployment) |
-		
+
+## Metadata
+
+To generate metadata using the `php ./src/optimizeMetadata.php` script you will need to install the following package:
+
+```
+composer require sunra/php-simple-html-dom-parser
+```
+	
 ## Contributions
 
 Feedback, requests for examples, and pull requests are welcome. 
