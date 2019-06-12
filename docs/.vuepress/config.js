@@ -61,6 +61,7 @@ module.exports = {
                         'entries',
                         'notifications',
                         'reports',
+                        'integrations',
                         'importing-data',
                         'plugin-settings'
                     ]
@@ -85,13 +86,6 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Advanced Topics',
-                    collapsable: false,
-                    children: [
-                        'payload-forwarding'
-                    ]
-                },
-                {
                     title: 'Examples',
                     collapsable: false,
                     children: [
@@ -113,6 +107,7 @@ module.exports = {
                         'custom-form-templates',
                         'custom-form-fields',
                         'custom-captchas',
+                        'custom-integrations',
                         'events-and-hooks'
                     ]
                 },
@@ -555,6 +550,7 @@ module.exports = {
                         'notes-field',
                         'phone-field',
                         'predefined-field',
+                        'predefined-date-field',
                         'regular-expression-field',
                         'url-field'
                     ]

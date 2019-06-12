@@ -16,7 +16,7 @@ Customize which features display in the Sprout Forms sidebar and only include th
 
 ### Default Email Templates
 
-By default, Sprout Email uses our simple, base Basic Notification Email Templates. If you would like to customize the default Email Templates used on all of your Notification Emails, select the Email Template you wish to use here or setup [Template Overrides](./template-overrides.md). 
+By default, Sprout Email uses our simple, base Basic Notification Email Templates. If you would like to customize the default Email Templates used on all of your Notification Emails, select the Email Template you wish to use here or setup [Template Overrides](../email/template-overrides.md). 
 
 ### Enable custom Email Templates on a per-email basis
 
