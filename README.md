@@ -14,7 +14,7 @@ Some useful commands while working with the docs:
 |:------- |:----- |
 | npm install | Get everything working |
 | npm run docs:dev | Spins up a VuePress dev server so you can update Markdown and see those updates in real time in your browser (without generating a static site) |
-| npm run docs:build | Generates static site (no need to run this if submitting pull requests, this is handled during deployment) |
+| npm&nbsp;run&nbsp;docs:build | Generates static site (no need to run this if submitting pull requests, this is handled during deployment) |
 
 ## Metadata
 
