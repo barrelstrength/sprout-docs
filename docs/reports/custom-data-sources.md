@@ -2,11 +2,48 @@
 
 Custom Data Sources can be created by plugins. You can create as many Data Sources as you'd like.
 
-Once we reach Sprout Reports 1.0, we will write up more complete documentation on Data Sources.  For now, please see `sproutreports/integrations/sproutreports/datasources` for examples on how to create your own datasource. Sprout Reports' native Data Sources are written in the same way that you would write a custom Data Source.
+Please see the Sprout Reports codebase for examples on how to create your own datasource. Sprout Reports' native Data Sources are written in the same way that you would write a custom Data Source.
+
+| Release | Folder |
+|:------- |:------ |
+| Craft 3 | `vendor/barrelstrength/sprout-reports/src/datasources` |
+| Craft 2 | `sproutreports/integrations/sproutreports/datasources` |
+
+## Craft 3
+
+To create a Data Source you will need to:
+
+1) Create a class for your Data Source(s)
+
+Data Sources extend the `DataSource` class:
+
+``` php
+class MyCustomDataSource extends DataSource
+{
+  ...
+}
+```
+
+2. Install your Data Source (optional)
+
+You can install your Data Source via an install script or migration or just let users hit the "Install" button on the Data Sources tab. To install a Data Source from your plugin or module, in your primary plugin, run Sprout Base Report's `installDataSources` method after installation:
+
+``` php
+protected function afterInstall()
+{
+    $dataSourceTypes = [
+        MyCustomDataSource::class
+    ];
+
+    SproutBaseReports::$app->dataSources->installDataSources($dataSourceTypes);
+}
+```
+
+## Craft 2
 
 The key things you will need to do are:
 
-1) Create a class for your Data Source
+1) Create a class for your Data Source(s)
 
 Data Sources extend the `DataSource` class:
 
@@ -17,7 +54,7 @@ class SproutReportsUsersDataSource extends DataSource
 }
 ```
 
-2) Load your datasources in your primary plugin class init method
+2) Load your Data Source(s) in your primary plugin class
 
 ``` php
 public function init()

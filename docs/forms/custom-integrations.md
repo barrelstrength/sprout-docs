@@ -15,7 +15,7 @@ use barrelstrength\sproutforms\base\Integration;
 
 class CustomEndpoint extends Integration
 {
-    public function getName(): string { ... }
+    public static function displayName(): string { ... }
     public function getSettingsHtml() { ... }
     public function submit(): bool { ... }
     public function resolveFieldMapping() { ... }

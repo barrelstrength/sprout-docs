@@ -17,6 +17,26 @@ Sprout Reports installation and update instructions for Craft 3.
 2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-reports`
 3. In the Control Panel, go to _Settings → Plugins_ and select “Install”
 
+## Upgrading to v1.1.8
+
+Custom Data Sources will need to make a minor update when upgrading to Sprout Base Reports 1.2.0 (Sprout Reports v1.1.8). Data Sources will still display in the interface but may not have an ideal name until they are updated to use the `displayName()` method.
+
+``` php
+OLD:
+public function getName(): string
+{
+    return Craft::t('sprout-reports', 'Twig Template');
+}
+
+NEW:
+public static function displayName(): string
+{
+    return Craft::t('sprout-reports', 'Twig Template');
+}
+```
+
+
+
 ## Upgrading to Craft 3
 
 ::: warning BEFORE YOU UPDATE

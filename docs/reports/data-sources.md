@@ -7,3 +7,7 @@ Sprout Reports provides a few Data Sources out of the box:
 - **Custom Query** - Create reports using custom SQL queries.
 - **Users** - Create reports with User and User Group data
 - **Category Usage by Section** - See the breakdown of how many Categories are in use by Entries
+
+## Installation
+
+The default Sprout Data Sources are automatically installed. Custom Data Sources have the option to install themselves and if they do not you will find uninstalled Data Sources in the **Uninstalled Data Sources** section on the Data Sources tab. Hit the "Install" button to install a custom Data Source.
