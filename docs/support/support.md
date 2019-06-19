@@ -12,10 +12,21 @@ Our goal is to make the documentation the primary place that you can find answer
 
 When we run into a problem, we typically try a few of the following things:
 
-- **Clear cache** - Clear cache in the Craft settings. Clear cache in the browser. Try a different browser. Clear cache again!
-- **Upgrade to the latest** - Make sure you are using the latest version of Craft and all plugins on your website. 
-- **Simplify the code you are working with to as simple as it gets** - If you're trying to get code to work in a complex template, copy the code you are having trouble with and see if you can get it working in a blank template. Simplify the code in the area causing trouble to just output plain text, and then slowly add back more complexity variable by variable.
-- **Install a fresh version of the plugin** - To help rule out plugin conflicts or upgrade issues, re-install your plugin on a temporary development site and create a quick prototype of what you are trying to do again and see if it works in a fresh environment.
+### Clear cache
+
+Clear cache in the Craft settings. Clear cache in the browser. Try a different browser. Try a different network. Take a walk. Clear cache again!
+
+### Upgrade to the latest software
+
+Make sure you are using the latest version of Craft and all plugins on your website.
+ 
+### Simplify the code you are working with to as simple as it gets
+
+If you're trying to get code to work in a complex template, copy the code you are having trouble with and see if you can get it working in a blank template. Simplify the code in the area causing trouble to just output plain text, and then slowly add back more complexity variable by variable.
+
+### Install a fresh version of the plugin
+
+To help rule out plugin conflicts or upgrade issues, re-install your plugin on a temporary development site and create a quick prototype of what you are trying to do again and see if it works in a fresh environment.
 
 ## Support Questions
 
@@ -42,7 +53,7 @@ If you have a general question, consider posting your question on Craft Stack Ex
 For bugs and general support that doesn't fall in another category, please contact us at: [sprout@barrelstrengthdesign.com](mailto:sprout@barrelstrengthdesign.com)
 
 ::: warning Unofficial Support Channels
-While you may find Sprout team members on Craft Slack, Twitter, or over private email, we do not monitor these channels for support and messages can be overlooked or lost to history.
+While you may find Sprout team members on Craft Discord, Twitter, or over private email, we do not monitor these channels for support and messages can be overlooked or lost to history.
 
 If you are in need of support, please use one of the official support channels listed above.
 :::

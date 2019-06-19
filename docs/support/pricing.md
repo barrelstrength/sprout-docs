@@ -9,5 +9,5 @@ If you or your client can justify the price of investing in one of our plugins f
 We understand that many projects have budget considerations. If you feel your project falls in this category, and would still like to use one of our commercial plugins we will match any discounts that you received from Pixel & Tonic for Craft CMS and we also consider standalone license donations.
 
 ::: tip License Requests
-For discount and donation requests, please send us a note at [sprout@barrelstrengthdesign.com](mailto:sprout@barrelstrengthdesign.com) and tell us a little bit about your project and which plugins you would like to use.
+For discount and donation requests, please send us a note at [sprout@barrelstrengthdesign.com](mailto:sprout@barrelstrengthdesign.com?subject=Discount%20or%20Donation%20Request) and tell us a little bit about your project and which plugins you would like to use.
 :::

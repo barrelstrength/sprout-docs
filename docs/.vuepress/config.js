@@ -685,9 +685,11 @@ module.exports = {
                     children: [
                         'support/feature-requests',
                         'support/bugs',
+                        'support/security',
                         'support/changelog',
                         'support/pricing',
                         'support/training',
+                        'support/contributing',
                         'support/support'
                     ]
                 },

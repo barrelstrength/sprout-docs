@@ -48,7 +48,7 @@ Contact us: [sprout@barrelstrengthdesign.com](mailto:sprout@barrelstrengthdesign
 
 | Package                               | Github Link                   |
 |:------------------------------------- |:----------------------------- |
-| Craft Master (Starter Project)        | [Issues][#CraftMaster]        |
+| Craft Master (Starter Project)        | [Feature Requests][#CraftMaster]        |
 | PhpStorm Live Templates for Craft CMS | [Feature Requests][#LiveTemplatesCraft] |
 | PhpStorm Live Templates for Twig      | [Feature Requests][#LiveTemplatesTwig]  |
 | Craft Twig                            | [Feature Requests][#CraftTwig]          |

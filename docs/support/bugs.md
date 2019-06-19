@@ -1,6 +1,6 @@
 # Bugs
 
-View known issues or submit a bug report on the Github repo for each plugin. See the [Changelog](/support/changelog) for more information on the latest updates and releases.
+View known issues or submit a bug report on the Github repo for each plugin. See the [Changelog](./changelog.md) for more information on the latest updates and releases.
 
 ## Commercial Plugins
 
