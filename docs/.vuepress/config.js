@@ -689,12 +689,19 @@ module.exports = {
                         'support/changelog',
                         'support/pricing',
                         'support/training',
-                        'support/contributing',
                         'support/support'
                     ]
                 },
                 {
-                    title: 'Development',
+                    title: 'Workflow',
+                    collapsable: false,
+                    children: [
+                        'contributing',
+                        'coding-guidelines',
+                    ]
+                },
+                {
+                    title: 'Tools',
                     collapsable: false,
                     children: [
                         ['tools/php-storm', 'PhpStorm'],

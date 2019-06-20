@@ -4,11 +4,11 @@ The following is a set of guidelines for contributing to Sprout Plugins and its 
 
 ## Security Disclosures
 
-Please report [security disclosures](./security.md) via the steps outlined on our Security page.
+Please report [security disclosures](./support/security.md) via the steps outlined on our Security page.
 
 ## Bug Reports & Feature Requests
 
-Before submitting [bug reports](./support.md) and [feature requests](./feature-requests.md), please search through open issues to see if yours has already been filed.
+Before submitting [bug reports](./support/support.md) and [feature requests](./support/feature-requests.md), please search through open issues to see if yours has already been filed.
 
 If you do find a similar issue, upvote it by adding a 👍 reaction. Only leave a comment if you have relevant information to add.
 
