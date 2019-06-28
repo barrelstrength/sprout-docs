@@ -27,7 +27,7 @@ If you need to build a custom form with file-uploads, make sure your Form tag is
 ``` twig Craft 3
 <form method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
   {{ getCsrfInput() }}
-  <input type="hidden" name="action" value="sprout-formsorms/entries/save-entry">
+  <input type="hidden" name="action" value="sprout-forms/entries/save-entry">
   <input type="hidden" name="handle" value="contact">
   {{ redirectInput("contact?message=thankyou") }}
   
