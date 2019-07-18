@@ -27,7 +27,7 @@ To get started, copy the default Sprout Email templates to your Custom Template 
 ::: code
 
 ``` html Craft 3
-vendor/barrelstrength/sprout-base/src/app/email/templates/_components/emailtemplates/basic
+vendor/barrelstrength/sprout-base-email/src/templates/_components/emailtemplates/basic
 ```
 
 ``` html Craft 2
