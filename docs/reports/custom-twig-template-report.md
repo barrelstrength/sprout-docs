@@ -109,7 +109,10 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 {% set categoryGroup = craft.categories.group('exampleCategoryGroup') %}
 {% set categories = [] %}
 {% for category in categoryGroup %}
-    {% set categories = categories|merge({(category.id) : (category.title)}) %}
+    {% set categories = categories|merge({
+        label: category.id,
+        value: category.title
+    }) %}
 {% endfor %}
 
 {{ forms.selectField({
