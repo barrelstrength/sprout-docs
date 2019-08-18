@@ -41,7 +41,7 @@ The following options will modify the `<input>` field and the wrapper `<div>` an
 | `errorClass` | `string` | `errors` | A space separated list of classes to apply to theinput tag when errors are found |
 | `data` | `{}` | | An object (associative array) of data attributes to set on the form or input tag
 
-::: warning 
+::: tip Custom Fields 
 Custom Form Fields will need to add support for these options on their own. If you are using Rendering Options with a custom Form Field and they are not behaving as expected, you may need to reach out to the respective plugin developer.
 :::
 
@@ -88,3 +88,7 @@ The `displayForm()` accepts rendering options for the form tag and input fields.
 
 </form>
 ```
+
+::: warning Field Prefixes 
+The ID you specific will be prefixed with `field-`. This prefix is added by the `{% namespace %}` tag in the Form Templates `field.twig` file and also adds the `fields` namespace around the `fieldHandle` on the Form Field input tags (i.e. `name="fields[fieldHandle]"`).
+:::

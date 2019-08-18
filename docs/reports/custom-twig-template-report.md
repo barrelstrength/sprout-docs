@@ -29,15 +29,22 @@ Sprout Reports will look for your templates in your front-end `craft/templates` 
 
 Your Results Template is where you will build your report. A report consists of any number of rows. Rows must each have an equal number of columns.
 
-Sprout Reports gives you three helper variables to use when building reports:
+The Twig Template Report has three helper tags to use when building reports:
 
-| Variable | Description |
+| Tag | Description |
 |:---------|:--------|
-| **craft.sproutReports.addHeaderRow()** | Define the columns in the first row of your report
+| **craft.sproutReports.addHeaderRow()** | Define the columns in the first row of your report |
 | **craft.sproutReports.addRow()** | Add a single row of data to your report |
 | **craft.sproutReports.addRows()** | Add an array of multiple rows of data to your report |
 
 You can use `addHeaderRow` anywhere in your template to define the first row in your report that will be used as the column headers. The `addRow` and `addRows` actions add rows to your report in the order that they are used in your template.
+
+The Twig Template Report also makes two variables available to your templates:
+
+| Variable | Description |
+|:---------|:--------|
+| **settings** | The values for all of your reports settings (e.g `settings.mySetting`) |
+| **isExport** | The `isExport` variable will be set to true when your report is being processed as an export. One use for this is if you'd like to display a link in HTML in your report in the Control Panel, but want a text value when the report is exported. |
 
 Here is a simple, hard-coded example of each tag in use for a two-column report:
 
@@ -102,7 +109,10 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 {% set categoryGroup = craft.categories.group('exampleCategoryGroup') %}
 {% set categories = [] %}
 {% for category in categoryGroup %}
-    {% set categories = categories|merge({(category.id) : (category.title)}) %}
+    {% set categories = categories|merge({
+        label: category.id,
+        value: category.title
+    }) %}
 {% endfor %}
 
 {{ forms.selectField({

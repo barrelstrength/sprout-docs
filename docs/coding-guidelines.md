@@ -169,6 +169,18 @@ Use the default Craft conventions for translations. This allows us to benefit fr
 
 Each plugin or module maintains it's own translation file. As some plugins depend on multiple modules for their functionality, this may mean that someone translating a plugin will also have to translate translation files in other modules. For example, to completely translate Sprout Forms one would need to translate the files in Sprout Forms, Sprout Base Fields, and Sprout Base.
 
+### Exceptions
+
+Exceptions are for developers, not for users. Exception messages should not be translated:
+
+```
+BAD:
+throw new Exception(Craft::t('sprout-forms, 'Something happened'));
+
+GOOD:
+throw new Exception('Something happened');
+```
+
 ## Migrations
 
 Due to our application structure using shared modules, in some cases migrations may need to be run by multiple plugins and we cannot know which order they will get run in. To address this, we use the following conventions:
@@ -196,4 +208,29 @@ Any migration instance that is just running a migration in base module should us
 m190101_000001_migration_description.php              // Sprout Base Email
 m190101_000001_migration_description_sproutemail.php  // Sprout Email
 m190101_000001_migration_description_sproutforms      // Sprout Forms
+```
+
+### Testing Prior to Release
+
+To test one or more plugins and modules under development on real websites before releases, changes can be pushed to a development branch and pulled into any appropriate project for testing.
+
+In this example, we grab the latest on the `develop` branch for the Sprout SEO plugin and the Sprout Base Redirects module. To ensure composer things it's working with the release numbers we're using in our `composer.json` we can tell composer what version number to use for the code we are testing:
+ 
+```
+composer require barrelstrength/sprout-seo:"dev-develop as 4.2.0" barrelstrength/sprout-base-redirects:"dev-develop as 1.1.1"
+```
+
+Requiring `dev-develop` should pull in the latest commit on the `develop` branch. For more specific tests, you can also target a specific commit hash:
+
+```
+composer require barrelstrength/sprout-seo:"dev-develop as 4.2.0" barrelstrength/sprout-base-redirects:"dev-develop#dfae1a922cdb5dd32fd8a813839fddc26ff412b0 as 1.1.1"
+```
+
+For additional troubleshooting, consider some of the following steps:
+
+```
+rm composer.lock      # Remove the composer.lock file
+composer clear-cache  # Clear composers cache
+composer remove ...   # Try removing the package you are testing before installing it
+rm -r ./vendor        # Remove the entire ./vendor directory and rebuild it with `composer update`
 ```
