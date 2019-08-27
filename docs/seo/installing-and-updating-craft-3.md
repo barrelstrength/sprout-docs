@@ -17,7 +17,9 @@ Sprout SEO installation and update instructions for Craft 3.
 2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-seo`
 3. In the Control Panel, go to _Settings → Plugins_ and select “Install”
 
-## Upgrading to Craft 3 and Sprout SEO 4
+## Upgrading to Sprout SEO 4
+
+Upgrading to Sprout SEO 4 requires upgrading to Craft 3.
 
 ::: warning BEFORE YOU UPDATE
 Make sure you have updated to the latest version of Sprout SEO 3.x before updating to Sprout SEO 4.x for Craft 3. The update from Sprout SEO 2 to 3 on Craft 2 was a larger update than the update from Sprout SEO 3 to 4 when migrating from Craft 2 to Craft 3. See the [Sprout SEO 3 upgrade documentation](./installing-and-updating-craft-2.md#updating-to-sprout-seo-3) for more details.
