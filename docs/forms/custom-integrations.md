@@ -18,8 +18,7 @@ class CustomEndpoint extends Integration
     public static function displayName(): string { ... }
     public function getSettingsHtml() { ... }
     public function submit(): bool { ... }
-    public function resolveFieldMapping() { ... }
-    public function getFieldMappingSettingsHtml() { ... }
+    public function getTargetIntegrationFieldsAsMappingOptions() { ... }
 }
 ```
 

@@ -128,3 +128,21 @@ Where `field` is a Form Field model:
 ```
 
 :::
+
+## Upgrading to Forms 3.4.1
+
+Sprout Forms v3.4.1 introduces a handful of changes to make the Integrations API more flexible for custom Integrations. The general Integration architecture has stayed the same but several methods have been renamed. Please be sure to test any Custom Integrations while upgrading to 3.4.1 and consider the following changes:
+ 
+### Removed
+- Removed base Integration `updateTargetFieldsAction` and `updateSourceFieldsAction` dependencies in favor of `updateTargetFieldsOnChange` to allow Integrations to dynamically target fields to watch for changes
+- Removed `prepareFieldTypeSelection` and `prepareIntegrationTypeSelection` variables and methods and simplified how Integration Types field is populated in modal templates
+
+### Moved
+- Moved `getFieldsAsOptionsByRow`, `getCompatibleFields`, and `getTargetIntegrationFieldsAsMappingOptions` from `IntegrationsController` to `EntryElementIntegration` class
+
+### Renamed
+- Renamed `getFormFieldsAsMappingOptions` => `getSourceFormFieldsAsMappingOptions`
+- Renamed `actionGetElementEntryFields` => `actionGetTargetIntegrationFields` and updated it to instantiate and populate an Integration dynamically and trigger the `getTargetIntegrationFieldsAsMappingOptions` on a given Integration
+- Renamed `prepareFieldMapping` => `refreshFieldMapping` and moved to base Integration class init method
+- Renamed `resolveFieldMapping` => `getTargetIntegrationFieldValues` and moved to base Base Integration class
+- Renamed IntegrationTrait property `entry` => `formEntry`
