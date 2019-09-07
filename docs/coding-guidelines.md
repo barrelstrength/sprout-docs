@@ -84,7 +84,7 @@ Similarly, we aim to keep the `composer.json` file as simple as possible. Don't 
 
 We rename the primary module class `Plugin.php` to use the name of the plugin (i.e. `SproutForms.php`). This update requires that we set the `composer.json` _extra->class_ setting to define the Plugin.php as a file with the name of the plugin itself.
 
-Front-end packages are managed in `package.json`. Third-party libraries that must be included in the plugin are are added to the `lib` folder. CSS (SCSS) and Javascript (ES6) assets are managed with Webpack via Laravel Mix. Each Asset Source is configured in `webpack.mix.config` to process files from the `src/web/[assetbundle]/src` folder and compile them to the `src/web/[assetbundle]/dist` folder.
+Front-end packages are managed in `package.json`. Third-party libraries that must be included in the plugin are are added to the `lib` folder. CSS (SCSS) and Javascript (ES6) assets are managed with Webpack via Laravel Mix. Each Asset Source is configured in `webpack.mix.js` to process files from the `src/web/[assetbundle]/src` folder and compile them to the `src/web/[assetbundle]/dist` folder.
 
 ### Resources and templating
 
