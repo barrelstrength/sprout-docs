@@ -31,6 +31,21 @@ As we have to maintain multiple master copies of our plugins, instead of a `mast
 - v3
 ```
 
+## Local Development
+
+Create a symlink to the plugin or module within the Craft project that will be used for development:
+
+```
+$ ln -s /path/to/cloned/repo /path/to/symlink/in/project/vendor/barrelstrength/folder
+```
+
+In the case you will be editing front-end assets, you'll need to configure `npm` and process the `scss` and `js` files you edit in a give asset bundle's `src/web/[assetbundle]/src` folder into the `src/web/[assetbundle]/dist` folder:
+
+```
+npm install
+npm run watch
+```  
+
 ## Naming
 
 The name of a plugin will be used in several different contexts. We use the following conventions:
@@ -60,6 +75,7 @@ When possible, we follow conventions in Craft's folder architecture in our plugi
     ├── Plugin.php
     └── translations
         └── en
+└── webpack.mix.js
 ```
 
 References within `README.md` and any other general information files should be kept to a minimum and point users toward our docs, where we maintain more comprehensive documentation. As we maintain several plugins, it gets tedious to update references in numerous general information files and our documentation serves as a centralized place for this type of information about our plugins.
@@ -68,7 +84,7 @@ Similarly, we aim to keep the `composer.json` file as simple as possible. Don't 
 
 We rename the primary module class `Plugin.php` to use the name of the plugin (i.e. `SproutForms.php`). This update requires that we set the `composer.json` _extra->class_ setting to define the Plugin.php as a file with the name of the plugin itself.
 
-Third-party libraries are added to the `lib` folder.
+Front-end packages are managed in `package.json`. Third-party libraries that must be included in the plugin are are added to the `lib` folder. CSS (SCSS) and Javascript (ES6) assets are managed with Webpack via Laravel Mix. Each Asset Source is configured in `webpack.mix.config` to process files from the `src/web/[assetbundle]/src` folder and compile them to the `src/web/[assetbundle]/dist` folder.
 
 ### Resources and templating
 
@@ -78,13 +94,14 @@ Third-party libraries are added to the `lib` folder.
         └── assets
             └── [assetbundle]
                 ├── dist
+                ├── src
                 └── [CustomAssetBundle].php    
         └── twig
             └── variables
                 └── [CustomVariable.php]
 ```
 
-All asset bundles are managed in the `src/web/assets` folder and all things Twig (variables, filters, nodes, etc.) are managed in the `src/web/twig` folder.
+All asset bundles are managed in the `src/web/assets` folder and all things Twig (variables, filters, nodes, etc.) are managed in the `src/web/twig` folder. 
 
 ### Components and Integrations
 
