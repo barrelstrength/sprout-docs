@@ -33,7 +33,7 @@ Read over the [Changes in Craft 3](https://docs.craftcms.com/v3/changes-in-craft
 
 ``` twig Craft 3
 <form method="post" accept-charset="utf-8" enctype="multipart/form-data">
-	{{ getCsrfInput() }}
+	{{ csrfInput() }}
 	<input type="hidden" name="action" value="sprout-forms/entries/save-entry">
 	{{ redirectInput("/contact?message=thankyou") }}
 	<input type="hidden" name="handle" value="formHandle">
@@ -128,6 +128,18 @@ Where `field` is a Form Field model:
 ```
 
 :::
+
+### Notification Email Changes
+
+The default Notification Email will now exclude several fields that may include sensitive or irrelevant information for a Notification Email. These fields include:
+
+- Custom HTML
+- Hidden Field
+- Invisible Field
+- Private Notes Field
+- Section Heading Field
+
+If you require these fields to be displayed in a Notification Email or wish to update the logic around which of them that do, you will need to override the default template and customize it to your needs. See [this response](https://craftcms.stackexchange.com/a/29650/115) on Stack Exchange for more info.
 
 ## Upgrading to Forms 3.4.1
 
