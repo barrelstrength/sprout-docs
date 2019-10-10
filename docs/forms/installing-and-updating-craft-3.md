@@ -4,7 +4,7 @@ Sprout Forms installation and update instructions for Craft 3.
 
 ## Requirements
 
-* Craft CMS 3.0.0 or a more recent version of Craft
+* Craft CMS 3.3.0 or a more recent version of Craft
 
 ## Installation via Plugin Store
 
@@ -33,7 +33,7 @@ Read over the [Changes in Craft 3](https://docs.craftcms.com/v3/changes-in-craft
 
 ``` twig Craft 3
 <form method="post" accept-charset="utf-8" enctype="multipart/form-data">
-	{{ getCsrfInput() }}
+	{{ csrfInput() }}
 	<input type="hidden" name="action" value="sprout-forms/entries/save-entry">
 	{{ redirectInput("/contact?message=thankyou") }}
 	<input type="hidden" name="handle" value="formHandle">
@@ -129,6 +129,18 @@ Where `field` is a Form Field model:
 
 :::
 
+### Notification Email Changes
+
+The default Notification Email will now exclude several fields that may include sensitive or irrelevant information for a Notification Email. These fields include:
+
+- Custom HTML
+- Hidden Field
+- Invisible Field
+- Private Notes Field
+- Section Heading Field
+
+If you require these fields to be displayed in a Notification Email or wish to update the logic around which of them that do, you will need to override the default template and customize it to your needs. See [this response](https://craftcms.stackexchange.com/a/29650/115) on Stack Exchange for more info.
+
 ## Upgrading to Forms 3.4.1
 
 Sprout Forms v3.4.1 introduces a handful of changes to make the Integrations API more flexible for custom Integrations. The general Integration architecture has stayed the same but several methods have been renamed. Please be sure to test any Custom Integrations while upgrading to 3.4.1 and consider the following changes:
@@ -146,3 +158,97 @@ Sprout Forms v3.4.1 introduces a handful of changes to make the Integrations API
 - Renamed `prepareFieldMapping` => `refreshFieldMapping` and moved to base Integration class init method
 - Renamed `resolveFieldMapping` => `getTargetIntegrationFieldValues` and moved to base Base Integration class
 - Renamed IntegrationTrait property `entry` => `formEntry`
+
+## Upgrading to Forms v3.5.0
+
+Sprout Forms v3.5.0 adds support for Field Rules and includes updates to the Form Templates and Email Templates to support the new conditional behavior. In addition, Form Templates have been optimized to simplify the amount of javascript required in the templates. Form Templates and all javascript can still be customized however you need.
+
+If your Forms use the Form Templates and Email Templates provided by Sprout Forms, no updates are needed. For Forms using custom Form Templates:
+
+### Form Templates
+
+Several updates have been made to the Form Templates to optimize the javascript used in the templates and add support for Field Rules.
+
+#### Added support for rules
+
+``` twig
+ADDED RULES VARIABLE
+{%- set rules = form.getRules() -%}
+
+ADDED RULES DATA ATTRIBUTE
+<form method="post" accept-charset="utf-8" enctype="multipart/form-data"
+    {%- if id %} id="{{ id }}"{% endif -%}
+    {%- if class %} class="{{ class -}}{%- if errors %} {{ errorClass }}{% endif -%}"{% endif -%}
+    data-rules="{{ rules|json_encode|raw|e('html') }}"
+>
+```
+
+#### Updated javascript
+
+The latest form templates remove most JS from the templates and now include it via files. JS classes that require initialization have been simplified to only require the ID. The JS has also been updated to set the CSRF token name. The CSRF token value will be retrieved dynamically as necessary.
+
+``` twig
+OLD
+<script>
+// ... Lots of JS
+</script>
+
+NEW
+{%- set accessibilityJsUrl = view.getAssetManager().getPublishedUrl(
+    '@sproutforms/web/assets/formtemplates/dist/js/accessibility.js',
+    true) -%}
+{%- do view.registerJsFile(accessibilityJsUrl, {
+    position: 3
+}) -%}
+
+{%- set rulesJsUrl = view.getAssetManager().getPublishedUrl(
+    '@sproutforms/web/assets/formtemplates/dist/js/rules.js',
+    true) -%}
+{%- do view.registerJsFile(rulesJsUrl) -%}
+
+{%- set addressFieldJsUrl = view.getAssetManager().getPublishedUrl(
+    '@sproutforms/web/assets/formtemplates/dist/js/addressfield.js',
+    true) -%}
+{%- do view.registerJsFile(addressFieldJsUrl) -%}
+
+{% js at endBody %}
+    (function() {
+    window.csrfTokenName = "{{ craft.app.getConfig().getGeneral().csrfTokenName|e('js') }}";
+    new SproutFormsAddressField('{{ id }}');
+    new SproutFormsCheckableInputs('{{ id }}');
+    new SproutFormsRules('{{ id }}');
+    })();
+{% endjs -%}
+```
+
+### Email Templates
+
+Email Templates can now check if a field is hidden by a field rule:
+
+``` twig
+OLD
+{% for field in fields if not field.isPlainInput() %}
+
+NEW
+{% for field in fields if not field.isPlainInput() and not entry.getIsFieldHiddenByRule(field.handle) %}
+```
+
+### Other changes
+
+- Removed `barrelstrength\sproutforms\elements\Form::deleteById()`. Use Elements Service `deleteElementById` instead.
+- Removed `barrelstrength\sproutforms\web\twig\variables\getIntegrationById()`. Use Integrations service via Template API instead.
+
+Custom integrations may also need to update how they initialize the target field column in the Field Mapping table:
+
+``` twig
+// OLD
+new Craft.SproutForms.Integration({
+  integrationType: '{{ className(integration)|e('js') }}'
+});
+
+// NEW
+new SproutFormsIntegration({
+  integrationType: '{{ className(integration)|e('js') }}'
+});
+```
+    

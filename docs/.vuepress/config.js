@@ -61,6 +61,7 @@ module.exports = {
                         'entries',
                         'notifications',
                         'reports',
+                        'conditional-rules',
                         'integrations',
                         'importing-data',
                         'plugin-settings'

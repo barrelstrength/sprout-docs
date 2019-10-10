@@ -182,7 +182,7 @@ The [form tag](./forms.md) and the [getEntry tag](./entries.md) must be used tog
 {% set submittedEntry = craft.sproutForms.getEntry(form) %}
 
 <form method="post" accept-charset="UTF-8">
-    {{ getCsrfInput() }}
+    {{ csrfInput() }}
     <input type="hidden" name="action" value="sprout-forms/entries/save-entry">
     <input type="hidden" name="handle" value="{{ form.handle }}">
     {{ redirectInput(form.redirectUri) }}
