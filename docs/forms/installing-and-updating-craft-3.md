@@ -257,4 +257,106 @@ new SproutFormsIntegration({
   integrationType: '{{ className(integration)|e('js') }}'
 });
 ```
+
+### Updating to Forms v3.6.0
+
+This release adds several improvements to Spam workflows and has touched on several areas of the Entry Submission workflow. Some breaking changes have been introduced so users with more custom form implementations will want to review what has changed to get things updated properly. 
+
+### Form Templates
+
+Custom Form Templates will need to update the class name used in the default conditional logic to correctly hide fields used in conditional logic rules. 
+
+``` twig
+OLD
+{% css %}
+    .hidden{
+    display: none !important;
+    }
+{% endcss %}
+
+NEW
+{% css %}
+    .sprout-hidden{
+    display: none !important;
+    }
+{% endcss %}
+```
+
+### Entry Queries using Status Handles
+
+The `statusHandle` attribute has been removed as the same behavior is available via the Element `status` attribute.
+  
+``` twig
+OLD
+{% for formEntry in craft.sproutForms.entries
+  .formHandle('contact')
+  .statusHandle('pending')
+  .all() %}
+  {{ formEntry.title }}
+{% endfor %}
+
+NEW
+{% for formEntry in craft.sproutForms.entries
+  .formHandle('contact')
+  .status('pending')
+  .all() %}
+  {{ formEntry.title }}
+{% endfor %}
+```
+
+### Custom Captchas
+
+The Captcha API has been updated. 
+
+``` php
+OLD (OnBeforeSaveEntryEvent)
+$event->isValid = true;
+$event->fakeIt = true;
+$event->entry->addError(Entry::CAPTCHA_ERRORS_KEY, $errorMessage);
+
+NEW (OnBeforeValidateEntryEvent)
+// isValid is now handled by checking for Errors on the model
+// fakeIt is now handled via the 'Spam Redirect Behavior' setting in the CP
+$this->addError(self::CAPTCHA_ERRORS_KEY, $errorMessage);
+```
+
+Previously, captcha validation ran during the `OnBeforeSaveEntryEvent` Event and used the `isValid` and `fakeIt` attributes on the event to control the flow of how the rest of the request got processed. Now, the active Captchas get processed on the `OnBeforeValidateEntryEvent` Event, errors are added to the Captcha models, and the Captcha models are added to the `Entry::captchas` attribute. This gives us a lot more flexibility on how to give the user control over this workflow in the CP and how we track errors when entries are flagged as Spam.
+
+### Events
+
+#### OnBeforePopulateEntryEvent
+
+The `isValid` and `fakeIt` attributes have been removed as they were never used in the validation workflow.
+
+``` php
+REMOVED
+$event->isValid
+$event->fakeIt
+```
+
+#### OnBeforeValidateEntryEvent
+
+The `isValid` and `fakeIt` attributes have been removed as they were never used in the validation workflow.
+
+``` php
+REMOVED
+$event->isValid
+$event->fakeIt
+```
+
+#### OnBeforeSaveEntryEvent
+
+The `fakeIt` attribute has been removed as it is not longer used in the validation workflow. Use the 'Spam Redirect Behavior' setting instead. The `isValid` and `errors` attributes remain on this event and can be used by developers as a final opportunity to add custom validation behavior.
+
+``` php
+REMOVED
+$event->fakeIt
+```
+
+
+			
+
+
+
+
     
