@@ -2,6 +2,15 @@
 
 Frequently asked questions about Sprout Forms.
 
+## I am using the available Captchas but I am still getting SPAM!
+
+Spam strategies are always evolving and sometimes the conventions you use on your website will also need to evolve. The default options provided don't depend on third-party services however, often, third-party services have a larger network of data to work with to provide effective spam prevention measures.
+
+- [Google ReCAPTCHA for Sprout Forms](https://plugins.craftcms.com/sprout-forms-google-recaptcha). If you continue to see spam after implementing ReCAPTCHA with the default settings, there is a setting to increase the security level. 
+- Cloudflare offers several [Site Protection Options](https://support.cloudflare.com/hc/en-us/articles/115002059131-Understanding-your-Site-Protection-Options), some of which are free, if you route your DNS through Cloudflare
+
+To better understand your spam traffic, you can enable Spam tracking and Sprout Forms will log all Failed Captcha error messages as well as capture meta information about each submission such as Remote IP Address, Referrer URL, and User Agent. The Spam Log report provides an overview of all of this information that can be used to analyze the data and detect trends.
+
 ## How do I validate an Email Address, Phone Number, or URL?
 
 ### Craft 3
