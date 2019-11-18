@@ -24,6 +24,7 @@ As you need more fine-grained control over your forms and form workflows, you ha
 - Form Entry Titles
 - Form Entry Workflow Statuses
 - How you save your form data
-- Where you submit your form data (API Integrations)
+- Where you submit your form data ([Integrations](./integrations.md))
+- Spam Protection
 - Reporting
 - Importing and Exporting data 
