@@ -23,6 +23,12 @@ Sprout Forms installation and update instructions for Craft 3.
 Make sure you have updated to the latest version of Sprout Forms 2.x before updating to Sprout Forms 3.x for Craft 3
 :::
 
+### Form Field changes
+
+In Craft 2, Sprout Forms extended the Craft Field Layout Editor and allowed you to add any field that Craft supported to a Form. While you could add any field on the back-end, Sprout only supported output the HTML for a subset of the fields on the front-end. In particular, more advanced fields like the Matrix had to supported manually in the templates.
+
+In Craft 3, Sprout Forms added a new Form Field API that now requires Form Fields to have both front-end and back-end support. If you happen to be using a more advanced field type that was supported by Craft but not by Sprout Forms in Craft 2, you may need to develop a [Custom Form Field](./custom-form-fields.md) to support that field in Craft 3.
+
 ### Template Changes
 
 Read over the [Changes in Craft 3](https://docs.craftcms.com/v3/changes-in-craft-3.html) for a general overview of things that have changed. These changes have affected Sprout Forms in several ways and if you have built any Forms with custom HTML you will likely need to update your code.
