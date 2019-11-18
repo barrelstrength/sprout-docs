@@ -5,7 +5,7 @@ Global Metadata is managed from the Globals tab and filled out once when you set
 ## Website Identity
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobals() %}
+{% set globals = craft.sproutSeo.getGlobalMetadata() %}
 {% set identity = globals.identity %}
 
 {{ identity.name }}
@@ -41,7 +41,7 @@ Global Metadata is managed from the Globals tab and filled out once when you set
 ## Contacts
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobals() %}
+{% set globals = craft.sproutSeo.getGlobalMetadata() %}
 {% set contacts = globals.contacts %}
 
 {% for contact in contacts %}
@@ -67,7 +67,7 @@ You can display a list of the Contacts from your Global Sprout SEO settings on y
 ## Social Profiles
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobals() %}
+{% set globals = craft.sproutSeo.getGlobalMetadata() %}
 {% set social = globals.social %}
 
 {% for social in socials %}
@@ -93,7 +93,7 @@ You can display a list of the Social Profiles in your Global Sprout SEO settings
 ## Verify Ownership
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobals() %}
+{% set globals = craft.sproutSeo.getGlobalMetadata() %}
 {% set ownership = globals.ownership %}
 
 {% for item in ownership %}
@@ -106,7 +106,7 @@ You can display a list of the Social Profiles in your Global Sprout SEO settings
 ## Customization
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobals() %}
+{% set globals = craft.sproutSeo.getGlobalMetadata() %}
 {% set settings = globals.settings %}
 
 {{ settings.seoDivider }}
@@ -121,7 +121,7 @@ You can display a list of the Social Profiles in your Global Sprout SEO settings
 ## Robots
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobals() %}
+{% set globals = craft.sproutSeo.getGlobalMetadata() %}
 {% set robots = globals.robots %}
 
 {% for key,enabled in robots %}
