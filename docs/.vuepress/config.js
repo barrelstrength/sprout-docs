@@ -63,6 +63,7 @@ module.exports = {
                         'reports',
                         'conditional-rules',
                         'integrations',
+                        'spam-protection',
                         'importing-data',
                         'plugin-settings'
                     ]
