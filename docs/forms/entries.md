@@ -81,7 +81,7 @@ The `entries` tag will let you get all entries for a specific form.
 
 {% for formEntry in craft.sproutForms.entries
   .formHandle('contact')
-  .statusHandle('pending')
+  .status('pending')
   .all() %}
   {{ formEntry.title }}
 {% endfor %}
@@ -111,7 +111,7 @@ The `entries` tag will let you get all entries for a specific form.
   {{ formEntry.title }}
 {% endfor %}
 
-{% for formEntry in craft.sproutForms.entries.formHandle('contact').statusHandle('pending') %}
+{% for formEntry in craft.sproutForms.entries.formHandle('contact').status('pending') %}
   {{ formEntry.title }}
 {% endfor %}
 ```

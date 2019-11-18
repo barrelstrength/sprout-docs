@@ -17,7 +17,6 @@ Customize the details of your Form fields, templates, and workflows with the fol
 Forms are submitted anonymously by users, so unlike Entries which have Authors, you will need to manage and authenticate any users who are editing your front-end Forms.
 :::
 
-
 ## Spam Protection
 
 - **Spam Redirect Behavior** – The behavior your user will see if a submission is flagged as spam. **Redirect as normal** will simulate a successful submission and direct the user to the Redirect Page. **Redirect back to form** will return the user to the form. All failed captchas are logged on the Spam Entries saved in the database.
@@ -40,7 +39,7 @@ You can enable or disable each captcha in the global settings or add support for
 
 ## Entry Statuses
 
-By default, Form Entries default to an **Unread** status and can be updated and marked **Read**. Customize the available Entry Statuses to fit your workflows.
+By default, Form Entries default to an **Unread** status and can be updated and marked **Read**. Entries that trigger Captcha errors will be given the **Spam** status. Rename the default statuses or customize additional Entry Statuses to fit your workflows in the settings.
 
 ----
 
