@@ -27,12 +27,15 @@ Each Redirect has 4 settings, tracks the count of how many times it was used, an
 
 Redirects can be updated via bulk actions by selecting the checkboxes next to each Redirect on the Redirect listing page. Currently supported bulk actions include: 
 
-- Update Status to Enabled
-- Update Status to Disabled
-- Update Method to 301
-- Update Method to 302
-- Edit (if only one item is selected)
-- Delete
+| Bulk Action      | Description |
+|:---------------- |:----------- |
+| **Update&nbsp;Status&nbsp;to&nbsp;Enabled** | Updates a Redirect status to 'Enabled' |
+| **Update&nbsp;Status&nbsp;to&nbsp;Disabled** | Updates a Redirect status to 'Disabled' |
+| **Update&nbsp;Method&nbsp;to&nbsp;301** | Updates a Redirect Method to a 301 Redirect |
+| **Update&nbsp;Method&nbsp;to&nbsp;302** | Updates a Redirect Method to a 302 Redirect |
+| **Add&nbsp;to&nbsp;Excluded&nbsp;URLs** | Adds an Old URL to the `Settings->Redirects->Excluded URL Patterns` setting.<br><br> _This action only appears when 404 Redirects are selected._ |
+| **Edit** | Opens a Redirect's Edit page in the Control Panel.<br><br> _This action only appears when a single Redirect is selected._ |
+| **Delete** | Deletes a Redirect. |
 
 ## Regular Expressions
 

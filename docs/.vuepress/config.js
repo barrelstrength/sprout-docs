@@ -220,6 +220,13 @@ module.exports = {
                     ]
                 },
                 {
+                    title: 'Examples',
+                    collapsable: false,
+                    children: [
+                        'query-strings-in-redirects'
+                    ]
+                },
+                {
                     title: 'Installing & Updating',
                     collapsable: false,
                     children: [
