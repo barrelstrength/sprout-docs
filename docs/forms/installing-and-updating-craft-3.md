@@ -269,14 +269,14 @@ Custom Form Templates will need to update the class name used in the default con
 ``` twig
 OLD
 {% css %}
-    .hidden{
+    .hidden {
     display: none !important;
     }
 {% endcss %}
 
 NEW
 {% css %}
-    .sprout-hidden{
+    .sprout-hidden {
     display: none !important;
     }
 {% endcss %}
@@ -346,7 +346,7 @@ $event->fakeIt
 
 #### OnBeforeSaveEntryEvent
 
-The `fakeIt` attribute has been removed as it is not longer used in the validation workflow. Use the 'Spam Redirect Behavior' setting instead. The `isValid` and `errors` attributes remain on this event and can be used by developers as a final opportunity to add custom validation behavior.
+The `fakeIt` attribute has been removed as it is not longer used in the validation workflow. Use the 'Spam Redirect Behavior' setting instead. The `isValid` and `errors` attributes remain on this event and can be used by developers as a final opportunity to add custom validation behavior. However, it is recommended to create a Custom Captcha and add errors to the Captcha model when `verifySubmission` is validated.
 
 ``` php
 REMOVED
