@@ -62,8 +62,8 @@ Here is a simple, hard-coded example of each tag in use for a two-column report:
 
 {# addRows, accepts an array of arrays, where each array includes a comma-separated list of values. Note that there are two levels of opening and closing square brackets. #}
 {% do craft.sproutReports.addRows([
-	['North America', 'John Muir Trail'],
-	['Asia', 'Langtang Trek']
+    ['North America', 'John Muir Trail'],
+    ['Asia', 'Langtang Trek']
 ]) %}
 ```
 
@@ -82,27 +82,27 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 ``` twig Craft 3
 {# Number Setting #}
 {{ forms.textField({
-	label: "Limit"|t,
-	name: "limit",
-	size: 10,
-	value: settings.quantity is defined ? settings.quantity : null,
-	first: true
+    label: "Limit"|t,
+    name: "limit",
+    size: 10,
+    value: settings.quantity is defined ? settings.quantity : null,
+    first: true
 }) }}
 
 {# Pre-defined Dropdown #}
 {{ forms.selectField({
-	label: "Region"|t,
-	name: "region",
-	options: {
-		"africa" : "Africa",
-		"antartica" : "Antartica",
-		"asia" : "Asia",
-		"australia" : "Australia",
-		"europe" : "Europe",
-		"northAmerica" : "North America",
-		"southAmerica" : "South America"
-	},
-	value: settings.region is defined ? settings.region : "Antartica"
+    label: "Region"|t,
+    name: "region",
+    options: {
+        "africa" : "Africa",
+        "antartica" : "Antartica",
+        "asia" : "Asia",
+        "australia" : "Australia",
+        "europe" : "Europe",
+        "northAmerica" : "North America",
+        "southAmerica" : "South America"
+    },
+    value: settings.region is defined ? settings.region : "Antartica"
 }) }}
 
 {# Dynamic Dropdown #}
@@ -126,27 +126,27 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 ``` twig Craft 2
 {# Number Setting #}
 {{ forms.textField({
-	label: "Limit"|t,
-	name: "limit",
-	size: 10,
-	value: options.quantity is defined ? options.quantity : null,
-	first: true
+    label: "Limit"|t,
+    name: "limit",
+    size: 10,
+    value: options.quantity is defined ? options.quantity : null,
+    first: true
 }) }}
 
 {# Pre-defined Dropdown #}
 {{ forms.selectField({
-	label: "Region"|t,
-	name: "region",
-	options: {
-		"africa" : "Africa",
-		"antartica" : "Antartica",
-		"asia" : "Asia",
-		"australia" : "Australia",
-		"europe" : "Europe",
-		"northAmerica" : "North America",
-		"southAmerica" : "South America"
-	},
-	value: options.region is defined ? options.region : "Antartica"
+    label: "Region"|t,
+    name: "region",
+    options: {
+        "africa" : "Africa",
+        "antartica" : "Antartica",
+        "asia" : "Asia",
+        "australia" : "Australia",
+        "europe" : "Europe",
+        "northAmerica" : "North America",
+        "southAmerica" : "South America"
+    },
+    value: options.region is defined ? options.region : "Antartica"
 }) }}
 
 {# Dynamic Dropdown #}
@@ -197,10 +197,10 @@ In this example we use our settings to retrieve a CategoryModel and then use tha
 
 {# Loop through our trips and output the Region and Trip Name for each result #}
 {% for trip in trips %}
-	{% do craft.sproutReports.addRow([
-  	trip.relatedCategory.first().title, 
-		trip.title
-	]) %}
+    {% do craft.sproutReports.addRow([
+        trip.relatedCategory.first().title, 
+        trip.title
+    ]) %}
 {% endfor %}
 ```
 
@@ -213,10 +213,10 @@ In this example we use our settings to retrieve a CategoryModel and then use tha
 
 {# Loop through our trips and output the Region and Trip Name for each result #}
 {% for trip in trips %}
-	{% do craft.sproutReports.addRow([
-  	trip.relatedCategory.first().title, 
-		trip.title
-	]) %}
+    {% do craft.sproutReports.addRow([
+        trip.relatedCategory.first().title, 
+        trip.title
+    ]) %}
 {% endfor %}
 ```
 

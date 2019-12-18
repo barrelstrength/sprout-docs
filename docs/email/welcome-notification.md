@@ -7,12 +7,12 @@ Create a Notification with two custom fields:
 
 Sets up a template for the HTML and Text versions of the notification email:
 
-**_emails/notification.html**
+**_emails/email.twig**
 ``` twig
 <body>{{ email.htmlBody }}</body>
 ```
 
-**_emails/notification.txt**
+**_emails/email.txt**
 ``` twig
 {{ email.textBody }}
 ```

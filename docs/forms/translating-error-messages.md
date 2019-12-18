@@ -1,12 +1,24 @@
 # Translating Error Messages
 
-If you need to translate your Form error messages, currently, you will need to setup your Forms using custom HTML and prepare translations using translation files.  Craft has a helpful How To article: [How can I translate static text in my templates?](https://craftcms.com/support/static-translations).
+If you need to translate your Form error messages, currently, you will need to use [static translations](https://craftcms.com/support/static-translations).
 
 Let's look at a brief overview of this method in the context of the Form plugin.
 
 1) Wrap your error messages in the translate filter
 
-``` twig
+::: code
+
+``` twig Craft 3
+{% if errors -%}
+    <ul class="errors">
+        {% for error in errors %}
+            <li>{{ error|t('site') }}</li>
+        {% endfor %}
+    </ul>
+{% endif -%}
+```
+
+``` twig Craft 2
 {{ error|translate }}
 
 {# You can abbreviate the translate filter with a 't' #}
@@ -24,17 +36,29 @@ Let's look at a brief overview of this method in the context of the Form plugin.
 	{% endif %}
 {% endmacro %}
 ```
+:::
 
 2) Add a `translations` folder to your project
 
+::: code
+
+``` text{3} Craft 3
+config 
+storage
+translations
+vendor
+web
 ```
+
+``` text{5} Craft 2
 craft/app
 craft/config
 craft/plugins
 craft/storage
-craft/translations **
+craft/translations
 public
 ```
+:::
 
 3) Add a locale-specific translation file to your project
 

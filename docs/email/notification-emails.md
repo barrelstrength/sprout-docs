@@ -36,11 +36,11 @@ For example, if your Notification Entry Template name is:
 _emails/notification
 ```
 
-Sprout Email will look for the following two templates in your templates folder:
+Sprout Email will look for the following two templates in your templates folder. Your email template files must be named `email`.:
 
 ```
-templates/_emails/notification.html
-templates/_emails/notification.txt
+_emails/notification/_emails/email.twig (.html, etc.)
+_emails/notification/_emails/email.txt
 ```
 
 ## Email Settings
@@ -70,40 +70,3 @@ File Attachments can be enabled in the Notification Email's Event settings. When
 ::: warning
 Large file attachments may cause Email Notifications to end up in spam filters or not be sent at all. Alternatively, consider sending Notification Emails with a link to the assets you wish to share.
 :::
-
-## Notification Events
-
-Sprout Email supports several common Notification Events. For more specific scenarios, developers can add support for [Custom Notification Events](./custom-notification-events.md).
-
-### Craft
-
-| Event                              | Event Object  |
-|:---------------------------------- |:---------------- |
-| When a new entry is created        | Entry |
-| When an existing entry is updated  | Entry |
-| When a new user is created         | User |
-| When a existing user is updated    | User |
-| When a user is activated           | User |
-| When a user is deleted             | User |
-| When a user logs in                | User |
-
-### Craft Commerce
-
-| Event                              |  Event Object |
-|:---------------------------------- |:---------------- |
-| When a Craft Commerce order is completed      | Commerce Order |
-| When a Craft Commerce order status is changed | Commerce Order, Commerce OrderHistory |
-| When a Craft Commerce transaction is saved    | Commerce Transaction |
-
-### Sprout Plugins
-
-| Event                              |  Event Object |
-|:---------------------------------- |:---------------- |
-| When a Sprout Form Entry is submitted      | Form Entry |
-
-
-::: tip
-If you need a Custom Notification Event, we are available for hire.
-
-Contact us: [sprout@barrelstrengthdesign.com](mailto:sprout@barrelstrengthdesign.com)
-::: 
