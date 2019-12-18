@@ -4,3 +4,4 @@
 /vendor
 /web
 composer.lock
+/.ddev
