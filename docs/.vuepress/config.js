@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Sprout Documentation',
   description: 'The Sprout Business Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.',
-  theme: 'craftdocs',
+  // theme: 'craftdocs',
   base: '/docs/',
   ga: '',
   plugins: [
@@ -11,6 +11,12 @@ module.exports = {
     }
     ]
   ],
+  markdown: {
+    anchor: {level: [2, 3]},
+    extendMarkdown: md => {
+      md.use(require('./markdown/code'));
+    }
+  },
   themeConfig: {
     docsRepo: 'barrelstrength/sprout-docs',
     docsDir: 'docs',
@@ -36,7 +42,6 @@ module.exports = {
           {text: 'Sprout Redirects', link: '/redirects/'},
           {text: 'Sprout Sitemaps', link: '/sitemaps/'},
           {text: 'Sprout Email', link: '/email/'},
-          {text: 'Sprout Campaigns', link: '/campaigns/'},
           {text: 'Sprout Reports', link: '/reports/'},
           {text: 'Sprout Import', link: '/import/'},
           {text: '–', link: ''},
@@ -98,6 +103,7 @@ module.exports = {
           title: 'Examples',
           collapsable: false,
           children: [
+            'caching-and-csrf-tokens',
             'front-end-file-uploads',
             'hidden-fields',
             'pre-populating-a-field',
@@ -106,6 +112,7 @@ module.exports = {
             'thank-you-page',
             'submitting-a-form-via-ajax',
             'submission-limit',
+            'translating-forms',
             'translating-error-messages'
           ]
         },
@@ -283,7 +290,8 @@ module.exports = {
           title: 'Introduction',
           collapsable: false,
           children: [
-            ''
+            '',
+            'troubleshooting-email-faq'
           ]
         },
         {
@@ -291,6 +299,7 @@ module.exports = {
           collapsable: false,
           children: [
             'notification-emails',
+            'notification-events',
             'sent-emails',
             'plugin-settings'
           ]
@@ -395,6 +404,7 @@ module.exports = {
           title: 'Examples',
           collapsable: false,
           children: [
+            'html-vs-csv-reports',
             'large-reports',
             'sql-queries'
           ]
@@ -726,13 +736,6 @@ module.exports = {
           ]
         }
       ]
-    }
-  },
-  markdown: {
-    anchor: {level: [2, 3]},
-    config(md) {
-      let markup = require('vuepress-theme-craftdocs/markup');
-      md.use(markup);
     }
   }
 };
