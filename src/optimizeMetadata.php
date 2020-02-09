@@ -60,28 +60,28 @@ class Optimize
             $i++;
 
             // create <url> element
-            $url = $dom->createElement("url");
+            $url = $dom->createElement('url');
 
             // Add <loc> to <url>
-            $loc = $dom->createElement("loc");
+            $loc = $dom->createElement('loc');
             $locText = $dom->createTextNode($this->pageUrl);
             $loc->appendChild($locText);
             $url->appendChild($loc);
 
             // Add <lastmod> to <url>
-            $lastmod = $dom->createElement("lastmod");
+            $lastmod = $dom->createElement('lastmod');
             $lastmodText = $dom->createTextNode(date('c', time()));
             $lastmod->appendChild($lastmodText);
             $url->appendChild($lastmod);
 
             // Add <changefreq> to <url>
-            $changefreq = $dom->createElement("changefreq");
+            $changefreq = $dom->createElement('changefreq');
             $changefreqText = $dom->createTextNode($this->config['sitemap']['changefreq']);
             $changefreq->appendChild($changefreqText);
             $url->appendChild($changefreq);
 
             // Add <priority> to <url>
-            $priority = $dom->createElement("priority");
+            $priority = $dom->createElement('priority');
             $priorityText = $dom->createTextNode($this->config['sitemap']['priority']);
             $priority->appendChild($priorityText);
             $url->appendChild($priority);
@@ -96,7 +96,7 @@ class Optimize
 
         file_put_contents($docsDirectory.'/sitemap.xml', $dom->saveXML());
 
-        echo "Metadata added to ".$i." files.";
+        echo 'Metadata added to '.$i.' files.';
     }
 
     private function processFile($htmlPath)
