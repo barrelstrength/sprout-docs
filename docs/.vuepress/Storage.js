@@ -1,4 +1,4 @@
-import { siteData } from '@temp/siteData'
+import { siteData } from '@temp/internal/siteData'
 
 const storagePrefix = function() {
     let p = siteData.base.replace(/^\//, '').replace(/\/$/, '').replace(/\//g, '.');
