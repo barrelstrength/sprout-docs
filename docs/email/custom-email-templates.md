@@ -11,7 +11,7 @@ An Email Template class is quite simple and only requires that you define the na
 
 namespace mycompany\myplugin\integrations\sproutemail\emailtemplates;
 
-use barrelstrength\sproutbase\app\email\base\EmailTemplates;
+use barrelstrength\sproutbaseemail\base\EmailTemplates;
 use Craft;
 
 class MyEmailTemplates extends EmailTemplates
@@ -36,7 +36,7 @@ Once you have created your Custom Email Templates, register you Email Template c
 namespace mycompany\myplugin;
 
 use mycompany\myplugin\integrations\sproutemail\emailtemplates\MyEmailTemplates;
-use barrelstrength\sproutbase\app\email\services\Email;
+use barrelstrength\sproutbaseemail\services\EmailTemplates;
 use craft\events\RegisterComponentTypesEvent;
 use yii\base\Event;
 

@@ -20,7 +20,7 @@ The `sprout/import/run` command allows you to queue one or more file imports.
 
 ```
 ./craft sprout-import/seed/generate --element="craft\elements\Entry" --settings="channel=news" --quantity="3"
-./craft sprout-import/seed/generate --element="barrelstrength\sproutbase\app\import\importers\elements\Entry" --settings="channel=news" --quantity="3"
+./craft sprout-import/seed/generate --element="barrelstrength\sproutbaseimport\importers\elements\Entry" --settings="channel=news" --quantity="3"
 ```
 
 The `sprout-import/seed/generate` command allows you to seed data to supported Elements.
