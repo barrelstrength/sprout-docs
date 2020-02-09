@@ -389,7 +389,8 @@ module.exports = {
           collapsable: false,
           children: [
             'data-sources',
-            'reports'
+            'reports',
+            'mailing-lists'
           ]
         },
         {
@@ -618,6 +619,13 @@ module.exports = {
             'lists',
             'subscribers',
             'settings'
+          ]
+        },
+        {
+          title: 'Mailing Lists',
+          collapsable: false,
+          children: [
+            'subscriber-list-data-source'
           ]
         },
         {

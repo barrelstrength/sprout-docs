@@ -11,3 +11,7 @@ In the following example, the Start Date and End Date values are included in the
 ### Active Users: November 18, 2017 - December 19, 2017
 
 ![Edit a Report](./../images/reports/edit-report-settings.png)
+
+### Mailing List
+
+Make a report a Mailing List by defining the `Email Column` setting. Read more about [Mailing Lists](./mailing-lists.md). 

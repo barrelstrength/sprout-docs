@@ -35,8 +35,6 @@ public static function displayName(): string
 }
 ```
 
-
-
 ## Upgrading to Craft 3
 
 ::: warning BEFORE YOU UPDATE
@@ -72,3 +70,8 @@ Until Craft Commerce 2 is released and we get around to updating the `Sprout Rep
 ## Custom Reports
 
 If you have any custom reports, you'll need to write a migration to get them updated to Craft 3. Please refer to the `Sprout Reports - Categories` and `Sprout Reports - Users` plugins Install migrations for examples.
+
+## Upgrading to Reports v1.3.0
+
+If you have the Users Data Source for Sprout Reports installed, when you update to Sprout Reports v1.3.0 your existing Users Reports will be migrated and you can safely uninstall and remove the Users Data Source plugin after the upgrade is complete.
+
