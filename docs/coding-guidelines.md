@@ -169,7 +169,7 @@ Many Sprout plugins share functionality and this code is managed in shared Yii M
 | barrelstrength/sprout-base-reports | Common reporting functionality |
 | barrelstrength/sprout-base-import | Common import functionality |
 | barrelstrength/sprout-base-fields | Common field functionality |
-| barrelstrength/sprout-base-lists | Common list functionality |
+| barrelstrength/sprout-lists | Common list functionality |
 | barrelstrength/sprout-base-redirects | Common sitemap functionality |
 | barrelstrength/sprout-base-sitemaps | Common redirects functionality |
 | barrelstrength/sprout-base-uris | Common URL-enabled Section functionality |

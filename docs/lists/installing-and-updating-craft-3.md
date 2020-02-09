@@ -64,7 +64,7 @@ Old:
 New:
 <form method="post" accept-charset="utf-8">
     {{ csrfInput() }}
-    <input type="hidden" name="action" value="sprout-base-lists/lists/add">
+    <input type="hidden" name="action" value="sprout-lists/lists/add">
     <input type="hidden" name="list[type]" value="barrelstrength\sproutbaselists\listtypes\MailingList">
     <input type="hidden" name="list[id]" value="123">
     <input type="text" name="subscription[email]" value="{{ currentUser.email }}">
@@ -88,7 +88,7 @@ Old:
 New:
 <form method="post" accept-charset="utf-8">
     {{ csrfInput() }}
-    <input type="hidden" name="action" value="sprout-base-lists/lists/remove">
+    <input type="hidden" name="action" value="sprout-lists/lists/remove">
     <input type="hidden" name="list[type]" value="barrelstrength\sproutbaselists\listtypes\MailingList">
     <input type="hidden" name="list[id]" value="123">
     <input type="text" name="subscription[email]" value="{{ currentUser.email }}">

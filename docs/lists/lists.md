@@ -39,7 +39,7 @@ Below is a full example of how give a user can Subscriber or Unsubscribe from a 
     {# Remove a subscriber from a list #}
     <form method="post" accept-charset="utf-8">
         {{ csrfInput() }}
-        <input type="hidden" name="action" value="sprout-base-lists/lists/remove">
+        <input type="hidden" name="action" value="sprout-lists/lists/remove">
         <input type="hidden" name="list[type]" value="barrelstrength\sproutbaselists\listtypes\MailingList">
         <input type="hidden" name="list[id]" value="123">
         <input type="text" name="subscription[email]" value="{{ currentUser.email }}">
@@ -51,7 +51,7 @@ Below is a full example of how give a user can Subscriber or Unsubscribe from a 
     {# Add a subscriber to a list #}
     <form method="post" accept-charset="utf-8">
         {{ csrfInput() }}
-        <input type="hidden" name="action" value="sprout-base-lists/lists/add">
+        <input type="hidden" name="action" value="sprout-lists/lists/add">
         <input type="hidden" name="list[type]" value="barrelstrength\sproutbaselists\listtypes\MailingList">
         <input type="hidden" name="list[id]" value="123">
         <input type="text" name="subscription[email]" value="{{ currentUser.email }}">
@@ -85,7 +85,7 @@ This means that Lists that target two different `elementId`s can use the same `l
     {# Remove a subscriber from a list #}
     <form method="post" accept-charset="utf-8">
         {{ csrfInput() }}
-        <input type="hidden" name="action" value="sprout-base-lists/lists/remove">
+        <input type="hidden" name="action" value="sprout-lists/lists/remove">
         <input type="hidden" name="list[type]" value="barrelstrength\sproutbaselists\listtypes\MailingList">
         <input type="hidden" name="list[elementId]" value="123">
         <input type="hidden" name="list[handle]" value="newsletter">
@@ -98,7 +98,7 @@ This means that Lists that target two different `elementId`s can use the same `l
     {# Add a subscriber to a list #}
     <form method="post" accept-charset="utf-8">
         {{ csrfInput() }}
-        <input type="hidden" name="action" value="sprout-base-lists/lists/add">
+        <input type="hidden" name="action" value="sprout-lists/lists/add">
         <input type="hidden" name="list[type]" value="barrelstrength\sproutbaselists\listtypes\MailingList">
         <input type="hidden" name="list[elementId]" value="123">
         <input type="hidden" name="list[handle]" value="newsletter">
@@ -116,7 +116,7 @@ When you add a Subscriber to a List you can optionally define their First and La
 ``` twig
 <form method="post" accept-charset="utf-8">
     {{ csrfInput() }}
-    <input type="hidden" name="action" value="sprout-base-lists/lists/add">
+    <input type="hidden" name="action" value="sprout-lists/lists/add">
     <input type="hidden" name="list[type]" value="barrelstrength\sproutbaselists\listtypes\MailingList">
     <input type="hidden" name="list[id]" value="123">
     <input type="text" name="subscription[email]" value="{{ currentUser.email }}">
