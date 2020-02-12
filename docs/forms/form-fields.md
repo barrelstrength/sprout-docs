@@ -23,20 +23,21 @@ Below is a list of each default Form Field. Some fields are exclusive to Sprout 
 
 |Sprout Forms | Sprout Fields | Craft CMS |
 |:----------- |:------------- |:--------- |
-| Address | [Address](/fields/address-field.md) | – |
 | Name | [Name](/fields/name-field.md) | – |
-| – | [Gender](/fields/gender-field.md) | – |
+| [Opt-in](./opt-in-field.md) | – | – |
 | Email | [Email](/fields/email-field.md) | Email |
 | [Email Dropdown](./email-dropdown-field.md) | – | – |
-| Phone | [Phone](/fields/phone-field.md) | Phone |
 | URL | [URL](/fields/url-field.md) | URL |
-| [Opt-in](./opt-in-field.md) | – | – |
+| Phone | [Phone](/fields/phone-field.md) | Phone |
+| Address | [Address](/fields/address-field.md) | – |
+| Date/Time | – | Date/Time |
+| – | [Gender](/fields/gender-field.md) | – |
 | Custom HTML | [Notes](/fields/notes-field.md) | – |
 | Private Notes | – | – |
 | Multi-Select | – | Multi-select |
+| Regex | [Regular Expression](/fields/regular-expression-field.md) | – |
 | [Hidden](./hidden-field.md) | [Predefined](/fields/predefined-field.md) | – |
 | [Invisible](./invisible-field.md) | [Predefined](/fields/predefined-field.md) | – |
-| Regex | [Regular Expression](/fields/regular-expression-field.md) | – |
 
 ### Relations Fields
 
