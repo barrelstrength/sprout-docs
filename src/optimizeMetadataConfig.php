@@ -3,8 +3,8 @@
 return [
     'baseUrl' => 'https://sprout.barrelstrengthdesign.com/docs',
     'selectors' => [
-        'title' => 'div[id="app"] div.content h1',
-        'description' => 'div[id="app"] div.content p'
+        'title' => 'div[id="app"] .theme-default-content h1',
+        'description' => 'div[id="app"] .theme-default-content p'
     ],
     'metadata' => [
         'siteName' => 'Sprout Documentation',

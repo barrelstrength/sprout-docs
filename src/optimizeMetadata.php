@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 
 require_once realpath(__DIR__.'/../vendor/autoload.php');
 
-use Sunra\PhpSimple\HtmlDomParser;
+use KubAT\PhpSimple\HtmlDomParser;
 use RecursiveIteratorIterator;
 use RecursiveDirectoryIterator;
 use DOMDocument;
@@ -107,15 +107,16 @@ class Optimize
 
         // Grab our metadata
         $siteName = $this->config['metadata']['siteName'];
-        $defaultDescription = $this->config['metadata']['siteName'];
+        $defaultDescription = $this->config['metadata']['description'];
         $defaultImage = $this->config['metadata']['image'];
 
         $currentTitle = $dom->find('title', 0);
+
         $firstH1 = $dom->find($this->config['selectors']['title']);
         $firstParagraph = $dom->find($this->config['selectors']['description']);
 
         // Remove the default description
-        $currentDescription = $dom->find("meta[name=description]", 0);
+        $currentDescription = $dom->find('meta[name=description]', 0);
 
         if ($currentDescription) {
             $currentDescription->outertext = '';

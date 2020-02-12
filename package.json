@@ -9,5 +9,8 @@
     "scripts": {
         "docs:dev": "vuepress dev docs",
         "docs:build": "vuepress build docs && php ./src/optimizeMetadata.php"
+    },
+    "dependencies": {
+        "vuepress-plugin-seo": "^0.1.2"
     }
 }

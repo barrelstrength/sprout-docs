@@ -21,7 +21,7 @@ Some useful commands while working with the docs:
 To generate metadata using the `php ./src/optimizeMetadata.php` script you will need to install the following package:
 
 ```
-composer require sunra/php-simple-html-dom-parser
+composer require kub-at/php-simple-html-dom-parser
 ```
 	
 ## Contributions

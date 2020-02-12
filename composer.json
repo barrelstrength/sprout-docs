@@ -9,6 +9,6 @@
     }
   },
   "require": {
-    "sunra/php-simple-html-dom-parser": "^1.5"
+    "kub-at/php-simple-html-dom-parser": "^1.9"
   }
 }
