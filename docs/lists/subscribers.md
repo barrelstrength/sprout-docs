@@ -10,7 +10,7 @@ See the [Enable User Sync](./settings.md) setting for more info.
 
 ## Templating
  
-### Get All Lists belonging to a specific Subscriber
+### Get all Lists belonging to a specific Subscriber
 
 ``` twig
 {% set subscriber = craft.sproutLists.subscribers
@@ -19,5 +19,19 @@ See the [Enable User Sync](./settings.md) setting for more info.
     
 {% for list in subscriber.getLists().all() %}
 	{{ list.name }}
+{% endfor %}
+```
+
+### Get all Subscribers on a given List
+
+The List ID can be found in the sidebar of the List edit page in the control panel.
+
+``` twig
+{% set subscribers = craft.sproutLists.subscribers
+    .listId(123)
+    .all() %}
+
+{% for subscriber in subscribers %}
+    {{ subscriber.email }}
 {% endfor %}
 ```
