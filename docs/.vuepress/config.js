@@ -579,6 +579,7 @@ module.exports = {
             'predefined-field',
             'predefined-date-field',
             'regular-expression-field',
+            'template-field',
             'url-field'
           ]
         },
