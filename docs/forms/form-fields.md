@@ -46,6 +46,7 @@ Below is a list of each default Form Field. Some fields are exclusive to Sprout 
 | Categories | – | Categories |
 | Entries | – | Entries |
 | Tags | – | Tags |
+| Users | – | Users |
 
 ## Field Settings
 
