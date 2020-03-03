@@ -65,7 +65,7 @@ In addition to the fields defined (or mapped) in the default Metadata settings y
 
 ![Element Metadata Meta Details Fields](../images/seo/sprout-seo-element-metadata-field-meta-details.png)
 
-#### Meta Details fields display within optional Matrix-style blocks
+#### Meta Details fields display as tabs
 
 ![Element Metadata Meta Details Fields](../images/seo/sprout-seo-field-layout-editable-fields.png)
 

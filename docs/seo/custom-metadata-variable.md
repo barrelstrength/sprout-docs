@@ -38,9 +38,6 @@ To manage the metadata that Sprout SEO generates as a custom variable in your te
   <meta name="{{ name }}" content="{{ value }}">
 {% endswitch %}
 {% endfor %}
-{% if meta.googlePlus is defined and meta.googlePlus %}
-  <link rel="publisher" href="{{ meta.googlePlus }}">
-{% endif %}
 {% for name, value in meta.robots %}
 {% switch name %}
 {% case "canonical" %}

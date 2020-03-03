@@ -34,11 +34,10 @@ The `meta` variable allows you to override metadata within templates. The `meta`
 
 #### section/_entry.twig (extends your layout)
 
-Below is an example of the values you can override.
+Below is an example of all of the values you can override.
 
 ``` twig
 {% do craft.sproutSeo.meta({ 
-    section: 'customSectionHandle',
     title: entry.title,
     description: entry.body|striptags|slice(0, 150),
     canonical: '',

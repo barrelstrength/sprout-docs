@@ -12,26 +12,28 @@ Global Metadata is managed from the Globals tab and filled out once when you set
 {{ identity.alternateName }}
 {{ identity.description }}
 
-{{ identity.image }} {# Image URL without transform #}
+{% set ogImage = craft.app.elements.getElementById(identity.image) %}
+{% if ogImage %}
+    {{ ogImage.getUrl() }}
+{% endif %}
+
 {{ identity.keywords }}
-{{ identity.url }}
 {{ identity.email }}
-{{ identity.telephone }}
+{{ identity.telephone.country }}
+{{ identity.telephone.phone }}
 {{ identity.latitude }}
 {{ identity.longitude }}
-{{ identity.foundingDate }}
+{{ identity.foundingDate.date }}
 {{ identity.priceRange }}
 
 {# Opening Hours Start on Sunday #}
 {% set days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] %}
-
 {% for day in identity.openingHours %}
-  {{ days[loop.index0] }} {{ day.open.time }}-{{ day.close.time }}
+    {{ days[loop.index0] }} {{ day.open.time }}-{{ day.close.time }}
 {% endfor %}
 
-{{ identity.organization }}
 {{ identity.address.countryCode }}
-{{ identity.address.administrativeArea }}
+{{ identity.address.administrativeAreaCode }}
 {{ identity.address.locality }}
 {{ identity.address.postalCode }}
 {{ identity.address.address1 }}
@@ -41,12 +43,12 @@ Global Metadata is managed from the Globals tab and filled out once when you set
 ## Contacts
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobalMetadata() %}
+{% set globals = craft.sproutSeo.getGlobalMetadata(currentSite) %}
 {% set contacts = globals.contacts %}
 
 {% for contact in contacts %}
-  {{ contact.type }}
-  {{ contact.telephone }}
+    {{ contact.contactType }}
+    {{ contact.telephone }}
 {% endfor %}
 ```
 
@@ -55,24 +57,24 @@ Global Metadata is managed from the Globals tab and filled out once when you set
 You can display a list of the Contacts from your Global Sprout SEO settings on your website using the `getContacts` tag:
 
 ``` twig
-{% set contacts = craft.sproutSeo.getContacts() %}
+{% set contacts = craft.sproutSeo.getContacts(currentSite) %}
 
 <ul>
-  {% for contact in contacts %}
-    <li><a href="tel:{{ contact.telephone }}">{{ contact.type }}</a></li>
-  {% endfor %}
+    {% for contact in contacts %}
+        <li><a href="tel:{{ contact.telephone }}">{{ contact.type }}</a></li>
+    {% endfor %}
 </ul>
 ```
 
 ## Social Profiles
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobalMetadata() %}
+{% set globals = craft.sproutSeo.getGlobalMetadata(currentSite) %}
 {% set social = globals.social %}
 
-{% for social in socials %}
-  {{ social.name }}
-  {{ social.url }}
+{% for profile in social %}
+    {{ profile.profileName }}
+    {{ profile.url }}
 {% endfor %}
 ```
 
@@ -81,7 +83,7 @@ You can display a list of the Contacts from your Global Sprout SEO settings on y
 You can display a list of the Social Profiles in your Global Sprout SEO settings on your website using the `getSocialProfiles` tag:
 
 ``` twig
-{% set socialProfiles = craft.sproutSeo.getSocialProfiles() %}
+{% set socialProfiles = craft.sproutSeo.getSocialProfiles(currentSite) %}
 
 <ul>
   {% for socialProfile in socialProfiles %}
@@ -93,7 +95,7 @@ You can display a list of the Social Profiles in your Global Sprout SEO settings
 ## Verify Ownership
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobalMetadata() %}
+{% set globals = craft.sproutSeo.getGlobalMetadata(currentSite) %}
 {% set ownership = globals.ownership %}
 
 {% for item in ownership %}
@@ -106,7 +108,7 @@ You can display a list of the Social Profiles in your Global Sprout SEO settings
 ## Customization
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobalMetadata() %}
+{% set globals = craft.sproutSeo.getGlobalMetadata(currentSite) %}
 {% set settings = globals.settings %}
 
 {{ settings.seoDivider }}
@@ -121,7 +123,7 @@ You can display a list of the Social Profiles in your Global Sprout SEO settings
 ## Robots
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobalMetadata() %}
+{% set globals = craft.sproutSeo.getGlobalMetadata(currentSite) %}
 {% set robots = globals.robots %}
 
 {% for key,enabled in robots %}
