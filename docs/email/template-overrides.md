@@ -4,11 +4,11 @@ Sprout Email gives you 100% control over your email templates using the Template
 
 ## Customizing Templates
 
-Once you have enabled Template Overrides, you can override two email files:
+Once you have enabled Template Overrides, you can override two email files. **Both files must be named 'email'. Files named something else will not be found**:
 
 | File        | Craft 3  | Craft 2  |
 |:----------- |:--------:|:--------:|
-| email.html  | required | required |
+| email.twig (or email.html)  | required | required |
 | email.txt   | optional | required |
 
 ::: tip
