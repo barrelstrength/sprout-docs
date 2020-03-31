@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => 'https://sprout.barrelstrengthdesign.com/docs',
+    'baseUrl' => 'https://sprout.barrelstrengthdesign.com/docs/craft-v2',
     'selectors' => [
         'title' => 'div[id="app"] .theme-default-content h1',
         'description' => 'div[id="app"] .theme-default-content p'
