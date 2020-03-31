@@ -2,7 +2,7 @@ module.exports = {
   title: 'Sprout Documentation',
   description: 'The Sprout Business Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.',
   // theme: 'craftdocs',
-  base: '/docs/',
+  base: '/docs/craft-v2/',
   ga: '',
   plugins: [
     [
@@ -20,7 +20,7 @@ module.exports = {
   themeConfig: {
     docsRepo: 'barrelstrength/sprout-docs',
     docsDir: 'docs/craft-v2',
-    docsBranch: 'develop',
+    docsBranch: 'craft-v2',
     editLinks: true,
     codeLanguages: {
       twig: 'Twig',
@@ -37,14 +37,14 @@ module.exports = {
       {
         text: 'Sprout Plugins',
         items: [
-          {text: 'Sprout for Craft 3', link: '/'},
-          {text: 'Sprout for Craft 2', link: '/craft-v2/'},
+          {text: 'Sprout for Craft 3', link: 'https://sprout.barrelstrengthdesign.com/docs'},
+          {text: 'Sprout for Craft 2', link: '/'},
         ]
       },
       {text: 'Back to Sprout →', link: 'https://sprout.barrelstrengthdesign.com/'},
     ],
     sidebar: {
-      '/craft-v2/forms/': [
+      '/forms/': [
         ['../', '← All Plugins'],
         {
           title: 'Introduction',
@@ -138,7 +138,7 @@ module.exports = {
         }
       ],
 
-      '/craft-v2/seo/': [
+      '/seo/': [
         ['../', '← All Plugins'],
         {
           title: 'Introduction',
@@ -199,7 +199,7 @@ module.exports = {
         }
       ],
 
-      '/craft-v2/email/': [
+      '/email/': [
         ['../', '← All Plugins'],
         {
           title: 'Introduction',
@@ -261,7 +261,7 @@ module.exports = {
         }
       ],
 
-      '/craft-v2/campaigns/': [
+      '/campaigns/': [
         ['../', '← All Plugins'],
         {
           title: 'Introduction',
@@ -288,7 +288,7 @@ module.exports = {
         }
       ],
 
-      '/craft-v2/reports/': [
+      '/reports/': [
         ['../', '← All Plugins'],
         {
           title: 'Introduction',
@@ -339,7 +339,7 @@ module.exports = {
         }
       ],
 
-      '/craft-v2/import/': [
+      '/import/': [
         ['../', '← All Plugins'],
         {
           title: 'Introduction',
@@ -430,7 +430,7 @@ module.exports = {
         }
       ],
 
-      '/craft-v2/active/': [
+      '/active/': [
         ['../', '← All Plugins'],
         {
           title: 'Introduction',
@@ -448,7 +448,7 @@ module.exports = {
         }
       ],
 
-      '/craft-v2/encode-email/': [
+      '/encode-email/': [
         ['../', '← All Plugins'],
         {
           title: 'Introduction',
@@ -466,7 +466,7 @@ module.exports = {
         }
       ],
 
-      '/craft-v2/fields/': [
+      '/fields/': [
         ['../', '← All Plugins'],
         {
           title: 'Introduction',
@@ -498,7 +498,7 @@ module.exports = {
         }
       ],
 
-      '/craft-v2/lists/': [
+      '/lists/': [
         ['../', '← All Plugins'],
         {
           title: 'Introduction',
@@ -532,7 +532,7 @@ module.exports = {
         }
       ],
 
-      '/craft-v2/notes/': [
+      '/notes/': [
         ['../', '← All Plugins'],
         {
           title: 'Introduction',
@@ -551,7 +551,7 @@ module.exports = {
       ],
 
       // fallback
-      '/craft-v2/': [
+      '/': [
         {
           title: 'Overview',
           collapsable: false,
