@@ -1,0 +1,7 @@
+# Caching & CSRF Tokens
+
+Many websites take steps to improve performance by caching web pages. However, be mindful when caching pages with Forms. Forms depend on a CSRF token for security. This CSRF token is required to be unique each time a form is submitted so you do not want to cache it.
+
+You can avoid this issue by dynamically loading the CSRF token or excluding the pages on your website with forms from being cached.
+ 
+ 

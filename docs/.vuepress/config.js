@@ -62,11 +62,8 @@ module.exports = {
             'entries',
             'notifications',
             'reports',
-            'conditional-rules',
             'integrations',
-            'spam-protection',
-            'importing-data',
-            'plugin-settings'
+            'importing-data'
           ]
         },
         {
@@ -83,7 +80,6 @@ module.exports = {
           title: 'Form Templates',
           collapsable: false,
           children: [
-            'default-form-templates',
             'template-overrides',
             'rendering-options'
           ]
@@ -109,10 +105,7 @@ module.exports = {
           title: 'Development',
           collapsable: false,
           children: [
-            'custom-form-templates',
             'custom-form-fields',
-            'custom-captchas',
-            'custom-integrations',
             'events-and-hooks'
           ]
         },
@@ -133,20 +126,14 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'divider',
-            'extending-a-base-layout',
-            'get-default-by-handle',
-            'get-optimized-meta',
-            'overriding-images'
+
           ]
         },
         {
           title: 'Sitemaps',
           collapsable: false,
           children: [
-            'sitemaps',
-            'custom-sections',
-            'large-sitemaps'
+
           ]
         }
       ],
@@ -167,7 +154,9 @@ module.exports = {
           children: [
             'global-metadata',
             'element-metadata-field',
-            'plugin-settings'
+            'redirects',
+            'sitemaps',
+            'plugin-settings',
           ]
         },
         {
@@ -184,7 +173,14 @@ module.exports = {
           children: [
             'canonical-urls',
             'block-robots-on-dev-site',
-            'elements-without-urls'
+            'elements-without-urls',
+            'divider',
+            'extending-a-base-layout',
+            'get-default-by-handle',
+            'get-optimized-meta',
+            'overriding-images',
+            'custom-sections',
+            'large-sitemaps'
           ]
         },
         {
@@ -192,72 +188,6 @@ module.exports = {
           collapsable: false,
           children: [
             'custom-schema'
-          ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-2'
-          ]
-        }
-      ],
-
-      '/craft-v2/redirects/': [
-        ['../', '← All Plugins'],
-        {
-          title: 'Introduction',
-          collapsable: false,
-          children: [
-            '',
-          ]
-        },
-        {
-          title: 'Core Concepts',
-          collapsable: false,
-          children: [
-            'redirects',
-            'plugin-settings'
-          ]
-        },
-        {
-          title: 'Examples',
-          collapsable: false,
-          children: [
-            'query-strings-in-redirects'
-          ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-2'
-          ]
-        }
-      ],
-
-      '/craft-v2/sitemaps/': [
-        ['../', '← All Plugins'],
-        {
-          title: 'Introduction',
-          collapsable: false,
-          children: [
-            '',
-          ]
-        },
-        {
-          title: 'Core Concepts',
-          collapsable: false,
-          children: [
-            'sitemaps',
-            'plugin-settings'
-          ]
-        },
-        {
-          title: 'Development',
-          collapsable: false,
-          children: [
-            'custom-url-enabled-sections'
           ]
         },
         {
@@ -549,28 +479,14 @@ module.exports = {
           title: 'Field Types',
           collapsable: false,
           children: [
-            'address-field',
             'email-field',
-            'gender-field',
-            'name-field',
-            'notes-field',
-            'phone-field',
-            'predefined-field',
-            'predefined-date-field',
-            'regular-expression-field',
-            'template-field',
-            'url-field'
-          ]
-        },
-        {
-          title: 'Field Types - Craft 2',
-          collapsable: false,
-          children: [
             'email-dropdown-field',
             'hidden-field',
             'invisible-field',
-            'notes-field-c2',
-            'phone-field-c2'
+            'notes-field',
+            'phone-field',
+            'regular-expression-field',
+            'url-field'
           ]
         },
         {
@@ -660,9 +576,7 @@ module.exports = {
           title: 'SEO Metadata',
           collapsable: false,
           children: [
-            ['seo/', 'Sprout SEO'],
-            ['redirects/', 'Sprout Redirects'],
-            ['sitemaps/', 'Sprout Sitemaps']
+            ['seo/', 'Sprout SEO']
           ]
         },
         {
