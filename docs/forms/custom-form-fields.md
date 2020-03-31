@@ -1,7 +1,5 @@
 # Form Fields
 
-## Craft 3
-
 Form Fields enable you to add new Fields to the Form Builder and manage its field settings and front-end output.
 
 See the following plugins for examples:
@@ -33,22 +31,6 @@ class SproutFormsRangeSlider extends Plugin
     }
 }
 ```
-
-## Craft 2
-
-::: tip
-Sprout Fields adds several additional Field Types to Sprout Forms in Craft 2. In Craft 3, all Sprout Fields have been included directly in Sprout Forms.
-:::
-
-Creating a custom front-end field for Sprout Forms is as easy as creating a custom field type in Craft.
-
-Sprout Forms for Craft 2 supports all fields in Craft but only supports a subset of those fields for dynamic front-end output. Fields with dynamic front-end support are referred to as _Standard Fields_. Fields that require custom HTML or development are referred to as _Advanced Fields_.
-
-While Craft can require users to use certain browsers to get the full benefits of the platform (and ignore browsers like IE8 and IE9), many client-facing websites must address broader compatibility issues to meet their goals.
-
-Due to the variety and complexities of front-end user interface design and cross-browser and cross-device support, Sprout Forms does not support the complete list of native Craft fields itself, but does allow you to add support for these fields in your forms using custom HTML or adding support for additional fields via a plugin.
-
-Sprout Forms provides a comprehensive API to add dynamic front-end field support for additional Craft and third-party field types.
 
 ### Custom Front-End Fields
 
@@ -103,7 +85,7 @@ From this method, you should return the absolute path to your templates folder s
 
 If we follow the instructions above, our `getInputHtml()` and `getTemplatesPath()` might look something like this:
 
-```php
+``` php
 public function getInputHtml($field, $value, $settings, array $renderingOptions = null)
 {
     $this->beginRendering();

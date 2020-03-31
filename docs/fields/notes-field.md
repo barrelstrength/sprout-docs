@@ -43,13 +43,3 @@ See our Default CSS styles for an example and use your browsers Inspect Code fea
     margin: 0 0 1em 3em;
 }
 ```
-
-## Availability
-
-| Craft Version | Available |
-|:------------- |:---------:|
-| Craft 3       | **✓** |
-| Craft 2       | **✓** |
-
-
-See here for documentation on the [Notes Field for Craft 2](./notes-field-c2.md).

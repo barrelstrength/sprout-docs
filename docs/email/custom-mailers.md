@@ -7,11 +7,11 @@ Adding a custom Mailer involves:
 1. Extending Sprout Email's Mailer class
 2. Registering your Mailer
 
+See the codebase for working examples.
+
 ## Mailer Class
 
-::: code
-
-``` php Craft 3
+``` php
 namespace mycompany\myplugin\integrations\sproutemail\mailers;
 
 use barrelstrength\sproutbase\contracts\sproutemail\BaseMailer;
@@ -23,17 +23,9 @@ class MyMailer extends BaseMailer implements CampaignEmailSenderInterface
 }
 ```
 
-``` html Craft 2
-See codebase for examples.
-```
-
-:::
-
 ## Register Event
 
-::: code
-
-``` php Craft 3
+``` php
 namespace mycompany\myplugin;
 
 use mycompany\myplugin\integrations\sproutemail\mailers\MyMailer;
@@ -55,9 +47,3 @@ class MyPlugin extends Plugin
   }
 }
 ```
-
-``` html Craft 2
-See codebase for examples.
-```
-
-:::

@@ -4,8 +4,6 @@ Notifications Email Elements give you the power to manage your email notificatio
 
 ## Default Setup
 
-### Craft 3
-
 Notification Emails are created with a simple Body field and can immediately used to send triggered emails using the [Default Email Template](./default-email-templates.md).
 
 To add a custom Field Layout, select 'Edit Field Layout' from the Save button dropdown.
@@ -13,14 +11,6 @@ To add a custom Field Layout, select 'Edit Field Layout' from the Save button dr
 ::: tip
 Adding custom fields to your Email will require that you also create [Email Templates](./default-email-templates.md) that work with those fields. 
 :::
-
-### Craft 2
-
-Creating a new Notification Email requires two steps:
-
-1. Define the Notification Email: You can create a new notification email and define it's Entry Template and Custom Field Layout in `Sprout Email->Settings (Gear Icon)->Notifications->New Notification`
-
-2. Create the Notification Email: Once you have a notification email defined, you can add your content, set your sender and recipients, and set your rule that triggers the email in the Notification Entry.
 
 #### Define the Notification Email
 

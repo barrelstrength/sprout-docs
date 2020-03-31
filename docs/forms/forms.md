@@ -28,21 +28,11 @@ Display a specific form on a specific page in your templates like so:
 
 Add a Form Relations Field to a Field Layout to allow a content author to select any available Form to display on a particular page.
 
-::: code
-
-``` twig Craft 3
+``` twig
 {% set formHandle = entry.formFieldHandle.one().handle %}
 
 {{ craft.sproutForms.displayForm( formHandle ) }}
 ```
-
-``` twig Craft 2
-{% set formHandle = entry.formFieldHandle.first().handle %}
-
-{{ craft.sproutForms.displayForm( formHandle ) }}
-```
-
-:::
 
 ### Template Tags
 
@@ -52,19 +42,10 @@ While the primary tag you will use in your templates is the `displayForm` tag, t
 
 You can access your Form Element directly using the `form` tag.
 
-::: code
-
-``` twig Craft 3
+``` twig
 {# Returns a barrelstrength\sproutforms\elements\Form #}
 {% set form = craft.sproutForms.form('contact') %}
 ```
-
-``` twig Craft 2
-{# Returns a SproutForms_FormModel #}
-{% set form = craft.sproutForms.form('contact') %}
-```
-
-:::
 
 #### displayForm
 
@@ -78,48 +59,23 @@ The `displayForm` tag renders the HTML for all files defined in your Form Templa
 
 The `displayTab` tag is called within the `displayForm` tag and renders each individual tab defined in your form and all fields within it.
 
-::: code
-
-``` twig Craft 3
+``` twig
 {% for tab in form.getFieldLayout().getTabs() %}
     {{ craft.sproutForms.displayTab(form, tab.id, renderingOptions) }}
 {% endfor %}
 ```
 
-``` twig Craft 2
-{{ craft.sproutForms.displayTab('contact.tab1') }}
-
-{# Examples of how Tab Handles get processed:
-
-Tab Name             Tab Handle
-----------           ----------
-Tab 1                tab1
-Section One          sectionone
-Personal Questions   personalquestions
-#}
-```
-
-:::
-
 #### displayField
 
 The `displayField` tag is called within the `displayTab` tag and renders each individual field defined in your Tab's Field Layout.
 
-::: code
-
-``` twig Craft 3
+``` twig
 {% set layoutFields = tab.getFields() %}
 
 {% for field in layoutFields -%}
     {{ craft.sproutForms.displayField(form, field, renderingOptions) }}
 {% endfor %}
 ```
-
-``` twig Craft 2
-{{ craft.sproutForms.displayField('contact.email') }}
-```
-
-:::
 
 ## Form Relations Field
 
@@ -133,9 +89,7 @@ Sprout Forms adds a Form Relations Field to Craft CMS:
 
 Sprout Forms allows you to set a redirect for your Form in the Form Settings or in the template.
 
-::: code
-
-``` twig Craft 3
+``` twig
 <form method="post" action="" accept-charset="UTF-8">
 
     <input type="hidden" name="action" value="sprout-forms/entries/save-entry">
@@ -148,22 +102,6 @@ Sprout Forms allows you to set a redirect for your Form in the Form Settings or 
 
 </form>
 ```
-
-``` twig Craft 2
-<form method="post" action="" accept-charset="UTF-8">
-
-    <input type="hidden" name="action" value="sproutForms/entries/saveEntry">
-    <input type="hidden" name="handle" value="contact">
-    <input type="hidden" name="redirect" value="contact?message=thankyou">
-
-    {# All of your fields here #}
-
-    <input type="submit" value="Submit">
-
-</form>
-```
-
-:::
 
 Your redirect value can be an absolute URL, relative URL, or use the dynamic `{siteUrl}` variable: 
 

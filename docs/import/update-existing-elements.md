@@ -13,9 +13,7 @@ You can choose to overwrite all values completely, or just update a specific val
 
 The `updateElement` key must be defined within the `settings` section of your import definition.
 
-::: code
-
-``` json Craft 3
+``` json
 [
   {
     "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
@@ -37,31 +35,6 @@ The `updateElement` key must be defined within the `settings` section of your im
 ]
 ```
 
-``` json Craft 2
-[
-  {
-    "@model": "EntryModel",
-    "attributes": { ... },
-    "content": {
-      "oldId": 14,
-      "title": "Title of post",
-      "fields": { ... }
-    },
-    "settings": {
-      "updateElement": {
-        "matchBy": "oldId",
-        "matchValue": 14,
-        "matchCriteria": {
-          "section": "projects"
-        }
-      }
-    }
-  }
-]
-```
-
-:::
-
 ::: tip Note
 In these examples `oldId` is a custom field that represents an ID that you imported from another system. Often, when importing data from another system a storing a temporary legacy ID in a custom field can help match and relate other data that you are importing in separate steps.
 
@@ -71,9 +44,7 @@ You can use `id`, `slug`, or any other property or custom field to match an exis
 
 ## Updating a Relationship
 
-::: code
-
-``` json Craft 3
+``` json
 [
   {
     "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
@@ -97,40 +68,6 @@ You can use `id`, `slug`, or any other property or custom field to match an exis
       "updateElement": {
         "params": {
           "oldId": 14,
-          "section": "projects"
-        }
-      }
-    }
-  }
-]
-```
-
-``` json Craft 2
-[
-  {
-    "@model": "EntryModel",
-    "attributes": { ... },
-    "content": {
-      "oldId": 14,
-      "title": "Title of post",
-      "fields": { ... },
-      "related": {
-        "heroImage": {
-          "@model": "AssetModel",
-          "matchBy": "filename",
-          "matchValue": "ImageName03.jpg",
-          "matchCriteria": {
-            "source": "images",
-            "folderId": 8
-          }
-        }
-      }
-    },
-    "settings": {
-      "updateElement": {
-        "matchBy": "oldId",
-        "matchValue": 14,
-        "matchCriteria": {
           "section": "projects"
         }
       }

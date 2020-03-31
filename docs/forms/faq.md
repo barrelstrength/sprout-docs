@@ -13,39 +13,11 @@ To better understand your spam traffic, you can enable Spam tracking and Sprout 
 
 ## How do I validate an Email Address, Phone Number, or URL?
 
-### Craft 3
-
-Sprout Forms for Craft 3 comes with Email, Phone, and URL fields.
-
-### Craft 2
-
-Install [Sprout Fields](../fields/)!  Sprout Fields provides you several additional field types to help ensure you're collecting clean and accurate data.
+Use the Sprout Forms Email, Phone, and URL fields.
 
 ## How do I export my form Entries to CSV?
 
-### Craft 3
-
-Sprout Forms for Craft 3 includes a native Sprout Reports integration to create and export reports for Sprout Forms Data Sources without ever needing to install Sprout Reports. Visit the Sprout Forms -> Reports tab in Sprout Forms to create reports and export CSVs.
-
-### Craft 2
-
-You can use [Sprout Reports](../reports/) to export your Form Entries to CSV.
-
-To export all entries from a particular form, you can create a custom SQL query to target that form. Each form uses a different table in the database.
-
-For example, to export all data for a form with the handle `contact`
-
-``` sql
-SELECT *
-FROM craft_sproutformscontent_contact
-```
-
-You will need to update your query to match your Craft database prefix and your form handle. Here is a generic example template of what this query should be using variables that you will need to update for your use case:
-
-``` sql
-SELECT *
-FROM {databasePrefix}_sproutformscontent_{formHandle}
-```
+Sprout Forms for Craft 3 includes a native Sprout Reports integration to create and export reports for Sprout Forms Data Sources without ever needing to install Sprout Reports. Visit the `Sprout Forms -> Reports` tab in Sprout Forms to create reports and export CSVs.
 
 ## My form submissions are not working. My submitted form entries never appear in my database. What is broken?
 
@@ -57,14 +29,9 @@ Are your forms triggering any other events that may be causing errors? Spam filt
 
 Check your logs and see if there are any errors:
 
-In your files (Craft 3):
+In your files:
 
 - storage/runtime/logs/web.log
-
-In your files (Craft 2):
-
-- craft/storage/runtime/logs/sproutforms.log
-- craft/storage/runtime/logs/craft.log
 
 Or in your Control Panel:
 
@@ -77,9 +44,3 @@ The most frequent issue that causes notification emails to not be sent or behave
 The first step necessary to better troubleshoot why notifications are not behaving as expected is to update your settings to a proper SMTP Protocol. [Mandrill](https://mandrill.com/) or [MailGun](https://www.mailgun.com/) are good options and MailGun has a free plan which allows you to send up to 10,000 emails a month, if cost is a concern.  Once you are sending email via Mandrill and MailGun, they also can provide more information on what is happening to your email after it is being sent.
 
 Another decent option to troubleshoot with is Gmail. While Gmail doesn't provide as much information on how emails are behaving after they are sent, and can sometimes behave in unintuitive ways if you are sending and receiving from the same Gmail address, it is more reliable than PHP Mail and Sendmail and most people have a Gmail account.
-
-## Where can I install example forms after Sprout Forms is installed?
-
-### Craft 2
-
-You can install the default example forms in the Control Panel at `admin/sproutforms/examples` or find a link to install the Example Forms in the Sprout Forms Settings area.

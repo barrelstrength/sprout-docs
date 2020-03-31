@@ -13,10 +13,3 @@ You can access your Gender Field in your templates via it's field handle.
 ``` twig
 {{ entry.genderField }}
 ```
-
-## Availability
-
-| Craft Version | Available |
-|:------------- |:---------:|
-| Craft 3       | **✓** |
-| Craft 2       | **✗** |

@@ -15,10 +15,3 @@ Google Analytics documentation has a [good overview of Regular Expressions](http
 ::: tip
 The Regular Expression field handles the delimiters of your Regular Expression for you, so you only need to add the expression itself in the Validation Pattern setting.
 :::
-
-## Availability
-
-| Craft Version | Available |
-|:------------- |:---------:|
-| Craft 3       | **✓** |
-| Craft 2       | **✓** |

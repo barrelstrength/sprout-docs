@@ -33,26 +33,8 @@ The Entry Element Integration allows you to map a Form's fields to an Entry Elem
 
 The Custom Endpoint Integration allows you to map your Form Fields to the name of the field values that you want to send to your third-party endpoint.
 
-The [Hidden Field](../fields/hidden-field.md) and [Invisible Field](../fields/invisible-field.md) allow you to setup form fields with pre-filled values such as API Keys, tracking data, and other information that you may want to capture but not want to be publicly visible in your form.
+The [Hidden Field](./hidden-field.md) and [Invisible Field](./invisible-field.md) allow you to setup form fields with pre-filled values such as API Keys, tracking data, and other information that you may want to capture but not want to be publicly visible in your form.
 
 ## Multiple Integrations
 
-Multiple integrations can be added to a Form. When one or more integrations are setup, they are processed after a valid Form Entry is submitted in the order they appear in the Form settings. Integrations can fail, and Sprout Forms provides a way for you to view the responses from each integration and receive notifications if any integrations don't behave as expected.  
-
-## Payload Forwarding
-
-::: warning Integrations API vs Payload Forwarding
-The **Integrations** API was added in Sprout Forms v3.0.0. Prior to Sprout Forms v3.0.0, a simple implementation of the Custom Endpoint Integration was included with the plugin and named Payload Forwarding.
-
-We recommend users upgrade to the latest version of Sprout Forms and use the Custom Endpoint Integration moving forward. The docs below are provided as a reference for older websites still using Craft 2 or beta versions of Sprout Forms on Craft 3.  
-:::
-
-Setting up Payload Forwarding requires a few things:
-
-1. Establish a location outside of Sprout Forms that is ready to receive your data
-2. Update the `Custom Submit URL` Setting in your forms Advanced settings tab to point to the location you wish to send your data
-3. Make sure that all fields you have created have the appropriate handles to be received properly by your custom endpoint
-
-When a user submits your form, instead of capturing that form submission with Craft, Sprout Forms will send the submitted form data to your preferred destination.
-
-The "Payload" is all of the custom fields that are associated with your form. Sprout Forms will strip out information like the Form name and handle and other form-specific meta data.
+Multiple integrations can be added to a Form. When one or more integrations are setup, they are processed after a valid Form Entry is submitted in the order they appear in the Form settings. Integrations can fail, and Sprout Forms provides a way for you to view the responses from each integration and receive notifications if any integrations don't behave as expected. 

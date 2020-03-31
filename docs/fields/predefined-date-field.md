@@ -28,10 +28,3 @@ See [Predefined Field](./predefined-field.md) for usage.
 ::: warning
 If you update the Field Format you will need to resave the Field Layout in your Craft Settings to ensure all Entries get re-saved and recalculate the value of your Predefined Field. 
 :::
-
-## Availability
-
-| Craft Version | Available |
-|:------------- |:---------:|
-| Craft 3       | **✓** |
-| Craft 2       | **✗** |

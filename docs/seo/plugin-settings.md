@@ -14,19 +14,6 @@ Moz writes in 2018, [How Long Should Your Meta Description Be?](https://moz.com/
 
 Sprout SEO defaults to Meta Descriptions of 160 characters, however, you can update this to your preference. To override the default value:
  
- ::: code
- 
- ``` html Craft 3
+ ``` html
 Sprout SEO → Settings → General → Meta Description Length
  ```
- 
- ``` php Craft 2
- <?php 
- 
- // In your craft/config/sproutseo.php config file
- return array(
-   'maxMetaDescriptionLength' => 300
- );
-  ```
-  
- :::

@@ -40,19 +40,19 @@ If the idea of an `object` variable doesn't make sense yet, read more about [Obj
 
 The table below outlines the default Notification Events and the value you can expect when interacting with the Notification Event's `object` variable.
 
-| Event |  Craft 3 | Craft 2 |
-|:-------- |:---------- |:------- |
-| When a new entry is created | Entry | EntryModel |
-| When an existing entry is updated | Entry | EntryModel |
-| When a new user is created | User | UserModel |
-| When a existing user is updated | User | UserModel |
-| When a user is activated | User | UserModel |
-| When a user is deleted | User | UserModel |
-| When a user logs in | User | UserModel |
-| When a Craft Commerce order is completed | – | Commerce_OrderModel | 
-| When a Craft Commerce transaction is saved | – | Commerce_TransactionModel | 
-| When a Craft Commerce order status is changed | – | Commerce_OrderModel, Commerce_OrderHistoryModel |  
-| When a Sprout Form Entry is submitted | Form | SproutForms_FormModel |
+| Event |  Model |
+|:-------- |:---------- |
+| When a new entry is created | Entry |
+| When an existing entry is updated | Entry |
+| When a new user is created | User |
+| When a existing user is updated | User |
+| When a user is activated | User |
+| When a user is deleted | User |
+| When a user logs in | User |
+| When a Craft Commerce order is completed | – | 
+| When a Craft Commerce transaction is saved | – | 
+| When a Craft Commerce order status is changed | – |  
+| When a Sprout Form Entry is submitted | Form |
 
 ### Craft Commerce Order Status Event
 

@@ -40,11 +40,3 @@ You can enable or disable each captcha in the global settings or add support for
 ## Entry Statuses
 
 By default, Form Entries default to an **Unread** status and can be updated and marked **Read**. Entries that trigger Captcha errors will be given the **Spam** status. Rename the default statuses or customize additional Entry Statuses to fit your workflows in the settings.
-
-----
-
-## Craft 2
-
-### Enable payload forwarding (Sprout Forms 2)
-
-Enable [Payload Forwarding](./payload-forwarding.md) to use Sprout Forms to build and manage your forms and submit your Forms to a third-party endpoint.

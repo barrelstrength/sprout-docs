@@ -6,9 +6,7 @@ Let's look at a brief overview of this method in the context of the Form plugin.
 
 1) Wrap your error messages in the translate filter
 
-::: code
-
-``` twig Craft 3
+``` twig
 {% if errors -%}
     <ul class="errors">
         {% for error in errors %}
@@ -18,47 +16,15 @@ Let's look at a brief overview of this method in the context of the Form plugin.
 {% endif -%}
 ```
 
-``` twig Craft 2
-{{ error|translate }}
-
-{# You can abbreviate the translate filter with a 't' #}
-{{ error|t }}
-
-{# If you are using a macro to display your errors, you only
-   have to wrap the error variable in a 't' #}
-{% macro errorList(errors) %}
-	{% if errors %}
-		<ul class="errors">
-			{% for error in errors %}
-				<li>{{ error|t }}</li>
-			{% endfor %}
-		</ul>
-	{% endif %}
-{% endmacro %}
-```
-:::
-
 2) Add a `translations` folder to your project
 
-::: code
-
-``` text{3} Craft 3
+``` text{3}
 config 
 storage
 translations
 vendor
 web
 ```
-
-``` text{5} Craft 2
-craft/app
-craft/config
-craft/plugins
-craft/storage
-craft/translations
-public
-```
-:::
 
 3) Add a locale-specific translation file to your project
 

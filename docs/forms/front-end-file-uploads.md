@@ -22,9 +22,7 @@ To send all submitted files as file attachments via a notification email you can
 
 If you need to build a custom form with file-uploads, make sure your Form tag is set up to handle files using `enctype="multipart/form-data"`. Here is a very simple example of a form with a single file upload field:
 
-::: code
-
-``` twig Craft 3
+``` twig
 <form method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
   {{ csrfInput() }}
   <input type="hidden" name="action" value="sprout-forms/entries/save-entry">
@@ -37,19 +35,3 @@ If you need to build a custom form with file-uploads, make sure your Form tag is
 
 </form>
 ```
-
-``` twig Craft 2
-<form method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
-  {{ getCsrfInput() }}
-  <input type="hidden" name="action" value="sproutForms/entries/saveEntry">
-  <input type="hidden" name="handle" value="contact">
-  <input type="hidden" name="redirect" value="contact?message=thankyou">
-  
-  <input type="file" name="fields[assetFieldHandle]">
-
-  <p><input type="submit" value="Submit"></p>
-
-</form>
-```
-
-:::

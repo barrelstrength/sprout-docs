@@ -45,10 +45,3 @@ For consistency, the `getFriendlyName()` and `getFullName()` methods return the 
 Select which combination of fields you wish to display in your settings:
 
 ![Name Field - Settings](./../images/fields/sprout-name-field-settings.png) 
-
-## Availability
-
-| Craft Version | Available |
-|:------------- |:---------:|
-| Craft 3       | **✓** |
-| Craft 2       | **✗** |

@@ -42,9 +42,7 @@ You can fetch form Entries using the [same options you have for all Elements](ht
 
 The `entries` tag will let you get all entries for a specific form.
 
-::: code
-
-``` twig Craft 3
+``` twig
 {# Get all entries for a specific form #}
 {% for formEntry in craft.sproutForms.entries
 	.formHandle('contact')
@@ -86,37 +84,6 @@ The `entries` tag will let you get all entries for a specific form.
   {{ formEntry.title }}
 {% endfor %}
 ```
-
-``` twig Craft 2
-{# Get all entries for a specific form #}
-{% for formEntry in craft.sproutForms.entries.formHandle('contact') %}
-	{{ formEntry.title }}
-{% endfor %}
-
-{# Limit the results to the first 3 entries #}
-{% for formEntry in craft.sproutForms.entries.formHandle('contact').limit(3).order('dateCreated asc') %}
-	{{ formEntry.title }}
-{% endfor %}
-
-{# Get the latest Form Entry from the Contact Form #}
-{% set formEntry = craft.sproutForms.entries.formHandle('contact').last() %}
-
-{{ formEntry.title }}
-
-{# Output the total number of Form Entries from the Contact Form #}
-{{ craft.sproutForms.entries.formHandle('contact').total() }}
-
-{# Output Entries with a specific status by Status ID or by Status Handle #}
-{% for formEntry in craft.sproutForms.entries.formHandle('contact').statusId(2) %}
-  {{ formEntry.title }}
-{% endfor %}
-
-{% for formEntry in craft.sproutForms.entries.formHandle('contact').status('pending') %}
-  {{ formEntry.title }}
-{% endfor %}
-```
-
-:::
 
 ### lastEntry
 

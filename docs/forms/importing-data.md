@@ -64,9 +64,7 @@ Define your forms as JSON and import them into any project you'd like. A basic e
 
 Import real or test Form Entry Elements to Sprout Forms using Sprout Import.
 
-::: code
-
-``` json Craft 3
+``` json
 [
   {
     "@model": "barrelstrength\\sproutforms\\integrations\\sproutimport\\elements\\Entry",
@@ -84,27 +82,6 @@ Import real or test Form Entry Elements to Sprout Forms using Sprout Import.
   }
 ]
 ```
-
-``` json Craft 2
-[
-  {
-    "@model": "SproutForms_Entry",
-    "attributes": {
-      "formId": 711,
-      "ipAddress": "127.0.0.1",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36",
-      "dateCreated": "2015-08-21 01:08:38",
-      "dateUpdated": "2015-10-09 03:10:03"
-    },
-    "content": {
-      "title": "Form Entry Title",
-      "fields": { ... }
-    }
-  }
-]
-```
-
-:::
 
 ### Seeding
 
@@ -117,11 +94,9 @@ On the Sprout Import Seed tab, select **Sprout Forms Entries** as the _Type of C
 
 If you prefer to have more control over how your fake entries are generated, generate a custom seed file to import manually.
 
-In the example below, we generate 100 fake Form Entries with the help of faker, which is available as avariable when you have Sprout Import installed.
+In the example below, we generate 100 fake Form Entries with the help of faker, which is available as a variable when you have Sprout Import installed.
 
-::: code
-
-``` twig Craft 3
+``` twig
 {%- set faker = craft.sproutImport.faker -%}
 [
 {%- for i in 0..99 %}
@@ -146,31 +121,3 @@ In the example below, we generate 100 fake Form Entries with the help of faker, 
 {%- endfor -%}
 ]
 ```
-
-``` twig Craft 2
-{%- set faker = craft.sproutImport.faker -%}
-[
-{%- for i in 0..99 %}
-  {
-    "@model": "SproutForms_Entry",
-    "attributes": {
-      "formId": 42,
-      "ipAddress": "{{ random([faker.ipv4,faker.ipv6]) }}",
-      "userAgent": "{{ faker.userAgent }}",
-      "dateCreated": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}",
-      "dateUpdated": "{{ faker.dateTimeBetween('-2 years', 'now')|date('Y-m-d h:m:s') }}"
-    },
-    "content": {
-      "title": "{{ faker.text(42) }}",
-      "fields": {
-        "fullName": "{{ faker.text(42) }}",
-        "email": "{{ faker.email }}",
-        "message": "{{ faker.text(42) }}"
-      }
-    }
-  }{% if not loop.last %},{% endif %}
-{%- endfor -%}
-]
-```
-
-:::

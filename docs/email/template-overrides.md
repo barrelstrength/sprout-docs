@@ -6,13 +6,13 @@ Sprout Email gives you 100% control over your email templates using the Template
 
 Once you have enabled Template Overrides, you can override two email files. **Both files must be named 'email'. Files named something else will not be found**:
 
-| File        | Craft 3  | Craft 2  |
-|:----------- |:--------:|:--------:|
-| email.twig (or email.html)  | required | required |
-| email.txt   | optional | required |
+| File        |   |
+|:----------- |:--------:|
+| email.twig (or email.html)  | required |
+| email.txt   | optional |
 
 ::: tip
-If you don't provide a template for the Text version of your email in Craft 3, Sprout Forms will convert your HTML email to Markdown and use that for the Text version of your email. 
+If you don't provide a template for the Text version of your email, Sprout Email will convert your HTML email to Markdown and use that for the Text version of your email. 
 :::
 
 ### Personalization
@@ -24,17 +24,9 @@ See the documentation on [Personalization](./personalization.md) to learn more a
 
 To get started, copy the default Sprout Email templates to your Custom Template Overrides folder. You can find the templates in Sprout Email here:
  
-::: code
-
-``` html Craft 3
+``` html
 vendor/barrelstrength/sprout-base/src/app/email/templates/_components/emailtemplates/basic
 ```
-
-``` html Craft 2
-No defaults Email Templates available.
-```
-
-:::
 
 ## Settings
 
@@ -42,15 +34,10 @@ No defaults Email Templates available.
 
 Setup a Global Email Template override in the Sprout Email settings and add the path to the template folder where you wish to place your overrides:
 
-::: code
-
-``` html Craft 3
+``` html
 Sprout Email → Settings → Default Email Templates → Add Custom
 ```
 
-``` html Craft 2
-No Global Email Template setting available.
-```
 
 :::
 

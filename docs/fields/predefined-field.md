@@ -11,7 +11,7 @@ The Predefined Field is not editable.
 - **Output Format** - The output method to use when displaying the value: Input, Textarea, or HTML 
 - **Render dynamically in field layout** - Enable to process the value of the field when the page is loaded in the Control Panel
 
-[Link Nmae](https://barrelstrengthdesign.com)
+[Link Name](https://barrelstrengthdesign.com)
 
 ### Field Format
 
@@ -96,11 +96,3 @@ The following table code can be used as an example to create a Craft-styled tabl
     {% endfor %}
 </table>
 ```
-
-
-## Availability
-
-| Craft Version | Available |
-|:------------- |:---------:|
-| Craft 3       | **✓** |
-| Craft 2       | **✗** |

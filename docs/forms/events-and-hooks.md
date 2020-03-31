@@ -8,9 +8,7 @@ Sprout Forms can be extended using the following Events and Hooks.
 
 Raised before an entry is saved.
 
-::: code
-
-``` php Craft 3
+``` php
 use barrelstrength\sproutforms\services\Entries;
 use barrelstrength\sproutforms\elements\Entry;
 use barrelstrength\sproutforms\events\OnBeforeSaveEntryEvent;
@@ -35,12 +33,6 @@ public function init()
 }
 ```
 
-``` html Craft 2
-sproutForms.onBeforeSaveEntry
-```
-
-:::
-
 #### Params
 
 - _entry_ – The submitted SproutForms_EntryModel
@@ -50,9 +42,7 @@ sproutForms.onBeforeSaveEntry
 
 Raised just after an entry is saved
 
-::: code
-
-``` php Craft 3
+``` php
 use barrelstrength\sproutforms\elements\Entry;
 use yii\base\Event;
 use Craft;
@@ -78,12 +68,6 @@ public function init()
 }
 ```
 
-``` html Craft 2
-sproutForms.onSaveEntry
-```
-
-:::
-
 #### Params
 
 - _entry_ – The submitted SproutForms_EntryModel
@@ -95,9 +79,7 @@ sproutForms.onSaveEntry
 
 The `sproutForms.modifyForm` Template Hook gives plugins a chance to dynamically add content to a form template. The hook will output content between the `<form>` tags when using the `displayForm` tag.
 
-::: code
-
-``` php Craft 3
+``` php
 public function init()
 {
     parent::init();
@@ -110,14 +92,3 @@ public function init()
     });
 }
 ```
-
-``` php Craft 2
-public function init()
-{
-  craft()->templates->hook('sproutForms.modifyForm', function(&$context)
-  {
-    $content = '<div><input type="hidden" name="spammityspam" value="spam"></div>';
-    return TemplateHelper::getRaw($content);
-  });
-}
-:::

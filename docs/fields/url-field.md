@@ -34,16 +34,3 @@ Below are a few regular expressions for common services. These types of patterns
 | ^https://www.linkedin.com/(.*) | Match URLs that begin with `https://www.linkedin.com/` |
 | ^https://www.pinterest.com/(.*) | Match URLs that begin with `https://www.pinterest.com/` |
 | ^https://twitter.com/(.*) | Match URLs that begin with `https://www.twitter.com/` |
-
-## Availability
-
-| Craft Version | Available |
-|:------------- |:---------:|
-| Craft 3 (Url Field)      | **✓** |
-| Craft 2 (Link Field)     | **✓** |
-
-::: tip
-The URL field works with Sprout Forms for Craft 2. This field is included by default in Sprout Fields for Craft 3.
-
-The URL Field supports HTML5 client-side validation including the `required` attribute, the `url` input type, and custom validation patterns and error messages.
-:::

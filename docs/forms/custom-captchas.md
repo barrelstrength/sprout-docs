@@ -37,7 +37,3 @@ class MyCaptchaPlugin extends Plugin
 }
 ```
 
-::: tip
-Captcha integrations are available in Sprout Forms for Craft 3. Custom Captchas can also be added to Craft 2 a combination of [Events & Hooks](./events-and-hooks.md).
-:::
-

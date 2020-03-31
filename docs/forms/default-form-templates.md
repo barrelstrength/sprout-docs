@@ -26,6 +26,6 @@ The Basic Notification Email Templates is designed to loop through all submitted
 
 This Email Template will be used by default when you create a new Notification Email from the Sprout Forms Notifications tab.
 
-::: warning
-Email Template overrides are handled differently in Craft 2 and Craft 3. See the [Template Overrides](../email/template-overrides.md) docs for additional details.
-:::
+### Custom Templates
+
+See the [Template Overrides](../email/template-overrides.md) docs for additional details.

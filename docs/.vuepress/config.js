@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Sprout Documentation',
+  title: 'Sprout Docs for Craft 3',
   description: 'The Sprout Business Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.',
   // theme: 'craftdocs',
   base: '/docs/',
@@ -20,7 +20,7 @@ module.exports = {
   themeConfig: {
     docsRepo: 'barrelstrength/sprout-docs',
     docsDir: 'docs',
-    docsBranch: 'develop',
+    docsBranch: 'master',
     editLinks: true,
     codeLanguages: {
       twig: 'Twig',
@@ -35,21 +35,10 @@ module.exports = {
     },
     nav: [
       {
-        text: 'Plugin Docs',
+        text: 'Sprout Plugins',
         items: [
-          {text: 'Sprout Forms', link: '/forms/'},
-          {text: 'Sprout SEO', link: '/seo/'},
-          {text: 'Sprout Redirects', link: '/redirects/'},
-          {text: 'Sprout Sitemaps', link: '/sitemaps/'},
-          {text: 'Sprout Email', link: '/email/'},
-          {text: 'Sprout Reports', link: '/reports/'},
-          {text: 'Sprout Import', link: '/import/'},
-          {text: '–', link: ''},
-          {text: 'Sprout Active', link: '/active/'},
-          {text: 'Sprout Encode Email', link: '/encode-email/'},
-          {text: 'Sprout Fields', link: '/fields/'},
-          {text: 'Sprout Lists', link: '/lists/'},
-          {text: 'Sprout Notes', link: '/notes/'}
+          {text: 'Sprout for Craft 3', link: '/'},
+          {text: 'Sprout for Craft 2', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v2/'},
         ]
       },
       {text: 'Back to Sprout →', link: 'https://sprout.barrelstrengthdesign.com/'},
@@ -132,33 +121,7 @@ module.exports = {
           collapsable: false,
           children: [
             'installing-and-updating-craft-3',
-            'installing-and-updating-craft-2',
             'faq'
-          ]
-        }
-      ],
-
-      '/seo/v2/': [
-        ['../', '← Sprout SEO'],
-        {
-          title: 'Sprout SEO 2',
-          collapsable: false,
-          children: [
-            '',
-            'divider',
-            'extending-a-base-layout',
-            'get-default-by-handle',
-            'get-optimized-meta',
-            'overriding-images'
-          ]
-        },
-        {
-          title: 'Sitemaps',
-          collapsable: false,
-          children: [
-            'sitemaps',
-            'custom-sections',
-            'large-sitemaps'
           ]
         }
       ],
@@ -210,8 +173,7 @@ module.exports = {
           title: 'Installing & Updating',
           collapsable: false,
           children: [
-            'installing-and-updating-craft-3',
-            'installing-and-updating-craft-2'
+            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -244,8 +206,7 @@ module.exports = {
           title: 'Installing & Updating',
           collapsable: false,
           children: [
-            'installing-and-updating-craft-3',
-            'installing-and-updating-craft-2'
+            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -278,8 +239,7 @@ module.exports = {
           title: 'Installing & Updating',
           collapsable: false,
           children: [
-            'installing-and-updating-craft-3',
-            'installing-and-updating-craft-2'
+            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -341,8 +301,7 @@ module.exports = {
           title: 'Installing & Updating',
           collapsable: false,
           children: [
-            'installing-and-updating-craft-3',
-            'installing-and-updating-craft-2'
+            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -369,8 +328,7 @@ module.exports = {
           title: 'Installing & Updating',
           collapsable: false,
           children: [
-            'installing-and-updating-craft-3',
-            'installing-and-updating-craft-2'
+            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -421,8 +379,7 @@ module.exports = {
           title: 'Installing & Updating',
           collapsable: false,
           children: [
-            'installing-and-updating-craft-3',
-            'installing-and-updating-craft-2'
+            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -496,7 +453,6 @@ module.exports = {
           title: 'Examples',
           collapsable: false,
           children: [
-            'expressionengine-export',
             'importing-dates'
           ]
         },
@@ -513,8 +469,7 @@ module.exports = {
           title: 'Installing & Updating',
           collapsable: false,
           children: [
-            'installing-and-updating-craft-3',
-            'installing-and-updating-craft-2'
+            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -532,8 +487,7 @@ module.exports = {
           title: 'Installing & Updating',
           collapsable: false,
           children: [
-            'installing-and-updating-craft-3',
-            'installing-and-updating-craft-2'
+            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -551,8 +505,7 @@ module.exports = {
           title: 'Installing & Updating',
           collapsable: false,
           children: [
-            'installing-and-updating-craft-3',
-            'installing-and-updating-craft-2'
+            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -584,22 +537,10 @@ module.exports = {
           ]
         },
         {
-          title: 'Field Types - Craft 2',
-          collapsable: false,
-          children: [
-            'email-dropdown-field',
-            'hidden-field',
-            'invisible-field',
-            'notes-field-c2',
-            'phone-field-c2'
-          ]
-        },
-        {
           title: 'Installing & Updating',
           collapsable: false,
           children: [
-            'installing-and-updating-craft-3',
-            'installing-and-updating-craft-2'
+            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -633,8 +574,7 @@ module.exports = {
           title: 'Installing & Updating',
           collapsable: false,
           children: [
-            'installing-and-updating-craft-3',
-            'installing-and-updating-craft-2'
+            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -652,8 +592,7 @@ module.exports = {
           title: 'Installing & Updating',
           collapsable: false,
           children: [
-            'installing-and-updating-craft-3',
-            'installing-and-updating-craft-2'
+            'installing-and-updating-craft-3'
           ]
         }
       ],

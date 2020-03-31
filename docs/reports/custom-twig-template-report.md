@@ -77,9 +77,7 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 
 ### craft/templates/_reports/reportname/settings.html
 
-::: code
-
-``` twig Craft 3
+``` twig
 {# Number Setting #}
 {{ forms.textField({
     label: "Limit"|t,
@@ -123,50 +121,7 @@ Use the Form Macros supported by the Craft CP to keep consistent with the Craft 
 }) }}
 ```
 
-``` twig Craft 2
-{# Number Setting #}
-{{ forms.textField({
-    label: "Limit"|t,
-    name: "limit",
-    size: 10,
-    value: options.quantity is defined ? options.quantity : null,
-    first: true
-}) }}
-
-{# Pre-defined Dropdown #}
-{{ forms.selectField({
-    label: "Region"|t,
-    name: "region",
-    options: {
-        "africa" : "Africa",
-        "antartica" : "Antartica",
-        "asia" : "Asia",
-        "australia" : "Australia",
-        "europe" : "Europe",
-        "northAmerica" : "North America",
-        "southAmerica" : "South America"
-    },
-    value: options.region is defined ? options.region : "Antartica"
-}) }}
-
-{# Dynamic Dropdown #}
-{% set categoryGroup = craft.categories.group('exampleCategoryGroup') %}
-{% set categories = [] %}
-{% for category in categoryGroup %}
-    {% set categories = categories|merge({(category.id) : (category.title)}) %}
-{% endfor %}
-
-{{ forms.selectField({
-    label: "Example Category Element Dropdown Field"|t,
-    name: "exampleCategoryDropdownField",
-    options: categories,
-    value: 1
-}) }}
-```
-
-:::
-
-All Settings are available to you via the `settings` variable in Craft 3 (or `options` variable in Craft 2). Be sure to test if they exist. See an example Settings Template with several common fields in the Sprout Reports `examples/templates` folder.
+All Settings are available to you via the `settings` variable. Be sure to test if they exist. See an example Settings Template with several common fields in the Sprout Reports `examples/templates` folder.
 
 - Text
 - Textarea
@@ -186,9 +141,7 @@ When a user runs a report, all Settings will be passed to the Results Template a
 
 In this example we use our settings to retrieve a CategoryModel and then use that CategoryModel to retrieve all Trips that relate to that Category. We limit the results by the number provided by the user in the Limit setting. 
 
-::: code
-
-``` twig Craft 3
+``` twig
 {% set region = craft.categories.group(settings.region) %}
 {% set trips = craft.entries.section('trips').relatedTo(region).limit(settings.limit) %}
 
@@ -203,21 +156,3 @@ In this example we use our settings to retrieve a CategoryModel and then use tha
     ]) %}
 {% endfor %}
 ```
-
-``` twig Craft 2
-{% set region = craft.categories.group(options.region) %}
-{% set trips = craft.entries.section('trips').relatedTo(region).limit(options.limit) %}
-
-{# Create a Header Row #}
-{% do craft.sproutReports.addHeaderRow(['Region', 'Trip Name']) %}
-
-{# Loop through our trips and output the Region and Trip Name for each result #}
-{% for trip in trips %}
-    {% do craft.sproutReports.addRow([
-        trip.relatedCategory.first().title, 
-        trip.title
-    ]) %}
-{% endfor %}
-```
-
-:::

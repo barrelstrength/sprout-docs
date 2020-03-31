@@ -7,9 +7,7 @@ There are two methods to make sure that related items exist during your imports.
 
 In this example, we first try to match related categories by slug, and if we don't find them, we also define the elements so they can be created on the fly using the `createIfNotFound` and `newElements` keys.
 
-::: code
-
-``` json Craft 3
+``` json
 [
   {
     "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
@@ -52,51 +50,6 @@ In this example, we first try to match related categories by slug, and if we don
   }
 ]
 ```
-
-``` json Craft 2
-[
-  {
-    "@model": "EntryModel",
-    "attributes": { ... },
-    "content": {
-      "title": "In quaerat maiores sit est rerum iusto.",
-      "fields": { ... },
-      "related": {
-        "categoryHandle": {
-          "@model": "CategoryModel",
-          "matchBy": "slug",
-          "matchValue": ["san-francisco", "london"],
-          "createIfNotFound": true,
-          "newElements": [
-            {
-              "@model": "CategoryModel"
-              "attributes": {
-                "groupId": 1,
-                "enabled": true
-              },
-              "content": {
-                "title": "San Francisco"
-              }
-            },
-            {
-              "@model": "CategoryModel"
-              "attributes": {
-                "groupId": 1,
-                "enabled": true
-              },
-              "content": {
-                "title": "London"
-              }
-            }
-          ]
-        }
-      }
-    }
-  }
-]
-```
-
-:::
 
 This behavior requires two keys within the `related` tag.
 

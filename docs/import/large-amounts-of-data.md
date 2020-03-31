@@ -8,20 +8,10 @@ Be aware of the size of the files that you are trying to import. Importing large
 
 Some logs to check:
 
-::: code
-
-``` html Craft 3
+``` html
 storage/logs/queue.log
 storage/logs/web.log
 ```
-
-``` html Craft 2
-craft/storage/runtime/logs/sproutimport.log
-craft/storage/runtime/logs/craft.log
-craft/storage/runtime/logs/phperrors.log
-```
-
-:::
 
 ## Batch Size
 

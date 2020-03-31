@@ -93,9 +93,7 @@ Where `field` is a Form Field model:
 
 #### Displaying Tabs and Fields in Custom Templates
  
-::: code
-
-``` twig Craft 3
+``` twig
 {# form.html #}
 {%- for tab in form.getFieldLayout().getTabs() %}
     {{ craft.sproutForms.displayTab(form, tab.id, renderingOptions) }}
@@ -106,34 +104,6 @@ Where `field` is a Form Field model:
     {{- craft.sproutForms.displayField(form, field, renderingOptions) }}
 {%- endfor %}
 ```
-
-``` twig Craft 2
-{# form.html #}
-{{ body | raw }}
-
-{# tab.html #}
-{% for layoutField in layoutFields -%}
-    {%- set field     = layoutField.getField() -%}
-    {%- set required  = layoutField.required -%}
-    {%- set formField = craft.sproutForms.getRegisteredField(field.type) -%}
-
-    {%- do field.setAttribute('required', layoutField.required) -%}
-
-    {%- if formField -%}
-        {% include "field" with {
-            form:                 form,
-            field:                field,
-            element:              entry,
-            required:             required,
-            formField:            formField,
-            renderingOptions:     renderingOptions,
-            thirdPartySubmission: thirdPartySubmission,
-        } only %}
-    {%- endif %}
-{%- endfor %}
-```
-
-:::
 
 ### Notification Email Changes
 

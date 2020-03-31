@@ -6,16 +6,7 @@ The **Custom Query** Data Source allows you to create Reports in the Craft Contr
 
 The following example query assumes you setup Craft with the default database table naming conventions.
 
-::: code
-
-``` sql Craft 3
+``` sql
 SELECT *
 FROM users;
 ```
-
-``` sql Craft 2
-SELECT *
-FROM craft_users;
-```
-
-:::

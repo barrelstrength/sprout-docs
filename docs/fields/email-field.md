@@ -30,15 +30,6 @@ Enable the _Require email address to be unique_ option if you want to ensure tha
 
 One use case where this might be handy is if you are running a contest and have a landing page form where you only want each person (identified by email address) to be able to submit one entry.
 
-## Availability
-
-| Craft Version | Available |
-|:------------- |:---------:|
-| Craft 3       | **✓** |
-| Craft 2       | **✓** |
-
 ::: tip
-The Email Field works with Sprout Forms for Craft 2. This field is included by default in Sprout Fields for Craft 3.
-
 On the front-end, the Email Field supports HTML5 client-side validation including the `required` attribute, the `email` input type, and custom validation patterns and error messages.
 :::

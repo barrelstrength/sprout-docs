@@ -40,9 +40,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 
 ### Match by ID
 
-::: code
-
-``` json Craft 3
+``` json
 [
     {
         "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
@@ -54,25 +52,9 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ]
 ```
 
-``` json Craft 2
-[
-    {
-        "@model": "EntryModel",
-        "attributes": {
-            "authorId": 1
-        },
-        "content": { ... }
-    }
-]
-```
-
-:::
-
 ### Match by Email
 
-::: code
-
-``` json Craft 3
+``` json
 [
     {
         "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
@@ -91,25 +73,9 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ]
 ```
 
-``` json Craft 2
-[
-    {
-        "@model": "EntryModel",
-        "attributes": {
-            "authorId": "hello@website.com"
-        },
-        "content": { ... }
-    }
-]
-```
-
-:::
-
 ### Match by Username
 
-::: code
-
-``` json Craft 3
+``` json
 [
     {
         "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
@@ -128,24 +94,7 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ]
 ```
 
-``` json Craft 2
-[
-    {
-        "@model": "EntryModel",
-        "attributes": {
-            "authorId": "anotheruser"
-        },
-        "content": { ... }
-    }
-]
-```
-
-:::
-
-
 ## Relations
-
-::: code
 
 ``` json
 [
@@ -212,14 +161,10 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ]
 ```
 
-:::
-
 
 ## Matrix Fields
 
-::: code
-
-``` json Craft 3
+``` json
 [
   {
     "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
@@ -261,13 +206,9 @@ See [Related Attributes](./related-attributes.md) for more information on how to
 ]
 ```
 
-:::
-
 ## Versions
 
-::: code
-
-``` json Craft 3
+``` json
 [
   {
     "@model": "barrelstrength\\sproutbaseimport\\importers\\elements\\Entry",
@@ -359,5 +300,3 @@ See [Related Attributes](./related-attributes.md) for more information on how to
   }
 ]
 ```
-
-:::

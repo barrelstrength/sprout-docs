@@ -8,22 +8,17 @@ The Metadata Field gives you several ways to setup your metadata. Keep it simple
 
 The default Metadata fields include: 
 
-| Metadata Field   | Craft 3  |Craft 2   |
-|:---------------- |:--------:|:--------:|
-| Meta Title       | ✔        | ✔        |
-| Meta Description | ✔        | ✔        |
-| Meta Keywords    | ✔        | ✔        |
-| Meta Image       | ✔        | ✔        |
-| Main Entity      | ✔        | –        |
-| Canonical URL    | ✔        | ✔        |
-| Meta Details: Search     | ✔        | ○        |
-| Meta Details: Open Graph | ✔        | ○        |
-| Meta Details: Twitter    | ✔        | ○        |
-| Meta Details: Geo        | ✔        | ○        |
-| Meta Details: Robots     | ✔        | ○        |
-
-
-○ = _Must be enabled in settings_
+- Meta Title
+- Meta Description
+- Meta Keywords       
+- Meta Image
+- Main Entity
+- Canonical URL
+- Meta Details: Search
+- Meta Details: Open Graph
+- Meta Details: Twitter       
+- Meta Details: Geo    
+- Meta Details: Robots
 
 ### Existing Fields
 
