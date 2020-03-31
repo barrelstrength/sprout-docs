@@ -94,7 +94,6 @@ module.exports = {
           children: [
             'caching-and-csrf-tokens',
             'front-end-file-uploads',
-            'hidden-fields',
             'pre-populating-a-field',
             'custom-html',
             'display-errors-at-top-of-page',
