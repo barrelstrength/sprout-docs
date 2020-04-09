@@ -1,6 +1,6 @@
 # Forms
 
-Form Elements allow users to create and manage single and multi-page online forms within Craft CMS. Content authors can add [Form Fields](./form-fields.md), tabs, and customize a form's settings such as a custom Title Format, Redirect, or Submit Button text.
+Form Elements allow users to create and manage single and multi-page online forms within Craft CMS. Forms can be submit via AJAX or via a standard page request. Content authors can add [Form Fields](./form-fields.md), tabs, and customize a form's settings such as a custom Title Format, Success and Error messages, Redirect behavior, and Submit Button text.
 
 When forms are submitted, a form [Entry](./entries.md) will be created in your Craft database. Send [Notification Emails](notifications.md) to confirm receipt with the user or notify admins that a new Entry is ready for review. Run and export [Reports](./reports.md) to learn more.   
 

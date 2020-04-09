@@ -9,7 +9,7 @@ Sprout Email allows you to personalize your email in several places including:
 - From Email (you probably don't want to use this)
 - Reply To Email
 - Recipients
-- Custom Fields
+- Default Body Field
 - Templates (HTML and Text)
 
 You can personalize your Notification Email with data from an event's `object` variable which is uniquely defined by each Notification Event.
@@ -29,7 +29,7 @@ As we use the `object` variable in our settings, we can think of each of our set
 | From Email (Notification Email) | object | From Email (Message) |
 | Reply To (Notification Email) | object | Reply To Email (Message) |
 | Recipients (Notification Email) | object | Recipients (Message) |
-| Custom Fields (Notification Email) | object | Custom Fields (Message Body) |
+| Default Body Field (Notification Email) | object | Default Body Field (Message Body) |
 | Email Templates (Email Templates) |email, object | Email HTML & Text (Message Body) |
 
 ::: tip
@@ -98,17 +98,3 @@ In your notification templates you can use any Twig code that you would use else
 {{ object.title }}
 {{ object.applicantEmail }}
 ```
-
-## Processing Order
-
-Using shorthand syntax in your Custom Fields and the Control Panel reduces the chance for errors. Some fields, such as the Rich Text field may add spaces between your tags using object syntax (i.e. `{{ object.email }}`) and cause errors during processing. Also, adding more complex Object Syntax in Twig code can create trickier situations to debug when sending email.
-
-The order that your fields are processed is as follows:
-
-1. Subject, From Name, From Email, and Reply To fields are processed for Object variables.
-2. Templates are rendered. All Twig markup and Object variables in your templates are processed. Any Object variables in custom fields get treated as placeholders.
-3. Templates are processed once more to render Object variables within custom fields.
-
-::: warning
-While most of the time the order will not matter, if you need to use Twig syntax anywhere in your custom fields you can run into situations where it causes conflicts as you output it to the templates. For example, if you have a custom field with Twig code and output that field using a Twig filter in your templates, you will trigger an error. Keep it simple. Stick to the rules of thumb above. Test your emails. And check your logs for more details if you run into any issues.
-:::

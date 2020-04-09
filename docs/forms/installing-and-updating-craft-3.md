@@ -39,27 +39,27 @@ Read over the [Changes in Craft 3](https://docs.craftcms.com/v3/changes-in-craft
 
 ``` twig Craft 3
 <form method="post" accept-charset="utf-8" enctype="multipart/form-data">
-	{{ csrfInput() }}
-	<input type="hidden" name="action" value="sprout-forms/entries/save-entry">
-	{{ redirectInput("/contact?message=thankyou") }}
-	<input type="hidden" name="handle" value="formHandle">
-	
-	...
-
-	<input type="submit" value="Submit">	
+    {{ csrfInput() }}
+    <input type="hidden" name="action" value="sprout-forms/entries/save-entry">
+    {{ redirectInput("/contact?message=thankyou") }}
+    <input type="hidden" name="handle" value="formHandle">
+    
+    ...
+    
+    <input type="submit" value="Submit">	
 </form>
 ```
 
 ``` twig Craft 2
 <form method="post" accept-charset="utf-8" enctype="multipart/form-data">
-	{{ getCsrfInput() }}
-	<input type="hidden" name="action" value="sproutForms/entries/saveEntry">
-	<input type="hidden" name="redirect" value="/contact?message=thankyou">
-	<input type="hidden" name="handle" value="formHandle">
-	
-	...
-
-	<input type="submit" value="Submit">	
+    {{ getCsrfInput() }}
+    <input type="hidden" name="action" value="sproutForms/entries/saveEntry">
+    <input type="hidden" name="redirect" value="/contact?message=thankyou">
+    <input type="hidden" name="handle" value="formHandle">
+    
+    ...
+    
+    <input type="submit" value="Submit">	
 </form>
 ```
 
@@ -323,8 +323,127 @@ REMOVED
 $event->fakeIt
 ```
 
+### Upgrading to Forms v3.9.0
 
-			
+Sprout Forms 3.9.0 is a recommended upgrade and fixes a vulnerability that could occur in some scenarios with custom Email Templates.
+
+This release adds native support for AJAX submissions, global Success and Error Messages, and an improved Javascript submission event API. These features are provided out of the box if you are using our default Accessible Form Templates but will require manual updates to any custom template used in your project.
+
+An updated Email Template API improves support for extending layouts from within your templates folder. If you have created any custom [Email Templates Integrations](../email/custom-email-templates.md), you will need to make a small change to the paths in your custom Email Templates Integration to support this behavior.
+
+#### AJAX Submissions
+
+If you currently have a custom AJAX implementation to submit your forms, consider checking out our new AJAX submission feature and new [Javascript Events](./javascript-events.md). Let us know if it doesn't do something you need it to do. We'd love to help you have less code to manage!
+
+Custom Form Templates will need to add support for AJAX submissions. Several individual Form settings (Submission Method, Success Message, Error Message, Error Display Method) may not work as expected until these updates are made to the templates.
+
+##### Updates to form.twig 
+
+``` html
+<!-- Add `data-submission-method` attribute to form tag -->
+<form method="post" accept-charset="utf-8" enctype="multipart/form-data" data-submission-method="{{ form.submissionMethod }}">
+    ...
+</form>
+```
+
+##### Updates to form.twig 
+
+``` twig
+{# Register Submit Handler JS file #}
+{%- set submitHandlerJsUrl = view.getAssetManager().getPublishedUrl(
+    '@sproutforms/web/assets/formtemplates/dist/js/submit-handler.js',
+    true) -%}
+{%- do view.registerJsFile(submitHandlerJsUrl) -%}
+
+...
+{# Initialize SproutFormsSubmitHandler #}
+{% js at endBody %}
+    (function() {
+    window.csrfTokenName = "{{ craft.app.getConfig().getGeneral().csrfTokenName|e('js') }}";
+    new SproutFormsAddressField('{{ id }}');
+    new SproutFormsCheckableInputs('{{ id }}');
+    new SproutFormsDisableSubmitButton('{{ id }}');
+    new SproutFormsRules('{{ id }}');
+    new SproutFormsSubmitHandler('{{ id }}');
+    })();
+{% endjs -%}
+```
+
+#### Global Success and Error Messages
+
+The default Accessible Templates have been updated to support global Success and Error messages when using AJAX submission or when a form is redirected back to the same page after submission. This code could also be used as a starting point for similar behavior if redirecting to a different page after the form is submitted.
+
+##### Updates to form.twig
+
+``` twig
+{# Set these new variables at the top of the form.twig template #}
+{% set globalErrorsEnabled = form.errorDisplayMethod in ['global', 'both'] ? true : false %}
+{% set lastEntry = craft.sproutForms.lastEntry(form.id) %}
+
+{# Define globalErrorListHtml if it exists #}
+{%- set globalErrorListHtml -%}
+    {% set globalErrors = [] %}
+    {% for errors in entry.getErrors() %}
+        {% for error in errors %}
+            {% set globalErrors = globalErrors|merge([error]) %}
+        {% endfor %}
+    {% endfor %}
+    {% include "errors" with {
+        errors: globalErrors
+    } %}
+{%- endset -%}
+
+{# Conditionally output the global Success and Error messages within the form.twig template #}
+{% if globalErrorsEnabled and errors|length and (form.errorMessage or globalErrorListHtml) %}
+    {% set errorMessage = view.renderObjectTemplate(form.errorMessage, entry) %}
+    <div id="{{ id }}-message-box" class="sproutforms-message-errors">
+        {{ errorMessage|markdown }}
+        {{ globalErrorListHtml }}
+    </div>
+{% endif %}
+
+{% if lastEntry and form.id == lastEntry.getForm().id and form.successMessage %}
+    {% set successMessageTemplate = form.successMessage ?? '' %}
+    {% set successMessage = view.renderObjectTemplate(successMessageTemplate, lastEntry) %}
+    <div id="{{ id }}-message-box" class="sproutforms-message-success">{{ successMessage|markdown }}</div>
+{% endif %}
+```
+
+##### Updates to field.twig
+
+``` twig
+{# Set this new variables at the top of the field.twig template #}
+{% set inlineErrorsEnabled = form.errorDisplayMethod in ['inline', 'both'] ? true : false %}
+
+{# Update the field.twig template to only output the errors if `inlineErrorsEnabled` is true #}
+{% if inlineErrorsEnabled %}
+    {% include "errors" with {
+        errors: errors,
+        name: name
+    } %}
+{% endif %}
+```
+
+#### Javascript Events
+
+Anything previously watching the `submit` event should probably be update to use the new `sproutFormsSubmit` event. As Sprout Forms watches the `submit` event issues can arise if third-party javascript also attempts to watch the same event. See the new [Javascript Events](./javascript-events.md) documentation for additional options you have to customize the submission process via Javascript.
+
+``` javascript
+OLD
+form.addEventListener('submit', function(event) {
+    // ...
+}, false);
+
+NEW
+form.addEventListener('onSproutFormsSubmit', function(event) {
+    // ...
+}, false);
+```
+
+#### Email Templates API
+
+Sprout Forms v3.9.0 uses the updated Email Templates Integrations API. See the Sprout Email upgrade notes for details: [Upgrading to Email v4.2.0](../email/installing-and-updating-craft-3.md#upgrading-to-email-v4-2-0).
+ 
 
 
 

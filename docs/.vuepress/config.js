@@ -112,7 +112,8 @@ module.exports = {
             'custom-form-fields',
             'custom-captchas',
             'custom-integrations',
-            'events-and-hooks'
+            'events-and-hooks',
+            'javascript-events'
           ]
         },
         {

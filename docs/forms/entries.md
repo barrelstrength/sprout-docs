@@ -91,7 +91,7 @@ When a form has been submitted successfully, the user will be redirected to wher
 
 ``` twig
 {# Check for the last entry submitted #}
-{% set lastEntry = craft.sproutForms.lastEntry() %}
+{% set lastEntry = craft.sproutForms.lastEntry(form.id) %}
 
 {% if lastEntry %}
 	
