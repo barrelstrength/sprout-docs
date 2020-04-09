@@ -323,7 +323,7 @@ REMOVED
 $event->fakeIt
 ```
 
-### Upgrading to Forms v3.9.0
+## Upgrading to Forms v3.9.0
 
 Sprout Forms 3.9.0 is a recommended upgrade and fixes a vulnerability that could occur in some scenarios with custom Email Templates.
 
@@ -331,13 +331,13 @@ This release adds native support for AJAX submissions, global Success and Error 
 
 An updated Email Template API improves support for extending layouts from within your templates folder. If you have created any custom [Email Templates Integrations](../email/custom-email-templates.md), you will need to make a small change to the paths in your custom Email Templates Integration to support this behavior.
 
-#### AJAX Submissions
+### AJAX Submissions
 
 If you currently have a custom AJAX implementation to submit your forms, consider checking out our new AJAX submission feature and new [Javascript Events](./javascript-events.md). Let us know if it doesn't do something you need it to do. We'd love to help you have less code to manage!
 
 Custom Form Templates will need to add support for AJAX submissions. Several individual Form settings (Submission Method, Success Message, Error Message, Error Display Method) may not work as expected until these updates are made to the templates.
 
-##### Updates to form.twig 
+#### Updates to form.twig 
 
 ``` html
 <!-- Add `data-submission-method` attribute to form tag -->
@@ -346,7 +346,7 @@ Custom Form Templates will need to add support for AJAX submissions. Several ind
 </form>
 ```
 
-##### Updates to form.twig 
+#### Updates to form.twig 
 
 ``` twig
 {# Register Submit Handler JS file #}
@@ -369,11 +369,11 @@ Custom Form Templates will need to add support for AJAX submissions. Several ind
 {% endjs -%}
 ```
 
-#### Global Success and Error Messages
+### Global Success and Error Messages
 
 The default Accessible Templates have been updated to support global Success and Error messages when using AJAX submission or when a form is redirected back to the same page after submission. This code could also be used as a starting point for similar behavior if redirecting to a different page after the form is submitted.
 
-##### Updates to form.twig
+#### Updates to form.twig
 
 ``` twig
 {# Set these new variables at the top of the form.twig template #}
@@ -409,7 +409,7 @@ The default Accessible Templates have been updated to support global Success and
 {% endif %}
 ```
 
-##### Updates to field.twig
+#### Updates to field.twig
 
 ``` twig
 {# Set this new variables at the top of the field.twig template #}
@@ -424,7 +424,7 @@ The default Accessible Templates have been updated to support global Success and
 {% endif %}
 ```
 
-#### Javascript Events
+### Javascript Events
 
 Anything previously watching the `submit` event should probably be update to use the new `sproutFormsSubmit` event. As Sprout Forms watches the `submit` event issues can arise if third-party javascript also attempts to watch the same event. See the new [Javascript Events](./javascript-events.md) documentation for additional options you have to customize the submission process via Javascript.
 
@@ -440,7 +440,7 @@ form.addEventListener('onSproutFormsSubmit', function(event) {
 }, false);
 ```
 
-#### Email Templates API
+### Email Templates API
 
 Sprout Forms v3.9.0 uses the updated Email Templates Integrations API. See the Sprout Email upgrade notes for details: [Upgrading to Email v4.2.0](../email/installing-and-updating-craft-3.md#upgrading-to-email-v4-2-0).
  
