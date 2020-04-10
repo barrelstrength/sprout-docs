@@ -1,6 +1,7 @@
+
 # Thank You Page
 
-For most of your forms, you will want some sort of confirmation page letting the user know that the form was completed successfully.
+The Success Message Form setting can be used to customize a Thank You message when using the default Form Templates. If you prefer to send the user to a separate Thank You page you may need to take additional steps to display your success message.
 
 ## Using a query string to display a custom thank you message
 
