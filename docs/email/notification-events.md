@@ -18,11 +18,18 @@ The Send Rule can be configured to a custom pattern. For example, the 'When a ne
 
 In this case, `object` refers to the Entry that is being saved. And we have added a rule that says only trigger the email if the Entry Type matches a specific Entry Type.
 
+Here is an example of a Send Rule that will only trigger an email if a particular checkbox is selected:
+
+``` twig
+{{ object.checkboxFieldHandle.getOptions()[0].selected == true }}
+```
+
 If you've got lots of logic, you can set the Send Rule to a Twig Template and use all the space you need in your template. Just be sure to make the full template resolve to '1', 'true', 'on', or 'yes'. If none of those conditions are met, the Event will not get triggered.
 
 ``` twig
 {% include '_email/send-rule-logic' %}
 ```
+
 
 ##
 
