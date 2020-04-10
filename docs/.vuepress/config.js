@@ -97,6 +97,7 @@ module.exports = {
             'pre-populating-a-field',
             'custom-html',
             'display-errors-at-top-of-page',
+            'element-api',
             'thank-you-page',
             'submitting-a-form-via-ajax',
             'submission-limit',
