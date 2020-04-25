@@ -29,8 +29,8 @@ _emails/notification
 Sprout Email will look for the following two templates in your templates folder. Your email template files must be named `email`.:
 
 ```
-_emails/notification/_emails/email.twig (.html, etc.)
-_emails/notification/_emails/email.txt
+_emails/notification/email.twig (.html, etc.)
+_emails/notification/email.txt
 ```
 
 ## Email Settings
