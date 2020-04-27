@@ -86,6 +86,15 @@ We rename the primary module class `Plugin.php` to use the name of the plugin (i
 
 Front-end packages are managed in `package.json`. Third-party libraries that must be included in the plugin are are added to the `lib` folder. CSS (SCSS) and Javascript (ES6) assets are managed with Webpack via Laravel Mix. Each Asset Source is configured in `webpack.mix.js` to process files from the `src/web/[assetbundle]/src` folder and compile them to the `src/web/[assetbundle]/dist` folder.
 
+Four npm scripts are available during development:
+
+- **watch** - Watches for changes in resources and builds production `dist/` files
+- **build** - Builds production `dist/` files once
+- **debug** - Watches for changes in resources and builds dev `dist/` files
+- **dev** - Builds dev `dist/` files once
+
+The `dist/` files built for production and dev have the same filenames, so it is a convention that we only commit production files to the repository. The `debug` and `dev` commands can be used when debugging.  
+
 ### Resources and templating
 
 ```
@@ -166,13 +175,62 @@ Many Sprout plugins share functionality and this code is managed in shared Yii M
 |:----- |:----------------- |
 | barrelstrength/sprout-base | Common settings and UI components |
 | barrelstrength/sprout-base-email | Common email functionality | 
-| barrelstrength/sprout-base-reports | Common reporting functionality |
-| barrelstrength/sprout-base-import | Common import functionality |
 | barrelstrength/sprout-base-fields | Common field functionality |
-| barrelstrength/sprout-lists | Common list functionality |
+| barrelstrength/sprout-base-reports | Common reporting functionality |
 | barrelstrength/sprout-base-redirects | Common sitemap functionality |
+| barrelstrength/sprout-base-sent-email | Common sent email functionality |
 | barrelstrength/sprout-base-sitemaps | Common redirects functionality |
 | barrelstrength/sprout-base-uris | Common URL-enabled Section functionality |
+
+
+## Uninstall Migrations
+
+As the Sprout Plugins depend on several shared modules, we need to make sure no shared data is removed when uninstalling a plugin. To do this, plugins using shared modules should implement `SproutDependencyInterface` and `SproutDependencyTrait`.
+
+``` php
+use barrelstrength\sproutbase\base\SproutDependencyInterface;
+use barrelstrength\sproutbase\base\SproutDependencyTrait;
+
+class SproutForms extends Plugin implements SproutDependencyInterface
+{
+    use SproutDependencyTrait;
+
+    public function getSproutDependencies(): array
+    {
+        return [
+            SproutDependencyInterface::SPROUT_BASE,
+            SproutDependencyInterface::SPROUT_BASE_REPORTS
+        ];
+    }
+}
+```
+
+And then check for any shared dependencies before performing uninstall actions.
+
+``` php
+use barrelstrength\sproutbase\base\SproutDependencyInterface;
+use barrelstrength\sproutbasereports\migrations\Install as SproutBaseReportsInstall;
+use barrelstrength\sproutreports\SproutReports;
+use craft\db\Migration;
+
+class Install extends Migration
+{
+    public function safeDown(): bool
+    {
+        $sproutBaseReportsInUse = SproutReports::getInstance()->dependencyInUse(SproutDependencyInterface::SPROUT_BASE_REPORTS);
+
+        if (!$sproutBaseReportsInUse) {
+            $migration = new SproutBaseReportsInstall();
+
+            ob_start();
+            $migration->safeDown();
+            ob_end_clean();
+        }
+
+        return true;
+    }
+}
+```
 
 ## Translations
 

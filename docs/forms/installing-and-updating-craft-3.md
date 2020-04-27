@@ -444,6 +444,44 @@ form.addEventListener('onSproutFormsSubmit', function(event) {
 
 Sprout Forms v3.9.0 uses the updated Email Templates Integrations API. See the Sprout Email upgrade notes for details: [Upgrading to Email v4.2.0](../email/installing-and-updating-craft-3.md#upgrading-to-email-v4-2-0).
  
+## Upgrading to Forms v3.10.0
+
+#### Captcha Config Overrides
+
+While the file-based config `config/sprout-forms.php` had not yet been documented, if you were using it to define Captcha settings these settings will need to be updated.
+
+``` php
+// OLD
+'captchaSettings' => [
+    'sproutforms-duplicatecaptcha' => [
+        'enabled' => true,
+    ],
+    'sproutforms-javascriptcaptcha' => [
+        'enabled' => true,
+    ],
+    'sproutforms-honeypotcaptcha' => [
+        'enabled' => true,
+        'honeypotFieldName' => 'beesknees',
+        'honeypotScreenReaderMessage' => 'Leave this field blank'
+    ],
+],
+
+// NEW
+'captchaSettings' => [
+    'barrelstrength\sproutforms\captchas\DuplicateCaptcha' => [
+        'enabled' => true,
+    ],
+    'barrelstrength\sproutforms\captchas\JavascriptCaptcha' => [
+        'enabled' => true,
+    ],
+    'barrelstrength\sproutforms\captchas\HoneypotCaptcha' => [
+        'enabled' => true,
+        'honeypotFieldName' => 'beesknees',
+        'honeypotScreenReaderMessage' => 'Leave this field blank'
+    ],
+],
+```
+
 
 
 

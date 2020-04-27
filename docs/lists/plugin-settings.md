@@ -1,5 +1,24 @@
 ## Settings
 
+Settings can be managed in the Control Panel _Sprout Lists → Settings_ or via a config file in `config/sprout-lists.php`
+
+``` php
+<?php
+
+return [
+    // The name to display in the control panel in place of the plugin name
+    'pluginNameOverride' => 'Sprout Lists',
+
+    // Create a relationship between a Sprout Subscriber and a matching
+    // Craft User, based on the email address
+    'enableUserSync' => false,
+
+    // Subscriber Lists will be automatically created when a subscribe form
+    // is submitted and no matching List is found.
+    'enableAutoList' => false
+];
+```
+
 ### Enable User Sync
 
 When an `email address` is added to a Subscriber List, if the `email address` matches the address of a known `User ID` in Craft, Sprout Lists can create a link between the two. Enable this behavior the the Sprout Lists settings.

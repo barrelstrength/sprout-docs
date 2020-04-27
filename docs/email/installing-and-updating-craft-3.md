@@ -14,7 +14,7 @@ Sprout Email installation and update instructions for Craft 3.
 ## Installation via Composer 
 
 1. Open your terminal and go to your Craft project:<br>`cd /path/to/project`
-2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-forms`
+2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-email`
 3. In the Control Panel, go to _Settings → Plugins_ and select “Install”
 
 ## Upgrading to Craft 3
@@ -38,6 +38,29 @@ To better support extending Twig layouts and organizing your templates more flex
 #### Personalized Email Templates
 
 For improved security, Custom Email Templates no longer render objects in custom fields outside of the _Subject_ or _Default Body_ fields. Please let us know if you have additional use cases for this and we can consider them on a case by case basis.
+
+#### Custom Email Templates
+
+Previously, the custom Email Templates setting identified an Email Folder and the only templates available were those templates within that folder. In the latest update, we now treat the `templates/` folder as the root folder and your Email Template is just a folder somewhere within that.
+
+If you happen to be using any `include`, `extends`, or `import` tags in custom Email Templates, you may want to check if they are resolving correctly after the latest update.
+
+For example, say you have this folder structure:
+
+``` plaintext
+templates/_emails/newsletter/_layout.twig
+templates/_emails/newsletter/email.twig
+```
+
+If you previously had an email in a `templates/_emails/newsletter` folder that extended a layout within that folder you would treat the email folder as the root. However, after the recent updates the templates folder is treated as the root so you'd need to extend the file as it exists within the template folder.
+
+``` twig
+{# OLD #}
+{% extends "_layout" %}
+
+{# NEW #}
+{% extends "_emails/newsletter/_layout" %}
+```
 
 #### Email Templates Integrations
 

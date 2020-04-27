@@ -1,19 +1,39 @@
 # Settings
 
-Customize the details of your metadata workflows with the following settings.
+Settings can be managed in the Control Panel _Sprout SEO → Settings_ or via a config file in `config/sprout-seo.php`. As Redirect and Sitemap functionality are managed in separate modules, for file-based config overrides you'll want to use the config overrides for each respective module: `config/sprout-redirects.php` and `config/sprout-sitemaps.php`. See below for links to the documentation of each module.
 
-## Config Settings
 
-### Meta Description Length
+## Metadata
 
-For many years the recommended length of Meta Description content was around 160 characters. More recently, observations have been made that longer descriptions are also displayed by Google.
+``` php
+<?php
 
-Moz writes in 2018, [How Long Should Your Meta Description Be?](https://moz.com/blog/how-long-should-your-meta-description-be-2018):
+return [
+    // The name to display in the control panel in place of the plugin name
+    'pluginNameOverride' => 'Sprout SEO',
 
-> You can write meta descriptions for any length, however Google generally truncates snippets ~300 characters (this limit increased in December 2017). You want meta descriptions long enough that they're descriptive. We generally recommend writing meta descriptions between 50–300 characters.
+    // The maximum number of characters to allow for Meta Description fields
+    'maxMetaDescriptionLength' => 160,
 
-Sprout SEO defaults to Meta Descriptions of 160 characters, however, you can update this to your preference. To override the default value:
- 
- ``` html
-Sprout SEO → Settings → General → Meta Description Length
- ```
+    // Sprout SEO prepares and outputs all of your metadata in your template
+    'enableRenderMetadata' => true,
+
+    // Make a global `metadata` variable available to all of your templates
+    'useMetadataVariable' => false,
+
+    // The name of the metadata variable available to your templates
+    // 'metadataVariable' => 'metadata'
+
+    // Display field handle next to the field name in your Element Metadata 
+    // field settings
+    'displayFieldHandles' => false
+];
+```
+
+## Redirects
+
+- See [Sprout Redirects](../redirects/plugin-settings.md) for documentation of the Redirects settings
+
+## Sent Email
+
+- See [Sprout Sitemaps](../sitemaps/plugin-settings.md) for documentation of the Sitemap settings

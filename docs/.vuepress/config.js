@@ -261,7 +261,6 @@ module.exports = {
           children: [
             'notification-emails',
             'notification-events',
-            'sent-emails',
             'plugin-settings'
           ]
         },
@@ -296,6 +295,25 @@ module.exports = {
             'custom-email-templates',
             'custom-mailers',
             'custom-notification-events'
+          ]
+        },
+        {
+          title: 'Installing & Updating',
+          collapsable: false,
+          children: [
+            'installing-and-updating-craft-3'
+          ]
+        }
+      ],
+
+      '/sent-email/': [
+        ['../', '← All Plugins'],
+        {
+          title: 'Introduction',
+          collapsable: false,
+          children: [
+            '',
+            'plugin-settings'
           ]
         },
         {
@@ -349,7 +367,8 @@ module.exports = {
           children: [
             'data-sources',
             'reports',
-            'mailing-lists'
+            'mailing-lists',
+            'plugin-settings'
           ]
         },
         {
@@ -385,95 +404,95 @@ module.exports = {
         }
       ],
 
-      '/import/': [
-        ['../', '← All Plugins'],
-        {
-          title: 'Introduction',
-          collapsable: false,
-          children: [
-            '',
-            'supported-data-types',
-          ]
-        },
-        {
-          title: 'Core Concepts',
-          collapsable: false,
-          children: [
-            'resolve-relationships',
-            'related-attributes',
-            'create-elements-on-the-fly',
-            'update-existing-elements',
-            'set-default-attributes',
-            'multiple-sites',
-            'multiple-import-types',
-            'large-amounts-of-data',
-            'console-commands'
-          ]
-        },
-        {
-          title: 'Element Importers',
-          collapsable: false,
-          children: [
-            'assets',
-            'categories',
-            'entries',
-            'matrix-field',
-            'orders',
-            'products-with-variants',
-            'tags',
-            'users'
-          ]
-        },
-        {
-          title: 'Settings Importers',
-          collapsable: false,
-          children: [
-            'fields',
-            'sections',
-            'widgets'
-          ]
-        },
-        {
-          title: 'Bundles',
-          collapsable: false,
-          children: [
-            'longform-content-matrix',
-            'navigation-using-structures',
-            'simple-blog',
-          ]
-        },
-        {
-          title: 'Seed Data',
-          collapsable: false,
-          children: [
-            'faker-and-fake-data',
-            'generating-lots-of-data'
-          ]
-        },
-        {
-          title: 'Examples',
-          collapsable: false,
-          children: [
-            'importing-dates'
-          ]
-        },
-        {
-          title: 'Development',
-          collapsable: false,
-          children: [
-            'element-importers',
-            'field-importers',
-            'settings-importer'
-          ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3'
-          ]
-        }
-      ],
+      // '/import/': [
+      //   ['../', '← All Plugins'],
+      //   {
+      //     title: 'Introduction',
+      //     collapsable: false,
+      //     children: [
+      //       '',
+      //       'supported-data-types',
+      //     ]
+      //   },
+      //   {
+      //     title: 'Core Concepts',
+      //     collapsable: false,
+      //     children: [
+      //       'resolve-relationships',
+      //       'related-attributes',
+      //       'create-elements-on-the-fly',
+      //       'update-existing-elements',
+      //       'set-default-attributes',
+      //       'multiple-sites',
+      //       'multiple-import-types',
+      //       'large-amounts-of-data',
+      //       'console-commands'
+      //     ]
+      //   },
+      //   {
+      //     title: 'Element Importers',
+      //     collapsable: false,
+      //     children: [
+      //       'assets',
+      //       'categories',
+      //       'entries',
+      //       'matrix-field',
+      //       'orders',
+      //       'products-with-variants',
+      //       'tags',
+      //       'users'
+      //     ]
+      //   },
+      //   {
+      //     title: 'Settings Importers',
+      //     collapsable: false,
+      //     children: [
+      //       'fields',
+      //       'sections',
+      //       'widgets'
+      //     ]
+      //   },
+      //   {
+      //     title: 'Bundles',
+      //     collapsable: false,
+      //     children: [
+      //       'longform-content-matrix',
+      //       'navigation-using-structures',
+      //       'simple-blog',
+      //     ]
+      //   },
+      //   {
+      //     title: 'Seed Data',
+      //     collapsable: false,
+      //     children: [
+      //       'faker-and-fake-data',
+      //       'generating-lots-of-data'
+      //     ]
+      //   },
+      //   {
+      //     title: 'Examples',
+      //     collapsable: false,
+      //     children: [
+      //       'importing-dates'
+      //     ]
+      //   },
+      //   {
+      //     title: 'Development',
+      //     collapsable: false,
+      //     children: [
+      //       'element-importers',
+      //       'field-importers',
+      //       'settings-importer'
+      //     ]
+      //   },
+      //   {
+      //     title: 'Installing & Updating',
+      //     collapsable: false,
+      //     children: [
+      //       'installing-and-updating-craft-3'
+      //     ]
+      //   }
+      // ],
 
       '/active/': [
         ['../', '← All Plugins'],
@@ -561,7 +580,7 @@ module.exports = {
           children: [
             'lists',
             'subscribers',
-            'settings'
+            'plugin-settings'
           ]
         },
         {
@@ -634,6 +653,8 @@ module.exports = {
           collapsable: false,
           children: [
             ['email/', 'Sprout Email'],
+            ['campaigns/', 'Sprout Campaigns'],
+            ['sent-email/', 'Sprout Sent Email'],
             ['lists/', 'Sprout Lists'],
           ]
         },
@@ -642,7 +663,7 @@ module.exports = {
           collapsable: false,
           children: [
             ['reports/', 'Sprout Reports'],
-            ['import/', 'Sprout Import'],
+            // ['import/', 'Sprout Import'],
           ]
         },
         {

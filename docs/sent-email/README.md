@@ -1,4 +1,4 @@
-# Sent Emails
+# Sprout Sent Email
 
 Sent Email Elements capture instances of emails that are sent by Craft. Sent Emails can be used to review Sent Emails, troubleshoot customer support and deliverability issues, and re-send email to your users.
 

@@ -1,14 +1,56 @@
 # Settings
 
-Customize your Redirects with the following settings.
+Settings can be managed in the Control Panel _Sprout Redirects → Settings_ or via a config file in `config/sprout-redirects.php`
 
-| Setting          | Description |
-|:---------------- |:----------- |
-| **Enable&nbsp;Redirects** | Process Redirect rules and log 404 requests.. |
-| **Log&nbsp;404&nbsp;Redirects** | Log 'Page Not Found' errors as 404 Redirects. 404 Redirects will appear on the Redirects tab as a disabled 404 Redirect Element and can be updated to 301 or 302 Redirects. |
-| **Redirect&nbsp;Match&nbsp;Strategy** | How to match 404 requests with Redirect records already captured in the database. Defaults to matching the entire URL including query strings. Selecting 'without query strings' will remove all parameters from the request URL before searching for a match. See [Query String Examples](./query-strings-in-redirects.md). |
-| **Query&nbsp;String&nbsp;Strategy** | How to treat query strings after processing a redirect. 'Remove query strings' will remove the query string from the incoming URL entirely. 'Append query strings' will add any query string from the incoming URL to the New Url. See [Query String Examples](./query-strings-in-redirects.md). |
-| **Track&nbsp;Remote&nbsp;IP** | Enable to capture the IP Address used when a 404 request is saved. IP Addresses may be considered personal information. |
-| **&nbsp;Redirect&nbsp;Limit** | The total number of 404 Redirects that will be stored in the database per-site. When the limit is reached, the least recently updated 404 Redirects will be deleted from the Redirects stored for that site. |
-| **Cleanup&nbsp;Probability** | The probability that the 404 Redirect cleanup task will run each web request. A lower probability will trigger a cleanup task less often and the number of 404 Redirects stored in the database may be higher than the 404 Redirect Limit target until the cleanup task is triggered. |
-| **Excluded&nbsp;URL&nbsp;Patterns** | Add any regular expression patterns you wish to exclude from the Redirect log. Add each pattern on a new line. Comments can be added by starting a line with the hash # character |
+``` php
+<?php
+
+return [
+    // The name to display in the control panel in place of the plugin name
+    'pluginNameOverride' => 'Sprout Redirects',
+
+    // Process Redirect rules and log 404 requests.
+    'enableRedirects' => true,
+
+    // Log 'Page Not Found' errors as 404 Redirects
+    'enable404RedirectLog' => false,
+
+    // How to match 404 requests with Redirect records already captured in
+    //the database.
+    // urlWithQueryStrings: match the entire URL including query strings
+    // urlWithoutQueryStrings: remove all parameters from the request URL
+    //   before searching for a match
+    'redirectMatchStrategy' => 'urlWithoutQueryStrings',
+
+    // How to treat query strings after processing a redirect
+    // removeQueryStrings - remove the query string from the incoming
+    //   URL entirely
+    // appendQueryStrings - add any query string from the incoming URL to
+    //   the New Url
+    'queryStringStrategy' => 'removeQueryStrings',
+
+    // Enable to capture the IP Address used when a 404 request is saved
+    'trackRemoteIp' => false,
+
+    // The target number of 404 Redirects that will be stored in the database
+    // per-site, after the cleanup task runs.
+    'total404Redirects' => 250,
+
+    // The probability that the 404 Redirect cleanup task will run each
+    // web request
+    //
+    // 0 - None
+    // 100000 - 1 in 10
+    // 10000 - 1 in 100
+    // 1000 - selected>1 in 1,000
+    // 100 - 1 in 10,000
+    // 10 - 1 in 100,000
+    // 1 - 1 in 1,000,000
+    'cleanupProbability' => 1000,
+
+    // Add any regular expression patterns you wish to exclude from the
+    // Redirect log. Overriding this setting will override any updates made by
+    // the "Add to Excluded URLs" action.
+    // 'excludedUrlPatterns' => ''
+];
+```
