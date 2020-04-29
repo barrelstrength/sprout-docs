@@ -4,7 +4,7 @@ Rendering options allow you to customize form and field output without having to
 
 ``` twig
 {% set options = {
-    "id": "my-form"
+    id: "my-form"
 } %}
 
 {{ craft.sproutForms.displayForm("formHandle", options) }}
@@ -32,11 +32,11 @@ The following options will modify the `<form>` tag.
 
 ### Field wrapper and input tag options
 
-The following options will modify the `<input>` field and the wrapper `<div>` and related tags that surround each `<input>` field. (See the `displayField()` example below.)
+The following options will modify the `<input>` field and the wrapper `<div>` and related tags that surround each `<input>` field. Field-specific options will override global options and be applied to a specific field. Target all fields using the "*" option. (See the example below.)
 
 | Option  | Type     | Default                     | Description                                                             |
 |---------|----------|-----------------------------|-------------------------------------------------------|
-| `id`    | `string` | `fieldHandle-field`  | The id to assign to the input tag                            |
+| `id`    | `string` | `fieldHandle-field`  | The id to assign to the input tag. Not available as a global option. |
 | `class` | `string` | `fieldHandle-field` | A space separated list of classes to apply to the input tag     |
 | `errorClass` | `string` | `errors` | A space separated list of classes to apply to theinput tag when errors are found |
 | `data` | `{}` | | An object (associative array) of data attributes to set on the form or input tag
@@ -53,16 +53,23 @@ The `displayForm()` accepts rendering options for the form tag and input fields.
 
 ```twig
 {% set options = {
-    "id": "myform",
-    "class": "form-class form-class-customized",
-    "errorClass": "form-has-error",
-    "fields": {
-        "fieldHandle": {
-            "id": "myfield",
-            "class": "my-fancy-class",
-            "errorClass": "field-has-error",
-            "data": {
-                "hidden": "false",
+    id: "my-form",
+    class: "form-class form-class-customized",
+    errorClass: "form-has-error",
+    fields: {
+        "*": {
+            class: "all-fields-class",
+            errorClass: "all-fields-error-class",
+            data: {
+                thing: "all-fields-data-attribute",
+            }
+        }
+        fieldHandle: {
+            id: "field-specific-id",
+            class: "field-specific-class",
+            errorClass: "field-specific-error-class",
+            data: {
+                thing: "field-specific-data-attribute",
             }
         }
     }
