@@ -18,6 +18,7 @@ module.exports = {
     }
   },
   themeConfig: {
+    logo: "/icon.svg",
     docsRepo: 'barrelstrength/sprout-docs',
     docsDir: 'docs',
     docsBranch: 'master',
