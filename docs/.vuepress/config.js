@@ -1,20 +1,22 @@
 module.exports = {
   title: 'Sprout Docs for Craft 3',
   description: 'The Sprout Business Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.',
-  // theme: 'craftdocs',
+  theme: 'craftdocs',
   base: '/docs/',
-  ga: '',
   plugins: [
     [
-      '@vuepress/google-analytics', {
-      ga: 'UA-26032077-1'
-    }
-    ]
+      '@vuepress/google-analytics',
+      {
+        ga: 'UA-26032077-1'
+      }
+    ],
+    ['@vuepress/last-updated'],
   ],
   markdown: {
     anchor: {level: [2, 3]},
-    extendMarkdown: md => {
-      md.use(require('./markdown/code'));
+    extendMarkdown(md) {
+      let markup = require("vuepress-theme-craftdocs/markup");
+      md.use(markup);
     }
   },
   themeConfig: {
@@ -26,9 +28,7 @@ module.exports = {
     codeLanguages: {
       twig: 'Twig',
       php: 'PHP',
-      js: 'Javascript',
-      craft2: 'Craft 2',
-      craft3: 'Craft 3'
+      js: 'Javascript'
     },
     algolia: {
       apiKey: '9245da67ddab2b9ddda749bbb31362cf',
@@ -42,7 +42,9 @@ module.exports = {
           {text: 'Sprout for Craft 2', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v2/'},
         ]
       },
-      {text: 'Back to Sprout →', link: 'https://sprout.barrelstrengthdesign.com/'},
+      {
+        text: 'Back to Sprout →', link: 'https://sprout.barrelstrengthdesign.com/'
+      },
     ],
     sidebar: {
       '/forms/': [

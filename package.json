@@ -3,6 +3,7 @@
     "license": "UNLICENSED",
     "devDependencies": {
         "@vuepress/plugin-google-analytics": "^1.4.1",
+        "@vuepress/plugin-last-updated": "^1.4.1",
         "vuepress": "^1.4.1",
         "vuepress-theme-craftdocs": "^2.0.2",
         "vuepress-plugin-seo": "^0.1.2",
