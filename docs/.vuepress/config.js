@@ -45,7 +45,10 @@ module.exports = {
       'vuepress-plugin-sitemap',
       {
         hostname: 'https://sprout.barrelstrengthdesign.com/docs',
-        changefreq: 'weekly'
+        changefreq: 'weekly',
+        exclude: [
+          '/404.html'
+        ]
       }
     ],
   ],
