@@ -3,6 +3,16 @@ module.exports = {
   description: 'The Sprout Business Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.',
   theme: 'craftdocs',
   base: '/docs/',
+  head: [
+    ['link', {rel: 'icon', href: '/icons/favicon-16x16.png'}],
+    ['link', {rel: 'apple-touch-icon', sizes: '180x180', href: '/icons/apple-touch-icon.png'}],
+    ['link', {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/icons/favicon-32x32.png'}],
+    ['link', {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/icons/favicon-16x16.png'}],
+    ['link', {rel: 'mask-icon', href: 'https://docs.craftcms.com/siteicons/safari-pinned-tab.svg', color: '#e5422b'}],
+    ['meta', {name: 'msapplication-TileColor', content: '#484539'}],
+    ['meta', {name: 'msapplication-config', content: 'https://docs.craftcms.com/browserconfig.xml'}],
+    ['meta', {name: 'theme-color', content: '#484539'}],
+  ],
   plugins: [
     [
       '@vuepress/google-analytics',
@@ -66,7 +76,7 @@ module.exports = {
     twitterHandle: '@Barrel_Strength',
   },
   themeConfig: {
-    logo: "/icon.svg",
+    logo: "/icons/logo.svg",
     docsRepo: 'barrelstrength/sprout-docs',
     docsDir: 'docs',
     docsBranch: 'master',
