@@ -2,15 +2,15 @@
     "private": true,
     "license": "UNLICENSED",
     "devDependencies": {
-        "@vuepress/plugin-google-analytics": "^1.3.0",
-        "vuepress": "^1.3.0",
-        "vuepress-theme-craftdocs": "^1.3.6"
+        "@vuepress/plugin-google-analytics": "^1.4.1",
+        "vuepress": "^1.4.1",
+        "vuepress-theme-craftdocs": "^2.0.2",
+        "vuepress-plugin-seo": "^0.1.2",
+        "vuepress-plugin-sitemap": "^2.3.1"
     },
     "scripts": {
         "docs:dev": "vuepress dev docs",
-        "docs:build": "vuepress build docs && php ./src/optimizeMetadata.php"
-    },
-    "dependencies": {
-        "vuepress-plugin-seo": "^0.1.2"
+        "docs:build": "vuepress build docs && php ./src/optimizeMetadata.php",
+        "docs:sitemap": "vuepress-sitemap -H https://sprout.barrelstrengthdesign.com/"
     }
 }
