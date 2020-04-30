@@ -7,11 +7,11 @@
         "vuepress": "^1.4.1",
         "vuepress-theme-craftdocs": "^2.0.2",
         "vuepress-plugin-seo": "^0.1.2",
-        "vuepress-plugin-sitemap": "^2.3.1"
+        "vuepress-plugin-sitemap": "^2.3.1",
+        "esm": "^3.2.25"
     },
     "scripts": {
         "docs:dev": "vuepress dev docs",
-        "docs:build": "vuepress build docs && php ./src/optimizeMetadata.php",
-        "docs:sitemap": "vuepress-sitemap -H https://sprout.barrelstrengthdesign.com/"
+        "docs:build": "vuepress build docs && vuepress-sitemap -hostname https://sprout.barrelstrengthdesign.com/docs -dest docs/.vuepress/dist"
     }
 }

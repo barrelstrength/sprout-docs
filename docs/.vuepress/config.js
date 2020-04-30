@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Sprout Docs for Craft 3',
+  title: 'Sprout Documentation',
   description: 'The Sprout Business Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.',
   theme: 'craftdocs',
   base: '/docs/',
@@ -11,6 +11,43 @@ module.exports = {
       }
     ],
     ['@vuepress/last-updated'],
+    [
+      'vuepress-plugin-seo',
+      {
+        siteTitle: (_, $site) => $site.metadata && $site.metadata.siteName || $site.title,
+        title: $page => $page.title,
+        description: $page => $page.frontmatter.description,
+        image: ($page, $site) => $page.frontmatter.image && (($site.metadata && $site.metadata.siteUrl || '') + $page.frontmatter.image) || $site.metadata && $site.metadata.image,
+        url: (_, $site, path) => ($site.metadata && $site.metadata.siteUrl || '') + path,
+        type: _ => 'article',
+        twitterCard: _ => 'summary',
+        publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
+        modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
+        customMeta: (add, context) => {
+          const {
+            $site, // Site configs provided by Vuepress
+            $page, // Page configs provided by Vuepress
+
+            // All the computed options from above:
+            siteTitle, title, description, author,
+            twitterCard, type, url, image, publishedAt, modifiedAt,
+          } = context;
+
+          add('twitter:creator', $site.metadata && $site.metadata.twitterHandle);
+          add('twitter:site', $site.metadata && $site.metadata.twitterHandle);
+
+          let canonical = $page.frontmatter.canonical || url;
+          add('canonical', canonical);
+        },
+      }
+    ],
+    [
+      'vuepress-plugin-sitemap',
+      {
+        hostname: 'https://sprout.barrelstrengthdesign.com/docs',
+        changefreq: 'weekly'
+      }
+    ],
   ],
   markdown: {
     anchor: {level: [2, 3]},
@@ -18,6 +55,12 @@ module.exports = {
       let markup = require("vuepress-theme-craftdocs/markup");
       md.use(markup);
     }
+  },
+  metadata: {
+    siteName: 'Sprout Plugin Documentation',
+    siteUrl: 'https://sprout.barrelstrengthdesign.com/docs',
+    image: 'https://s3.amazonaws.com/sprout.barrelstrengthdesign.com-assets/content/plugins/sprout-plugins-logo.png',
+    twitterHandle: '@Barrel_Strength',
   },
   themeConfig: {
     logo: "/icon.svg",
