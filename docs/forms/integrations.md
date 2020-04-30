@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Integrations allow you to submit your forms to custom, third-party endpoints and to create Elements within Craft CMS.
+---
+
 # Integrations
 
 Integrations allow you to submit your forms to custom, third-party endpoints and to create Elements within Craft CMS. Use Sprout Forms' powerful front-end form templating and validation and submit your data anywhere you'd like.   

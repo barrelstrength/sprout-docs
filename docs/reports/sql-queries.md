@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Reports is designed to help make it easy for clients to run queries and get back the data they need.
+---
+
 # Custom SQL Queries
 
 One reason Craft is powerful is because it allows users to build complex relational content from a very user-friendly UI. While that is nice for users, it can make certain queries very complex when retrieving your data.  Sprout Reports is designed to help make it easy for clients to run queries and get back the data they need. It is not designed to write those queries for you.

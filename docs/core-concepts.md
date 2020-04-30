@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Plugins extend Craft with several new components for designing a website's content architecture and digital strategy.
+---
+
 # Core Concepts
 
 ## Extending Craft

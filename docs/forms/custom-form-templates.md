@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Form Templates enable you to manage Template Overrides as a plugin to easily reuse across projects or share in the Plugin Store.
+---
+
 # Form Templates
 
 Form Templates enable you to manage [Template Overrides](./template-overrides.md) as a plugin to easily reuse across projects or share in the Plugin Store.

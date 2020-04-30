@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Notifications Email Elements give you the power to manage your email notifications in a central location alongside your content in Craft CMS.
+---
+
 # Notification Emails
 
 Notifications Email Elements give you the power to manage your email notifications in a central location alongside your content in Craft CMS.

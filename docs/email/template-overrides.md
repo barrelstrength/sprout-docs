@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Email gives you 100% control over your email templates using the Template Overrides.
+---
+
 # Template Overrides
 
 Sprout Email gives you 100% control over your email templates using the Template Overrides. If you wish to reuse your Template Overrides on multiple projects, you can create [Custom Email Templates](./custom-email-templates.md).

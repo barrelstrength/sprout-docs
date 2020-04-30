@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Forms can be used in headless mode using Craft's Element API plugin.
+---
+
 # Element API
 
 Sprout Forms can be used in headless mode using Craft's [Element API](https://plugins.craftcms.com/element-api) plugin.

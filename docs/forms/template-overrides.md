@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Forms gives you 100% control over your form output using the Template Overrides.
+---
+
 # Template Overrides
 
 Sprout Forms gives you 100% control over your form output using the Template Overrides. If you wish to reuse your Template Overrides on multiple projects, you can create [Custom Form Templates](./custom-form-templates.md).

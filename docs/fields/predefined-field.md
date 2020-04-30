@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The Predefined Field allows you parse Twig and define the value of your field ahead of time.
+---
+
 # Predefined Field
 
 The Predefined Field allows you parse Twig and define the value of your field ahead of time. This can be useful to help optimize queries or prepare data for a specific use case before it is needed.

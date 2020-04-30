@@ -1,3 +1,8 @@
+---
+date: 2019-05-01
+description: Generate sitemaps for all of your URL-enabled content for one or more languages.
+---
+
 # Sitemaps
 
 Generate sitemaps for all of your URL-enabled content for one or more languages.
@@ -34,26 +39,26 @@ Your Sitemap Index will be output when you visit the URL: `/sitemap.xml`
 ``` xml Craft 3
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>{{ siteUrl }}sitemap-singles.xml</loc>
-    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>{{ siteUrl }}sitemap-G76D5Oizt4fH-1.xml</loc>
-    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>{{ siteUrl }}sitemap-9O2U0q1gdvPM-1.xml</loc>
-    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>{{ siteUrl }}sitemap-1TGQYAvdWwEU-1.xml</loc>
-    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>{{ siteUrl }}sitemap-custom-pages.xml</loc>
-    <lastmod>{{ now|date('Y-m-d') }}</lastmod>
-  </sitemap>
+    <sitemap>
+        <loc>{{ siteUrl }}sitemap-singles.xml</loc>
+        <lastmod>{{ now|date('Y-m-d') }}</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>{{ siteUrl }}sitemap-G76D5Oizt4fH-1.xml</loc>
+        <lastmod>{{ now|date('Y-m-d') }}</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>{{ siteUrl }}sitemap-9O2U0q1gdvPM-1.xml</loc>
+        <lastmod>{{ now|date('Y-m-d') }}</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>{{ siteUrl }}sitemap-1TGQYAvdWwEU-1.xml</loc>
+        <lastmod>{{ now|date('Y-m-d') }}</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>{{ siteUrl }}sitemap-custom-pages.xml</loc>
+        <lastmod>{{ now|date('Y-m-d') }}</lastmod>
+    </sitemap>
 </sitemapindex>
 ```
 
@@ -74,7 +79,7 @@ Each individual sitemap will list the URLs for the content in your URL-Enabled S
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>   
     </url>
-		<url>
+        <url>
         <loc>http://website.com/example-url2</loc>
         <lastmod>2017-08-08T03:08:03Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -99,7 +104,7 @@ If you have a multi-language site, your sitemap will adjust to reference URLs fo
         <xhtml:link rel="alternate" hreflang="de" href="http://website.com/de/example-url" />
         <xhtml:link rel="alternate" hreflang="es" href="http://website.com/es/example-url" />     
     </url>
-		<url>
+        <url>
         <loc>http://website.com/example-url2</loc>
         <lastmod>2017-08-08T03:08:03Z</lastmod>
         <changefreq>weekly</changefreq>

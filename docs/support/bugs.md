@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: View known issues or submit a bug report on the Github repo for each plugin.
+---
+
 # Bugs
 
 View known issues or submit a bug report on the Github repo for each plugin. See the [Changelog](./changelog.md) for more information on the latest updates and releases.

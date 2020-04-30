@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Rules give you control over conditional logic in your Forms.
+---
+
 # Rules
 
 Rules give you control over conditional logic in your Forms.

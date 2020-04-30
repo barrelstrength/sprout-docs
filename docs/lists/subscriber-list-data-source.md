@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Lists and Subscribers can be used for Mailing Lists via the Subscriber List integration for Sprout Reports.
+---
+
 # Subscriber List
 
 Lists and Subscribers can be used for [Mailing Lists](../reports/mailing-lists.md) via the Subscriber List integration for Sprout Reports. Mailing Lists can be used in Sprout Email and Sprout Forms.

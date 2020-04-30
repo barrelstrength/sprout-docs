@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The Changelog reflects the most recent updates to a plugin and can be found at the top level in the Github repo for each plugin.
+---
+
 # Changelog
 
 The Changelog reflects the most recent updates to a plugin and can be found at the top level in the Github repo for each plugin.

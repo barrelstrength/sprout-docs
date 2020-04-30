@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Forms includes over 20 Form Fields and can be extended to add additional Custom Form Fields.
+---
+
 # Form Fields
 
 Sprout Forms includes over 20 Form Fields and can be extended to add additional [Custom Form Fields](./custom-form-fields.md). Available Form Fields appear in the sidebar while editing a Form and one or more instances of a Form Field can be dragged to the Field Layout.

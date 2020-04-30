@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The Integrations API enables you to provide additional Integrations for users to select and configure when creating Forms.
+---
+
 # Integrations
 
 The Integrations API enables you to provide additional [Integrations](./integrations.md) for users to select and configure when creating Forms.

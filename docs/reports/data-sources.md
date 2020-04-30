@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: A Data Source defines a set of data that can be queried by a Report and which options can be used when querying that data.
+---
+
 # Data Sources
 
 A Data Source defines a set of data that can be queried by a Report and which options can be used when querying that data. A Data Source can define data that exists in your Craft installation or from any source that you wish to query near or far. For example, a custom Data Source could query data from a third-party API and return the results to Sprout Reports to display.

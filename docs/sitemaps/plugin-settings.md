@@ -1,3 +1,8 @@
+---
+date: 2019-05-01
+description: Settings can be managed in the Control Panel or via a config file in config/sprout-sitemaps.php
+---
+
 # Settings
 
 Settings can be managed in the Control Panel _Sprout Sitemaps → Settings_ or via a config file in `config/sprout-sitemaps.php`

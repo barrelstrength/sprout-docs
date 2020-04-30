@@ -1,3 +1,8 @@
+---
+date: 2019-04-25
+description: Redirects allow you to forward users and search engines to the appropriate content on your site.
+---
+
 # Redirects
 
 Redirects allow you to forward users and search engines to the appropriate content on your site. Redirects can be managed on a per-site basis directly in the Control Panel.

@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: An Entry Element is created when a form is submitted. If validation fails, the Entry Element will be returned to the template with errors. If validation succeeds...
+---
+
 # Entries
 
 An Entry Element is created when a form is submitted. If validation fails, the Entry Element will be returned to the template with errors. If validation succeeds, the Entry Element will be saved to the database and the Form submission will redirect to the Redirect URL.
@@ -45,9 +50,9 @@ The `entries` tag will let you get all entries for a specific form.
 ``` twig
 {# Get all entries for a specific form #}
 {% for formEntry in craft.sproutForms.entries
-	.formHandle('contact')
-	.all() %}
-	{{ formEntry.title }}
+    .formHandle('contact')
+    .all() %}
+    {{ formEntry.title }}
 {% endfor %}
 
 {# Limit the results to the first 3 entries #}
@@ -55,7 +60,7 @@ The `entries` tag will let you get all entries for a specific form.
   .limit(3)
   .order('elements.dateCreated asc')
   .all() %}
-	{{ formEntry.title }}
+    {{ formEntry.title }}
 {% endfor %}
 
 {# Get the oldest Form Entry from the Contact Form #}
@@ -94,16 +99,16 @@ When a form has been submitted successfully, the user will be redirected to wher
 {% set lastEntry = craft.sproutForms.lastEntry(form.id) %}
 
 {% if lastEntry %}
-	
-	{# If the last entry exists, we can output any of the variables
-	   that were present in the form submission. #}
-	<p>Thanks <strong>{{ lastEntry.fullName }}</strong>! We'll be in touch soon! Did you know you can display any of the values that were submitted in the form?  Here's a list of all the values in the last form submission:</p>
-	
-	<p>
-		Full Name: <em>{{ lastEntry.fullName }}</em><br/>
-		Email: <em>{{ lastEntry.email }}</em><br/>
-		Message: <em>{{ lastEntry.message }}</em><br/>
-	</p>
+
+    {# If the last entry exists, we can output any of the variables
+       that were present in the form submission. #}
+    <p>Thanks <strong>{{ lastEntry.fullName }}</strong>! We'll be in touch soon! Did you know you can display any of the values that were submitted in the form?  Here's a list of all the values in the last form submission:</p>
+    
+    <p>
+        Full Name: <em>{{ lastEntry.fullName }}</em><br/>
+        Email: <em>{{ lastEntry.email }}</em><br/>
+        Message: <em>{{ lastEntry.message }}</em><br/>
+    </p>
 
 {% endif %}
 ```

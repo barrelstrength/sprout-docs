@@ -1,3 +1,8 @@
+---
+date: 2019-05-01
+description: Sprout SEO installation and update instructions for Craft 3.
+---
+
 # Craft 3
 
 Sprout SEO installation and update instructions for Craft 3.

@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: A Subscriber is the person that subscribes to a list. A subscriber can be an existing User in Craft or an anonymous user.
+---
+
 # Subscribers
 
 A Subscriber is the person that subscribes to a list. A subscriber can be an existing User in Craft or an anonymous user. In either case, the Subscriber is identified by their email address.

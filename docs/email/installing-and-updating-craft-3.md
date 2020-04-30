@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Email installation and update instructions for Craft 3.
+---
+
 # Craft 3
 
 Sprout Email installation and update instructions for Craft 3.

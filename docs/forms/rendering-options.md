@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Rendering options allow you to customize form and field output without having to override the templates.
+---
+
 # Rendering Options
 
 Rendering options allow you to customize form and field output without having to override the templates. Rendering options can be passed as a twig object to the `displayForm`, `displayTab` or `displayField` tags.

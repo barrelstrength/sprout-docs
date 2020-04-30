@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout SEO provides you an intuitive, seamless, and flexible way to manage your SEO strategy within Craft CMS. Content authors will enjoy a clear visual relationship between content and metadata where they can focus on content and maximize visibility.
+---
+
 # About Sprout SEO
 
 > Metadata is content too.

@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: In several places within Craft and Sprout plugins, you are able to customize a setting with a dynamic value.
+---
+
 # Object Syntax
 
 In several places within Craft and Sprout plugins, you are able to customize a setting with a dynamic value. For lack of a better term, we refer to this as **Object Syntax** and this documentation page aims to serve as a general guide.

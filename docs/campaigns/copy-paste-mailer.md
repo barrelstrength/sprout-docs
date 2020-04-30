@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: 
+---
+
 # Copy/Paste Mailer
 
 The Copy/Paste Mailer is for situations where you want to use Craft to build your emails, but you will be using a different system to send your emails.

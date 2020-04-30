@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Frequently asked questions about Sprout Forms.
+---
+
 # FAQ
 
 Frequently asked questions about Sprout Forms.

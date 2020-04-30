@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: A Report becomes a Mailing List when the 'Email Column' setting is defined. The Email Column should reference a column that is returned by the report that provides a valid email address.
+---
+
 # Mailing Lists
 
 A Report becomes a Mailing List when the `Email Column` setting is defined. The Email Column should reference a column that is returned by the report that provides a valid email address.

@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Forms comes with two Form Templates and one Email Template. We keep the defaults as simple and un-opinionated as we can.
+---
+
 # Default Form Templates
 
 Sprout Forms comes with two Form Templates and one Email Template. We keep the defaults as simple and un-opinionated as we can. You can style the default templates as you see fit or update the templates for your particular project. Forms and Notification Emails are fully customizable.

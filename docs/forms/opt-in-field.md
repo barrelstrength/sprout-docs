@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The Opt-in Field is a specialized checkbox field that presents the user a single checkbox and supporting message.
+---
+
 # Opt-in Field
 
 The Opt-in Field is a specialized checkbox field that presents the user a single checkbox and supporting message. Unlike most other fields, the Opt-in Field does not display its field label by default. 

@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The Spam Protection settings give admins tools to configure how to redirect users, save spam entries in the database, generate spam reports, and configure and create custom Captchas to provide additional layers of validation.
+---
+
 # Spam Protection
 
 Sprout Forms provides several methods to manage Spam. The Spam Protection settings give admins tools to configure how to redirect users, save spam entries in the database, generate spam reports, and configure and create custom Captchas to provide additional layers of validation.

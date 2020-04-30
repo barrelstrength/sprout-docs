@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: 
+---
+
 # Campaign Emails
 
 Campaign Email Elements allow you to build and manage marketing and bulk email right within Craft and send those emails via your favorite Email Service Providers.

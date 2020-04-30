@@ -1,3 +1,8 @@
+---
+date: 2019-04-25
+description: Control the behavior around query strings in your Redirects using the 'Redirect Match Strategy' and 'Query String Strategy' settings.
+---
+
 # Query Strings in Redirects
 
 Control the behavior around query strings in your Redirects using the **Redirect Match Strategy** and **Query String Strategy** settings. Below we'll take a look at examples of how these settings can be used.

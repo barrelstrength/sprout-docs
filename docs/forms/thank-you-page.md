@@ -1,3 +1,7 @@
+---
+date: 2018-06-25
+description: The Success Message Form setting can be used to customize a Thank You message when using the default Form Templates.
+---
 
 # Thank You Page
 

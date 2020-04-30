@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The Sprout team is dedicated to making products that support multi-lingual and multi-regional websites.
+---
+
 # Multi-Site
 
 The Sprout team is dedicated to making products that support multi-lingual and multi-regional websites. We are proud to have customers and contributors from over 25 countries around the world.

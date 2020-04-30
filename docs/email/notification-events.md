@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Email supports several common Notification Events. For more specific scenarios, developers can add support for Custom Notification Events.
+---
+
 # Notification Events
 
 Sprout Email supports several common Notification Events. For more specific scenarios, developers can add support for [Custom Notification Events](./custom-notification-events.md).

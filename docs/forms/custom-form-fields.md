@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Form Fields enable you to add new Fields to the Form Builder and manage its field settings and front-end output.
+---
+
 # Form Fields
 
 Form Fields enable you to add new Fields to the Form Builder and manage its field settings and front-end output.

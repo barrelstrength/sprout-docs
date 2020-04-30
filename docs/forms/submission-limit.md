@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: If you want to disable your form after a certain number of submissions, conditionally display your form based on the entry count.
+---
+
 # Submission Limit
 
 If you want to disable your form after a certain number of submissions, conditionally display your form based on the entry count.

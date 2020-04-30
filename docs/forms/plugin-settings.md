@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Settings can be managed in the Control Panel or via a config file in config/sprout-forms.php
+---
+
 # Settings
 
 Settings can be managed in the Control Panel _Sprout Forms → Settings_ or via a config file in `config/sprout-forms.php`

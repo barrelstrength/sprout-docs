@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Businesses, authors, designers, and developers choose to use Sprout Plugins for Craft CMS. 
+---
+
 # Why Sprout?
 
 Businesses, authors, designers, and developers choose to use Sprout Plugins for Craft CMS. Below is a short overview of how we design our plugins with each respective audience in mind.

@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The Metadata field gives you fine-grained control over how Entry-specific metadata is recognized and managed for your content.
+---
+
 # Metadata Field
 
 The Metadata field gives you fine-grained control over how Entry-specific metadata is recognized and managed for your content. By default, we recommend setting up your Metadata field to reuse existing fields in your content and simplify the management over your metadata. Using a common Title, Summary, and Image field can go a very long way to get things setup quickly and provide comprehensive SEO.

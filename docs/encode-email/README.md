@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Encode Email makes multiple email obfuscation filters available in your templates.
+---
+
 # About Sprout Encode Email
 
 ## Overview

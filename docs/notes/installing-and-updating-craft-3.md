@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Notes installation and update instructions for Craft 3.
+---
+
 # Craft 3
 
 Sprout Notes installation and update instructions for Craft 3.

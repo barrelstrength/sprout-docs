@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The Notes Field is a Matrix-style, information-only field for Craft CMS that allows you to add supplementary information to a Field Layout.
+---
+
 # Notes Field
 
 The Notes Field is a Matrix-style, information-only field for Craft CMS that allows you to add supplementary information to a Field Layout.

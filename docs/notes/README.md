@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sometimes you just need to write a note!
+---
+
 # About Sprout Notes
 
 Sometimes you just need to write a note!

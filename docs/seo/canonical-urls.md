@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: You have multiple options to customize the canonical URLs that appear in your metadata or in your XML sitemaps.
+---
+
 # Canonical URLs
 
 If you need to customize the `canonical` URLs that appear in your metadata or in your XML sitemap you have multiple options:

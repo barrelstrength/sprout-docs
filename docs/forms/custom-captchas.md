@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Captchas enable you to add additional methods to protect your form from Spam.
+---
+
 # Captchas
 
 Captchas enable you to add additional methods to protect your form from Spam.

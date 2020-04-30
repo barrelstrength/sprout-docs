@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Email comes with one default Email Template. We keep the default as simple and un-opinionated as we can.
+---
+
 # Default Email Templates
 
 Sprout Email comes with one default Email Template. We keep the default as simple and un-opinionated as we can. You can style the default templates as you see fit or update the templates for your particular project. Notification Emails are fully customizable using [Template Overrides](./template-overrides.md).

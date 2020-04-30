@@ -1,6 +1,11 @@
+---
+date: 2019-05-01
+description: Sprout SEO does not just help you manage extensive metadata for Entries. It can also help you manage metadata for all URL-Enabled Element Types.
+---
+
 # URL-Enabled Sections 
 
-Sprout SEO does not just help you manage extensive metadata for Entries. It can help you manage metadata for all URL-Enabled Element Types. This includes:
+Sprout SEO does not just help you manage extensive metadata for Entries. It can also help you manage metadata for all URL-Enabled Element Types. This includes:
 
 - Entries
 - Categories

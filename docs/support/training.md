@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Barrel Strength offers free training to help you get up to speed on our Sprout Plugins and Craft CMS.
+---
+
 # Training
 
 Barrel Strength offers free training to help you get up to speed on our Sprout Plugins and Craft CMS. Join us to improve your own understanding of Craft CMS and the plugin ecosystem or invite your team for a small group session.

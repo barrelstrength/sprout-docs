@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: A central principle of the Sprout Plugin Suite is to create an experience – for both users and developers – that looks and feels like the native experience with Craft CMS.
+---
+
 # Coding Guidelines
 
 A central principle of the Sprout Plugin Suite is to create an experience – for both users and developers – that looks and feels like the native experience with Craft CMS. Toward that end, wherever possible, Sprout adopts conventions set forth by Craft CMS. General conventions include:

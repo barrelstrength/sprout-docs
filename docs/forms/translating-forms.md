@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: There are a few approaches to translating forms. None are ideal.
+---
+
 # Translating Forms
 
 There are a few approaches to translating forms. None are ideal.

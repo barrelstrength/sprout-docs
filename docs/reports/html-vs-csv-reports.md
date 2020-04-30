@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Reports exist in two forms. They display in web browser when viewed in the Control Panel and as CSV files when exported. 
+---
+
 # HTML vs CSV
 
 Reports exist in two forms. They display in web browser when viewed in the Control Panel and as CSV files when exported. If you wish to treat your data differently in these two contexts you can use the `isExport` variable.

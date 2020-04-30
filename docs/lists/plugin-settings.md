@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Settings can be managed in the Control Panel or via a config file in config/sprout-lists.php
+---
+
 ## Settings
 
 Settings can be managed in the Control Panel _Sprout Lists → Settings_ or via a config file in `config/sprout-lists.php`

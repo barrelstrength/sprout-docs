@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Forms gives you 100% control over your form templates. 
+---
+
 # Custom HTML
 
 ## Working with a Custom HTML Form

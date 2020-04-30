@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: You can create as many Reports as you'd like from a Data Source. Reports are saved instances of your Data Sources and their selected settings.
+---
+
 # Reports
 
 You can create as many Reports as you'd like from a Data Source. Reports are saved instances of your Data Sources and their selected settings.

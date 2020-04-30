@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: There are various methods to block robots from indexing your website. The Moz article 'Robots.txt and Meta Robots' discusses some of the methods in greater detail.
+---
+
 # Block Search Robots
 
 There are various methods to block robots from indexing your website. The Moz article [Robots.txt and Meta Robots](https://moz.com/learn/seo/robotstxt) discusses some of the methods in greater detail.

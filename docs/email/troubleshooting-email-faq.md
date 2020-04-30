@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sending an email can touch several different services so it can be tricky to diagnose just where something is going wrong.
+---
+
 # Troubleshooting FAQ
 
 Sending an email can touch several different services so it can be tricky to diagnose just where something is going wrong. To get more familiar with the topic, see Craft's article [Troubleshooting Email Errors](https://craftcms.com/guides/troubleshooting-email-errors) or hear a discussion of several common issues in this Straight Up Craft hangout [Troubleshooting Email Errors Hangout](https://straightupcraft.com/events/troubleshooting-email-errors).

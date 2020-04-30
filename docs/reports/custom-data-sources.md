@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Custom Data Sources can be created by plugins. You can create as many Data Sources as you'd like.
+---
+
 # Data Sources
 
 Custom Data Sources can be created by plugins. You can create as many Data Sources as you'd like.

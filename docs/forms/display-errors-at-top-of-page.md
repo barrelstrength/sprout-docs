@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: If you would like to display errors at the top of your page, you can access those errors in the form.getErrors() method.
+---
+
 # Display Errors at top of page
 
 If you would like to display errors at the top of your page, you can access those errors in the `form.getErrors()` method.
@@ -10,7 +15,7 @@ You can display error messaging at the top of your page in several ways.
 
 ``` twig
 {% if contact is defined and contact.getErrors()|length %}
-	Oh no! Errors.
+    Oh no! Errors.
 {% endif %}
 ```
 
@@ -22,13 +27,13 @@ To display all errors at the top of your form, you'll need to loop through your 
 
 ``` twig
 {% if contact is defined and contact.getErrors() | length %}
-	{% for errors in contact.getErrors() %}
-		<ul class="errors">
-			{% for error in errors %}
-				<li>{{ error }}</li>
-			{% endfor %}
-		</ul>
-	{% endfor %}
+    {% for errors in contact.getErrors() %}
+        <ul class="errors">
+            {% for error in errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
 {% endif %}
 ```
 
@@ -42,6 +47,6 @@ If you are dynamically displaying a form on the page (perhaps via a Forms Relati
 
 {# Use the `attribute` tag to access the `getErrors()` method #}
 {% if form is defined and attribute(form, 'getErrors')|length %}
-	Errors!
+    Errors!
 {% endif %}
 ```

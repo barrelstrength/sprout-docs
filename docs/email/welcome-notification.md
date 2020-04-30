@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Create the new notification and add the appropriate sender info. The notification Rules will be setup to trigger "When a new user is created".
+---
+
 # Welcome Emails
 
 Create a Notification with two custom fields:

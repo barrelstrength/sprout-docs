@@ -1,3 +1,8 @@
+---
+date: 2020-04-27
+description: Sprout Sent Email installation and update instructions for Craft 3.
+---
+
 # Craft 3
 
 Sprout Sent Email installation and update instructions for Craft 3.

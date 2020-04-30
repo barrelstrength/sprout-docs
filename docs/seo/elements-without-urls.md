@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The Metadata Field can be used on Elements like Users and Tags, that do not support URLs by default.
+---
+
 # Elements Without URLs
 
 The [Metadata Field](./element-metadata-field.md) can be used on Elements like Users and Tags, that do not support URLs by default. To manage metadata on Non-URL-Enabled Elements you will need to:

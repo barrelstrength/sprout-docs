@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: If you need to translate your Form error messages, currently, you will need to use static translations.
+---
+
 # Translating Error Messages
 
 If you need to translate your Form error messages, currently, you will need to use [static translations](https://craftcms.com/support/static-translations).
@@ -40,8 +45,8 @@ In that file, add add an array of the translations you wish to include:
 <?php
 
 return array(
-	'Email Field cannot be blank' => 
-	'Whatever you want to translate the original message to'
+    'Email Field cannot be blank' => 
+    'Whatever you want to translate the original message to'
 );
 ```
 
@@ -53,10 +58,10 @@ If you need to translate multiple phrases, you can add multiple phrases to your 
 <?php
 
 return array(
-	'Email Field cannot be blank' => 
-	'Whatever you want to translate the original message to',
-
-	'Phone Field cannot be blank' => 
-	'A new error message'
+    'Email Field cannot be blank' => 
+    'Whatever you want to translate the original message to',
+    
+    'Phone Field cannot be blank' => 
+    'A new error message'
 );
 ```

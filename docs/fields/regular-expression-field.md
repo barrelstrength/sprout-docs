@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The Regular Expression field allows you to validate input for a text field with a Regular Expression pattern. 
+---
+
 # Regular Expression Field
 
 The Regular Expression field allows you to validate input for a text field with a Regular Expression pattern. 

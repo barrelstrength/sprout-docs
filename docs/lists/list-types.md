@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Lists provides a default Subscriber List Type. Developers can add additional List Types to enable users and admins to subscribe and unsubscribe from third-party lists.
+---
+
 # List Types
 
 Sprout Lists provides a default Subscriber List Type. Developers can add additional List Types to enable users and admins to subscribe and unsubscribe from third-party lists. 

@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: 
+---
+
 # About Sprout Campaigns
 
 Sprout Email enables integrated email marketing, targeted transactional email, tracking and re-sending Sent Emails, and flexible subscriber and list management.

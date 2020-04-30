@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: If you have a report that is too large and never finishes running, below are a few options you may want to consider.
+---
+
 # Large Reports
 
 Sometimes you need to run reports that query a lot of data, or complex data structures. If you have a report that is too large and never finishes running, below are a few options you may want to consider.

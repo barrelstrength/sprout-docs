@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Mailers enable you to manage your Campaign Emails within Craft and send Campaign Emails via your favorite email service.
+---
+
 # Mailers
 
 Mailers enable you to manage your Campaign Emails within Craft and send Campaign Emails via your favorite email service.

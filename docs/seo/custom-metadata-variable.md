@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: If you prefer to have full control over the metadata and how it is output on your pages, you can stop Sprout SEO from outputting metadata for you and just let it generate the metadata and make it available to your Twig template as a variable. 
+---
+
 # Custom Metadata Variable
 
 Sprout SEO generates the metadata that is output to your pages with the `sproutseo` tag:

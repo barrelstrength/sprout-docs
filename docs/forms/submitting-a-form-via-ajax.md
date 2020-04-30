@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The Sprout Forms 'Submission Method' setting allows you to choose to submit your forms via AJAX.
+---
+
 # Submitting a Form via AJAX
 
 The Sprout Forms 'Submission Method' setting allows you to choose to submit your forms via AJAX. If the default behavior does not fit your needs, you can adjust the workflow by using Custom Form Templates to tweak the default settings, watch several Form Submission javascript events, or throw out the Sprout Forms JS entirely and replace it with your own.

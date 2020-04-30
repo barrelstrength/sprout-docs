@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Tools for managing plugin licenses via the Craftnet API.
+---
+
 # Craftnet Resources
 
 Tools for managing plugin licenses via the Craftnet API. 

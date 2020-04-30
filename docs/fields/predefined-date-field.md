@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The Predefined Date Field allows you parse Twig and define the value of a date ahead of time.
+---
+
 # Predefined Date Field
 
 The Predefined Date Field allows you parse Twig and define the value of a date ahead of time. This can be useful to help optimize queries or prepare data for a specific use case before it is needed. 

@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The Sprout Forms AJAX Submission process can be extended using the following javascript events.
+---
+
 # Javascript Events
 
 The Sprout Forms AJAX Submission process can be extended using the following javascript events.

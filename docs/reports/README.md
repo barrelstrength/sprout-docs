@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Reports allows you to create and group custom reports.
+---
+
 # About Sprout Reports
 
 Sprout Reports allows you to create and group custom reports.

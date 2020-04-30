@@ -1,3 +1,8 @@
+---
+date: 2019-04-25
+description: Settings can be managed in the Control Panel or via a config file in config/sprout-redirects.php
+---
+
 # Settings
 
 Settings can be managed in the Control Panel _Sprout Redirects → Settings_ or via a config file in `config/sprout-redirects.php`

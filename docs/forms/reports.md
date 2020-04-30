@@ -1,6 +1,11 @@
+---
+date: 2018-06-25
+description: Reports can be run using date ranges and exported in CSV format.
+---
+
 # Reports
 
-Visit the Reports tab in Sprout Forms to run Reports on submitted Entries. Reports can be run using date ranges and export in CSV format. You can setup and manage any number of Reports on the Sprout Forms **Reports** tab.
+Visit the Reports tab in Sprout Forms to run Reports on submitted Entries. Reports can be run using date ranges and exported in CSV format. You can setup and manage any number of Reports on the Sprout Forms **Reports** tab.
 
 ## Data Sources
 

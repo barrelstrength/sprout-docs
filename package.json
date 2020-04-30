@@ -12,6 +12,6 @@
     },
     "scripts": {
         "docs:dev": "vuepress dev docs",
-        "docs:build": "vuepress build docs && vuepress-sitemap -hostname https://sprout.barrelstrengthdesign.com/docs -dest docs/.vuepress/dist"
+        "docs:build": "vuepress build docs && vuepress-sitemap --hostname https://sprout.barrelstrengthdesign.com/docs --changefreq weekly --dest docs/.vuepress/dist"
     }
 }

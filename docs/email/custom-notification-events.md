@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: You can trigger Notification Emails via custom Notification Events in your own plugins.
+---
+
 # Notification Events
 
 You can trigger Notification Emails via custom Notification Events in your own plugins. A Notification Event tells Sprout Email to watch for a particular Event (in Craft or another plugin) and provides validation rules that will be checked to determine when a Notification Email should be triggered.

@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Lists allows you create lists.
+---
+
 # About Sprout Lists
 
 Sprout Lists allows you create lists. Lists can be useful so users can:

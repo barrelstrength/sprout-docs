@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Template Overrides allow you to modify your metadata in your Craft templates.
+---
+
 # Template Overrides
 
 Template Overrides allow you to modify your metadata in your Craft templates. While this can help with some scenarios, it is not always ideal as it makes it harder to give content authors control over all metadata in the Control Panel and increases the complexity of the codebase that needs to be managed over time. 

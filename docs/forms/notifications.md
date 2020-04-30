@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Forms supports personalized Notification Emails.
+---
+
 # Notifications
 
 Sprout Forms supports personalized Notification Emails. Notifications in Sprout Forms are powered by Sprout Email [Notification Emails](./../email/notification-emails.md). You can setup and manage any number of Notifications on the Sprout Forms **Notifications** tab.

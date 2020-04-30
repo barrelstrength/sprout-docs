@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: A List can be associated with any Element and contain one or more Subscriptions. The default List Type to use in Sprout Lists is the Mailing List.
+---
+
 # Lists
 
 A List can be associated with any Element and contain one or more Subscriptions. The default List Type to use in Sprout Lists is the Mailing List.

@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: The URL field allows you to require a valid URL using Craft and Sprout Forms front-end Fields.
+---
+
 # URL Field
 
 The URL field allows you to require a valid URL using Craft and Sprout Forms front-end Fields.

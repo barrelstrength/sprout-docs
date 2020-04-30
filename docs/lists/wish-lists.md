@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Wish Lists can be managed by Users and, in many cases, the User ID will be used as the Element ID that the List depends on.
+---
+
 # Wish Lists
 
 ## Create a List

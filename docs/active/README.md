@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Active makes it simple to control the active classname in your navigation or conditional content based on your URL segments or your full URL.
+---
+
 # About Sprout Active
 
 Sprout Active makes it simple to control the active classname in your navigation or conditional content based on your URL segments or your full URL.
@@ -65,7 +70,7 @@ This example will find a match if the first segment is either 'about-us' or 'mee
 ## Absolute URLs
 
 Sometimes, such as when using Structure sections, you may need to target the full URL.  In these cases, instead of passing a segment number you can pass the keyword `url`. In the following code, if the page.url variable matches the current page url, the 
-	
+
 ``` twig
 {{ active(page.url, 'url') }}
 

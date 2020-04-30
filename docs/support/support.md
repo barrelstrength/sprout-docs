@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout provides dedicated support for license holders and free training.
+---
+
 # Support
 
 Sprout provides dedicated support for license holders and [free training](./training.md).

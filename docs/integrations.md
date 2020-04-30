@@ -1,3 +1,8 @@
+---
+date: 2018-06-25
+description: Sprout Plugins add several new components to the Craft architecture that can be extended by plugin developers. 
+---
+
 # Integrations
 
 Sprout Plugins add several new components to the Craft architecture that can be extended by plugin developers. 
