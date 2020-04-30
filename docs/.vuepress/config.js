@@ -8,7 +8,7 @@ module.exports = {
     ['link', {rel: 'apple-touch-icon', sizes: '180x180', href: '/icons/apple-touch-icon.png'}],
     ['link', {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/icons/favicon-32x32.png'}],
     ['link', {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/icons/favicon-16x16.png'}],
-    ['link', {rel: 'mask-icon', href: 'https://docs.craftcms.com/siteicons/safari-pinned-tab.svg', color: '#e5422b'}],
+    ['link', {rel: 'mask-icon', href: 'https://docs.craftcms.com/siteicons/safari-pinned-tab.svg', color: '#449211'}],
     ['meta', {name: 'msapplication-TileColor', content: '#484539'}],
     ['meta', {name: 'msapplication-config', content: 'https://docs.craftcms.com/browserconfig.xml'}],
     ['meta', {name: 'theme-color', content: '#484539'}],
@@ -84,7 +84,8 @@ module.exports = {
     codeLanguages: {
       twig: 'Twig',
       php: 'PHP',
-      js: 'Javascript'
+      js: 'Javascript',
+      plaintext: 'Plaintext',
     },
     algolia: {
       apiKey: '9245da67ddab2b9ddda749bbb31362cf',
