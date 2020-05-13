@@ -11,12 +11,11 @@ A central principle of the Sprout Plugin Suite is to create an experience – fo
 |:---------- |:----- |
 | [Craft CMS codebase](https://github.com/craftcms/cms) | Use Craft's APIs in the same way that Craft uses them |
 | [Coding Guidelines](https://docs.craftcms.com/v3/extend/coding-guidelines.html) | Follow conventions outlined in Craft's Coding Guidelines | 
-| [Craft Code Style](https://github.com/craftcms/phpstorm-settings) | Craft Code Style settings for PhpStorm |
-| [Craft Inspections](https://github.com/craftcms/phpstorm-settings) | Craft Inspections for PhpStorm |
+| [PhpStorm Settings](https://github.com/barrelstrength/phpstorm-settings) | Use the 'Barrel Strength - Craft CMS Project' Code Styles and Inspections. These were initially inspired by the infrequently-updated [Craft Code Style](https://github.com/craftcms/phpstorm-settings) and [Craft Inspections](https://github.com/craftcms/phpstorm-settings) with some additional customization. |
 | [Php Inspections (EA Extended)](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-) | More code conventions for PhpStorm |
-| [Yii Inspections](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-) | Yii 2 and Craft-specific inspections in PhpStorm |
-| [Sass Mixins for Craft CMS](https://github.com/craftcms/sass) | Use Craft's Control Panel style conventions |
-| [Craft UI](https://www.npmjs.com/package/@pixelandtonic/craftui) | Vue.js components and styles for Craft CMS apps | 
+| [Yii2 and Craft CMS 3 Inspections](https://plugins.jetbrains.com/plugin/9400-yii2-inspections) | Yii 2 and Craft-specific inspections in PhpStorm |
+| [Sass Mixins for Craft CMS](https://github.com/craftcms/sass) | Use Craft's Control Panel style conventions (reference) |
+| [Craft UI](https://www.npmjs.com/package/@pixelandtonic/craftui) | Vue.js components and styles for Craft CMS apps (reference) | 
 
 Where there are no clear Craft conventions for our codebase or workflows we endeavor to establish our own conventions that align with the Craft User Experience and are consistent with cultural conventions in the Craft community. An incomplete list of these conventions are outlined below.
 
@@ -287,7 +286,7 @@ Any migration instance that is just running a migration in base module should us
 ```
 m190101_000001_migration_description.php              // Sprout Base Email
 m190101_000001_migration_description_sproutemail.php  // Sprout Email
-m190101_000001_migration_description_sproutforms      // Sprout Forms
+m190101_000001_migration_description_sproutforms.php  // Sprout Forms
 ```
 
 ### Testing Prior to Release
