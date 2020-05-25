@@ -42,8 +42,8 @@ The following options will modify the `<input>` field and the wrapper `<div>` an
 | Option  | Type     | Default                     | Description                                                             |
 |---------|----------|-----------------------------|-------------------------------------------------------|
 | `id`    | `string` | `fieldHandle-field`  | The id to assign to the input tag. Not available as a global option. |
-| `class` | `string` | `fieldHandle-field` | A space separated list of classes to apply to the input tag     |
-| `errorClass` | `string` | `errors` | A space separated list of classes to apply to theinput tag when errors are found |
+| `class` | `string|array` | `fieldHandle-field` | A space separated list of classes to apply to the field container and input element. Optionally, you can pass an array with the keys `container` or `input` to target the field container and field input independently. See example below. |
+| `errorClass` | `string` | `errors` | A space separated list of classes to apply to the field container when errors are found. Optionally, you can pass an array with the keys `container` or `input` to target the field container and field input independently. See example below. |
 | `data` | `{}` | | An object (associative array) of data attributes to set on the form or input tag
 
 ::: tip Custom Fields 
@@ -56,6 +56,8 @@ Custom Form Fields will need to add support for these options on their own. If y
 
 The `displayForm()` accepts rendering options for the form tag and input fields. To provide rendering options for your fields, you must create a `fields` object and use the field handle to identify the fields that the containing rendering options should be applied to.
 
+#### Override all fields
+
 ```twig
 {% set options = {
     id: "my-form",
@@ -64,17 +66,9 @@ The `displayForm()` accepts rendering options for the form tag and input fields.
     fields: {
         "*": {
             class: "all-fields-class",
-            errorClass: "all-fields-error-class",
+            errorClass: "all-fields-error",
             data: {
-                thing: "all-fields-data-attribute",
-            }
-        }
-        fieldHandle: {
-            id: "field-specific-id",
-            class: "field-specific-class",
-            errorClass: "field-specific-error-class",
-            data: {
-                thing: "field-specific-data-attribute",
+                thing: "all-fields-data-attribute"
             }
         }
     }
@@ -86,20 +80,123 @@ The `displayForm()` accepts rendering options for the form tag and input fields.
 #### Rendered HTML
 
 ```twig
-<form method="post" id="myform" class="form-class form-class-customized form-has-error">
+<form method="post" id="my-form" class="form-class form-class-customized form-has-error">
 
     {# The example assumes our field is a Single Line field #}
-    <div id="fields-myfield-field" class="field singleline field my-fancy-class required field-has-error">
+    <div id="fields-fieldHandle-field" class="field singleline all-fields-class all-fields-error required">
         <div class="heading">
-            <label for="fields-fieldHandle">Field Name</label>
+            <label for="fields-fieldHandle">Single Line</label>
         </div>
         <div class="input">
-            <input type="text" name="fields[fieldHandle]" id="fields-myfield" class="my-fancy-class" required data-hidden="false" />
+            <input type="text" name="fields[fieldHandle]" id="fields-fieldHandle" class="all-fields-class" required="" aria-required="true" data-thing="all-fields-data-attribute">
+        </div>
+    </div>
+</form>
+
+```
+
+#### Target field wrapper and inputs separately
+
+```twig
+{% set options = {
+    id: "my-form",
+    class: "form-class form-class-customized",
+    errorClass: "form-has-error",
+    fields: {
+        "*": {
+            class: {
+                container: 'field-container-class',
+                input: 'field-input-class'
+            },
+            errorClass: {
+                container: 'field-container-error-class',
+                input: 'field-input-error-class'
+            },
+            data: {
+                thing: "all-fields-data-attribute"
+            }
+        }
+    }
+} %}
+
+{{ craft.sproutForms.displayForm("formHandle", options) }}
+```
+
+#### Rendered HTML
+
+```twig
+<form method="post" id="my-form" class="form-class form-class-customized form-has-error">
+
+    {# The example assumes our field is a Single Line field #}
+    <div id="fields-fieldHandle-field" class="field singleline field-container-class field-container-error-class required">
+        <div class="heading">
+            <label for="fields-fieldHandle">Single Line</label>
+        </div>
+        <div class="input">
+            <input type="text" name="fields[fieldHandle]" id="fields-fieldHandle" class="field-input-class field-input-error-class" required="" aria-required="true" data-thing="all-fields-data-attribute">
+        </div>   
+    </div>
+
+</form>
+```
+
+#### Global and specific classes
+
+```twig
+{% set options = {
+    id: "my-form",
+    class: "form-class form-class-customized",
+    errorClass: "form-has-error",
+    fields: {
+        "*": {
+            class: {
+                container: 'field-container-class',
+                input: 'field-input-class'
+            },
+            errorClass: {
+                container: 'field-container-error-class',
+                input: 'field-input-error-class'
+            },
+            data: {
+                thing: "all-fields-data-attribute"
+            }
+        },
+        fieldHandle: {
+            class: {
+                container: 'specific-field-container-class',
+                input: 'specific-field-input-class'
+            },
+            errorClass: {
+                input: 'specific-field-input-error-class'
+            },
+            data: {
+                thing: "specific-field-data-attribute",
+            }
+        }
+    }
+} %}
+
+{{ craft.sproutForms.displayForm("formHandle", options) }}
+```
+
+#### Rendered HTML
+
+```twig
+<form method="post" id="my-form" class="form-class form-class-customized form-has-error">
+
+    {# The example assumes our field is a Single Line field #}
+    <div id="fields-fieldHandle-field" class="field singleline field-container-class specific-field-container-class field-container-error-class required">
+        <div class="heading">
+                <label for="fields-fieldHandle">Single Line</label>
+            </div>
+        <div class="input">
+            <input type="text" name="fields[fieldHandle]" id="fields-fieldHandle" class="field-input-class specific-field-input-class field-input-error-class specific-field-input-error-class" required="" aria-required="true" data-thing="specific-field-data-attribute">
         </div>
     </div>
 
 </form>
 ```
+
 
 ::: warning Field Prefixes 
 The ID you specific will be prefixed with `field-`. This prefix is added by the `{% namespace %}` tag in the Form Templates `field.twig` file and also adds the `fields` namespace around the `fieldHandle` on the Form Field input tags (i.e. `name="fields[fieldHandle]"`).

@@ -487,7 +487,59 @@ While the file-based config `config/sprout-forms.php` had not yet been documente
 ],
 ```
 
+### Updating to Forms v3.12.0
 
+Sprout Forms v3.12.0 includes a small breaking change to the `getFrontEndInputHtml` method in your Form Field classes. This was necessary to support more refined targeting for Rendering Options including the targeting of error classes on `input` fields to better support using Rendering Options for front-end frameworks such as Bootstrap.
+
+#### Custom Form Fields
+
+Custom Form fields will need to update the `getFrontEndInputHtml` method signature to include a new second argument for the Form Entry Element and pass that `entry` variable to your input template:
+ 
+``` php
+// OLD
+public function getFrontEndInputHtml($value, array $renderingOptions = null): Markup
+{
+    $rendered = Craft::$app->getView()->renderTemplate('dropdown/input', [
+            'name' => $this->handle,
+            'value' => $value,
+            'field' => $this,
+            'renderingOptions' => $renderingOptions
+        ]
+    );
+
+    return TemplateHelper::raw($rendered);
+}
+
+// NEW
+use barrelstrength\sproutforms\elements\Entry;
+
+public function getFrontEndInputHtml($value, Entry $entry, array $renderingOptions = null): Markup
+{
+    $rendered = Craft::$app->getView()->renderTemplate('dropdown/input', [
+            'name' => $this->handle,
+            'value' => $value,
+            'field' => $this,
+            'entry' => $entry,
+            'renderingOptions' => $renderingOptions
+        ]
+    );
+
+    return TemplateHelper::raw($rendered);
+}
+```
+
+Additionally, to support Rendering Options error classes in your custom Form Field input template, you will want to update the Form Field input template to check for errors and update the `class` to include any error classes if they exist: 
+
+``` twig
+// OLD
+{%- set class = renderingOptions.class ?? name %}
+
+// NEW
+{%- set class = renderingOptions.class ?? name %}
+{%- set errors = entry is not empty ? entry.getErrors(name) : null %}
+{%- set errorClass = renderingOptions.errorClass ?? null %}
+{%- set class = errors and errorClass ? class~' '~errorClass : class %}
+``` 
 
 
 
