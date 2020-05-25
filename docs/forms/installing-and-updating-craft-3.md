@@ -487,11 +487,11 @@ While the file-based config `config/sprout-forms.php` had not yet been documente
 ],
 ```
 
-### Updating to Forms v3.12.0
+## Upgrading to Forms v3.12.0
 
 Sprout Forms v3.12.0 includes a small breaking change to the `getFrontEndInputHtml` method in your Form Field classes. This was necessary to support more refined targeting for Rendering Options including the targeting of error classes on `input` fields to better support using Rendering Options for front-end frameworks such as Bootstrap.
 
-#### Custom Form Fields
+### Custom Form Fields
 
 Custom Form fields will need to update the `getFrontEndInputHtml` method signature to include a new second argument for the Form Entry Element and pass that `entry` variable to your input template:
  
@@ -527,6 +527,8 @@ public function getFrontEndInputHtml($value, Entry $entry, array $renderingOptio
     return TemplateHelper::raw($rendered);
 }
 ```
+
+### Rendering Options Error Classes
 
 Additionally, to support Rendering Options error classes in your custom Form Field input template, you will want to update the Form Field input template to check for errors and update the `class` to include any error classes if they exist: 
 
