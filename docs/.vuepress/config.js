@@ -38,7 +38,7 @@ module.exports = {
         text: 'Sprout Plugins',
         items: [
           {text: 'Sprout for Craft 3', link: 'https://sprout.barrelstrengthdesign.com/docs'},
-          {text: 'Sprout for Craft 2', link: '/'},
+          {text: 'Sprout Craft 2', link: '/'},
         ]
       }
     ],
