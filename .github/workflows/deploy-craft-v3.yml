@@ -1,7 +1,7 @@
 # DOCUMENT_ROOT is the file path on the server up to the public folder
-# with no trailing slash. Add subfolder target starting with slash.
-# /server/path/public (default)
-# TARGET: ${{ secrets.DOCUMENT_ROOT }}/docs/craft-v2/ (subfolder)
+# with a trailing slash. Add 'public/' to target public folder.
+# /server/path_html (default)
+# TARGET: ${{ secrets.DOCUMENT_ROOT }}/public/docs/craft-v2/ (subfolder)
 
 name: Deploy v3 Docs
 
@@ -36,7 +36,14 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.DOCUMENT_ROOT }}/docs/
+          TARGET: ${{ secrets.DOCUMENT_ROOT }}public/docs/
           ARGS: "-rltgoDzvO --delete"
           SOURCE: "docs/.vuepress/dist/"
-          EXCLUDE: "craft-v2/"
+
+      - name: Execute remote ssh command
+        uses: appleboy/ssh-action@master
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          script: ln -s  ${{ secrets.DOCUMENT_ROOT }}docs/craft-v2 ${{ secrets.DOCUMENT_ROOT }}public/docs/craft-v2
