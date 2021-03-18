@@ -1,0 +1,41 @@
+# DOCUMENT_ROOT is the file path on the server up to the public folder
+# with no trailing slash. Add subfolder target starting with slash.
+# /server/path/public (default)
+# TARGET: ${{ secrets.DOCUMENT_ROOT }}/docs/craft-v2/ (subfolder)
+
+name: Deploy v2 Docs
+
+on:
+  push:
+    branches:
+      - craft-v3
+
+jobs:
+  build_and_deploy_files:
+    name: Run build script and deploy files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.ref || github.ref }}
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Run build task
+        run: npm run docs:build
+
+      - name: Deploy files to server
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.DOCUMENT_ROOT }}/
+          ARGS: "-rltgoDzvO --delete"
+          SOURCE: "docs/.vuepress/dist/"
