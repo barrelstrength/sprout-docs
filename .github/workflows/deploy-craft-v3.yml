@@ -39,3 +39,4 @@ jobs:
           TARGET: ${{ secrets.DOCUMENT_ROOT }}/docs/
           ARGS: "-rltgoDzvO --delete"
           SOURCE: "docs/.vuepress/dist/"
+          EXCLUDE: "/craft-v2/"
