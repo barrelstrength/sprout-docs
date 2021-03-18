@@ -5,4 +5,3 @@
 /web
 composer.lock
 /.ddev
-/docs/.vuepress/dist/
