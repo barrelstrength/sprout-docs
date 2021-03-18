@@ -1,21 +1,8 @@
-# Atomic Deployment Deploy Workflow
-# A workflow to manage simple atomic deployments
-#
-# Required Environment Variables. You will need to add these to your repo as Github Secrets:
-# SERVER_SSH_KEY: The private key matches the public key installed in your servers known_hosts file.
-# REMOTE_HOST: The SSH host name
-# REMOTE_USER: The SSH username
-# DOCUMENT_ROOT: The server document root where your releases will be stored
-#
-# Atomic deployments rely on a few things
-# 1. Add an SSH key to your known_hosts file on your server
-# 2. Symlink your server's `public` directory to the atomic deployment `current` location
-#    From your document root: ln -s ./deploy/current ./public
-#
-# Deployments can be triggered
-# - Manually using the branch, tag, or commit hash you wish to deploy
-# - By pushing a tag that uses semver syntax (v1.x.x) to your repository
-#
+# DOCUMENT_ROOT is the file path on the server up to the public folder
+# with a trailing slash. Add 'public/' to target public folder.
+# /server/path_html (default)
+# TARGET: ${{ secrets.DOCUMENT_ROOT }}/public/docs/craft-v2/ (subfolder)
+
 name: Deploy v2 Docs
 
 on:
