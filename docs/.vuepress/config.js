@@ -98,10 +98,7 @@ module.exports = {
           {text: 'Sprout for Craft 3', link: '/'},
           {text: 'Sprout for Craft 2', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v2/'},
         ]
-      },
-      {
-        text: 'Back to Sprout →', link: 'https://sprout.barrelstrengthdesign.com/'
-      },
+      }
     ],
     sidebar: {
       '/forms/': [
