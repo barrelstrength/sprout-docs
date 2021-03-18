@@ -3,7 +3,7 @@
 # /server/path/public (default)
 # TARGET: ${{ secrets.DOCUMENT_ROOT }}/docs/craft-v2/ (subfolder)
 
-name: Deploy v2 Docs
+name: Deploy v3 Docs
 
 on:
   push:
@@ -36,6 +36,6 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.DOCUMENT_ROOT }}/
+          TARGET: ${{ secrets.DOCUMENT_ROOT }}/docs/
           ARGS: "-rltgoDzvO --delete"
           SOURCE: "docs/.vuepress/dist/"
