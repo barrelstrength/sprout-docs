@@ -1,0 +1,54 @@
+# Atomic Deployment Deploy Workflow
+# A workflow to manage simple atomic deployments
+#
+# Required Environment Variables. You will need to add these to your repo as Github Secrets:
+# SERVER_SSH_KEY: The private key matches the public key installed in your servers known_hosts file.
+# REMOTE_HOST: The SSH host name
+# REMOTE_USER: The SSH username
+# DOCUMENT_ROOT: The server document root where your releases will be stored
+#
+# Atomic deployments rely on a few things
+# 1. Add an SSH key to your known_hosts file on your server
+# 2. Symlink your server's `public` directory to the atomic deployment `current` location
+#    From your document root: ln -s ./deploy/current ./public
+#
+# Deployments can be triggered
+# - Manually using the branch, tag, or commit hash you wish to deploy
+# - By pushing a tag that uses semver syntax (v1.x.x) to your repository
+#
+name: Deploy v2 Docs
+
+on:
+  push:
+    branches:
+      - craft-v2
+
+jobs:
+  build_and_deploy_files:
+    name: Run build script and deploy files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.ref || github.ref }}
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Run build task
+        run: npm run docs:build
+
+      - name: Deploy files to server
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.DOCUMENT_ROOT }}/docs/craft-v2/
+          ARGS: "-rltgoDzvO --delete"
+          SOURCE: "docs/.vuepress/dist/"
