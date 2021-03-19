@@ -1,0 +1,90 @@
+[
+    {
+        "category": "Custom Reports",
+        "items": [
+            {
+                "name": "Custom Query Reports",
+                "info": "Lite users can create unlimited Custom Query Reports",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Twig Template Reports",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "User Reports",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Commerce Reports",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Sprout Forms Reports",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Data Visualizations",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Custom Data Sources",
+                "info": "",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Report Workflow",
+        "items": [
+            {
+                "name": "Export Report Data",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Report Groups",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Dynamic Report Titles",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Customize default sorting behavior",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Customize export delimiter",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Allow HTML in Report cells",
+                "info": "Provide users with links, icons, or other garnishes",
+                "lite": true,
+                "pro": true
+            }
+        ]
+    }
+]

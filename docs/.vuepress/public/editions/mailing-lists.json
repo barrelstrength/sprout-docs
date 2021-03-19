@@ -1,0 +1,13 @@
+[
+    {
+        "category": "Mailing Lists",
+        "items": [
+            {
+                "name": "Mailing Lists & Segments",
+                "info": "Create Mailing Lists from report queries to send to lists and segments via Sprout Email and other Sprout plugins.",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    }
+]

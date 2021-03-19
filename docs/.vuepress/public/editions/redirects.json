@@ -1,0 +1,96 @@
+[
+    {
+        "category": "Redirect Manager",
+        "items": [
+            {
+                "name": "301 & 302 Redirects",
+                "info": "Lite users can manage up to three redirects.",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Brand URLs & Short Links",
+                "info": "Use Sprout Redirects along with Craft multi-site to manage a brand URL, vanity URL, or short links for a custom domain.",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Multi-Site Redirects",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Status Actions",
+                "info": "Enable or disable one or more redirects at a time using Redirect Element Actions",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Method Actions",
+                "info": "Convert Redirects from 301s to 302s or vice versa using Redirect Element Actions",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Removal Actions",
+                "info": "Add a group of Redirects to the Excluded Redirects list or delete them using Redirect Element Actions",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Reorder Redirects",
+                "info": "Update the priority of where a Redirect gets processed",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Redirect Statistics",
+                "info": "Track and organize Redirects by hits and last used dates to find the ones that should receive attention first",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "404 Tracking",
+        "items": [
+            {
+                "name": "404 Tracking",
+                "info": "Monitor 404s on your website to be sure visitors are finding the pages they are looking for",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "404 Redirect Log",
+                "info": "Capture 404 Requests to review and convert them to proper redirects so users find what they are looking for.",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Redirect Match Strategy",
+                "info": "Fine-tune how Redirects are matched with query strings",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Sensitive Data",
+                "info": "Customize how sensitive data like Remote IP addresses are tracked to comply with regulatory obligations.",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Automatic Purging",
+                "info": "Automatically cleanup and remove old 404s",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Excluded URL Patterns",
+                "info": "Ignore patterns you don't want to see in your logs.",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    }
+]

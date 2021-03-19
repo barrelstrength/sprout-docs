@@ -1,0 +1,42 @@
+[
+    {
+        "category": "Overview",
+        "items": [
+            {
+                "name": "Unlimited Notifications",
+                "info": "Custom tax rules based on configurable multi-state or multi-country zones.",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Unlimited Notification Events",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Custom Email Templates",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Email Personalization",
+                "info": "",
+                "lite": true,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Developers",
+        "items": [
+            {
+                "name": "Custom Notification Event API",
+                "info": "",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    }
+]

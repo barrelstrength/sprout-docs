@@ -1,0 +1,31 @@
+[
+    {
+        "category": "Email Preview",
+        "items": [
+            {
+                "name": "Live Preview",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Test Emails with Live Data",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Preview HTML & Text Emails",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Share Unpublished Emails for Review",
+                "info": "",
+                "lite": true,
+                "pro": true
+            }
+        ]
+    }
+]
