@@ -12,9 +12,9 @@ Reports exist in two forms. They display in web browser when viewed in the Contr
 In Twig Template Reports the `isExport` variable is available in your results template.
 
 ``` twig{4}
-{% do craft.sproutReports.addHeaderRow(['Row']) %}
+{% do sprout.reports.addHeaderRow(['Row']) %}
 
-{% do craft.sproutReports.addRow([
+{% do sprout.reports.addRow([
     isExport ? 'Not Link' : '<a href="">Link</a>'
 ]) %}
 ``` 

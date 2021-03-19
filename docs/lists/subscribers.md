@@ -18,7 +18,7 @@ See the [Enable User Sync](./settings.md) setting for more info.
 ### Get all Lists belonging to a specific Subscriber
 
 ``` twig
-{% set subscriber = craft.sproutLists.subscribers
+{% set subscriber = sprout.lists.subscribers
     .email('ben@barrelstrengthdesign.com')
     .one() %}
     
@@ -32,7 +32,7 @@ See the [Enable User Sync](./settings.md) setting for more info.
 The List ID can be found in the sidebar of the List edit page in the control panel.
 
 ``` twig
-{% set subscribers = craft.sproutLists.subscribers
+{% set subscribers = sprout.lists.subscribers
     .listId(123)
     .all() %}
 

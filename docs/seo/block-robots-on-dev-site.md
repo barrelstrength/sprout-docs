@@ -11,13 +11,13 @@ If you would like to block robots using the meta `noindex` robots tag, you can d
 
 1. Setup a Craft multi-environment configuration
 2. Define a custom environment variable that you can use in your templates
-3. Conditionally output the `noindex` tag in all environments that are not the live environment using the `craft.sproutSeo.meta` variable
+3. Conditionally output the `noindex` tag in all environments that are not the live environment using the `sprout.seo.meta` variable
 
 In the example below, the conditional statement assumes we have created an `env` variable in our `general.php` that is set to `live` in our Live environment and not set to live in all of our other environments: 
 
 ``` twig
 {% if craft.config.env != 'live' %}
-  {% do craft.sproutSeo.meta({
+  {% do sprout.seo.meta({
     robots: { 'noindex': 1, 'nofollow': 1 }
   }) %}
 {% endif %}

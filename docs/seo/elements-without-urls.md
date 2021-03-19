@@ -18,7 +18,7 @@ The [Metadata Field](./element-metadata-field.md) can be used on Elements like U
 {% set user = craft.users.id(1).one() %}
 
 {# Set the `id` variable to the Element ID that has your Metadata field #}
-{% do craft.sproutSeo.meta({
+{% do sprout.seo.meta({
     id: user.id
 }) %}
 

@@ -34,13 +34,13 @@ When using the default Form Templates, the Hidden Field has access to several co
 These default values can be customized when using [Template Overrides](./template-overrides.md) and additional variables can be made available using the `addFieldVariables` tag. To add additional variables, pass those variables to the `addFieldVariables` tag in your templates before the `displayForm` tag.
 
 ``` twig
-{% do craft.sproutForms.addFieldVariables({
+{% do sprout.forms.addFieldVariables({
     'entry': entry,
     'category': category,
     'hiddenEmail': 'email@website.com'
 }) %}
 
-{{ craft.sproutForms.displayForm('application') }}
+{{ sprout.forms.displayForm('application') }}
 ```
 
 The Hidden Field Value setting is processed like a Twig Template and you can target the available variables are all made available to the field using the `object` variable. The variables can be accessed using standard Twig syntax or shorthand object syntax:

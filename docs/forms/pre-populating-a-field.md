@@ -13,7 +13,7 @@ When you want to populate a visible field from a known value, you can use Javasc
 
 ``` twig
 {# Output your form #}
-{{ craft.sproutForms.displayForm('application') }}
+{{ sprout.forms.displayForm('application') }}
 
 {# Check if the value you want to use to populate the field exists #}
 {% if craft.request.getParam('location') is defined %}

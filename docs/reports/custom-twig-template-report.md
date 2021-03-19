@@ -38,9 +38,9 @@ The Twig Template Report has three helper tags to use when building reports:
 
 | Tag | Description |
 |:---------|:--------|
-| **craft.sproutReports.addHeaderRow()** | Define the columns in the first row of your report |
-| **craft.sproutReports.addRow()** | Add a single row of data to your report |
-| **craft.sproutReports.addRows()** | Add an array of multiple rows of data to your report |
+| **sprout.reports.addHeaderRow()** | Define the columns in the first row of your report |
+| **sprout.reports.addRow()** | Add a single row of data to your report |
+| **sprout.reports.addRows()** | Add an array of multiple rows of data to your report |
 
 You can use `addHeaderRow` anywhere in your template to define the first row in your report that will be used as the column headers. The `addRow` and `addRows` actions add rows to your report in the order that they are used in your template.
 
@@ -57,16 +57,16 @@ Here is a simple, hard-coded example of each tag in use for a two-column report:
 
 ``` twig
 {# addHeaderRow accepts a single array with a comma-separated list of values #}
-{% do craft.sproutReports.addHeaderRow(['Region', 'Trip Name']) %}
+{% do sprout.reports.addHeaderRow(['Region', 'Trip Name']) %}
 
 {# addRow, also accepts a single array with a comma-separated list of values. The array is defined by the opening and closing square brackets. #}
-{% do craft.sproutReports.addRow([
+{% do sprout.reports.addRow([
   'Europe', 
   'Camino de Santiago'
 ]) %}
 
 {# addRows, accepts an array of arrays, where each array includes a comma-separated list of values. Note that there are two levels of opening and closing square brackets. #}
-{% do craft.sproutReports.addRows([
+{% do sprout.reports.addRows([
     ['North America', 'John Muir Trail'],
     ['Asia', 'Langtang Trek']
 ]) %}
@@ -151,11 +151,11 @@ In this example we use our settings to retrieve a CategoryModel and then use tha
 {% set trips = craft.entries.section('trips').relatedTo(region).limit(settings.limit) %}
 
 {# Create a Header Row #}
-{% do craft.sproutReports.addHeaderRow(['Region', 'Trip Name']) %}
+{% do sprout.reports.addHeaderRow(['Region', 'Trip Name']) %}
 
 {# Loop through our trips and output the Region and Trip Name for each result #}
 {% for trip in trips %}
-    {% do craft.sproutReports.addRow([
+    {% do sprout.reports.addRow([
         trip.relatedCategory.first().title, 
         trip.title
     ]) %}

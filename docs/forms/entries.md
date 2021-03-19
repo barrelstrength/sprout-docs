@@ -27,16 +27,16 @@ Users can edit Form Entries in front-end templates. To allow users to edit Form 
 
 ``` twig
 {# Get an instance of the your Form #}
-{% set form = craft.sproutForms.getForm('application') %}
+{% set form = sprout.forms.getForm('application') %}
 
 {# Get an instance of the Entry you'll be allowing a user to edit #}
-{% set entry = craft.sproutForms.getEntryById(123) %}
+{% set entry = sprout.forms.getEntryById(123) %}
 
 {# Set the `entry` variable so your Form Templates know how to populate the fields with existing values #}
-{% do craft.sproutForms.setEntry(form, entry) %}
+{% do sprout.forms.setEntry(form, entry) %}
 
 {# Output your form as usual #}
-{{ craft.sproutForms.displayForm('application') }}
+{{ sprout.forms.displayForm('application') }}
 ```
 
 ## Templating
@@ -49,14 +49,14 @@ The `entries` tag will let you get all entries for a specific form.
 
 ``` twig
 {# Get all entries for a specific form #}
-{% for formEntry in craft.sproutForms.entries
+{% for formEntry in sprout.forms.entries
     .formHandle('contact')
     .all() %}
     {{ formEntry.title }}
 {% endfor %}
 
 {# Limit the results to the first 3 entries #}
-{% for formEntry in craft.sproutForms.entries.formHandle('contact')
+{% for formEntry in sprout.forms.entries.formHandle('contact')
   .limit(3)
   .order('elements.dateCreated asc')
   .all() %}
@@ -64,7 +64,7 @@ The `entries` tag will let you get all entries for a specific form.
 {% endfor %}
 
 {# Get the oldest Form Entry from the Contact Form #}
-{% set formEntry = craft.sproutForms.entries
+{% set formEntry = sprout.forms.entries
   .formHandle('contact')
   .inReverse()
   .one() %}
@@ -72,17 +72,17 @@ The `entries` tag will let you get all entries for a specific form.
 {{ formEntry.title }}
 
 {# Output the total number of Form Entries from the Contact Form #}
-{{ craft.sproutForms.entries.formHandle('contact').count() }}
+{{ sprout.forms.entries.formHandle('contact').count() }}
 
 {# Output Entries with a specific status by Status ID or by Status Handle #}
-{% for formEntry in craft.sproutForms.entries
+{% for formEntry in sprout.forms.entries
   .formHandle('contact')
   .statusId(2)
   .all() %}
   {{ formEntry.title }}
 {% endfor %}
 
-{% for formEntry in craft.sproutForms.entries
+{% for formEntry in sprout.forms.entries
   .formHandle('contact')
   .status('pending')
   .all() %}
@@ -96,7 +96,7 @@ When a form has been submitted successfully, the user will be redirected to wher
 
 ``` twig
 {# Check for the last entry submitted #}
-{% set lastEntry = craft.sproutForms.lastEntry(form.id) %}
+{% set lastEntry = sprout.forms.lastEntry(form.id) %}
 
 {% if lastEntry %}
 
@@ -120,7 +120,7 @@ The `getEntry` tag retrieves the Entry Element of the active submission. If an a
 The `getEntry` method is useful if you need to setup your template to manage your Form submission values and errors but you don't know the handle of your Form.  This scenario can arise when you are using the Sprout Forms Relations field to dynamically output a form in your template.
 
 ``` twig
-{% set submittedEntry = craft.sproutForms.getEntry(form) %}
+{% set submittedEntry = sprout.forms.getEntry(form) %}
 
 {% if submittedEntry.getErrors()|length %}
 
@@ -137,9 +137,9 @@ The `getEntry` method is useful if you need to setup your template to manage you
 The `setEntry` method populates the Entry Model that is used by the `displayForm` tag.
 
 ``` twig
-{% do craft.sproutForms.setEntry(form, entry) %}
+{% do sprout.forms.setEntry(form, entry) %}
 
-{{ craft.sproutForms.displayForm('application') }}
+{{ sprout.forms.displayForm('application') }}
 ```
 
 ## Entry Relations Field

@@ -22,7 +22,7 @@ Custom Sections can be enabled in Sprout SEO's Advanced settings and will requir
 To indicate that you want a specific Custom Section added to the metadata processed in a template, use the Sprout SEO `meta` tag and set the `section` attribute to the handle of your Custom Section. All custom section handles should be prefixed with `sproutseo_section`:
 
 ``` twig
-{% do craft.sproutSeo.meta({
+{% do sprout.seo.meta({
   section: 'sproutseo_section:customSectionHandle'
 }) %}
 ```
@@ -32,7 +32,7 @@ By default, the value you use in the Custom Sections URL setting will be used fo
 As you can only define one URL in a Custom Section, if you plans to use the Custom Section as fallback metadata in more than one template, you can further customize your meta override tag to output a unique URL on each page where the override exists:
 
 ``` twig
-{% do craft.sproutSeo.meta({
+{% do sprout.seo.meta({
   section: 'sproutseo_section:customSectionHandle',
   canonical: craft.request.url,
   ogUrl: craft.request.url,

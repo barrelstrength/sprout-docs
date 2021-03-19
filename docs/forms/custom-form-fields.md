@@ -119,7 +119,7 @@ public function getTemplatesPath()
 
 ### Accessing variables in templates
 
-If your field to be able to access variables within the template where your field is being rendered, a user can use the `craft.sproutForms.addFieldVariables()` method to make those variables available to your field.
+If your field to be able to access variables within the template where your field is being rendered, a user can use the `sprout.forms.addFieldVariables()` method to make those variables available to your field.
 
 ### Examples
 

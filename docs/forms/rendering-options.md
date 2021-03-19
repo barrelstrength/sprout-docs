@@ -12,7 +12,7 @@ Rendering options allow you to customize form and field output without having to
     id: "my-form"
 } %}
 
-{{ craft.sproutForms.displayForm("formHandle", options) }}
+{{ sprout.forms.displayForm("formHandle", options) }}
 ```
 
 Rendering Options may be handy to solve a specific situation, however, can become harder to maintain or reuse across multiple forms. 
@@ -74,7 +74,7 @@ The `displayForm()` accepts rendering options for the form tag and input fields.
     }
 } %}
 
-{{ craft.sproutForms.displayForm("formHandle", options) }}
+{{ sprout.forms.displayForm("formHandle", options) }}
 ```
 
 #### Rendered HTML
@@ -119,7 +119,7 @@ The `displayForm()` accepts rendering options for the form tag and input fields.
     }
 } %}
 
-{{ craft.sproutForms.displayForm("formHandle", options) }}
+{{ sprout.forms.displayForm("formHandle", options) }}
 ```
 
 #### Rendered HTML
@@ -176,7 +176,7 @@ The `displayForm()` accepts rendering options for the form tag and input fields.
     }
 } %}
 
-{{ craft.sproutForms.displayForm("formHandle", options) }}
+{{ sprout.forms.displayForm("formHandle", options) }}
 ```
 
 #### Rendered HTML

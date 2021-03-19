@@ -29,7 +29,7 @@ Below is a full example of how give a user can Subscriber or Unsubscribe from a 
 
 ``` twig
 {# Retrieve a list #}
-{% set list = craft.sproutLists.lists
+{% set list = sprout.lists.lists
     .id(123)
     .one() %}
 
@@ -74,7 +74,7 @@ This means that Lists that target two different `elementId`s can use the same `l
 
 ``` twig
 {# Retrieve a list #}
-{% set list = craft.sproutLists.lists
+{% set list = sprout.lists.lists
     .elementId(123)
     .handle('newsletter')
     .one() %}
@@ -136,7 +136,7 @@ When you add a Subscriber to a List you can optionally define their First and La
 The number of Subscribers or Items on a list can be retrieved like so:
 
 ``` twig
-{% set list = craft.sproutLists.lists.id(123).one() %}
+{% set list = sprout.lists.lists.id(123).one() %}
 
 {{ list.count }}
 ```

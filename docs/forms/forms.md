@@ -26,7 +26,7 @@ To make a form available to your users, you will need to display it in your temp
 Display a specific form on a specific page in your templates like so:
 
 ``` twig
-{{ craft.sproutForms.displayForm('contactForm') }}
+{{ sprout.forms.displayForm('contactForm') }}
 ```
 
 ### A chosen form
@@ -36,7 +36,7 @@ Add a Form Relations Field to a Field Layout to allow a content author to select
 ``` twig
 {% set formHandle = entry.formFieldHandle.one().handle %}
 
-{{ craft.sproutForms.displayForm( formHandle ) }}
+{{ sprout.forms.displayForm( formHandle ) }}
 ```
 
 ### Template Tags
@@ -49,7 +49,7 @@ You can access your Form Element directly using the `form` tag.
 
 ``` twig
 {# Returns a barrelstrength\sproutforms\elements\Form #}
-{% set form = craft.sproutForms.form('contact') %}
+{% set form = sprout.forms.form('contact') %}
 ```
 
 #### displayForm
@@ -57,7 +57,7 @@ You can access your Form Element directly using the `form` tag.
 The `displayForm` tag renders the HTML for all files defined in your Form Templates.
 
 ``` twig
-{{ craft.sproutForms.displayForm('contactForm') }}
+{{ sprout.forms.displayForm('contactForm') }}
 ```
 
 #### displayTab
@@ -66,7 +66,7 @@ The `displayTab` tag is called within the `displayForm` tag and renders each ind
 
 ``` twig
 {% for tab in form.getFieldLayout().getTabs() %}
-    {{ craft.sproutForms.displayTab(form, tab.id, renderingOptions) }}
+    {{ sprout.forms.displayTab(form, tab.id, renderingOptions) }}
 {% endfor %}
 ```
 
@@ -78,7 +78,7 @@ The `displayField` tag is called within the `displayTab` tag and renders each in
 {% set layoutFields = tab.getFields() %}
 
 {% for field in layoutFields -%}
-    {{ craft.sproutForms.displayField(form, field, renderingOptions) }}
+    {{ sprout.forms.displayField(form, field, renderingOptions) }}
 {% endfor %}
 ```
 

@@ -35,7 +35,7 @@ We've looked into the options around this the following options seem to be the a
 
 ``` twig
 {% set formHandle = 'contactform-' ~ currentSite.handle %}
-{{ craft.sproutForms.displayForm(formHandle) }}
+{{ sprout.forms.displayForm(formHandle) }}
 ```
 
 2. You can create one form and **manage the translations using static translations** in a file (https://docs.craftcms.com/v3/static-translations.html). This is possible but probably not ideal because you would have to update a translation file each time you made a change to your form in the CP.

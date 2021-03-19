@@ -36,11 +36,11 @@ Each email service provider handles tests differently. The _Send Test_ behavior 
 
 ## Templating
 
-To output your Campaign emails in your templates you can use the `craft.sproutEmail.entries` tag.  Here is a basic overview of what is available:
+To output your Campaign emails in your templates you can use the `sprout.email.entries` tag.  Here is a basic overview of what is available:
 
 ```twig
-{% set id = craft.sproutEmail.entries.id(1).first() %}
-{% set slug = craft.sproutEmail.entries.slug('my-email-slug').first() %}
-{% set campaignId = craft.sproutEmail.entries.campaignId(1).find() %}
-{% set campaignHandle = craft.sproutEmail.entries.campaignHandle('myCampaign').find() %}
+{% set id = sprout.email.entries.id(1).first() %}
+{% set slug = sprout.email.entries.slug('my-email-slug').first() %}
+{% set campaignId = sprout.email.entries.campaignId(1).find() %}
+{% set campaignHandle = sprout.email.entries.campaignHandle('myCampaign').find() %}
 ```

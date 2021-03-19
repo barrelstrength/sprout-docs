@@ -28,7 +28,7 @@ Below is a full example of how give a user can Add or Remove items from a Wish L
 
 ``` twig
 {# Get all lists of a certain type that belong to a user #}
-{% set lists = craft.sproutLists.lists
+{% set lists = sprout.lists.lists
     .elementId(currentUser.id)
     .handle('favorites*')
     .all() %}
@@ -59,7 +59,7 @@ This means that Lists that target two different `elementId`s can use the same `l
 
 ``` twig
 {# Retrieve a list #}
-{% set list = craft.sproutLists.lists
+{% set list = sprout.lists.lists
     .elementId(123)
     .handle('newsletter')
     .one() %}

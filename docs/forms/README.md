@@ -14,7 +14,7 @@ Sprout Forms is an online form builder for Craft CMS that makes it easy for cont
 Get up in running in minutes with Sprout Forms default [Form Templates](default-form-templates.md).
 
 ``` twig
-{{ craft.sproutForms.displayForm('contactForm') }}
+{{ sprout.forms.displayForm('contactForm') }}
 ```
 
 Sprout Forms supports over 20 fields, spam protection, error handling, etc.

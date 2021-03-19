@@ -22,7 +22,7 @@ The `meta` variable allows you to override metadata within templates. The `meta`
 #### page.twig
 
 ``` twig
-{% do craft.sproutSeo.meta({
+{% do sprout.seo.meta({
     title: entry.title,
 }) %}
 
@@ -42,7 +42,7 @@ The `meta` variable allows you to override metadata within templates. The `meta`
 Below is an example of all of the values you can override.
 
 ``` twig
-{% do craft.sproutSeo.meta({ 
+{% do sprout.seo.meta({ 
     title: entry.title,
     description: entry.body|striptags|slice(0, 150),
     canonical: '',

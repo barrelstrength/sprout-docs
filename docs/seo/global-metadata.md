@@ -10,7 +10,7 @@ Global Metadata is managed from the Globals tab and filled out once when you set
 ## Website Identity
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobalMetadata() %}
+{% set globals = sprout.seo.getGlobalMetadata() %}
 {% set identity = globals.identity %}
 
 {{ identity.name }}
@@ -48,7 +48,7 @@ Global Metadata is managed from the Globals tab and filled out once when you set
 ## Contacts
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobalMetadata(currentSite) %}
+{% set globals = sprout.seo.getGlobalMetadata(currentSite) %}
 {% set contacts = globals.contacts %}
 
 {% for contact in contacts %}
@@ -62,7 +62,7 @@ Global Metadata is managed from the Globals tab and filled out once when you set
 You can display a list of the Contacts from your Global Sprout SEO settings on your website using the `getContacts` tag:
 
 ``` twig
-{% set contacts = craft.sproutSeo.getContacts(currentSite) %}
+{% set contacts = sprout.seo.getContacts(currentSite) %}
 
 <ul>
     {% for contact in contacts %}
@@ -74,7 +74,7 @@ You can display a list of the Contacts from your Global Sprout SEO settings on y
 ## Social Profiles
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobalMetadata(currentSite) %}
+{% set globals = sprout.seo.getGlobalMetadata(currentSite) %}
 {% set social = globals.social %}
 
 {% for profile in social %}
@@ -88,7 +88,7 @@ You can display a list of the Contacts from your Global Sprout SEO settings on y
 You can display a list of the Social Profiles in your Global Sprout SEO settings on your website using the `getSocialProfiles` tag:
 
 ``` twig
-{% set socialProfiles = craft.sproutSeo.getSocialProfiles(currentSite) %}
+{% set socialProfiles = sprout.seo.getSocialProfiles(currentSite) %}
 
 <ul>
   {% for socialProfile in socialProfiles %}
@@ -100,7 +100,7 @@ You can display a list of the Social Profiles in your Global Sprout SEO settings
 ## Verify Ownership
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobalMetadata(currentSite) %}
+{% set globals = sprout.seo.getGlobalMetadata(currentSite) %}
 {% set ownership = globals.ownership %}
 
 {% for item in ownership %}
@@ -113,7 +113,7 @@ You can display a list of the Social Profiles in your Global Sprout SEO settings
 ## Customization
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobalMetadata(currentSite) %}
+{% set globals = sprout.seo.getGlobalMetadata(currentSite) %}
 {% set settings = globals.settings %}
 
 {{ settings.seoDivider }}
@@ -128,7 +128,7 @@ You can display a list of the Social Profiles in your Global Sprout SEO settings
 ## Robots
 
 ``` twig
-{% set globals = craft.sproutSeo.getGlobalMetadata(currentSite) %}
+{% set globals = sprout.seo.getGlobalMetadata(currentSite) %}
 {% set robots = globals.robots %}
 
 {% for key,enabled in robots %}

@@ -27,8 +27,8 @@ The [form tag](./forms.md) and the [getEntry tag](./entries.md) must be used tog
 ## Loop through all fields dynamically
 
 ``` twig
-{% set form = craft.sproutForms.form('contact') %}
-{% set entry = craft.sproutForms.getEntry(form) %}
+{% set form = sprout.forms.form('contact') %}
+{% set entry = sprout.forms.getEntry(form) %}
 
 {%- for tab in form.getFieldLayout().getTabs() %}
     
@@ -42,7 +42,7 @@ The [form tag](./forms.md) and the [getEntry tag](./entries.md) must be used tog
 
         {% for field in layoutFields -%}
         
-            {%- do craft.sproutForms.addFieldVariables(_context) -%}
+            {%- do sprout.forms.addFieldVariables(_context) -%}
             
             {%- set label            = field.name ?? null %}
             {%- set instructions     = field.instructions ?? null %}
@@ -143,10 +143,10 @@ The [form tag](./forms.md) and the [getEntry tag](./entries.md) must be used tog
 {% from _self import errorList %}
 
 {# Get our Form data #}
-{% set form = craft.sproutForms.form('contact') %}
+{% set form = sprout.forms.form('contact') %}
 
 {# Get our Form Entry data to manage error states and re-populating field values #}
-{% set submittedEntry = craft.sproutForms.getEntry(form) %}
+{% set submittedEntry = sprout.forms.getEntry(form) %}
 
 <form method="post" accept-charset="UTF-8">
     {{ csrfInput() }}
