@@ -13,5 +13,9 @@
     "scripts": {
         "docs:dev": "vuepress dev docs",
         "docs:build": "vuepress build docs && vuepress-sitemap --hostname https://sprout.barrelstrengthdesign.com/docs --changefreq weekly --dest docs/.vuepress/dist"
+    },
+    "dependencies": {
+        "v-tooltip": "^2.0.3",
+        "vue-fragment": "^1.5.1"
     }
 }
