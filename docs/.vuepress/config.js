@@ -95,13 +95,11 @@ module.exports = {
       {
         text: 'Sprout Plugins',
         items: [
-          {text: 'Sprout for Craft 3', link: '/'},
-          {text: 'Sprout for Craft 2', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v2/'},
+          {text: 'Sprout v7 (Craft 3)', link: '/'},
+          {text: 'Sprout v2 (Craft 3)', link: 'https://sprout.barrelstrengthdesign.com/docs/v2/'},
+          {text: 'Sprout v1 (Craft 2)', link: 'https://sprout.barrelstrengthdesign.com/docs/v1/'},
         ]
-      },
-      {
-        text: 'Back to Sprout →', link: 'https://sprout.barrelstrengthdesign.com/'
-      },
+      }
     ],
     sidebar: {
       '/forms/': [
@@ -464,96 +462,6 @@ module.exports = {
         }
       ],
 
-      // '/import/': [
-      //   ['../', '← All Plugins'],
-      //   {
-      //     title: 'Introduction',
-      //     collapsable: false,
-      //     children: [
-      //       '',
-      //       'supported-data-types',
-      //     ]
-      //   },
-      //   {
-      //     title: 'Core Concepts',
-      //     collapsable: false,
-      //     children: [
-      //       'resolve-relationships',
-      //       'related-attributes',
-      //       'create-elements-on-the-fly',
-      //       'update-existing-elements',
-      //       'set-default-attributes',
-      //       'multiple-sites',
-      //       'multiple-import-types',
-      //       'large-amounts-of-data',
-      //       'console-commands'
-      //     ]
-      //   },
-      //   {
-      //     title: 'Element Importers',
-      //     collapsable: false,
-      //     children: [
-      //       'assets',
-      //       'categories',
-      //       'entries',
-      //       'matrix-field',
-      //       'orders',
-      //       'products-with-variants',
-      //       'tags',
-      //       'users'
-      //     ]
-      //   },
-      //   {
-      //     title: 'Settings Importers',
-      //     collapsable: false,
-      //     children: [
-      //       'fields',
-      //       'sections',
-      //       'widgets'
-      //     ]
-      //   },
-      //   {
-      //     title: 'Bundles',
-      //     collapsable: false,
-      //     children: [
-      //       'longform-content-matrix',
-      //       'navigation-using-structures',
-      //       'simple-blog',
-      //     ]
-      //   },
-      //   {
-      //     title: 'Seed Data',
-      //     collapsable: false,
-      //     children: [
-      //       'faker-and-fake-data',
-      //       'generating-lots-of-data'
-      //     ]
-      //   },
-      //   {
-      //     title: 'Examples',
-      //     collapsable: false,
-      //     children: [
-      //       'importing-dates'
-      //     ]
-      //   },
-      //   {
-      //     title: 'Development',
-      //     collapsable: false,
-      //     children: [
-      //       'element-importers',
-      //       'field-importers',
-      //       'settings-importer'
-      //     ]
-      //   },
-      //   {
-      //     title: 'Installing & Updating',
-      //     collapsable: false,
-      //     children: [
-      //       'installing-and-updating-craft-3'
-      //     ]
-      //   }
-      // ],
-
       '/active/': [
         ['../', '← All Plugins'],
         {
@@ -684,55 +592,43 @@ module.exports = {
           collapsable: false,
           children: [
             '/',
-            'why-sprout',
-            'core-concepts',
-            'integrations',
-            'multi-site',
-            'businesses'
+            'features',
+            'multi-site'
           ]
         },
         {
           title: 'Form Building',
           collapsable: false,
           children: [
-            ['forms/', 'Sprout Forms'],
-            ['fields/', 'Sprout Fields']
+            ['forms/', 'Forms'],
+            ['fields/', 'Fields']
           ]
         },
         {
           title: 'SEO Metadata',
           collapsable: false,
           children: [
-            ['seo/', 'Sprout SEO'],
-            ['redirects/', 'Sprout Redirects'],
-            ['sitemaps/', 'Sprout Sitemaps']
+            ['seo/', 'SEO'],
+            ['redirects/', 'Redirects'],
+            ['sitemaps/', 'Sitemaps']
           ]
         },
         {
           title: 'Email Marketing',
           collapsable: false,
           children: [
-            ['email/', 'Sprout Email'],
-            ['campaigns/', 'Sprout Campaigns'],
-            ['sent-email/', 'Sprout Sent Email'],
-            ['lists/', 'Sprout Lists'],
+            ['email/', 'Email'],
+            ['campaigns/', 'Campaigns'],
+            ['sent-email/', 'Sent Email'],
+            ['lists/', 'Lists'],
           ]
         },
         {
           title: 'Data Ops',
           collapsable: false,
           children: [
-            ['reports/', 'Sprout Reports'],
+            ['reports/', 'Reports'],
             // ['import/', 'Sprout Import'],
-          ]
-        },
-        {
-          title: 'Misc',
-          collapsable: false,
-          children: [
-            ['active/', 'Sprout Active'],
-            ['encode-email/', 'Sprout Encode Email'],
-            ['notes/', 'Sprout Notes']
           ]
         },
         {
@@ -754,15 +650,6 @@ module.exports = {
           children: [
             'contributing',
             'coding-guidelines',
-          ]
-        },
-        {
-          title: 'Tools',
-          collapsable: false,
-          children: [
-            ['tools/php-storm', 'PhpStorm'],
-            ['tools/sublime-text', 'Sublime Text'],
-            ['tools/craftnet', 'Craftnet']
           ]
         }
       ]
