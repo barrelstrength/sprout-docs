@@ -66,3 +66,14 @@ Sprout Forms no longer relies on existing Craft Field Types so we can now deprec
 - **Email Select Field** (will be migrated to use a Table Field)
 - **Hidden Field** (will be migrated to use a Plain Text Field)
 - **Invisible Field** (will be migrated to use a Plain Text Field)
+
+### Upgrading to Fields 4.0??? - UNRELEASED
+
+OnSaveAddressEvent removes 'model' property
+Updates 'source' => 'element'
+Commit: 78cd228838f3ac5efabd8d536e738b26511bebd2
+
+- Removed Email field. Data has been migrated to native Craft Email field.
+- Removed Url field. Data has been migrated to native Craft URL field.
+- Removed Notes field. See upgrade notes to manually update Notes to new Craft Field UI Elements. Notes Field data will be saved in upgrade migrations to storage/runtime/sprout/sprout-notes-field-data-export.txt
+

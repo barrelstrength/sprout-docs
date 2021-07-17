@@ -73,7 +73,7 @@ Read over the [Changes in Craft 3](https://docs.craftcms.com/v3/changes-in-craft
 #### Retrieving a form
 
 ``` twig
-{% set form = craft.sproutForms.form('contact') %}
+{% set form = sprout.forms.form('contact') %}
 ```
 
 #### Identifying a field by type
@@ -101,12 +101,12 @@ Where `field` is a Form Field model:
 ``` twig
 {# form.html #}
 {%- for tab in form.getFieldLayout().getTabs() %}
-    {{ craft.sproutForms.displayTab(form, tab.id, renderingOptions) }}
+    {{ sprout.forms.displayTab(form, tab.id, renderingOptions) }}
 {% endfor -%}
 
 {# tab.html #}
 {% for field in layoutFields -%}
-    {{- craft.sproutForms.displayField(form, field, renderingOptions) }}
+    {{- sprout.forms.displayField(form, field, renderingOptions) }}
 {%- endfor %}
 ```
 
@@ -223,7 +223,7 @@ Custom integrations may also need to update how they initialize the target field
 
 ``` twig
 // OLD
-new Craft.SproutForms.Integration({
+new sprout.forms.Integration({
   integrationType: '{{ className(integration)|e('js') }}'
 });
 
@@ -263,7 +263,7 @@ The `statusHandle` attribute has been removed as the same behavior is available 
   
 ``` twig
 OLD
-{% for formEntry in craft.sproutForms.entries
+{% for formEntry in sprout.forms.entries
   .formHandle('contact')
   .statusHandle('pending')
   .all() %}
@@ -271,7 +271,7 @@ OLD
 {% endfor %}
 
 NEW
-{% for formEntry in craft.sproutForms.entries
+{% for formEntry in sprout.forms.entries
   .formHandle('contact')
   .status('pending')
   .all() %}
@@ -383,7 +383,7 @@ The default Accessible Templates have been updated to support global Success and
 ``` twig
 {# Set these new variables at the top of the form.twig template #}
 {% set globalErrorsEnabled = form.errorDisplayMethod in ['global', 'both'] ? true : false %}
-{% set lastEntry = craft.sproutForms.lastEntry(form.id) %}
+{% set lastEntry = sprout.forms.lastEntry(form.id) %}
 
 {# Define globalErrorListHtml if it exists #}
 {%- set globalErrorListHtml -%}
@@ -543,6 +543,152 @@ Additionally, to support Rendering Options error classes in your custom Form Fie
 {%- set class = errors and errorClass ? class~' '~errorClass : class %}
 ``` 
 
+## Upgrading to Forms 4.0.0 - UNRELEASED
 
+Upgrade to the latest before updating.
+Purge SPAM and delete old entries.
 
+REMOVE Remove Basic Form templates. Link to old Repo if folks want to download them and use them as overrides.
+
+Sprout Forms 4 is a major release the includes an update to the underlying architecture. The Sprout Forms user experience will remain familiar but several conventions have changed. Most notably, the core codebase for `barrelstrength/sprout-forms` has been moved to the `barrelstrength/sprout-base` package so any custom code, translations, or direct links to the Sprout Forms Control Panel will need to be updated to target the new naming conventions. Plugin-specific Control Panel settings have also moved to the Craft settings area. 
+
+Sidebar navigation has been updated to be independent of plugins and specific to the modules being used
+If you had custom code adjusting the sidebar, you may need to revisit it.
+Plugin features now default to their module names in the sidebar.
+
+If you'd have questions and would like support at any time during the upgrade process, please reach out to support or schedule a half-hour consultation.
+
+| Feature | Old Name | New Name |
+|:------- |:------   |:------   |
+| CP URL | `admin/sprout-forms` | `admin/sprout/forms` |
+| Template Variables | `craft.sproutForms` | `sprout.forms` |
+| Translation Category | `sprout-forms` | `sprout` |
+| Controller Namespace | `barrelstrength/sproutforms/controllers` | `barrelstrength/sproutbase/app/forms/controllers`  |
+| Service Namespace | `barrelstrength/sproutforms/services` | `barrelstrength/sproutbase/app/forms/services`  |
+
+### Front-end Form Overrides
+
+Front End Form Asset Resource paths changed:
+Update path of formtemplates resources into web/assets/public/dist folder.
+
+You will need to update the Form submission action in any template overrides:
+``` twig
+{# OLD #}
+<input type="hidden" aria-hidden="true" name="action" value="sprout-forms/entries/save-entry">
+
+{# NEW #}
+<input type="hidden" aria-hidden="true" name="action" value="sprout/form-entries/save-entry">
+```
+
+| Old | New |
+|:------   |:------   |
+| `@sproutforms/web/assets/formtemplates/dist/js/submit-handler.js` | `@sproutbase/web/public/formtemplates/dist/js/SubmitHandler.js` |
+| `@sproutforms/web/assets/formtemplates/dist/js/rules.js` | `@sproutbase/web/public/formtemplates/dist/js/Rules.js` |
+| `@sproutforms/web/assets/formtemplates/dist/js/addressfield.js` | `@sproutbase/web/public/formtemplates/dist/js/AddressField.js` |
+| `@sproutforms/web/assets/formtemplates/dist/js/accessibility.js` | `@sproutbase/web/public/formtemplates/dist/js/Accessibility.js` |
+| `@sproutforms/web/assets/formtemplates/dist/js/disable-submit-button.js` | `@sproutbase/web/public/formtemplates/dist/js/DisableSubmitButton.js` |
+
+### Removed Basic Form Templates
+
+Document way use can copy these over and use them as Custom Templates folder if they wish.
+
+### Form Templates API
+
+FormTemplates are using two methods instead of one to determine path:
+    use FormTemplates::getTemplateRoot and FormTemplates::getPath
+    updated FormTemplates::getPath to not refer to the full path...
     
+### Form Field override template
+
+The countries variable has been updated and may need updated if you have a phone form field template override:
+
+``` twig
+{# OLD #}
+{%- for key, option in sprout.fields.getCountries() -%}
+
+{# NEW #} 
+{%- for key, option in countries -%}
+```
+
+### Controllers
+
+Any forms you submit to controllers in your templates, will need to be updated to point to new controller endpoints:
+
+| Old | New |
+|:------   |:------   |
+| `sprout-forms/entries/[action-id]` | `sprout/form-entries/[action-id]` |
+| `sprout-forms/groups/[action-id]` | `sprout/form-groups/[action-id]` |
+| `sprout-forms/entry-statuses/[action-id]` | `sprout/form-entry-statuses/[action-id]` |
+
+The class names that changed are:
+
+| Old | New |
+|:------   |:------   |
+| `barrelstrength\sproutforms\controllers\Entries` | `barrelstrength\sproutbase\app\forms\controllers\FormEntries` | 
+| `barrelstrength\sproutforms\controllers\Fields` | `barrelstrength\sproutbase\app\forms\controllers\FormFields` |
+| `barrelstrength\sproutforms\controllers\Groups` | `barrelstrength\sproutbase\app\forms\controllers\FormGroups` |
+| `barrelstrength\sproutforms\controllers\EntryStatuses` | `barrelstrength\sproutbase\app\forms\controllers\FormEntryStatuses` |
+| `barrelstrength\sproutforms\controllers\Integrations` | `barrelstrength\sproutbase\app\forms\controllers\FormIntegrations` |
+
+### Services
+
+| Old | New |
+|:------   |:------   |
+| `SproutForms::$app->entries` | `SproutBase::$app->formEntries` |
+| `SproutForms::$app->fields` | `SproutBase::$app->formFields` |
+| `SproutForms::$app->groups` | `SproutBase::$app->formGroups` |
+| `SproutForms::$app->entryStatuses` | `SproutBase::$app->formEntryStatuses` |
+| `SproutForms::$app->integrations` | `SproutBase::$app->formIntegrations` |
+| `SproutForms::$app->rules` | `SproutBase::$app->formRules` |
+
+| Old | New |
+|:------   |:------   |
+| `barrelstrength\sproutforms\services\Entries` | `barrelstrength\sproutbase\app\forms\services\FormEntries` |
+| `barrelstrength\sproutforms\services\Fields` | `barrelstrength\sproutbase\app\forms\services\FormFields` |
+| `barrelstrength\sproutforms\services\Groups` | `barrelstrength\sproutbase\app\forms\services\FormGroups` |
+| `barrelstrength\sproutforms\services\EntryStatuses` | `barrelstrength\sproutbase\app\forms\services\FormEntryStatuses` |
+| `barrelstrength\sproutforms\services\Integrations` | `barrelstrength\sproutbase\app\forms\services\FormIntegrations` |
+| `barrelstrength\sproutforms\services\Rules` | `barrelstrength\sproutbase\app\forms\services\FormRules` |
+
+
+### Event Updates
+
+The `EVENT_REGISTER_FORM_TEMPLATES` has moved:
+
+``` php
+// OLD
+use barrelstrength/sproutforms/services/Forms;
+
+Event::on(Forms::class, Forms::EVENT_REGISTER_FORM_TEMPLATES, static function(RegisterComponentTypesEvent $event) {
+    $event->types[] = CustomFormTemplates::class;
+});
+
+// NEW
+use barrelstrength/sprout/app/forms/services/FormTemplates;
+
+Event::on(FormTemplates::class, FormTemplates::EVENT_REGISTER_FORM_TEMPLATES, static function(RegisterComponentTypesEvent $event) {
+    $event->types[] = CustomFormTemplates::class;
+});
+```
+
+The `EVENT_REGISTER_CAPTCHAS` Event has moved:
+
+``` php
+// OLD
+use barrelstrength/sproutforms/services/Forms;
+
+Event::on(Forms::class, Forms::EVENT_REGISTER_CAPTCHAS, static function(RegisterComponentTypesEvent $event) {
+    $event->types[] = GoogleRecaptcha::class;
+});
+
+// NEW
+use barrelstrength/sprout/app/forms/services/FormCaptchas;
+
+Event::on(FormCaptchas::class, FormCaptchas::EVENT_REGISTER_CAPTCHAS, static function(RegisterComponentTypesEvent $event) {
+    $event->types[] = GoogleRecaptcha::class;
+});
+```
+
+
+
+

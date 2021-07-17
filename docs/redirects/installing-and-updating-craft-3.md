@@ -27,3 +27,8 @@ Sprout SEO installation and update instructions for Craft 3.
 ::: warning BEFORE YOU UPDATE
 Make sure you have updated to the latest version of Sprout SEO 3.x before updating to Sprout Import 4.x for Craft 3
 :::
+
+## Upgrading to Redirects 2.0 - UNRELEASED
+
+Upgrade to the latest before updating.
+Purge 404 redirects

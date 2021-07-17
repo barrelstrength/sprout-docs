@@ -22,8 +22,10 @@ Sprout Email installation and update instructions for Craft 3.
 2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-forms`
 3. In the Control Panel, go to _Settings → Plugins_ and select “Install”
 
-## Upgrading to Craft 3
+## Upgrading to Craft 3 - UNRELEASED
 
 ::: warning BEFORE YOU UPDATE
 Make sure you have updated to the latest version of Sprout Email 3.x before updating to Sprout Email 4.x for Craft 3
 :::
+
+CampaignEmail element no longer provides an 'entry' variable to the template, only `email` variable

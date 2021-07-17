@@ -30,3 +30,18 @@ If you've been using Sprout Email only for the Sent Email feature, you may be ab
  2. Upgrade to Sprout Email v4.3.0 (to make sure you trigger all the necessary migrations that make Sprout Sent Email an independent module)
  3. Install Sprout Sent Email and enable it
  4. Uninstall Sprout Email
+ 
+ ## Upgrading to Sent Email 2.0.0 - UNRELEASED
+
+Upgrade to the latest before updating.
+Purge old SENT EMAIL before updating.
+
+Any custom integrations implementing Sent Email tracking will need to update the following method:
+ 
+``` php
+// OLD
+public function createInfoTableModel($pluginHandle, array $values = [])
+
+NEW
+public function createInfoTableModel($sourceName, $sourceVersion = '', array $values = [])
+```

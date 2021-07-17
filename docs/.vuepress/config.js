@@ -93,11 +93,11 @@ module.exports = {
     },
     nav: [
       {
-        text: 'Sprout Plugins',
+        text: 'Sprout v10',
         items: [
-          {text: 'Sprout v7 (Craft 3)', link: '/'},
-          {text: 'Sprout v2 (Craft 3)', link: 'https://sprout.barrelstrengthdesign.com/docs/v2/'},
-          {text: 'Sprout v1 (Craft 2)', link: 'https://sprout.barrelstrengthdesign.com/docs/v1/'},
+          {text: 'Sprout v10 (Craft 3.7)', link: '/'},
+          {text: 'Sprout v2  (Craft 3.0)', link: 'https://sprout.barrelstrengthdesign.com/docs/v2/'},
+          {text: 'Sprout v1  (Craft 2.x)', link: 'https://sprout.barrelstrengthdesign.com/docs/v1/'},
         ]
       }
     ],
@@ -108,11 +108,12 @@ module.exports = {
           title: 'Introduction',
           collapsable: false,
           children: [
-            ''
+            '',
+            'faq'
           ]
         },
         {
-          title: 'Core Concepts',
+          title: 'Get Started',
           collapsable: false,
           children: [
             'forms',
@@ -174,14 +175,6 @@ module.exports = {
             'events-and-hooks',
             'javascript-events'
           ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3',
-            'faq'
-          ]
         }
       ],
 
@@ -196,7 +189,7 @@ module.exports = {
           ]
         },
         {
-          title: 'Core Concepts',
+          title: 'Get Started',
           collapsable: false,
           children: [
             'global-metadata',
@@ -227,13 +220,6 @@ module.exports = {
           children: [
             'custom-schema'
           ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3'
-          ]
         }
       ],
 
@@ -247,7 +233,7 @@ module.exports = {
           ]
         },
         {
-          title: 'Core Concepts',
+          title: 'Get Started',
           collapsable: false,
           children: [
             'redirects',
@@ -259,13 +245,6 @@ module.exports = {
           collapsable: false,
           children: [
             'query-strings-in-redirects'
-          ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -280,7 +259,7 @@ module.exports = {
           ]
         },
         {
-          title: 'Core Concepts',
+          title: 'Get Started',
           collapsable: false,
           children: [
             'sitemaps',
@@ -292,13 +271,6 @@ module.exports = {
           collapsable: false,
           children: [
             'custom-url-enabled-sections'
-          ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -314,7 +286,7 @@ module.exports = {
           ]
         },
         {
-          title: 'Core Concepts',
+          title: 'Get Started',
           collapsable: false,
           children: [
             'notification-emails',
@@ -354,13 +326,6 @@ module.exports = {
             'custom-mailers',
             'custom-notification-events'
           ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3'
-          ]
         }
       ],
 
@@ -372,13 +337,6 @@ module.exports = {
           children: [
             '',
             'plugin-settings'
-          ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -393,19 +351,12 @@ module.exports = {
           ]
         },
         {
-          title: 'Core Concepts',
+          title: 'Get Started',
           collapsable: false,
           children: [
             'campaign-emails',
             'copy-paste-mailer',
             'plugin-settings'
-          ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3'
           ]
         }
       ],
@@ -420,7 +371,7 @@ module.exports = {
           ]
         },
         {
-          title: 'Core Concepts',
+          title: 'Get Started',
           collapsable: false,
           children: [
             'data-sources',
@@ -452,49 +403,6 @@ module.exports = {
           children: [
             'custom-data-sources'
           ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3'
-          ]
-        }
-      ],
-
-      '/active/': [
-        ['../', '← All Plugins'],
-        {
-          title: 'Introduction',
-          collapsable: false,
-          children: [
-            ''
-          ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3'
-          ]
-        }
-      ],
-
-      '/encode-email/': [
-        ['../', '← All Plugins'],
-        {
-          title: 'Introduction',
-          collapsable: false,
-          children: [
-            ''
-          ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3'
-          ]
         }
       ],
 
@@ -523,13 +431,6 @@ module.exports = {
             'template-field',
             'url-field'
           ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3'
-          ]
         }
       ],
 
@@ -543,7 +444,7 @@ module.exports = {
           ]
         },
         {
-          title: 'Core Concepts',
+          title: 'Get Started',
           collapsable: false,
           children: [
             'lists',
@@ -557,31 +458,6 @@ module.exports = {
           children: [
             'subscriber-list-data-source'
           ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3'
-          ]
-        }
-      ],
-
-      '/notes/': [
-        ['../', '← All Plugins'],
-        {
-          title: 'Introduction',
-          collapsable: false,
-          children: [
-            ''
-          ]
-        },
-        {
-          title: 'Installing & Updating',
-          collapsable: false,
-          children: [
-            'installing-and-updating-craft-3'
-          ]
         }
       ],
 
@@ -594,6 +470,15 @@ module.exports = {
             '/',
             'features',
             'multi-site'
+          ]
+        },
+        {
+          title: 'Configuration',
+          collapsable: false,
+          children: [
+            'configuration/requirements',
+            'configuration/updates',
+            'configuration/sprout-config',
           ]
         },
         {
@@ -628,20 +513,16 @@ module.exports = {
           collapsable: false,
           children: [
             ['reports/', 'Reports'],
-            // ['import/', 'Sprout Import'],
           ]
         },
         {
           title: 'Support',
           collapsable: false,
           children: [
-            'support/feature-requests',
-            'support/bugs',
-            'support/security',
-            'support/changelog',
-            'support/pricing',
+            'support/support',
             'support/training',
-            'support/support'
+            'support/pricing',
+            'support/security',
           ]
         },
         {

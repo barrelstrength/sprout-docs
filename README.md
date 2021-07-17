@@ -1,3 +1,20 @@
+REDIRECTS NEEDED
+/integrations.html
+/core-concepts.html
+/businesses.html
+/why-sprout => /
+
+These docs will just be done in a Github README and this site will focus on the full suite.
+
+['active/', 'Sprout Active'],
+['encode-email/', 'Sprout Encode Email'],
+['notes/', 'Sprout Notes']
+
+Ditch these too. People can find them if they want:
+['tools/php-storm', 'PhpStorm'],
+['tools/sublime-text', 'Sublime Text'],
+['tools/craftnet', 'Craftnet']
+
 # Sprout Docs
 
 See our website for the complete [Sprout Documentation](https://sprout.barrelstrengthdesign.com/docs/).

@@ -104,3 +104,17 @@ $imageId = $schema['image'] ?? null;
 #### Globals meta column
 
 The `sproutseo_globals.meta` column has been removed and Global Metadata is now calculated at the time it is needed. If you referenced the Globals::$meta column in any custom implementations, you can now just call the getter for the metadata you want from the final Metadata model. 
+
+## Upgrading to SEO 5.0.0 - UNRELEASED
+
+Sprout SEO 5 is a major release the includes an update to the underlying architecture. The Sprout SEO user experience will remain familiar but several conventions have changed. Most notably, the core codebase for `barrelstrength/sprout-seo` has been moved to the `barrelstrength/sprout-base` package so any custom code, translations, or direct links to the Sprout SEO Control Panel will need to be updated to target the new naming conventions. Plugin-specific Control Panel settings have also moved to the Craft settings area. 
+
+| Feature | Old Name | New Name |
+|:------- |:------   |:------   |
+| CP URL | `admin/sprout-seo` | `admin/sprout/seo` |
+| Template Variables | `craft.sproutSeo` | `sprout.seo` |
+| Translation Category | `sprout-seo` | `sprout` |
+| Controller Namespace | `barrelstrength/sproutseo/controllers` | `barrelstrength/sproutbase/app/seo/controllers`  |
+| Service Namespace | `barrelstrength/sproutseo/services` | `barrelstrength/sproutbase/app/seo/services`  |
+| Optimize Service | `SproutSeo::$app->optimize` | `SproutBase::$app->optimizeMetadata` |
+| Optimize Service | `SproutSeo::$app->schema` | `SproutBase::$app->schemaMetadata` |

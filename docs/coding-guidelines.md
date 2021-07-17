@@ -186,6 +186,29 @@ Many Sprout plugins share functionality and this code is managed in shared Yii M
 | barrelstrength/sprout-base-sitemaps | Common redirects functionality |
 | barrelstrength/sprout-base-uris | Common URL-enabled Section functionality |
 
+## Sprout Settings
+
+Sprout plugins have a custom settings API to manage settings pages. This assists in managing shared settings between plugins as well as managing the UI in the control panel for more advanced settings pages.
+
+Additionally, Sprout Plugins that use the API should disable the default Craft settings behavior so their icon does not appear in the Craft settings listing and instead register their `SproutSettings` class to display in the 'Sprout Settings' section of the Settings are.
+
+There are two types of settings
+- Simple settings - They use our standard shares settings pages, provide simple fields to be saved as settings, save those settings to the `sprout-settings` key in the Project Config, and allow the overriding of those settings via the `config/sprout-settings.php` file.
+
+As Sprout plugins share several core modules, we use a custom settings API  
+
+
+Extend the base `barrelstrength/sproutbase/base/SproutSettings` class
+
+Register all settings and shared settings SproutSettings types in the plugin that uses them. If more than one plugin uses the same settings, they will only get registered once.
+
+``` php
+Event::on(Settings::class, Settings::EVENT_REGISTER_SPROUT_SETTINGS, static function(RegisterComponentTypesEvent $event) {
+    $event->types[] = FormsSettings::class;
+    $event->types[] = NotificationsSettings::class;
+    $event->types[] = ReportsSettings::class;
+});
+```
 
 ## Uninstall Migrations
 
@@ -266,6 +289,10 @@ Due to our application structure using shared modules, in some cases migrations 
 
 - Make sure every migration can be run twice, without throwing errors if it has already been run once.
 - All migrations that affect a plugin with a shared module should be placed in the base module and instances of those migrations should be created in each respective plugin where they are needed.
+
+	- Docs: 'Call to Craft or Sprout service layer' inspection
+    - Database Audit Utility notes...
+
 
 ### Naming migrations
 

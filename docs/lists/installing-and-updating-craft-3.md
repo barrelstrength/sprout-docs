@@ -32,14 +32,14 @@ Some general updates include:
 
 - Adding and removing Subscribers now require the Users `email` to identify the Subscriber
 - A Lists Element ID and Handle now must be unique
-- Previous template tags have been removed in favor of the general `craft.sproutLists.lists` and `craft.sproutLists.subscribers` tags and improved handling of related queries on List and Subscriber models.
+- Previous template tags have been removed in favor of the general `sprout.lists.lists` and `sprout.lists.subscribers` tags and improved handling of related queries on List and Subscriber models.
 
 ### Checking if a Subscriber is on a list
 
 ``` twig
 New:
 {# Retrieve a list #}
-{% set list = craft.sproutLists.lists
+{% set list = sprout.lists.lists
     .id(123)
     .one() %}
 
@@ -59,7 +59,7 @@ Old:
   elementId: entry.id,
 } %}
 
-{% if craft.sproutLists.isSubscribed(params) %}
+{% if sprout.lists.isSubscribed(params) %}
 ...
 ```
 
@@ -115,14 +115,26 @@ Old:
 
 ``` twig
 New:
-{% set list = craft.sproutLists.lists.id(123).one() %}
+{% set list = sprout.lists.lists.id(123).one() %}
 
 {{ list.count }}
 
 Old:
-{% set totalSubscribers = craft.sproutLists.subscriberCount({ 
+{% set totalSubscribers = sprout.lists.subscriberCount({ 
   listHandle: 'listHandle' 
 }) %}
 
 {{ totalSubscribers }}
 ```
+
+## Upgrading to Lists v4.0.0 - UNRELEASED
+
+Sprout Lists 4 is a major release the includes an update to the underlying architecture. The Sprout Lists user experience will remain familiar but several conventions have changed. Most notably, the core codebase for `barrelstrength/sprout-lists` has been moved to the `barrelstrength/sprout-base` package so any custom code, translations, or direct links to the Sprout Lists Control Panel will need to be updated to target the new naming conventions. Plugin-specific Control Panel settings have also moved to the Craft settings area. 
+
+| Feature | Old Name | New Name |
+|:------- |:------   |:------   |
+| CP URL | `admin/sprout-lists` | `admin/sprout/lists` |
+| Template Variables | `craft.sproutLists` | `sprout.lists` |
+| Translation Category | `sprout-lists` | `sprout` |
+| Controller Namespace | `barrelstrength/sproutlists/controllers` | `barrelstrength/sproutbase/app/lists/controllers`  |
+| Service Namespace | `barrelstrength/sproutlists/services` | `barrelstrength/sproutbase/app/lists/services`  |

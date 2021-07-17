@@ -20,13 +20,10 @@ If you've recently purchased a Sprout plugin or are just curious about having a 
 - Data migrations
 - And more...
 
-Schedule a [Sprout Coaching Session](https://calendly.com/benparizek/sprout-coaching)
+Schedule a [Sprout Coaching Session](https://barrelstrengthdesign.com/schedule/ben-parizek)
 
-## Craft CMS
+## Team Training
 
-For a more general overview, Barrel Strength also offers two introductory group training sessions for Craft CMS and Craft Commerce via Straight Up Craft:
+For a more specialized training, Barrel Strength also offers training for Craft CMS and Craft Commerce via Straight Up Craft.
 
-- Introduction to Craft CMS
-- Introduction to Craft Commerce
-
-Find more details and links to sign up on the [Craft Training](https://straightupcraft.com/training) page on Straight Up Craft.  
+Find more details and links to sign up on the [Training for Teams](https://straightupcraft.com/training/teams) page on Straight Up Craft.
