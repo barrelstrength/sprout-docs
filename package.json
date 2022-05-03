@@ -4,11 +4,11 @@
     "devDependencies": {
         "@vuepress/plugin-google-analytics": "^1.4.1",
         "@vuepress/plugin-last-updated": "^1.4.1",
-        "vuepress": "^1.4.1",
-        "vuepress-theme-craftdocs": "^2.0.2",
+        "esm": "^3.2.25",
+        "vuepress": "^1.9.7",
         "vuepress-plugin-seo": "^0.1.2",
         "vuepress-plugin-sitemap": "^2.3.1",
-        "esm": "^3.2.25"
+        "vuepress-theme-craftdocs": "^2.0.2"
     },
     "scripts": {
         "docs:dev": "vuepress dev docs",
