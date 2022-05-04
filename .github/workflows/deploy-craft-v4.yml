@@ -41,9 +41,12 @@ jobs:
           SOURCE: "docs/.vuepress/dist/"
 
       - name: Execute remote ssh command
-        uses: appleboy/ssh-action@master
-        with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          host: ${{ secrets.REMOTE_HOST }}
-          username: ${{ secrets.REMOTE_USER }}
-          script: ln -s  ${{ secrets.DOCUMENT_ROOT }}docs ${{ secrets.DOCUMENT_ROOT }}public/docs
+          uses: appleboy/ssh-action@master
+          with:
+            key: ${{ secrets.SSH_PRIVATE_KEY }}
+            host: ${{ secrets.REMOTE_HOST }}
+            username: ${{ secrets.REMOTE_USER }}
+            script: |
+              ln -s  ${{ secrets.DOCUMENT_ROOT }}docs/craft-v3 ${{ secrets.DOCUMENT_ROOT }}public/docs/craft-v3
+              ln -s  ${{ secrets.DOCUMENT_ROOT }}docs/craft-v2 ${{ secrets.DOCUMENT_ROOT }}public/docs/craft-v2
+
