@@ -5,7 +5,7 @@ description: Road map for Sprout Craft 3 plugins.
 
 # Road Map
 
-The Sprout Plugins are in the process of being updated for Craft 4 and integrating many of the new features that Craft 3 makes available to custom Elements. While we don't have a date set for release yet, it's our core focus right now and are aiming for a release in June. This page will be updated with additional information by June 1, 2022.
+The Sprout Plugins are in the process of being updated for Craft 4 and integrating many of the new features that Craft 4 makes available to custom Elements. While we don't have a date set for release yet, it's our core focus right now and are aiming for a release in June. This page will be updated with additional information by June 1, 2022.
 
 We are taking the opportunity during this major release to simplify our codebase, migration process, and our non-core plugins.
 
