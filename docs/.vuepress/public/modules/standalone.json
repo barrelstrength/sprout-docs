@@ -1,0 +1,43 @@
+[
+    {
+        "category": "Standalone Plugins",
+        "items": [
+            {
+                "name": "Sprout Reports",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Sprout Redirects",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Sprout Sitemaps",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Sprout Sent Email",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Sprout Campaigns",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Sprout Notifications",
+                "info": "",
+                "lite": true,
+                "pro": true
+            }
+        ]
+    }
+]

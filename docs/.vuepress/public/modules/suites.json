@@ -1,0 +1,30 @@
+[
+    {
+        "category": "Everything Bundle",
+        "items": [
+            {
+                "name": "Sprout Marketing Suite",
+                "info": "",
+                "liteModules": [
+                    "Forms",
+                    "Meta",
+                    "Redirects",
+                    "Sent Email",
+                    "Sitemaps"
+                ],
+                "proModules": [
+                    "Campaigns",
+                    "Forms",
+                    "Meta",
+                    "Notifications",
+                    "Redirects",
+                    "Reports",
+                    "Sent Email",
+                    "Sitemaps"
+                ],
+                "lite": true,
+                "pro": true
+            }
+        ]
+    }
+]
