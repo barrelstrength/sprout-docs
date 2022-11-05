@@ -127,7 +127,7 @@ Old:
 {{ totalSubscribers }}
 ```
 
-## Upgrading to Lists v4.0.0 - UNRELEASED
+## Upgrading to Lists v4.40.0 - UNRELEASED
 
 Sprout Lists 4 is a major release the includes an update to the underlying architecture. The Sprout Lists user experience will remain familiar but several conventions have changed. Most notably, the core codebase for `barrelstrength/sprout-lists` has been moved to the `barrelstrength/sprout-base` package so any custom code, translations, or direct links to the Sprout Lists Control Panel will need to be updated to target the new naming conventions. Plugin-specific Control Panel settings have also moved to the Craft settings area. 
 

@@ -3,7 +3,7 @@ date: 2018-06-25
 description: The Sprout Business Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.
 ---
 
-# Features
+# Lite vs Pro
 
 Sprout provides a collection of modules that can be enabled or disabled on any project. Grow your website from a simple marketing site to a more advanced CRM and marketing tool.
 

@@ -6,7 +6,7 @@ description: Requirements for using the Sprout Plugins.
 # Requirements
 
 - Craft CMS v3.7.0 or a more recent version of Craft
-- Sprout Framework v10.0.0
+- Sprout Framework v4.x
 - All [requirements for running Craft 3](https://craftcms.com/docs/3.x/requirements.html)
 
 ## Installation via Plugin Store
