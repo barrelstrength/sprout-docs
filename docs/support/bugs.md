@@ -9,21 +9,35 @@ View known issues or submit a bug report on the Github repo for each plugin. See
 
 ## Commercial Plugins
 
-| Plugin            | Issues on Github    |
-|:----------------- |:------------------- |
-| Sprout Forms      | [Issues][#Forms3]   |
-| Sprout SEO        | [Issues][#Seo3]     |
-| Sprout Redirects  | [Issues][#Redirects3] |
-| Sprout Sitemaps   | [Issues][#Sitemaps3] |
-| Sprout Email      | [Issues][#Email3]   |
-| Sprout Reports    | [Issues][#Reports3] |
+| Plugin            | Bugs                | Feature Requests     | Uncategorized    |
+|:----------------- |:------------------- |:-------------------- |:------------------- |
+| Sprout Forms      | [View][#Forms3B]    | [View][#Forms3FR]    | [View][#Forms3NA]   |
+| Sprout SEO        | [View][#Seo3B]      | [View][#Seo3FR]      | [View][#Seo3NA]     |
+| Sprout Redirects  | [View][#Redirects3B]| [View][#Redirects3FR]| [View][#Redirects3NA] |
+| Sprout Sitemaps   | [View][#Sitemaps3B] | [View][#Sitemaps3FR] | [View][#Sitemaps3NA] |
+| Sprout Email      | [View][#Email3B]    | [View][#Email3FR]    | [View][#Email3NA]   |
+| Sprout Reports    | [View][#Reports3B]  | [View][#Reports3FR]  | [View][#Reports3NA] |
 
-[#Forms3]: https://github.com/barrelstrength/craft-sprout-forms/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
-[#Seo3]: https://github.com/barrelstrength/craft-sprout-seo/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
-[#Redirects3]: https://github.com/barrelstrength/craft-sprout-redirects/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
-[#Sitemaps3]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
-[#Email3]: https://github.com/barrelstrength/craft-sprout-email/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
-[#Reports3]: https://github.com/barrelstrength/craft-sprout-reports/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#Forms3B]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#Seo3B]: https://github.com/barrelstrength/craft-sprout-seo/issues?&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#Redirects3B]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#Sitemaps3B]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#Email3B]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#Reports3B]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+
+[#Forms3FR]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#Seo3FR]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#Redirects3FR]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#Sitemaps3FR]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#Email3FR]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#Reports3FR]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+
+[#Forms3NA]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#Seo3NA]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#Redirects3NA]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#Sitemaps3NA]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#Email3NA]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#Reports3NA]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
 
 ## Open Source Plugins
 
