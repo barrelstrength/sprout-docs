@@ -9,14 +9,14 @@ View known issues or submit a bug report on the Github repo for each plugin. See
 
 ## Commercial Plugins
 
-| Plugin            | Bugs                | Feature Requests     | Uncategorized    |
-|:----------------- |:------------------- |:-------------------- |:------------------- |
-| Sprout Forms      | [View][#Forms3B]    | [View][#Forms3FR]    | [View][#Forms3NA]   |
-| Sprout SEO        | [View][#Seo3B]      | [View][#Seo3FR]      | [View][#Seo3NA]     |
-| Sprout Redirects  | [View][#Redirects3B]| [View][#Redirects3FR]| [View][#Redirects3NA] |
-| Sprout Sitemaps   | [View][#Sitemaps3B] | [View][#Sitemaps3FR] | [View][#Sitemaps3NA] |
-| Sprout Email      | [View][#Email3B]    | [View][#Email3FR]    | [View][#Email3NA]   |
-| Sprout Reports    | [View][#Reports3B]  | [View][#Reports3FR]  | [View][#Reports3NA] |
+| Plugin            | Bugs                                       | Feature Requests     | Uncategorized    |
+|:----------------- |:-------------------                        |:-------------------- |:------------------- |
+| Sprout Forms      | Craft [v4][#Forms4B] \| [v3][#Forms3B]      | [View All][#FormsFR]    | [View All][#FormsNA]   |
+| Sprout SEO        | Craft [v4][#Seo4B] \| [v3][#Seo3B]        | [View All][#SeoFR]      | [View All][#SeoNA]     |
+| Sprout Redirects  | Craft [v4][#Redirects4B] \| [v3][#Redirects3B]  | [View All][#RedirectsFR]| [View All][#RedirectsNA] |
+| Sprout Sitemaps   | Craft [v4][#Sitemaps4B] \| [v3][#Sitemaps3B]   | [View All][#SitemapsFR] | [View All][#SitemapsNA] |
+| Sprout Email      | Craft [v4][#Email4B] \| [v3][#Email3B]      | [View All][#EmailFR]    | [View All][#EmailNA]   |
+| Sprout Reports    | Craft [v4][#Reports4B] \| [v3][#Reports3B]    | [View All][#ReportsFR]  | [View All][#ReportsNA] |
 
 [#Forms3B]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
 [#Seo3B]: https://github.com/barrelstrength/craft-sprout-seo/issues?&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
@@ -25,19 +25,26 @@ View known issues or submit a bug report on the Github repo for each plugin. See
 [#Email3B]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
 [#Reports3B]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
 
-[#Forms3FR]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
-[#Seo3FR]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
-[#Redirects3FR]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
-[#Sitemaps3FR]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
-[#Email3FR]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
-[#Reports3FR]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#Forms4B]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+[#Seo4B]: https://github.com/barrelstrength/craft-sprout-seo/issues?&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+[#Redirects4B]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+[#Sitemaps4B]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+[#Email4B]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+[#Reports4B]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
 
-[#Forms3NA]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
-[#Seo3NA]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
-[#Redirects3NA]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
-[#Sitemaps3NA]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
-[#Email3NA]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
-[#Reports3NA]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#FormsFR]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#SeoFR]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#RedirectsFR]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#SitemapsFR]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#EmailFR]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#ReportsFR]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+
+[#FormsNA]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#SeoNA]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#RedirectsNA]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#SitemapsNA]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#EmailNA]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#ReportsNA]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
 
 ## Open Source Plugins
 
