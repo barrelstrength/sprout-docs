@@ -2,7 +2,7 @@ module.exports = {
   title: 'Sprout Documentation',
   description: 'The Sprout Business Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.',
   theme: 'craftdocs',
-  base: '/docs/v4/',
+  base: '/docs/craft-v4/',
   head: [
     ['link', {rel: 'icon', href: '/icons/favicon-16x16.png'}],
     ['link', {rel: 'apple-touch-icon', sizes: '180x180', href: '/icons/apple-touch-icon.png'}],
@@ -95,9 +95,9 @@ module.exports = {
       {
         text: 'Sprout v4',
         items: [
-          {text: 'Sprout v4 (Craft 4.0)', link: '/v4'},
-          {text: 'Sprout v3 (Craft 3.0)', link: 'https://sprout.barrelstrengthdesign.com/docs/v3/'},
-          {text: 'Sprout v2 (Craft 2.0)', link: 'https://sprout.barrelstrengthdesign.com/docs/v2/'},
+          {text: 'Sprout v4 (Craft 4.0)', link: '/craft-v4'},
+          {text: 'Sprout v3 (Craft 3.0)', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v3/'},
+          {text: 'Sprout v2 (Craft 2.0)', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v2/'},
         ]
       }
     ],
@@ -375,9 +375,7 @@ module.exports = {
           collapsable: false,
           children: [
             'data-sources',
-            'reports',
-            'mailing-lists',
-            'plugin-settings'
+            'reports'
           ]
         },
         {
@@ -405,62 +403,6 @@ module.exports = {
           ]
         }
       ],
-
-      '/fields/': [
-        ['../', '← All Plugins'],
-        {
-          title: 'Introduction',
-          collapsable: false,
-          children: [
-            ''
-          ]
-        },
-        {
-          title: 'Field Types',
-          collapsable: false,
-          children: [
-            'address-field',
-            'email-field',
-            'gender-field',
-            'name-field',
-            'notes-field',
-            'phone-field',
-            'predefined-field',
-            'predefined-date-field',
-            'regular-expression-field',
-            'template-field',
-            'url-field'
-          ]
-        }
-      ],
-
-      '/lists/': [
-        ['../', '← All Plugins'],
-        {
-          title: 'Introduction',
-          collapsable: false,
-          children: [
-            ''
-          ]
-        },
-        {
-          title: 'Get Started',
-          collapsable: false,
-          children: [
-            'lists',
-            'subscribers',
-            'plugin-settings'
-          ]
-        },
-        {
-          title: 'Mailing Lists',
-          collapsable: false,
-          children: [
-            'subscriber-list-data-source'
-          ]
-        }
-      ],
-
       // fallback
       '/': [
         {
