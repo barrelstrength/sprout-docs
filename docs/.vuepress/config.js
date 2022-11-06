@@ -95,7 +95,7 @@ module.exports = {
       {
         text: 'Sprout v4',
         items: [
-          {text: 'Sprout v4 (Craft 4.0)', link: '/craft-v4'},
+          {text: 'Sprout v4 (Craft 4.0)', link: '/'},
           {text: 'Sprout v3 (Craft 3.0)', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v3/'},
           {text: 'Sprout v2 (Craft 2.0)', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v2/'},
         ]
