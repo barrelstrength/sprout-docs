@@ -67,6 +67,12 @@
                 "info": "Protect your forms from evil robots",
                 "lite": true,
                 "pro": true
+            },
+            {
+                "name": "Sprout Data Studio Reports",
+                "info": "",
+                "lite": true,
+                "pro": true
             }
         ]
     },

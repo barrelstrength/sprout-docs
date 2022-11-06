@@ -31,7 +31,7 @@ As we developed Sprout we observed that a lot of features that we designed could
 
 Rather than re-invent the wheel in each **plugin**, we chose to build out features such as Reports as a **module** that can be used by all of our plugins and for your custom reporting needs as well. Users experience a unified, familiar workflow however they are using Reports on a site.
 
-Modules can be enabled and disabled to ensure only the relevant ones are available to users.
+Modules can be enabled and disabled to ensure only the relevant ones are available to users. Explore the full list of [module features](./features.md). 
 
 ## Plugin Bundles
 

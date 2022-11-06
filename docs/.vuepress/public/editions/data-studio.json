@@ -3,92 +3,77 @@
         "category": "Custom Reports",
         "items": [
             {
-                "name": "Unlimited Reports",
+                "name": "Unlimited reports",
                 "info": "",
                 "lite": true,
                 "pro": true
             },
             {
-                "name": "Custom Query Reports",
+                "name": "Custom Query reports",
                 "info": "Lite users can create unlimited Custom Query Reports",
                 "lite": true,
                 "pro": true
             },
             {
-                "name": "Twig Template Reports",
+                "name": "Twig Template reports",
                 "info": "",
                 "lite": false,
                 "pro": true
             },
             {
-                "name": "User Reports",
+                "name": "User reports",
                 "info": "",
                 "lite": false,
-                "pro": true
+                "pro": true,
+                "hide": true
             },
             {
-                "name": "Commerce Reports",
+                "name": "Craft Commerce reports",
                 "info": "",
                 "lite": false,
-                "pro": true
+                "pro": true,
+                "hide": true
             },
             {
-                "name": "Sprout Forms Reports",
-                "info": "",
-                "lite": true,
-                "pro": true
-            },
-            {
-                "name": "Data Visualizations",
+                "name": "Data visualizations",
                 "info": "",
                 "lite": false,
-                "pro": true
-            },
-            {
-                "name": "Custom Data Sources",
-                "info": "",
-                "lite": false,
-                "pro": true
+                "pro": true,
+                "hide": true
             }
         ]
     },
     {
-        "category": "Report Workflow",
+        "category": "Custom Report Workflows",
         "items": [
             {
-                "name": "Export Report Data",
+                "name": "Export report data",
                 "info": "",
                 "lite": true,
                 "pro": true
             },
             {
-                "name": "Report Groups",
+                "name": "Customize report behavior (dynamic title, sorting, etc.)",
                 "info": "",
                 "lite": true,
                 "pro": true
             },
             {
-                "name": "Dynamic Report Titles",
+                "name": "Organize reports in groups",
                 "info": "",
                 "lite": true,
                 "pro": true
             },
             {
-                "name": "Customize default sorting behavior",
-                "info": "",
+                "name": "Interactive report content",
+                "info": "Enable HTML in reports to output links, icons, or other garnishes",
                 "lite": true,
                 "pro": true
             },
             {
-                "name": "Customize export delimiter",
-                "info": "",
-                "lite": true,
-                "pro": true
-            },
-            {
-                "name": "Allow HTML in Report cells",
-                "info": "Provide users with links, icons, or other garnishes",
-                "lite": true,
+                "name": "Report-specific settings",
+                "info": "Define exactly the settings you need to adjust report queries and segment query results",
+                "lite": false,
                 "pro": true
             }
         ]
@@ -97,9 +82,9 @@
         "category": "Developers",
         "items": [
             {
-                "name": "Custom Reports API",
-                "info": "",
-                "lite": true,
+                "name": "Custom Data Sources API",
+                "info": "Enable users to build reports using a different database, third-party API, or whatever your heart can imagine.",
+                "lite": false,
                 "pro": true
             }
         ]

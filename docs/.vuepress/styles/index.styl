@@ -289,3 +289,19 @@ ul.code-language-switcher {
     }
   }
 }
+
+// Override Theme Table Styles
+// (used in the EditionComparison table use case)
+table.multiple-header-rows tr:nth-child(2n) {
+    background-color: transparent;
+}
+table.multiple-header-rows tr.shade {
+    background-color: #f1f5f8;
+}
+table.multiple-header-rows tr th {
+    border: none;
+    text-align: left;
+}
+table.multiple-header-rows tr:not(:first-child) th {
+    padding-top: 2em;
+}

@@ -5,13 +5,9 @@ description: The Sprout Business Suite is a premium suite of plugins designed fo
 
 # Lite vs Pro
 
-The Sprout Marketing Suite ships with over 10 specialized modules to power your website's digital marketing needs. Modules are shared across all Sprout products. For example, the powerful reporting features you find in the Sprout Data Studio plugin are also available in the Sprout Forms plugin, even if you don't choose to buy Data Studio as a standalone plugin.
+**Sprout Lite** is designed to pair with Craft Solo and provide a solid baseline for digital marketing best practices on simple projects. **Sprout Pro** enables unlimited usage of all features and opens the door for advanced customization and CRM workflow integrations.
 
-## Forms Module
-
-_Available in: Sprout Forms._
-
-<EditionComparison feature-list="./editions/forms.json" />
+The Sprout Marketing Suite ships with a [modular architecture](./#modular-architecture) of over 10 specialized modules to power custom website and digital marketing needs.
 
 ## Data Studio Module
 
@@ -19,38 +15,68 @@ _Available in: Sprout Data Studio, Sprout Forms._
 
 <EditionComparison feature-list="./editions/data-studio.json" />
 
-## Transactional Email Module
+::: tip Craft 4 Support
+Sprout Marketing Suite plugins are coming to Craft 4. See our [Road Map](./support/road-map.md) for more details.
+:::
 
-_Available in: Sprout Notifications, Sprout Forms._
+[//]: # (## Forms Module)
 
-<EditionComparison feature-list="./editions/notifications.json" />
+[//]: # ()
+[//]: # (_Available in: Sprout Forms._)
 
-## Mailer Module
+[//]: # ()
+[//]: # (<EditionComparison feature-list="./editions/forms.json" />)
 
-_Available in: Sprout Forms, Sprout Notifications, Sprout Sent Email._
+[//]: # ()
+[//]: # (## Transactional Email Module)
 
-<EditionComparison feature-list="./editions/mailer.json" />
+[//]: # ()
+[//]: # (_Available in: Sprout Notifications, Sprout Forms._)
 
-## Sent Email
+[//]: # ()
+[//]: # (<EditionComparison feature-list="./editions/notifications.json" />)
 
-_Available in: Sprout Notifications, Sprout Sent Email._
+[//]: # ()
+[//]: # (## Mailer Module)
 
-<EditionComparison feature-list="./editions/sent-email.json" />
+[//]: # ()
+[//]: # (_Available in: Sprout Forms, Sprout Notifications, Sprout Sent Email._)
 
-## Meta Module
+[//]: # ()
+[//]: # (<EditionComparison feature-list="./editions/mailer.json" />)
 
-_Available in: Sprout SEO._
+[//]: # ()
+[//]: # (## Sent Email)
 
-<EditionComparison feature-list="./editions/seo.json" />
+[//]: # ()
+[//]: # (_Available in: Sprout Notifications, Sprout Sent Email._)
 
-## Redirects Module
+[//]: # ()
+[//]: # (<EditionComparison feature-list="./editions/sent-email.json" />)
 
-_Available in: Sprout Redirects, Sprout SEO._
+[//]: # ()
+[//]: # (## Meta Module)
 
-<EditionComparison feature-list="./editions/redirects.json" />
+[//]: # ()
+[//]: # (_Available in: Sprout SEO._)
 
-## Sitemaps Module
+[//]: # ()
+[//]: # (<EditionComparison feature-list="./editions/seo.json" />)
 
-_Available in: Sprout Sitemaps, Sprout SEO._
+[//]: # ()
+[//]: # (## Redirects Module)
 
-<EditionComparison feature-list="./editions/sitemaps.json" />
+[//]: # ()
+[//]: # (_Available in: Sprout Redirects, Sprout SEO._)
+
+[//]: # ()
+[//]: # (<EditionComparison feature-list="./editions/redirects.json" />)
+
+[//]: # ()
+[//]: # (## Sitemaps Module)
+
+[//]: # ()
+[//]: # (_Available in: Sprout Sitemaps, Sprout SEO._)
+
+[//]: # ()
+[//]: # (<EditionComparison feature-list="./editions/sitemaps.json" />)
