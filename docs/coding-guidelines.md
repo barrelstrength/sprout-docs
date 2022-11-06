@@ -70,7 +70,7 @@ When possible, we follow conventions in Craft's folder architecture in our plugi
 ```
 ├── .github
 ├── .gitignore
-├── CHANGELOG.md
+├── CHANGELOG-[MODULE].md
 ├── composer.json
 ├── lib
 ├── LICENSE.md
@@ -83,6 +83,8 @@ When possible, we follow conventions in Craft's folder architecture in our plugi
 ```
 
 References within `README.md` and any other general information files should be kept to a minimum and point users toward our docs, where we maintain more comprehensive documentation. As we maintain several plugins, it gets tedious to update references in numerous general information files and our documentation serves as a centralized place for this type of information about our plugins.
+
+Each module has it's own `CHANGELOG-[MODULE].md` file. These are the canonical sources for documenting changes and this data will be copied to a plugin's `CHANGELOG.md` file for each module used by a plugin.
 
 Similarly, we aim to keep the `composer.json` file as simple as possible. Don't add `schemaVersion`, `hasCpSection`, or `hasCpSettings` to this file. They should go in the primary plugin module class to more easily toggle the settings without running into issues with cached values in Craft's `plugins.php` file. 
 
@@ -170,6 +172,42 @@ We manage various types of components within our plugins. The structure above il
 ```
 
 Community templates should link to our pages in our documentation with more comprehensive information wherever possible.
+
+### Changelog Template
+
+#### Plugin CHANGELOG
+
+```
+# Changelog
+
+## X.Y.Z - YYYY-MM-DD
+
+**Note|Tip|Warning**
+> Short summary of key release details
+
+### Updated
+- Requires `barrelstrength/craft-sprout:vX.Y.Z`
+- See Forms Module [release notes]([PERMALINK])
+- See Data Studio Module [release notes]([PERMALINK])
+```
+
+#### Sprout Module CHANGELOG
+
+```
+# Changelog
+
+## 2.x - UNRELEASED
+
+### Added
+- Added...
+
+### Changed
+- Updated/Improved/Removed...
+
+### Fixed
+- Fixed...
+```
+
 
 ## Common Modules
 
