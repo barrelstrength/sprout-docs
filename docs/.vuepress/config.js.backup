@@ -468,7 +468,8 @@ module.exports = {
           collapsable: false,
           children: [
             '/',
-            'features'
+            'features',
+            'multi-site'
           ]
         },
         {
@@ -478,6 +479,33 @@ module.exports = {
             'configuration/requirements',
             'configuration/updates',
             'configuration/sprout-config',
+          ]
+        },
+        {
+          title: 'Form Building',
+          collapsable: false,
+          children: [
+            ['forms/', 'Forms'],
+            ['fields/', 'Fields']
+          ]
+        },
+        {
+          title: 'SEO Metadata',
+          collapsable: false,
+          children: [
+            ['seo/', 'SEO'],
+            ['redirects/', 'Redirects'],
+            ['sitemaps/', 'Sitemaps']
+          ]
+        },
+        {
+          title: 'Email Marketing',
+          collapsable: false,
+          children: [
+            ['email/', 'Email'],
+            ['campaigns/', 'Campaigns'],
+            ['sent-email/', 'Sent Email'],
+            ['lists/', 'Lists'],
           ]
         },
         {
@@ -491,7 +519,6 @@ module.exports = {
           title: 'Support',
           collapsable: false,
           children: [
-            'support/road-map',
             'support/support',
             'support/training',
             'support/pricing',
