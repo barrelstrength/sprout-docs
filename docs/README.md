@@ -35,13 +35,24 @@ Modules can be enabled and disabled to ensure only the relevant ones are availab
 
 ## Plugin Bundles
 
-The Sprout Marketing Suite Plugin gives you access to all of Sprout's features.
+The key Sprout Plugins bundle multiple modules to provide their feature set. View the [Lite and Pro](./features.md) page to see a breakdown of features in each module. 
 
-<ModuleComparison feature-list="./modules/suites.json" />
+| Plugin             | Modules                              |
+|:-------------------|:-------------------------------------|
+| Sprout Forms       | Forms, Data Studio, Notifications    |
+| Sprout Email       | Notifications, Campaigns, Sent Email |
+| Sprout SEO         | Meta, Redirects, Sitemaps            |
 
-Sprout's Forms, Email, and SEO plugins provide you comprehensive features to deliver specific strategies for your website's digital marketing campaigns.
+While most websites benefit from the full feature set of the packages above, a few modules have been packaged in standalone plugins when they can also solve a narrow use case.
 
-<ModuleComparison feature-list="./modules/core.json" />
+| Plugin             | Modules      |
+|:-------------------|:-------------|
+| Sprout Data Studio | Data Studio  |
+| Sprout Sitemaps    | Sitemaps     |
+| Sprout Redirects   | Redirects    |
+| Sprout Sent Email  | Sent Email   |
+
+[//]: # (| Sprout Marketing Suite | [All Modules]&#40;./features.md&#41; |)
 
 View all of our plugins in the [Craft Plugin Store](https://plugins.craftcms.com/developer/169)
 
