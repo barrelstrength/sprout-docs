@@ -62,4 +62,4 @@ Pull requests should clearly describe the problem and solution and provide a ste
 
 ## Translations
 
-You can add a translation file to your project using Static Translations (https://docs.craftcms.com/v3/static-translations.html) and target Sprout Forms using the translation categories that it uses. Sprout Forms relies on multiple modules so there are multiple translation categories you will need to translate if you want full a complete translation. For example, Sprout Forms relies on Sprout Base Fields, Sprout Base Email, Sprout Base Reports, and Sprout Base which would all need to be translated to provide a full translation of Sprout Forms.
+You can add a translation file to your project using [Static Translations](https://craftcms.com/docs/4.x/sites.html#static-message-translations) and target Sprout Forms using the translation categories that it uses. Sprout plugins may rely on multiple modules in the underlying Sprout Framework if you want full a complete translation. For example, Sprout Forms relies on the Forms, Data Studio, Transactional Email, and Core modules which would all need to be translated to provide a full translation of Sprout Forms.

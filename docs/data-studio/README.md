@@ -1,11 +1,11 @@
 ---
 date: 2018-06-25
-description: Sprout Reports allows you to create and group custom reports.
+description: Sprout Data Studio allows you to create and group custom reports.
 ---
 
-# About Sprout Reports
+# About Data Studio
 
-Sprout Reports allows you to create and group custom reports.
+Sprout Data Studio allows you to create and group custom reports.
 
 ![Reports Overview Page](./../images/reports/reports-overview.png)
 

@@ -120,7 +120,7 @@ module.exports = {
             'form-fields',
             'entries',
             'notifications',
-            'reports',
+            'data-studio',
             'conditional-rules',
             'integrations',
             'spam-protection',
@@ -361,7 +361,7 @@ module.exports = {
         }
       ],
 
-      '/reports/': [
+      '/data-studio/': [
         ['../', '← All Plugins'],
         {
           title: 'Introduction',
@@ -509,10 +509,10 @@ module.exports = {
           ]
         },
         {
-          title: 'Data Ops',
+          title: 'Data Management',
           collapsable: false,
           children: [
-            ['reports/', 'Reports'],
+            ['data-studio/', 'Data Studio'],
           ]
         },
         {
@@ -523,16 +523,9 @@ module.exports = {
             'support/training',
             'support/pricing',
             'support/security',
+            'contributing',
           ]
         },
-        {
-          title: 'Workflow',
-          collapsable: false,
-          children: [
-            'contributing',
-            'coding-guidelines',
-          ]
-        }
       ]
     }
   }

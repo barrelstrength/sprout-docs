@@ -19,24 +19,6 @@ _Available in: Sprout Data Studio, Sprout Forms._
 
 <EditionComparison feature-list="./editions/data-studio.json" />
 
-## Meta Module
-
-_Available in: Sprout SEO._
-
-<EditionComparison feature-list="./editions/seo.json" />
-
-## Redirects Module
-
-_Available in: Sprout Redirects, Sprout SEO._
-
-<EditionComparison feature-list="./editions/redirects.json" />
-
-## Sitemaps Module
-
-_Available in: Sprout Sitemaps, Sprout SEO._
-
-<EditionComparison feature-list="./editions/sitemaps.json" />
-
 ## Transactional Email Module
 
 _Available in: Sprout Notifications, Sprout Forms._
@@ -55,3 +37,20 @@ _Available in: Sprout Notifications, Sprout Sent Email._
 
 <EditionComparison feature-list="./editions/sent-email.json" />
 
+## Meta Module
+
+_Available in: Sprout SEO._
+
+<EditionComparison feature-list="./editions/seo.json" />
+
+## Redirects Module
+
+_Available in: Sprout Redirects, Sprout SEO._
+
+<EditionComparison feature-list="./editions/redirects.json" />
+
+## Sitemaps Module
+
+_Available in: Sprout Sitemaps, Sprout SEO._
+
+<EditionComparison feature-list="./editions/sitemaps.json" />

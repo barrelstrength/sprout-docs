@@ -11,10 +11,12 @@
             </tr>
             <tr v-for="item in feature.items" :key="item.name">
                 <td>
-                    <span>{{ item.name }}</span>
-                    <info-hud v-if="item.info" class="info"
-                    ><span class="smaller">{{ item.info }}</span></info-hud
-                    >
+                    <p>
+                      <span>{{ item.name }}</span>
+                      <info-hud v-if="item.info" class="info"
+                      ><span class="smaller">{{ item.info }}</span></info-hud
+                      >
+                    </p>
                 </td>
                 <td>
                     <ul v-if="item.liteModules">
@@ -71,6 +73,10 @@
     td,
     tr {
         border: 0;
+    }
+
+    td {
+      vertical-align: top;
     }
 
     .category {

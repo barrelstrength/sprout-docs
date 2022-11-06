@@ -1,6 +1,6 @@
 <template>
-    <table>
-        <tbody>
+  <table>
+    <tbody>
         <fragment v-for="(feature, index) in features" :key="index">
             <tr v-if="feature.category" class="category">
                 <td class="feature">
@@ -24,8 +24,8 @@
                 </td>
             </tr>
         </fragment>
-        </tbody>
-    </table>
+    </tbody >
+  </table>
 </template>
 
 <script>

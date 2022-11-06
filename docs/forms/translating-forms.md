@@ -9,7 +9,7 @@ There are a few approaches to translating forms. None are ideal.
 
 ## Translating in the CP
 
-You can add a translation file to your project using Static Translations (https://docs.craftcms.com/v3/static-translations.html) and target Sprout Forms using the translation categories that it uses. Sprout Forms relies on multiple modules so there are multiple translation categories you will need to translate if you want full a complete translation.
+You can add a translation file to your project using [Static Translations](https://craftcms.com/docs/4.x/sites.html#static-message-translations) and target Sprout Forms using the translation categories that it uses. Sprout Forms relies on multiple modules so there are multiple translation categories you will need to translate if you want full a complete translation.
 
 We include English to English translation files in each module, so you can copy that translation file as a starting point. New releases may add or remove some translations so complete translation over time may require some upkeep. We don't change a lot the language in the CP too often, but now and then we do and it's not something we broadcast when we do.
 
@@ -38,7 +38,7 @@ We've looked into the options around this the following options seem to be the a
 {{ sprout.forms.displayForm(formHandle) }}
 ```
 
-2. You can create one form and **manage the translations using static translations** in a file (https://docs.craftcms.com/v3/static-translations.html). This is possible but probably not ideal because you would have to update a translation file each time you made a change to your form in the CP.
+2. You can create one form and **manage the translations using static translations** in a file (https://craftcms.com/docs/4.x/sites.html#static-message-translations). This is possible but probably not ideal because you would have to update a translation file each time you made a change to your form in the CP.
 
 3. At some point, we could potentially create a **database-driven translation** file that allows you to add translations in the Control Panel. If we do this, you'd still have to manage translations in a separate part of the CP than where you build your form so while it's a different method, you will still be editing data in two places to accomplish the goal.
 

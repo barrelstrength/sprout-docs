@@ -7,11 +7,13 @@ description: The Sprout Business Suite is a premium suite of plugins designed fo
 
 The Sprout Plugins are a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.
 
-Sprout Plugins provide a seamless Craft experience for content authors, an exceptional amount of flexibility for designers and developers, and comprehensive multi-site support for multi-regional and multi-lingual websites.
+Sprout Plugins provide a seamless Craft experience for content authors and an exceptional amount of flexibility for designers and developers.
+
+[//]: # (Sprout Plugins provide a seamless Craft experience for content authors, an exceptional amount of flexibility for designers and developers, and comprehensive multi-site support for multi-regional and multi-lingual websites.)
 
 ## Digital Marketing
 
-Sprout provides several new components to use in your content architecture including Forms, Emails, Lists, and Reports.
+Sprout adds new components to use in your content architecture including Forms, Emails, and Reports.
 
 ![Sprout Components](./images/sprout-components.png)
 
@@ -21,11 +23,11 @@ Where Craft provides the excellent content management features, Sprout adds comp
 
 ## Modular Architecture
 
-As we developed Sprout we observed that a lot of features that we designed could benefit more than one use case. For example, our Reports features can be used on it's own, for running reports on Form submissions in Sprout Forms, to build dynamic email lists in Sprout Email.
+As we developed Sprout we observed that a lot of features that we designed could benefit more than one use case. For example, our Reports features can be used on it's own, for running reports on Form submissions in Sprout Forms, and to build dynamic email lists in Sprout Email.
 
-Rather than re-invent the wheel in each **plugin**, we chose to build out features like our Reports as a **module** that can be used by all of our plugins and for your custom reporting needs as well. This gives your users a unified, familiar experience for all of the different reports they need on a site.
+Rather than re-invent the wheel in each **plugin**, we chose to build out features such as Reports as a **module** that can be used by all of our plugins and for your custom reporting needs as well. Users experience a unified, familiar workflow however they are using Reports on a site.
 
-Modules can be enabled and disabled so you can make sure only the relevant ones are accessible for your users.
+Modules can be enabled and disabled to ensure only the relevant ones are available to users.
 
 ## Plugin Bundles
 
@@ -33,7 +35,7 @@ The Sprout Marketing Suite Plugin gives you access to all of Sprout's features.
 
 <ModuleComparison feature-list="./modules/suites.json" />
 
-Sprout's Forms, Email, and SEO plugins provide you comprehensive features to build your website's digital marketing campaigns.
+Sprout's Forms, Email, and SEO plugins provide you comprehensive features to deliver specific strategies for your website's digital marketing campaigns.
 
 <ModuleComparison feature-list="./modules/core.json" />
 

@@ -50,7 +50,7 @@ Set the From Name, From Email, and Reply To Email.
 
 Add a comma-separated lists of recipients who you'd like to receive the email.  See the Dynamic Notifications doc page for more information on sending notifications to dynamic recipients like the person who submitted an Entry or completed a Form.
 
-Additionally, you can create a [Mailing List](../reports/mailing-lists.md) and send to a list of people. Mailing Lists are a feature provided by Sprout Reports.
+Additionally, you can create a [Mailing List](../data-studio/mailing-lists.md) and send to a list of people. Mailing Lists are a feature provided by Sprout Reports.
 
 ### Events
 

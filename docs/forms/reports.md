@@ -9,7 +9,7 @@ Visit the Reports tab in Sprout Forms to run Reports on submitted Entries. Repor
 
 ## Data Sources
 
-Reports in Sprout Forms are limited to Sprout Forms [Data Sources](./../reports/custom-data-sources.md) which currently include:
+Reports in Sprout Forms are limited to Sprout Forms [Data Sources](../data-studio/custom-data-sources.md) which currently include:
 
 - Form Entries Data Source
 - Integration Log Data Source
