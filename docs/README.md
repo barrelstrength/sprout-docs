@@ -1,15 +1,19 @@
 ---
 date: 2018-06-25
-description: The Sprout Business Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.
+description: The Sprout Marketing Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.
 ---
 
-# Why Sprout?
+# Core Concepts
 
 The Sprout Plugins are a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.
 
 Sprout Plugins provide a seamless Craft experience for content authors and an exceptional amount of flexibility for designers and developers.
 
 [//]: # (Sprout Plugins provide a seamless Craft experience for content authors, an exceptional amount of flexibility for designers and developers, and comprehensive multi-site support for multi-regional and multi-lingual websites.)
+
+::: tip Craft 4 Support
+Sprout Marketing Suite plugins are coming to Craft 4. See our [Road Map](./support/road-map.md) for more details.
+:::
 
 ## Digital Marketing
 
