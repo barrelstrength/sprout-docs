@@ -7,10 +7,20 @@ description: Configuration settings for the sprout plugins.
 
 Sprout settings are configured on a per-module basis and documented in the Control Panel and the [example config files](https://github.com/barrelstrength/craft-sprout/tree/v4/examples/config).
 
+::: tip Settings at the Source
+While you might see settings referenced here as an example or feature description, the most accurate settings documentation exists within the plugin UI or codebase. We initially tried to list the settings in the online docs but, most of the time, we were just copying and pasting the instruction text or example code comments and it was tedious to always update that text in multiple places.
+
+Pointing you towards the source helps us reduce the chance we have inconsistent settings documentation in multiple places and, we hope, will help you understand where the answers already exist in your workflow.
+:::
+
 
 ## Control Panel
 
-Settings can be managed in the Sprout Settings section in the Control Panel (_Settings -> Sprout_). Documentation is provided on each setting using the field instructions. 
+Settings can be managed in the Sprout Settings section in the Control Panel. Documentation is provided on each setting using the field instructions.
+
+```
+Settings -> Sprout
+```
 
 ## Config Files
 
