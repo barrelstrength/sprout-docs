@@ -1,6 +1,6 @@
 [
     {
-        "category": "Checkout",
+        "category": "Form Builder",
         "items": [
             {
                 "name": "Unlimited Forms",
@@ -16,18 +16,6 @@
             },
             {
                 "name": "Unlimited Rules",
-                "info": "",
-                "lite": true,
-                "pro": true
-            },
-            {
-                "name": "Unlimited Notifications",
-                "info": "",
-                "lite": true,
-                "pro": true
-            },
-            {
-                "name": "Unlimited Reports",
                 "info": "",
                 "lite": true,
                 "pro": true
@@ -93,18 +81,6 @@
             },
             {
                 "name": "Form Templates API",
-                "info": "",
-                "lite": true,
-                "pro": true
-            },
-            {
-                "name": "Email Templates API",
-                "info": "",
-                "lite": true,
-                "pro": true
-            },
-            {
-                "name": "Custom Reports API",
                 "info": "",
                 "lite": true,
                 "pro": true

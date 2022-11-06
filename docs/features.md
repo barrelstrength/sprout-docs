@@ -5,45 +5,53 @@ description: The Sprout Business Suite is a premium suite of plugins designed fo
 
 # Lite vs Pro
 
-Sprout provides a collection of modules that can be enabled or disabled on any project. Grow your website from a simple marketing site to a more advanced CRM and marketing tool.
+The Sprout Marketing Suite ships with over 10 specialized modules to power your website's digital marketing needs. Modules are shared across all Sprout products. For example, the powerful reporting features you find in the Sprout Data Studio plugin are also available in the Sprout Forms plugin, even if you don't choose to buy Data Studio as a standalone plugin.
 
-## Forms
+## Forms Module
+
+_Available in: Sprout Forms._
 
 <EditionComparison feature-list="./editions/forms.json" />
 
-## Reports
+## Data Studio Module
 
-<EditionComparison feature-list="./editions/reports.json" />
+_Available in: Sprout Data Studio, Sprout Forms._
 
-## SEO
+<EditionComparison feature-list="./editions/data-studio.json" />
+
+## Meta Module
+
+_Available in: Sprout SEO._
 
 <EditionComparison feature-list="./editions/seo.json" />
 
-## Redirects
+## Redirects Module
+
+_Available in: Sprout Redirects, Sprout SEO._
 
 <EditionComparison feature-list="./editions/redirects.json" />
 
-## Sitemaps
+## Sitemaps Module
+
+_Available in: Sprout Sitemaps, Sprout SEO._
 
 <EditionComparison feature-list="./editions/sitemaps.json" />
 
-## Mailing Lists
+## Transactional Email Module
 
-<EditionComparison feature-list="./editions/mailing-lists.json" />
-
-## Email Preview
-
-<EditionComparison feature-list="./editions/email-preview.json" />
-
-## Notifications
+_Available in: Sprout Notifications, Sprout Forms._
 
 <EditionComparison feature-list="./editions/notifications.json" />
 
-## Campaigns
+## Mailer Module
 
-<EditionComparison feature-list="./editions/campaigns.json" />
+_Available in: Sprout Forms, Sprout Notifications, Sprout Sent Email._
+
+<EditionComparison feature-list="./editions/mailer.json" />
 
 ## Sent Email
+
+_Available in: Sprout Notifications, Sprout Sent Email._
 
 <EditionComparison feature-list="./editions/sent-email.json" />
 

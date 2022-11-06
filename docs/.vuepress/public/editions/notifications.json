@@ -4,7 +4,6 @@
         "items": [
             {
                 "name": "Unlimited Notifications",
-                "info": "Custom tax rules based on configurable multi-state or multi-country zones.",
                 "lite": true,
                 "pro": true
             },
@@ -33,6 +32,23 @@
         "items": [
             {
                 "name": "Custom Notification Event API",
+                "info": "",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Sprout Modules",
+        "items": [
+            {
+                "name": "All features in the Mailing List Module",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "All features in the Sent Email Module",
                 "info": "",
                 "lite": false,
                 "pro": true

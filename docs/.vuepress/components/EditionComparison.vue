@@ -17,10 +17,10 @@
                     >
                 </td>
                 <td class="support">
-                    <check-mark v-if="item.lite" label="supported in Commerce Lite" />
+                    <check-mark v-if="item.lite" label="supported in Lite" />
                 </td>
                 <td class="support">
-                    <check-mark v-if="item.pro" label="supported in Commerce Pro" />
+                    <check-mark v-if="item.pro" label="supported in Pro" />
                 </td>
             </tr>
         </fragment>
@@ -62,6 +62,7 @@
         width: 100%;
         position: relative;
         overflow: visible;
+        margin-bottom:3em;
     }
 
     td,
@@ -80,7 +81,7 @@
     }
 
     .category td {
-        padding-top: 2rem;
+        //margin-top: 2rem;
         border: 0;
     }
 

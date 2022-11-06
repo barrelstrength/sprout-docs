@@ -1,5 +1,16 @@
 [
     {
+        "category": "Mailing Lists",
+        "items": [
+            {
+                "name": "Mailing Lists & Segments",
+                "info": "Create Mailing Lists from report queries to send to lists and segments via Sprout Email and other Sprout plugins.",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    },
+    {
         "category": "Email Preview",
         "items": [
             {
@@ -22,6 +33,17 @@
             },
             {
                 "name": "Share Unpublished Emails for Review",
+                "info": "",
+                "lite": true,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Developers",
+        "items": [
+            {
+                "name": "Email Templates API",
                 "info": "",
                 "lite": true,
                 "pro": true

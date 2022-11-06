@@ -3,6 +3,12 @@
         "category": "Custom Reports",
         "items": [
             {
+                "name": "Unlimited Reports",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
                 "name": "Custom Query Reports",
                 "info": "Lite users can create unlimited Custom Query Reports",
                 "lite": true,
@@ -82,6 +88,17 @@
             {
                 "name": "Allow HTML in Report cells",
                 "info": "Provide users with links, icons, or other garnishes",
+                "lite": true,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Developers",
+        "items": [
+            {
+                "name": "Custom Reports API",
+                "info": "",
                 "lite": true,
                 "pro": true
             }

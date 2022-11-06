@@ -28,5 +28,5 @@ To upgrade Craft and Sprout to a version earlier than Craft v3.7.x and Sprout 4.
 Review the [Installing &amp; Updating][#v2Docs] section in the Sprout v2 documentation for the specific plugins you are updating.
 
 [#Upgradev440]: ./../updates/v4.40.0.md
-[#v3Docs]: https://sprout.barrelstrengthdesign.com/docs/craft-v3/
-[#v2Docs]: https://sprout.barrelstrengthdesign.com/docs/craft-v2/
+[#v3Docs]: https://sprout.barrelstrengthdesign.com/docs/v3/
+[#v2Docs]: https://sprout.barrelstrengthdesign.com/docs/v2/
