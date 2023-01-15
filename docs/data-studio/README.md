@@ -1,27 +1,29 @@
 ---
 date: 2018-06-25
-description: Sprout Data Studio allows you to create and group custom reports.
+description: Sprout Data Studio allows you to create interactive data sets from customizable data sources.
 ---
 
 # About Data Studio
 
-Sprout Data Studio allows you to create and group custom reports.
+Sprout Data Studio allows you to create interactive data sets from customizable data sources.
 
-![Reports Overview Page](./../images/reports/reports-overview.png)
+Data sets can be created from our default Data Sources or you can create your own. Multiple Data Sources are provided out of the box and additional Data Sources are available via custom plugins.
 
-Reports can be created from our default Data Sources or you can create your own. Sprout Reports comes with two flexible Data Sources out of the box and additional Data Sources are available via custom plugins.
+## Data Sources
 
-| Data Sources     | Notes     |
-|:---------------- |:----------- |
-| Custom Query     | Included    |
-| Twig Template    | Included    |
-| Users            | Included    |
-| Categories       | [Sprout Reports - Categories](https://github.com/barrelstrength/craft-sprout-reports-categories) |
-| Commerce         | [Sprout Reports for Craft Commerce](https://github.com/barrelstrength/craft-sprout-reports-commerce) |
+A Data Source defines a set of data that can be queried by a Data Set and which settings are available be used when querying that data. A Data Source can define a subset of data that exists in your Craft database (such as Craft User data or Craft Commerce Product data) or from any source that you wish to query near or far. For example, a custom Data Source could query data from a third-party API and return the results to a Data Set to display.
 
-To create a report, select your Report Type, give your report a Name, and update any settings available to customize the results of your report.  Once your report is setup, you can export your report data in CSV format or run your report in the browser.
+Sprout Data Studio provides a few Data Sources out of the box:
 
-If you would like to display a single number report on your dashboard, you can add a new `Number` widget.  Give your widget a name, select which single number report the widget is associated with, and you can keep track of that info right on your dashboard.
+- **Database Query** - Create data sets using custom database queries
+- **Twig Template Query** - Create data sets using custom queries in a Twig Template
+- **Users** - Create data sets with User and User Group data
+
+## Data Sets
+
+Data Sets allow you to create queries into the data defined by a Data Source. You can create one or more Data Sets from a single Data Source and each Data Set can define unique query settings.
+
+Data Sets can be organized into groups and customized so that you can conveniently interact with data set results in the Control Panel or export it as you need.
 
 ## Settings
 

@@ -13,13 +13,13 @@ Please subscribe to the linked Craft 4 support issue below for any plugins that 
 
 ## Sprout Marketing Suite
 
-| Plugin            | Upgrade Status    | Follow for Updates |
-|:----------------- |:------------------- | :------------------- |
-| Sprout Forms | In progress  | [Github Issue](https://github.com/barrelstrength/craft-sprout-forms/issues/612) |
-| Sprout SEO | In progress     | [Github Issue](https://github.com/barrelstrength/craft-sprout-seo/issues/262) |
-| Sprout Redirects | In progress | [Github Issue](https://github.com/barrelstrength/craft-sprout-redirects/issues/39) |
-| Sprout Sitemaps | In progress | [Github Issue](https://github.com/barrelstrength/craft-sprout-sitemaps/issues/17) |
-| Sprout Email | In progress  | [Github Issue](https://github.com/barrelstrength/craft-sprout-email/issues/186) |
-| Sprout Reports | In progress | [Github Issue](https://github.com/barrelstrength/craft-sprout-reports/issues/124) |
+| Plugin             | Upgrade Status | Follow for Updates                                                                 |
+|:-------------------|:---------------|:-----------------------------------------------------------------------------------|
+| Sprout Data Studio | Released       | [Docs](./../data-studio/README.md)                                                 |
+| Sprout Forms       | In progress    | [Github Issue](https://github.com/barrelstrength/craft-sprout-forms/issues/612)    |
+| Sprout SEO         | In progress    | [Github Issue](https://github.com/barrelstrength/craft-sprout-seo/issues/262)      |
+| Sprout Redirects   | In progress    | [Github Issue](https://github.com/barrelstrength/craft-sprout-redirects/issues/39) |
+| Sprout Sitemaps    | In progress    | [Github Issue](https://github.com/barrelstrength/craft-sprout-sitemaps/issues/17)  |
+| Sprout Email       | In progress    | [Github Issue](https://github.com/barrelstrength/craft-sprout-email/issues/186)    |
 
 _If you do not see a plugin listed here, we probably have no plans to migrate it to Craft 4. Check the Github repository for the plugin you are curious about for more details._

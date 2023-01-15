@@ -3,7 +3,7 @@ date: 2018-06-25
 description: The Twig Template Data Source allows you to create reports in the Craft Control Panel using Twig Templates in your craft/templates folder. 
 ---
 
-# Twig Template Reports
+# Twig Template Query
 
 The **Twig Template** Data Source allows you to create reports in the Craft Control Panel using Twig Templates in your `craft/templates` folder.
 

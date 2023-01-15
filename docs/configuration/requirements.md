@@ -6,7 +6,7 @@ description: Requirements for using the Sprout Plugins.
 # Requirements
 
 - Craft CMS v4.0.0 or a more recent version of Craft
-- Sprout v4.40.0 (all Sprout Marketing Suite plugins added Craft 4 support at version 4.40.0)
+- Sprout v4.44.444 (all Sprout Marketing Suite plugins added Craft 4 support at version 4.44.444)
 - All [requirements for running Craft 4](https://craftcms.com/docs/4.x/requirements.html)
 
 ## Installation via Plugin Store

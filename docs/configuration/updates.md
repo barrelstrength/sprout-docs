@@ -13,9 +13,9 @@ The guides below provide details for noteworthy upgrades such as breaking change
 
 | Upgrading&nbsp;To          | Notes                                    | 
 |:---------------------------|:-----------------------------------------|
-| [v4.40.0][#Upgradev440] ⚠️ | Added Craft 4 Support. **Major update!** |
+| [v4.44.444][#Upgradev440] ⚠️ | Added Craft 4 Support. **Major update!** |
 
-[#Upgradev440]: ./../updates/v4.40.0.md
+[#Upgradev440]: ./../updates/v4.44.444.md
 
 #### Avoid incremental updates to older versions of Craft and Sprout
 

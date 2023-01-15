@@ -1,34 +1,34 @@
 [
     {
-        "category": "Custom Reports",
+        "category": "Custom Data Sets",
         "items": [
             {
-                "name": "Unlimited reports",
+                "name": "Unlimited data sets",
                 "info": "",
                 "lite": true,
                 "pro": true
             },
             {
-                "name": "Custom Query reports",
-                "info": "Lite users can create unlimited Custom Query Reports",
+                "name": "Custom Query data sets",
+                "info": "Lite users can create unlimited Custom Query Data Sets",
                 "lite": true,
                 "pro": true
             },
             {
-                "name": "Twig Template reports",
+                "name": "Twig Template data sets",
                 "info": "",
                 "lite": false,
                 "pro": true
             },
             {
-                "name": "User reports",
+                "name": "User data sets",
                 "info": "",
                 "lite": false,
                 "pro": true,
                 "hide": true
             },
             {
-                "name": "Craft Commerce reports",
+                "name": "Craft Commerce data sets",
                 "info": "",
                 "lite": false,
                 "pro": true,
@@ -44,36 +44,36 @@
         ]
     },
     {
-        "category": "Custom Report Workflows",
+        "category": "Custom Workflows",
         "items": [
             {
-                "name": "Export report data",
+                "name": "Export data sets",
                 "info": "",
                 "lite": true,
                 "pro": true
             },
             {
-                "name": "Customize report behavior (dynamic title, sorting, etc.)",
-                "info": "",
-                "lite": true,
-                "pro": true
-            },
-            {
-                "name": "Organize reports in groups",
-                "info": "",
-                "lite": true,
-                "pro": true
-            },
-            {
-                "name": "Interactive report content",
-                "info": "Enable HTML in reports to output links, icons, or other garnishes",
-                "lite": true,
-                "pro": true
-            },
-            {
-                "name": "Report-specific settings",
-                "info": "Define exactly the settings you need to adjust report queries and segment query results",
+                "name": "Customize data set settings",
+                "info": "Define exactly the settings you need to adjust data set queries and segment query results",
                 "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Customize data set behavior (dynamic title, sorting, etc.)",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Interact with data set results",
+                "info": "Enable HTML in data  to output links, icons, or other garnishes",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Organize data sets in groups",
+                "info": "",
+                "lite": true,
                 "pro": true
             }
         ]
@@ -83,7 +83,7 @@
         "items": [
             {
                 "name": "Custom Data Sources API",
-                "info": "Enable users to build reports using a different database, third-party API, or whatever your heart can imagine.",
+                "info": "Provide data sets using a different database, third-party API, or whatever your heart can imagine.",
                 "lite": false,
                 "pro": true
             }

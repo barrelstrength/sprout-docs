@@ -371,14 +371,6 @@ module.exports = {
           ]
         },
         {
-          title: 'Get Started',
-          collapsable: false,
-          children: [
-            'data-sources',
-            'reports'
-          ]
-        },
-        {
           title: 'Data Sources',
           collapsable: false,
           children: [
@@ -390,9 +382,10 @@ module.exports = {
           title: 'Examples',
           collapsable: false,
           children: [
-            'html-vs-csv-reports',
-            'large-reports',
-            'sql-queries'
+            'html-vs-csv',
+            'large-data-sets',
+            'sql-queries',
+            'name-format'
           ]
         },
         {
