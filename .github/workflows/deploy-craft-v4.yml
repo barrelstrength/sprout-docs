@@ -36,17 +36,18 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.DOCUMENT_ROOT }}public/docs/
+          TARGET: ${{ secrets.DOCUMENT_ROOT }}docs/craft-v4/
           ARGS: "-rltgoDzvO --delete"
           SOURCE: "docs/.vuepress/dist/"
 
-      - name: Execute remote ssh command
+      - name: Symlink doc folders to public folder
           uses: appleboy/ssh-action@master
           with:
             key: ${{ secrets.SSH_PRIVATE_KEY }}
             host: ${{ secrets.REMOTE_HOST }}
             username: ${{ secrets.REMOTE_USER }}
             script: |
+              ln -s  ${{ secrets.DOCUMENT_ROOT }}docs/craft-v4 ${{ secrets.DOCUMENT_ROOT }}public/docs/craft-v4
               ln -s  ${{ secrets.DOCUMENT_ROOT }}docs/craft-v3 ${{ secrets.DOCUMENT_ROOT }}public/docs/craft-v3
               ln -s  ${{ secrets.DOCUMENT_ROOT }}docs/craft-v2 ${{ secrets.DOCUMENT_ROOT }}public/docs/craft-v2
 
