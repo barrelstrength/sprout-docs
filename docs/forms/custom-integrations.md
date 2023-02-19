@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Integrations API enables you to provide additional Integrations for users to select and configure when creating Forms.
 ---
 

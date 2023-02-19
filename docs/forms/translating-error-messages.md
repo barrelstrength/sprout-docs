@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: If you need to translate your Form error messages, currently, you will need to use static translations.
 ---
 
@@ -50,7 +50,7 @@ return array(
 );
 ```
 
-The first item in the array is the default message that you want to translate.  The second item in the array is your translation.  You can translate from one language into another, or even within the same language if you want to change the default error messaging.
+The first item in the array is the default message that you want to translate. The second item in the array is your translation. You can translate from one language into another, or even within the same language if you want to change the default error messaging.
 
 If you need to translate multiple phrases, you can add multiple phrases to your translation file and separate them by commas:
 

@@ -1,11 +1,11 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Integrations allow you to submit your forms to custom, third-party endpoints and to create Elements within Craft CMS.
 ---
 
 # Integrations
 
-Integrations allow you to submit your forms to custom, third-party endpoints and to create Elements within Craft CMS. Use Sprout Forms' powerful front-end form templating and validation and submit your data anywhere you'd like.   
+Integrations allow you to submit your forms to custom, third-party endpoints and to create Elements within Craft CMS. Use Sprout Forms' powerful front-end form templating and validation and submit your data anywhere you'd like.
 
 As Integrations may require additional configuration and training for content authors, the feature is disabled by default. Enable Integrations via `Settings->Advanced->Enable Integrations`.
 
@@ -17,10 +17,10 @@ The Form submission workflow is as follows:
     - If success, and 'Save data to the Craft database' is enabled, save Form Entry
 - Integrations get processed on the after save event: `barrelstrength\sproutforms\elements\Entry::EVENT_AFTER_SAVE`
 - Integration success and failure responses are logged to the database
-- The Event `Integration::EVENT_AFTER_SAVE` is raised and can be configured to send a Notification 
-    - If 'Save data to the Craft database' setting is enabled, responses will be visible in the sidebar of the submitted Entry   
+- The Event `Integration::EVENT_AFTER_SAVE` is raised and can be configured to send a Notification
+    - If 'Save data to the Craft database' setting is enabled, responses will be visible in the sidebar of the submitted Entry
     - If 'Save data to the Craft database' setting is disabled, responses can be viewed via a report
-    
+
 ## Default Integrations
 
 Two Integrations are included:
@@ -32,7 +32,7 @@ Two Integrations are included:
 
 ### Entry Element
 
-The Entry Element Integration allows you to map a Form's fields to an Entry Element and set it's author to a default author or the current logged in user. 
+The Entry Element Integration allows you to map a Form's fields to an Entry Element and set it's author to a default author or the current logged in user.
 
 ### Custom Endpoint
 

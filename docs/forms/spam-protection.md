@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Spam Protection settings give admins tools to configure how to redirect users, save spam entries in the database, generate spam reports, and configure and create custom Captchas to provide additional layers of validation.
 ---
 
@@ -7,12 +7,12 @@ description: The Spam Protection settings give admins tools to configure how to 
 
 Sprout Forms provides several methods to manage Spam. The Spam Protection settings give admins tools to configure how to redirect users, save spam entries in the database, generate spam reports, and configure and create custom Captchas to provide additional layers of validation.
 
-### How it works 
+### How it works
 
-1. If field validation errors exist on a submitted entry, it will be redirected back to the form. Spam redirect rules are only processed if no field validation errors exist. 
+1. If field validation errors exist on a submitted entry, it will be redirected back to the form. Spam redirect rules are only processed if no field validation errors exist.
 2. If no field validation errors exist and an enabled Captcha flags an entry as Spam, the Entry will be assigned the 'Spam' status.
 3. If Saving Spam Entries to the database is enabled, it is saved to the database along with any Failed Captcha error messages.
-4. The user will be redirected as normal to the thank you page or be sent back to the form based on the 'Spam Redirect Behavior' setting 
+4. The user will be redirected as normal to the thank you page or be sent back to the form based on the 'Spam Redirect Behavior' setting
 
 ### Spam Status
 

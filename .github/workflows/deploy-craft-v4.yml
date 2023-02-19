@@ -40,6 +40,7 @@ jobs:
           ARGS: "-rltgoDzvO --delete"
           SOURCE: "docs/.vuepress/dist/"
 
+      # This section can be removed for all branches except the current version release branch
       - name: Symlink doc folders to public folder
           uses: appleboy/ssh-action@master
           with:

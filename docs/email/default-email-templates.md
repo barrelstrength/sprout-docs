@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Email comes with one default Email Template. We keep the default as simple and un-opinionated as we can.
 ---
 

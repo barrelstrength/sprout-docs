@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Lists and Subscribers can be used for Mailing Lists via the Subscriber List integration for Sprout Reports.
 ---
 

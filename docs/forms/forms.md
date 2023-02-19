@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Form Elements allow users to create and manage single and multi-page online forms within Craft CMS.
 ---
 
@@ -7,13 +7,13 @@ description: Form Elements allow users to create and manage single and multi-pag
 
 Form Elements allow users to create and manage single and multi-page online forms within Craft CMS. Forms can be submit via AJAX or via a standard page request. Content authors can add [Form Fields](./form-fields.md), tabs, and customize a form's settings such as a custom Title Format, Success and Error messages, Redirect behavior, and Submit Button text.
 
-When forms are submitted, a form [Entry](./entries.md) will be created in your Craft database. Send [Notification Emails](notifications.md) to confirm receipt with the user or notify admins that a new Entry is ready for review. Run and export [Reports](./reports.md) to learn more.   
+When forms are submitted, a form [Entry](./entries.md) will be created in your Craft database. Send [Notification Emails](notifications.md) to confirm receipt with the user or notify admins that a new Entry is ready for review. Run and export [Reports](./reports.md) to learn more.
 
 ## Form Templates
 
 Forms are displayed on your website using Form Templates. Sprout Forms comes with two [Default Form Templates](./default-form-templates.md) and your web team can customize and style those templates using [Template Overrides](./template-overrides.md) or by building a [Custom Form Template](./custom-form-templates.md) integration.
 
-Front-end validation, error states, accessibility, and submitting your form data will be managed from your Form Templates. 
+Front-end validation, error states, accessibility, and submitting your form data will be managed from your Form Templates.
 
 Form Templates can be set globally or customized on a per-form basis. You can switch between Form Templates via the Form Templates dropdown field in the global settings or (if enabled) on an individual form's settings.
 
@@ -85,7 +85,7 @@ The `displayField` tag is called within the `displayTab` tag and renders each in
 ## Form Relations Field
 
 Sprout Forms adds a Form Relations Field to Craft CMS:
- 
+
 - **Forms (Sprout Forms)**
 
 ## Settings
@@ -108,7 +108,7 @@ Sprout Forms allows you to set a redirect for your Form in the Form Settings or 
 </form>
 ```
 
-Your redirect value can be an absolute URL, relative URL, or use the dynamic `{siteUrl}` variable: 
+Your redirect value can be an absolute URL, relative URL, or use the dynamic `{siteUrl}` variable:
 
 #### Example redirect values:
 

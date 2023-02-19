@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Forms includes over 20 Form Fields and can be extended to add additional Custom Form Fields.
 ---
 
@@ -10,7 +10,7 @@ Sprout Forms includes over 20 Form Fields and can be extended to add additional 
 Below is a list of each default Form Field. Some fields are exclusive to Sprout Forms as Front-end Form Fields and other Fields are both Front-end Form Fields and can also be used via Sprout Fields as custom Fields within Craft field layouts as well. For this reason, usage of some of these fields is documented here in the Sprout Forms documentation and other fields may be documented in the Sprout Fields documentation.
 
 ## Default Fields
- 
+
 ### Standard Fields
 
 | Sprout Forms | Sprout Fields | Craft CMS |
@@ -69,4 +69,3 @@ Each individual Form Field can provide settings that are unique to that Form Fie
 **Front-end Validation**: Fields that are marked as required will output the `required` attribute on their respective input fields. Browsers that support constraint validation will prevent the web form from being submitted if a required field doesn't have a value.
 
 **Server-side Validation**: Required fields that are submitted without a value will cause form submission to fail and return a user to the form. An error will be added to the active Form Element for each field that fails to validate.
- 

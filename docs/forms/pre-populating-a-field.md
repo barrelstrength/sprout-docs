@@ -1,11 +1,11 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: When you want to pre-populate a field with a known value you have a few options.
 ---
 
 # Pre-populating a Field
 
-When you want to pre-populate a field with a known value you have a few options. 
+When you want to pre-populate a field with a known value you have a few options.
 
 The Sprout Fields [Hidden Field](../fields/hidden-field.md) and [Invisible Field](../fields/invisible-field.md) help do this for scenarios where you do not need the user to see the value in the field being populated.
 

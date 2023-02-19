@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Changelog reflects the most recent updates to a plugin and can be found at the top level in the Github repo for each plugin.
 ---
 
@@ -11,11 +11,10 @@ The guides below provide details for noteworthy upgrades such as breaking change
 
 ### Craft 4
 
-| Upgrading&nbsp;To           | Notes                                    | 
-|:----------------------------|:-----------------------------------------|
-| [4.44.444][#Upgradev440] ⚠️ | Added Craft 4 Support. **Major update!** |
-
-[#Upgradev440]: ./../updates/v4.44.444.md
+| Upgrading&nbsp;To               | Module      | Notes                                    | 
+|:--------------------------------|:------------|:-----------------------------------------|
+| [4.44.444][#Upgradev444DS] ⚠️   | Data Studio | Added Craft 4 Support. **Major update!** |
+| [4.44.444][#Upgradev444] ⚠️ | All Plugins | Added Craft 4 Support. **Major update!** |
 
 #### Avoid incremental updates to older versions of Craft and Sprout
 
@@ -28,3 +27,9 @@ We recommend avoiding incremental upgrades (e.g. from `3.2` to `3.3` to `3.4`, e
 To upgrade Craft and Sprout to a version earlier than Craft `3.7.x` and Sprout `4.40.x`, please review the [Installing &amp; Updating][#v3Docs] section in the Sprout v3 documentation for the specific plugins you are updating.
 
 [#v3Docs]: https://sprout.barrelstrengthdesign.com/docs/v3/
+
+[//]: # (ALL UPGRADE GUIDE LINKS BELOW)
+
+[#Upgradev444DS]: ../updates/4.44.444-data-studio.md
+
+[#Upgradev444]: ../updates/4.44.444-all.md

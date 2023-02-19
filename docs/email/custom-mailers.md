@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Mailers enable you to manage your Campaign Emails within Craft and send Campaign Emails via your favorite email service.
 ---
 

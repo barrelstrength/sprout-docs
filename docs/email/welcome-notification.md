@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Create the new notification and add the appropriate sender info. The notification Rules will be setup to trigger "When a new user is created".
 ---
 
@@ -13,20 +13,22 @@ Create a Notification with two custom fields:
 Sets up a template for the HTML and Text versions of the notification email:
 
 **_emails/email.twig**
+
 ``` twig
 <body>{{ email.htmlBody }}</body>
 ```
 
 **_emails/email.txt**
+
 ``` twig
 {{ email.textBody }}
 ```
 
-Create the new notification and add the appropriate sender info. The notification Rules will be setup to trigger "When a new user is created". 
+Create the new notification and add the appropriate sender info. The notification Rules will be setup to trigger "When a new user is created".
 
 In the *Recipients* field we'll send the email to the new users email address. When the notification is triggered, the User Model is provided as the dynamic notification object and we can reference the email address using the field name `{email}`.
 
-In the `htmlBody` and `textBody` fields, we can also refer to the user.  This time we will use the `firstName` field (and should be sure to require the First Name field when a user is filling out their account info).
+In the `htmlBody` and `textBody` fields, we can also refer to the user. This time we will use the `firstName` field (and should be sure to require the First Name field when a user is filling out their account info).
 
 ``` twig
 Hello {firstName},

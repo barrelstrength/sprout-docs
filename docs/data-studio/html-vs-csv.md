@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Reports exist in two forms. They display in web browser when viewed in the Control Panel and as CSV files when exported.
 ---
 

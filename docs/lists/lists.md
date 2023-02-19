@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: A List can be associated with any Element and contain one or more Subscriptions. The default List Type to use in Sprout Lists is the Mailing List.
 ---
 
@@ -9,7 +9,7 @@ A List can be associated with any Element and contain one or more Subscriptions.
 
 ## Mailing List
 
-Mailing Lists can have [Subscribers](./subscribers.md). The relationship between a List and a Subscriber is a [Subscription](./subscriptions.md). Mailing Lists can be created from the Control Panel. 
+Mailing Lists can have [Subscribers](./subscribers.md). The relationship between a List and a Subscriber is a [Subscription](./subscriptions.md). Mailing Lists can be created from the Control Panel.
 
 ### Using Elements as Mailing Lists
 
@@ -25,7 +25,7 @@ Mailing Lists are flexible and powerful as they allow you to treat any Element T
 
 ### Subscribe and Unsubscribe
 
-Below is a full example of how give a user can Subscriber or Unsubscribe from a list using the **List ID** to identify the List. 
+Below is a full example of how give a user can Subscriber or Unsubscribe from a list using the **List ID** to identify the List.
 
 ``` twig
 {# Retrieve a list #}

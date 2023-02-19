@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout SEO allows you to map your content in Craft CMS to the be output as Structured Data.
 ---
 

@@ -1,13 +1,13 @@
 ---
-date: 2018-06-25
-description: 
+date: 2023-02-19
+description:
 ---
 
 # About Sprout Campaigns
 
 Sprout Email enables integrated email marketing, targeted transactional email, tracking and re-sending Sent Emails, and flexible subscriber and list management.
 
-The table below gives a top level overview of the current Mailers and List integrations in Sprout Email. 
+The table below gives a top level overview of the current Mailers and List integrations in Sprout Email.
 
 |  Mailer         | Available Via     | Campaigns | Notifications | Lists|
 |:----------------|:-----------------|:---------:|:-------------:|:----:|
@@ -19,13 +19,13 @@ The table below gives a top level overview of the current Mailers and List integ
 
 ## Notification Emails
 
-Send personalized notification emails to your users when events are triggered in Craft. Stay in the loop about new content on your site, changes to your content, a publish workflow, or when forms are submitted (Sprout Forms) or purchases are made (Craft Commerce). 
+Send personalized notification emails to your users when events are triggered in Craft. Stay in the loop about new content on your site, changes to your content, a publish workflow, or when forms are submitted (Sprout Forms) or purchases are made (Craft Commerce).
 
 [Read More](../email/notification-emails.md)
 
 ## Campaigns Emails
 
-Campaign Emails allow you to create powerful email campaigns using Live Preview, Matrix, and all of Craft's fields. Manage your Email Templates using HTML and Twig right within Craft's template structure and export your Campaign Emails to popular email service providers like Campaign Monitor and MailChimp. 
+Campaign Emails allow you to create powerful email campaigns using Live Preview, Matrix, and all of Craft's fields. Manage your Email Templates using HTML and Twig right within Craft's template structure and export your Campaign Emails to popular email service providers like Campaign Monitor and MailChimp.
 
 [Read More](../campaigns/campaign-emails.md)
 

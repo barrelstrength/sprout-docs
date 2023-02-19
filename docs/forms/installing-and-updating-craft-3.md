@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Forms installation and update instructions for Craft 3.
 ---
 
@@ -13,10 +13,10 @@ Sprout Forms installation and update instructions for Craft 3.
 
 ## Installation via Plugin Store
 
-1. Find the plugin in the Plugin Store in your Craft Control Panel 
+1. Find the plugin in the Plugin Store in your Craft Control Panel
 2. Go to _Settings → Plugins_ and select “Install”
 
-## Installation via Composer 
+## Installation via Composer
 
 1. Open your terminal and go to your Craft project:<br>`cd /path/to/project`
 2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-forms`
@@ -97,7 +97,7 @@ Where `field` is a Form Field model:
 :::
 
 #### Displaying Tabs and Fields in Custom Templates
- 
+
 ``` twig
 {# form.html #}
 {%- for tab in form.getFieldLayout().getTabs() %}
@@ -125,15 +125,18 @@ If you require these fields to be displayed in a Notification Email or wish to u
 ## Upgrading to Forms 3.4.1
 
 Sprout Forms v3.4.1 introduces a handful of changes to make the Integrations API more flexible for custom Integrations. The general Integration architecture has stayed the same but several methods have been renamed. Please be sure to test any Custom Integrations while upgrading to 3.4.1 and consider the following changes:
- 
+
 ### Removed
+
 - Removed base Integration `updateTargetFieldsAction` and `updateSourceFieldsAction` dependencies in favor of `updateTargetFieldsOnChange` to allow Integrations to dynamically target fields to watch for changes
 - Removed `prepareFieldTypeSelection` and `prepareIntegrationTypeSelection` variables and methods and simplified how Integration Types field is populated in modal templates
 
 ### Moved
+
 - Moved `getFieldsAsOptionsByRow`, `getCompatibleFields`, and `getTargetIntegrationFieldsAsMappingOptions` from `IntegrationsController` to `EntryElementIntegration` class
 
 ### Renamed
+
 - Renamed `getFormFieldsAsMappingOptions` => `getSourceFormFieldsAsMappingOptions`
 - Renamed `actionGetElementEntryFields` => `actionGetTargetIntegrationFields` and updated it to instantiate and populate an Integration dynamically and trigger the `getTargetIntegrationFieldsAsMappingOptions` on a given Integration
 - Renamed `prepareFieldMapping` => `refreshFieldMapping` and moved to base Integration class init method
@@ -235,11 +238,11 @@ new SproutFormsIntegration({
 
 ### Updating to Forms v3.6.0
 
-This release adds several improvements to Spam workflows and has touched on several areas of the Entry Submission workflow. Some breaking changes have been introduced so users with more custom form implementations will want to review what has changed to get things updated properly. 
+This release adds several improvements to Spam workflows and has touched on several areas of the Entry Submission workflow. Some breaking changes have been introduced so users with more custom form implementations will want to review what has changed to get things updated properly.
 
 ### Form Templates
 
-Custom Form Templates will need to update the class name used in the default conditional logic to correctly hide fields used in conditional logic rules. 
+Custom Form Templates will need to update the class name used in the default conditional logic to correctly hide fields used in conditional logic rules.
 
 ``` twig
 OLD
@@ -260,7 +263,7 @@ NEW
 ### Entry Queries using Status Handles
 
 The `statusHandle` attribute has been removed as the same behavior is available via the Element `status` attribute.
-  
+
 ``` twig
 OLD
 {% for formEntry in sprout.forms.entries
@@ -281,7 +284,7 @@ NEW
 
 ### Custom Captchas
 
-The Captcha API has been updated. 
+The Captcha API has been updated.
 
 ``` php
 OLD (OnBeforeSaveEntryEvent)
@@ -342,7 +345,7 @@ If you currently have a custom AJAX implementation to submit your forms, conside
 
 Custom Form Templates will need to add support for AJAX submissions. Several individual Form settings (Submission Method, Success Message, Error Message, Error Display Method) may not work as expected until these updates are made to the templates.
 
-#### Updates to form.twig 
+#### Updates to form.twig
 
 ``` html
 <!-- Add `data-submission-method` attribute to form tag -->
@@ -351,7 +354,7 @@ Custom Form Templates will need to add support for AJAX submissions. Several ind
 </form>
 ```
 
-#### Updates to form.twig 
+#### Updates to form.twig
 
 ``` twig
 {# Register Submit Handler JS file #}
@@ -448,7 +451,7 @@ form.addEventListener('onSproutFormsSubmit', function(event) {
 ### Email Templates API
 
 Sprout Forms v3.9.0 uses the updated Email Templates Integrations API. See the Sprout Email upgrade notes for details: [Upgrading to Email v4.2.0](../email/installing-and-updating-craft-3.md#upgrading-to-email-v4-2-0).
- 
+
 ## Upgrading to Forms v3.10.0
 
 #### Captcha Config Overrides
@@ -494,7 +497,7 @@ Sprout Forms v3.12.0 includes a small breaking change to the `getFrontEndInputHt
 ### Custom Form Fields
 
 Custom Form fields will need to update the `getFrontEndInputHtml` method signature to include a new second argument for the Form Entry Element and pass that `entry` variable to your input template:
- 
+
 ``` php
 // OLD
 public function getFrontEndInputHtml($value, array $renderingOptions = null): Markup
@@ -530,7 +533,7 @@ public function getFrontEndInputHtml($value, Entry $entry, array $renderingOptio
 
 ### Rendering Options Error Classes
 
-Additionally, to support Rendering Options error classes in your custom Form Field input template, you will want to update the Form Field input template to check for errors and update the `class` to include any error classes if they exist: 
+Additionally, to support Rendering Options error classes in your custom Form Field input template, you will want to update the Form Field input template to check for errors and update the `class` to include any error classes if they exist:
 
 ``` twig
 // OLD
@@ -550,7 +553,7 @@ Purge SPAM and delete old entries.
 
 REMOVE Remove Basic Form templates. Link to old Repo if folks want to download them and use them as overrides.
 
-Sprout Forms 4 is a major release the includes an update to the underlying architecture. The Sprout Forms user experience will remain familiar but several conventions have changed. Most notably, the core codebase for `barrelstrength/sprout-forms` has been moved to the `barrelstrength/sprout-base` package so any custom code, translations, or direct links to the Sprout Forms Control Panel will need to be updated to target the new naming conventions. Plugin-specific Control Panel settings have also moved to the Craft settings area. 
+Sprout Forms 4 is a major release the includes an update to the underlying architecture. The Sprout Forms user experience will remain familiar but several conventions have changed. Most notably, the core codebase for `barrelstrength/sprout-forms` has been moved to the `barrelstrength/sprout-base` package so any custom code, translations, or direct links to the Sprout Forms Control Panel will need to be updated to target the new naming conventions. Plugin-specific Control Panel settings have also moved to the Craft settings area.
 
 Sidebar navigation has been updated to be independent of plugins and specific to the modules being used
 If you had custom code adjusting the sidebar, you may need to revisit it.
@@ -572,6 +575,7 @@ Front End Form Asset Resource paths changed:
 Update path of formtemplates resources into web/assets/public/dist folder.
 
 You will need to update the Form submission action in any template overrides:
+
 ``` twig
 {# OLD #}
 <input type="hidden" aria-hidden="true" name="action" value="sprout-forms/entries/save-entry">
@@ -595,9 +599,9 @@ Document way use can copy these over and use them as Custom Templates folder if 
 ### Form Templates API
 
 FormTemplates are using two methods instead of one to determine path:
-    use FormTemplates::getTemplateRoot and FormTemplates::getPath
-    updated FormTemplates::getPath to not refer to the full path...
-    
+use FormTemplates::getTemplateRoot and FormTemplates::getPath
+updated FormTemplates::getPath to not refer to the full path...
+
 ### Form Field override template
 
 The countries variable has been updated and may need updated if you have a phone form field template override:
@@ -649,7 +653,6 @@ The class names that changed are:
 | `barrelstrength\sproutforms\services\EntryStatuses` | `barrelstrength\sproutbase\app\forms\services\FormEntryStatuses` |
 | `barrelstrength\sproutforms\services\Integrations` | `barrelstrength\sproutbase\app\forms\services\FormIntegrations` |
 | `barrelstrength\sproutforms\services\Rules` | `barrelstrength\sproutbase\app\forms\services\FormRules` |
-
 
 ### Event Updates
 

@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: In several places within Craft and Sprout plugins, you are able to customize a setting with a dynamic value.
 ---
 
@@ -34,11 +34,11 @@ In this example, our Template and Variables are processed and create our page.
 |:-------- |:---------- |:------- |
 | news/_entry.twig | entry | news/my-page |
 
-## Title Format 
+## Title Format
 
 When you setup an Entry Type, you can choose to not display the Title Field and generate your Title using the **Title Format** setting.
 
-While this is a setting in the Control Panel, a very similar thing is happening as we have seen in the templates. Rather than a file being used as the Twig template (`news/_entry.twig`), the value of the Title Format setting is being used as the template. 
+While this is a setting in the Control Panel, a very similar thing is happening as we have seen in the templates. Rather than a file being used as the Twig template (`news/_entry.twig`), the value of the Title Format setting is being used as the template.
 
 When an Entry Element is saved, Craft makes the Entry Element available to that setting to allow the Title Format setting to use any property on the Entry Object when the Title is saved. While Craft gives you access to an Entry Element in the Title Format Setting, the variable is not named `entry` – it is named `object`.
 
@@ -57,7 +57,7 @@ In this example, our Template and Variables are processed and create our Title.
 **Why does Craft name the variable `object` instead of something more appropriate like `entry`?**
 
 Object Syntax is supported by many different Elements and Settings within Craft and within plugins. As all of these features use the same code behind the scenes, Craft named the variable that gets created something generic so that it could apply to many scenarios.
-::: 
+:::
 
 ## Shorthand Syntax
 

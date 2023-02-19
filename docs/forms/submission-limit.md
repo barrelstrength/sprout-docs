@@ -1,12 +1,12 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: If you want to disable your form after a certain number of submissions, conditionally display your form based on the entry count.
 ---
 
 # Submission Limit
 
 If you want to disable your form after a certain number of submissions, conditionally display your form based on the entry count.
-  
+
 ``` twig
 {% set totalEntries = sprout.forms.entries.formHandle('contact').count() %}
 
@@ -17,4 +17,3 @@ If you want to disable your form after a certain number of submissions, conditio
     {{ sprout.forms.displayForm('contact') }}
 {% endif %}
 ```
- 

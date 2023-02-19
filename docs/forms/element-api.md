@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Forms can be used in headless mode using Craft's Element API plugin.
 ---
 

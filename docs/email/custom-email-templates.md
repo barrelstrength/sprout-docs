@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Email Templates enable you to manage Template Overrides as a plugin to easily reuse across projects or share in the Plugin Store.
 ---
 
@@ -60,5 +60,5 @@ class MyPlugin extends Plugin
 ```
 
 ::: tip
-Email Templates are available in Sprout Email for Craft 3. Upgrade to Craft 3 and enjoy the power and flexibility of Email Templates! 
+Email Templates are available in Sprout Email for Craft 3. Upgrade to Craft 3 and enjoy the power and flexibility of Email Templates!
 :::

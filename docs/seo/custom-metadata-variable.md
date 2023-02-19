@@ -1,6 +1,6 @@
 ---
-date: 2018-06-25
-description: If you prefer to have full control over the metadata and how it is output on your pages, you can stop Sprout SEO from outputting metadata for you and just let it generate the metadata and make it available to your Twig template as a variable. 
+date: 2023-02-19
+description: If you prefer to have full control over the metadata and how it is output on your pages, you can stop Sprout SEO from outputting metadata for you and just let it generate the metadata and make it available to your Twig template as a variable.
 ---
 
 # Custom Metadata Variable
@@ -11,7 +11,7 @@ Sprout SEO generates the metadata that is output to your pages with the `sprouts
 {% sproutseo 'optimize' %}
 ```
 
-If you prefer to have full control over the metadata and how it is output on your pages, you can stop Sprout SEO from outputting metadata for you and just let it generate the metadata and make it available to your Twig template as a variable. 
+If you prefer to have full control over the metadata and how it is output on your pages, you can stop Sprout SEO from outputting metadata for you and just let it generate the metadata and make it available to your Twig template as a variable.
 
 This will give you control to change the output format, stop certain items from being output, and even output additional metadata in new ways to meet your needs. To give yourself control over your metadata variable, you'll need to update two Advanced settings:
 

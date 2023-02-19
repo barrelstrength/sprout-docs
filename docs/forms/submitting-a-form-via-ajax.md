@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Sprout Forms 'Submission Method' setting allows you to choose to submit your forms via AJAX.
 ---
 

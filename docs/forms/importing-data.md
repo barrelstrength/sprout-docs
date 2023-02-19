@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Forms adds support for importing and seeding data to the following Sprout Forms data types...
 ---
 
@@ -14,7 +14,7 @@ Sprout Forms adds support for importing and seeding data to the following Sprout
 
 ## Forms
 
-Define your forms as JSON and import them into any project you'd like. A basic example of the format is below and more advanced form examples are linked after the code example. 
+Define your forms as JSON and import them into any project you'd like. A basic example of the format is below and more advanced form examples are linked after the code example.
 
 ::: code
 
@@ -93,7 +93,6 @@ Import real or test Form Entry Elements to Sprout Forms using Sprout Import.
 #### Seed Tab
 
 On the Sprout Import Seed tab, select **Sprout Forms Entries** as the _Type of Content_ to generate fake Form Entries.
-
 
 #### Generate custom seed data
 

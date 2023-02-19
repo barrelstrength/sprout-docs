@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Reports can be run using date ranges and exported in CSV format.
 ---
 

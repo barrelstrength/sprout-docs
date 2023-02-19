@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Email Dropdown field allows a user to select a spam-protected Email Address from a dropdown list and trigger a notification to that email address.
 ---
 

@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Predefined Field allows you parse Twig and define the value of your field ahead of time.
 ---
 
@@ -13,14 +13,14 @@ The Predefined Field is not editable.
 
 - **Field Format** - The value you want to prepare when the Predefined Field is saved.
 - **Show Field** - Enable to display the value you saved in the Field Layout
-- **Output Format** - The output method to use when displaying the value: Input, Textarea, or HTML 
+- **Output Format** - The output method to use when displaying the value: Input, Textarea, or HTML
 - **Render dynamically in field layout** - Enable to process the value of the field when the page is loaded in the Control Panel
 
 [Link Name](https://barrelstrengthdesign.com)
 
 ### Field Format
 
-Define the value you want using the **Field Format** setting when you create your field. The Field Format setting can parse Twig and process values from the element being saved. 
+Define the value you want using the **Field Format** setting when you create your field. The Field Format setting can parse Twig and process values from the element being saved.
 
 The Field Format setting accepts Craft object syntax using the `object` variable to reference the current Element being saved:
 
@@ -77,7 +77,7 @@ In the example below, the Predefined field shows the Users that are related to a
 
 #### Dynamic HTML Settings
 
-![Predefined Field Example HTML Settings](../images/fields/predefined-html-settings.png)   
+![Predefined Field Example HTML Settings](../images/fields/predefined-html-settings.png)
 
 #### Example HTML Table
 

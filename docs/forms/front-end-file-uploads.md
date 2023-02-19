@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: To allow a user to upload a file from the front-end, all you need to do is add an Assets field to your form.
 ---
 

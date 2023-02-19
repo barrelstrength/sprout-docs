@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Email gives you 100% control over your email templates using the Template Overrides.
 ---
 

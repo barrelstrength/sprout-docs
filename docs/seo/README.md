@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout SEO provides you an intuitive, seamless, and flexible way to manage your SEO strategy within Craft CMS. Content authors will enjoy a clear visual relationship between content and metadata where they can focus on content and maximize visibility.
 ---
 
@@ -23,7 +23,7 @@ Refine your Metadata across three different levels of priority:
 - Element Metadata
 - Template Metadata
 
-Often, the first time one of your visitors sees your content it is in search results or from a shared link. Make sure you're treating your metadata like a first class citizen alongside your content. 
+Often, the first time one of your visitors sees your content it is in search results or from a shared link. Make sure you're treating your metadata like a first class citizen alongside your content.
 
 Edit your content confidently. Throughout your content management experience, Sprout SEO will indicate which fields power the metadata on your site and provide some additional information about the scope and priority of how that field will affect your metadata.
 
@@ -38,8 +38,6 @@ Edit your content confidently. Throughout your content management experience, Sp
 **Element Metadata** is managed with the powerful [Metadata Field](./element-metadata-field.md). The Metadata field allows you to configure how your metadata is handled for every entry. If you want to have a tight integration with your existing content fields, you can reuse existing fields and the Metadata field will blend right into your existing content. If you want detailed control, you can enable overrides for each type of metadata and manage it all manually.
 
 ![Element Metadata Field](../images/seo/sprout-seo-fieldtype.png)
-
-
 
 ## 100% control
 

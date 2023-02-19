@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sending an email can touch several different services so it can be tricky to diagnose just where something is going wrong.
 ---
 
@@ -29,11 +29,11 @@ Is the web server capable of sending emails? If so, which protocol does it use? 
 
 Many Email Service Providers have a free tier that is sufficient for most small websites. Mailgun and Sparkpost are reasonable places to start and there are many others. If you are on AWS, SES is an easy option.
 
-Has your Email Service Provider been configured correctly? Often these services have tools that can confirm if your DNS appears to be configured correctly. 
+Has your Email Service Provider been configured correctly? Often these services have tools that can confirm if your DNS appears to be configured correctly.
 
 ## DNS settings
 
-Are the DNS settings for the domain the email is being sent configured correctly? This includes getting DKIM and SPF records setup that help your email get recognized as legitimate and avoid the spam bin. 
+Are the DNS settings for the domain the email is being sent configured correctly? This includes getting DKIM and SPF records setup that help your email get recognized as legitimate and avoid the spam bin.
 
 ## Craft CMS
 
@@ -41,10 +41,10 @@ Are the Email settings in Craft configured correctly? Double check you have the 
 
 ## Craft Plugins
 
-Are there any additional settings that need to be set? This might include settings that integrate with a third-party API like Mailchimp or Sendgrid or the default From Address that will be used to send your emails. 
+Are there any additional settings that need to be set? This might include settings that integrate with a third-party API like Mailchimp or Sendgrid or the default From Address that will be used to send your emails.
 
-Make sure the From Address being used when sending your email matches the website domain that you are sending from. In some cases, if the From Address is different than the sending domain an email will be considered a higher risk and may trigger more spam filters. 
- 
+Make sure the From Address being used when sending your email matches the website domain that you are sending from. In some cases, if the From Address is different than the sending domain an email will be considered a higher risk and may trigger more spam filters.
+
 ## Email Content
 
 Make sure your content is respectable. Salesy titles may trigger spam filters so make sure you are sending all caps or using trigger words in your titles: "FREE CASH $$$!!!". If your email includes images, consider how large they are. If your email is really long, some email clients might truncate it after a certain number of HTML characters if you are using tons of tables for layouts.
@@ -60,8 +60,8 @@ Take a look in your Craft logs files. They may reveal more about what is going o
 ## Recipient Firewall
 
 Sprout Email's Sent Email feature reports if an email was sent from Craft successfully. While a Sent Email Element can indicate success, that doesn't mean your email got delivered, it just means your email successfully got handed off by Craft to the next service. Email Service Providers often provide additional metrics on if an email was successfully routed. And, even though an Email Service Provider may report that your email has been sent successfully through its service, it does not mean your email made it to it's destination.
- 
-Who is receiving the email? Does their organization have any business rules in their firewall or email configuration that may be filtering the email or labeling it as spam? Larger companies are more likely to have stricter rules in place in their firewall that may affect deliverability. Your behavior when testing emails can look suspicious but an IT department should be able to help you get whitelisted when needed.  
+
+Who is receiving the email? Does their organization have any business rules in their firewall or email configuration that may be filtering the email or labeling it as spam? Larger companies are more likely to have stricter rules in place in their firewall that may affect deliverability. Your behavior when testing emails can look suspicious but an IT department should be able to help you get whitelisted when needed.
 
 ## Recipient Email Client
 

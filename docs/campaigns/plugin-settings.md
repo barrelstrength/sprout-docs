@@ -1,6 +1,6 @@
 ---
-date: 2018-06-25
-description: 
+date: 2023-02-19
+description:
 ---
 
 # Settings
@@ -21,7 +21,7 @@ Customize which features display in the Sprout Forms sidebar and only include th
 
 ### Default Email Templates
 
-By default, Sprout Email uses our simple, base Basic Notification Email Templates. If you would like to customize the default Email Templates used on all of your Notification Emails, select the Email Template you wish to use here or setup [Template Overrides](../email/template-overrides.md). 
+By default, Sprout Email uses our simple, base Basic Notification Email Templates. If you would like to customize the default Email Templates used on all of your Notification Emails, select the Email Template you wish to use here or setup [Template Overrides](../email/template-overrides.md).
 
 ### Enable custom Email Templates on a per-email basis
 
@@ -33,7 +33,7 @@ Campaign Types allow you to configure how a specific Campaign should work. Choos
 
 ## Mailers
 
-The Mailers tab will list all available Mailers. Custom Mailers can be installed as separate plugins. Mailers that need to be configured will display a link to manage their settings.   
+The Mailers tab will list all available Mailers. Custom Mailers can be installed as separate plugins. Mailers that need to be configured will display a link to manage their settings.
 
 ## Config Settings
 

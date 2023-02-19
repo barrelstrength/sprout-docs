@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout SEO installation and update instructions for Craft 3.
 ---
 
@@ -13,10 +13,10 @@ Sprout SEO installation and update instructions for Craft 3.
 
 ## Installation via Plugin Store
 
-1. Find the plugin in the Plugin Store in your Craft Control Panel 
+1. Find the plugin in the Plugin Store in your Craft Control Panel
 2. Go to _Settings → Plugins_ and select “Install”
 
-## Installation via Composer 
+## Installation via Composer
 
 1. Open your terminal and go to your Craft project:<br>`cd /path/to/project`
 2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-seo`
@@ -38,13 +38,13 @@ Sprout SEO 4 removes Section Metadata as it was largely not necessary and can be
 
 ## Upgrading to Sprout SEO 4.4
 
-Sprout SEO 4.4 updates how metadata is normalized and processed. For most users, these changes will not be noticed as metadata is generated and output in the same way. For users with custom implementations, please read below. 
+Sprout SEO 4.4 updates how metadata is normalized and processed. For most users, these changes will not be noticed as metadata is generated and output in the same way. For users with custom implementations, please read below.
 
 ### Breaking changes
 
 #### Metadata Model
 
-Retrieving metadata from the Metadata model is no longer done directly on the model. Metadata is now stored in Meta Type classes on the Metadata Model's `$metaTypes` attribute. Values on the model represent the raw data necessary to calculate the final values. The raw data can be retrieved by calling the `getRawData()` method. The calculated values can be retrieved by calling the `getMetaTagData()` method. 
+Retrieving metadata from the Metadata model is no longer done directly on the model. Metadata is now stored in Meta Type classes on the Metadata Model's `$metaTypes` attribute. Values on the model represent the raw data necessary to calculate the final values. The raw data can be retrieved by calling the `getRawData()` method. The calculated values can be retrieved by calling the `getMetaTagData()` method.
 
 ``` php
 $metadata = new barrelstrength\sproutseo\models\Metadata();
@@ -56,7 +56,7 @@ $metadata->getRawData()
 $metadata->getMetaTagData()
 ```
 
-Previously you could access meta attributes directly on the model. Using the updated Metadata model you will need to retrieve the calculated value by getting the metadata by type and calling the getter for the value you want to retrieve. See all Meta Types in the `sprout-seo/src/meta` folder of the plugin. 
+Previously you could access meta attributes directly on the model. Using the updated Metadata model you will need to retrieve the calculated value by getting the metadata by type and calling the getter for the value you want to retrieve. See all Meta Types in the `sprout-seo/src/meta` folder of the plugin.
 
 ``` php
 # OLD
@@ -89,7 +89,7 @@ $image = $metadata->getOptimizedImage();
 $keywords = $metadata->getOptimizedKeywords();
 ```
 
-Previously image IDs were stored as arrays. They are now stored as the image ID as a string. 
+Previously image IDs were stored as arrays. They are now stored as the image ID as a string.
 
 ``` php
 $schema = $this->globals['identity'];
@@ -103,11 +103,11 @@ $imageId = $schema['image'] ?? null;
 
 #### Globals meta column
 
-The `sproutseo_globals.meta` column has been removed and Global Metadata is now calculated at the time it is needed. If you referenced the Globals::$meta column in any custom implementations, you can now just call the getter for the metadata you want from the final Metadata model. 
+The `sproutseo_globals.meta` column has been removed and Global Metadata is now calculated at the time it is needed. If you referenced the Globals::$meta column in any custom implementations, you can now just call the getter for the metadata you want from the final Metadata model.
 
 ## Upgrading to SEO 5.0.0 - UNRELEASED
 
-Sprout SEO 5 is a major release the includes an update to the underlying architecture. The Sprout SEO user experience will remain familiar but several conventions have changed. Most notably, the core codebase for `barrelstrength/sprout-seo` has been moved to the `barrelstrength/sprout-base` package so any custom code, translations, or direct links to the Sprout SEO Control Panel will need to be updated to target the new naming conventions. Plugin-specific Control Panel settings have also moved to the Craft settings area. 
+Sprout SEO 5 is a major release the includes an update to the underlying architecture. The Sprout SEO user experience will remain familiar but several conventions have changed. Most notably, the core codebase for `barrelstrength/sprout-seo` has been moved to the `barrelstrength/sprout-base` package so any custom code, translations, or direct links to the Sprout SEO Control Panel will need to be updated to target the new naming conventions. Plugin-specific Control Panel settings have also moved to the Craft settings area.
 
 | Feature | Old Name | New Name |
 |:------- |:------   |:------   |

@@ -1,13 +1,13 @@
 ---
-date: 2018-06-25
-description: The Sprout Marketing Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.
+date: 2023-02-19
+description: Sprout Marketing Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of content management and digital marketing workflows.
 ---
 
 # Core Concepts
 
-The Sprout Plugins are a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.
+Sprout Marketing Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of content management and digital marketing workflows.
 
-Sprout Plugins provide a seamless Craft experience for content authors and an exceptional amount of flexibility for designers and developers.
+Sprout provides a seamless Craft experience for content authors and an exceptional amount of flexibility for designers and developers.
 
 [//]: # (Sprout Plugins provide a seamless Craft experience for content authors, an exceptional amount of flexibility for designers and developers, and comprehensive multi-site support for multi-regional and multi-lingual websites.)
 
@@ -31,11 +31,11 @@ As we developed Sprout we observed that a lot of features that we designed could
 
 Rather than re-invent the wheel in each **plugin**, we chose to build out features such as Reports as a **module** that can be used by all of our plugins and for your custom reporting needs as well. Users experience a unified, familiar workflow however they are using Reports on a site.
 
-Modules can be enabled and disabled to ensure only the relevant ones are available to users. Explore the full list of [module features](./features.md). 
+Modules can be enabled and disabled to ensure only the relevant ones are available to users. Explore the full list of [module features](./features.md). Collectively, these modules are referred to as the Sprout Framework.
 
 ## Plugin Bundles
 
-The key Sprout Plugins bundle multiple modules to provide their feature set. View the [Lite and Pro](./features.md) page to see a breakdown of features in each module. 
+The key Sprout Plugins bundle multiple modules to provide their feature set. View the [Lite and Pro](./features.md) page to see a breakdown of features in each module.
 
 | Plugin             | Modules                              |
 |:-------------------|:-------------------------------------|

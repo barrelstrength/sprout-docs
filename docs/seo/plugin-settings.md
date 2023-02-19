@@ -1,12 +1,11 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Settings can be managed in the Control Panel or via a config file in config/sprout-seo.php
 ---
 
 # Settings
 
 Settings can be managed in the Control Panel _Sprout SEO → Settings_ or via a config file in `config/sprout-seo.php`. As Redirect and Sitemap functionality are managed in separate modules, for file-based config overrides you'll want to use the config overrides for each respective module: `config/sprout-redirects.php` and `config/sprout-sitemaps.php`. See below for links to the documentation of each module.
-
 
 ## Metadata
 

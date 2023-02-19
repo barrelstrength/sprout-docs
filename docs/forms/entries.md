@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: An Entry Element is created when a form is submitted. If validation fails, the Entry Element will be returned to the template with errors. If validation succeeds...
 ---
 
@@ -40,10 +40,10 @@ Users can edit Form Entries in front-end templates. To allow users to edit Form 
 ```
 
 ## Templating
- 
+
 You can fetch form Entries using the [same options you have for all Elements](http://buildwithcraft.com/docs/templating/elementcriteriamodel) as described in the Craft documentation.
 
-### entries 
+### entries
 
 The `entries` tag will let you get all entries for a specific form.
 
@@ -117,7 +117,7 @@ When a form has been submitted successfully, the user will be redirected to wher
 
 The `getEntry` tag retrieves the Entry Element of the active submission. If an active Form Entry doesn't exist, it returns an empty Entry Element.
 
-The `getEntry` method is useful if you need to setup your template to manage your Form submission values and errors but you don't know the handle of your Form.  This scenario can arise when you are using the Sprout Forms Relations field to dynamically output a form in your template.
+The `getEntry` method is useful if you need to setup your template to manage your Form submission values and errors but you don't know the handle of your Form. This scenario can arise when you are using the Sprout Forms Relations field to dynamically output a form in your template.
 
 ``` twig
 {% set submittedEntry = sprout.forms.getEntry(form) %}
@@ -145,5 +145,5 @@ The `setEntry` method populates the Entry Model that is used by the `displayForm
 ## Entry Relations Field
 
 Sprout Forms adds an Entry Relations Field to Craft CMS:
- 
+
 - **Entry (Sprout Forms)**

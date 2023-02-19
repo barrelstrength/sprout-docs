@@ -1,5 +1,5 @@
 ---
-date: 2019-04-25
+date: 2023-02-19
 description: Control the behavior around query strings in your Redirects using the 'Redirect Match Strategy' and 'Query String Strategy' settings.
 ---
 
@@ -45,7 +45,7 @@ The Query String Strategy setting determines how to treat query strings after pr
 
 ### Combining Strategies
 
-Together the **Redirect Match Strategy** and **Query String Strategy** settings allow redirects to be configured in several ways 
+Together the **Redirect Match Strategy** and **Query String Strategy** settings allow redirects to be configured in several ways
 
 #### URL (with query strings) + Remove Query Strings
 

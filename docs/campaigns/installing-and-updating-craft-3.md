@@ -1,6 +1,6 @@
 ---
-date: 2018-06-25
-description: 
+date: 2023-02-19
+description:
 ---
 
 # Craft 3
@@ -13,10 +13,10 @@ Sprout Email installation and update instructions for Craft 3.
 
 ## Installation via Plugin Store
 
-1. Find the plugin in the Plugin Store in your Craft Control Panel 
+1. Find the plugin in the Plugin Store in your Craft Control Panel
 2. Go to _Settings → Plugins_ and select “Install”
 
-## Installation via Composer 
+## Installation via Composer
 
 1. Open your terminal and go to your Craft project:<br>`cd /path/to/project`
 2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-forms`

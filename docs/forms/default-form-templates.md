@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Forms comes with two Form Templates and one Email Template. We keep the defaults as simple and un-opinionated as we can.
 ---
 
@@ -27,7 +27,7 @@ The Basic Templates handle all form output and error states for the default Form
 
 ### Basic Notification
 
-The Basic Notification Email Templates is designed to loop through all submitted Form Fields and output a simple representation of the submitted data. 
+The Basic Notification Email Templates is designed to loop through all submitted Form Fields and output a simple representation of the submitted data.
 
 This Email Template will be used by default when you create a new Notification Email from the Sprout Forms Notifications tab.
 

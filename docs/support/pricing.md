@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Many projects have budget considerations. If you feel your project falls in this category, and would still like to use one of our commercial plugins we will match any discounts that you received from Pixel & Tonic for Craft CMS and we also consider standalone license donations.
 ---
 

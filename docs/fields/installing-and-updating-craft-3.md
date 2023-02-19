@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Fields installation and update instructions for Craft 3.
 ---
 
@@ -13,10 +13,10 @@ Sprout Fields installation and update instructions for Craft 3.
 
 ## Installation via Plugin Store
 
-1. Find the plugin in the Plugin Store in your Craft Control Panel 
+1. Find the plugin in the Plugin Store in your Craft Control Panel
 2. Go to _Settings → Plugins_ and select “Install”
 
-## Installation via Composer 
+## Installation via Composer
 
 1. Open your terminal and go to your Craft project:<br>`cd /path/to/project`
 2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-fields`
@@ -31,7 +31,6 @@ Make sure you have updated to the latest version of Sprout Fields 2.x before upd
 Several things have changed between Sprout Fields 2 for Craft 2 and Sprout Fields 3 for Craft 3. In Craft 2 Sprout Fields provided fields for both the Craft CP and for Sprout Forms. Sprout Forms for Craft 3 now has it's own Field API so your Sprout Fields will be migrated different depending on whether you are using them as fields in Craft or in Sprout Forms.
 
 When you update Craft please consider the following changes and learn about how your data will be migrated below:
-
 
 Craft 2<br>Sprout Forms 3    | Craft 3        | Sprout Forms 4
 -----------------|---------------------|----------------------------------

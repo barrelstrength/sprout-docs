@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: In many cases, when you trigger an event there may be some custom data you want to use in your notification.
 ---
 
@@ -7,7 +7,7 @@ description: In many cases, when you trigger an event there may be some custom d
 
 In many cases, when you trigger an event there may be some custom data you want to use in your notification. For example, when an Entry is saved you might want to know who the author was and where you can view the entry, when a form is submitted you may want to include the data from the Form submission in your notification, and when a product is purchased you might want to know which product and by whom.
 
-Sprout Email allows you to personalize your email in several places including: 
+Sprout Email allows you to personalize your email in several places including:
 
 - Subject line
 - From Name

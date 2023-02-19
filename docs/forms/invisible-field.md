@@ -1,11 +1,11 @@
 ---
-date: 2018-06-25
-description: The Invisible Field allows you to define the value of a field on your form ahead of time without displaying that field to the user. 
+date: 2023-02-19
+description: The Invisible Field allows you to define the value of a field on your form ahead of time without displaying that field to the user.
 ---
 
 # Invisible Field
 
-The Invisible Field allows you to define the value of a field on your form ahead of time without displaying that field to the user. This can be useful to help prepare information that will need to be associated with a form but doesn't necessarily need to be seen or filled out by the user. 
+The Invisible Field allows you to define the value of a field on your form ahead of time without displaying that field to the user. This can be useful to help prepare information that will need to be associated with a form but doesn't necessarily need to be seen or filled out by the user.
 
 The Invisible Field never shows the value of the field to the user on the front-end, not even in the code, so you can safely use this field for analytics, email addresses, or other data that you may not want to expose to the user but that you want associated with their form submission.
 

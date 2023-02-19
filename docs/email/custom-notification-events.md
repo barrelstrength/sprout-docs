@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: You can trigger Notification Emails via custom Notification Events in your own plugins.
 ---
 
@@ -31,7 +31,7 @@ See the base NotificationEvent Class for documentation on usage:
 
 Examples can be found in:
 
-- [sprout-email/src/events/notificationevents/](https://github.com/barrelstrength/craft-sprout-email/tree/develop/src/events/notificationevents) 
+- [sprout-email/src/events/notificationevents/](https://github.com/barrelstrength/craft-sprout-email/tree/develop/src/events/notificationevents)
 
 ## Register Event
 

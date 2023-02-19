@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Gender Field is a gender neutral field type for Craft CMS. Allow your users to choose a gender, decline the question, or provide a custom value.
 ---
 
@@ -13,7 +13,7 @@ The Gender Field is a gender neutral field type for Craft CMS. Allow your users 
 
 ## Templates
 
-You can access your Gender Field in your templates via it's field handle. 
+You can access your Gender Field in your templates via it's field handle.
 
 ``` twig
 {{ entry.genderField }}

@@ -1,12 +1,12 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Email adds a centralized way to manage transactional email in Craft along with the ability to log and resend Sent Email.
 ---
 
 # About Sprout Email
 
 Sprout Email adds a centralized way to manage transactional email in Craft along with the ability to log and resend Sent Email. Notification Emails support several Notification Event Integrations, customizable Email Templates, and the ability to send to dynamic Mailing Lists using Sprout Reports for list management.
-  
+
 - See [Sprout Sent Email](../sent-email/README.md) for documentation of the Sent Email features
 - See [Sprout Reports](../data-studio/mailing-lists.md) for documentation on creating custom Mailing Lists and Segments
 
@@ -26,7 +26,9 @@ Emails are where you define your content and presentation. In the lifecycle of a
 | Broadcast     | Broadcast     | Broadcast Tab |
 | Resend        | Broadcast     | Sent Email Tab |
 | Test          | Broadcast     | Test Modal |
+
 validation requ
+
 ### Package Element Types
 
 Packages are where you define where and how to send your email content.
@@ -39,19 +41,13 @@ Packages are where you define where and how to send your email content.
 
 Packages can be sent to one or more recipients.
 
-| Email Types   | To | CC | BCC | Lists | On The Fly |
-|:--            |:-- |:-- |:--  |:--         |:--    |
-| Transactional | √  | √  | √   | √ | – |
-| Broadcast     | √  | √  | √   | √ | – |
-| Message       | √  | √  | √   | √ |  – |
-| Resend        | √  | √  | √   | √ | – |
-| Test          | –  | –  | –   | – | √ |
-
-
-
-
-
-
+| Email Types | To | CC | BCC | Lists | On The Fly |
+|:-- |:-- |:-- |:-- |:-- |:-- |
+| Transactional | √ | √ | √ | √ | – |
+| Broadcast | √ | √ | √ | √ | – |
+| Message | √ | √ | √ | √ | – |
+| Resend | √ | √ | √ | √ | – |
+| Test | – | – | – | – | √ |
 
 ### Workflow
 

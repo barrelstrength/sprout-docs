@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Rules give you control over conditional logic in your Forms.
 ---
 
@@ -12,14 +12,14 @@ Rules give you control over conditional logic in your Forms.
 Field Rules allow you to hide or show fields based on certain criteria. Field Rules can be created on the Rules tab in a given Form's settings area. Field Rules consist of:
 
 - **Form Field** - The target field in which the condition will be applied.
-- **Condition** - The condition to use when checking a field 
-- **Value** -  The value to check for to determine if the condition is met.
+- **Condition** - The condition to use when checking a field
+- **Value** - The value to check for to determine if the condition is met.
 
 Field Rule conditions can contain multiple `AND` and/or `OR` conditions.
 
 ### Conditions
 
-Each Form Field can define which conditions it supports so conditions may vary from field to field. The combination of the Form Field and the Condition will determine the options you have for the Value field. 
+Each Form Field can define which conditions it supports so conditions may vary from field to field. The combination of the Form Field and the Condition will determine the options you have for the Value field.
 
 - `Is` and `IsNot`
 - `Contains` and `DoesNotContain`

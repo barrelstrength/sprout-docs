@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Many websites take steps to improve performance by caching web pages. However, be mindful when caching pages with Forms.
 ---
 
@@ -11,10 +11,9 @@ You can avoid this issue by dynamically loading the CSRF token or excluding the 
 
 ## Blitz Plugin
 
-If using Blitz for static caching, you will need to update your Form Templates to dynamically load the CSRF token. Blitz provides a tag for you to do this: 
+If using Blitz for static caching, you will need to update your Form Templates to dynamically load the CSRF token. Blitz provides a tag for you to do this:
 
 ``` twig
 {{ craft.blitz.csrfInput() }}
 ```
- 
  

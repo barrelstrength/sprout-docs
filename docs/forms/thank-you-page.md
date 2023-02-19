@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Success Message Form setting can be used to customize a Thank You message when using the default Form Templates.
 ---
 
@@ -15,7 +15,7 @@ Within your form, add a hidden field with the name `redirect`. This line of code
 {{ redirectInput("contact?message=thankyou") }}
 ```
 
-You can redirect a user to the same template as that you form or a completely different template. You can also pass that template a query string which you can use to conditionally display content in your thank you page template.  In the example above, we are passing the query string `?message=thankyou` and we can use that query string in a conditional statement like so:
+You can redirect a user to the same template as that you form or a completely different template. You can also pass that template a query string which you can use to conditionally display content in your thank you page template. In the example above, we are passing the query string `?message=thankyou` and we can use that query string in a conditional statement like so:
 
 ``` twig
 {% if craft.request.getParam('message') == 'thankyou' %} ... {% endif %}

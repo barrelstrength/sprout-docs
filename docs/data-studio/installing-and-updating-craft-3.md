@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Reports installation and update instructions for Craft 3.
 ---
 
@@ -13,10 +13,10 @@ Sprout Reports installation and update instructions for Craft 3.
 
 ## Installation via Plugin Store
 
-1. Find the plugin in the Plugin Store in your Craft Control Panel 
+1. Find the plugin in the Plugin Store in your Craft Control Panel
 2. Go to _Settings → Plugins_ and select “Install”
 
-## Installation via Composer 
+## Installation via Composer
 
 1. Open your terminal and go to your Craft project:<br>`cd /path/to/project`
 2. Then tell Composer to load the plugin:<br>`composer require barrelstrength/sprout-reports`
@@ -82,7 +82,7 @@ If you have the Users Data Source for Sprout Reports installed, when you update 
 
 ## Upgrading to Reports 2.0.0 - UNRELEASED
 
-Sprout Reports 2 is a major release the includes an update to the underlying architecture. The Sprout Reports user experience will remain familiar but several conventions have changed. Most notably, the core codebase for `barrelstrength/sprout-reports` has been moved to the `barrelstrength/sprout-base` package so any custom code, translations, or direct links to the Sprout Reports Control Panel will need to be updated to target the new naming conventions. Plugin-specific Control Panel settings have also moved to the Craft settings area. 
+Sprout Reports 2 is a major release the includes an update to the underlying architecture. The Sprout Reports user experience will remain familiar but several conventions have changed. Most notably, the core codebase for `barrelstrength/sprout-reports` has been moved to the `barrelstrength/sprout-base` package so any custom code, translations, or direct links to the Sprout Reports Control Panel will need to be updated to target the new naming conventions. Plugin-specific Control Panel settings have also moved to the Craft settings area.
 
 ### BREAKING CHANGE
 
@@ -113,7 +113,7 @@ Pro users will enjoy unlimited reports, visualizations, and mailing list integra
 
 ### Custom Data Source Updates
 
-Custom Data Sources have been updated to clean up how settings are handled. You should now access Report settings within your Custom Data Source using the `$report->getSettings()` method. The `$settings` attribute has been removed from the method signatures: 
+Custom Data Sources have been updated to clean up how settings are handled. You should now access Report settings within your Custom Data Source using the `$report->getSettings()` method. The `$settings` attribute has been removed from the method signatures:
 
 ``` php
 // OLD
@@ -126,6 +126,7 @@ public function getDefaultLabels(Report $report): array;
 ```
 
 ### NOTES>...
+
 Custom Reports in Sprout Reports will need to manually update dataSourceId
 We used to store it as sproutreports.users string but then we changed that to an int column
 So migrations will fail unless they get manually updated prior to the migration that converts

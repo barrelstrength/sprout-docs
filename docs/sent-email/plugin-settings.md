@@ -1,5 +1,5 @@
 ---
-date: 2020-04-27
+date: 2023-02-19
 description: Settings can be managed in the Control Panel or via a config file in config/sprout-sent-email.php
 ---
 

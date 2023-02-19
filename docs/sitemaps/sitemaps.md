@@ -1,5 +1,5 @@
 ---
-date: 2019-05-01
+date: 2023-02-19
 description: Generate sitemaps for all of your URL-enabled content for one or more languages.
 ---
 

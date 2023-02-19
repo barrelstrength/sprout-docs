@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Fields adds several common field types to Craft CMS with the goal of providing a comprehensive suite of common field types necessary for managing business websites in an international community.
 ---
 

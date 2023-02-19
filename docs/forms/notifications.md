@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Forms supports personalized Notification Emails.
 ---
 
@@ -11,9 +11,9 @@ Sprout Forms supports personalized Notification Emails. Notifications in Sprout 
 
 Sprout Forms provides a **Basic Notification** Email Template that loops through and displays all default Form Fields.
 
-Learn more about [Email Templates](../email/default-email-templates.md) and how to customize them.  
+Learn more about [Email Templates](../email/default-email-templates.md) and how to customize them.
 
-## Notification Events 
+## Notification Events
 
 Notifications in Sprout Forms are limited to Sprout Forms [Notification Events](./../email/custom-notification-events.md) which currently include:
 

@@ -1,5 +1,5 @@
 ---
-date: 2019-04-25
+date: 2023-02-19
 description: Redirects allow you to forward users and search engines to the appropriate content on your site.
 ---
 
@@ -30,7 +30,7 @@ Each Redirect has 4 settings, tracks the count of how many times it was used, an
 
 ## Bulk Actions
 
-Redirects can be updated via bulk actions by selecting the checkboxes next to each Redirect on the Redirect listing page. Currently supported bulk actions include: 
+Redirects can be updated via bulk actions by selecting the checkboxes next to each Redirect on the Redirect listing page. Currently supported bulk actions include:
 
 | Bulk Action      | Description |
 |:---------------- |:----------- |
@@ -57,7 +57,7 @@ Redirects can be re-ordered via drag and drop when ordered by the `Structure` op
 
 Redirects are processed from top to bottom as they are seen in the Structure view. If two or more redirects match a URL, the highest on the list will be the one that takes priority in how a particular URL is redirected.
 
-Redirects are not processed until Craft tries all other Routing options. When a page is about to 404, Sprout SEO will then check to see if a URL matches a Redirect rule and route things accordingly. This takes place between step 5 and 6 of Craft's [Routing](https://craftcms.com/docs/routing) rules.  Waiting until the last moment allows you to optimize your website experience and page speed for the majority of your users while still helping redirect any people attempting to access old URLs to the right place.
+Redirects are not processed until Craft tries all other Routing options. When a page is about to 404, Sprout SEO will then check to see if a URL matches a Redirect rule and route things accordingly. This takes place between step 5 and 6 of Craft's [Routing](https://craftcms.com/docs/routing) rules. Waiting until the last moment allows you to optimize your website experience and page speed for the majority of your users while still helping redirect any people attempting to access old URLs to the right place.
 
 ## 404 Redirects
 
@@ -65,7 +65,7 @@ To monitor and capture 404 Redirects, you will need to enable them in your Sprou
 
 ![Log 404 Redirects](../images/seo/404-redirect-settings.png)
 
-404 Redirects will get created with a disabled status and a default redirect location to your home page. 
+404 Redirects will get created with a disabled status and a default redirect location to your home page.
 
 404 Redirects will need to be reviewed and manually updated to choose a redirect method (301 or 302), a redirect location, and be enabled.
 

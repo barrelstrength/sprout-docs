@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Rendering options allow you to customize form and field output without having to override the templates.
 ---
 
@@ -15,7 +15,7 @@ Rendering options allow you to customize form and field output without having to
 {{ sprout.forms.displayForm("formHandle", options) }}
 ```
 
-Rendering Options may be handy to solve a specific situation, however, can become harder to maintain or reuse across multiple forms. 
+Rendering Options may be handy to solve a specific situation, however, can become harder to maintain or reuse across multiple forms.
 
 ::: tip Note
 For 100% control over your Form Templates, see [Template Overrides](./template-overrides.md).
@@ -46,7 +46,7 @@ The following options will modify the `<input>` field and the wrapper `<div>` an
 | `errorClass` | `string` | `errors` | A space separated list of classes to apply to the field container when errors are found. Optionally, you can pass an array with the keys `container` or `input` to target the field container and field input independently. See example below. |
 | `data` | `{}` | | An object (associative array) of data attributes to set on the form or input tag
 
-::: tip Custom Fields 
+::: tip Custom Fields
 Custom Form Fields will need to add support for these options on their own. If you are using Rendering Options with a custom Form Field and they are not behaving as expected, you may need to reach out to the respective plugin developer.
 :::
 
@@ -197,7 +197,6 @@ The `displayForm()` accepts rendering options for the form tag and input fields.
 </form>
 ```
 
-
-::: warning Field Prefixes 
+::: warning Field Prefixes
 The ID you specific will be prefixed with `field-`. This prefix is added by the `{% namespace %}` tag in the Form Templates `field.twig` file and also adds the `fields` namespace around the `fieldHandle` on the Form Field input tags (i.e. `name="fields[fieldHandle]"`).
 :::

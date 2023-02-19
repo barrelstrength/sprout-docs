@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout provides dedicated support for license holders and free training.
 ---
 
@@ -9,7 +9,7 @@ Sprout provides dedicated support for license holders and [free training](./trai
 
 ## Bugs & Feature Requests
 
-Running into an issue while upgrading? Read the [Update Guides](./updates.md) for more information on the latest updates and releases.
+Running into an issue while upgrading? Read the [Update Guides](../configuration/updates.md) for more information on the latest updates and releases.
 
 | Plugin            | Bugs                                       | Feature Requests     | Uncategorized    |
 |:----------------- |:-------------------                        |:-------------------- |:------------------- |
@@ -21,31 +21,51 @@ Running into an issue while upgrading? Read the [Update Guides](./updates.md) fo
 | Sprout Reports    | Craft [v4][#Reports4B] \| [v3][#Reports3B]    | [View All][#ReportsFR]  | [View All][#ReportsNA] |
 
 [#Forms3B]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+
 [#Seo3B]: https://github.com/barrelstrength/craft-sprout-seo/issues?&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+
 [#Redirects3B]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+
 [#Sitemaps3B]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+
 [#Email3B]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+
 [#Reports3B]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
 
 [#Forms4B]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+
 [#Seo4B]: https://github.com/barrelstrength/craft-sprout-seo/issues?&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+
 [#Redirects4B]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+
 [#Sitemaps4B]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+
 [#Email4B]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+
 [#Reports4B]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
 
 [#FormsFR]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+
 [#SeoFR]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+
 [#RedirectsFR]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+
 [#SitemapsFR]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+
 [#EmailFR]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+
 [#ReportsFR]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
 
 [#FormsNA]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+
 [#SeoNA]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+
 [#RedirectsNA]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+
 [#SitemapsNA]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+
 [#EmailNA]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+
 [#ReportsNA]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
 
 ::: tip Custom Projects & Support
@@ -65,7 +85,7 @@ Clear cache in the Craft settings. Clear cache in the browser. Try a different b
 ### Upgrade to the latest software
 
 Make sure you are using the latest version of Craft and all plugins on your website.
- 
+
 ### Simplify the code you are working with to as simple as it gets
 
 If you're trying to get code to work in a complex template, copy the code you are having trouble with and see if you can get it working in a blank template. Simplify the code in the area causing trouble to just output plain text, and then slowly add back more complexity variable by variable.

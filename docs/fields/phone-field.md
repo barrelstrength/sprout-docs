@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Phone Field Type helps you manage valid international phone numbers with a custom Phone Field.
 ---
 
@@ -9,7 +9,7 @@ The Phone Field Type helps you manage valid international phone numbers with a c
 
 ![Sprout Phone Field](./../images/fields/sprout-phone-field.png)
 
-When a phone number is recognized, a _Phone_ icon appears at the right hand side of the phone field.  If you click on the _Phone_ link, your computer will open your primary phone program to initiate a call.
+When a phone number is recognized, a _Phone_ icon appears at the right hand side of the phone field. If you click on the _Phone_ link, your computer will open your primary phone program to initiate a call.
 
 The Phone Field helps parse, format, and validate phone numbers for all countries and regions of the world.
 

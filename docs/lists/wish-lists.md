@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Wish Lists can be managed by Users and, in many cases, the User ID will be used as the Element ID that the List depends on.
 ---
 
@@ -7,7 +7,7 @@ description: Wish Lists can be managed by Users and, in many cases, the User ID 
 
 ## Create a List
 
-Wish Lists can be managed by Users and, in many cases, the User ID will be used as the Element ID that the List depends on. 
+Wish Lists can be managed by Users and, in many cases, the User ID will be used as the Element ID that the List depends on.
 
 ``` twig
 <form method="post" accept-charset="utf-8">
@@ -24,7 +24,7 @@ Wish Lists can be managed by Users and, in many cases, the User ID will be used 
 
 ## Subscribe and Unsubscribe
 
-Below is a full example of how give a user can Add or Remove items from a Wish List. Wish Lists h 
+Below is a full example of how give a user can Add or Remove items from a Wish List. Wish Lists h
 
 ``` twig
 {# Get all lists of a certain type that belong to a user #}
@@ -101,7 +101,7 @@ This means that Lists that target two different `elementId`s can use the same `l
 
 ## Subscriber Info
 
-When you add a Subscriber to a List you can optionally define their First and Last Name as well.  If you wish to sync the First and Last Name with a Craft User profile, you can enable `User Sync` in the Settings. By default Subscriber info will be stored only in the Subscriber Element in Sprout Lists.
+When you add a Subscriber to a List you can optionally define their First and Last Name as well. If you wish to sync the First and Last Name with a Craft User profile, you can enable `User Sync` in the Settings. By default Subscriber info will be stored only in the Subscriber Element in Sprout Lists.
 
 ``` twig
 <form method="post" accept-charset="utf-8">

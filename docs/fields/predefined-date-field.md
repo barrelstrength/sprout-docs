@@ -1,11 +1,11 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Predefined Date Field allows you parse Twig and define the value of a date ahead of time.
 ---
 
 # Predefined Date Field
 
-The Predefined Date Field allows you parse Twig and define the value of a date ahead of time. This can be useful to help optimize queries or prepare data for a specific use case before it is needed. 
+The Predefined Date Field allows you parse Twig and define the value of a date ahead of time. This can be useful to help optimize queries or prepare data for a specific use case before it is needed.
 
 While similar to the [Predefined Field](./predefined-field.md), the Predefined Date Field stores it's value as a Date data type which can be useful when it is necessary to query results by date.
 
@@ -31,5 +31,5 @@ See [Predefined Field](./predefined-field.md) for general usage.
 See [Predefined Field](./predefined-field.md) for usage.
 
 ::: warning
-If you update the Field Format you will need to resave the Field Layout in your Craft Settings to ensure all Entries get re-saved and recalculate the value of your Predefined Field. 
+If you update the Field Format you will need to resave the Field Layout in your Craft Settings to ensure all Entries get re-saved and recalculate the value of your Predefined Field.
 :::

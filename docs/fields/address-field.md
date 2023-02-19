@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Address Field is an international field type which let's you capture and display address data using a Craft-style Address modal.
 ---
 
@@ -7,13 +7,13 @@ description: The Address Field is an international field type which let's you ca
 
 The Address Field is an international field type which let's you capture and display address data using a Craft-style Address modal. The Address Field supports addresses for 200 countries from Google's Address Data Service.
 
-![Address Field Modal](./../images/fields/sprout-address-modal.png) 
+![Address Field Modal](./../images/fields/sprout-address-modal.png)
 
 The Address Field uses Craft's Relations field and modal edit UI to stay consistent with the Craft User experience, simplifies often-complex multi-column address layouts to a single column, and works with Craft's Matrix field.
 
 ## Templates
 
-You can access your Address Field in your templates via it's field handle. 
+You can access your Address Field in your templates via it's field handle.
 
 ``` twig
 {{ entry.addressField.countryCode }}

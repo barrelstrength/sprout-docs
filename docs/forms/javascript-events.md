@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Sprout Forms AJAX Submission process can be extended using the following javascript events.
 ---
 
@@ -11,7 +11,7 @@ The following examples assume you have defined a `form` variable in your javascr
 
 ## beforeSproutFormsSubmit
 
-Gives third-party scripts a chance to take actions before the form is submitted. 
+Gives third-party scripts a chance to take actions before the form is submitted.
 
 ``` javascript
 form.addEventListener('beforeSproutFormsSubmit', function(event) {
@@ -36,7 +36,7 @@ Promises added to the `event.detail.promises` array should:
 ## onSproutFormsSubmit
 
 Gives third-party scripts a chance to take over the submit behavior.
-   
+
 ``` javascript
 form.addEventListener('onSproutFormsSubmit', function(event) {
 
@@ -54,7 +54,7 @@ form.addEventListener('onSproutFormsSubmit', function(event) {
 
 ## afterSproutFormsSubmit
 
-Gives third-party scripts a chance to do something after the submission is complete. 
+Gives third-party scripts a chance to do something after the submission is complete.
 
 ``` javascript
 form.addEventListener('afterSproutFormsSubmit', function(event) {
@@ -67,7 +67,7 @@ form.addEventListener('afterSproutFormsSubmit', function(event) {
 
 ## onSproutFormsSubmitCancelled
 
-Gives third-party scripts a chance to do something if the submission was cancelled. 
+Gives third-party scripts a chance to do something if the submission was cancelled.
 
 ``` javascript
 form.addEventListener('onSproutFormsSubmitCancelled', function(event) {

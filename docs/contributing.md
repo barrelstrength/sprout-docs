@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The following is a set of guidelines for contributing to Sprout Plugins and its first party integrations, which are hosted in the Barrel Strength organization on GitHub.
 ---
 
@@ -20,7 +20,7 @@ If you do find a similar issue, upvote it by adding a 👍 reaction. Only leave 
 Issues are labeled with the following tags:
 
 - `bug` - issue does not work as expected
-- `c2` - issue relates to a Craft 2 version of Sprout
+- `c4` - issue relates to a Craft 4 version of Sprout
 - `c3` - issue relates to a Craft 3 version of Sprout
 - `cX` - issue will be considered for a future version of Craft
 - `duplicate` - issue is addressed by another issue
@@ -29,7 +29,7 @@ Issues are labeled with the following tags:
 - `invalid` - issue appears to be a misunderstanding
 - `need more info` - issue requires additional information before it gets a better label
 - `not planned` - issue has been reviewed and will not be included in Sprout
-- `question` - issue needs clarification 
+- `question` - issue needs clarification
 - `waiting on` - issue is waiting on a response before it can move forward
 
 If no one has filed the issue yet, submit a new one. Please include a clear description of the issue, and as much relevant information as possible, including a code sample demonstrating the the issue.

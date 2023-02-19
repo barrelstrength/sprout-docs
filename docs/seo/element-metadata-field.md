@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Metadata field gives you fine-grained control over how Entry-specific metadata is recognized and managed for your content.
 ---
 
@@ -11,18 +11,18 @@ The Metadata field gives you fine-grained control over how Entry-specific metada
 
 The Metadata Field gives you several ways to setup your metadata. Keep it simple, and map all of your metadata to existing fields or choose to have fine grained control over every setting.
 
-The default Metadata fields include: 
+The default Metadata fields include:
 
 - Meta Title
 - Meta Description
-- Meta Keywords       
+- Meta Keywords
 - Meta Image
 - Main Entity
 - Canonical URL
 - Meta Details: Search
 - Meta Details: Open Graph
-- Meta Details: Twitter       
-- Meta Details: Geo    
+- Meta Details: Twitter
+- Meta Details: Geo
 - Meta Details: Robots
 
 ### Existing Fields
@@ -46,7 +46,7 @@ When the **Add Custom Format** option is selected, you can reference any fields 
 ```
 
 When using the 'Add Custom Format' setting for an image, your value should be the id of an image such as:
- 
+
 ``` twig
 {% if object['assetFieldHandle'] %}{{ object.assetFieldHandle.first().id }}{% endif %}
 ```

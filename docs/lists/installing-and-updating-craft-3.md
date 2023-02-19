@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Lists installation and update instructions for Craft 3.
 ---
 
@@ -13,10 +13,10 @@ Sprout Lists installation and update instructions for Craft 3.
 
 ## Installation via Plugin Store
 
-1. Find the plugin in the Plugin Store in your Craft Control Panel 
+1. Find the plugin in the Plugin Store in your Craft Control Panel
 2. Go to _Settings → Plugins_ and select “Install”
 
-## Installation via Composer 
+## Installation via Composer
 
 1. Open your terminal and go to your Craft project:<br> `cd /path/to/project`
 2. Then tell Composer to load the plugin:<br> `composer require barrelstrength/sprout-lists`
@@ -129,7 +129,7 @@ Old:
 
 ## Upgrading to Lists v4.44.444 - UNRELEASED
 
-Sprout Lists 4 is a major release the includes an update to the underlying architecture. The Sprout Lists user experience will remain familiar but several conventions have changed. Most notably, the core codebase for `barrelstrength/sprout-lists` has been moved to the `barrelstrength/sprout-base` package so any custom code, translations, or direct links to the Sprout Lists Control Panel will need to be updated to target the new naming conventions. Plugin-specific Control Panel settings have also moved to the Craft settings area. 
+Sprout Lists 4 is a major release the includes an update to the underlying architecture. The Sprout Lists user experience will remain familiar but several conventions have changed. Most notably, the core codebase for `barrelstrength/sprout-lists` has been moved to the `barrelstrength/sprout-base` package so any custom code, translations, or direct links to the Sprout Lists Control Panel will need to be updated to target the new naming conventions. Plugin-specific Control Panel settings have also moved to the Craft settings area.
 
 | Feature | Old Name | New Name |
 |:------- |:------   |:------   |

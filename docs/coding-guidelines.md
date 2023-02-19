@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: A central principle of the Sprout Plugin Suite is to create an experience – for both users and developers – that looks and feels like the native experience with Craft CMS.
 ---
 
@@ -63,7 +63,7 @@ The name of a plugin will be used in several different contexts. We use the foll
 
 ## Folder Structure
 
-When possible, we follow conventions in Craft's folder architecture in our plugins. 
+When possible, we follow conventions in Craft's folder architecture in our plugins.
 
 ### Root directory and key src files
 
@@ -86,7 +86,7 @@ References within `README.md` and any other general information files should be 
 
 Each module has it's own `CHANGELOG-[MODULE].md` file. These are the canonical sources for documenting changes and this data will be copied to a plugin's `CHANGELOG.md` file for each module used by a plugin.
 
-Similarly, we aim to keep the `composer.json` file as simple as possible. Don't add `schemaVersion`, `hasCpSection`, or `hasCpSettings` to this file. They should go in the primary plugin module class to more easily toggle the settings without running into issues with cached values in Craft's `plugins.php` file. 
+Similarly, we aim to keep the `composer.json` file as simple as possible. Don't add `schemaVersion`, `hasCpSection`, or `hasCpSettings` to this file. They should go in the primary plugin module class to more easily toggle the settings without running into issues with cached values in Craft's `plugins.php` file.
 
 We rename the primary module class `Plugin.php` to use the name of the plugin (i.e. `SproutForms.php`). This update requires that we set the `composer.json` _extra->class_ setting to define the Plugin.php as a file with the name of the plugin itself.
 
@@ -99,7 +99,7 @@ Four npm scripts are available during development:
 - **debug** - Watches for changes in resources and builds dev `dist/` files
 - **dev** - Builds dev `dist/` files once
 
-The `dist/` files built for production and dev have the same filenames, so it is a convention that we only commit production files to the repository. The `debug` and `dev` commands can be used when debugging.  
+The `dist/` files built for production and dev have the same filenames, so it is a convention that we only commit production files to the repository. The `debug` and `dev` commands can be used when debugging.
 
 ### Resources and templating
 
@@ -116,7 +116,7 @@ The `dist/` files built for production and dev have the same filenames, so it is
                 └── [CustomVariable.php]
 ```
 
-All asset bundles are managed in the `src/web/assets` folder and all things Twig (variables, filters, nodes, etc.) are managed in the `src/web/twig` folder. 
+All asset bundles are managed in the `src/web/assets` folder and all things Twig (variables, filters, nodes, etc.) are managed in the `src/web/twig` folder.
 
 ### Components and Integrations
 
@@ -208,7 +208,6 @@ Community templates should link to our pages in our documentation with more comp
 - Fixed...
 ```
 
-
 ## Common Modules
 
 Many Sprout plugins share functionality and this code is managed in shared Yii Modules.
@@ -231,10 +230,10 @@ Sprout plugins have a custom settings API to manage settings pages. This assists
 Additionally, Sprout Plugins that use the API should disable the default Craft settings behavior so their icon does not appear in the Craft settings listing and instead register their `SproutSettings` class to display in the 'Sprout Settings' section of the Settings are.
 
 There are two types of settings
+
 - Simple settings - They use our standard shares settings pages, provide simple fields to be saved as settings, save those settings to the `sprout-settings` key in the Project Config, and allow the overriding of those settings via the `config/sprout-settings.php` file.
 
-As Sprout plugins share several core modules, we use a custom settings API  
-
+As Sprout plugins share several core modules, we use a custom settings API
 
 Extend the base `barrelstrength/sproutbase/base/SproutSettings` class
 
@@ -328,15 +327,14 @@ Due to our application structure using shared modules, in some cases migrations 
 - Make sure every migration can be run twice, without throwing errors if it has already been run once.
 - All migrations that affect a plugin with a shared module should be placed in the base module and instances of those migrations should be created in each respective plugin where they are needed.
 
-	- Docs: 'Call to Craft or Sprout service layer' inspection
+    - Docs: 'Call to Craft or Sprout service layer' inspection
     - Database Audit Utility notes...
-
 
 ### Naming migrations
 
 #### Order
 
-Migration naming will use the date in the first segment and the second segment will just represent the order that they should be run in for a particular release. The following migrations are all be part of a release on the same day, and are ordered 1, 2, 3 in the order they should run: 
+Migration naming will use the date in the first segment and the second segment will just represent the order that they should be run in for a particular release. The following migrations are all be part of a release on the same day, and are ordered 1, 2, 3 in the order they should run:
 
 ```
 m190101_000001_migration_description.php
@@ -359,7 +357,7 @@ m190101_000001_migration_description_sproutforms.php  // Sprout Forms
 To test one or more plugins and modules under development on real websites before releases, changes can be pushed to a development branch and pulled into any appropriate project for testing.
 
 In this example, we grab the latest on the `develop` branch for the Sprout SEO plugin and the Sprout Base Redirects module. To ensure composer things it's working with the release numbers we're using in our `composer.json` we can tell composer what version number to use for the code we are testing:
- 
+
 ```
 composer require barrelstrength/sprout-seo:"dev-develop as 4.2.0" barrelstrength/sprout-base-redirects:"dev-develop as 1.1.1"
 ```

@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Form Fields enable you to add new Fields to the Form Builder and manage its field settings and front-end output.
 ---
 
@@ -54,6 +54,7 @@ The _field_ class naming convention we recommend is: `{PluginHandle}{FieldType}{
 Like a back-end _field type_, your front end _field_ gets to decide what **html** to render to capture user input.
 
 #### Signature
+
 ```php
 public function getInputHtml($field, $value, $settings, array $renderingOptions = null)
 ```
@@ -68,6 +69,7 @@ $renderingOptions > Options available to displayForm(), displayTab(), displayFie
 In addition to the arguments, you should make sure to return a `\Twig_Markup` object from this method so that your HTML is not escaped.
 
 #### beginRendering()
+
 This method should be called just before your render your front end field template inside of `getInputHtml()`
 
 This is due to how we're allowing the user to override `form`, `tab`, and `field` templates for style customization.
@@ -75,11 +77,13 @@ This is due to how we're allowing the user to override `form`, `tab`, and `field
 Not calling `beginRendering()` could cause your template to not be found.
 
 #### endRendering()
+
 This method should be called just after you finish rendering your front end field template.
 
 Not calling `endRendering()` could cause your template or Sprout Forms' own templates to not be found.
 
 #### getTemplatesPath()
+
 Because Sprout Forms allows the user to customize/override the default templates (`form.html`, `tab.html`, `field.html`, `errors.html`), we need to switch the template path a few times during rendering of all fields.
 
 This method is your chance to make sure your templates are found when your field is rendered.

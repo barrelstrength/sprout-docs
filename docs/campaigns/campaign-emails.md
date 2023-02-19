@@ -1,6 +1,6 @@
 ---
-date: 2018-06-25
-description: 
+date: 2023-02-19
+description:
 ---
 
 # Campaign Emails
@@ -24,7 +24,7 @@ The selected Campaign Type will determine which Email Service is used when sendi
 
 ### Lists
 
-If a Mailer supports Lists, a dropdown with all available email lists will appear in the sidebar settings when creating a new Campaign Email.  
+If a Mailer supports Lists, a dropdown with all available email lists will appear in the sidebar settings when creating a new Campaign Email.
 
 ## Email Templates
 
@@ -36,7 +36,7 @@ Each email service provider handles tests differently. The _Send Test_ behavior 
 
 ## Templating
 
-To output your Campaign emails in your templates you can use the `sprout.email.entries` tag.  Here is a basic overview of what is available:
+To output your Campaign emails in your templates you can use the `sprout.email.entries` tag. Here is a basic overview of what is available:
 
 ```twig
 {% set id = sprout.email.entries.id(1).first() %}

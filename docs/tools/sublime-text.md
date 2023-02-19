@@ -1,6 +1,6 @@
 ---
-date: 2018-06-25
-description: Tools to help with Craft templating and plugin development workflows in Sublime Text. 
+date: 2023-02-19
+description: Tools to help with Craft templating and plugin development workflows in Sublime Text.
 ---
 
 # Sublime Text Resources

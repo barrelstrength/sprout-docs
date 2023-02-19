@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: The Name Field gives you a way to capture your users name with a single input field or manage names in multiple name fields including Prefix, First, Middle, Last, and Suffix.
 ---
 
@@ -11,9 +11,9 @@ The Name Field gives you a way to capture your users name with a single input fi
 
 The Name Field defaults to display a single, international-friendly, field. While only a single field displays, the Name field captures the data from this single field into two fields behind the scenes.
 
-![Name Field - Short Version](./../images/fields/sprout-name-single.png) 
+![Name Field - Short Version](./../images/fields/sprout-name-single.png)
 
-Everything before the first space is considered the _First Name_ and everything that comes after the first space is considered the _Last Name_. 
+Everything before the first space is considered the _First Name_ and everything that comes after the first space is considered the _Last Name_.
 
 ## Multiple Fields
 

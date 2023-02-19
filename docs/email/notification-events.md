@@ -1,5 +1,5 @@
 ---
-date: 2018-06-25
+date: 2023-02-19
 description: Sprout Email supports several common Notification Events. For more specific scenarios, developers can add support for Custom Notification Events.
 ---
 
@@ -35,7 +35,6 @@ If you've got lots of logic, you can set the Send Rule to a Twig Template and us
 {% include '_email/send-rule-logic' %}
 ```
 
-
 ##
 
 ### Craft
@@ -63,7 +62,6 @@ If you've got lots of logic, you can set the Send Rule to a Twig Template and us
 | Event                              |  Event Object |
 |:---------------------------------- |:---------------- |
 | When a Sprout Form Entry is submitted      | Form Entry |
-
 
 ::: tip
 If you need a Custom Notification Event, we are available for hire.

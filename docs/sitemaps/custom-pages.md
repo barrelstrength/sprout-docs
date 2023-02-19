@@ -1,5 +1,5 @@
 ---
-date: 2019-05-01
+date: 2023-02-19
 description: Custom Sections allow you to add arbitrary page URLs to your XML Sitemap and manage metadata for pages that may not be otherwise supported using the URL-Enabled Sections or Element Metadata field.
 ---
 
