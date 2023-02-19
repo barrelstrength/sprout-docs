@@ -15,9 +15,11 @@ A Data Source defines a set of data that can be queried by a Data Set and which 
 
 Sprout Data Studio provides a few Data Sources out of the box:
 
-- **Database Query** - Create data sets using custom database queries
+- **Custom Query** - Create data sets using custom database queries
 - **Twig Template Query** - Create data sets using custom queries in a Twig Template
 - **Users** - Create data sets with User and User Group data
+- **Order History** - Create data sets with Craft Commerce Order History data
+- **Product Revenue** - Create data sets with Craft Commerce Product Revenue data
 
 ## Data Sets
 

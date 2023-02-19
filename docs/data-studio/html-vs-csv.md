@@ -1,6 +1,6 @@
 ---
 date: 2018-06-25
-description: Reports exist in two forms. They display in web browser when viewed in the Control Panel and as CSV files when exported. 
+description: Reports exist in two forms. They display in web browser when viewed in the Control Panel and as CSV files when exported.
 ---
 
 # HTML vs CSV
@@ -12,14 +12,14 @@ Reports exist in two forms. They display in web browser when viewed in the Contr
 In Twig Template Reports the `isExport` variable is available in your results template.
 
 ``` twig{4}
-{% do sprout.reports.addHeaderRow(['Row']) %}
+{% do sprout.twigDataSet.addHeaderRow(['Row']) %}
 
-{% do sprout.reports.addRow([
+{% do sprout.twigDataSet.addRow([
     isExport ? 'Not Link' : '<a href="">Link</a>'
 ]) %}
 ``` 
 
-## Custom Data Source Example 
+## Custom Data Source Example
 
 When building a custom data source, the context is defined as a property on the DataSource class. The 'isExport' property is set to `false` by default and gets set to `true` when running the export action.
 

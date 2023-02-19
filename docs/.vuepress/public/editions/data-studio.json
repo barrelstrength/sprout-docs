@@ -10,29 +10,27 @@
             },
             {
                 "name": "Custom Query data sets",
-                "info": "Lite users can create unlimited Custom Query Data Sets",
+                "info": "Custom queries can target any tables in the database.",
                 "lite": true,
                 "pro": true
             },
             {
-                "name": "Twig Template data sets",
-                "info": "",
-                "lite": false,
+                "name": "Twig Template Query data sets",
+                "info": "Twig queries can query any data available in your Twig templates.",
+                "lite": true,
                 "pro": true
             },
             {
                 "name": "User data sets",
                 "info": "",
-                "lite": false,
-                "pro": true,
-                "hide": true
+                "lite": true,
+                "pro": true
             },
             {
                 "name": "Craft Commerce data sets",
                 "info": "",
-                "lite": false,
-                "pro": true,
-                "hide": true
+                "lite": true,
+                "pro": true
             },
             {
                 "name": "Data visualizations",
@@ -47,15 +45,9 @@
         "category": "Custom Workflows",
         "items": [
             {
-                "name": "Export data sets",
-                "info": "",
+                "name": "Custom data set field layout",
+                "info": "Add custom fields to your data sets to manage grouping via custom sources or customize output.",
                 "lite": true,
-                "pro": true
-            },
-            {
-                "name": "Customize data set settings",
-                "info": "Define exactly the settings you need to adjust data set queries and segment query results",
-                "lite": false,
                 "pro": true
             },
             {
@@ -74,6 +66,12 @@
                 "name": "Organize data sets in groups",
                 "info": "",
                 "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Export data sets",
+                "info": "",
+                "lite": false,
                 "pro": true
             }
         ]

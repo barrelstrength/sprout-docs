@@ -11,7 +11,7 @@ Please see the Sprout Reports codebase for examples on how to create your own da
 
 Explore the default data sources in the plugin folder:
 
--  `vendor/barrelstrength/sprout-reports/src/datasources`
+- `vendor/barrelstrength/sprout/src/datastudio/components/datasources`
 
 To create a Data Source you will need to:
 

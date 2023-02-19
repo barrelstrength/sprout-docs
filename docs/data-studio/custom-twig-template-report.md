@@ -1,6 +1,6 @@
 ---
 date: 2018-06-25
-description: The Twig Template Data Source allows you to create reports in the Craft Control Panel using Twig Templates in your craft/templates folder. 
+description: The Twig Template Data Source allows you to create reports in the Craft Control Panel using Twig Templates in your craft/templates folder.
 ---
 
 # Twig Template Query
@@ -38,9 +38,9 @@ The Twig Template Report has three helper tags to use when building reports:
 
 | Tag | Description |
 |:---------|:--------|
-| **sprout.reports.addHeaderRow()** | Define the columns in the first row of your report |
-| **sprout.reports.addRow()** | Add a single row of data to your report |
-| **sprout.reports.addRows()** | Add an array of multiple rows of data to your report |
+| **sprout.twigDataSet.addHeaderRow()** | Define the columns in the first row of your report |
+| **sprout.twigDataSet.addRow()** | Add a single row of data to your report |
+| **sprout.twigDataSet.addRows()** | Add an array of multiple rows of data to your report |
 
 You can use `addHeaderRow` anywhere in your template to define the first row in your report that will be used as the column headers. The `addRow` and `addRows` actions add rows to your report in the order that they are used in your template.
 
@@ -57,16 +57,16 @@ Here is a simple, hard-coded example of each tag in use for a two-column report:
 
 ``` twig
 {# addHeaderRow accepts a single array with a comma-separated list of values #}
-{% do sprout.reports.addHeaderRow(['Region', 'Trip Name']) %}
+{% do sprout.twigDataSet.addHeaderRow(['Region', 'Trip Name']) %}
 
 {# addRow, also accepts a single array with a comma-separated list of values. The array is defined by the opening and closing square brackets. #}
-{% do sprout.reports.addRow([
+{% do sprout.twigDataSet.addRow([
   'Europe', 
   'Camino de Santiago'
 ]) %}
 
 {# addRows, accepts an array of arrays, where each array includes a comma-separated list of values. Note that there are two levels of opening and closing square brackets. #}
-{% do sprout.reports.addRows([
+{% do sprout.twigDataSet.addRows([
     ['North America', 'John Muir Trail'],
     ['Asia', 'Langtang Trek']
 ]) %}
@@ -74,7 +74,7 @@ Here is a simple, hard-coded example of each tag in use for a two-column report:
 
 ## Settings Template
 
-If you want to give your user control over some Settings when they generate a Report, you can do so by defining an Settings Template. 
+If you want to give your user control over some Settings when they generate a Report, you can do so by defining an Settings Template.
 
 ::: tip
 Use the Form Macros supported by the Craft CP to keep consistent with the Craft UI. Sprout Reports will import the Craft CP Form Macros. Your Settings Template can look like this where the imported `forms` variable includes all Craft form macros defined in `craft/app/templates/_includes/forms.html`. :
@@ -144,18 +144,18 @@ When a user runs a report, all Settings will be passed to the Results Template a
 
 ### reports/reportname/results.html
 
-In this example we use our settings to retrieve a CategoryModel and then use that CategoryModel to retrieve all Trips that relate to that Category. We limit the results by the number provided by the user in the Limit setting. 
+In this example we use our settings to retrieve a CategoryModel and then use that CategoryModel to retrieve all Trips that relate to that Category. We limit the results by the number provided by the user in the Limit setting.
 
 ``` twig
 {% set region = craft.categories.group(settings.region) %}
 {% set trips = craft.entries.section('trips').relatedTo(region).limit(settings.limit) %}
 
 {# Create a Header Row #}
-{% do sprout.reports.addHeaderRow(['Region', 'Trip Name']) %}
+{% do sprout.twigDataSet.addHeaderRow(['Region', 'Trip Name']) %}
 
 {# Loop through our trips and output the Region and Trip Name for each result #}
 {% for trip in trips %}
-    {% do sprout.reports.addRow([
+    {% do sprout.twigDataSet.addRow([
         trip.relatedCategory.first().title, 
         trip.title
     ]) %}

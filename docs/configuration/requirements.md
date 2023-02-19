@@ -5,9 +5,12 @@ description: Requirements for using the Sprout Plugins.
 
 # Requirements
 
-- Craft CMS v4.0.0 or a more recent version of Craft
-- Sprout v4.44.444 (all Sprout Marketing Suite plugins added Craft 4 support at version 4.44.444)
-- All [requirements for running Craft 4](https://craftcms.com/docs/4.x/requirements.html)
+- Craft CMS `4.0.0` and all [requirements for running Craft 4](https://craftcms.com/docs/4.x/requirements.html)
+- Sprout Framework `4.44.444` (included with all Sprout plugins)
+
+::: tip 4.44.444
+To align Sprout plugins with Craft major releases, all Sprout Marketing Suite plugins added Craft 4 support at version `4.44.444` and will add Craft 5 support at `5.0.0`
+:::
 
 ## Installation via Plugin Store
 
@@ -17,13 +20,13 @@ description: Requirements for using the Sprout Plugins.
 ## Installation via Composer
 
 1. Open your terminal and go to your Craft project.
-   
+
 ```
 cd /path/to/project
 ```
 
 2. Run Composer to retrieve the plugin
-   
+
 ```
 composer require barrelstrength/sprout-forms
 ```

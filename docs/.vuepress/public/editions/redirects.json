@@ -3,13 +3,19 @@
         "category": "Redirect Manager",
         "items": [
             {
-                "name": "301 & 302 Redirects",
-                "info": "Lite users can manage up to three redirects.",
+                "name": "Manage Unlimited Redirects",
+                "info": "",
                 "lite": true,
                 "pro": true
             },
             {
-                "name": "Brand URLs & Short Links",
+                "name": "301 & 302 Redirects",
+                "info": "Manage permanent and temporary redirects",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Short Links (Brand / Vanity URLs)",
                 "info": "Use Sprout Redirects along with Craft multi-site to manage a brand URL, vanity URL, or short links for a custom domain.",
                 "lite": true,
                 "pro": true
@@ -21,32 +27,44 @@
                 "pro": true
             },
             {
+                "name": "Custom Match Strategy",
+                "info": "Fine-tune how URLs are defined and how redirects are matched with query strings",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "URL Pattern Matching",
+                "info": "Match redirects using an exact match strategy or using a regular expression pattern",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Reorder Redirects",
+                "info": "Update the priority of where a Redirect gets processed",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Redirect Statistics",
+                "info": "Track and organize Redirects by hits and last used dates to find the ones that should receive attention first",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Sensitive Data",
+                "info": "Customize how sensitive data like Remote IP addresses are tracked to comply with regulatory obligations.",
+                "lite": true,
+                "pro": true
+            },
+            {
                 "name": "Status Actions",
-                "info": "Enable or disable one or more redirects at a time using Redirect Element Actions",
+                "info": "Enable, disable, or delete one or more redirects at a time using Redirect Element Actions",
                 "lite": true,
                 "pro": true
             },
             {
                 "name": "Method Actions",
                 "info": "Convert Redirects from 301s to 302s or vice versa using Redirect Element Actions",
-                "lite": false,
-                "pro": true
-            },
-            {
-                "name": "Removal Actions",
-                "info": "Add a group of Redirects to the Excluded Redirects list or delete them using Redirect Element Actions",
-                "lite": false,
-                "pro": true
-            },
-            {
-                "name": "Reorder Redirects",
-                "info": "Update the priority of where a Redirect gets processed",
-                "lite": false,
-                "pro": true
-            },
-            {
-                "name": "Redirect Statistics",
-                "info": "Track and organize Redirects by hits and last used dates to find the ones that should receive attention first",
                 "lite": false,
                 "pro": true
             }
@@ -68,26 +86,26 @@
                 "pro": true
             },
             {
-                "name": "Redirect Match Strategy",
-                "info": "Fine-tune how Redirects are matched with query strings",
-                "lite": false,
-                "pro": true
-            },
-            {
-                "name": "Sensitive Data",
-                "info": "Customize how sensitive data like Remote IP addresses are tracked to comply with regulatory obligations.",
-                "lite": false,
-                "pro": true
-            },
-            {
                 "name": "Automatic Purging",
                 "info": "Automatically cleanup and remove old 404s",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Globally Excluded URL Patterns",
+                "info": "Ignore patterns you don't want to process across all of your Craft sites.",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Site-specific Excluded URL Patterns",
+                "info": "Ignore patterns you don't want to process for specific sites.",
                 "lite": false,
                 "pro": true
             },
             {
-                "name": "Excluded URL Patterns",
-                "info": "Ignore patterns you don't want to see in your logs.",
+                "name": "Exclusion Actions",
+                "info": "Add a group of Redirects to the Excluded URL Patterns list using Redirect Element Actions",
                 "lite": false,
                 "pro": true
             }

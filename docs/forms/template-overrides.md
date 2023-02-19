@@ -27,7 +27,7 @@ Enabling template overrides gives you full control over the underlying template 
 
 ### Customizing Fields
 
-All input fields can be overridden by placing an override template in the _fields_ folder: 
+All input fields can be overridden by placing an override template in the _fields_ folder:
 
 ```
 singleline/input.html
@@ -39,14 +39,14 @@ A field's folder name is the lowercase version of its field name without spaces 
 
 ### Customizing Email
 
-For customizing email notifications, see [Email Templates](../email/template-overrides.md). 
+For customizing email notifications, see [Email Templates](../email/template-overrides.md).
 
 ### Getting Started
 
 To get started, copy all of the default Sprout Forms templates to your Custom Template Overrides folder. You can find the templates in Sprout Forms here:
 
 ``` html
-vendor/barrelstrength/sprout-forms/src/templates/_components/formtemplates/accessible
+vendor/barrelstrength/sprout/templates/forms
 ```
 
 ## Settings
@@ -71,6 +71,6 @@ Setting the Custom Template Folder value to `_forms` would allow you to place yo
 
 ### Per-form settings
 
-When you _Enable custom form templates on a per-form basis_, you'll have to add the override folder in your form settings.  
+When you _Enable custom form templates on a per-form basis_, you'll have to add the override folder in your form settings.
 
 When creating a new form, in the Form Settings sidebar, select the Form Template or add the Form Template folder you wish to use for your overrides.
