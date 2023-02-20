@@ -120,7 +120,6 @@ module.exports = {
                         'form-fields',
                         'entries',
                         'notifications',
-                        'data-studio',
                         'conditional-rules',
                         'integrations',
                         'spam-protection',
