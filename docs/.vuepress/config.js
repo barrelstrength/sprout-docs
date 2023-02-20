@@ -232,18 +232,11 @@ module.exports = {
                     ],
                 },
                 {
-                    title: 'Get Started',
-                    collapsable: false,
-                    children: [
-                        'redirects',
-                        'plugin-settings',
-                    ],
-                },
-                {
                     title: 'Examples',
                     collapsable: false,
                     children: [
                         'query-strings-in-redirects',
+                        'redirect-workflows',
                     ],
                 },
             ],

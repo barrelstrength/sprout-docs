@@ -1,15 +1,15 @@
 ---
 date: 2023-02-19
-description: Control the behavior around query strings in your Redirects using the 'Redirect Match Strategy' and 'Query String Strategy' settings.
+description: Control the behavior around query strings in your Redirects using the 'Match Definition' and 'Query String Strategy' settings.
 ---
 
 # Query Strings in Redirects
 
-Control the behavior around query strings in your Redirects using the **Redirect Match Strategy** and **Query String Strategy** settings. Below we'll take a look at examples of how these settings can be used.
+Control the behavior around query strings in your Redirects using the **Match Definition** and **Query String Strategy** settings. Below we'll take a look at examples of how these settings can be used.
 
-### Redirect Match Strategy
+### Match Definition
 
-The Redirect Match Strategy setting determines how to match 404 requests with Redirect records already captured in the database. Once the incoming Request URL is received, depending on this setting, the query string value may be retained or removed before searching the database for a matching value.
+The Match Definition setting determines how to match 404 requests with Redirect records already captured in the database. Once the incoming Request URL is received, depending on this setting, the query string value may be retained or removed before searching the database for a matching value.
 
 #### URL (with query strings) Example
 
@@ -45,7 +45,7 @@ The Query String Strategy setting determines how to treat query strings after pr
 
 ### Combining Strategies
 
-Together the **Redirect Match Strategy** and **Query String Strategy** settings allow redirects to be configured in several ways
+Together the **Match Definition** and **Query String Strategy** settings allow redirects to be configured in several ways
 
 #### URL (with query strings) + Remove Query Strings
 
