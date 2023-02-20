@@ -42,13 +42,13 @@ jobs:
 
       # This section can be removed for all branches except the current version release branch
       - name: Symlink doc folders to public folder
-          uses: appleboy/ssh-action@master
-          with:
-            key: ${{ secrets.SSH_PRIVATE_KEY }}
-            host: ${{ secrets.REMOTE_HOST }}
-            username: ${{ secrets.REMOTE_USER }}
-            script: |
-              ln -s  ${{ secrets.DOCUMENT_ROOT }}docs/craft-v4 ${{ secrets.DOCUMENT_ROOT }}public/docs/craft-v4
-              ln -s  ${{ secrets.DOCUMENT_ROOT }}docs/craft-v3 ${{ secrets.DOCUMENT_ROOT }}public/docs/craft-v3
-              ln -s  ${{ secrets.DOCUMENT_ROOT }}docs/craft-v2 ${{ secrets.DOCUMENT_ROOT }}public/docs/craft-v2
+        uses: appleboy/ssh-action@master
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          script: |
+            ln -s  ${{ secrets.DOCUMENT_ROOT }}docs/craft-v4 ${{ secrets.DOCUMENT_ROOT }}public/docs/craft-v4
+            ln -s  ${{ secrets.DOCUMENT_ROOT }}docs/craft-v3 ${{ secrets.DOCUMENT_ROOT }}public/docs/craft-v3
+            ln -s  ${{ secrets.DOCUMENT_ROOT }}docs/craft-v2 ${{ secrets.DOCUMENT_ROOT }}public/docs/craft-v2
 
