@@ -11,20 +11,32 @@ The guides below provide details for noteworthy upgrades such as breaking change
 
 ### Craft 4
 
-| Upgrading&nbsp;To               | Module      | Notes                                    | 
-|:--------------------------------|:------------|:-----------------------------------------|
-| [4.44.444][#Upgradev444DS] ⚠️   | Data Studio | Added Craft 4 Support. **Major update!** |
-| [4.44.444][#Upgradev444] ⚠️ | All Plugins | Added Craft 4 Support. **Major update!** |
+| Upgrading&nbsp;To              | Module      | Notes                                    | 
+|:-------------------------------|:------------|:-----------------------------------------|
+| 4.44.444 ⚠️   | Data Studio | Coming soon                              |
+| 4.44.444 ⚠️   | Redirects   | Coming soon                              |
 
-#### Avoid incremental updates to older versions of Craft and Sprout
+[//]: # (| [4.44.444][#Upgradev444DS] ⚠️  | Data Studio | Added Craft 4 Support. **Major update!** |)
 
-::: warning THERE IS A BETTER WAY
-Sprout `4.44.444` added Craft 4 support, introduced a new plugin architecture, and solved several migration issues that had arisen in the older architecture. Before upgrading to Craft 4 and Sprout `4.44.444`, upgrade your site to the latest version of Craft 3.x and the most recent Sprout releases on Craft 3 all in one go.
+[//]: # (| [4.44.444][#Upgradev444] ⚠️    | All Plugins | Added Craft 4 Support. **Major update!** |)
 
-We recommend avoiding incremental upgrades (e.g. from `3.2` to `3.3` to `3.4`, etc.) as Craft 3 and Sprout did not play nicely together between Craft `3.2` and `3.7` and many of those issues are resolved if you can upgrade to the most recent version of Sprout on the latest version of Craft 3 with a single migration.
-:::
+[//]: # (#### Avoid incremental updates to older versions of Craft and Sprout)
 
-To upgrade Craft and Sprout to a version earlier than Craft `3.7.x` and Sprout `4.40.x`, please review the [Installing &amp; Updating][#v3Docs] section in the Sprout v3 documentation for the specific plugins you are updating.
+[//]: # ()
+
+[//]: # (::: warning THERE IS A BETTER WAY)
+
+[//]: # (Sprout `4.44.444` added Craft 4 support, introduced a new plugin architecture, and solved several migration issues that had arisen in the older architecture. Before upgrading to Craft 4 and Sprout `4.44.444`, upgrade your site to the latest version of Craft 3.x and the most recent Sprout releases on Craft 3 all in one go.)
+
+[//]: # ()
+
+[//]: # (We recommend avoiding incremental upgrades &#40;e.g. from `3.2` to `3.3` to `3.4`, etc.&#41; as Craft 3 and Sprout did not play nicely together between Craft `3.2` and `3.7` and many of those issues are resolved if you can upgrade to the most recent version of Sprout on the latest version of Craft 3 with a single migration.)
+
+[//]: # (:::)
+
+[//]: # ()
+
+[//]: # (To upgrade Craft and Sprout to a version earlier than Craft `3.7.x` and Sprout `4.40.x`, please review the [Installing &amp; Updating][#v3Docs] section in the Sprout v3 documentation for the specific plugins you are updating.)
 
 [#v3Docs]: https://sprout.barrelstrengthdesign.com/docs/v3/
 
