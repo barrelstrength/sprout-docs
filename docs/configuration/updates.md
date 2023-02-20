@@ -11,9 +11,11 @@ The guides below provide details for noteworthy upgrades such as breaking change
 
 ### Craft 4
 
-| Upgrading&nbsp;To             | Notes                                    | 
-|:------------------------------|:-----------------------------------------|
-| [4.44.444][#Upgradev444] ⚠️   | Added Craft 4 Support. **Major update!** |
+| Upgrading to Plugin | Update Guides                         | Notes                                    | 
+|:--------------------|:--------------------------------------|:-----------------------------------------|
+| Data Studio 4.4.444 | [Data Studio][#444444-data-studio] ⚠️ | New Lite version. **Major update!**      |
+| Redirects 4.4.444   | [Redirects][#444444-redirects]        | Improved workflow options.               |
+| Framework 4.0.0     | [All Modules][#400-framework] ⚠️      | Added Craft 4 Support. **Major update!** |
 
 #### Craft 3 Migration Path
 
@@ -31,4 +33,8 @@ To upgrade Craft and Sprout to a version earlier than Craft `3.7.x` and Sprout `
 
 [//]: # (ALL UPGRADE GUIDE LINKS BELOW)
 
-[#Upgradev444]: ../updates/4.44.444.md
+[#444444-data-studio]: ../updates/4.44.444-data-studio.md
+
+[#444444-redirects]: ../updates/4.44.444-redirects.md
+
+[#400-framework]: ../updates/4.0.0-framework.md

@@ -8,7 +8,7 @@ description: The Sprout Marketing Suite is a premium suite of plugins designed f
 **Sprout Lite** is designed to pair with Craft Solo and provide a solid baseline for digital marketing best practices on simple projects. **Sprout Pro** enables unlimited usage of all features and
 opens the door for advanced customization and CRM workflow integrations.
 
-The Sprout Marketing Suite ships with a [modular architecture](./#modular-architecture) of over 10 specialized modules to power custom website and digital marketing needs.
+The Sprout Marketing Suite ships with a [modular architecture](./#modular-architecture) using 10 specialized modules to power custom website and digital marketing needs.
 
 ## Data Studio Module
 
