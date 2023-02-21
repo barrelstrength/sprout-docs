@@ -2,7 +2,7 @@ module.exports = {
     title: 'Sprout Docs for Craft 3',
     description: 'The Sprout Business Suite is a premium suite of plugins designed for businesses who want to use Craft CMS as the core of their content management and digital marketing workflows.',
     theme: 'craftdocs',
-    base: '/docs/',
+    base: '/docs/craft-v3/',
     head: [
         ['link', {rel: 'icon', href: '/icons/favicon-16x16.png'}],
         ['link', {rel: 'apple-touch-icon', sizes: '180x180', href: '/icons/apple-touch-icon.png'}],
