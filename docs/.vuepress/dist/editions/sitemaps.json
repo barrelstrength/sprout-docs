@@ -1,0 +1,55 @@
+[
+    {
+        "category": "XML Sitemaps",
+        "items": [
+            {
+                "name": "Sitemap Generator",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Multi-lingual and multi-regional sitemaps",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Entry Element support",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Category Element support",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Craft Commerce Product Element support",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Large Sitemap Support",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Custom Sitemap pages",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "No template updates required",
+                "info": "",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    }
+]
