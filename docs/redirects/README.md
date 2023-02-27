@@ -82,3 +82,7 @@ You can view all 404 Redirects on the Redirects tab using the filter in the side
 ## Settings
 
 Read the [Config Settings](./../configuration/sprout-config.md) documentation to explore and customize settings.
+
+## Updates
+
+See [update guides](../configuration/updates) for the Redirects and Framework modules.

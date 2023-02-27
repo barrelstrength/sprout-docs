@@ -30,3 +30,7 @@ Data Sets can be organized into groups and customized so that you can convenient
 ## Settings
 
 Read the [Config Settings](./../configuration/sprout-config.md) documentation to explore and customize settings.
+
+## Updates
+
+See [update guides](../configuration/updates) for the Data Studio and Framework modules.
