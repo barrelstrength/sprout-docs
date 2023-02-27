@@ -33,4 +33,4 @@ Read the [Config Settings](./../configuration/sprout-config.md) documentation to
 
 ## Updates
 
-See [update guides](../configuration/updates) for the Data Studio and Framework modules.
+See [update guides](../configuration/updates.md) for the Data Studio and Framework modules.
