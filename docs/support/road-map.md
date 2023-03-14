@@ -15,7 +15,7 @@ Please subscribe to the linked Craft 4 support issue below for any plugins that 
 
 | Plugin             | Upgrade Status | Follow for Updates                                                                |
 |:-------------------|:---------------|:----------------------------------------------------------------------------------|
-| Sprout Data Studio | Released       | [Docs](../data-studio/README.md)                                                  |
+| Sprout Data Studio | Released       | [Docs](../data-studio/README.md) (Previously Sprout Reports)                                                 |
 | Sprout Redirects   | Released       | [Docs](../redirects/README.md)                                                  |
 | Sprout Email       | In progress    | [Github Issue](https://github.com/barrelstrength/craft-sprout-email/issues/186)   |
 | Sprout Forms       | In progress    | [Github Issue](https://github.com/barrelstrength/craft-sprout-forms/issues/612)   |
