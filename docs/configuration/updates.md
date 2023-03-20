@@ -13,8 +13,8 @@ The guides below provide details for noteworthy upgrades such as breaking change
 
 | Upgrading to Plugin | Update Guides                         | Notes                                    | 
 |:--------------------|:--------------------------------------|:-----------------------------------------|
-| Data Studio 4.4.444 | [Data Studio][#444444-data-studio] ⚠️ | New Lite version. **Major update!**      |
-| Redirects 4.4.444   | [Redirects][#444444-redirects]        | Improved workflow options.               |
+| Data Studio 4.44.444 | [Data Studio][#444444-data-studio] ⚠️ | New Lite version. **Major update!**      |
+| Redirects 4.44.444   | [Redirects][#444444-redirects]        | Improved workflow options.               |
 | Framework 4.0.0     | [All Modules][#400-framework] ⚠️      | Added Craft 4 Support. **Major update!** |
 
 #### Craft 3 Migration Path
