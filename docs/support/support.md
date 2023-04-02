@@ -1,5 +1,5 @@
 ---
-date: 2023-02-19
+date: 2023-04-02
 description: Sprout provides dedicated support for license holders and free training.
 ---
 
@@ -13,12 +13,13 @@ Running into an issue while upgrading? Read the [Update Guides](../configuration
 
 | Plugin            | Bugs                                       | Feature Requests     | Uncategorized    |
 |:----------------- |:-------------------                        |:-------------------- |:------------------- |
-| Sprout Forms      | Craft [v4][#Forms4B] \| [v3][#Forms3B]      | [View All][#FormsFR]    | [View All][#FormsNA]   |
-| Sprout SEO        | Craft [v4][#Seo4B] \| [v3][#Seo3B]        | [View All][#SeoFR]      | [View All][#SeoNA]     |
-| Sprout Redirects  | Craft [v4][#Redirects4B] \| [v3][#Redirects3B]  | [View All][#RedirectsFR]| [View All][#RedirectsNA] |
-| Sprout Sitemaps   | Craft [v4][#Sitemaps4B] \| [v3][#Sitemaps3B]   | [View All][#SitemapsFR] | [View All][#SitemapsNA] |
-| Sprout Email      | Craft [v4][#Email4B] \| [v3][#Email3B]      | [View All][#EmailFR]    | [View All][#EmailNA]   |
-| Sprout Reports    | Craft [v4][#Reports4B] \| [v3][#Reports3B]    | [View All][#ReportsFR]  | [View All][#ReportsNA] |
+| Sprout Data Studio | Craft [v4][#Reports4B] \| [v3][#Reports3B]    | [View All][#ReportsFR]  | [no:label][#ReportsNL] [no:project][#ReportsNP] |
+| Sprout Forms      | Craft [v4][#Forms4B] \| [v3][#Forms3B]      | [View All][#FormsFR]    | [no:label][#FormsNL] [no:project][#FormsNP]   |
+| Sprout SEO        | Craft [v4][#Seo4B] \| [v3][#Seo3B]        | [View All][#SeoFR]      | [no:label][#SeoNL] [no:project][#SeoNP]     |
+| Sprout Redirects  | Craft [v4][#Redirects4B] \| [v3][#Redirects3B]  | [View All][#RedirectsFR]| [no:label][#RedirectsNL] [no:project][#RedirectsNP] |
+| Sprout Sitemaps   | Craft [v4][#Sitemaps4B] \| [v3][#Sitemaps3B]   | [View All][#SitemapsFR] | [no:label][#SitemapsNL] [no:project][#SitemapsNP] |
+| Sprout Email      | Craft [v4][#Email4B] \| [v3][#Email3B]      | [View All][#EmailFR]    | [no:label][#EmailNL] [no:project][#EmailNP]   |
+| Sprout Sent Email | Craft [v4][#SentEmail4B] \| [v3][#SentEmail3B]      | [View All][#SentEmailFR]    | [no:label][#SentEmailNL] [no:project][#SentEmailNP] |
 
 [#Forms3B]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
 
@@ -29,6 +30,8 @@ Running into an issue while upgrading? Read the [Update Guides](../configuration
 [#Sitemaps3B]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
 
 [#Email3B]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+
+[#SentEmail3B]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
 
 [#Reports3B]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
 
@@ -42,6 +45,8 @@ Running into an issue while upgrading? Read the [Update Guides](../configuration
 
 [#Email4B]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
 
+[#SentEmail4B]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+
 [#Reports4B]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
 
 [#FormsFR]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
@@ -54,19 +59,37 @@ Running into an issue while upgrading? Read the [Update Guides](../configuration
 
 [#EmailFR]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
 
+[#SentEmailFR]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+
 [#ReportsFR]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
 
-[#FormsNA]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#FormsNL]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
 
-[#SeoNA]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#SeoNL]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
 
-[#RedirectsNA]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#RedirectsNL]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
 
-[#SitemapsNA]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#SitemapsNL]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
 
-[#EmailNA]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#EmailNL]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
 
-[#ReportsNA]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#SentEmailNL]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+
+[#ReportsNL]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+
+[#FormsNP]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
+
+[#SeoNP]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
+
+[#RedirectsNP]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
+
+[#SitemapsNP]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
+
+[#EmailNP]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
+
+[#SentEmailNP]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
+
+[#ReportsNP]: https://github.com/barrelstrength/craft-sprout-data-studio/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
 
 ::: tip Custom Projects & Support
 If you need a planned feature that we have not yet added, consider hiring us. We are available for custom development and consulting services and are happy to improve or extend our plugins based on your project needs.
