@@ -33,7 +33,7 @@ Running into an issue while upgrading? Read the [Update Guides](../configuration
 
 [#SentEmail3B]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
 
-[#Reports3B]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#Reports3B]: https://github.com/barrelstrength/craft-sprout-data-studio/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
 
 [#Forms4B]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
 
@@ -47,7 +47,7 @@ Running into an issue while upgrading? Read the [Update Guides](../configuration
 
 [#SentEmail4B]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
 
-[#Reports4B]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+[#Reports4B]: https://github.com/barrelstrength/craft-sprout-data-studio/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
 
 [#FormsFR]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
 
@@ -61,7 +61,7 @@ Running into an issue while upgrading? Read the [Update Guides](../configuration
 
 [#SentEmailFR]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
 
-[#ReportsFR]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#ReportsFR]: https://github.com/barrelstrength/craft-sprout-data-studio/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
 
 [#FormsNL]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
 
@@ -75,7 +75,7 @@ Running into an issue while upgrading? Read the [Update Guides](../configuration
 
 [#SentEmailNL]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
 
-[#ReportsNL]: https://github.com/barrelstrength/craft-sprout-reports/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#ReportsNL]: https://github.com/barrelstrength/craft-sprout-data-studio/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
 
 [#FormsNP]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
 
