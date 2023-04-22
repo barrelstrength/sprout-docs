@@ -1,5 +1,5 @@
 ---
-date: 2023-02-19
+date: 2023-04-12
 description: Reports exist in two forms. They display in web browser when viewed in the Control Panel and as CSV files when exported.
 ---
 
@@ -18,6 +18,16 @@ In Twig Template Reports the `isExport` variable is available in your results te
     isExport ? 'Not Link' : '<a href="">Link</a>'
 ]) %}
 ``` 
+
+Use a variable to switch line breaks within cells between HTML and CSV exports
+
+``` twig
+{% set lineBreak = isExport ? '\r\n' : '<br>' %}
+
+{% do sprout.twigDataSet.addRow([
+    "Line 1" ~ lineBreak ~ "Line 2"
+]) %}
+```
 
 ## Custom Data Source Example
 
