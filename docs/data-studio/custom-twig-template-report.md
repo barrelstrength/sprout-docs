@@ -1,5 +1,5 @@
 ---
-date: 2023-02-19
+date: 2023-04-21
 description: The Twig Template Data Source allows you to create reports in the Craft Control Panel using Twig Templates in your craft/templates folder.
 ---
 
@@ -16,7 +16,7 @@ Setting up a Custom Twig Template report requires a couple of steps.
 3. Customize your Report's `Results Template` and `Options Template` settings
 
 ::: tip
-See the Sprout Reports `examples/templates` folders for commented example files of Twig Template Reports and Settings Templates. Copy those files to your `craft/template` folder and setup a Twig Template report to use them as described below.
+See the Sprout Reports in `vendor/barrelstrength/sprout/templates/examples/datasets` for commented example files of Twig Template Reports and Settings Templates. Copy those files to your `craft/template` folder and setup a Twig Template report to experiment with their usage or select them directly from a new Twig Template Query settings page by search for templates that begin with `_sprout/examples/datasets/*`.
 :::
 
 ## Template Settings
