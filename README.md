@@ -26,7 +26,7 @@ composer require kub-at/php-simple-html-dom-parser
 	
 ## Contributions
 
-Support questions and requests for examples for all Sprout Marketing Suite plugins are managed in the [main Sprout Framework repository][#sprout].
+Support questions and requests for examples for all plugin documentation are managed in the [main Sprout Framework repository][#sprout].
 
 - [Ask a question][#questions]
 - [Report an issue][#issues]
