@@ -1,20 +1,3 @@
-REDIRECTS NEEDED
-/integrations.html
-/core-concepts.html
-/businesses.html
-/why-sprout => /
-
-These docs will just be done in a Github README and this site will focus on the full suite.
-
-['active/', 'Sprout Active'],
-['encode-email/', 'Sprout Encode Email'],
-['notes/', 'Sprout Notes']
-
-Ditch these too. People can find them if they want:
-['tools/php-storm', 'PhpStorm'],
-['tools/sublime-text', 'Sublime Text'],
-['tools/craftnet', 'Craftnet']
-
 # Sprout Docs
 
 See our website for the complete [Sprout Documentation](https://sprout.barrelstrengthdesign.com/docs/).
@@ -43,4 +26,18 @@ composer require kub-at/php-simple-html-dom-parser
 	
 ## Contributions
 
-Feedback, requests for examples, and pull requests are welcome. 
+Support questions and requests for examples for all plugin documentation are managed in the [main Sprout Framework repository][#sprout].
+
+- [Ask a question][#questions]
+- [Report an issue][#issues]
+
+<a href="https://sprout.barrelstrengthdesign.com" target="_blank">
+  <img src="https://s3.amazonaws.com/sprout.barrelstrengthdesign.com-assets/content/plugins/sprout-icon.svg" width="72" height="72" align="right">
+</a>
+
+[#issues]: https://github.com/barrelstrength/sprout/issues
+
+[#questions]: https://github.com/barrelstrength/sprout/discussions/categories/q-a
+
+[#sprout]: https://github.com/barrelstrength/sprout
+
