@@ -26,4 +26,17 @@ composer require kub-at/php-simple-html-dom-parser
 	
 ## Contributions
 
-Feedback, requests for examples, and pull requests are welcome. 
+Support for all Sprout Marketing Suite plugins is managed in the [main Sprout Framework repository][#sprout].
+
+- [Ask a question][#questions]
+- [Report an issue][#issues]
+
+<a href="https://sprout.barrelstrengthdesign.com" target="_blank">
+  <img src="https://s3.amazonaws.com/sprout.barrelstrengthdesign.com-assets/content/plugins/sprout-icon.svg" width="72" height="72" align="right">
+</a>
+
+[#issues]: https://github.com/barrelstrength/sprout/issues
+
+[#questions]: https://github.com/barrelstrength/sprout/discussions/categories/q-a
+
+[#sprout]: https://github.com/barrelstrength/sprout
