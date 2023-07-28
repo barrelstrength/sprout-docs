@@ -32,39 +32,23 @@ Sprout Marketing Suite plugins are coming to Craft 4. See our [Road Map](./suppo
 
 [//]: # ()
 
-[//]: # (## Transactional Email Module)
+## Transactional Email Module
 
-[//]: # ()
+_Available in: Sprout Notifications, Sprout Forms._
 
-[//]: # (_Available in: Sprout Notifications, Sprout Forms._)
+<EditionComparison feature-list="./editions/notifications.json" />
 
-[//]: # ()
+## Mailer Module
 
-[//]: # (<EditionComparison feature-list="./editions/notifications.json" />)
+_Available in: Sprout Forms, Sprout Email, Sprout Sent Email._
 
-[//]: # ()
+<EditionComparison feature-list="./editions/mailer.json" />
 
-[//]: # (## Mailer Module)
+## Sent Email
 
-[//]: # ()
+_Available in: Sprout Email, Sprout Sent Email._
 
-[//]: # (_Available in: Sprout Forms, Sprout Notifications, Sprout Sent Email._)
-
-[//]: # ()
-
-[//]: # (<EditionComparison feature-list="./editions/mailer.json" />)
-
-[//]: # ()
-
-[//]: # (## Sent Email)
-
-[//]: # ()
-
-[//]: # (_Available in: Sprout Notifications, Sprout Sent Email._)
-
-[//]: # ()
-
-[//]: # (<EditionComparison feature-list="./editions/sent-email.json" />)
+<EditionComparison feature-list="./editions/sent-email.json" />
 
 [//]: # ()
 

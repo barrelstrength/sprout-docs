@@ -278,28 +278,13 @@ module.exports = {
                     ],
                 },
                 {
-                    title: 'Get Started',
+                    title: 'Notification Emails',
                     collapsable: false,
                     children: [
                         'notification-emails',
                         'notification-events',
-                        'plugin-settings',
-                    ],
-                },
-                {
-                    title: 'Notification Emails',
-                    collapsable: false,
-                    children: [
                         'personalization',
                         'object-syntax',
-                    ],
-                },
-                {
-                    title: 'Email Templates',
-                    collapsable: false,
-                    children: [
-                        'default-email-templates',
-                        'template-overrides',
                     ],
                 },
                 {
@@ -321,6 +306,18 @@ module.exports = {
                 },
             ],
 
+            '/email-themes/': [
+                ['../', '← All Plugins'],
+                {
+                    title: 'Introduction',
+                    collapsable: false,
+                    children: [
+                        '',
+                        'template-overrides',
+                    ],
+                },
+            ],
+
             '/sent-email/': [
                 ['../', '← All Plugins'],
                 {
@@ -328,7 +325,6 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '',
-                        'plugin-settings',
                     ],
                 },
             ],
@@ -412,6 +408,17 @@ module.exports = {
                     collapsable: false,
                     children: [
                         ['data-studio/', 'Data Studio'],
+                    ],
+                },
+                {
+                    title: 'Email Marketing',
+                    collapsable: false,
+                    children: [
+                        ['email/', 'Transactional Email'],
+                        ['email-themes/', 'Email Themes'],
+                        // ['mailers/', 'Mailers'],
+                        ['sent-email/', 'Sent Email'],
+                        // ['subscribers/', 'Subscribers'],
                     ],
                 },
                 {

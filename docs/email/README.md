@@ -3,7 +3,7 @@ date: 2023-02-19
 description: Sprout Email adds a centralized way to manage transactional email in Craft along with the ability to log and resend Sent Email.
 ---
 
-# About Sprout Email
+# About Transactional Email
 
 Sprout Email adds a centralized way to manage transactional email in Craft along with the ability to log and resend Sent Email. Notification Emails support several Notification Event Integrations, customizable Email Templates, and the ability to send to dynamic Mailing Lists using Sprout Reports for list management.
 
@@ -49,6 +49,11 @@ Packages can be sent to one or more recipients.
 | Resend | √ | √ | √ | √ | – |
 | Test | – | – | – | – | √ |
 
+## Email Themes
+
+The Transactional module comes with one default Email Theme. We keep the default as simple and un-opinionated as we can. You can style the default templates as you see fit or update the templates 
+for your particular project. Notification Emails are fully customizable using [Email Themes](./../email-themes).
+
 ### Workflow
 
 #### Prepare The Goods
@@ -67,4 +72,12 @@ Packages can be sent to one or more recipients.
 #### Prepare The Package
 
 - Create a new **Package Element** with a chosen **Delivery Type** (Broadcast vs Transactional vs Message)
+
+## Settings
+
+Read the [Config Settings](./../configuration/sprout-config.md) documentation to explore and customize settings.
+
+## Updates
+
+See [update guides](../configuration/updates.md) for the Transactional Email and Framework modules.
 

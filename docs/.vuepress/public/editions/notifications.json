@@ -3,7 +3,7 @@
         "category": "Overview",
         "items": [
             {
-                "name": "Unlimited Notifications",
+                "name": "Unlimited Transactional Email",
                 "lite": true,
                 "pro": true
             },
@@ -11,12 +11,6 @@
                 "name": "Unlimited Notification Events",
                 "info": "",
                 "lite": false,
-                "pro": true
-            },
-            {
-                "name": "Custom Email Templates",
-                "info": "",
-                "lite": true,
                 "pro": true
             },
             {

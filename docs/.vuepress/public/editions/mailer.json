@@ -1,11 +1,34 @@
 [
     {
-        "category": "Mailing Lists",
+        "category": "Audiences",
         "items": [
             {
+                "name": "Subscriber List Audience Type",
+                "info": "Includes Craft User enhancement with an integrated Subscriber overlay.",
+                "lite": true,
+                "pro": true
+            },
+            {
                 "name": "Mailing Lists & Segments",
-                "info": "Create Mailing Lists from report queries to send to lists and segments via Sprout Email and other Sprout plugins.",
+                "info": "Create Mailing Lists from Data Studio queries to send to lists and segments via Sprout Email and other Sprout plugins.",
                 "lite": false,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Email Themes",
+        "items": [
+            {
+                "name": "Simple Message Theme",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Custom Email Themes",
+                "info": "",
+                "lite": true,
                 "pro": true
             }
         ]
@@ -43,9 +66,15 @@
         "category": "Developers",
         "items": [
             {
-                "name": "Email Templates API",
+                "name": "Custom Audience Type API",
                 "info": "",
-                "lite": true,
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Custom Email Themes API",
+                "info": "",
+                "lite": false,
                 "pro": true
             }
         ]
