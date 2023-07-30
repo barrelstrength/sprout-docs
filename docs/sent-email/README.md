@@ -11,6 +11,10 @@ Sent Emails are not a comprehensive solution to tracking email interactions. The
 
 While Sent Emails may indicate an email has been successfully sent by Craft, this status does not indicate anything about the deliverability of the Sent Emails. To get additional information on whether an email was delivered or bounced, consider using an email service provider such as Mailgun, Sendgrid, or other similar services.
 
+## Resending Emails
+
+Sent Emails create a snapshot of the HTML and Text verions of an email at the time it is sent. When resending an email, the exact same HTML that was used in the initial email is used for the resend.
+
 ## Settings
 
 Read the [Config Settings](./../configuration/sprout-config.md) documentation to explore and customize settings.

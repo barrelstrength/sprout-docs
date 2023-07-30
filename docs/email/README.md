@@ -5,9 +5,11 @@ description: Sprout Email adds a centralized way to manage transactional email i
 
 # About Transactional Email
 
-Sprout Email adds a centralized way to manage transactional email in Craft along with the ability to log and resend Sent Email. Notification Emails support several Notification Event Integrations, customizable Email Templates, and the ability to send to dynamic Mailing Lists using Sprout Reports for list management.
+Sprout Email adds a centralized way to manage transactional email in Craft. Transactional Emails support several Notification Events, customizable Email Templates, and the ability to send to dynamic
+Mailing Lists using Audiences for list management.
+along with the ability to log and resend [Sent Email](../sent-email/README.md)
 
-- See [Sprout Sent Email](../sent-email/README.md) for documentation of the Sent Email features
+- See [Sent Email](../sent-email/README.md) for documentation of the Sent Email features
 - See [Sprout Reports](../data-studio/mailing-lists.md) for documentation on creating custom Mailing Lists and Segments
 
 ## Email Overview
@@ -18,60 +20,46 @@ Sprout Email adds a centralized way to manage transactional email in Craft along
 
 ### Email Element Types
 
-Emails are where you define your content and presentation. In the lifecycle of an Email the Email Element begins as standalone content, exists as relational content when defining your Package, and a static instance of an email content is saved as a Sent Email for every recipient to which it is sent.
+Emails are where you define your content and presentation. In the lifecycle of an Email the Email Element begins as standalone content, exists as relational content when defining your Package, and a
+static instance of an email content is saved as a Sent Email for every recipient to which it is sent.
 
-| Email Types   | Delivery Type | Created From |
-|:----          |:----          |:----         |
+| Email Types   | Delivery Type | Created From      |
+|:--------------|:--------------|:------------------|
 | Transactional | Transactional | Transactional Tab |
-| Broadcast     | Broadcast     | Broadcast Tab |
-| Resend        | Broadcast     | Sent Email Tab |
-| Test          | Broadcast     | Test Modal |
-
-validation requ
+| Broadcast     | Broadcast     | Broadcast Tab     |
+| Resend        | Broadcast     | Sent Email Tab    |
+| Test          | Broadcast     | Test Modal        |
 
 ### Package Element Types
 
 Packages are where you define where and how to send your email content.
 
-| Package Types   | Email Types | Layout Options |
-|:----          |:----          |:----          |
-| Broadcast | Broadcast | Send Now vs Scheduled |
-| Transactional | Transactional | Event, Recurring, Cron |
-| Drip Campaign | Broadcast/Transactional | Condition Builder |
+| Package Types | Email Types             | Layout Options         |
+|:--------------|:------------------------|:-----------------------|
+| Broadcast     | Broadcast               | Send Now vs Scheduled  |
+| Transactional | Transactional           | Event, Recurring, Cron |
+| Drip Campaign | Broadcast/Transactional | Condition Builder      |
 
 Packages can be sent to one or more recipients.
 
-| Email Types | To | CC | BCC | Lists | On The Fly |
-|:-- |:-- |:-- |:-- |:-- |:-- |
-| Transactional | √ | √ | √ | √ | – |
-| Broadcast | √ | √ | √ | √ | – |
-| Message | √ | √ | √ | √ | – |
-| Resend | √ | √ | √ | √ | – |
-| Test | – | – | – | – | √ |
+| Email Types   | To | CC | BCC | Lists | On The Fly |
+|:--------------|:---|:---|:----|:------|:-----------|
+| Transactional | √  | √  | √   | √     | –          |
+| Broadcast     | √  | √  | √   | √     | –          |
+| Message       | √  | √  | √   | √     | –          |
+| Resend        | √  | √  | √   | √     | –          |
+| Test          | –  | –  | –   | –     | √          |
+
+## Audiences
+
+## Mailers
 
 ## Email Themes
 
-The Transactional module comes with one default Email Theme. We keep the default as simple and un-opinionated as we can. You can style the default templates as you see fit or update the templates 
+The theme defines the Field Layout for your email content and the design of your email templates.
+
+The Transactional module comes with one default Email Theme. We keep the default as simple and un-opinionated as we can. You can style the default templates as you see fit or update the templates
 for your particular project. Notification Emails are fully customizable using [Email Themes](./../email-themes).
-
-### Workflow
-
-#### Prepare The Goods
-
-- Create a reusable **Email Theme** (Templates + Field Layout)
-- Sprout provides a Default Email Theme with a single Textarea field and basic templates
-- Email Themes can be restricted to **Email Elements** with certain **Package Types** (Broadcast vs Transactional vs Message)
-- Resent and Test emails will use whatever Email Theme was defined for the Email they act on
-- Create a new Email based on available Email Theme
-
-#### Prepare The Carrier
-
-- Update Craft's Email settings to use the **Mailer Adapter** that will be used to send your email
-- In the future, you may be able to override Craft's settings when defining a new Package
-
-#### Prepare The Package
-
-- Create a new **Package Element** with a chosen **Delivery Type** (Broadcast vs Transactional vs Message)
 
 ## Settings
 

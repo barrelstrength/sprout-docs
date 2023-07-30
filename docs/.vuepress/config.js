@@ -284,7 +284,6 @@ module.exports = {
                         'notification-emails',
                         'notification-events',
                         'personalization',
-                        'object-syntax',
                     ],
                 },
                 {
@@ -302,29 +301,6 @@ module.exports = {
                         'custom-email-templates',
                         'custom-mailers',
                         'custom-notification-events',
-                    ],
-                },
-            ],
-
-            '/email-themes/': [
-                ['../', '← All Plugins'],
-                {
-                    title: 'Introduction',
-                    collapsable: false,
-                    children: [
-                        '',
-                        'template-overrides',
-                    ],
-                },
-            ],
-
-            '/sent-email/': [
-                ['../', '← All Plugins'],
-                {
-                    title: 'Introduction',
-                    collapsable: false,
-                    children: [
-                        '',
                     ],
                 },
             ],
@@ -401,6 +377,7 @@ module.exports = {
                         'configuration/requirements',
                         'configuration/updates',
                         'configuration/sprout-config',
+                        'configuration/twig-expressions',
                     ],
                 },
                 {
@@ -414,11 +391,11 @@ module.exports = {
                     title: 'Email Marketing',
                     collapsable: false,
                     children: [
+                        ['audiences/', 'Audiences'],
                         ['email/', 'Transactional Email'],
-                        ['email-themes/', 'Email Themes'],
                         // ['mailers/', 'Mailers'],
+                        ['email-themes/', 'Email Themes'],
                         ['sent-email/', 'Sent Email'],
-                        // ['subscribers/', 'Subscribers'],
                     ],
                 },
                 {

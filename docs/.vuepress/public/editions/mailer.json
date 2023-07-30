@@ -3,9 +3,21 @@
         "category": "Audiences",
         "items": [
             {
+                "name": "User Group Audience Type",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
                 "name": "Subscriber List Audience Type",
                 "info": "Includes Craft User enhancement with an integrated Subscriber overlay.",
                 "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Data Set Audience Type",
+                "info": "Available via the Data Studio module.",
+                "lite": false,
                 "pro": true
             },
             {

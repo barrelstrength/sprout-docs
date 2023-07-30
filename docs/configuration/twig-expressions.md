@@ -3,19 +3,17 @@ date: 2023-02-19
 description: In several places within Craft and Sprout plugins, you are able to customize a setting with a dynamic value.
 ---
 
-# Object Syntax
+# Twig Expressions
 
-In several places within Craft and Sprout plugins, you are able to customize a setting with a dynamic value. For lack of a better term, we refer to this as **Object Syntax** and this documentation page aims to serve as a general guide.
+In several places within Craft and Sprout plugins, you are able to customize a setting with a dynamic value expressed using Twig syntax. For lack of a better term, we refer to this as **Twig Expression** and this documentation 
+page aims to serve as a general guide.
 
-::: tip
-You'll run into Object Syntax in Sprout Email as you [Personalize](./personalization.md) your [Email Templates](./custom-email-templates.md).
-:::
 
-In Craft you can use Object Syntax in the Entry URI Format field of your Section's Site Settings and the Title Format setting of your Entry Types.
+In Craft you can use Twig Expressions in the Entry URI Format field of your Section's Site Settings and the Title Format setting of your Entry Types.
 
-In each of these scenarios we can think of the settings field as a mini Twig template. Settings that allow for Object Syntax will be parsed like a Twig template and, just like a Twig template, they may have some variables available to them for you to use (like an individual Entry page has the `entry` variable available).
+In each of these scenarios we can think of the settings field as a mini Twig template. Settings that allow for Twig Expressions will be parsed like a Twig template and, just like a Twig template, they may have some variables available to them for you to use (like an individual Entry page has the `entry` variable available).
 
-Below we'll look at a comparison of how Craft processes templates and settings that support Object Syntax.
+Below we'll look at a comparison of how Craft processes templates and settings that support Twig Expressions.
 
 ## Entry Pages
 
@@ -56,19 +54,19 @@ In this example, our Template and Variables are processed and create our Title.
 ::: tip
 **Why does Craft name the variable `object` instead of something more appropriate like `entry`?**
 
-Object Syntax is supported by many different Elements and Settings within Craft and within plugins. As all of these features use the same code behind the scenes, Craft named the variable that gets created something generic so that it could apply to many scenarios.
+Twig Expressions is supported by many different Elements and Settings within Craft and within plugins. As all of these features use the same code behind the scenes, Craft named the variable that gets created something generic so that it could apply to many scenarios.
 :::
 
 ## Shorthand Syntax
 
-If you have a simple scenario, Object Syntax allows you to use a Shorthand Syntax as well.
+If you have a simple scenario, **Twig Expressions** allow you to use a Shorthand Syntax as well.
 
-| Object Syntax            | Shorthand Syntax |
-|:------------------------ |:---------------- |
-| `{{ object.title }}`       | `{title}`          |
-| `{{ object.customField }}` | `{customField}`    |
+| Twig Expression                                                         | Shorthand Syntax |
+|:------------------------------------------------------------------------|:---------------- |
+| `{{ object.title }}`                                                    | `{title}`          |
+| `{{ object.customField }}`                                              | `{customField}`    |
 | `{% if object.customField is not empty %}{{ object.title }}{% endif %}` | `{% if object.customField is not empty %}{title}{% endif %}` |
 
 ::: tip
-Use Object Syntax in conditional logic like an if statement.
+Use Twig Expressions in conditional logic like an if statement.
 :::
