@@ -222,89 +222,6 @@ module.exports = {
                 },
             ],
 
-            '/redirects/': [
-                ['../', '← All Plugins'],
-                {
-                    title: 'Introduction',
-                    collapsable: false,
-                    children: [
-                        '',
-                    ],
-                },
-                {
-                    title: 'Examples',
-                    collapsable: false,
-                    children: [
-                        'query-strings-in-redirects',
-                        'redirect-workflows',
-                    ],
-                },
-            ],
-
-            '/sitemaps/': [
-                ['../', '← All Plugins'],
-                {
-                    title: 'Introduction',
-                    collapsable: false,
-                    children: [
-                        '',
-                    ],
-                },
-                {
-                    title: 'Get Started',
-                    collapsable: false,
-                    children: [
-                        'sitemaps',
-                        'plugin-settings',
-                    ],
-                },
-                {
-                    title: 'Development',
-                    collapsable: false,
-                    children: [
-                        'custom-url-enabled-sections',
-                    ],
-                },
-            ],
-
-            '/email/': [
-                ['../', '← All Plugins'],
-                {
-                    title: 'Introduction',
-                    collapsable: false,
-                    children: [
-                        '',
-                        'troubleshooting-email-faq',
-                    ],
-                },
-                {
-                    title: 'Notification Emails',
-                    collapsable: false,
-                    children: [
-                        'notification-emails',
-                        'notification-events',
-                        'personalization',
-                    ],
-                },
-                {
-                    title: 'Examples',
-                    collapsable: false,
-                    children: [
-                        'craft-globals',
-                        'welcome-notification',
-                    ],
-                },
-                {
-                    title: 'Development',
-                    collapsable: false,
-                    children: [
-                        'custom-email-templates',
-                        'custom-mailers',
-                        'custom-notification-events',
-                    ],
-                },
-            ],
-
             '/campaigns/': [
                 ['../', '← All Plugins'],
                 {
@@ -360,6 +277,30 @@ module.exports = {
                     ],
                 },
             ],
+            '/examples-email/': [
+                ['../', '← All Plugins'],
+                {
+                    title: 'Email FAQ & Examples',
+                    collapsable: false,
+                    children: [
+                        '',
+                        'craft-globals',
+                        'welcome-notification',
+                    ],
+                },
+            ],
+            '/examples-seo/': [
+                ['../', '← All Plugins'],
+                {
+                    title: 'Redirect FAQ & Examples',
+                    collapsable: false,
+                    children: [
+                        '',
+                        'query-strings-in-redirects',
+                        'redirect-workflows',
+                    ],
+                },
+            ],
             // fallback
             '/': [
                 {
@@ -391,11 +332,12 @@ module.exports = {
                     title: 'Email Marketing',
                     collapsable: false,
                     children: [
+                        ['transactional-email/', 'Transactional Email'],
                         ['audiences/', 'Audiences'],
-                        ['email/', 'Transactional Email'],
-                        // ['mailers/', 'Mailers'],
                         ['email-themes/', 'Email Themes'],
+                        ['mailers/', 'Mailers'],
                         ['sent-email/', 'Sent Email'],
+                        ['examples-email/', 'FAQ & Examples'],
                     ],
                 },
                 {
@@ -403,6 +345,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         ['redirects/', 'Redirects'],
+                        ['sitemaps/', 'Sitemaps'],
+                        ['examples-seo/', 'FAQ & Examples'],
                     ],
                 },
                 {

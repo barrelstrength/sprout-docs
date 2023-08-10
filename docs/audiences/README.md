@@ -38,18 +38,18 @@ A user can Subscriber or Unsubscribe from a list using the **Audience ID** to id
 
 ``` twig
 {# Retrieve a list #}
-{% set subscriberList = sprout.audiences.subscriberLists
+{% set subscriberListAudience = sprout.mailer.audiences
     .id(123)
     .one() %}
 
 {# Check if the subscription already exists on a list #}
-{% if subscriberList.isSubscribed(currentUser.id) %}
+{% if subscriberListAudience.isSubscribed(currentUser.id) %}
 
     {# Remove a subscriber from a list #}
     <form method="post" accept-charset="utf-8">
         {{ csrfInput() }}
         <input type="hidden" name="action" value="sprout-module-mailer/subscriber-lists/remove">
-        <input type="hidden" name="audience[id]" value="{{ subscriberList.id }}">
+        <input type="hidden" name="audience[id]" value="{{ subscriberListAudience.id }}">
         <input type="text" name="user[email]" value="{{ currentUser.email }}">
         <input type="submit" value="Remove from List">
     </form>
@@ -60,7 +60,7 @@ A user can Subscriber or Unsubscribe from a list using the **Audience ID** to id
     <form method="post" accept-charset="utf-8">
         {{ csrfInput() }}
         <input type="hidden" name="action" value="sprout-module-mailer/subscriber-lists/add">
-        <input type="hidden" name="audience[id]" value="{{ subscriberList.id }}">
+        <input type="hidden" name="audience[id]" value="{{ subscriberListAudience.id }}">
         <input type="text" name="user[email]" value="{{ currentUser.email }}">
         <input type="submit" value="Add to List">
     </form>
@@ -71,14 +71,14 @@ A user can Subscriber or Unsubscribe from a list using the **Audience ID** to id
 Check if a user is subscribed using the User Element, User ID, or email address:
 
 ``` twig
-{% set subscriberList = sprout.audiences.subscriberLists
+{% set subscriberListAudience = sprout.mailer.audiences
     .id(123)
     .one() %}
     
 {# Check if the subscription already exists on a list #}
-{% if subscriberList.isSubscribed(currentUser) %}...{% endif %}
-{% if subscriberList.isSubscribed(123) %}...{% endif %}
-{% if subscriberList.isSubscribed('sprout@barrelstrengthdesign.com') %}...{% endif %}
+{% if subscriberListAudience.isSubscribed(currentUser) %}...{% endif %}
+{% if subscriberListAudience.isSubscribed(123) %}...{% endif %}
+{% if subscriberListAudience.isSubscribed('sprout@barrelstrengthdesign.com') %}...{% endif %}
 ```
 
 ### Querying Subscriber Lists
