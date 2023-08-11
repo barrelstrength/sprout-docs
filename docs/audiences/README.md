@@ -21,14 +21,14 @@ Audience Types allow you to manage different types of audiences.
 
 The Subscriber List Audience Type enhances Craft's native User Elements with additional features. Enabling the Subscriber List Audience Type allows you to:
 
-- Create one or more Subscriber List Audience
-- Send email to Users who are subscribed to a Subscriber List
-- Allow Users to manage which lists they are on via a Subscriber Lists field that displays on the User Element Content tab 
-- Filter Users by Subscriber List via custom sources that display in the sidebar of the Users Element Index page
+| Feature                         | Description                                                                                                              | 
+|:--------------------------------|:-------------------------------------------------------------------------------------------------------------------------|
+| Audiences                       | Create one or more Subscriber List Audience                                                                              |
+| Mailing Lists                   | Send email to Users who are subscribed to a Subscriber List                                                              |
+| Subscriber&nbsp;List&nbsp;Field | Allow Users to manage which lists they are on via a Subscriber Lists field that displays on the User Element Content tab |
+| Element&nbsp;Index&nbsp;Sources | Filter Users by Subscriber List via custom sources that display in the sidebar of the Users Element Index page           |
 
 A subscriber can be an existing User in Craft or created on the fly as a non-credentialed User. In either case, the Subscriber is identified by their email address.
-
-A Subscriber can be added to multiple Subscriber Lists but a Subscriber can only be added to a specific list once.
 
 ## Templating
 
@@ -121,7 +121,7 @@ The number of Subscribers on a Subscriber List can be retrieved like so:
 
 ### Custom Audience Types
 
-To create a custom Audience Type extend the base AudienceType class and register your new class via `EVENT_REGISTER_AUDIENCE_TYPES`.
+To create a custom Audience Type extend the base `AudienceType` class and register your new class via `EVENT_REGISTER_AUDIENCE_TYPES`.
 
 ``` php
 use BarrelStrength\Sprout\mailer\audience\AudienceType;

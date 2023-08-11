@@ -20,7 +20,7 @@ If you don't provide a template for the Text version of your email, Sprout Email
 
 ### Custom Mailers
 
-To create a custom Mailer that integrates with third-party email services, extend the base Mailer class and register your new class via `EVENT_REGISTER_MAILER_TYPES`.
+To create a custom Mailer that integrates with third-party email services, extend the base `Mailer` class and register your new class via `EVENT_REGISTER_MAILER_TYPES`.
 
 ``` php
 use BarrelStrength\Sprout\mailer\mailers\Mailer;

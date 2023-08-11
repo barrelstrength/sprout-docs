@@ -37,7 +37,7 @@ If you don't provide a template for the Text version of your email, Sprout Email
 
 ### Custom Email Themes
 
-To create a custom Email Theme that goes beyond the Custom Templates theme, extend the base EmailTheme class and register your new class via `EVENT_REGISTER_SPROUT_EMAIL_THEMES`.
+To create a custom Email Theme that goes beyond the Custom Templates theme, extend the base `EmailTheme` class and register your new class via `EVENT_REGISTER_SPROUT_EMAIL_THEMES`.
 
 ``` php
 use BarrelStrength\Sprout\mailer\emailthemes\EmailTheme;
