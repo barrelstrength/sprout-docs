@@ -35,6 +35,12 @@ As we have to maintain multiple master copies of our plugins, instead of a `mast
 - v3
 ```
 
+Run the following when setting up the project to enforce project-specific git hooks:
+
+``` bash
+git config core.hooksPath .githooks
+```
+
 ## Local Development
 
 Create a symlink to the plugin or module within the Craft project that will be used for development:

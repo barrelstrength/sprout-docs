@@ -318,7 +318,7 @@ module.exports = {
                         'configuration/requirements',
                         'configuration/updates',
                         'configuration/sprout-config',
-                        'configuration/twig-expressions',
+                        'configuration/twig-shortcut-syntax',
                     ],
                 },
                 {
@@ -333,9 +333,9 @@ module.exports = {
                     collapsable: false,
                     children: [
                         ['transactional-email/', 'Transactional Email'],
-                        ['audiences/', 'Audiences'],
-                        ['email-themes/', 'Email Themes'],
+                        ['email-types/', 'Email Types'],
                         ['mailers/', 'Mailers'],
+                        ['audiences/', 'Audiences'],
                         ['sent-email/', 'Sent Email'],
                         ['examples-email/', 'FAQ & Examples'],
                     ],

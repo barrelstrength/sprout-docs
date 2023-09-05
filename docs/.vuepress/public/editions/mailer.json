@@ -29,16 +29,16 @@
         ]
     },
     {
-        "category": "Email Themes",
+        "category": "Email Types",
         "items": [
             {
-                "name": "Simple Message Theme",
+                "name": "Simple Message Email Type",
                 "info": "",
                 "lite": true,
                 "pro": true
             },
             {
-                "name": "Custom Email Themes",
+                "name": "Custom Email Email Type",
                 "info": "",
                 "lite": true,
                 "pro": true
@@ -84,7 +84,7 @@
                 "pro": true
             },
             {
-                "name": "Custom Email Themes API",
+                "name": "Custom Email Type API",
                 "info": "",
                 "lite": false,
                 "pro": true

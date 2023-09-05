@@ -5,25 +5,26 @@ description: Sprout Email adds a centralized way to manage transactional email i
 
 # About Transactional Email
 
-Sprout Email adds a centralized way to manage transactional email in Craft. Transactional Emails support Notification Events, customizable Email Themes, and the ability to send to dynamic Mailing Lists using Audiences for list management.
+Sprout Email adds a centralized way to manage transactional email in Craft. Transactional Emails support Notification Events, customizable Email Types, and the ability to send to dynamic Mailing 
+Lists using Audiences for list management.
 
 See the related documentation pages for further detail:
 
 - [Audiences](../audiences)
-- [Email Themes](../email-themes)
+- [Email Types](../email-types)
 - [Mailers](../mailers)
 - [Sent Emails](../sent-email)
 
-When you first install Sprout, you'll want to configure your Email Theme and Mailer settings to ensure they match the needs for your email author workflows.
+When you first install Sprout, you'll want to review your Email Type and Mailer Settings to ensure they match the needs for your email author workflows.
 
 ## Email Elements
 
 Transactional Email Elements unify several email marketing and tooling concepts into a single element. 
 
 - **Email Metadata** - Subject Line, Preheader Text
-- **Mailer** - Sender, Reply To, Recipients
+- **Mailer Settings** - Sender, Reply To, Recipients
 - **Delivery Instructions** - Notification Event, Send Rules, File Attachments
-- **Content** - Email Theme, Custom Fields, Field Layout, Templates
+- **Content** - Email Type, Custom Fields, Field Layout, Templates
 
 ## Notification Events
 
@@ -67,29 +68,29 @@ More advanced rules can use an include to keep the CP setting simple:
 {% if object.customField == true %}true{% endif %}
 ```
 
-See the doc page on [Twig Expressions](../configuration/twig-expressions.md) for more information.
+See the doc page on [Twig Shortcut Syntax](../configuration/twig-shortcut-syntax.md) for more information.
 
 ## Personalization
 
 Personalizing email communications can take place at several points in the email workflow. For example, when an Entry is saved you might want to know who the author was and where you can view the entry; when a form is submitted you may want to trigger a message to an email address provided in the form; and when a product is purchased you might want to include purchase details in confirmation message.
 
-Personalization happens in phases and uses two different syntaxes. Fields that support personalization in the Control Panel are processed as object templates and can use [Twig Expressions](../configuration/twig-expressions.md). Email templates are processed as standard Twig.
+Personalization happens in phases and uses two different syntaxes. Fields that support personalization in the Control Panel are processed as object templates and can use [Twig Shortcut Syntax](../configuration/twig-shortcut-syntax.md). Email templates are processed as standard Twig.
 
 ### When a Notification Event is triggered
 
-Each Notification Event defines variables that are available at the time the event is triggered. Entry events share the `entry` variable. User events share the `user` variable. But events are not limited to sharing just a single variable. Look in the right sidebar of the Control Panel when selecting an Event to see examples of which variables are available.
+Each Notification Event defines **Notification Event Variables** that are available at the time the event is triggered. Entry events share the `entry` variable. User events share the `user` variable. But events are not limited to sharing just a single variable. Look in the right sidebar of the Control Panel when selecting an Event to see examples of which variables are available.
 
 ### Define recipients using event data
 
-_Recipients_ can be set on the fly from data provided by the Notification Event. For example, if your Form has an email field, you might set your recipient as `{email}` or `{{ object.email }}`.
+_Recipients_ can be set on the fly from data provided by the **Notification Event Variables**. For example, if your Form has an email field, you might set your recipient as `{email}` or `{{ object.email }}`.
 
 ### Fields that allow personalization
 
-The _Subject Line_, _Preheader Text_, _Default Message_ also allow Twig Expressions and can reference variables provided by the Notification Event.
+The _Subject Line_, _Preheader Text_, _Default Message_ also allow Twig Shortcut Syntax and can reference **Notification Event Variables** and **Recipient Variables** such as `{recipient.name}` and `{recipient.email}`.
 
 ### Customizing Email Templates
 
-The Notification Event, Recipient, and Email Element variables are all available for use in your Email Theme. 
+The Notification Event, Recipient, and Email Element variables are all available for use in your email templates. 
 
 ``` twig
 {# Email Element Fields
@@ -107,7 +108,7 @@ The Notification Event, Recipient, and Email Element variables are all available
 {{ recipient.email }}
 {{ recipient.name }}
 
-{# Email Theme Custom Fields 
+{# Email Type Custom Fields 
    These examples may not work in your project. You will need to
    update these examples to reference custom fields you are using.
 ------------------------------------------------------------ #}
@@ -152,9 +153,8 @@ class MyNotificationEvent extends NotificationEvent
 See related developer documentation for:
 
 - [Audiences](../audiences)
-- [Email Themes](../email-themes)
+- [Email Types](../email-types)
 - [Mailers](../mailers)
-
 
 ## Settings
 

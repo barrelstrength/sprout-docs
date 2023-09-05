@@ -5,22 +5,23 @@ description: Mailers enable you to customize the email author experience and con
 
 # About Mailers
 
-Mailers enable you to customize the email author experience and configure how your emails are sent. Use the default Transactional Mailer to lean on the same settings you've used to configure Craft or create a custom Mailer for your application requirements.
+Mailers enable you to customize the email author experience and configure how your emails are sent. 
+
+Each Email Type can select one Mailer.
+
+## Mailer: Craft Mailer Settings
+
+The default Mailer wraps Craft's default email settings.
 
 ## Mailer: Transactional Mailer
 
-Simple Message is the default Transactional Email Template. It tries to be as simple and un-opinionated as possible so it's handy when branding is not a concern and you just want to get an email working.
-
-
-::: tip
-If you don't provide a template for the Text version of your email, Sprout Email will convert your HTML email to Markdown and use that for the Text version of your email.
-:::
+The Transactional Mailer allows you to customize Approved Senders, Reply-To Addresses, and Mailer Fields.
 
 ## Developers
 
 ### Custom Mailers
 
-To create a custom Mailer that integrates with third-party email services, extend the base `Mailer` class and register your new class via `EVENT_REGISTER_MAILER_TYPES`.
+To create a custom Mailer that integrates with third-party email services, extend the base `Mailer` class and register your new class via `EVENT_REGISTER_MAILERS`.
 
 ``` php
 use BarrelStrength\Sprout\mailer\mailers\Mailer;
