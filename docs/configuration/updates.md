@@ -11,13 +11,13 @@ The guides below provide details for noteworthy upgrades such as breaking change
 
 ### Craft 4
 
-| Upgrading to Plugin      | Update Guides                             | Notes                                                                           | 
-|:-------------------------|:------------------------------------------|:--------------------------------------------------------------------------------|
-| Transactional&nbsp;4.44.444   | [Transactional][#444444-transactional]&nbsp;⚠️ | Email Types, Notification Event Condition Builder, Audiences. **Major update!** |
-| Data Studio 4.5.0        | [Data Studio][#450-data-studio] ⚠️        | Removes Custom Sources                                                          |
-| Data&nbsp;Studio&nbsp;4.44.444 | [Data Studio][#444444-data-studio] ⚠️     | New Lite version. **Major update!**                                             |
-| Redirects 4.44.444       | [Redirects][#444444-redirects]            | Improved workflow options.                                                      |
-| Framework 4.0.0          | [All Modules][#400-framework] ⚠️          | Added Craft 4 Support. **Major update!**                                        |
+| Upgrading to Plugin            | Update Guides                                  | Notes                                                                           | 
+|:-------------------------------|:-----------------------------------------------|:--------------------------------------------------------------------------------|
+| Transactional&nbsp;4.44.444    | [Transactional][#444444-transactional]&nbsp;⚠️ | Email Types, Notification Event Condition Builder, Audiences. **Major update!** |
+| Data Studio 4.46.0             | [Data Studio][#4460-data-studio] ⚠️            | Removes Custom Sources                                                          |
+| Data&nbsp;Studio&nbsp;4.44.444 | [Data Studio][#444444-data-studio] ⚠️          | New Lite version. **Major update!**                                             |
+| Redirects 4.44.444             | [Redirects][#444444-redirects]                 | Improved workflow options.                                                      |
+| Framework 4.0.0                | [All Modules][#400-framework] ⚠️               | Added Craft 4 Support. **Major update!**                                        |
 
 #### Craft 3 Migration Path
 
@@ -37,7 +37,7 @@ To upgrade Craft and Sprout to a version earlier than Craft `3.7.x` and Sprout `
 
 [#444444-transactional]: ../updates/4.44.444-transactional.md
 
-[#450-data-studio]: ../updates/4.5.0-data-studio.md
+[#4460-data-studio]: ../updates/4.46.0-data-studio.md
 
 [#444444-data-studio]: ../updates/4.44.444-data-studio.md
 
