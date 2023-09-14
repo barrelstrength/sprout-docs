@@ -32,7 +32,7 @@ In Craft 3, Email Template settings only stored the template path of the email t
 1. Globally
 2. On an per-email basis
 
-In Craft 4, Email Types are more advanced so many of the settings for the Email Types created in the migration are using default settings. Also, things like the Email Type name may not end up being too user friendly as they are based on the template path (i.e. "_Custom Templates \_email/path_"). In the migration, each unique template found creates a new Email Type.
+In Craft 4, Email Types are more advanced so, in some cases, settings for the Email Types created in the migration use default settings. Also, things like the Email Type name may not end up being too user friendly as they are based on the template path (i.e. "_Custom Templates \_email/path_"). In the migration, each unique combination of From Name, From Email, and Email Template found creates a new Email Type.
 
 After the migration, we recommend reviewing all Email Type settings to ensure they match your needs.
 
@@ -44,7 +44,7 @@ Mailers now allow users to customize Sender and Reply To settings and manage the
 
 In Craft 3, any author could use Environment variables in the From Name, From Email, and Reply-To fields when creating an email.
 
-In Craft 4, environment variables can only be used in Mailer Settings editable by the admin and the parsed values will populate the settings available to the email author when editing an email.
+In Craft 4, environment variables can only be used in Mailer Settings editable by the admin and the parsed values will populate the settings available to the email author when editing an email. Mailer Settings values are validated against the approved Sender addresses before sending.
 
 Three different settings configurations are available:
 
@@ -53,16 +53,6 @@ Three different settings configurations are available:
 - Approved Sender List
 
 In the migration, we check if you've used environment variables in your email settings. If so, and if those settings match the Craft default settings, we set your default Mailer to the Craft Mailer Settings option. If they don't match, we migrate them to the Editable Defaults option.
-
-#### Review all migrated Mailer Settings
-
-In Craft 3, Transactional Emails could be sent using any From Name/Email address.
-
-In Craft 4, Transactional Emails are validated against the approved Sender addresses before sending.
-
-The Approved Senders are saved in the Mailer Settings. However, when you save an Email the selected Sender gets saved as TEXT in that email. The data is stored this way because the Mailer Settings are a simple dropdown and not relational data and we don't want you to accidentally change the Sender of an email in the settings by re-ordering the items in the dropdown.
-
-If you change the Approved Senders in your Email Type settings for an Email Type that is already in use, and the saved Sender info differs from the Approved Senders, the email will not validate or be sent until you resave the email with a Sender in your Approved Senders list.
 
 ### Notification Event Condition Builder
 
