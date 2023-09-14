@@ -1,31 +1,47 @@
 ---
 date: 2023-02-19
-description: Upgrading to Sprout for Craft 4
+description: Create the new notification and add the appropriate sender info. The notification Rules will be setup to trigger "When a new user is created".
 ---
 
-# Upgrading to Sprout for Craft 4
+# Craft 4
+
+## v4.44.444 - 2023
 
 All Sprout Plugins added Craft 4 compatibility at version `4.44.444` and are built on top of the new Sprout Framework `4.0.0` module.
 
 Sprout for Craft 4 and provides a familiar author experience, introduces a simplified plugin architecture with the Sprout Framework module, and removes the need for a number of dependencies that were causing several permission and migration issues on Craft 3 websites. Designers and developers will want to read through these upgrade notes carefully - several things have changed.
 
-## Prepare to upgrade
+### Prepare to upgrade
 
 1. Review all upgrade guides for Craft and Sprout to prepare for your upgrade
 2. Review the 'Breaking Changes' section of the Sprout Module changelogs
 3. Confirm that all of the Sprout plugins that you want to upgrade are available on Craft 4
 4. Confirm that you have a migration path for any plugins that will not be available on Craft 4
 
-## Upgrade
+### Upgrade
 
 1. Update to the latest version of Craft 3
 2. Update all installed Sprout plugins to the most recent version on Craft 3
 3. Upgrade to Craft 4 (This step will trigger Sprout migrations for plugins with the same name)
 4. Install any Sprout plugins with new names to trigger their respective migrations
 
-## Breaking Changes
+#### Craft 3 Migration Path
 
-### All Sprout modules
+Avoid incremental updates to older versions of Craft and Sprout.
+
+::: warning THERE IS A BETTER WAY
+Sprout `4.44.444` added Craft 4 support, introduced a new plugin architecture, and solved several migration issues that had arisen in the older architecture. Before upgrading to Craft 4 and Sprout `4.44.444`, upgrade your site to the latest version of Craft 3.x and the most recent Sprout releases on Craft 3 all in one go.
+
+We recommend avoiding incremental upgrades (e.g. from `3.2` to `3.3` to `3.4`, etc.) as Craft 3 and Sprout did not play nicely together between Craft `3.2` and `3.7` and many of those issues are resolved if you can upgrade to the most recent version of Sprout on the latest version of Craft 3 with a single migration.
+:::
+
+To upgrade Craft and Sprout to a version earlier than Craft `3.7.x` and Sprout `4.40.x`, please review the [Installing &amp; Updating][#v3Docs] section in the Sprout v3 documentation for the specific plugins you are updating.
+
+[#v3Docs]: https://sprout.barrelstrengthdesign.com/docs/craft-v3/
+
+### Breaking Changes
+
+#### All Sprout modules
 
 - See [CHANGELOG-CORE](https://github.com/barrelstrength/craft-sprout/blob/v4/CHANGELOG) for a full list of changes
 - All Twig variables now use the `sprout` variable
@@ -207,4 +223,5 @@ Sprout for Craft 4 and provides a familiar author experience, introduces a simpl
 [//]: # (ON table1.id = table2.id)
 
 [//]: # (SET table1.field_phoneSprout = CONCAT&#40;'{"country":"AF","phone":"',table1.field_phoneSprout,'"}'&#41;;)
+
 

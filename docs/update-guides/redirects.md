@@ -1,15 +1,17 @@
 ---
 date: 2023-02-19
-description: Upgrade Sprout Redirects module 4.0.0
+description: Create the new notification and add the appropriate sender info. The notification Rules will be setup to trigger "When a new user is created".
 ---
 
-# Upgrading to Redirects v4.44.444
+# Redirects
+
+## v4.44.444 - February 20, 2023
 
 This release adds a few niceties to redirect workflows adding Site-specific Exclude URL lists, support for custom fields in your Redirect Field, and new conditional rules to customize sources.
 
 Redirects Lite can now manage unlimited Redirects.
 
-## Breaking Changes
+### Breaking Changes
 
 - See the general [upgrade guide][#400-framework] for Sprout Modules to 4.0
 - Lite Edition now allows managing unlimited Redirects
@@ -18,4 +20,5 @@ Redirects Lite can now manage unlimited Redirects.
 - Exclude URL Element Actions are now a Pro feature
 - Status Update Element Actions are now a Pro feature
 
-[#400-framework]: ../updates/4.0.0-framework.md
+[#400-framework]: ../update-guides/sprout.md
+

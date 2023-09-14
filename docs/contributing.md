@@ -5,6 +5,7 @@ description: The following is a set of guidelines for contributing to Sprout Plu
 
 # Contributing
 
+
 The following is a set of guidelines for contributing to Sprout Plugins and its first party integrations, which are hosted in the Barrel Strength organization on GitHub.
 
 ## Security Disclosures

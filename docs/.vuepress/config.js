@@ -301,6 +301,35 @@ module.exports = {
                     ],
                 },
             ],
+
+            '/update-guides/': [
+                ['../', '← All Plugins'],
+                {
+                    title: 'Update Guides',
+                    collapsable: false,
+                    children: [
+                        '',
+                    ],
+                },
+                {
+                    title: 'Plugins',
+                    collapsable: false,
+                    children: [
+                        'data-studio',
+                        'email',
+                        'redirects',
+                    ],
+                },
+                {
+                    title: 'All Plugins',
+                    collapsable: false,
+                    children: [
+                        'sprout',
+                    ],
+                },
+            ],
+
+
             // fallback
             '/': [
                 {
@@ -316,7 +345,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'configuration/requirements',
-                        'configuration/updates',
+                        ['update-guides/', 'Update Guides'],
                         'configuration/sprout-config',
                         'configuration/twig-shortcut-syntax',
                     ],
@@ -334,7 +363,7 @@ module.exports = {
                     children: [
                         ['transactional-email/', 'Transactional Email'],
                         ['email-types/', 'Email Types'],
-                        ['mailers/', 'Mailers'],
+                        ['mailers/', 'Mailer Settings'],
                         ['audiences/', 'Audiences'],
                         ['sent-email/', 'Sent Email'],
                         ['examples-email/', 'FAQ & Examples'],

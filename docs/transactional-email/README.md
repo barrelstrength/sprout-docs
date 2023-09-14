@@ -12,7 +12,7 @@ See the related documentation pages for further detail:
 
 - [Audiences](../audiences)
 - [Email Types](../email-types)
-- [Mailers](../mailers)
+- [Mailer Settings](../mailers)
 - [Sent Emails](../sent-email)
 
 When you first install Sprout, you'll want to review your Email Type and Mailer Settings to ensure they match the needs for your email author workflows.
@@ -154,7 +154,7 @@ See related developer documentation for:
 
 - [Audiences](../audiences)
 - [Email Types](../email-types)
-- [Mailers](../mailers)
+- [Mailer Settings](../mailers)
 
 ## Settings
 

@@ -3,36 +3,25 @@ date: 2023-07-30
 description: Mailers enable you to customize the email author experience and configure how your emails are sent. 
 ---
 
-# About Mailers
+# About Mailer Settings
 
-Mailers enable you to customize the email author experience and configure how your emails are sent. 
+Mailer Settings enable you to customize the email author experience and configure how your emails are sent. Mailer Settings can be assigned to one or more Email Types.
 
-Each Email Type can select one Mailer.
+## Setting: Craft Email Settings
 
-## Mailer: Craft Mailer Settings
+The default Mailer wraps Craft's default email settings. No configuration is necessary to use the default settings.
 
-The default Mailer wraps Craft's default email settings.
+## Setting: Editable Defaults
 
-## Mailer: Transactional Mailer
+Editable Defaults presents the email author with plain text fields for From Name, From Email, and Reply-To Email when editing an email. These fields will be populated by the default values defined in the Mailer Settings.
 
-The Transactional Mailer allows you to customize Approved Senders, Reply-To Addresses, and Mailer Fields.
+## Setting: Approved Sender List
+
+The Approved Sender List option allows you to configure a list of approved Senders and Reply-To address. Email authors must select from the values you configure up front. This option is the best to ensure emails are sent with consitent branding decisions. 
 
 ## Developers
 
-### Custom Mailers
-
-To create a custom Mailer that integrates with third-party email services, extend the base `Mailer` class and register your new class via `EVENT_REGISTER_MAILERS`.
-
-``` php
-use BarrelStrength\Sprout\mailer\mailers\Mailer;
-
-class MyMailer extends Mailer
-{
-  ...
-}
-```
-
-See the Sprout codebase for examples.
+[Mailer Adapters](https://plugins.craftcms.com/categories/mailer-adapters) can be used to customize Craft's default Mailer settings.
 
 ## Settings
 
