@@ -9,11 +9,7 @@ description: Sprout Sitemaps update guide.
 
 This release adds Craft 4 support and a few new features such as Content Query Sitemaps and improved navigation.
 
-Sitemaps now has a Lite and Pro version. Existing users have been given a new license key for Sitemaps Pro.
-
-### License Migrations
-
-Existing Sprout Sitemaps license holders have received a new Sprout Sitemaps Pro license in the same Craft Console account for the old Sprout Sitemaps license key. Once upgraded to Craft 4, you will need to manually add your new licenses key to your Craft installation. Your new Sitemaps license will have the same expiration as the old license and you will need to manually re-select the auto-renew option in your Craft Console.
+Sitemaps now has a Lite and Pro version. License holders can continue to use their existing license key for as a Pro license on Craft 4.
 
 ### Breaking Changes
 
