@@ -56,4 +56,4 @@ Read the [Config Settings](./../configuration/sprout-config.md) documentation to
 
 ## Updates
 
-See [update guides](../configuration/updates.md) for the Mailer and Framework modules.
+See [update guides](../update-guides/README.md) for the Mailer and Framework modules.

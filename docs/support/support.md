@@ -9,7 +9,7 @@ Sprout provides dedicated support for license holders and [free training](./trai
 
 ## Bugs & Feature Requests
 
-Running into an issue while upgrading? Read the [Update Guides](../configuration/updates.md) for more information on the latest updates and releases.
+Running into an issue while upgrading? Read the [Update Guides](../update-guides/README.md) for more information on the latest updates and releases.
 
 | Plugin            | Bugs                                       | Feature Requests     | Uncategorized    |
 |:----------------- |:-------------------                        |:-------------------- |:------------------- |

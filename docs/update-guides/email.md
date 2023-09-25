@@ -1,6 +1,6 @@
 ---
-date: 2023-02-19
-description: To use globals in Sprout Email you will need to use the craft.globals.getSetByHandle tag.
+date: 2023-09-25
+description: Sprout Email update guide.
 ---
 
 # Email

@@ -1,6 +1,6 @@
 ---
 date: 2023-09-10
-description: The Changelog reflects the most recent updates to a plugin and can be found at the top level in the Github repo for each plugin.
+description: Update guides for Sprout plugins.
 ---
 
 # Updating Sprout
@@ -16,3 +16,4 @@ The update guides are primarily for notable changes. Not all plugin versions wil
 - [Sprout Data Studio](./data-studio.md)
 - [Sprout Email](./email.md)
 - [Sprout Redirects](./redirects.md)
+- [Sprout Sitemaps](./sitemaps.md)

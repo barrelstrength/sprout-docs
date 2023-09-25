@@ -1,6 +1,6 @@
 ---
-date: 2023-02-19
-description: Create the new notification and add the appropriate sender info. The notification Rules will be setup to trigger "When a new user is created".
+date: 2023-09-25
+description: Sprout Data Studio update guide.
 ---
 
 # Data Studio

@@ -1,6 +1,6 @@
 ---
-date: 2023-09-02
-description: Upgrade Sprout Forms module 4.44.444
+date: 2023-09-25
+description: Sprout Forms update guide.
 ---
 
 # Upgrading to Forms v4.44.444

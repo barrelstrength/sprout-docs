@@ -318,6 +318,7 @@ module.exports = {
                         'data-studio',
                         'email',
                         'redirects',
+                        'sitemaps',
                     ],
                 },
                 {
