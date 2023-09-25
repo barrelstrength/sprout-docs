@@ -70,12 +70,8 @@ _Available in: Sprout Redirects, Sprout SEO._
 
 [//]: # ()
 
-[//]: # (## Sitemaps Module)
+## Sitemaps Module
 
-[//]: # ()
+_Available in: Sprout Sitemaps, Sprout SEO._
 
-[//]: # (_Available in: Sprout Sitemaps, Sprout SEO._)
-
-[//]: # ()
-
-[//]: # (<EditionComparison feature-list="./editions/sitemaps.json" />)
+<EditionComparison feature-list="./editions/sitemaps.json" />
