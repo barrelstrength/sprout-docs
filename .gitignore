@@ -1,8 +1,7 @@
-/.idea
 .DS_Store
+/.idea
+/.ddev
 /node_modules
 /vendor
-/web
-composer.lock
-/.ddev
-/docs/.vuepress/dist
+dist
+cache
