@@ -1,0 +1,23 @@
+:root {
+    --vp-c-brand-1: #0F9912;
+    --vp-c-brand-2: #47b649;
+    --vp-c-brand-3: #755707;
+
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #B4AA15, #1BA61D);
+    --vp-home-hero-image-background-image: linear-gradient(
+        -45deg,
+        #B4AA15 50%,
+        #755707 50%
+    );
+}
+
+img {
+    border-radius: 8px;
+}
+
+.vp-doc table {
+    display: table;
+    width: 100%;
+}
+
