@@ -7,7 +7,7 @@ description: Sprout Forms is an online form builder for Craft CMS that makes it 
 
 Sprout Forms is an online form builder for Craft CMS that makes it easy for content authors to manage complex forms while also giving a wonderful amount of control for designers and developers.
 
-![Drag & Drop Forms](./images/forms/sprout-forms-drag-drop.png)
+![Drag & Drop Forms](./assets/images/forms/sprout-forms-drag-drop.png)
 
 ## Easy Setup
 

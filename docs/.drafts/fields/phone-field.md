@@ -7,7 +7,7 @@ description: The Phone Field Type helps you manage valid international phone num
 
 The Phone Field Type helps you manage valid international phone numbers with a custom Phone Field.
 
-![Sprout Phone Field](./images/fields/sprout-phone-field.png)
+![Sprout Phone Field](./assets/images/fields/sprout-phone-field.png)
 
 When a phone number is recognized, a _Phone_ icon appears at the right hand side of the phone field. If you click on the _Phone_ link, your computer will open your primary phone program to initiate a call.
 

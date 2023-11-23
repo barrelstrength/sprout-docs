@@ -7,7 +7,7 @@ description: The Email Address field allows you to require a valid email address
 
 The Email Address field allows you to require a valid email address using Craft and Sprout Forms front-end Fields.
 
-![Sprout Email Field](./images/fields/sprout-email-field.png)
+![Sprout Email Field](./assets/images/fields/sprout-email-field.png)
 
 When an email address is recognized, a _Send Email_ icon appears at the right hand side of an Email Address field. If you click on the _Send Email_ link, your computer will open your primary mail program and populate the `to:` field with your email address.
 

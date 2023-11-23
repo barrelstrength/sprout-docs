@@ -137,7 +137,7 @@ All Settings are available to you via the `settings` variable. Be sure to test i
 - DateTime (requires that you start the field name with "datetime", i.e. 'datetimeStartDate')
 
 Examples also include how to toggle the display of conditional fields and how to use DateTime fields which require some additional steps. Additional field types can be used, but some fields with 
-advanced validation may require that you create a [Custom Data Source](../data-sets.md). The only field Twig Template Reports support with advanced validation requirements is the 
+advanced validation may require that you create a [Custom Data Source](/data-studio.md). The only field Twig Template Reports support with advanced validation requirements is the 
 DateTime field.
 
 ## Using Settings in Results

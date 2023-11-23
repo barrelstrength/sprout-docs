@@ -7,7 +7,7 @@ description: Sprout Redirects enables content managers to manage Redirects, Shor
 
 The Redirects module enables content managers to manage Redirects, Short URLs, track 404s, and ensure all content is findable.
 
-![Sprout Redirects - Element Index Page](./images/seo/redirects-index.png)
+![Sprout Redirects - Element Index Page](./assets/images/seo/redirects-index.png)
 
 ## Redirects
 
@@ -25,7 +25,7 @@ The Redirects module supports 3 types of redirects:
 
 Each Redirect has 4 settings, tracks the count of how many times it was used, and can be enabled or disabled.
 
-![Sprout Redirects - Edit Page](./images/seo/redirect-edit-page.png)
+![Sprout Redirects - Edit Page](./assets/images/seo/redirect-edit-page.png)
 
 | Setting                 | Description                                                                                                                                         |
 |:------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -71,7 +71,7 @@ Redirects are not processed during a request until Craft tries all other Routing
 
 To monitor and capture 404 Redirects, you will need to enable them in your Redirect module settings: _Settings-Sprout->Redirects->Log 404 Redirects_.
 
-![Log 404 Redirects](./images/seo/404-redirect-settings.png)
+![Log 404 Redirects](./assets/images/seo/404-redirect-settings.png)
 
 404 Redirects will get created with a disabled status and a default redirect location to your home page.
 

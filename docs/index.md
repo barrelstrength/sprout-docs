@@ -19,11 +19,11 @@ Sprout Marketing Suite plugins are coming to Craft 4. See our [Road Map](./suppo
 
 Sprout adds new components to use in your content architecture including Forms, Emails, and Reports.
 
-![Sprout Components](./images/sprout-components.png)
+![Sprout Components](./assets/images/sprout-components.png)
 
 Where Craft provides the excellent content management features, Sprout adds components specialized toward business and marketing use cases.
 
-![Sprout Features](./images/sprout-features.png)
+![Sprout Features](./assets/images/sprout-features.png)
 
 ## Modular Architecture
 

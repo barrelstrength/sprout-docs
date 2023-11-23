@@ -73,11 +73,11 @@ In the example below, the Predefined field shows the Users that are related to a
 
 #### Dynamic HTML Output
 
-![Predefined Field Example HTML Reverse Relation Field](./images/fields/predefined-html.png)
+![Predefined Field Example HTML Reverse Relation Field](./assets/images/fields/predefined-html.png)
 
 #### Dynamic HTML Settings
 
-![Predefined Field Example HTML Settings](./images/fields/predefined-html-settings.png)
+![Predefined Field Example HTML Settings](./assets/images/fields/predefined-html-settings.png)
 
 #### Example HTML Table
 

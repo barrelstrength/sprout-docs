@@ -20,7 +20,7 @@ This will give you control to change the output format, stop certain items from 
 | **Automatically&nbsp;render&nbsp;metadata** | Disable this setting to stop Sprout SEO from outputting your metadata. |
 | **Enable&nbsp;custom&nbsp;metadata&nbsp;variable** | Enable this setting and give your custom metadata variable a name. Sprout SEO will process your metadata and make it available to your template as this variable. |
 
-![Custom Metadata Variable](./images/seo/sprout-seo-metadata-variable.png)
+![Custom Metadata Variable](./assets/images/seo/sprout-seo-metadata-variable.png)
 
 To manage the metadata that Sprout SEO generates as a custom variable in your templates, you can do something like the following. Reference Sprout SEO's own template in `sproutseo/templates/_special/metadata.html` and be sure to continue to use the `{% sproutseo 'optimize' %}` tag _before_ you access your `metadata` variable in your templates (it's necessary to process your metadata and make the variable available):
 

@@ -7,7 +7,7 @@ description: Sprout Sitemaps gives you fine-grained control over your XML Sitema
 
 Sitemaps gives you fine-grained control over your XML Sitemaps for standalone, multi-lingual, and multi-regional sites. Sitemaps are managed directly within Craft (no template updates required).
 
-![Sitemap Management](./images/seo/xml-sitemap.png)
+![Sitemap Management](./assets/images/seo/xml-sitemap.png)
 
 Sitemaps works seamlessly with Craft's default content types and allows for more advanced customization using custom content queries and custom pages. 
 

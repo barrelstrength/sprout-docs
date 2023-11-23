@@ -7,7 +7,7 @@ description: The Notes Field is a Matrix-style, information-only field for Craft
 
 The Notes Field is a Matrix-style, information-only field for Craft CMS that allows you to add supplementary information to a Field Layout.
 
-![Notes Field](./images/fields/sprout-notes-field-output.png)
+![Notes Field](./assets/images/fields/sprout-notes-field-output.png)
 
 ## Custom Styles
 

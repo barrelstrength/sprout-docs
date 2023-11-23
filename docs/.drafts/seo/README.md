@@ -31,13 +31,13 @@ Edit your content confidently. Throughout your content management experience, Sp
 
 [Global Metadata](./global-metadata.md) is managed from the Globals tab and filled out once when you setup Sprout SEO. Globals ensure you have metadata in place for your website identity and prepare Structured Data for your brand. Globals will help you communicate to the search engines information about your brand identity, how to get in touch, and general details so you always have something relevant about your business in search results and social sharing.
 
-![Global Metadata](./images/seo/sproutseo-global-metadata.png)
+![Global Metadata](./assets/images/seo/sproutseo-global-metadata.png)
 
 ## Element Metadata
 
 **Element Metadata** is managed with the powerful [Metadata Field](./element-metadata-field.md). The Metadata field allows you to configure how your metadata is handled for every entry. If you want to have a tight integration with your existing content fields, you can reuse existing fields and the Metadata field will blend right into your existing content. If you want detailed control, you can enable overrides for each type of metadata and manage it all manually.
 
-![Element Metadata Field](./images/seo/sprout-seo-fieldtype.png)
+![Element Metadata Field](./assets/images/seo/sprout-seo-fieldtype.png)
 
 ## 100% control
 
@@ -60,7 +60,7 @@ If you want to have a detailed understanding of all of the types of metadata sup
 
 - [Sprout SEO - Metadata Levels & Priorities](https://docs.google.com/spreadsheets/d/1OWvJVPkxdiqiemT2AMX76yPacLfi3aBuyRhgRy4_NIU/edit?usp=sharing)
 
-![Metadata Levels and Priorities Spreadsheet](./images/seo/sprout-seo-metadata-spreadsheet.png)
+![Metadata Levels and Priorities Spreadsheet](./assets/images/seo/sprout-seo-metadata-spreadsheet.png)
 
 ::: tip
 We use the term **Metadata** to refer to all types of Metadata together. More specifically we may refer to **Meta Tags**, which are traditional metadata, and **Social Sharing**, which relies on a series of more specific Meta Tags around two specifications (Open Graph and Twitter) but applies to many other mediums as well from Pinterest to Slack chat, etc. Sprout SEO also let's you manage **Structured Data** (Knowledge Graph, Rich Cards) which supports many different **Schemas** and is output as JSON-LD in your templates. Finally, **Sitemap** metadata, allows you to define a list of URLs that search engines should know about on your site.

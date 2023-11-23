@@ -7,7 +7,7 @@ description: The URL field allows you to require a valid URL using Craft and Spr
 
 The URL field allows you to require a valid URL using Craft and Sprout Forms front-end Fields.
 
-![Sprout URL Field](./images/fields/example-url-field.gif)
+![Sprout URL Field](./assets/images/fields/example-url-field.gif)
 
 When a URL is recognized, a `Visit URL` icon appears on the right side of the input field. You can test the URL in the field by opening it in a new window.
 
