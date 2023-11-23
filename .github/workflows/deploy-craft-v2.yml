@@ -19,6 +19,17 @@ jobs:
         with:
           ref: ${{ github.event.inputs.ref || github.ref }}
 
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Run build task
+        run: npm run docs:build
+        
       - name: Deploy files to server
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
