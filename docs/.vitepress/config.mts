@@ -12,11 +12,11 @@ export default defineConfig({
         ['link', {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/icons/favicon-32x32.png'}],
         ['link', {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/icons/favicon-16x16.png'}],
     ],
+    base: '/docs/craft-v4/',
     sitemap: {
-        hostname: 'https://sprout.barrelstrengthdesign.com'
+        hostname: 'https://sprout.barrelstrengthdesign.com/docs/craft-v4/'
     },
     lastUpdated: true,
-    base: '/docs/craft-v4/',
     srcExclude: [
         '.drafts/**/*',
     ],
@@ -230,6 +230,10 @@ export default defineConfig({
         footer: {
             message: 'Craft The Planet',
             copyright: '© Barrel Strength Design'
+        },
+
+        lastUpdated: {
+            text: 'Last Updated: ',
         },
     },
     vite: {
