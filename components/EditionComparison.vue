@@ -109,7 +109,7 @@ table.multiple-header-rows tr.shade {
 :root.dark table.multiple-header-rows tr.shade {
     background-color: var(--vp-c-bg-soft);
 }
-// .vp-doc th, .vp-doc td
+
 table.multiple-header-rows tr th,
 table.multiple-header-rows tr td {
     border: none;

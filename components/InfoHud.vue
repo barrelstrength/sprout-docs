@@ -14,7 +14,7 @@
 </template>
 
 <script>
-  import { Dropdown, Tooltip } from 'floating-vue'
+  import { Dropdown } from 'floating-vue'
   import 'floating-vue/dist/style.css'
 
   export default {
@@ -153,33 +153,35 @@
         transition: opacity 0.15s;
     }
 
-    /**
-    // Updates tooltip colors
-    //.v-popper--theme-dropdown .v-popper__inner {
-    //    background-color: var(--vp-c-brand-1) !important;
-    //    border: transparent !important;
-    //    color: white;
-    //}
-    //
-    //.v-popper--theme-dropdown .v-popper__arrow-inner {
-    //    border-color: var(--vp-c-brand-1) !important;
-    //}
-    //
-    //.v-popper--theme-dropdown .v-popper__arrow-outer {
-    //    border-bottom-color: var(--vp-c-brand-1) !important;
-    //}
-    //
-    //:root.dark .v-popper--theme-dropdown .v-popper__inner {
-    //    background-color: var(--vp-c-yellow-1) !important;
-    //    border: transparent !important;
-    //}
-    //
-    //:root.dark .v-popper--theme-dropdown .v-popper__arrow-inner {
-    //    border-color: var(--vp-c-yellow-1) !important;
-    //}
-    //
-    //:root.dark .v-popper--theme-dropdown .v-popper__arrow-outer {
-    //    border-bottom-color: var(--vp-c-yellow-1) !important;
-    //}
-     */
+
+   /**
+     Updates tooltip colors
+    .v-popper--theme-dropdown .v-popper__inner {
+        background-color: var(--vp-c-brand-1) !important;
+        border: transparent !important;
+        color: white;
+    }
+
+    .v-popper--theme-dropdown .v-popper__arrow-inner {
+        border-color: var(--vp-c-brand-1) !important;
+    }
+
+    .v-popper--theme-dropdown .v-popper__arrow-outer {
+        border-bottom-color: var(--vp-c-brand-1) !important;
+    }
+
+    :root.dark .v-popper--theme-dropdown .v-popper__inner {
+        background-color: var(--vp-c-yellow-1) !important;
+        border: transparent !important;
+    }
+
+    :root.dark .v-popper--theme-dropdown .v-popper__arrow-inner {
+        border-color: var(--vp-c-yellow-1) !important;
+    }
+
+    :root.dark .v-popper--theme-dropdown .v-popper__arrow-outer {
+        border-bottom-color: var(--vp-c-yellow-1) !important;
+    }
+   */
+
 </style>
