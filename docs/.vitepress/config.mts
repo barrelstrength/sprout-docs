@@ -223,7 +223,7 @@ export default defineConfig({
             options: {
                 appId: '5JN8FB8K6H',
                 apiKey: '9245da67ddab2b9ddda749bbb31362cf',
-                indexName: 'sprout_barrelstrengthdesign'
+                indexName: 'sprout_barrelstrengthdesign_v4'
             }
         },
 
