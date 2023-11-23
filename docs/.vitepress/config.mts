@@ -222,7 +222,8 @@ export default defineConfig({
             provider: 'algolia',
             options: {
                 appId: '5JN8FB8K6H',
-                apiKey: '9245da67ddab2b9ddda749bbb31362cf',
+                // apiKey: '9245da67ddab2b9ddda749bbb31362cf', // Old
+                apiKey: 'dd083376e0d88465dfd6fe7f8c1ef13f', // New
                 indexName: 'sprout_barrelstrengthdesign_v4'
             }
         },
