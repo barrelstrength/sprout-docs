@@ -5,23 +5,27 @@ description: Sprout provides dedicated support for license holders and free trai
 
 # Support
 
-Sprout provides dedicated support for license holders and [free training](./training.md).
+Support for all Sprout modules is managed via the Sprout Framework Github repo.
 
-## Bugs & Feature Requests
+| Plugin             | Bugs                                           | Feature Requests          | Uncategorized               |
+|:-------------------|:-----------------------------------------------|:--------------------------|:----------------------------|
+| Sprout Data Studio | Craft [v4][#Reports4B] \| [v3][#Reports3B]     | [View All][#ReportsFR]    | [no:project][#ReportsNP]    |
+| Sprout Forms       | Craft [v4][#Forms4B] \| [v3][#Forms3B]         | [View All][#FormsFR]      | [no:project][#FormsNP]      |
+| Sprout SEO         | Craft [v4][#Seo4B] \| [v3][#Seo3B]             | [View All][#SeoFR]        | [no:project][#SeoNP]        |
+| Sprout Redirects   | Craft [v4][#Redirects4B] \| [v3][#Redirects3B] | [View All][#RedirectsFR]  | [no:project][#RedirectsNP]  |
+| Sprout Sitemaps    | Craft [v4][#Sitemaps4B] \| [v3][#Sitemaps3B]   | [View All][#SitemapsFR]   | [no:project][#SitemapsNP]   |
+| Sprout Email       | Craft [v4][#Email4B] \| [v3][#Email3B]         | [View All][#EmailFR]      | [no:project][#EmailNP]      |
+| Sprout Sent Email  | Craft [v4][#SentEmail4B] \| [v3][#SentEmail3B] | [View All][#SentEmailFR]  | [no:project][#SentEmailNP]  |
 
+| Module (Internal) | Bugs                                           | Feature Requests          | Uncategorized                                       |
+|:------------------|:-----------------------------------------------|:--------------------------|:----------------------------------------------------|
+| Sprout Framework  | Craft [v4][#Framework4B]                       | [View All][#FrameworkFR]  | [no:project][#FrameworkNP] [no:label][#FrameworkNL] |
+
+::: tip Upgrading?
 Running into an issue while upgrading? Read the [Update Guides](../update-guides/index.md) for more information on the latest updates and releases.
+:::
 
-| Plugin            | Bugs                                       | Feature Requests     | Uncategorized    |
-|:----------------- |:-------------------                        |:-------------------- |:------------------- |
-| Sprout Data Studio | Craft [v4][#Reports4B] \| [v3][#Reports3B]    | [View All][#ReportsFR]  | [no:label][#ReportsNL] [no:project][#ReportsNP] |
-| Sprout Forms      | Craft [v4][#Forms4B] \| [v3][#Forms3B]      | [View All][#FormsFR]    | [no:label][#FormsNL] [no:project][#FormsNP]   |
-| Sprout SEO        | Craft [v4][#Seo4B] \| [v3][#Seo3B]        | [View All][#SeoFR]      | [no:label][#SeoNL] [no:project][#SeoNP]     |
-| Sprout Redirects  | Craft [v4][#Redirects4B] \| [v3][#Redirects3B]  | [View All][#RedirectsFR]| [no:label][#RedirectsNL] [no:project][#RedirectsNP] |
-| Sprout Sitemaps   | Craft [v4][#Sitemaps4B] \| [v3][#Sitemaps3B]   | [View All][#SitemapsFR] | [no:label][#SitemapsNL] [no:project][#SitemapsNP] |
-| Sprout Email      | Craft [v4][#Email4B] \| [v3][#Email3B]      | [View All][#EmailFR]    | [no:label][#EmailNL] [no:project][#EmailNP]   |
-| Sprout Sent Email | Craft [v4][#SentEmail4B] \| [v3][#SentEmail3B]      | [View All][#SentEmailFR]    | [no:label][#SentEmailNL] [no:project][#SentEmailNP] |
-
-::: tip Custom Projects & Support
+::: info Custom Projects & Support
 If you need a planned feature that we have not yet added, consider hiring us. We are available for custom development and consulting services and are happy to improve or extend our plugins based on your project needs.
 
 Contact us: [sprout@barrelstrengthdesign.com](mailto:sprout@barrelstrengthdesign.com)
@@ -68,73 +72,67 @@ If you are in need of support, please use one of the official support channels l
 :::
 
 
-[#Forms3B]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#Forms3B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac3+label%3Amodule-forms
 
-[#Seo3B]: https://github.com/barrelstrength/craft-sprout-seo/issues?&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#Seo3B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac3+label%3Amodule-meta
 
-[#Redirects3B]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#Redirects3B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac3+label%3Amodule-redirects
 
-[#Sitemaps3B]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#Sitemaps3B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac3+label%3Amodule-sitemaps
 
-[#Email3B]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#Email3B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac3+label%3Amodule-transactional
 
-[#SentEmail3B]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#SentEmail3B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac3+label%3Amodule-sent-email
 
-[#Reports3B]: https://github.com/barrelstrength/craft-sprout-data-studio/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac3
+[#Reports3B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac3+label%3Amodule-data-studio
 
-[#Forms4B]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+[#Forms4B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac4+label%3Amodule-forms
 
-[#Seo4B]: https://github.com/barrelstrength/craft-sprout-seo/issues?&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+[#Seo4B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac4+label%3Amodule-meta
 
-[#Redirects4B]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+[#Redirects4B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac4+label%3Amodule-redirects
 
-[#Sitemaps4B]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+[#Sitemaps4B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac4+label%3Amodule-sitemaps
 
-[#Email4B]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+[#Email4B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac4+label%3Amodule-transactional
 
-[#SentEmail4B]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+[#SentEmail4B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac4+label%3Amodule-sent-email
 
-[#Reports4B]: https://github.com/barrelstrength/craft-sprout-data-studio/issues?q=is%3Aissue+is%3Aopen+label%3Abug+label%3Ac4
+[#Reports4B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac4+label%3Amodule-data-studio
 
-[#FormsFR]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#Framework4B]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Ac4+label%3Amodule-core
 
-[#SeoFR]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#FormsFR]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement+label%3Amodule-forms
 
-[#RedirectsFR]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#SeoFR]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement+label%3Amodule-meta
 
-[#SitemapsFR]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#RedirectsFR]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement+label%3Amodule-redirects
 
-[#EmailFR]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#SitemapsFR]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement+label%3Amodule-sitemaps
 
-[#SentEmailFR]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#EmailFR]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement+label%3Amodule-transactional
 
-[#ReportsFR]: https://github.com/barrelstrength/craft-sprout-data-studio/issues?q=is%3Aopen+is%3Aissue+label%3Afeature
+[#SentEmailFR]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement+label%3Amodule-sent-email
 
-[#FormsNL]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#ReportsFR]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement+label%3Amodule-data-studio
 
-[#SeoNL]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#FrameworkFR]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement+label%3Amodule-core
 
-[#RedirectsNL]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#FormsNP]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+no%3Aproject+label%3Amodule-forms
 
-[#SitemapsNL]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#SeoNP]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+no%3Aproject+label%3Amodule-meta
 
-[#EmailNL]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#RedirectsNP]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+no%3Aproject+label%3Amodule-redirects
 
-[#SentEmailNL]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#SitemapsNP]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+no%3Aproject+label%3Amodule-sitemaps
 
-[#ReportsNL]: https://github.com/barrelstrength/craft-sprout-data-studio/issues?q=is%3Aissue+is%3Aopen+no%3Alabel
+[#EmailNP]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+no%3Aproject+label%3Amodule-transactional
 
-[#FormsNP]: https://github.com/barrelstrength/craft-sprout-forms/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
+[#SentEmailNP]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+no%3Aproject+label%3Amodule-sent-email
 
-[#SeoNP]: https://github.com/barrelstrength/craft-sprout-seo/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
+[#ReportsNP]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+no%3Aproject+label%3Amodule-reports
 
-[#RedirectsNP]: https://github.com/barrelstrength/craft-sprout-redirects/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
+[#FrameworkNP]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+no%3Aproject
 
-[#SitemapsNP]: https://github.com/barrelstrength/craft-sprout-sitemaps/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
-
-[#EmailNP]: https://github.com/barrelstrength/craft-sprout-email/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
-
-[#SentEmailNP]: https://github.com/barrelstrength/craft-sprout-sent-email/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
-
-[#ReportsNP]: https://github.com/barrelstrength/craft-sprout-data-studio/issues?q=is%3Aissue+is%3Aopen+no%3Aproject
+[#FrameworkNL]: https://github.com/barrelstrength/sprout/issues?q=is%3Aopen+is%3Aissue+no%3Alabel
 
