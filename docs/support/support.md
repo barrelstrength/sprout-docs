@@ -7,19 +7,19 @@ description: Sprout provides dedicated support for license holders and free trai
 
 Support for all Sprout modules is managed via the Sprout Framework Github repo.
 
-| Plugin             | Bugs                                           | Feature Requests          | Uncategorized               |
-|:-------------------|:-----------------------------------------------|:--------------------------|:----------------------------|
-| Sprout Data Studio | Craft [v4][#Reports4B] \| [v3][#Reports3B]     | [View All][#ReportsFR]    | [no:project][#ReportsNP]    |
-| Sprout Forms       | Craft [v4][#Forms4B] \| [v3][#Forms3B]         | [View All][#FormsFR]      | [no:project][#FormsNP]      |
-| Sprout SEO         | Craft [v4][#Seo4B] \| [v3][#Seo3B]             | [View All][#SeoFR]        | [no:project][#SeoNP]        |
-| Sprout Redirects   | Craft [v4][#Redirects4B] \| [v3][#Redirects3B] | [View All][#RedirectsFR]  | [no:project][#RedirectsNP]  |
-| Sprout Sitemaps    | Craft [v4][#Sitemaps4B] \| [v3][#Sitemaps3B]   | [View All][#SitemapsFR]   | [no:project][#SitemapsNP]   |
-| Sprout Email       | Craft [v4][#Email4B] \| [v3][#Email3B]         | [View All][#EmailFR]      | [no:project][#EmailNP]      |
-| Sprout Sent Email  | Craft [v4][#SentEmail4B] \| [v3][#SentEmail3B] | [View All][#SentEmailFR]  | [no:project][#SentEmailNP]  |
+| Plugin             | Bugs                                           | Feature Requests         | Uncategorized              |
+|:-------------------|:-----------------------------------------------|:-------------------------|:---------------------------|
+| Sprout Data Studio | Craft [v4][#Reports4B] \| [v3][#Reports3B]     | [View All][#ReportsFR]   | [no:project][#ReportsNP]   |
+| Sprout Forms       | Craft [v4][#Forms4B] \| [v3][#Forms3B]         | [View All][#FormsFR]     | [no:project][#FormsNP]     |
+| Sprout SEO         | Craft [v4][#Seo4B] \| [v3][#Seo3B]             | [View All][#SeoFR]       | [no:project][#SeoNP]       |
+| Sprout Redirects   | Craft [v4][#Redirects4B] \| [v3][#Redirects3B] | [View All][#RedirectsFR] | [no:project][#RedirectsNP] |
+| Sprout Sitemaps    | Craft [v4][#Sitemaps4B] \| [v3][#Sitemaps3B]   | [View All][#SitemapsFR]  | [no:project][#SitemapsNP]  |
+| Sprout Email       | Craft [v4][#Email4B] \| [v3][#Email3B]         | [View All][#EmailFR]     | [no:project][#EmailNP]     |
+| Sprout Sent Email  | Craft [v4][#SentEmail4B] \| [v3][#SentEmail3B] | [View All][#SentEmailFR] | [no:project][#SentEmailNP] |
 
-| Module (Internal) | Bugs                                           | Feature Requests          | Uncategorized                                       |
-|:------------------|:-----------------------------------------------|:--------------------------|:----------------------------------------------------|
-| Sprout Framework  | Craft [v4][#Framework4B]                       | [View All][#FrameworkFR]  | [no:project][#FrameworkNP] [no:label][#FrameworkNL] |
+| Module (Internal) | Bugs                     | Feature Requests         | Uncategorized                                       |
+|:------------------|:-------------------------|:-------------------------|:----------------------------------------------------|
+| Sprout Framework  | Craft [v4][#Framework4B] | [View All][#FrameworkFR] | [no:project][#FrameworkNP] [no:label][#FrameworkNL] |
 
 ::: tip Upgrading?
 Running into an issue while upgrading? Read the [Update Guides](../update-guides/index.md) for more information on the latest updates and releases.
@@ -55,7 +55,7 @@ To help rule out plugin conflicts or upgrade issues, re-install your plugin on a
 
 If you are unable to find an answer, support is available for Sprout license holders. We typically respond within 48 hours during the business week. We monitor support tickets during US business hours Monday-Friday, 9am-6pm ET (1pm-10pm GMT).
 
-For general support questions for all of our plugins, [open a Discussion](https://github.com/barrelstrength/sprout/discussions/categories/q-a) in the discussion forum of the Sprout GitHub repository. While the specific plugin you have a question about exist in a different separate repository, all tickets and support questions are managed in this repository. 
+For general support questions for all of our plugins, [open a Discussion](https://github.com/barrelstrength/sprout/discussions/categories/q-a) in the discussion forum of the Sprout GitHub repository. While the specific plugin you have a question about exist in a different separate repository, all tickets and support questions are managed in this repository.
 
 ::: warning Last-minute Support
 While we do offer license holders free support and do our best to solve any issues that come up in a timely manner, we are not able to guarantee a response time or time to resolution for all issues. Please plan your projects and upgrades with enough time to test and reach out with any questions.
