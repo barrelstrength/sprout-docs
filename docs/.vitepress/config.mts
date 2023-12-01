@@ -6,11 +6,11 @@ export default defineConfig({
     titleTemplate: ':title - Sprout Plugins – Craft CMS',
     description: "Build custom Craft CMS websites with Sprout Marketing Suite",
     head: [
-        ['link', { rel: 'icon', href: '/icons/favicon.ico' }],
-        ['link', {rel: 'icon', href: '/icons/favicon-16x16.png'}],
-        ['link', {rel: 'apple-touch-icon', sizes: '180x180', href: '/icons/apple-touch-icon.png'}],
-        ['link', {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/icons/favicon-32x32.png'}],
-        ['link', {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/icons/favicon-16x16.png'}],
+        ['link', {rel: 'icon', href: '/docs/craft-v4/icons/favicon.ico'}],
+        ['link', {rel: 'icon', href: '/docs/craft-v4/icons/favicon-16x16.png'}],
+        ['link', {rel: 'apple-touch-icon', sizes: '180x180', href: '/docs/craft-v4/icons/apple-touch-icon.png'}],
+        ['link', {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/docs/craft-v4/icons/favicon-32x32.png'}],
+        ['link', {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/docs/craft-v4/icons/favicon-16x16.png'}],
     ],
     base: '/docs/craft-v4/',
     sitemap: {
@@ -63,7 +63,7 @@ export default defineConfig({
                     text: 'Configuration',
                     collapsed: false,
                     items: [
-                        {text: 'Update Guides', link: '/update-guides/index' },
+                        {text: 'Update Guides', link: '/update-guides/index'},
                         {text: 'Requirements', link: '/configuration/requirements'},
                         {text: 'Config Settings', link: '/configuration/sprout-config'},
                         {text: 'Shortcut Syntax', link: '/configuration/twig-shortcut-syntax'},
