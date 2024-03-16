@@ -13,6 +13,8 @@ Sprout Reports is now Sprout Data Studio and now includes integrated Commerce Da
 
 ::: warning
 Due to this plugin's name change (Reports => Data Studio) you will need to manually install it and manually update to your new license key after upgrading to Craft 4 to trigger its migrations. If you have any Report-related dashboard widgets you may see an error when you first login to your Craft 4 control panel. Navigate directly to the plugins page `/admin/settings/plugins` to install the plugin.
+
+Once you've updated Sprout Reports to the latest on Craft 3, you can remove it from the composer.json file. Once upgraded to Craft 4, you can install Sprout Data Studio via composer or from the plugin store.
 :::
 
 ### License Migrations
