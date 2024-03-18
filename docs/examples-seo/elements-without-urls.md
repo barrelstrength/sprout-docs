@@ -22,7 +22,3 @@ The [Metadata Field](./element-metadata-field.md) can be used on Elements like U
     id: user.id
 }) %}
 ```
-
-## Custom Elements
-
-Add integrated Metadata and XML Sitemap support for custom Elements or any Element that does not support URLs via a [Custom URL-Enabled Section](./../sitemaps/custom-url-enabled-sections.md).
