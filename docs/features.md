@@ -56,15 +56,11 @@ _Available in: Sprout Email, Sprout Sent Email._
 
 [//]: # ()
 
-[//]: # (## Meta Module)
+## Meta Module
 
-[//]: # ()
+_Available in: Sprout SEO._
 
-[//]: # (_Available in: Sprout SEO._)
-
-[//]: # ()
-
-[//]: # (<EditionComparison feature-list="./editions/seo.json" />)
+<EditionComparison feature-list="./editions/seo.json" />
 
 ## Redirects Module
 

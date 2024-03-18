@@ -3,9 +3,9 @@ date: 2023-09-25
 description: Sprout Email update guide.
 ---
 
-# Email
+# Updating Email
 
-## 4.44.444 - September 5, 2023
+## v4.44.444 - September 5, 2023
 
 The Transactional Email Module manages Sprout's core notification email functionality and in this major release adds significant features such as Audiences, Email Types, and the Notification Event Condition Builder.
 

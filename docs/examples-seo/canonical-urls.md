@@ -28,9 +28,7 @@ Overriding Canonical URLs in your templates breaks the relationship with XML Sit
 To override the `canonical` meta value on any given page in your templates, use the `sprout.seo.meta` tag and set the `canonical` attribute to the appropriate URL:
 
 ``` twig
-{% do sprout.seo.meta({
+{% do sprout.meta.update({
     canonical: customUrl,
 }) %}
-
-{% sproutseo 'optimize' %}
 ```

@@ -93,6 +93,7 @@ export default defineConfig({
                     text: 'SEO Metadata',
                     collapsed: false,
                     items: [
+                        {text: 'Meta Tags & Schema', link: '/meta'},
                         {text: 'Redirects', link: '/redirects'},
                         {text: 'Sitemaps', link: '/sitemaps'},
                         {text: 'FAQ & Examples', link: '/examples-seo/faq'},
@@ -141,6 +142,7 @@ export default defineConfig({
                     items: [
                         {text: 'Data Studio', link: '/update-guides/data-studio'},
                         {text: 'Email', link: '/update-guides/email'},
+                        {text: 'SEO', link: '/update-guides/seo'},
                         {text: 'Redirects', link: '/update-guides/redirects'},
                         {text: 'Sitemaps', link: '/update-guides/sitemaps'},
                     ]
@@ -195,15 +197,26 @@ export default defineConfig({
             '/examples-seo/': [
                 {
                     items: [
-                        {text: '← Back to SEO', link: '/redirects'},
+                        {text: '← Back to SEO', link: '/meta'},
                     ]
                 },
                 {
-                    text: 'Examples',
+                    text: 'Metadata',
                     items: [
                         {text: 'Troubleshooting FAQ', link: '/examples-seo/faq'},
+                        {text: 'Global Metadata in Templates', link: '/examples-seo/global-metadata-in-templates'},
+                        {text: 'Element Metadata Field', link: '/examples-seo/element-metadata-field'},
+                        {text: 'Template Metadata Overrides', link: '/examples-seo/template-metadata-overrides'},
+                        {text: 'Canonical URLs', link: '/examples-seo/canonical-urls'},
+                        {text: 'Block Search Robots', link: '/examples-seo/block-robots-on-dev-site'},
+                        {text: 'Elements Without URLs', link: '/examples-seo/elements-without-urls'},
+                    ]
+                },
+                {
+                    text: 'Redirects',
+                    items: [
                         {text: 'Craft Globals', link: '/examples-seo/query-strings-in-redirects'},
-                        {text: 'Welcome Notification', link: '/examples-seo/redirect-workflows'},
+                        {text: 'Redirect Workflows', link: '/examples-seo/redirect-workflows'},
                     ]
                 }
             ],

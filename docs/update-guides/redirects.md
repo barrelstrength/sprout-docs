@@ -3,7 +3,7 @@ date: 2023-09-25
 description: Sprout Redirects update guide.
 ---
 
-# Redirects
+# Updating Redirects
 
 ## v4.44.444 - February 20, 2023
 

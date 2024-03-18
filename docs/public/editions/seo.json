@@ -15,7 +15,7 @@
                 "pro": true
             },
             {
-                "name": "Verify Ownership",
+                "name": "Verify Ownership Metadata",
                 "info": "",
                 "lite": true,
                 "pro": true
@@ -50,26 +50,31 @@
                 "pro": true
             },
             {
-                "name": "Unlimited Metadata Fields",
-                "info": "",
+                "name": "Unlimited Metadata Mappings",
+                "info": "Create unique metadata mappings in any field layout.",
                 "lite": false,
                 "pro": true
             },
             {
-                "name": "Custom Metadata Patterns",
-                "info": "",
-                "lite": false,
-                "pro": true
-            },
-            {
-                "name": "Custom Metadata Overrides",
-                "info": "",
+                "name": "Custom Mapping Patterns",
+                "info": "Optimize your metadata by defining custom patterns that use data from more than one field.",
                 "lite": false,
                 "pro": true
             },
             {
                 "name": "Template Metadata",
-                "info": "",
+                "info": "Override metadata at any point during Twig template rendering.",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Developers",
+        "items": [
+            {
+                "name": "Custom Schema API",
+                "info": "Build the precise structured data mappings you need.",
                 "lite": false,
                 "pro": true
             }

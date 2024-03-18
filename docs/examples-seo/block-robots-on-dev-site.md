@@ -17,7 +17,7 @@ In the example below, the conditional statement assumes we have created an `env`
 
 ``` twig
 {% if craft.config.env != 'live' %}
-  {% do sprout.seo.meta({
+  {% do sprout.meta.update({
     robots: { 'noindex': 1, 'nofollow': 1 }
   }) %}
 {% endif %}

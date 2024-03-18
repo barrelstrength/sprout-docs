@@ -1,13 +1,13 @@
 ---
 date: 2023-02-19
-description: Global Metadata is managed from the Globals tab and filled out once when you setup Sprout SEO. Globals ensure you have metadata in place for your website identity and prepare Structured Data for your brand.
+description: The Metadata Field can be used on Elements like Users and Tags, that do not support URLs by default.
 ---
 
-# Global Metadata
+# Global Metadata in Templates
 
 Global Metadata is managed from the Globals tab and filled out once when you setup Sprout SEO. Globals ensure you have metadata in place for your website identity and prepare Structured Data for your brand. Globals will help you communicate to the search engines information about your brand identity, how to get in touch, and general details so you always have something relevant about your business in search results and social sharing.
 
-## Website Identity
+### Website Identity
 
 ``` twig
 {% set globals = sprout.seo.getGlobalMetadata() %}
@@ -45,7 +45,7 @@ Global Metadata is managed from the Globals tab and filled out once when you set
 {{ identity.address.address2 }}
 ```
 
-## Contacts
+### Contacts
 
 ``` twig
 {% set globals = sprout.seo.getGlobalMetadata(currentSite) %}
@@ -57,7 +57,7 @@ Global Metadata is managed from the Globals tab and filled out once when you set
 {% endfor %}
 ```
 
-### getContacts
+#### getContacts
 
 You can display a list of the Contacts from your Global Sprout SEO settings on your website using the `getContacts` tag:
 
@@ -71,7 +71,7 @@ You can display a list of the Contacts from your Global Sprout SEO settings on y
 </ul>
 ```
 
-## Social Profiles
+### Social Profiles
 
 ``` twig
 {% set globals = sprout.seo.getGlobalMetadata(currentSite) %}
@@ -83,7 +83,7 @@ You can display a list of the Contacts from your Global Sprout SEO settings on y
 {% endfor %}
 ```
 
-### getSocialProfilesTag
+#### getSocialProfilesTag
 
 You can display a list of the Social Profiles in your Global Sprout SEO settings on your website using the `getSocialProfiles` tag:
 
@@ -97,7 +97,7 @@ You can display a list of the Social Profiles in your Global Sprout SEO settings
 </ul>
 ```
 
-## Verify Ownership
+### Verify Ownership
 
 ``` twig
 {% set globals = sprout.seo.getGlobalMetadata(currentSite) %}
@@ -110,7 +110,7 @@ You can display a list of the Social Profiles in your Global Sprout SEO settings
 {% endfor %}
 ```
 
-## Customization
+### Customization
 
 ``` twig
 {% set globals = sprout.seo.getGlobalMetadata(currentSite) %}
@@ -125,7 +125,7 @@ You can display a list of the Social Profiles in your Global Sprout SEO settings
 {{ settings.appendTitleValue }}
 ```
 
-## Robots
+### Robots
 
 ``` twig
 {% set globals = sprout.seo.getGlobalMetadata(currentSite) %}

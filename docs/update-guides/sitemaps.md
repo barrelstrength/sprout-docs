@@ -3,7 +3,7 @@ date: 2023-09-25
 description: Sprout Sitemaps update guide.
 ---
 
-# Sitemaps
+# Updating Sitemaps
 
 ## v4.44.444 - September 25, 2023
 

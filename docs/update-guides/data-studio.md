@@ -3,7 +3,7 @@ date: 2023-09-25
 description: Sprout Data Studio update guide.
 ---
 
-# Data Studio
+# Updating Data Studio
 
 ## v4.44.444 - February 20, 2023
 

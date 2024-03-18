@@ -22,4 +22,5 @@ The update guides are primarily for notable changes. Not all plugin versions wil
 - [Sprout Data Studio](./data-studio.md)
 - [Sprout Email](./email.md)
 - [Sprout Redirects](./redirects.md)
+- [Sprout Seo](./seo.md)
 - [Sprout Sitemaps](./sitemaps.md)
