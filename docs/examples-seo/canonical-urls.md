@@ -22,7 +22,7 @@ To allow overrides to the Canonical URL of a page for an individual entry, enabl
 ## Template Overrides
 
 ::: warning
-Overriding Canonical URLs in your templates breaks the relationship with XML Sitemaps and the awareness Sprout SEO has about Canonical URL overrides. To add Custom URLs in a supported way to your XML Sitemaps see the documentation on [Custom Pages](./../sitemaps/sitemaps.md#custom-urls).
+Overriding Canonical URLs in your templates breaks the relationship with XML Sitemaps and the awareness Sprout SEO has about Canonical URL overrides. To add Custom URLs in a supported way to your XML Sitemaps see the documentation on Custom Pages.
 :::
 
 To override the `canonical` meta value on any given page in your templates, use the `sprout.seo.meta` tag and set the `canonical` attribute to the appropriate URL:
