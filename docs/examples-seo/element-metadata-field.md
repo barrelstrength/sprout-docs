@@ -55,11 +55,11 @@ In addition to the fields defined (or mapped) in the default Metadata settings y
 
 #### Enable the Meta Details fields you wish to allow users to override in your Entries
 
-![Element Metadata Meta Details Fields](./assets/images/seo/element-metadata-field-meta-details.png)
+![Element Metadata Meta Details Fields](./../assets/images/seo/element-metadata-field-meta-details.png)
 
 #### Meta Details fields display as tabs
 
-![Element Metadata Meta Details Fields](./assets/images/seo/field-layout-editable-fields.png)
+![Element Metadata Meta Details Fields](./../assets/images/seo/field-layout-editable-fields.png)
 
 ## Updating Metadata
 
