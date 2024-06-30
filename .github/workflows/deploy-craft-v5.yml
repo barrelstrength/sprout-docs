@@ -42,7 +42,7 @@ jobs:
 
       # This section can be removed for all branches except the current version release branch
       - name: Symlink doc folders to public folder
-        uses: appleboy/ssh-action@1.0.3
+        uses: appleboy/ssh-action@v1.0.3
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           host: ${{ secrets.REMOTE_HOST }}
