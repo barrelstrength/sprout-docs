@@ -34,6 +34,7 @@ export default defineConfig({
                     {
                         text: "Documentation",
                         items: [
+                            {text: 'Sprout v5 (Craft 5)', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v5/'},
                             {text: 'Sprout v4 (Craft 4)', link: '/'},
                             {text: 'Sprout v3 (Craft 3)', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v3/'},
                             {text: 'Sprout v2 (Craft 2)', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v2/'}
@@ -42,6 +43,7 @@ export default defineConfig({
                     {
                         text: "Plugin Store",
                         items: [
+                            {text: 'Craft 5', link: 'https://plugins.craftcms.com/developer/barrel-strength-design?craft5'},
                             {text: 'Craft 4', link: 'https://plugins.craftcms.com/developer/barrel-strength-design?craft4'},
                             {text: 'Craft 3', link: 'https://plugins.craftcms.com/developer/barrel-strength-design?craft3'},
                         ]
@@ -141,6 +143,7 @@ export default defineConfig({
                     text: 'Plugins',
                     items: [
                         {text: 'Data Studio', link: '/update-guides/data-studio'},
+                        {text: 'Forms', link: '/update-guides/forms'},
                         {text: 'Email', link: '/update-guides/email'},
                         {text: 'SEO', link: '/update-guides/seo'},
                         {text: 'Redirects', link: '/update-guides/redirects'},
@@ -257,14 +260,14 @@ export default defineConfig({
             port: 5173, // Use port 3000 for dev server.
             // port: 4173, // Use port 3000 for dev server.
             strictPort: true, // Don't try next available port if 3000 isn't available.
-            origin: 'http://demo.projectmothership.com.ddev.site:5174', // Rewrite asset URLs explicitly since the CMS web server is on a different host.
-            // origin: 'http://demo.projectmothership.com.ddev.site:4173', // Rewrite asset URLs explicitly since the CMS web server is on a different host.
+            origin: 'http://5.projectmothership.com.ddev.site:5174', // Rewrite asset URLs explicitly since the CMS web server is on a different host.
+            // origin: 'http://5.projectmothership.com.ddev.site:4173', // Rewrite asset URLs explicitly since the CMS web server is on a different host.
             hmr: {
                 port: 5173,
                 clientPort: 5174,
                 // port: 4173,
                 // clientPort: 4174,
-                host: 'demo.projectmothership.com.ddev.site',
+                host: '5.projectmothership.com.ddev.site',
                 protocol: 'wss',
             },
         }
