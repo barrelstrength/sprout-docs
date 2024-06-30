@@ -21,6 +21,7 @@ If you do find a similar issue, upvote it by adding a 👍 reaction. Only leave 
 Issues are labeled with the following tags:
 
 - `bug` - issue does not work as expected
+- `c5` - issue relates to a Craft 4 version of Sprout
 - `c4` - issue relates to a Craft 4 version of Sprout
 - `c3` - issue relates to a Craft 3 version of Sprout
 - `cX` - issue will be considered for a future version of Craft

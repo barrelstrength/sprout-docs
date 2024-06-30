@@ -114,15 +114,15 @@ export default defineConfig({
                 {
                     text: 'Policies',
                     items: [
-                        {text: 'Road Map', link: '/support/road-map'},
                         {text: 'Contributing', link: '/support/contributing'},
+                        {text: 'Pricing', link: '/support/pricing'},
+                        {text: 'Security', link: '/support/security'},
                     ]
                 },
                 {
                     text: 'Dreams of the Future',
                     items: [
                         {text: 'Road Map', link: '/support/road-map'},
-                        {text: 'Contributing', link: '/support/contributing'},
                     ]
                 }
             ],
