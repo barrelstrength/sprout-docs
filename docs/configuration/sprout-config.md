@@ -5,7 +5,7 @@ description: Configuration settings for the sprout plugins.
 
 # Config Settings
 
-Sprout settings are configured on a per-module basis and documented in the Control Panel and the [example config files](https://github.com/barrelstrength/craft-sprout/tree/v4/configs) in the root of the repository.
+Sprout settings are configured on a per-module basis and documented in the Control Panel and the [example config files](https://github.com/barrelstrength/craft-sprout/tree/v5/configs) in the root of the repository.
 
 Configuration settings are managed across five areas:
 

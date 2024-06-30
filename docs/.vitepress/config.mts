@@ -91,16 +91,16 @@ export default defineConfig({
                 //         {text: 'FAQ & Examples', link: '/examples-email/faq'},
                 //     ]
                 // },
-                // {
-                //     text: 'SEO Metadata',
-                //     collapsed: false,
-                //     items: [
-                //         {text: 'Meta Tags & Schema', link: '/meta'},
-                //         {text: 'Redirects', link: '/redirects'},
-                //         {text: 'Sitemaps', link: '/sitemaps'},
-                //         {text: 'FAQ & Examples', link: '/examples-seo/faq'},
-                //     ]
-                // },
+                {
+                    text: 'SEO Metadata',
+                    collapsed: false,
+                    items: [
+                        // {text: 'Meta Tags & Schema', link: '/meta'},
+                        {text: 'Redirects', link: '/redirects'},
+                        {text: 'Sitemaps', link: '/sitemaps'},
+                        {text: 'FAQ & Examples', link: '/examples-seo/faq'},
+                    ]
+                },
             ],
 
             '/support/': [
@@ -137,24 +137,19 @@ export default defineConfig({
                     text: 'Update Guides',
                     items: [
                         {text: 'Updating Sprout', link: '/update-guides/index'},
+                        {text: 'Upgrading from Craft 4', link: '/update-guides/sprout'},
                     ]
                 },
-                {
-                    text: 'Plugins',
-                    items: [
-                        {text: 'Data Studio', link: '/update-guides/data-studio'},
+                // {
+                //     text: 'Plugins',
+                //     items: [
+                        // {text: 'Data Studio', link: '/update-guides/data-studio'},
                         // {text: 'Email', link: '/update-guides/email'},
                         // {text: 'SEO', link: '/update-guides/seo'},
-                        {text: 'Redirects', link: '/update-guides/redirects'},
-                        {text: 'Sitemaps', link: '/update-guides/sitemaps'},
-                    ]
-                },
-                {
-                    text: 'All Plugins',
-                    items: [
-                        {text: 'Craft 5', link: '/update-guides/sprout'},
-                    ]
-                }
+                        // {text: 'Redirects', link: '/update-guides/redirects'},
+                        // {text: 'Sitemaps', link: '/update-guides/sitemaps'},
+                    // ]
+                // },
             ],
 
             '/examples-data-studio/': [
@@ -202,18 +197,18 @@ export default defineConfig({
                         {text: '← Back to SEO', link: '/meta'},
                     ]
                 },
-                {
-                    text: 'Metadata',
-                    items: [
-                        {text: 'Troubleshooting FAQ', link: '/examples-seo/faq'},
-                        {text: 'Global Metadata in Templates', link: '/examples-seo/global-metadata-in-templates'},
-                        {text: 'Element Metadata Field', link: '/examples-seo/element-metadata-field'},
-                        {text: 'Template Metadata Overrides', link: '/examples-seo/template-metadata-overrides'},
-                        {text: 'Canonical URLs', link: '/examples-seo/canonical-urls'},
-                        {text: 'Block Search Robots', link: '/examples-seo/block-robots-on-dev-site'},
-                        {text: 'Elements Without URLs', link: '/examples-seo/elements-without-urls'},
-                    ]
-                },
+                // {
+                //     text: 'Metadata',
+                //     items: [
+                //         {text: 'Troubleshooting FAQ', link: '/examples-seo/faq'},
+                //         {text: 'Global Metadata in Templates', link: '/examples-seo/global-metadata-in-templates'},
+                //         {text: 'Element Metadata Field', link: '/examples-seo/element-metadata-field'},
+                //         {text: 'Template Metadata Overrides', link: '/examples-seo/template-metadata-overrides'},
+                //         {text: 'Canonical URLs', link: '/examples-seo/canonical-urls'},
+                //         {text: 'Block Search Robots', link: '/examples-seo/block-robots-on-dev-site'},
+                //         {text: 'Elements Without URLs', link: '/examples-seo/elements-without-urls'},
+                //     ]
+                // },
                 {
                     text: 'Redirects',
                     items: [
@@ -259,14 +254,14 @@ export default defineConfig({
             port: 5173, // Use port 3000 for dev server.
             // port: 4173, // Use port 3000 for dev server.
             strictPort: true, // Don't try next available port if 3000 isn't available.
-            origin: 'http://demo.projectmothership.com.ddev.site:5174', // Rewrite asset URLs explicitly since the CMS web server is on a different host.
-            // origin: 'http://demo.projectmothership.com.ddev.site:4173', // Rewrite asset URLs explicitly since the CMS web server is on a different host.
+            origin: 'http://5.projectmothership.com.ddev.site:5174', // Rewrite asset URLs explicitly since the CMS web server is on a different host.
+            // origin: 'http://5.projectmothership.com.ddev.site:4173', // Rewrite asset URLs explicitly since the CMS web server is on a different host.
             hmr: {
                 port: 5173,
                 clientPort: 5174,
                 // port: 4173,
                 // clientPort: 4174,
-                host: 'demo.projectmothership.com.ddev.site',
+                host: '5.projectmothership.com.ddev.site',
                 protocol: 'wss',
             },
         }
