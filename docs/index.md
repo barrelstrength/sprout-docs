@@ -11,8 +11,8 @@ Sprout provides a seamless Craft experience for content authors and an exception
 
 [//]: # (Sprout Plugins provide a seamless Craft experience for content authors, an exceptional amount of flexibility for designers and developers, and comprehensive multi-site support for multi-regional and multi-lingual websites.)
 
-::: tip Craft 4 Support
-Sprout Marketing Suite plugins are coming to Craft 4. See our [Road Map](./support/road-map.md) for more details.
+::: tip Craft 5 Support
+Sprout Marketing Suite plugins are coming to Craft 5. See our [Road Map](./support/road-map.md) for more details.
 :::
 
 ## Digital Marketing

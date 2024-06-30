@@ -20,8 +20,8 @@ _Available in: Sprout Data Studio, Sprout Forms._
 
 <EditionComparison feature-list="./editions/data-studio.json" />
 
-::: tip Craft 4 Support
-Sprout Marketing Suite plugins are coming to Craft 4. See our [Road Map](./support/road-map.md) for more details.
+::: tip Craft 5 Support
+Sprout Marketing Suite plugins are coming to Craft 5. See our [Road Map](./support/road-map.md) for more details.
 :::
 
 [//]: # (## Forms Module)
@@ -36,31 +36,41 @@ Sprout Marketing Suite plugins are coming to Craft 4. See our [Road Map](./suppo
 
 [//]: # ()
 
-## Transactional Email Module
+[//]: # (## Transactional Email Module)
 
-_Available in: Sprout Notifications, Sprout Forms._
+[//]: # ()
+[//]: # (_Available in: Sprout Notifications, Sprout Forms._)
 
-<EditionComparison feature-list="./editions/notifications.json" />
+[//]: # ()
+[//]: # (<EditionComparison feature-list="./editions/notifications.json" />)
 
-## Mailer Module
+[//]: # ()
+[//]: # (## Mailer Module)
 
-_Available in: Sprout Forms, Sprout Email, Sprout Sent Email._
+[//]: # ()
+[//]: # (_Available in: Sprout Forms, Sprout Email, Sprout Sent Email._)
 
-<EditionComparison feature-list="./editions/mailer.json" />
+[//]: # ()
+[//]: # (<EditionComparison feature-list="./editions/mailer.json" />)
 
-## Sent Email
+[//]: # ()
+[//]: # (## Sent Email)
 
-_Available in: Sprout Email, Sprout Sent Email._
+[//]: # ()
+[//]: # (_Available in: Sprout Email, Sprout Sent Email._)
 
-<EditionComparison feature-list="./editions/sent-email.json" />
+[//]: # ()
+[//]: # (<EditionComparison feature-list="./editions/sent-email.json" />)
 
 [//]: # ()
 
-## Meta Module
+[//]: # (## Meta Module)
 
-_Available in: Sprout SEO._
+[//]: # ()
+[//]: # (_Available in: Sprout SEO._)
 
-<EditionComparison feature-list="./editions/seo.json" />
+[//]: # ()
+[//]: # (<EditionComparison feature-list="./editions/seo.json" />)
 
 ## Redirects Module
 

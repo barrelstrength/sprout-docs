@@ -10,7 +10,7 @@ hero:
     src: /logo-silhouette.svg
   actions:
     - theme: brand
-      text: Sprout for Craft 4
+      text: Sprout for Craft 5
       link: /markdown-examples
     - theme: alt
       text: Plugin store

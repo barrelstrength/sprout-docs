@@ -29,7 +29,7 @@ Sprout Data Studio provides a few Data Sources out of the box:
 
 ## Data Sets
 
-Data Sets allow you to create queries into the data defined by a Data Source. You can create one or more Data Sets from a single Data Source and each Data Set can [define unique query settings](https://demo.projectmothership.com/docs/craft-v4/data-studio.html).
+Data Sets allow you to create queries into the data defined by a Data Source. You can create one or more Data Sets from a single Data Source and each Data Set can define unique query settings.
 
 Data Sets can be organized into groups and customized so that you can conveniently interact with data set results in the Control Panel or export it as you need.
 

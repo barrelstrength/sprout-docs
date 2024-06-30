@@ -6,15 +6,15 @@ export default defineConfig({
     titleTemplate: ':title - Sprout Plugins – Craft CMS',
     description: "Build custom Craft CMS websites with Sprout Marketing Suite",
     head: [
-        ['link', {rel: 'icon', href: '/docs/craft-v4/icons/favicon.ico'}],
-        ['link', {rel: 'icon', href: '/docs/craft-v4/icons/favicon-16x16.png'}],
-        ['link', {rel: 'apple-touch-icon', sizes: '180x180', href: '/docs/craft-v4/icons/apple-touch-icon.png'}],
-        ['link', {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/docs/craft-v4/icons/favicon-32x32.png'}],
-        ['link', {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/docs/craft-v4/icons/favicon-16x16.png'}],
+        ['link', {rel: 'icon', href: '/docs/craft-v5/icons/favicon.ico'}],
+        ['link', {rel: 'icon', href: '/docs/craft-v5/icons/favicon-16x16.png'}],
+        ['link', {rel: 'apple-touch-icon', sizes: '180x180', href: '/docs/craft-v5/icons/apple-touch-icon.png'}],
+        ['link', {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/docs/craft-v5/icons/favicon-32x32.png'}],
+        ['link', {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/docs/craft-v5/icons/favicon-16x16.png'}],
     ],
-    base: '/docs/craft-v4/',
+    base: '/docs/craft-v5/',
     sitemap: {
-        hostname: 'https://sprout.barrelstrengthdesign.com/docs/craft-v4/'
+        hostname: 'https://sprout.barrelstrengthdesign.com/docs/craft-v5/'
     },
     lastUpdated: true,
     srcExclude: [
@@ -29,12 +29,13 @@ export default defineConfig({
         nav: [
             {text: 'Support', link: '/support/support', activeMatch: '/support/'},
             {
-                text: 'Sprout v4',
+                text: 'Sprout v5',
                 items: [
                     {
                         text: "Documentation",
                         items: [
-                            {text: 'Sprout v4 (Craft 4)', link: '/'},
+                            {text: 'Sprout v5 (Craft 5)', link: '/'},
+                            {text: 'Sprout v4 (Craft 4)', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v4/'},
                             {text: 'Sprout v3 (Craft 3)', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v3/'},
                             {text: 'Sprout v2 (Craft 2)', link: 'https://sprout.barrelstrengthdesign.com/docs/craft-v2/'}
                         ]
@@ -42,6 +43,7 @@ export default defineConfig({
                     {
                         text: "Plugin Store",
                         items: [
+                            {text: 'Craft 5', link: 'https://plugins.craftcms.com/developer/barrel-strength-design?craft5'},
                             {text: 'Craft 4', link: 'https://plugins.craftcms.com/developer/barrel-strength-design?craft4'},
                             {text: 'Craft 3', link: 'https://plugins.craftcms.com/developer/barrel-strength-design?craft3'},
                         ]
@@ -77,28 +79,28 @@ export default defineConfig({
                         {text: 'FAQ & Examples', link: '/examples-data-studio/custom-twig-template-report'},
                     ]
                 },
-                {
-                    text: 'Email Marketing',
-                    collapsed: false,
-                    items: [
-                        {text: 'Transactional Email', link: '/transactional-email'},
-                        {text: 'Email Types', link: '/email-types'},
-                        {text: 'Mailer Settings', link: '/mailers'},
-                        {text: 'Audiences', link: '/audiences'},
-                        {text: 'Sent Email', link: '/sent-email'},
-                        {text: 'FAQ & Examples', link: '/examples-email/faq'},
-                    ]
-                },
-                {
-                    text: 'SEO Metadata',
-                    collapsed: false,
-                    items: [
-                        {text: 'Meta Tags & Schema', link: '/meta'},
-                        {text: 'Redirects', link: '/redirects'},
-                        {text: 'Sitemaps', link: '/sitemaps'},
-                        {text: 'FAQ & Examples', link: '/examples-seo/faq'},
-                    ]
-                },
+                // {
+                //     text: 'Email Marketing',
+                //     collapsed: false,
+                //     items: [
+                //         {text: 'Transactional Email', link: '/transactional-email'},
+                //         {text: 'Email Types', link: '/email-types'},
+                //         {text: 'Mailer Settings', link: '/mailers'},
+                //         {text: 'Audiences', link: '/audiences'},
+                //         {text: 'Sent Email', link: '/sent-email'},
+                //         {text: 'FAQ & Examples', link: '/examples-email/faq'},
+                //     ]
+                // },
+                // {
+                //     text: 'SEO Metadata',
+                //     collapsed: false,
+                //     items: [
+                //         {text: 'Meta Tags & Schema', link: '/meta'},
+                //         {text: 'Redirects', link: '/redirects'},
+                //         {text: 'Sitemaps', link: '/sitemaps'},
+                //         {text: 'FAQ & Examples', link: '/examples-seo/faq'},
+                //     ]
+                // },
             ],
 
             '/support/': [
@@ -141,8 +143,8 @@ export default defineConfig({
                     text: 'Plugins',
                     items: [
                         {text: 'Data Studio', link: '/update-guides/data-studio'},
-                        {text: 'Email', link: '/update-guides/email'},
-                        {text: 'SEO', link: '/update-guides/seo'},
+                        // {text: 'Email', link: '/update-guides/email'},
+                        // {text: 'SEO', link: '/update-guides/seo'},
                         {text: 'Redirects', link: '/update-guides/redirects'},
                         {text: 'Sitemaps', link: '/update-guides/sitemaps'},
                     ]
@@ -150,7 +152,7 @@ export default defineConfig({
                 {
                     text: 'All Plugins',
                     items: [
-                        {text: 'Craft 4', link: '/update-guides/sprout'},
+                        {text: 'Craft 5', link: '/update-guides/sprout'},
                     ]
                 }
             ],
@@ -227,8 +229,8 @@ export default defineConfig({
         ],
 
         editLink: {
-            // https://github.com/barrelstrength/sprout-docs/blob/craft-v4/docs/support/support.md
-            pattern: 'https://github.com/barrelstrength/sprout-docs/edit/craft-v4/docs/:path'
+            // https://github.com/barrelstrength/sprout-docs/blob/craft-v5/docs/support/support.md
+            pattern: 'https://github.com/barrelstrength/sprout-docs/edit/craft-v5/docs/:path'
         },
 
         search: {
