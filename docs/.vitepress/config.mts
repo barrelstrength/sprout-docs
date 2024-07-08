@@ -95,7 +95,7 @@ export default defineConfig({
                     text: 'SEO Metadata',
                     collapsed: false,
                     items: [
-                        // {text: 'Meta Tags & Schema', link: '/meta'},
+                        {text: 'Meta Tags & Schema', link: '/meta'},
                         {text: 'Redirects', link: '/redirects'},
                         {text: 'Sitemaps', link: '/sitemaps'},
                         {text: 'FAQ & Examples', link: '/examples-seo/faq'},
