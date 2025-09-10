@@ -1,0 +1,94 @@
+[
+    {
+        "category": "Audiences",
+        "items": [
+            {
+                "name": "User Group Audience Type",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Subscriber List Audience Type",
+                "info": "Includes Craft User enhancement with an integrated Subscriber overlay.",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Data Set Audience Type",
+                "info": "Available via the Data Studio module.",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Mailing Lists & Segments",
+                "info": "Create Mailing Lists from Data Studio queries to send to lists and segments via Sprout Email and other Sprout plugins.",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Email Types",
+        "items": [
+            {
+                "name": "Simple Message Email Type",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Custom Email Email Type",
+                "info": "",
+                "lite": true,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Email Preview",
+        "items": [
+            {
+                "name": "Live Preview",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Test Emails with Live Data",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Preview HTML & Text Emails",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Share Unpublished Emails for Review",
+                "info": "",
+                "lite": true,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Developers",
+        "items": [
+            {
+                "name": "Custom Audience Type API",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Custom Email Type API",
+                "info": "",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    }
+]
