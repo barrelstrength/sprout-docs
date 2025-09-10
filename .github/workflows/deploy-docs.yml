@@ -35,7 +35,7 @@ jobs:
         run: |
           rm -rf master-branch/dist/*
           mkdir -p master-branch/dist
-          cp -r docs/.vitepress/dist/* master-branch/dist/
+          cp -r docs/.vitepress/dist/* master-branch/dist/craft-5/
 
       - name: Commit and push changes
         run: |
