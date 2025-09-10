@@ -1,3 +1,5 @@
+# When upgrading to the next version of Documentation
+# Search `craft-v5` and replace all instances in this file.
 name: Deploy to Dist
 
 on:
