@@ -1,0 +1,78 @@
+[
+    {
+        "category": "Global Metadata",
+        "items": [
+            {
+                "name": "Website Identity Metadata",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Contacts and Social Profile Metadata",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Verify Ownership",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Robots Metadata",
+                "info": "",
+                "lite": true,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Content Metadata",
+        "items": [
+            {
+                "name": "Search Metadata",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Social Sharing Metadata",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Structured Data",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Unlimited Metadata Fields",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Custom Metadata Patterns",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Custom Metadata Overrides",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Template Metadata",
+                "info": "",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    }
+]
