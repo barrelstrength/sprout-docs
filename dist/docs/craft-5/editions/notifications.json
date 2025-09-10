@@ -1,0 +1,52 @@
+[
+    {
+        "category": "Overview",
+        "items": [
+            {
+                "name": "Unlimited Transactional Email",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Unlimited Notification Events",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Email Personalization",
+                "info": "",
+                "lite": true,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Developers",
+        "items": [
+            {
+                "name": "Custom Notification Event API",
+                "info": "",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Sprout Modules",
+        "items": [
+            {
+                "name": "All features in the Mailing List Module",
+                "info": "",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "All features in the Sent Email Module",
+                "info": "",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    }
+]
