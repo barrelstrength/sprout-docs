@@ -1,0 +1,83 @@
+[
+    {
+        "category": "Global Metadata",
+        "items": [
+            {
+                "name": "Website Identity Metadata",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Contacts and Social Profile Metadata",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Verify Ownership Metadata",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Robots Metadata",
+                "info": "",
+                "lite": true,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Content Metadata",
+        "items": [
+            {
+                "name": "Search Metadata",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Social Sharing Metadata",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Structured Data",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Unlimited Metadata Mappings",
+                "info": "Create unique metadata mappings in any field layout.",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Custom Mapping Patterns",
+                "info": "Optimize your metadata by defining custom patterns that use data from more than one field.",
+                "lite": false,
+                "pro": true
+            },
+            {
+                "name": "Template Metadata",
+                "info": "Override metadata at any point during Twig template rendering.",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    },
+    {
+        "category": "Developers",
+        "items": [
+            {
+                "name": "Custom Schema API",
+                "info": "Build the precise structured data mappings you need.",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    }
+]
