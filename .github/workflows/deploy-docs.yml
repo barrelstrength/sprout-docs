@@ -1,0 +1,47 @@
+name: Deploy to Dist
+
+on:
+  push:
+    branches:
+      - craft-v5
+
+jobs:
+  deploy_to_dist:
+    name: Copy dist files to master branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref || github.ref }}
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Run build task
+        run: npm run docs:build
+
+      - name: Checkout master branch
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          path: master-branch
+
+      - name: Copy dist files to master
+        run: |
+          rm -rf master-branch/dist/*
+          mkdir -p master-branch/dist
+          cp -r docs/.vitepress/dist/* master-branch/dist/
+
+      - name: Commit and push changes
+        run: |
+          cd master-branch
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add dist/
+          git diff --staged --quiet || git commit -m "Deploy docs build from ${{ github.sha }}"
+          git push origin master
