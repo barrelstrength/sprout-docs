@@ -23,11 +23,9 @@ jobs:
 
       - name: Install npm dependencies
         run: npm install
-        working-directory: packages-dev/sprout-docs
 
       - name: Run build task
         run: npm run docs:build
-        working-directory: packages-dev/sprout-docs
 
       - name: Checkout master branch
         uses: actions/checkout@v4
