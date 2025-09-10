@@ -33,9 +33,9 @@ jobs:
 
       - name: Copy dist files to master
         run: |
-          rm -rf master-branch/dist/craft-5/*
-          mkdir -p master-branch/dist/craft-5/
-          cp -r docs/.vitepress/dist/* master-branch/dist/craft-5/
+          rm -rf master-branch/dist/docs/craft-5/*
+          mkdir -p master-branch/dist/docs/craft-5/
+          cp -r docs/.vitepress/dist/* master-branch/dist/docs/craft-5/
 
       - name: Commit and push changes
         run: |
