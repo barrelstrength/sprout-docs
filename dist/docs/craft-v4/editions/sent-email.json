@@ -1,0 +1,25 @@
+[
+    {
+        "category": "Features",
+        "items": [
+            {
+                "name": "Sent Email Tracking",
+                "info": "Capture a log of emails sent by Craft that can be viewed in the Control Panel and help with customer relationship workflows or debugging.",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Sent Email Preview",
+                "info": "View details about Sent Emails such as who they were sent to, when they were sent, and snapshot of the Sent Email HTML",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Resend Sent Emails",
+                "info": "Resend a copy of captured emails to the same user or a new email address",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    }
+]

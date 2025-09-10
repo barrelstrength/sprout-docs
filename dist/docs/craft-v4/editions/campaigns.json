@@ -1,0 +1,43 @@
+[
+    {
+        "category": "Email Campaigns",
+        "items": [
+            {
+                "name": "Campaign Email Element",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Campaign Types",
+                "info": "Lite users can create a single Campaign Type",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Custom Email Templates",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Email Personalization",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Copy/Paste Mailer",
+                "info": "",
+                "lite": true,
+                "pro": true
+            },
+            {
+                "name": "Custom Mailers",
+                "info": "",
+                "lite": false,
+                "pro": true
+            }
+        ]
+    }
+]
