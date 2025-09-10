@@ -33,7 +33,7 @@ jobs:
 
       - name: Copy dist files to master
         run: |
-          rm -rf master-branch/dist/*
+          rm -rf master-branch/dist/craft-5/*
           mkdir -p master-branch/dist
           cp -r docs/.vitepress/dist/* master-branch/dist/craft-5/
 
